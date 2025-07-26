@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd gym-app && npm run build",
+  "outputDirectory": "gym-app/dist",
+  "installCommand": "cd gym-app && npm install",
+  "devCommand": "cd gym-app && npm run dev",
+  "functions": {
+    "api/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  }
+} 
