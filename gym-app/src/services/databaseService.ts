@@ -9,134 +9,88 @@ const STORAGE_KEYS = {
   CURRENT_DAY: 'gym-app-current-day',
 } as const;
 
-function getRedisUrl(): string | undefined {
-  if (typeof window !== 'undefined') {
-    return import.meta.env.VITE_REDIS_URL;
-  } else {
-    return process.env.REDIS_URL || process.env.VITE_REDIS_URL;
-  }
-}
+class ApiClient {
+  private static baseUrl = '/api/database';
 
-class RedisClient {
-  private static instance: any = null;
-  private static isConnecting = false;
+  private static async call(action: string, key: string, value?: any): Promise<any> {
+    const userId = this.getUserId();
+    
+    const response = await fetch(this.baseUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        action,
+        key,
+        value,
+        userId
+      })
+    });
 
-  public static async getClient() {
-    if (typeof window !== 'undefined') {
-      throw new Error('Redis client cannot be used in browser');
+    if (!response.ok) {
+      throw new Error(`API call failed: ${response.statusText}`);
     }
 
-    if (this.instance && this.instance.isOpen) {
-      return this.instance;
-    }
-
-    if (this.isConnecting) {
-      while (this.isConnecting) {
-        await new Promise(resolve => setTimeout(resolve, 100));
-      }
-      return this.instance;
-    }
-
-    this.isConnecting = true;
-
-    try {
-      const { createClient } = await import('redis');
-      const redisUrl = getRedisUrl();
-      if (!redisUrl) {
-        throw new Error('REDIS_URL not configured');
-      }
-
-      this.instance = createClient({ 
-        url: redisUrl,
-        socket: {
-          reconnectStrategy: (retries: number) => Math.min(retries * 50, 500)
-        }
-      });
-
-      this.instance.on('error', (err: Error) => {
-        console.error('Redis Client Error:', err);
-      });
-
-      await this.instance.connect();
-      this.isConnecting = false;
-      return this.instance;
-    } catch (error) {
-      this.isConnecting = false;
-      console.error('Failed to connect to Redis:', error);
-      throw error;
-    }
-  }
-
-  public static async disconnect() {
-    if (this.instance && this.instance.isOpen) {
-      await this.instance.disconnect();
-      this.instance = null;
-    }
-  }
-}
-
-export class DatabaseService {
-  private static getUserKey(baseKey: string, userId?: string): string {
-    const userIdentifier = userId || this.getUserId();
-    return `${userIdentifier}:${baseKey}`;
+    return await response.json();
   }
 
   private static getUserId(): string {
     if (typeof window === 'undefined') return 'server';
     
-    let userId = localStorage.getItem('gym-app-user-id');
+    let userId = sessionStorage.getItem('gym-app-user-id');
     if (!userId) {
       userId = `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-      localStorage.setItem('gym-app-user-id', userId);
+      sessionStorage.setItem('gym-app-user-id', userId);
     }
     return userId;
   }
 
-  private static async setItem<T>(key: string, value: T, userId?: string): Promise<void> {
-    const userKey = this.getUserKey(key, userId);
-    
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(userKey, JSON.stringify(value));
-    } else {
-      try {
-        const client = await RedisClient.getClient();
-        await client.set(userKey, JSON.stringify(value));
-      } catch (error) {
-        console.error(`Failed to save to Redis:`, error);
-        throw new Error(`Failed to save ${key} to database`);
-      }
+  public static async get<T>(key: string, defaultValue: T): Promise<T> {
+    try {
+      const result = await this.call('get', key);
+      return result.data !== null ? result.data : defaultValue;
+    } catch (error) {
+      console.error(`Failed to get ${key}:`, error);
+      return defaultValue;
     }
   }
 
-  private static async getItem<T>(key: string, defaultValue: T, userId?: string): Promise<T> {
-    const userKey = this.getUserKey(key, userId);
-    
-    if (typeof window !== 'undefined') {
-      try {
-        const item = localStorage.getItem(userKey);
-        return item ? JSON.parse(item) : defaultValue;
-      } catch (error) {
-        console.error(`Failed to parse localStorage item:`, error);
-        return defaultValue;
-      }
-    } else {
-      try {
-        const client = await RedisClient.getClient();
-        const item = await client.get(userKey);
-        return item ? JSON.parse(item) : defaultValue;
-      } catch (error) {
-        console.error(`Failed to read from Redis:`, error);
-        return defaultValue;
-      }
+  public static async set<T>(key: string, value: T): Promise<void> {
+    try {
+      await this.call('set', key, value);
+    } catch (error) {
+      console.error(`Failed to set ${key}:`, error);
+      throw new Error(`Failed to save ${key} to database`);
     }
   }
 
+  public static async delete(key: string): Promise<void> {
+    try {
+      await this.call('delete', key);
+    } catch (error) {
+      console.error(`Failed to delete ${key}:`, error);
+      throw error;
+    }
+  }
+
+  public static async clear(): Promise<void> {
+    try {
+      await this.call('clear', '');
+    } catch (error) {
+      console.error('Failed to clear all data:', error);
+      throw error;
+    }
+  }
+}
+
+export class DatabaseService {
   public static async saveWorkoutProgress(progress: WorkoutProgress[]): Promise<void> {
-    await this.setItem(STORAGE_KEYS.WORKOUT_PROGRESS, progress);
+    await ApiClient.set(STORAGE_KEYS.WORKOUT_PROGRESS, progress);
   }
 
   public static async getWorkoutProgress(): Promise<WorkoutProgress[]> {
-    return await this.getItem(STORAGE_KEYS.WORKOUT_PROGRESS, []);
+    return await ApiClient.get(STORAGE_KEYS.WORKOUT_PROGRESS, []);
   }
 
   public static async addWorkoutProgress(progress: WorkoutProgress): Promise<void> {
@@ -168,11 +122,11 @@ export class DatabaseService {
   }
 
   public static async saveShoppingLists(lists: ShoppingList[]): Promise<void> {
-    await this.setItem(STORAGE_KEYS.SHOPPING_LISTS, lists);
+    await ApiClient.set(STORAGE_KEYS.SHOPPING_LISTS, lists);
   }
 
   public static async getShoppingLists(): Promise<ShoppingList[]> {
-    return await this.getItem(STORAGE_KEYS.SHOPPING_LISTS, []);
+    return await ApiClient.get(STORAGE_KEYS.SHOPPING_LISTS, []);
   }
 
   public static async addShoppingList(list: ShoppingList): Promise<void> {
@@ -198,7 +152,7 @@ export class DatabaseService {
   }
 
   public static async saveTheme(theme: ThemeMode): Promise<void> {
-    await this.setItem(STORAGE_KEYS.THEME, theme);
+    await ApiClient.set(STORAGE_KEYS.THEME, theme);
     
     if (typeof window !== 'undefined') {
       document.documentElement.classList.remove('light', 'dark');
@@ -209,22 +163,30 @@ export class DatabaseService {
   }
 
   public static async getTheme(): Promise<ThemeMode> {
-    return await this.getItem(STORAGE_KEYS.THEME, 'dark');
+    return await ApiClient.get(STORAGE_KEYS.THEME, 'dark');
   }
 
   public static async initializeTheme(): Promise<void> {
-    const savedTheme = await this.getTheme();
-    
-    if (typeof window !== 'undefined') {
-      document.documentElement.classList.remove('light', 'dark');
-      document.documentElement.removeAttribute('data-theme');
-      document.documentElement.classList.add(savedTheme);
-      document.documentElement.setAttribute('data-theme', savedTheme);
+    try {
+      const savedTheme = await this.getTheme();
+      
+      if (typeof window !== 'undefined') {
+        document.documentElement.classList.remove('light', 'dark');
+        document.documentElement.removeAttribute('data-theme');
+        document.documentElement.classList.add(savedTheme);
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    } catch (error) {
+      console.error('Failed to initialize theme:', error);
+      if (typeof window !== 'undefined') {
+        document.documentElement.classList.add('dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
     }
   }
 
   public static async saveTableColumns(columns: TableColumn[]): Promise<void> {
-    await this.setItem(STORAGE_KEYS.TABLE_COLUMNS, columns);
+    await ApiClient.set(STORAGE_KEYS.TABLE_COLUMNS, columns);
   }
 
   public static async getTableColumns(): Promise<TableColumn[]> {
@@ -239,47 +201,27 @@ export class DatabaseService {
       { key: 'calorias', label: 'Calorías', visible: true },
     ];
     
-    return await this.getItem(STORAGE_KEYS.TABLE_COLUMNS, defaultColumns);
+    return await ApiClient.get(STORAGE_KEYS.TABLE_COLUMNS, defaultColumns);
   }
 
   public static async saveCurrentWeek(week: number): Promise<void> {
-    await this.setItem(STORAGE_KEYS.CURRENT_WEEK, week);
+    await ApiClient.set(STORAGE_KEYS.CURRENT_WEEK, week);
   }
 
   public static async getCurrentWeek(): Promise<number> {
-    return await this.getItem(STORAGE_KEYS.CURRENT_WEEK, 1);
+    return await ApiClient.get(STORAGE_KEYS.CURRENT_WEEK, 1);
   }
 
   public static async saveCurrentDay(day: string): Promise<void> {
-    await this.setItem(STORAGE_KEYS.CURRENT_DAY, day);
+    await ApiClient.set(STORAGE_KEYS.CURRENT_DAY, day);
   }
 
   public static async getCurrentDay(): Promise<string> {
-    return await this.getItem(STORAGE_KEYS.CURRENT_DAY, 'lunes');
+    return await ApiClient.get(STORAGE_KEYS.CURRENT_DAY, 'lunes');
   }
 
   public static async clearAllData(): Promise<void> {
-    const userId = this.getUserId();
-    
-    if (typeof window !== 'undefined') {
-      Object.values(STORAGE_KEYS).forEach(key => {
-        const userKey = this.getUserKey(key, userId);
-        localStorage.removeItem(userKey);
-      });
-    } else {
-      try {
-        const client = await RedisClient.getClient();
-        const promises = Object.values(STORAGE_KEYS).map(key => {
-          const userKey = this.getUserKey(key, userId);
-          return client.del(userKey);
-        });
-        
-        await Promise.all(promises);
-      } catch (error) {
-        console.error('Failed to clear data from Redis:', error);
-        throw error;
-      }
-    }
+    await ApiClient.clear();
   }
 
   public static async exportData(): Promise<string> {
@@ -320,49 +262,67 @@ export class DatabaseService {
   public static async migrateFromLocalStorage(): Promise<void> {
     if (typeof window === 'undefined') return;
     
+    const migrationKey = 'gym-app-migrated-to-redis';
+    if (sessionStorage.getItem(migrationKey)) {
+      return;
+    }
+
     try {
       const localStorageData = {
-        workoutProgress: JSON.parse(localStorage.getItem('gym-app-workout-progress') || '[]'),
-        shoppingLists: JSON.parse(localStorage.getItem('gym-app-shopping-lists') || '[]'),
-        theme: JSON.parse(localStorage.getItem('gym-app-theme') || '"dark"'),
-        tableColumns: JSON.parse(localStorage.getItem('gym-app-table-columns') || '[]'),
-        currentWeek: JSON.parse(localStorage.getItem('gym-app-current-week') || '1'),
-        currentDay: JSON.parse(localStorage.getItem('gym-app-current-day') || '"lunes"'),
+        workoutProgress: this.parseLocalStorageItem('gym-app-workout-progress', []),
+        shoppingLists: this.parseLocalStorageItem('gym-app-shopping-lists', []),
+        theme: this.parseLocalStorageItem('gym-app-theme', 'dark'),
+        tableColumns: this.parseLocalStorageItem('gym-app-table-columns', []),
+        currentWeek: this.parseLocalStorageItem('gym-app-current-week', 1),
+        currentDay: this.parseLocalStorageItem('gym-app-current-day', 'lunes'),
       };
 
       const promises: Promise<void>[] = [];
       
       if (localStorageData.workoutProgress.length > 0) {
         promises.push(this.saveWorkoutProgress(localStorageData.workoutProgress));
+        localStorage.removeItem('gym-app-workout-progress');
       }
       if (localStorageData.shoppingLists.length > 0) {
         promises.push(this.saveShoppingLists(localStorageData.shoppingLists));
+        localStorage.removeItem('gym-app-shopping-lists');
       }
-      if (localStorageData.theme) {
-        promises.push(this.saveTheme(localStorageData.theme));
+      if (localStorageData.theme !== 'dark') {
+        promises.push(this.saveTheme(localStorageData.theme as ThemeMode));
+        localStorage.removeItem('gym-app-theme');
       }
       if (localStorageData.tableColumns.length > 0) {
         promises.push(this.saveTableColumns(localStorageData.tableColumns));
+        localStorage.removeItem('gym-app-table-columns');
       }
-      if (localStorageData.currentWeek) {
+      if (localStorageData.currentWeek !== 1) {
         promises.push(this.saveCurrentWeek(localStorageData.currentWeek));
+        localStorage.removeItem('gym-app-current-week');
       }
-      if (localStorageData.currentDay) {
+      if (localStorageData.currentDay !== 'lunes') {
         promises.push(this.saveCurrentDay(localStorageData.currentDay));
+        localStorage.removeItem('gym-app-current-day');
       }
 
       await Promise.all(promises);
       
-      localStorage.setItem('gym-app-migrated', 'true');
-      console.log('Migración completada exitosamente');
+      sessionStorage.setItem(migrationKey, 'true');
+      console.log('✅ Migración a Redis completada exitosamente');
     } catch (error) {
-      console.error('Error durante la migración:', error);
+      console.error('❌ Error durante la migración a Redis:', error);
+    }
+  }
+
+  private static parseLocalStorageItem<T>(key: string, defaultValue: T): T {
+    try {
+      const item = localStorage.getItem(key);
+      return item ? JSON.parse(item) : defaultValue;
+    } catch (error) {
+      console.error(`Failed to parse localStorage item ${key}:`, error);
+      return defaultValue;
     }
   }
 
   public static async disconnect(): Promise<void> {
-    if (typeof window === 'undefined') {
-      await RedisClient.disconnect();
-    }
   }
 } 
