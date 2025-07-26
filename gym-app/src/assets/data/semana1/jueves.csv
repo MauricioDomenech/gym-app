@@ -1,0 +1,27 @@
+Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
+Desayuno,Pan de centeno,25g,2g,1g,13g,2g,68
+Desayuno,Jamón ibérico,30g,8g,9g,0g,0g,100
+Desayuno,Creatina,6g,0g,0g,0g,0g,0
+Desayuno,Queso cabra sin lactosa,35g,8g,6g,1g,0g,85
+Desayuno,Semillas calabaza,6g,1g,2g,1g,1g,26
+SUBTOTAL DESAYUNO,,,19g,18g,15g,3g,279
+Post-cardio,Uvas,100g,1g,0g,13g,1g,54
+Post-cardio,Proteína de suero,10g,9g,0g,1g,0g,37
+SUBTOTAL POST-CARDIO,,,10g,0g,14g,1g,91
+Almuerzo,Lubina,150g,29g,2g,0g,0g,135
+Almuerzo,Arroz basmati,35g (crudo),3g,1g,26g,1g,123
+Almuerzo,Berenjenas,150g,1g,0g,9g,4g,35
+Almuerzo,Aceite oliva,3ml,0g,3g,0g,0g,27
+SUBTOTAL ALMUERZO,,,33g,6g,35g,5g,320
+Merienda,Atún en lata,100g (agua),29g,1g,0g,0g,123
+Merienda,Cerezas,90g,1g,0g,10g,2g,45
+Merienda,Yogur sin lactosa,90g,3g,2g,4g,0g,49
+Merienda,Almendras,6g,1g,3g,1g,1g,36
+Merienda,Huevo duro,1 unidad,6g,5g,0g,0g,68
+SUBTOTAL MERIENDA,,,40g,11g,15g,3g,321
+Cena,Pechuga pollo,140g,33g,3g,0g,0g,154
+Cena,Garbanzos,30g (crudo),6g,2g,15g,4g,99
+Cena,Espinacas,120g,3g,0g,3g,3g,21
+Cena,Aceitunas,6 unidades,0g,3g,1g,1g,30
+SUBTOTAL CENA,,,42g,8g,19g,8g,304
+TOTALES JUEVES,,,144g,43g,98g,20g,1315

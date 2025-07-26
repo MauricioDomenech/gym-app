@@ -1,0 +1,23 @@
+Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
+Desayuno,Tostadas francesas proteicas,2 claras + 15g avena,9g,1g,9g,1g,78
+Desayuno,Sirope de arce,8ml,0g,0g,7g,0g,27
+Desayuno,Creatina,6g,0g,0g,0g,0g,0
+Desayuno,Aguacate,40g,1g,6g,1g,2g,64
+Desayuno,Nueces,8g,2g,5g,2g,1g,56
+SUBTOTAL DESAYUNO,,,12g,12g,19g,4g,225
+Almuerzo,Arroz con pollo y verduras,200g (porción moderada),19g,8g,43g,3g,307
+Almuerzo,Ensalada mediterránea,80g,2g,5g,3g,2g,56
+SUBTOTAL ALMUERZO,,,21g,13g,46g,5g,363
+Merienda,Frutos secos mixtos,12g,2g,7g,2g,1g,77
+Merienda,Infusión de menta,250ml,0g,0g,0g,0g,0
+Merienda,Yogur griego natural,90g,9g,5g,5g,0g,87
+Merienda,Atún en aceite (escurrido),70g,20g,1g,0g,0g,91
+Merienda,Pechuga de pavo,30g,9g,1g,0g,0g,41
+SUBTOTAL MERIENDA,,,40g,14g,7g,1g,296
+Cena,Salmón a la plancha,110g,21g,5g,0g,0g,125
+Cena,Verduras al horno,130g,2g,5g,11g,5g,85
+Cena,Patata al vapor,80g,1g,0g,13g,1g,57
+Cena,Aceitunas gordal,4 unidades,0g,2g,1g,1g,20
+Cena,Jamón ibérico,25g,7g,4g,0g,0g,57
+SUBTOTAL CENA,,,31g,16g,25g,7g,344
+TOTALES DOMINGO,,,104g,55g,97g,17g,1228

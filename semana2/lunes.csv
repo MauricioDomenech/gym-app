@@ -1,0 +1,26 @@
+Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
+Desayuno,Claras de huevo,3 claras,11g,0g,1g,0g,51
+Desayuno,Pan integral tostado,35g,3g,2g,23g,4g,121
+Desayuno,Jamón de york sin grasa,40g,13g,2g,1g,0g,68
+Desayuno,Aguacate,40g,1g,6g,1g,2g,64
+SUBTOTAL DESAYUNO,,,28g,10g,26g,6g,304
+Post-entreno,Proteína de suero,30g,26g,1g,2g,0g,115
+Post-entreno,Avena,20g,2g,1g,12g,2g,72
+Post-entreno,Creatina,6g,0g,0g,0g,0g,0
+SUBTOTAL POST-ENTRENO,,,28g,2g,14g,2g,187
+Almuerzo,Ternera magra,120g,26g,5g,0g,0g,139
+Almuerzo,Quinoa,40g (crudo),5g,3g,26g,3g,147
+Almuerzo,Brócoli,150g,4g,1g,10g,5g,50
+Almuerzo,Aceite oliva,4ml,0g,4g,0g,0g,36
+SUBTOTAL ALMUERZO,,,35g,13g,36g,8g,372
+Merienda,Requesón 0% grasa,140g,17g,1g,5g,0g,93
+Merienda,Nueces,8g,1g,5g,1g,1g,53
+Merienda,Fresas,80g,1g,0g,6g,2g,26
+Merienda,Bonito en lata,60g (agua),17g,1g,0g,0g,71
+SUBTOTAL MERIENDA,,,36g,7g,12g,3g,243
+Cena,Merluza,140g,25g,2g,0g,0g,113
+Cena,Boniato,110g,1g,0g,19g,3g,81
+Cena,Espárragos verdes,130g,3g,0g,5g,3g,26
+Cena,Aceitunas negras,6 unidades,0g,3g,1g,1g,30
+SUBTOTAL CENA,,,29g,5g,25g,7g,250
+TOTALES LUNES,,,156g,37g,113g,26g,1356

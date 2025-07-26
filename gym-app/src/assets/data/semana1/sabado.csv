@@ -1,0 +1,27 @@
+Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
+Desayuno,Huevos poché,2 huevos,12g,10g,1g,0g,140
+Desayuno,Proteína de suero,12g,10g,0g,1g,0g,44
+Desayuno,Lomo embuchado,25g,7g,6g,0g,0g,75
+Desayuno,Creatina,6g,0g,0g,0g,0g,0
+Desayuno,Pan integral,25g,2g,1g,17g,2g,90
+Desayuno,Aguacate,35g,1g,6g,1g,2g,56
+SUBTOTAL DESAYUNO,,,32g,23g,20g,4g,405
+Post-cardio,Yogur griego sin lactosa,80g,8g,5g,5g,0g,80
+Post-cardio,Melón,120g,1g,0g,10g,1g,43
+SUBTOTAL POST-CARDIO,,,9g,5g,15g,1g,123
+Almuerzo,Ternera magra,100g,24g,3g,0g,0g,120
+Almuerzo,Arroz integral,35g (crudo),3g,1g,26g,2g,124
+Almuerzo,Calabacín,150g,2g,0g,5g,2g,27
+Almuerzo,Aceite oliva,3ml,0g,3g,0g,0g,27
+SUBTOTAL ALMUERZO,,,29g,7g,31g,4g,298
+Merienda,Yogur sin lactosa,100g,3g,3g,5g,0g,53
+Merienda,Semillas de chía,6g,1g,2g,2g,2g,30
+Merienda,Atún en lata,90g (agua),26g,1g,0g,0g,111
+Merienda,Salmón ahumado,25g,6g,2g,0g,0g,44
+SUBTOTAL MERIENDA,,,36g,8g,7g,2g,238
+Cena,Lenguado,110g,21g,1g,0g,0g,93
+Cena,Lentejas verdes,30g (crudo),7g,1g,17g,3g,103
+Cena,Canónigos,45g,2g,0g,3g,2g,19
+Cena,Aceitunas,6 unidades,0g,3g,1g,1g,30
+SUBTOTAL CENA,,,30g,5g,21g,6g,245
+TOTALES SÁBADO,,,136g,48g,94g,17g,1309

@@ -1,0 +1,26 @@
+Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
+Desayuno,Huevos revueltos,2 huevos,12g,10g,1g,0g,140
+Desayuno,Pan integral tostado,30g,3g,1g,20g,3g,103
+Desayuno,Atún en lata,60g (agua),17g,1g,0g,0g,75
+Desayuno,Aguacate,40g,1g,6g,1g,2g,64
+SUBTOTAL DESAYUNO,,,33g,18g,22g,5g,382
+Post-entreno,Proteína de suero,30g,26g,1g,2g,0g,115
+Post-entreno,Avena,18g,2g,1g,11g,1g,65
+Post-entreno,Creatina,6g,0g,0g,0g,0g,0
+SUBTOTAL POST-ENTRENO,,,28g,2g,13g,1g,180
+Almuerzo,Conejo,110g,24g,3g,0g,0g,120
+Almuerzo,Pasta integral,35g (crudo),5g,1g,25g,3g,129
+Almuerzo,Calabaza,140g,1g,0g,10g,2g,44
+Almuerzo,Aceite oliva,3ml,0g,3g,0g,0g,27
+SUBTOTAL ALMUERZO,,,30g,7g,35g,5g,320
+Merienda,Yogur griego sin lactosa,70g,7g,4g,4g,0g,67
+Merienda,Semillas girasol,6g,1g,3g,1g,1g,34
+Merienda,Jamón serrano,45g,14g,5g,0g,0g,94
+Merienda,Kiwi,100g,1g,0g,11g,3g,45
+SUBTOTAL MERIENDA,,,23g,12g,16g,4g,240
+Cena,Boquerones frescos,100g,23g,1g,0g,0g,104
+Cena,Judías pintas,30g (crudo),7g,1g,17g,7g,100
+Cena,Apio,90g,1g,0g,3g,2g,14
+Cena,Aceitunas,5 unidades,0g,2g,1g,1g,25
+SUBTOTAL CENA,,,31g,4g,21g,10g,243
+TOTALES MIÉRCOLES,,,145g,43g,107g,25g,1365

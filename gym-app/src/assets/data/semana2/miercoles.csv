@@ -1,0 +1,26 @@
+Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
+Desayuno,Tortilla de claras,4 claras,14g,0g,1g,0g,68
+Desayuno,Pan de centeno tostado,30g,2g,1g,19g,4g,94
+Desayuno,Lomo embuchado,30g,8g,7g,0g,0g,83
+Desayuno,Aguacate,35g,1g,6g,1g,2g,53
+SUBTOTAL DESAYUNO,,,25g,14g,21g,6g,298
+Post-entreno,Proteína de suero,30g,26g,1g,2g,0g,115
+Post-entreno,Avena,20g,2g,1g,12g,2g,72
+Post-entreno,Creatina,6g,0g,0g,0g,0g,0
+SUBTOTAL POST-ENTRENO,,,28g,2g,14g,2g,187
+Almuerzo,Solomillo de cerdo,120g,28g,6g,0g,0g,152
+Almuerzo,Pasta integral,40g (crudo),6g,1g,29g,3g,148
+Almuerzo,Tomates cherry,120g,1g,0g,4g,2g,20
+Almuerzo,Aceite oliva,4ml,0g,4g,0g,0g,36
+SUBTOTAL ALMUERZO,,,35g,11g,33g,5g,356
+Merienda,Queso fresco batido 0%,120g,14g,0g,5g,0g,75
+Merienda,Pistachos sin sal,10g,2g,6g,2g,1g,56
+Merienda,Jamón ibérico,35g,10g,5g,0g,0g,77
+Merienda,Mandarina,80g,1g,0g,7g,2g,32
+SUBTOTAL MERIENDA,,,27g,11g,14g,3g,240
+Cena,Emperador,120g,27g,2g,0g,0g,120
+Cena,Alubias blancas,35g (crudo),8g,1g,18g,6g,108
+Cena,Judías verdes,120g,2g,0g,5g,3g,26
+Cena,Aceitunas mixtas,5 unidades,0g,2g,1g,1g,25
+SUBTOTAL CENA,,,37g,5g,24g,10g,279
+TOTALES MIÉRCOLES,,,152g,43g,106g,26g,1360

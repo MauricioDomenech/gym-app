@@ -1,0 +1,26 @@
+Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
+Desayuno,Huevos revueltos,2 huevos,12g,10g,1g,0g,140
+Desayuno,Pan integral tostado,35g,3g,2g,23g,3g,120
+Desayuno,Pechuga pavo,35g,11g,1g,0g,0g,51
+Desayuno,Aguacate,40g,1g,7g,1g,3g,64
+SUBTOTAL DESAYUNO,,,27g,20g,25g,6g,375
+Post-entreno,Proteína de suero,30g,26g,1g,2g,0g,115
+Post-entreno,Avena,20g,2g,1g,12g,2g,72
+Post-entreno,Creatina,6g,0g,0g,0g,0g,0
+SUBTOTAL POST-ENTRENO,,,28g,2g,14g,2g,187
+Almuerzo,Pechuga pavo,140g,33g,2g,0g,0g,148
+Almuerzo,Arroz salvaje,50g (crudo),4g,1g,38g,3g,175
+Almuerzo,Judías verdes,140g,2g,0g,6g,3g,30
+Almuerzo,Aceite oliva,4ml,0g,4g,0g,0g,36
+SUBTOTAL ALMUERZO,,,39g,7g,44g,6g,389
+Merienda,Queso fresco sin lactosa,120g,14g,3g,2g,0g,92
+Merienda,Semillas de lino,6g,1g,2g,2g,2g,25
+Merienda,Moras,80g,1g,0g,9g,5g,42
+Merienda,Atún en lata,60g (agua),17g,1g,0g,0g,75
+SUBTOTAL MERIENDA,,,33g,6g,13g,7g,234
+Cena,Bacalao,130g,26g,1g,0g,0g,110
+Cena,Patata dulce,130g,2g,0g,22g,4g,96
+Cena,Col lombarda,120g,2g,0g,5g,3g,28
+Cena,Aceitunas,8 unidades,0g,4g,1g,1g,40
+SUBTOTAL CENA,,,30g,5g,28g,8g,274
+TOTALES LUNES,,,157g,40g,124g,29g,1459
