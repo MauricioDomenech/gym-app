@@ -58,7 +58,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+    console.error('❌ Method not allowed:', req.method);
+    return res.status(405).json({ error: 'Method not allowed', method: req.method });
   }
 
   try {
@@ -102,7 +103,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
       default:
         console.error('❌ Invalid action:', action);
-        return res.status(400).json({ error: 'Invalid action' });
+        return res.status(400).json({ error: 'Invalid action', received: action });
     }
   } catch (error) {
     console.error('💥 Database API Error:', error);
