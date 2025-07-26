@@ -1,4 +1,3 @@
-import { kv } from '@vercel/kv';
 import type { WorkoutProgress, ShoppingList, ThemeMode, TableColumn } from '../models/types';
 
 const STORAGE_KEYS = {
@@ -9,6 +8,64 @@ const STORAGE_KEYS = {
   CURRENT_WEEK: 'gym-app-current-week',
   CURRENT_DAY: 'gym-app-current-day',
 } as const;
+
+class RedisClient {
+  private static instance: any = null;
+  private static isConnecting = false;
+
+  public static async getClient() {
+    if (typeof window !== 'undefined') {
+      throw new Error('Redis client cannot be used in browser');
+    }
+
+    if (this.instance && this.instance.isOpen) {
+      return this.instance;
+    }
+
+    if (this.isConnecting) {
+      while (this.isConnecting) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+      return this.instance;
+    }
+
+    this.isConnecting = true;
+
+    try {
+      const { createClient } = await import('redis');
+      const redisUrl = process.env.REDIS_URL || process.env.VITE_REDIS_URL;
+      if (!redisUrl) {
+        throw new Error('REDIS_URL not configured');
+      }
+
+      this.instance = createClient({ 
+        url: redisUrl,
+        socket: {
+          reconnectStrategy: (retries: number) => Math.min(retries * 50, 500)
+        }
+      });
+
+      this.instance.on('error', (err: Error) => {
+        console.error('Redis Client Error:', err);
+      });
+
+      await this.instance.connect();
+      this.isConnecting = false;
+      return this.instance;
+    } catch (error) {
+      this.isConnecting = false;
+      console.error('Failed to connect to Redis:', error);
+      throw error;
+    }
+  }
+
+  public static async disconnect() {
+    if (this.instance && this.instance.isOpen) {
+      await this.instance.disconnect();
+      this.instance = null;
+    }
+  }
+}
 
 export class DatabaseService {
   private static getUserKey(baseKey: string, userId?: string): string {
@@ -28,23 +85,41 @@ export class DatabaseService {
   }
 
   private static async setItem<T>(key: string, value: T, userId?: string): Promise<void> {
-    try {
-      const userKey = this.getUserKey(key, userId);
-      await kv.set(userKey, JSON.stringify(value));
-    } catch (error) {
-      console.error(`Failed to save to database:`, error);
-      throw new Error(`Failed to save ${key} to database`);
+    const userKey = this.getUserKey(key, userId);
+    
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(userKey, JSON.stringify(value));
+    } else {
+      try {
+        const client = await RedisClient.getClient();
+        await client.set(userKey, JSON.stringify(value));
+      } catch (error) {
+        console.error(`Failed to save to Redis:`, error);
+        throw new Error(`Failed to save ${key} to database`);
+      }
     }
   }
 
   private static async getItem<T>(key: string, defaultValue: T, userId?: string): Promise<T> {
-    try {
-      const userKey = this.getUserKey(key, userId);
-      const item = await kv.get<string>(userKey);
-      return item ? JSON.parse(item) : defaultValue;
-    } catch (error) {
-      console.error(`Failed to read from database:`, error);
-      return defaultValue;
+    const userKey = this.getUserKey(key, userId);
+    
+    if (typeof window !== 'undefined') {
+      try {
+        const item = localStorage.getItem(userKey);
+        return item ? JSON.parse(item) : defaultValue;
+      } catch (error) {
+        console.error(`Failed to parse localStorage item:`, error);
+        return defaultValue;
+      }
+    } else {
+      try {
+        const client = await RedisClient.getClient();
+        const item = await client.get(userKey);
+        return item ? JSON.parse(item) : defaultValue;
+      } catch (error) {
+        console.error(`Failed to read from Redis:`, error);
+        return defaultValue;
+      }
     }
   }
 
@@ -177,12 +252,26 @@ export class DatabaseService {
 
   public static async clearAllData(): Promise<void> {
     const userId = this.getUserId();
-    const promises = Object.values(STORAGE_KEYS).map(key => {
-      const userKey = this.getUserKey(key, userId);
-      return kv.del(userKey);
-    });
     
-    await Promise.all(promises);
+    if (typeof window !== 'undefined') {
+      Object.values(STORAGE_KEYS).forEach(key => {
+        const userKey = this.getUserKey(key, userId);
+        localStorage.removeItem(userKey);
+      });
+    } else {
+      try {
+        const client = await RedisClient.getClient();
+        const promises = Object.values(STORAGE_KEYS).map(key => {
+          const userKey = this.getUserKey(key, userId);
+          return client.del(userKey);
+        });
+        
+        await Promise.all(promises);
+      } catch (error) {
+        console.error('Failed to clear data from Redis:', error);
+        throw error;
+      }
+    }
   }
 
   public static async exportData(): Promise<string> {
@@ -260,6 +349,12 @@ export class DatabaseService {
       console.log('Migración completada exitosamente');
     } catch (error) {
       console.error('Error durante la migración:', error);
+    }
+  }
+
+  public static async disconnect(): Promise<void> {
+    if (typeof window === 'undefined') {
+      await RedisClient.disconnect();
     }
   }
 } 
