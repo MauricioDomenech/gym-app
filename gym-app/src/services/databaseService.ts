@@ -15,24 +15,31 @@ class ApiClient {
   private static async call(action: string, key: string, value?: any): Promise<any> {
     const userId = this.getUserId();
     
-    const response = await fetch(this.baseUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        action,
-        key,
-        value,
-        userId
-      })
-    });
+    try {
+      const response = await fetch(this.baseUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          action,
+          key,
+          value,
+          userId
+        })
+      });
 
-    if (!response.ok) {
-      throw new Error(`API call failed: ${response.statusText}`);
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error(`API Error ${response.status}:`, errorText);
+        throw new Error(`API call failed: ${response.status} ${response.statusText}`);
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error(`Network error calling ${this.baseUrl}:`, error);
+      throw error;
     }
-
-    return await response.json();
   }
 
   private static getUserId(): string {
