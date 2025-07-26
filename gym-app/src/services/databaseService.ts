@@ -9,6 +9,14 @@ const STORAGE_KEYS = {
   CURRENT_DAY: 'gym-app-current-day',
 } as const;
 
+function getRedisUrl(): string | undefined {
+  if (typeof window !== 'undefined') {
+    return import.meta.env.VITE_REDIS_URL;
+  } else {
+    return process.env.REDIS_URL || process.env.VITE_REDIS_URL;
+  }
+}
+
 class RedisClient {
   private static instance: any = null;
   private static isConnecting = false;
@@ -33,7 +41,7 @@ class RedisClient {
 
     try {
       const { createClient } = await import('redis');
-      const redisUrl = process.env.REDIS_URL || process.env.VITE_REDIS_URL;
+      const redisUrl = getRedisUrl();
       if (!redisUrl) {
         throw new Error('REDIS_URL not configured');
       }
