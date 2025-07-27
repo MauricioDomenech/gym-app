@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd gym-app && npm run build && npm run build:api",
+  "buildCommand": "cd gym-app && npm run build",
   "outputDirectory": "gym-app/dist",
   "installCommand": "cd gym-app && npm install",
   "devCommand": "cd gym-app && npm run dev"
