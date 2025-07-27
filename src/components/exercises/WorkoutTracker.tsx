@@ -16,6 +16,8 @@ export const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({ exercise }) => {
 
   const [weights, setWeights] = useState<[number, number, number]>([0, 0, 0]);
   const [isSaving, setIsSaving] = useState(false);
+  const [justSaved, setJustSaved] = useState(false);
+  const [saveTimer, setSaveTimer] = useState<NodeJS.Timeout | null>(null);
 
   // Load existing progress
   useEffect(() => {
@@ -27,6 +29,15 @@ export const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({ exercise }) => {
     }
   }, [exercise.id, currentDay, currentWeek, getExerciseProgress]);
 
+  // Cleanup timer on unmount
+  useEffect(() => {
+    return () => {
+      if (saveTimer) {
+        clearTimeout(saveTimer);
+      }
+    };
+  }, [saveTimer]);
+
   const handleWeightChange = (seriesIndex: number, value: string) => {
     const numericValue = parseFloat(value) || 0;
     const newWeights = [...weights] as [number, number, number];
@@ -36,6 +47,12 @@ export const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({ exercise }) => {
 
   const saveProgress = async () => {
     setIsSaving(true);
+    setJustSaved(false);
+    
+    // Limpiar timer anterior si existe
+    if (saveTimer) {
+      clearTimeout(saveTimer);
+    }
     
     try {
       const progress: WorkoutProgress = {
@@ -47,6 +64,15 @@ export const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({ exercise }) => {
       };
 
       await addWorkoutProgress(progress);
+      
+      // Mostrar "Registrado" por 5 segundos
+      setJustSaved(true);
+      const timer = setTimeout(() => {
+        setJustSaved(false);
+        setSaveTimer(null);
+      }, 5000);
+      setSaveTimer(timer);
+      
     } catch (error) {
       console.error('Error saving progress:', error);
     } finally {
@@ -133,8 +159,8 @@ export const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({ exercise }) => {
           )}
         </div>
 
-        {hasProgress && (
-          <div className="flex items-center text-xs text-green-600 dark:text-green-400">
+        {justSaved && (
+          <div className="flex items-center text-xs text-green-600 dark:text-green-400 animate-fade-in">
             <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
               <path
                 fillRule="evenodd"
