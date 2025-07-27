@@ -1,5 +1,6 @@
 import type { WorkoutProgress, ShoppingList, ThemeMode, TableColumn } from '../models/types';
 import { SupabaseService } from './supabaseService';
+import { LocalStorageService } from './localStorage';
 
 const STORAGE_KEYS = {
   WORKOUT_PROGRESS: 'gym-app-workout-progress',
@@ -239,10 +240,26 @@ export class DatabaseService {
   }
 
   public static async saveTableColumns(columns: TableColumn[]): Promise<void> {
-    await ApiClient.set(STORAGE_KEYS.TABLE_COLUMNS, columns);
+    // Guardar en localStorage como prioridad para configuraciones de UI
+    if (typeof window !== 'undefined') {
+      LocalStorageService.saveTableColumns(columns);
+    }
+    
+    // También guardar en base de datos como backup
+    try {
+      await ApiClient.set(STORAGE_KEYS.TABLE_COLUMNS, columns);
+    } catch (error) {
+      console.warn('Failed to save table columns to database:', error);
+    }
   }
 
   public static async getTableColumns(): Promise<TableColumn[]> {
+    // Priorizar localStorage para configuraciones de UI
+    if (typeof window !== 'undefined') {
+      return LocalStorageService.getTableColumns();
+    }
+    
+    // Fallback a base de datos para server-side
     const defaultColumns: TableColumn[] = [
       { key: 'comida', label: 'Comida', visible: true },
       { key: 'alimento', label: 'Alimento', visible: true },

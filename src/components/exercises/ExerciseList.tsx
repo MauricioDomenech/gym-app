@@ -1,6 +1,7 @@
 import React from 'react';
 import { useData } from '../../contexts/DataContext';
 import { WorkoutTracker } from './WorkoutTracker';
+import { CopyWeekData } from './CopyWeekData';
 
 interface ExerciseListProps {
   className?: string;
@@ -31,12 +32,19 @@ export const ExerciseList: React.FC<ExerciseListProps> = ({ className = '' }) =>
     <div className={`${className} bg-white dark:bg-slate-800 rounded-lg shadow`}>
       {/* Header */}
       <div className="px-6 py-4 border-b border-gray-200 dark:border-slate-700">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          Entrenamiento - {currentDay.charAt(0).toUpperCase() + currentDay.slice(1)}
-        </h3>
-        <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-          {workoutData.type}
-        </p>
+        <div className="flex items-center justify-between">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              Entrenamiento - {currentDay.charAt(0).toUpperCase() + currentDay.slice(1)}
+            </h3>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+              {workoutData.type}
+            </p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <CopyWeekData currentWeek={currentWeek} />
+          </div>
+        </div>
       </div>
 
       {/* Exercise List */}
