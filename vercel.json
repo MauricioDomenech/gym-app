@@ -1,6 +1,16 @@
 {
-  "buildCommand": "cd gym-app && npm run build",
-  "outputDirectory": "gym-app/dist",
-  "installCommand": "cd gym-app && npm install",
-  "devCommand": "cd gym-app && npm run dev"
-} 
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "installCommand": "npm install",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
