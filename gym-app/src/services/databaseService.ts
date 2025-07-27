@@ -1,4 +1,5 @@
 import type { WorkoutProgress, ShoppingList, ThemeMode, TableColumn } from '../models/types';
+import { SupabaseService } from './supabaseService';
 
 const STORAGE_KEYS = {
   WORKOUT_PROGRESS: 'gym-app-workout-progress',
@@ -93,28 +94,43 @@ class ApiClient {
 
 export class DatabaseService {
   public static async saveWorkoutProgress(progress: WorkoutProgress[]): Promise<void> {
-    await ApiClient.set(STORAGE_KEYS.WORKOUT_PROGRESS, progress);
+    try {
+      await SupabaseService.saveWorkoutProgress(progress);
+    } catch (error) {
+      console.warn('Supabase failed, falling back to API:', error);
+      await ApiClient.set(STORAGE_KEYS.WORKOUT_PROGRESS, progress);
+    }
   }
 
   public static async getWorkoutProgress(): Promise<WorkoutProgress[]> {
-    return await ApiClient.get(STORAGE_KEYS.WORKOUT_PROGRESS, []);
+    try {
+      return await SupabaseService.getWorkoutProgress();
+    } catch (error) {
+      console.warn('Supabase failed, falling back to API:', error);
+      return await ApiClient.get(STORAGE_KEYS.WORKOUT_PROGRESS, []);
+    }
   }
 
   public static async addWorkoutProgress(progress: WorkoutProgress): Promise<void> {
-    const allProgress = await this.getWorkoutProgress();
-    const existingIndex = allProgress.findIndex(
-      p => p.exerciseId === progress.exerciseId && 
-           p.day === progress.day && 
-           p.week === progress.week
-    );
+    try {
+      await SupabaseService.addWorkoutProgress(progress);
+    } catch (error) {
+      console.warn('Supabase failed, falling back to API:', error);
+      const allProgress = await this.getWorkoutProgress();
+      const existingIndex = allProgress.findIndex(
+        p => p.exerciseId === progress.exerciseId && 
+             p.day === progress.day && 
+             p.week === progress.week
+      );
 
-    if (existingIndex >= 0) {
-      allProgress[existingIndex] = progress;
-    } else {
-      allProgress.push(progress);
+      if (existingIndex >= 0) {
+        allProgress[existingIndex] = progress;
+      } else {
+        allProgress.push(progress);
+      }
+
+      await this.saveWorkoutProgress(allProgress);
     }
-
-    await this.saveWorkoutProgress(allProgress);
   }
 
   public static async getExerciseProgress(
@@ -122,39 +138,69 @@ export class DatabaseService {
     day: string, 
     week: number
   ): Promise<WorkoutProgress | null> {
-    const allProgress = await this.getWorkoutProgress();
-    return allProgress.find(
-      p => p.exerciseId === exerciseId && p.day === day && p.week === week
-    ) || null;
+    try {
+      return await SupabaseService.getExerciseProgress(exerciseId, day, week);
+    } catch (error) {
+      console.warn('Supabase failed, falling back to API:', error);
+      const allProgress = await this.getWorkoutProgress();
+      return allProgress.find(
+        p => p.exerciseId === exerciseId && p.day === day && p.week === week
+      ) || null;
+    }
   }
 
   public static async saveShoppingLists(lists: ShoppingList[]): Promise<void> {
-    await ApiClient.set(STORAGE_KEYS.SHOPPING_LISTS, lists);
+    try {
+      await SupabaseService.saveShoppingLists(lists);
+    } catch (error) {
+      console.warn('Supabase failed, falling back to API:', error);
+      await ApiClient.set(STORAGE_KEYS.SHOPPING_LISTS, lists);
+    }
   }
 
   public static async getShoppingLists(): Promise<ShoppingList[]> {
-    return await ApiClient.get(STORAGE_KEYS.SHOPPING_LISTS, []);
+    try {
+      return await SupabaseService.getShoppingLists();
+    } catch (error) {
+      console.warn('Supabase failed, falling back to API:', error);
+      return await ApiClient.get(STORAGE_KEYS.SHOPPING_LISTS, []);
+    }
   }
 
   public static async addShoppingList(list: ShoppingList): Promise<void> {
-    const allLists = await this.getShoppingLists();
-    allLists.push(list);
-    await this.saveShoppingLists(allLists);
-  }
-
-  public static async updateShoppingList(index: number, list: ShoppingList): Promise<void> {
-    const allLists = await this.getShoppingLists();
-    if (index >= 0 && index < allLists.length) {
-      allLists[index] = list;
+    try {
+      await SupabaseService.addShoppingList(list);
+    } catch (error) {
+      console.warn('Supabase failed, falling back to API:', error);
+      const allLists = await this.getShoppingLists();
+      allLists.push(list);
       await this.saveShoppingLists(allLists);
     }
   }
 
+  public static async updateShoppingList(index: number, list: ShoppingList): Promise<void> {
+    try {
+      await SupabaseService.updateShoppingList(index, list);
+    } catch (error) {
+      console.warn('Supabase failed, falling back to API:', error);
+      const allLists = await this.getShoppingLists();
+      if (index >= 0 && index < allLists.length) {
+        allLists[index] = list;
+        await this.saveShoppingLists(allLists);
+      }
+    }
+  }
+
   public static async deleteShoppingList(index: number): Promise<void> {
-    const allLists = await this.getShoppingLists();
-    if (index >= 0 && index < allLists.length) {
-      allLists.splice(index, 1);
-      await this.saveShoppingLists(allLists);
+    try {
+      await SupabaseService.deleteShoppingList(index);
+    } catch (error) {
+      console.warn('Supabase failed, falling back to API:', error);
+      const allLists = await this.getShoppingLists();
+      if (index >= 0 && index < allLists.length) {
+        allLists.splice(index, 1);
+        await this.saveShoppingLists(allLists);
+      }
     }
   }
 
@@ -228,7 +274,12 @@ export class DatabaseService {
   }
 
   public static async clearAllData(): Promise<void> {
-    await ApiClient.clear();
+    try {
+      await SupabaseService.clearAllData();
+    } catch (error) {
+      console.warn('Supabase failed, falling back to API:', error);
+      await ApiClient.clear();
+    }
   }
 
   public static async exportData(): Promise<string> {
@@ -269,7 +320,7 @@ export class DatabaseService {
   public static async migrateFromLocalStorage(): Promise<void> {
     if (typeof window === 'undefined') return;
     
-    const migrationKey = 'gym-app-migrated-to-redis';
+    const migrationKey = 'gym-app-migrated-to-supabase';
     if (sessionStorage.getItem(migrationKey)) {
       return;
     }
@@ -314,9 +365,9 @@ export class DatabaseService {
       await Promise.all(promises);
       
       sessionStorage.setItem(migrationKey, 'true');
-      console.log('✅ Migración a Redis completada exitosamente');
+      console.log('✅ Migración a Supabase completada exitosamente');
     } catch (error) {
-      console.error('❌ Error durante la migración a Redis:', error);
+      console.error('❌ Error durante la migración a Supabase:', error);
     }
   }
 

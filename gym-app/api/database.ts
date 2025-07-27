@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { createClient } from 'redis';
+import { createClient } from '@supabase/supabase-js';
 
 const STORAGE_KEYS = {
   WORKOUT_PROGRESS: 'gym-app-workout-progress',
@@ -10,39 +10,55 @@ const STORAGE_KEYS = {
   CURRENT_DAY: 'gym-app-current-day',
 } as const;
 
-let redisClient: any = null;
+let supabaseClient: any = null;
 
-async function getRedisClient() {  
-  if (redisClient && redisClient.isOpen) {
-    return redisClient;
+async function getSupabaseClient() {
+  if (supabaseClient) {
+    return supabaseClient;
   }
 
-  const redisUrl = process.env.REDIS_URL;
-  if (!redisUrl) {
-    console.error('❌ REDIS_URL not configured');
-    console.error('Available env vars:', Object.keys(process.env).filter(key => key.includes('REDIS')));
-    throw new Error('REDIS_URL not configured');
+  const supabaseUrl = process.env.SUPABASE_URL || 'https://pyijssavikrgttishppb.supabase.co';
+  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB5aWpzc2F2aWtyZ3R0aXNocHBiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM1OTY2OTMsImV4cCI6MjA2OTE3MjY5M30.NT8AvO6DATBhKwg6aa8_Iy2lMAok5KxcK32fcMG6uYU';
+  
+  if (!supabaseUrl || !supabaseServiceKey) {
+    console.error('❌ Supabase credentials not configured');
+    throw new Error('Supabase credentials not configured');
   }
 
-  console.log('🔄 Connecting to Redis...');
-  redisClient = createClient({ 
-    url: redisUrl,
-    socket: {
-      reconnectStrategy: (retries: number) => Math.min(retries * 50, 500)
-    }
-  });
-
-  redisClient.on('error', (err: Error) => {
-    console.error('❌ Redis Client Error:', err);
-  });
-
-  await redisClient.connect();
-  console.log('✅ Connected to Redis successfully');
-  return redisClient;
+  console.log('🔄 Connecting to Supabase...');
+  supabaseClient = createClient(supabaseUrl, supabaseServiceKey);
+  console.log('✅ Connected to Supabase successfully');
+  return supabaseClient;
 }
 
-function getUserKey(baseKey: string, userId: string): string {
-  return `${userId}:${baseKey}`;
+async function ensureUser(sessionId: string) {
+  const supabase = await getSupabaseClient();
+  
+  const { data: existingUser, error: fetchError } = await supabase
+    .from('users')
+    .select('id')
+    .eq('session_id', sessionId)
+    .single();
+
+  if (fetchError && fetchError.code !== 'PGRST116') {
+    throw fetchError;
+  }
+
+  if (existingUser) {
+    return existingUser.id;
+  }
+
+  const { data: newUser, error: insertError } = await supabase
+    .from('users')
+    .insert({ session_id: sessionId })
+    .select('id')
+    .single();
+
+  if (insertError) {
+    throw insertError;
+  }
+
+  return newUser.id;
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -64,7 +80,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     console.log('📨 Request body:', req.body);
     
-    const client = await getRedisClient();
+    const supabase = await getSupabaseClient();
     const { action, key, value, userId } = req.body;
 
     if (!userId) {
@@ -72,31 +88,70 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: 'userId is required' });
     }
 
-    const userKey = getUserKey(key, userId);
-    console.log('🔑 Performing action:', action, 'for key:', userKey);
+    const dbUserId = await ensureUser(userId);
+    console.log('🔑 Performing action:', action, 'for user:', dbUserId, 'key:', key);
 
     switch (action) {
       case 'get':
-        const item = await client.get(userKey);
-        console.log('📖 Retrieved item:', item ? 'found' : 'not found');
-        return res.status(200).json({ data: item ? JSON.parse(item) : null });
+        const { data: setting, error: getError } = await supabase
+          .from('user_settings')
+          .select('setting_value')
+          .eq('user_id', dbUserId)
+          .eq('setting_key', key)
+          .single();
+
+        if (getError && getError.code !== 'PGRST116') {
+          throw getError;
+        }
+
+        console.log('📖 Retrieved item:', setting ? 'found' : 'not found');
+        return res.status(200).json({ data: setting?.setting_value || null });
 
       case 'set':
-        await client.set(userKey, JSON.stringify(value));
+        const { error: setError } = await supabase
+          .from('user_settings')
+          .upsert({
+            user_id: dbUserId,
+            setting_key: key,
+            setting_value: value,
+            updated_at: new Date().toISOString()
+          }, {
+            onConflict: 'user_id,setting_key'
+          });
+
+        if (setError) {
+          throw setError;
+        }
+
         console.log('💾 Saved item successfully');
         return res.status(200).json({ success: true });
 
       case 'delete':
-        await client.del(userKey);
+        const { error: deleteError } = await supabase
+          .from('user_settings')
+          .delete()
+          .eq('user_id', dbUserId)
+          .eq('setting_key', key);
+
+        if (deleteError) {
+          throw deleteError;
+        }
+
         console.log('🗑️ Deleted item successfully');
         return res.status(200).json({ success: true });
 
       case 'clear':
-        const promises = Object.values(STORAGE_KEYS).map(storageKey => {
-          const clearKey = getUserKey(storageKey, userId);
-          return client.del(clearKey);
-        });
-        await Promise.all(promises);
+        const settingKeys = Object.values(STORAGE_KEYS);
+        const { error: clearError } = await supabase
+          .from('user_settings')
+          .delete()
+          .eq('user_id', dbUserId)
+          .in('setting_key', settingKeys);
+
+        if (clearError) {
+          throw clearError;
+        }
+
         console.log('🧹 Cleared all data successfully');
         return res.status(200).json({ success: true });
 
@@ -111,4 +166,4 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       details: error instanceof Error ? error.message : 'Unknown error' 
     });
   }
-} 
+}
