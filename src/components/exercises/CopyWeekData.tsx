@@ -9,19 +9,14 @@ interface CopyWeekDataProps {
 export const CopyWeekData: React.FC<CopyWeekDataProps> = ({ currentWeek }) => {
   const { workoutProgress, addWorkoutProgress } = useData();
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedWeek, setSelectedWeek] = useState<number>(1);
+  const [selectedWeek, setSelectedWeek] = useState<number>(currentWeek === 1 ? 2 : 1);
   const [isCopying, setIsCopying] = useState(false);
   const [copyResult, setCopyResult] = useState<{ success: boolean; message: string } | null>(null);
 
-  // Obtener semanas disponibles que tienen datos
+  // Obtener todas las semanas disponibles (1 y 2)
   const getAvailableWeeks = () => {
-    const weeks = new Set<number>();
-    workoutProgress.forEach(progress => {
-      if (progress.week !== currentWeek) {
-        weeks.add(progress.week);
-      }
-    });
-    return Array.from(weeks).sort();
+    const allPossibleWeeks = [1, 2]; // Las dos semanas disponibles en la app
+    return allPossibleWeeks.filter(week => week !== currentWeek);
   };
 
   // Contar ejercicios en una semana
@@ -85,9 +80,7 @@ export const CopyWeekData: React.FC<CopyWeekDataProps> = ({ currentWeek }) => {
 
   const availableWeeks = getAvailableWeeks();
 
-  if (availableWeeks.length === 0) {
-    return null; // No mostrar botón si no hay otras semanas con datos
-  }
+  // Siempre mostrar el botón - siempre hay otra semana disponible (1 o 2)
 
   return (
     <>
@@ -142,7 +135,10 @@ export const CopyWeekData: React.FC<CopyWeekDataProps> = ({ currentWeek }) => {
                           Semana {week}
                         </div>
                         <div className="text-xs text-gray-500 dark:text-gray-400">
-                          {getExerciseCount(week)} ejercicios registrados
+                          {getExerciseCount(week) > 0 
+                            ? `${getExerciseCount(week)} ejercicios registrados`
+                            : 'Sin datos (se copiará estructura vacía)'
+                          }
                         </div>
                       </div>
                     </label>
