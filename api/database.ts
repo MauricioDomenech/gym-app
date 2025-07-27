@@ -31,35 +31,7 @@ async function getSupabaseClient() {
   return supabaseClient;
 }
 
-async function ensureUser(sessionId: string) {
-  const supabase = await getSupabaseClient();
-  
-  const { data: existingUser, error: fetchError } = await supabase
-    .from('users')
-    .select('id')
-    .eq('session_id', sessionId)
-    .single();
-
-  if (fetchError && fetchError.code !== 'PGRST116') {
-    throw fetchError;
-  }
-
-  if (existingUser) {
-    return existingUser.id;
-  }
-
-  const { data: newUser, error: insertError } = await supabase
-    .from('users')
-    .insert({ session_id: sessionId })
-    .select('id')
-    .single();
-
-  if (insertError) {
-    throw insertError;
-  }
-
-  return newUser.id;
-}
+// Ya no necesitamos gestión de usuarios - datos globales compartidos
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   console.log('🚀 API called:', req.method, req.url);
@@ -81,22 +53,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     console.log('📨 Request body:', req.body);
     
     const supabase = await getSupabaseClient();
-    const { action, key, value, userId } = req.body;
+    const { action, key, value } = req.body;
 
-    if (!userId) {
-      console.error('❌ Missing userId in request');
-      return res.status(400).json({ error: 'userId is required' });
-    }
-
-    const dbUserId = await ensureUser(userId);
-    console.log('🔑 Performing action:', action, 'for user:', dbUserId, 'key:', key);
+    console.log('🔑 Performing action:', action, 'for key:', key);
 
     switch (action) {
       case 'get':
         const { data: setting, error: getError } = await supabase
           .from('user_settings')
           .select('setting_value')
-          .eq('user_id', dbUserId)
           .eq('setting_key', key)
           .single();
 
@@ -111,12 +76,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         const { error: setError } = await supabase
           .from('user_settings')
           .upsert({
-            user_id: dbUserId,
             setting_key: key,
             setting_value: value,
             updated_at: new Date().toISOString()
           }, {
-            onConflict: 'user_id,setting_key'
+            onConflict: 'setting_key'
           });
 
         if (setError) {
@@ -130,7 +94,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         const { error: deleteError } = await supabase
           .from('user_settings')
           .delete()
-          .eq('user_id', dbUserId)
           .eq('setting_key', key);
 
         if (deleteError) {
@@ -145,7 +108,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         const { error: clearError } = await supabase
           .from('user_settings')
           .delete()
-          .eq('user_id', dbUserId)
           .in('setting_key', settingKeys);
 
         if (clearError) {
