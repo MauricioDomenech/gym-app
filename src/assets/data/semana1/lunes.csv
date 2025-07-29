@@ -3,25 +3,25 @@ Desayuno,Huevos revueltos,2 huevos,12g,10g,1g,0g,140
 Desayuno,Pan integral tostado,25g,2g,1g,17g,2g,86
 Desayuno,Pechuga pavo,60g,18g,1g,0g,0g,78
 Desayuno,Aguacate,25g,1g,4g,1g,1g,40
-SUBTOTAL DESAYUNO,,,,33g,16g,19g,3g,344
+SUBTOTAL DESAYUNO,,,33g,16g,19g,3g,344
 Post-entreno,Proteína de suero,35g,30g,1g,2g,0g,134
 Post-entreno,Avena,15g,2g,1g,9g,1g,54
 Post-entreno,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-ENTRENO,,,,32g,2g,11g,1g,188
+SUBTOTAL POST-ENTRENO,,,32g,2g,11g,1g,188
 Almuerzo,Pechuga pavo,100g,30g,2g,0g,0g,134
 Almuerzo,Atún en lata,60g (agua),17g,1g,0g,0g,75
 Almuerzo,Arroz salvaje,25g (crudo),2g,1g,19g,2g,95
 Almuerzo,Judías verdes,120g,2g,0g,5g,3g,26
-SUBTOTAL ALMUERZO,,,,51g,4g,24g,5g,330
+SUBTOTAL ALMUERZO,,,51g,4g,24g,5g,330
 Merienda,Queso fresco sin lactosa,80g,10g,2g,1g,0g,61
 Merienda,Semillas de lino,4g,1g,1g,1g,1g,17
 Merienda,Moras,60g,1g,0g,7g,4g,32
 Merienda,Atún en lata,100g (agua),29g,1g,0g,0g,123
 Merienda,Jamón serrano,30g,9g,3g,0g,0g,63
-SUBTOTAL MERIENDA,,,,50g,7g,9g,5g,296
-Cena,Pechuga pollo,130g,30g,3g,0g,0g,145
+SUBTOTAL MERIENDA,,,50g,7g,9g,5g,296
+Cena,Pechuga de pollo,150g,34g,5g,0g,0g,165
 Cena,Patata dulce,80g,1g,0g,13g,2g,59
 Cena,Col lombarda,100g,2g,0g,4g,2g,23
 Cena,Aceitunas,3 unidades,0g,1g,1g,1g,15
-SUBTOTAL CENA,,,,38g,2g,18g,5g,249
-TOTALES LUNES,,,,204g,31g,81g,19g,1407
+SUBTOTAL CENA,,,37g,6g,18g,5g,262
+TOTALES LUNES,,,203g,35g,81g,19g,1420

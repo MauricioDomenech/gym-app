@@ -1,29 +1,25 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
 Desayuno,Avena,25g,3g,2g,15g,3g,86
-(1-1.5h pre-cardio),Jamón de york sin grasa,35g,11g,2g,1g,0g,60
-,Semillas de chía,6g,1g,2g,2g,2g,30
-,Aguacate,25g,1g,3g,1g,1g,40
-,Frambuesas,70g,1g,0g,8g,5g,37
-SUBTOTAL DESAYUNO,,,,17g,9g,27g,11g,253
-Post-cardio,Proteína de suero,35g,30g,1g,2g,0g,134
-,Pera,100g,0g,0g,13g,3g,50
-,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-CARDIO,,,,30g,1g,15g,3g,184
+Desayuno,Jamón de york sin grasa,35g,11g,2g,1g,0g,60
+Desayuno,Semillas de chía,6g,1g,2g,2g,2g,30
+Desayuno,Aguacate,25g,1g,3g,1g,1g,40
+Desayuno,Frambuesas,70g,1g,0g,8g,5g,37
+SUBTOTAL DESAYUNO,,,17g,9g,27g,11g,253
+Post-entreno,Proteína de suero,35g,30g,1g,2g,0g,134
+Post-entreno,Pera,100g,0g,0g,13g,3g,50
+Post-entreno,Creatina,6g,0g,0g,0g,0g,0
+SUBTOTAL POST-CARDIO,,,30g,1g,15g,3g,184
 Almuerzo,Alubias blancas,40g (crudo),9g,1g,20g,6g,122
-,Salmón ahumado,60g,13g,5g,0g,0g,105
-,Zanahorias ralladas,100g,1g,0g,8g,3g,35
-,Aceite oliva,2ml,0g,2g,0g,0g,18
-SUBTOTAL ALMUERZO,,,,23g,8g,28g,9g,280
+Almuerzo,Ternera magra,85g,25g,4g,0g,0g,174
+Almuerzo,Zanahorias ralladas,100g,1g,0g,8g,3g,35
+SUBTOTAL ALMUERZO,,,35g,5g,28g,9g,331
 Merienda,Yogur sin lactosa,100g,3g,3g,5g,0g,53
-,Nueces pecanas,8g,1g,6g,1g,1g,57
-,Atún en lata,140g (agua),41g,1g,0g,0g,171
-,Mango,70g,1g,0g,11g,2g,43
-,Jamón serrano,50g,15g,5g,0g,0g,104
-SUBTOTAL MERIENDA,,,,61g,15g,17g,3g,428
-Cena,Lenguado,140g,26g,1g,0g,0g,100
-,Pechuga de pollo,50g,12g,2g,0g,0g,66
-,Arroz integral,20g (crudo),2g,1g,15g,1g,76
-,Puerros,140g,2g,0g,10g,2g,47
-,Aceitunas,3 unidades,0g,1g,1g,1g,15
-SUBTOTAL CENA,,,,42g,5g,26g,4g,304
-TOTALES MARTES,,,,170g,37g,108g,25g,1395
+Merienda,Atún en lata,200g (agua),58g,1g,0g,0g,234
+Merienda,Jamón serrano,50g,15g,5g,0g,0g,104
+SUBTOTAL MERIENDA,,,76g,9g,5g,0g,391
+Cena,Salmón fresco,125g,29g,6g,0g,0g,188
+Cena,Arroz integral,10g (crudo),1g,0g,8g,1g,38
+Cena,Puerros,140g,2g,0g,10g,2g,47
+Cena,Aceitunas,3 unidades,0g,1g,1g,1g,15
+SUBTOTAL CENA,,,32g,7g,19g,4g,288
+TOTALES MARTES,,,190g,35g,97g,23g,1447

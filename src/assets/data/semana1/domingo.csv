@@ -1,25 +1,24 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
 Desayuno,Huevos revueltos,3 huevos,18g,15g,1g,0g,210
-Desayuno,Proteína de suero,15g,13g,0g,1g,0g,56
+Desayuno,Proteína de suero,30g,26g,1g,2g,0g,105
 Desayuno,Avena,20g,2g,1g,12g,2g,72
 Desayuno,Creatina,6g,0g,0g,0g,0g,0
 Desayuno,Aguacate,25g,1g,4g,1g,1g,40
-SUBTOTAL DESAYUNO,,,,34g,20g,15g,3g,378
-Almuerzo,Pechuga de pollo,120g,28g,3g,0g,0g,133
+SUBTOTAL DESAYUNO,,,47g,21g,16g,3g,427
+Almuerzo,Pechuga de pollo,130g,30g,3g,0g,0g,144
 Almuerzo,Arroz integral,40g (crudo),3g,1g,30g,2g,140
 Almuerzo,Pimiento rojo,100g,1g,0g,6g,2g,26
 Almuerzo,Calabacín,80g,1g,0g,3g,1g,16
-Almuerzo,Aceite oliva,3ml,0g,3g,0g,0g,27
-SUBTOTAL ALMUERZO,,,,33g,7g,39g,5g,342
-Merienda,Atún en lata,140g (agua),41g,1g,0g,0g,171
+Almuerzo,Aceite oliva,1ml,0g,1g,0g,0g,9
+SUBTOTAL ALMUERZO,,,35g,5g,39g,5g,335
+Merienda,Atún en lata,170g (agua),50g,1g,0g,0g,208
 Merienda,Yogur griego sin lactosa,100g,10g,6g,6g,0g,102
-Merienda,Pavo lonchas,50g,15g,1g,0g,0g,65
+Merienda,Pavo lonchas,70g,21g,1g,0g,0g,91
 Merienda,Nueces,6g,1g,4g,1g,1g,40
-SUBTOTAL MERIENDA,,,,67g,12g,7g,1g,378
+SUBTOTAL MERIENDA,,,82g,12g,7g,1g,441
 Cena,Lubina,140g,27g,2g,0g,0g,126
-Cena,Bacalao,80g,16g,1g,0g,0g,76
 Cena,Judías verdes,120g,2g,0g,5g,3g,26
 Cena,Patata cocida,70g,2g,0g,11g,2g,51
 Cena,Aceitunas,5 unidades,0g,2g,1g,1g,25
-SUBTOTAL CENA,,,,47g,5g,17g,6g,304
-TOTALES DOMINGO,,,,181g,44g,76g,15g,1402
+SUBTOTAL CENA,,,31g,4g,17g,6g,228
+TOTALES DOMINGO,,,195g,42g,79g,15g,1431
