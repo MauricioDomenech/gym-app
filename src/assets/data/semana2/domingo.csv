@@ -1,20 +1,20 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Pancakes protéicos,7 claras + 25g harina de avena,26g,1g,18g,3g,185
+Desayuno,Pancakes protéicos,8 claras + 25g harina de avena,29g,1g,18g,3g,198
 Desayuno,Creatina,6g,0g,0g,0g,0g,0
-Desayuno,Aguacate,20g,1g,2g,1g,1g,32
-Desayuno,Nueces,4g,1g,3g,1g,1g,28
-SUBTOTAL DESAYUNO,,,28g,6g,20g,5g,245
-Almuerzo,Arroz con pollo y verduras,210g con pechuga extra,58g,6g,38g,3g,410
+Desayuno,Aguacate,13g,0g,2g,1g,1g,21
+Desayuno,Nueces,2g,1g,1g,0g,0g,14
+SUBTOTAL DESAYUNO,,,30g,4g,19g,4g,233
+Almuerzo,Arroz con pollo y verduras,200g con pechuga extra,58g,5g,35g,3g,385
 Almuerzo,Ensalada mediterránea,80g,2g,5g,3g,2g,56
-SUBTOTAL ALMUERZO,,,60g,11g,41g,5g,466
-Merienda,Frutos secos mixtos,8g,1g,5g,1g,1g,51
+SUBTOTAL ALMUERZO,,,60g,10g,38g,5g,441
+Merienda,Frutos secos mixtos,4g,1g,3g,0g,1g,25
 Merienda,Infusión de menta,250ml,0g,0g,0g,0g,0
-Merienda,Yogur griego natural,100g,10g,5g,5g,0g,92
-Merienda,Jamón serrano,150g,47g,17g,0g,0g,316
-SUBTOTAL MERIENDA,,,58g,27g,6g,1g,459
+Merienda,Yogur griego natural,70g,7g,4g,4g,0g,64
+Merienda,Jamón serrano,158g,49g,17g,0g,0g,333
+SUBTOTAL MERIENDA,,,57g,24g,4g,1g,422
 Cena,Salmón a la plancha,200g,46g,10g,0g,0g,272
 Cena,Verduras al horno,100g,2g,4g,8g,4g,65
-Cena,Patata al vapor,30g,1g,0g,5g,1g,22
-Cena,Aceitunas gordal,2 unidades,0g,1g,1g,1g,10
-SUBTOTAL CENA,,,49g,15g,14g,6g,369
-TOTALES DOMINGO SEMANA 2,,,195g,59g,81g,17g,1439
+Cena,Patata al vapor,15g,0g,0g,2g,0g,11
+Cena,Aceitunas gordal,1 unidad,0g,0g,0g,0g,5
+SUBTOTAL CENA,,,48g,14g,10g,4g,353
+TOTALES DOMINGO SEMANA 2,,,195g,52g,71g,14g,1449
