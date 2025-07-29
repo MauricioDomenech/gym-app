@@ -1,27 +1,31 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Huevos escalfados,2 huevos,12g,10g,1g,0g,140
-Desayuno,Proteína de suero,15g,13g,1g,1g,0g,59
-Desayuno,Chorizo ibérico,15g,4g,5g,0g,0g,64
-Desayuno,Creatina,6g,0g,0g,0g,0g,0
-Desayuno,Pan integral de centeno,25g,2g,1g,17g,3g,83
-Desayuno,Aguacate,35g,1g,5g,1g,2g,55
-SUBTOTAL DESAYUNO,,,32g,22g,20g,5g,401
-Post-cardio,Yogur griego 0% grasa,90g,9g,0g,7g,0g,64
-Post-cardio,Sandía,110g,1g,0g,7g,0g,30
-SUBTOTAL POST-CARDIO,,,10g,0g,14g,0g,94
-Almuerzo,Chuletón de buey,100g,24g,5g,0g,0g,129
-Almuerzo,Arroz integral,40g (crudo),3g,1g,30g,2g,138
-Almuerzo,Pimientos del padrón,80g,2g,0g,3g,2g,20
-Almuerzo,Aceite oliva,3ml,0g,3g,0g,0g,27
-SUBTOTAL ALMUERZO,,,29g,9g,33g,4g,314
-Merienda,Yogur natural desnatado,130g,5g,0g,8g,0g,54
-Merienda,Semillas de chía,6g,1g,2g,2g,2g,30
-Merienda,Mejillones en lata,80g (agua),18g,1g,4g,0g,100
-Merienda,Lomo de sajonia,25g,6g,2g,1g,0g,39
-SUBTOTAL MERIENDA,,,30g,5g,15g,2g,223
-Cena,Lubina,110g,21g,1g,0g,0g,92
-Cena,Garbanzos cocidos,50g,4g,1g,10g,4g,64
-Cena,Rúcula,70g,2g,1g,2g,2g,18
-Cena,Aceitunas manzanilla,5 unidades,0g,2g,1g,1g,25
-SUBTOTAL CENA,,,27g,5g,13g,7g,199
-TOTALES SÁBADO,,,128g,41g,95g,18g,1231
+**Desayuno**,Huevos escalfados,2 huevos,12g,10g,1g,0g,140
+**(1-1.5h pre-cardio)**,Jamón de york sin grasa,30g,10g,2g,1g,0g,51
+,Chorizo ibérico,12g,3g,4g,0g,0g,51
+,Pan integral de centeno,20g,2g,1g,14g,2g,66
+,Aguacate,25g,1g,4g,1g,1g,40
+**SUBTOTAL DESAYUNO**,,,,**28g**,**21g**,**17g**,**3g**,**348**
+**Post-cardio**,Proteína de suero,35g,30g,1g,2g,0g,134
+,Yogur griego 0% grasa,70g,7g,0g,5g,0g,48
+,Sandía,80g,1g,0g,6g,0g,22
+,Creatina,6g,0g,0g,0g,0g,0
+**SUBTOTAL POST-CARDIO**,,,,**38g**,**1g**,**13g**,**0g**,**204**
+**Almuerzo**,Chuletón de buey,100g,24g,5g,0g,0g,129
+,Atún en lata,70g (agua),20g,1g,0g,0g,87
+,Arroz integral,25g (crudo),2g,1g,19g,1g,95
+,Pimientos del padrón,80g,2g,0g,3g,2g,20
+,Aceite oliva,1ml,0g,1g,0g,0g,9
+**SUBTOTAL ALMUERZO**,,,,**48g**,**8g**,**22g**,**3g**,**340**
+**Merienda**,Yogur natural desnatado,100g,4g,0g,6g,0g,42
+,Semillas de chía,4g,1g,1g,1g,1g,20
+,Mejillones en lata,90g (agua),20g,1g,4g,0g,113
+,Lomo de sajonia,30g,7g,2g,1g,0g,47
+,Pechuga de pavo,40g,12g,1g,0g,0g,52
+**SUBTOTAL MERIENDA**,,,,**44g**,**5g**,**12g**,**1g**,**274**
+**Cena**,Lubina,120g,23g,1g,0g,0g,100
+,Pechuga de pollo,50g,12g,2g,0g,0g,66
+,Garbanzos cocidos,30g,2g,1g,6g,2g,38
+,Rúcula,70g,2g,1g,2g,2g,18
+,Aceitunas manzanilla,3 unidades,0g,1g,1g,1g,15
+**SUBTOTAL CENA**,,,,**39g**,**6g**,**9g**,**5g**,**237**
+**TOTALES SÁBADO**,,,,**197g**,**41g**,**73g**,**12g**,**1403**

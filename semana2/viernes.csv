@@ -1,27 +1,31 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Revuelto de claras,3 claras,11g,0g,1g,0g,51
-Desayuno,Copos de avena,25g,3g,1g,15g,2g,86
-Desayuno,Aguacate,40g,1g,6g,1g,2g,64
-Desayuno,Semillas de lino molidas,5g,1g,2g,1g,2g,21
-SUBTOTAL DESAYUNO,,,16g,9g,18g,6g,222
-Post-entreno,Proteína de suero,30g,26g,1g,2g,0g,115
-Post-entreno,Avena,20g,2g,1g,12g,2g,72
-Post-entreno,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-ENTRENO,,,28g,2g,14g,2g,187
-Almuerzo,Entrecot de ternera,110g,22g,8g,0g,0g,150
-Almuerzo,Arroz jazmín,45g (crudo),3g,1g,35g,1g,161
-Almuerzo,Berenjena,140g,1g,0g,8g,4g,33
-Almuerzo,Aceite oliva,3ml,0g,3g,0g,0g,27
-SUBTOTAL ALMUERZO,,,26g,12g,43g,5g,371
-Merienda,Yogur griego natural,100g,10g,5g,5g,0g,97
-Merienda,Moras,60g,1g,0g,7g,3g,30
-Merienda,Piñones,8g,1g,5g,1g,1g,57
-Merienda,Queso fresco en dados,60g,7g,2g,2g,0g,49
-SUBTOTAL MERIENDA,,,19g,12g,15g,4g,233
-Cena,Sepia,120g,20g,1g,2g,0g,98
-Cena,Patata nueva,120g,1g,0g,21g,3g,87
-Cena,Espinacas frescas,140g,3g,1g,3g,3g,29
-Cena,Aceitunas arbequina,6 unidades,0g,3g,1g,1g,30
-Cena,Palitos de cangrejo,50g,10g,1g,5g,0g,64
-SUBTOTAL CENA,,,34g,6g,32g,7g,308
-TOTALES VIERNES,,,123g,41g,122g,24g,1321
+**Desayuno**,Revuelto de claras,3 claras,11g,0g,1g,0g,51
+**(1-1.5h pre-entreno)**,Copos de avena,20g,2g,1g,12g,2g,69
+,Jamón de york sin grasa,40g,13g,2g,1g,0g,68
+,Aguacate,30g,1g,4g,1g,1g,48
+,Semillas de lino molidas,4g,1g,1g,1g,1g,17
+**SUBTOTAL DESAYUNO**,,,,**28g**,**8g**,**16g**,**4g**,**253**
+**Post-entreno**,Proteína de suero,35g,30g,1g,2g,0g,134
+,Avena,15g,1g,1g,9g,1g,54
+,Creatina,6g,0g,0g,0g,0g,0
+**SUBTOTAL POST-ENTRENO**,,,,**31g**,**2g**,**11g**,**1g**,**188**
+**Almuerzo**,Entrecot de ternera,110g,22g,8g,0g,0g,150
+,Atún en lata,80g (agua),23g,1g,0g,0g,100
+,Arroz jazmín,25g (crudo),2g,1g,19g,1g,90
+,Berenjena,140g,1g,0g,8g,4g,33
+,Aceite oliva,1ml,0g,1g,0g,0g,9
+**SUBTOTAL ALMUERZO**,,,,**48g**,**11g**,**27g**,**5g**,**382**
+**Merienda**,Yogur griego natural,80g,8g,4g,4g,0g,78
+,Moras,50g,1g,0g,6g,3g,25
+,Piñones,6g,1g,4g,1g,1g,43
+,Queso fresco en dados,70g,8g,2g,2g,0g,57
+,Pechuga de pavo,50g,15g,1g,0g,0g,68
+,Atún en lata,40g (agua),12g,0g,0g,0g,49
+**SUBTOTAL MERIENDA**,,,,**45g**,**11g**,**13g**,**4g**,**320**
+**Cena**,Sepia,130g,22g,1g,2g,0g,106
+,Pechuga de pollo,60g,14g,3g,0g,0g,79
+,Patata nueva,80g,1g,0g,14g,2g,58
+,Espinacas frescas,140g,3g,1g,3g,3g,29
+,Aceitunas arbequina,3 unidades,0g,1g,1g,1g,15
+**SUBTOTAL CENA**,,,,**40g**,**6g**,**20g**,**6g**,**287**
+**TOTALES VIERNES**,,,,**192g**,**38g**,**87g**,**20g**,**1430**

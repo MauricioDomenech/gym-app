@@ -1,26 +1,28 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Claras de huevo,3 claras,11g,0g,1g,0g,51
-Desayuno,Pan integral tostado,35g,3g,2g,23g,4g,121
-Desayuno,Jamón de york sin grasa,40g,13g,2g,1g,0g,68
-Desayuno,Aguacate,40g,1g,6g,1g,2g,64
-SUBTOTAL DESAYUNO,,,28g,10g,26g,6g,304
-Post-entreno,Proteína de suero,30g,26g,1g,2g,0g,115
-Post-entreno,Avena,20g,2g,1g,12g,2g,72
-Post-entreno,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-ENTRENO,,,28g,2g,14g,2g,187
-Almuerzo,Ternera magra,120g,26g,5g,0g,0g,139
-Almuerzo,Quinoa,40g (crudo),5g,3g,26g,3g,147
-Almuerzo,Brócoli,150g,4g,1g,10g,5g,50
-Almuerzo,Aceite oliva,4ml,0g,4g,0g,0g,36
-SUBTOTAL ALMUERZO,,,35g,13g,36g,8g,372
-Merienda,Requesón 0% grasa,140g,17g,1g,5g,0g,93
-Merienda,Nueces,8g,1g,5g,1g,1g,53
-Merienda,Fresas,80g,1g,0g,6g,2g,26
-Merienda,Bonito en lata,60g (agua),17g,1g,0g,0g,71
-SUBTOTAL MERIENDA,,,36g,7g,12g,3g,243
-Cena,Merluza,140g,25g,2g,0g,0g,113
-Cena,Boniato,110g,1g,0g,19g,3g,81
-Cena,Espárragos verdes,130g,3g,0g,5g,3g,26
-Cena,Aceitunas negras,6 unidades,0g,3g,1g,1g,30
-SUBTOTAL CENA,,,29g,5g,25g,7g,250
-TOTALES LUNES,,,156g,37g,113g,26g,1356
+**Desayuno**,Claras de huevo,3 claras,11g,0g,1g,0g,51
+**(1-1.5h pre-entreno)**,Pan integral tostado,30g,3g,2g,20g,3g,103
+,Jamón de york sin grasa,60g,19g,3g,1g,0g,102
+,Aguacate,30g,1g,4g,1g,1g,48
+**SUBTOTAL DESAYUNO**,,,,**34g**,**9g**,**23g**,**4g**,**304**
+**Post-entreno**,Proteína de suero,35g,30g,1g,2g,0g,134
+,Avena,18g,2g,1g,11g,1g,65
+,Creatina,6g,0g,0g,0g,0g,0
+**SUBTOTAL POST-ENTRENO**,,,,**32g**,**2g**,**13g**,**1g**,**199**
+**Almuerzo**,Ternera magra,120g,26g,5g,0g,0g,139
+,Atún en lata,60g (agua),17g,1g,0g,0g,75
+,Quinoa,25g (crudo),3g,2g,16g,2g,92
+,Brócoli,150g,4g,1g,10g,5g,50
+,Aceite oliva,2ml,0g,2g,0g,0g,18
+**SUBTOTAL ALMUERZO**,,,,**50g**,**11g**,**26g**,**7g**,**374**
+**Merienda**,Requesón 0% grasa,130g,16g,1g,4g,0g,86
+,Nueces,6g,1g,4g,1g,1g,40
+,Fresas,80g,1g,0g,6g,2g,26
+,Bonito en lata,70g (agua),20g,1g,0g,0g,83
+,Pechuga de pavo,30g,9g,1g,0g,0g,41
+**SUBTOTAL MERIENDA**,,,,**47g**,**7g**,**11g**,**3g**,**276**
+**Cena**,Hamburguesas de pollo,140g,30g,7g,0g,0g,170
+,Boniato,90g,1g,0g,15g,2g,66
+,Espárragos verdes,130g,3g,0g,5g,3g,26
+,Aceitunas negras,4 unidades,0g,2g,1g,1g,20
+**SUBTOTAL CENA**,,,,**34g**,**9g**,**21g**,**6g**,**282**
+**TOTALES LUNES**,,,,**197g**,**38g**,**94g**,**21g**,**1435**
