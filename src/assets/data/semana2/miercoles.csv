@@ -1,26 +1,29 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Tortilla de claras,4 claras,14g,0g,1g,0g,68
-Desayuno,Pan de centeno tostado,30g,2g,1g,19g,4g,94
-Desayuno,Lomo embuchado,30g,8g,7g,0g,0g,83
-Desayuno,Aguacate,35g,1g,6g,1g,2g,53
-SUBTOTAL DESAYUNO,,,25g,14g,21g,6g,298
-Post-entreno,Proteína de suero,30g,26g,1g,2g,0g,115
-Post-entreno,Avena,20g,2g,1g,12g,2g,72
-Post-entreno,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-ENTRENO,,,28g,2g,14g,2g,187
-Almuerzo,Solomillo de cerdo,120g,28g,6g,0g,0g,152
-Almuerzo,Pasta integral,40g (crudo),6g,1g,29g,3g,148
-Almuerzo,Tomates cherry,120g,1g,0g,4g,2g,20
-Almuerzo,Aceite oliva,4ml,0g,4g,0g,0g,36
-SUBTOTAL ALMUERZO,,,35g,11g,33g,5g,356
-Merienda,Queso fresco batido 0%,120g,14g,0g,5g,0g,75
-Merienda,Pistachos sin sal,10g,2g,6g,2g,1g,56
-Merienda,Jamón ibérico,35g,10g,5g,0g,0g,77
-Merienda,Mandarina,80g,1g,0g,7g,2g,32
-SUBTOTAL MERIENDA,,,27g,11g,14g,3g,240
-Cena,Emperador,120g,27g,2g,0g,0g,120
-Cena,Alubias blancas,35g (crudo),8g,1g,18g,6g,108
-Cena,Judías verdes,120g,2g,0g,5g,3g,26
-Cena,Aceitunas mixtas,5 unidades,0g,2g,1g,1g,25
-SUBTOTAL CENA,,,37g,5g,24g,10g,279
-TOTALES MIÉRCOLES,,,152g,43g,106g,26g,1360
+**Desayuno**,Tortilla de claras,4 claras,14g,0g,1g,0g,68
+**(1-1.5h pre-entreno)**,Pan de centeno tostado,25g,2g,1g,16g,3g,78
+,Lomo embuchado,35g,9g,8g,0g,0g,97
+,Aguacate,25g,1g,3g,1g,1g,40
+**SUBTOTAL DESAYUNO**,,,,**26g**,**12g**,**18g**,**4g**,**283**
+**Post-entreno**,Proteína de suero,35g,30g,1g,2g,0g,134
+,Avena,15g,1g,1g,9g,1g,54
+,Creatina,6g,0g,0g,0g,0g,0
+**SUBTOTAL POST-ENTRENO**,,,,**31g**,**2g**,**11g**,**1g**,**188**
+**Almuerzo**,Solomillo de cerdo,120g,28g,6g,0g,0g,152
+,Atún en lata,70g (agua),20g,1g,0g,0g,87
+,Pasta integral,25g (crudo),4g,1g,18g,2g,93
+,Tomates cherry,120g,1g,0g,4g,2g,20
+,Aceite oliva,2ml,0g,2g,0g,0g,18
+**SUBTOTAL ALMUERZO**,,,,**53g**,**10g**,**22g**,**4g**,**370**
+**Merienda**,Queso fresco batido 0%,100g,12g,0g,4g,0g,63
+,Pistachos sin sal,8g,2g,5g,2g,1g,45
+,Jamón ibérico,40g,11g,6g,0g,0g,88
+,Mandarina,80g,1g,0g,7g,2g,32
+,Pechuga de pavo,35g,11g,1g,0g,0g,45
+**SUBTOTAL MERIENDA**,,,,**37g**,**12g**,**13g**,**3g**,**273**
+**Cena**,Emperador,130g,29g,2g,0g,0g,130
+,Pechuga de pollo,50g,12g,2g,0g,0g,66
+,Alubias blancas,20g (crudo),5g,1g,11g,4g,72
+,Judías verdes,120g,2g,0g,5g,3g,26
+,Aceitunas mixtas,3 unidades,0g,1g,1g,1g,15
+**SUBTOTAL CENA**,,,,**48g**,**6g**,**17g**,**8g**,**309**
+**TOTALES MIÉRCOLES**,,,,**193g**,**40g**,**77g**,**20g**,**1381**

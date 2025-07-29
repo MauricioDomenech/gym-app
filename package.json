@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "node server.js",
-    "dev:full": "concurrently \"npm run server\" \"npm run dev\""
+    "dev:full": "concurrently \"npm run server\" \"npm run dev\"",
+    "sync-data": "node sync-data.js",
+    "build:sync": "npm run sync-data && npm run build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.52.1",

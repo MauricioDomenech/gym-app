@@ -46,14 +46,17 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
     const initializeData = async () => {
       try {
         setIsLoading(true);
+        console.log('🚀 Inicializando datos de la aplicación...');
         
         const shouldMigrate = typeof window !== 'undefined' && 
                              !localStorage.getItem('gym-app-migrated');
         
         if (shouldMigrate) {
+          console.log('🔄 Ejecutando migración desde localStorage...');
           await DatabaseService.migrateFromLocalStorage();
         }
 
+        console.log('📱 Cargando configuraciones desde localStorage...');
         const [savedWeek, savedDay, savedProgress, savedColumns] = await Promise.all([
           DatabaseService.getCurrentWeek(),
           DatabaseService.getCurrentDay(),
@@ -61,16 +64,25 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
           DatabaseService.getTableColumns(),
         ]);
 
+        console.log('✅ Configuraciones cargadas:', {
+          week: savedWeek,
+          day: savedDay,
+          progressCount: savedProgress.length,
+          columnsCount: savedColumns.length
+        });
+
         setCurrentWeekState(savedWeek);
         setCurrentDayState(savedDay as DayOfWeek);
         setWorkoutProgress(savedProgress);
         setTableColumns(savedColumns);
         
         await DatabaseService.initializeTheme();
+        console.log('🎨 Tema inicializado');
       } catch (error) {
-        console.error('Error initializing data:', error);
+        console.error('❌ Error inicializando datos:', error);
       } finally {
         setIsLoading(false);
+        console.log('✅ Inicialización completada');
       }
     };
 

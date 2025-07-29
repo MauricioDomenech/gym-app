@@ -1,26 +1,28 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
 Desayuno,Huevos revueltos,2 huevos,12g,10g,1g,0g,140
-Desayuno,Pan integral tostado,30g,3g,1g,20g,3g,103
-Desayuno,Atún en lata,60g (agua),17g,1g,0g,0g,75
-Desayuno,Aguacate,40g,1g,6g,1g,2g,64
-SUBTOTAL DESAYUNO,,,33g,18g,22g,5g,382
-Post-entreno,Proteína de suero,30g,26g,1g,2g,0g,115
-Post-entreno,Avena,18g,2g,1g,11g,1g,65
+Desayuno,Pan integral tostado,20g,2g,1g,13g,2g,69
+Desayuno,Atún en lata,80g (agua),23g,1g,0g,0g,100
+Desayuno,Aguacate,30g,1g,4g,1g,2g,48
+SUBTOTAL DESAYUNO,,,,38g,16g,15g,4g,357
+Post-entreno,Proteína de suero,35g,30g,1g,2g,0g,134
+Post-entreno,Avena,12g,1g,1g,7g,1g,43
 Post-entreno,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-ENTRENO,,,28g,2g,13g,1g,180
-Almuerzo,Conejo,110g,24g,3g,0g,0g,120
-Almuerzo,Pasta integral,35g (crudo),5g,1g,25g,3g,129
-Almuerzo,Calabaza,140g,1g,0g,10g,2g,44
-Almuerzo,Aceite oliva,3ml,0g,3g,0g,0g,27
-SUBTOTAL ALMUERZO,,,30g,7g,35g,5g,320
-Merienda,Yogur griego sin lactosa,70g,7g,4g,4g,0g,67
+SUBTOTAL POST-ENTRENO,,,,31g,2g,9g,1g,177
+Almuerzo,Conejo,130g,29g,4g,0g,0g,142
+Almuerzo,Pasta integral,25g (crudo),4g,1g,18g,2g,92
+Almuerzo,Calabaza,100g,1g,0g,7g,1g,31
+Almuerzo,Aceite oliva,0ml,0g,0g,0g,0g,0
+SUBTOTAL ALMUERZO,,,,34g,5g,25g,3g,265
+Merienda,Yogur griego sin lactosa,80g,8g,5g,5g,0g,76
 Merienda,Semillas girasol,6g,1g,3g,1g,1g,34
-Merienda,Jamón serrano,45g,14g,5g,0g,0g,94
+Merienda,Jamón serrano,60g,18g,6g,0g,0g,125
 Merienda,Kiwi,100g,1g,0g,11g,3g,45
-SUBTOTAL MERIENDA,,,23g,12g,16g,4g,240
-Cena,Boquerones frescos,100g,23g,1g,0g,0g,104
-Cena,Judías pintas,30g (crudo),7g,1g,17g,7g,100
-Cena,Apio,90g,1g,0g,3g,2g,14
-Cena,Aceitunas,5 unidades,0g,2g,1g,1g,25
-SUBTOTAL CENA,,,31g,4g,21g,10g,243
-TOTALES MIÉRCOLES,,,145g,43g,107g,25g,1365
+Merienda,Atún en lata,40g (agua),12g,0g,0g,0g,49
+SUBTOTAL MERIENDA,,,,40g,14g,17g,4g,329
+Cena,Boquerones frescos,120g,28g,1g,0g,0g,125
+Cena,Judías pintas,20g (crudo),5g,1g,11g,5g,67
+Cena,Brócoli,90g,3g,0g,4g,3g,25
+Cena,Aceitunas,3 unidades,0g,1g,1g,1g,15
+Cena,Pechuga de pavo,30g,9g,0g,0g,0g,37
+SUBTOTAL CENA,,,,45g,3g,16g,9g,269
+TOTALES MIÉRCOLES,,,,188g,40g,105g,21g,1398

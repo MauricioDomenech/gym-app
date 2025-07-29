@@ -275,18 +275,50 @@ export class DatabaseService {
   }
 
   public static async saveCurrentWeek(week: number): Promise<void> {
-    await ApiClient.set(STORAGE_KEYS.CURRENT_WEEK, week);
+    // Guardar en localStorage como prioridad para estado de navegación
+    if (typeof window !== 'undefined') {
+      LocalStorageService.saveCurrentWeek(week);
+    }
+    
+    // También guardar en base de datos como backup
+    try {
+      await ApiClient.set(STORAGE_KEYS.CURRENT_WEEK, week);
+    } catch (error) {
+      console.warn('Failed to save current week to database:', error);
+    }
   }
 
   public static async getCurrentWeek(): Promise<number> {
+    // Priorizar localStorage para estado de navegación
+    if (typeof window !== 'undefined') {
+      return LocalStorageService.getCurrentWeek();
+    }
+    
+    // Fallback a base de datos para server-side
     return await ApiClient.get(STORAGE_KEYS.CURRENT_WEEK, 1);
   }
 
   public static async saveCurrentDay(day: string): Promise<void> {
-    await ApiClient.set(STORAGE_KEYS.CURRENT_DAY, day);
+    // Guardar en localStorage como prioridad para estado de navegación
+    if (typeof window !== 'undefined') {
+      LocalStorageService.saveCurrentDay(day);
+    }
+    
+    // También guardar en base de datos como backup
+    try {
+      await ApiClient.set(STORAGE_KEYS.CURRENT_DAY, day);
+    } catch (error) {
+      console.warn('Failed to save current day to database:', error);
+    }
   }
 
   public static async getCurrentDay(): Promise<string> {
+    // Priorizar localStorage para estado de navegación
+    if (typeof window !== 'undefined') {
+      return LocalStorageService.getCurrentDay();
+    }
+    
+    // Fallback a base de datos para server-side
     return await ApiClient.get(STORAGE_KEYS.CURRENT_DAY, 'lunes');
   }
 
@@ -339,6 +371,7 @@ export class DatabaseService {
     
     const migrationKey = 'gym-app-migrated-to-supabase';
     if (sessionStorage.getItem(migrationKey)) {
+      console.log('✅ Migración ya completada anteriormente');
       return;
     }
 

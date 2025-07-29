@@ -14,6 +14,7 @@ export class LocalStorageService {
   private static setItem<T>(key: string, value: T): void {
     try {
       localStorage.setItem(key, JSON.stringify(value));
+      console.log(`📱 LocalStorage guardado: ${key}`, value);
     } catch (error) {
       console.error(`Failed to save to localStorage:`, error);
     }
@@ -22,7 +23,13 @@ export class LocalStorageService {
   private static getItem<T>(key: string, defaultValue: T): T {
     try {
       const item = localStorage.getItem(key);
-      return item ? JSON.parse(item) : defaultValue;
+      const result = item ? JSON.parse(item) : defaultValue;
+      if (item) {
+        console.log(`📱 LocalStorage cargado: ${key}`, result);
+      } else {
+        console.log(`📱 LocalStorage usando default: ${key}`, defaultValue);
+      }
+      return result;
     } catch (error) {
       console.error(`Failed to read from localStorage:`, error);
       return defaultValue;
