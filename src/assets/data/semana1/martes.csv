@@ -1,29 +1,29 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-**Desayuno**,Avena,25g,3g,2g,15g,3g,86
-**(1-1.5h pre-cardio)**,Jamón de york sin grasa,35g,11g,2g,1g,0g,60
+Desayuno,Avena,25g,3g,2g,15g,3g,86
+(1-1.5h pre-cardio),Jamón de york sin grasa,35g,11g,2g,1g,0g,60
 ,Semillas de chía,6g,1g,2g,2g,2g,30
 ,Aguacate,25g,1g,3g,1g,1g,40
 ,Frambuesas,70g,1g,0g,8g,5g,37
-**SUBTOTAL DESAYUNO**,,,,**17g**,**9g**,**27g**,**11g**,**253**
-**Post-cardio**,Proteína de suero,35g,30g,1g,2g,0g,134
+SUBTOTAL DESAYUNO,,,,17g,9g,27g,11g,253
+Post-cardio,Proteína de suero,35g,30g,1g,2g,0g,134
 ,Pera,100g,0g,0g,13g,3g,50
 ,Creatina,6g,0g,0g,0g,0g,0
-**SUBTOTAL POST-CARDIO**,,,,**30g**,**1g**,**15g**,**3g**,**184**
-**Almuerzo**,Alubias blancas,40g (crudo),9g,1g,20g,6g,122
+SUBTOTAL POST-CARDIO,,,,30g,1g,15g,3g,184
+Almuerzo,Alubias blancas,40g (crudo),9g,1g,20g,6g,122
 ,Salmón ahumado,60g,13g,5g,0g,0g,105
 ,Zanahorias ralladas,100g,1g,0g,8g,3g,35
 ,Aceite oliva,2ml,0g,2g,0g,0g,18
-**SUBTOTAL ALMUERZO**,,,,**23g**,**8g**,**28g**,**9g**,**280**
-**Merienda**,Yogur sin lactosa,100g,3g,3g,5g,0g,53
+SUBTOTAL ALMUERZO,,,,23g,8g,28g,9g,280
+Merienda,Yogur sin lactosa,100g,3g,3g,5g,0g,53
 ,Nueces pecanas,8g,1g,6g,1g,1g,57
 ,Atún en lata,140g (agua),41g,1g,0g,0g,171
 ,Mango,70g,1g,0g,11g,2g,43
 ,Jamón serrano,50g,15g,5g,0g,0g,104
-**SUBTOTAL MERIENDA**,,,,**61g**,**15g**,**17g**,**3g**,**428**
-**Cena**,Lenguado,140g,26g,1g,0g,0g,100
+SUBTOTAL MERIENDA,,,,61g,15g,17g,3g,428
+Cena,Lenguado,140g,26g,1g,0g,0g,100
 ,Pechuga de pollo,50g,12g,2g,0g,0g,66
 ,Arroz integral,20g (crudo),2g,1g,15g,1g,76
 ,Puerros,140g,2g,0g,10g,2g,47
 ,Aceitunas,3 unidades,0g,1g,1g,1g,15
-**SUBTOTAL CENA**,,,,**42g**,**5g**,**26g**,**4g**,**304**
-**TOTALES MARTES**,,,,**170g**,**37g**,**108g**,**25g**,**1395**
+SUBTOTAL CENA,,,,42g,5g,26g,4g,304
+TOTALES MARTES,,,,170g,37g,108g,25g,1395

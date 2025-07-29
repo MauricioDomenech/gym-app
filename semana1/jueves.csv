@@ -1,30 +1,30 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-**Desayuno**,Pan de centeno,20g,2g,1g,10g,2g,54
-**(1-1.5h pre-cardio)**,Jamón ibérico,25g,7g,8g,0g,0g,83
+Desayuno,Pan de centeno,20g,2g,1g,10g,2g,54
+(1-1.5h pre-cardio),Jamón ibérico,25g,7g,8g,0g,0g,83
 ,Queso cabra sin lactosa,30g,7g,5g,1g,0g,73
 ,Semillas calabaza,4g,1g,1g,1g,1g,17
-**SUBTOTAL DESAYUNO**,,,,**17g**,**15g**,**12g**,**3g**,**227**
-**Post-cardio**,Proteína de suero,35g,30g,1g,2g,0g,134
+SUBTOTAL DESAYUNO,,,,17g,15g,12g,3g,227
+Post-cardio,Proteína de suero,35g,30g,1g,2g,0g,134
 ,Uvas,80g,1g,0g,10g,1g,43
 ,Creatina,6g,0g,0g,0g,0g,0
-**SUBTOTAL POST-CARDIO**,,,,**31g**,**1g**,**12g**,**1g**,**177**
-**Almuerzo**,Lubina,140g,27g,2g,0g,0g,126
+SUBTOTAL POST-CARDIO,,,,31g,1g,12g,1g,177
+Almuerzo,Lubina,140g,27g,2g,0g,0g,126
 ,Atún en lata,80g (agua),23g,1g,0g,0g,100
 ,Arroz basmati,25g (crudo),2g,1g,19g,1g,88
 ,Berenjenas,130g,1g,0g,8g,3g,31
 ,Aceite oliva,2ml,0g,2g,0g,0g,18
-**SUBTOTAL ALMUERZO**,,,,**53g**,**6g**,**27g**,**4g**,**363**
-**Merienda**,Atún en lata,100g (agua),29g,1g,0g,0g,123
+SUBTOTAL ALMUERZO,,,,53g,6g,27g,4g,363
+Merienda,Atún en lata,100g (agua),29g,1g,0g,0g,123
 ,Cerezas,80g,1g,0g,9g,2g,40
 ,Yogur sin lactosa,70g,2g,2g,3g,0g,38
 ,Almendras,5g,1g,3g,1g,1g,30
 ,Huevo duro,1 unidad,6g,5g,0g,0g,68
 ,Pechuga de pavo,40g,12g,1g,0g,0g,52
-**SUBTOTAL MERIENDA**,,,,**51g**,**12g**,**13g**,**3g**,**351**
-**Cena**,Pechuga pollo,130g,30g,3g,0g,0g,145
+SUBTOTAL MERIENDA,,,,51g,12g,13g,3g,351
+Cena,Pechuga pollo,130g,30g,3g,0g,0g,145
 ,Jamón serrano,30g,9g,3g,0g,0g,63
 ,Garbanzos,20g (crudo),4g,1g,10g,3g,66
 ,Espinacas,120g,3g,0g,3g,3g,21
 ,Aceitunas,4 unidades,0g,2g,1g,1g,20
-**SUBTOTAL CENA**,,,,**46g**,**9g**,**14g**,**7g**,**315**
-**TOTALES JUEVES**,,,,**198g**,**43g**,**78g**,**18g**,**1433**
+SUBTOTAL CENA,,,,46g,9g,14g,7g,315
+TOTALES JUEVES,,,,198g,43g,78g,18g,1433

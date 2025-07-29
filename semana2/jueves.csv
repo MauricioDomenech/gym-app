@@ -1,30 +1,30 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-**Desayuno**,Pan de molde integral,20g,2g,1g,12g,2g,63
-**(1-1.5h pre-cardio)**,Pavo en lonchas,50g,15g,3g,1g,0g,75
+Desayuno,Pan de molde integral,20g,2g,1g,12g,2g,63
+(1-1.5h pre-cardio),Pavo en lonchas,50g,15g,3g,1g,0g,75
 ,Queso manchego curado,20g,6g,6g,0g,0g,64
 ,Semillas de calabaza,4g,1g,1g,1g,1g,17
-**SUBTOTAL DESAYUNO**,,,,**24g**,**11g**,**14g**,**3g**,**219**
-**Post-cardio**,Proteína de suero,35g,30g,1g,2g,0g,134
+SUBTOTAL DESAYUNO,,,,24g,11g,14g,3g,219
+Post-cardio,Proteína de suero,35g,30g,1g,2g,0g,134
 ,Manzana,80g,0g,0g,10g,2g,37
 ,Creatina,6g,0g,0g,0g,0g,0
-**SUBTOTAL POST-CARDIO**,,,,**30g**,**1g**,**12g**,**2g**,**171**
-**Almuerzo**,Redondo de ternera,130g,30g,4g,0g,0g,144
+SUBTOTAL POST-CARDIO,,,,30g,1g,12g,2g,171
+Almuerzo,Redondo de ternera,130g,30g,4g,0g,0g,144
 ,Atún en lata,80g (agua),23g,1g,0g,0g,100
 ,Arroz basmati,25g (crudo),2g,1g,19g,1g,88
 ,Pimiento verde,120g,1g,0g,5g,2g,21
 ,Aceite oliva,2ml,0g,2g,0g,0g,18
-**SUBTOTAL ALMUERZO**,,,,**56g**,**8g**,**24g**,**3g**,**371**
-**Merienda**,Sardinas en lata,80g (agua),24g,1g,0g,0g,108
+SUBTOTAL ALMUERZO,,,,56g,8g,24g,3g,371
+Merienda,Sardinas en lata,80g (agua),24g,1g,0g,0g,108
 ,Ciruelas,60g,1g,0g,9g,1g,33
 ,Yogur natural sin lactosa,70g,2g,2g,3g,0g,38
 ,Anacardos,6g,1g,3g,2g,1g,34
 ,Huevo cocido,1 unidad,6g,5g,0g,0g,68
 ,Pechuga de pavo,40g,12g,1g,0g,0g,52
-**SUBTOTAL MERIENDA**,,,,**46g**,**12g**,**14g**,**2g**,**333**
-**Cena**,Muslo de pollo sin piel,120g,28g,4g,0g,0g,136
+SUBTOTAL MERIENDA,,,,46g,12g,14g,2g,333
+Cena,Muslo de pollo sin piel,120g,28g,4g,0g,0g,136
 ,Jamón serrano,30g,9g,3g,0g,0g,63
 ,Lentejas pardinas,18g (crudo),4g,1g,10g,2g,61
 ,Acelgas,130g,2g,0g,3g,3g,22
 ,Aceitunas,3 unidades,0g,1g,1g,1g,15
-**SUBTOTAL CENA**,,,,**43g**,**9g**,**14g**,**6g**,**297**
-**TOTALES JUEVES**,,,,**199g**,**41g**,**78g**,**16g**,**1391**
+SUBTOTAL CENA,,,,43g,9g,14g,6g,297
+TOTALES JUEVES,,,,199g,41g,78g,16g,1391
