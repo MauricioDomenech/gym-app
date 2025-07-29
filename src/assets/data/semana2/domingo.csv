@@ -1,26 +1,20 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Tostadas francesas proteicas,2 claras + 15g avena,9g,1g,9g,1g,78
-Desayuno,Proteína de suero,20g,17g,1g,1g,0g,78
-Desayuno,Sirope de arce,8ml,0g,0g,7g,0g,27
+Desayuno,Pancakes protéicos,7 claras + 25g harina de avena,26g,1g,18g,3g,185
 Desayuno,Creatina,6g,0g,0g,0g,0g,0
-Desayuno,Aguacate,25g,1g,3g,1g,1g,40
-Desayuno,Nueces,5g,1g,3g,1g,1g,35
-SUBTOTAL DESAYUNO,,,,28g,9g,19g,3g,262
-Almuerzo,Arroz con pollo y verduras,180g (porción moderada),17g,7g,39g,3g,276
-Almuerzo,Atún en lata,80g (agua),23g,1g,0g,0g,100
+Desayuno,Aguacate,20g,1g,2g,1g,1g,32
+Desayuno,Nueces,4g,1g,3g,1g,1g,28
+SUBTOTAL DESAYUNO,,,28g,6g,20g,5g,245
+Almuerzo,Arroz con pollo y verduras,210g con pechuga extra,58g,6g,38g,3g,410
 Almuerzo,Ensalada mediterránea,80g,2g,5g,3g,2g,56
-SUBTOTAL ALMUERZO,,,,42g,13g,42g,5g,432
+SUBTOTAL ALMUERZO,,,60g,11g,41g,5g,466
 Merienda,Frutos secos mixtos,8g,1g,5g,1g,1g,51
 Merienda,Infusión de menta,250ml,0g,0g,0g,0g,0
-Merienda,Yogur griego natural,90g,9g,5g,5g,0g,87
-Merienda,Atún en aceite (escurrido),110g,32g,1g,0g,0g,143
-Merienda,Pechuga de pavo,60g,18g,1g,0g,0g,82
-Merienda,Jamón serrano,35g,11g,4g,0g,0g,74
-SUBTOTAL MERIENDA,,,,71g,16g,6g,1g,419
-Cena,Salmón a la plancha,120g,23g,5g,0g,0g,136
-Cena,Bacalao,80g,16g,1g,0g,0g,76
+Merienda,Yogur griego natural,100g,10g,5g,5g,0g,92
+Merienda,Jamón serrano,150g,47g,17g,0g,0g,316
+SUBTOTAL MERIENDA,,,58g,27g,6g,1g,459
+Cena,Salmón a la plancha,200g,46g,10g,0g,0g,272
 Cena,Verduras al horno,100g,2g,4g,8g,4g,65
-Cena,Patata al vapor,60g,1g,0g,9g,1g,43
-Cena,Aceitunas gordal,3 unidades,0g,1g,1g,1g,15
-SUBTOTAL CENA,,,,42g,11g,18g,6g,335
-TOTALES DOMINGO SEMANA 2,,,,187g,49g,85g,15g,1417
+Cena,Patata al vapor,30g,1g,0g,5g,1g,22
+Cena,Aceitunas gordal,2 unidades,0g,1g,1g,1g,10
+SUBTOTAL CENA,,,49g,15g,14g,6g,369
+TOTALES DOMINGO SEMANA 2,,,195g,59g,81g,17g,1439

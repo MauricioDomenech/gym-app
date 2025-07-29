@@ -1,29 +1,25 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Tortilla de claras,4 claras,14g,0g,1g,0g,68
-(1-1.5h pre-entreno),Pan de centeno tostado,25g,2g,1g,16g,3g,78
-,Lomo embuchado,35g,9g,8g,0g,0g,97
-,Aguacate,25g,1g,3g,1g,1g,40
-SUBTOTAL DESAYUNO,,,,26g,12g,18g,4g,283
-Post-entreno,Proteína de suero,35g,30g,1g,2g,0g,134
-,Avena,15g,1g,1g,9g,1g,54
-,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-ENTRENO,,,,31g,2g,11g,1g,188
-Almuerzo,Solomillo de cerdo,120g,28g,6g,0g,0g,152
-,Atún en lata,70g (agua),20g,1g,0g,0g,87
-,Pasta integral,25g (crudo),4g,1g,18g,2g,93
-,Tomates cherry,120g,1g,0g,4g,2g,20
-,Aceite oliva,2ml,0g,2g,0g,0g,18
-SUBTOTAL ALMUERZO,,,,53g,10g,22g,4g,370
+Desayuno,Tortilla de claras,5 claras,18g,0g,1g,0g,85
+Desayuno,Pan de centeno tostado,25g,2g,1g,16g,3g,78
+Desayuno,Lomo embuchado,35g,9g,8g,0g,0g,97
+Desayuno,Aguacate,25g,1g,3g,1g,1g,40
+SUBTOTAL DESAYUNO,,,30g,12g,18g,4g,300
+Post-entreno,Proteína de suero,75g,65g,2g,4g,0g,286
+Post-entreno,Avena,15g,1g,1g,9g,1g,54
+Post-entreno,Creatina,6g,0g,0g,0g,0g,0
+SUBTOTAL POST-ENTRENO,,,66g,3g,13g,1g,340
+Almuerzo,Solomillo de cerdo,135g,32g,7g,0g,0g,171
+Almuerzo,Pasta integral,27g (crudo),4g,1g,19g,3g,100
+Almuerzo,Tomates cherry,120g,1g,0g,4g,2g,20
+SUBTOTAL ALMUERZO,,,37g,8g,23g,5g,291
 Merienda,Queso fresco batido 0%,100g,12g,0g,4g,0g,63
-,Pistachos sin sal,8g,2g,5g,2g,1g,45
-,Jamón ibérico,40g,11g,6g,0g,0g,88
-,Mandarina,80g,1g,0g,7g,2g,32
-,Pechuga de pavo,35g,11g,1g,0g,0g,45
-SUBTOTAL MERIENDA,,,,37g,12g,13g,3g,273
-Cena,Emperador,130g,29g,2g,0g,0g,130
-,Pechuga de pollo,50g,12g,2g,0g,0g,66
-,Alubias blancas,20g (crudo),5g,1g,11g,4g,72
-,Judías verdes,120g,2g,0g,5g,3g,26
-,Aceitunas mixtas,3 unidades,0g,1g,1g,1g,15
-SUBTOTAL CENA,,,,48g,6g,17g,8g,309
-TOTALES MIÉRCOLES,,,,193g,40g,77g,20g,1381
+Merienda,Pistachos sin sal,8g,2g,5g,2g,1g,45
+Merienda,Lomo embuchado,25g,6g,6g,0g,0g,69
+Merienda,Mandarina,80g,1g,0g,7g,2g,32
+SUBTOTAL MERIENDA,,,21g,11g,13g,3g,209
+Cena,Pechuga de pollo,140g,32g,5g,0g,0g,184
+Cena,Alubias blancas,25g (crudo),6g,1g,14g,5g,90
+Cena,Judías verdes,120g,2g,0g,5g,3g,26
+Cena,Aceitunas mixtas,2 unidades,0g,1g,1g,1g,10
+SUBTOTAL CENA,,,40g,7g,20g,9g,310
+TOTALES MIÉRCOLES,,,194g,41g,87g,22g,1450

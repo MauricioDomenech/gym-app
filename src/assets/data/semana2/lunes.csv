@@ -1,28 +1,26 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
 Desayuno,Claras de huevo,3 claras,11g,0g,1g,0g,51
-(1-1.5h pre-entreno),Pan integral tostado,30g,3g,2g,20g,3g,103
-,Jamón de york sin grasa,60g,19g,3g,1g,0g,102
-,Aguacate,30g,1g,4g,1g,1g,48
-SUBTOTAL DESAYUNO,,,,34g,9g,23g,4g,304
+Desayuno,Pan integral tostado,30g,3g,2g,20g,3g,103
+Desayuno,Jamón de york sin grasa,80g,25g,4g,1g,0g,136
+Desayuno,Aguacate,30g,1g,4g,1g,1g,48
+SUBTOTAL DESAYUNO,,,40g,10g,23g,4g,338
 Post-entreno,Proteína de suero,35g,30g,1g,2g,0g,134
-,Avena,18g,2g,1g,11g,1g,65
-,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-ENTRENO,,,,32g,2g,13g,1g,199
-Almuerzo,Ternera magra,120g,26g,5g,0g,0g,139
-,Atún en lata,60g (agua),17g,1g,0g,0g,75
-,Quinoa,25g (crudo),3g,2g,16g,2g,92
-,Brócoli,150g,4g,1g,10g,5g,50
-,Aceite oliva,2ml,0g,2g,0g,0g,18
-SUBTOTAL ALMUERZO,,,,50g,11g,26g,7g,374
-Merienda,Requesón 0% grasa,130g,16g,1g,4g,0g,86
-,Nueces,6g,1g,4g,1g,1g,40
-,Fresas,80g,1g,0g,6g,2g,26
-,Bonito en lata,70g (agua),20g,1g,0g,0g,83
-,Pechuga de pavo,30g,9g,1g,0g,0g,41
-SUBTOTAL MERIENDA,,,,47g,7g,11g,3g,276
-Cena,Hamburguesas de pollo,140g,30g,7g,0g,0g,170
-,Boniato,90g,1g,0g,15g,2g,66
-,Espárragos verdes,130g,3g,0g,5g,3g,26
-,Aceitunas negras,4 unidades,0g,2g,1g,1g,20
-SUBTOTAL CENA,,,,34g,9g,21g,6g,282
-TOTALES LUNES,,,,197g,38g,94g,21g,1435
+Post-entreno,Avena,18g,2g,1g,11g,1g,65
+Post-entreno,Creatina,6g,0g,0g,0g,0g,0
+SUBTOTAL POST-ENTRENO,,,32g,2g,13g,1g,199
+Almuerzo,Ternera magra,150g,33g,6g,0g,0g,174
+Almuerzo,Quinoa,25g (crudo),3g,2g,16g,2g,92
+Almuerzo,Brócoli,150g,4g,1g,10g,5g,50
+Almuerzo,Aceite oliva,1ml,0g,1g,0g,0g,9
+SUBTOTAL ALMUERZO,,,40g,10g,26g,7g,325
+Merienda,Requesón 0% grasa,150g,18g,1g,5g,0g,98
+Merienda,Nueces,6g,1g,4g,1g,1g,40
+Merienda,Fresas,80g,1g,0g,6g,2g,26
+Merienda,Pechuga de pavo,90g,27g,2g,0g,0g,123
+SUBTOTAL MERIENDA,,,47g,7g,12g,3g,287
+Cena,Hamburguesas de pollo,155g,33g,8g,0g,0g,188
+Cena,Boniato,90g,1g,0g,15g,2g,66
+Cena,Espárragos verdes,130g,3g,0g,5g,3g,26
+Cena,Aceitunas negras,4 unidades,0g,2g,1g,1g,20
+SUBTOTAL CENA,,,37g,10g,21g,6g,300
+TOTALES LUNES,,,196g,39g,95g,21g,1449

@@ -1,31 +1,26 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Huevos escalfados,2 huevos,12g,10g,1g,0g,140
-(1-1.5h pre-cardio),Jamón de york sin grasa,30g,10g,2g,1g,0g,51
-,Chorizo ibérico,12g,3g,4g,0g,0g,51
-,Pan integral de centeno,20g,2g,1g,14g,2g,66
-,Aguacate,25g,1g,4g,1g,1g,40
-SUBTOTAL DESAYUNO,,,,28g,21g,17g,3g,348
-Post-cardio,Proteína de suero,35g,30g,1g,2g,0g,134
-,Yogur griego 0% grasa,70g,7g,0g,5g,0g,48
-,Sandía,80g,1g,0g,6g,0g,22
+Desayuno,Huevos pochados,2 huevos,12g,10g,1g,0g,140
+,Pan de centeno,15g,1g,1g,10g,2g,47
+,Lomo embuchado,35g,9g,8g,0g,0g,97
+,Aguacate,15g,0g,2g,1g,1g,24
+SUBTOTAL DESAYUNO,,,22g,21g,12g,3g,308
+Post-cardio,Proteína de suero,63g,54g,1g,4g,0g,240
+,Mango,40g,0g,0g,6g,1g,24
 ,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-CARDIO,,,,38g,1g,13g,0g,204
-Almuerzo,Chuletón de buey,100g,24g,5g,0g,0g,129
-,Atún en lata,70g (agua),20g,1g,0g,0g,87
-,Arroz integral,25g (crudo),2g,1g,19g,1g,95
-,Pimientos del padrón,80g,2g,0g,3g,2g,20
-,Aceite oliva,1ml,0g,1g,0g,0g,9
-SUBTOTAL ALMUERZO,,,,48g,8g,22g,3g,340
-Merienda,Yogur natural desnatado,100g,4g,0g,6g,0g,42
-,Semillas de chía,4g,1g,1g,1g,1g,20
-,Mejillones en lata,90g (agua),20g,1g,4g,0g,113
-,Lomo de sajonia,30g,7g,2g,1g,0g,47
-,Pechuga de pavo,40g,12g,1g,0g,0g,52
-SUBTOTAL MERIENDA,,,,44g,5g,12g,1g,274
-Cena,Lubina,120g,23g,1g,0g,0g,100
-,Pechuga de pollo,50g,12g,2g,0g,0g,66
-,Garbanzos cocidos,30g,2g,1g,6g,2g,38
-,Rúcula,70g,2g,1g,2g,2g,18
-,Aceitunas manzanilla,3 unidades,0g,1g,1g,1g,15
-SUBTOTAL CENA,,,,39g,6g,9g,5g,237
-TOTALES SÁBADO,,,,197g,41g,73g,12g,1403
+SUBTOTAL POST-CARDIO,,,54g,1g,10g,1g,264
+Almuerzo,Cordero lechal,145g,31g,10g,0g,0g,200
+,Arroz integral,18g (crudo),2g,1g,11g,1g,55
+,Calabaza,110g,1g,0g,6g,2g,27
+SUBTOTAL ALMUERZO,,,34g,11g,17g,3g,282
+Merienda,Yogur sin lactosa,80g,3g,2g,4g,0g,42
+,Pistachos,4g,1g,3g,1g,1g,23
+,Frambuesas,45g,1g,0g,3g,3g,16
+,Jamón serrano,60g,18g,6g,0g,0g,126
+,Atún en lata,60g (agua),17g,1g,0g,0g,75
+SUBTOTAL MERIENDA,,,40g,12g,8g,4g,282
+Cena,Pechuga de pollo,170g,39g,7g,0g,0g,224
+,Garbanzos,14g (crudo),3g,1g,8g,3g,51
+,Espinacas frescas,120g,3g,1g,2g,2g,25
+,Aceitunas,2 unidades,0g,1g,1g,1g,10
+SUBTOTAL CENA,,,45g,10g,11g,6g,310
+TOTALES SÁBADO,,,195g,55g,58g,17g,1446
