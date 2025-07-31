@@ -147,14 +147,14 @@ export class LocalStorageService {
 
   public static getTableColumns(): TableColumn[] {
     const defaultColumns: TableColumn[] = [
-      { key: 'comida', label: 'Comida', visible: true },
+      { key: 'comida', label: 'Comida', visible: false },
       { key: 'alimento', label: 'Alimento', visible: true },
       { key: 'cantidad', label: 'Cantidad', visible: true },
-      { key: 'proteinas', label: 'Proteínas', visible: true },
-      { key: 'grasas', label: 'Grasas', visible: true },
-      { key: 'carbs', label: 'Carbs', visible: true },
+      { key: 'proteinas', label: 'Proteínas', visible: false },
+      { key: 'grasas', label: 'Grasas', visible: false },
+      { key: 'carbs', label: 'Carbs', visible: false },
       { key: 'fibra', label: 'Fibra', visible: false },
-      { key: 'calorias', label: 'Calorías', visible: true },
+      { key: 'calorias', label: 'Calorías', visible: false },
     ];
     
     return this.getItem(STORAGE_KEYS.TABLE_COLUMNS, defaultColumns);
@@ -163,17 +163,38 @@ export class LocalStorageService {
   // Current Week and Day
   public static saveCurrentWeek(week: number): void {
     this.setItem(STORAGE_KEYS.CURRENT_WEEK, week);
+    // También guardar en backup para mayor persistencia
+    localStorage.setItem('gym-app-last-week', week.toString());
   }
 
   public static getCurrentWeek(): number {
+    // Intentar primero con las claves de backup
+    const lastWeek = localStorage.getItem('gym-app-last-week');
+    if (lastWeek) {
+      const week = parseInt(lastWeek, 10);
+      if (!isNaN(week)) {
+        console.log('📱 Usando semana desde backup:', week);
+        return week;
+      }
+    }
+    
     return this.getItem(STORAGE_KEYS.CURRENT_WEEK, 1);
   }
 
   public static saveCurrentDay(day: string): void {
     this.setItem(STORAGE_KEYS.CURRENT_DAY, day);
+    // También guardar en backup para mayor persistencia
+    localStorage.setItem('gym-app-last-day', day);
   }
 
   public static getCurrentDay(): string {
+    // Intentar primero con las claves de backup
+    const lastDay = localStorage.getItem('gym-app-last-day');
+    if (lastDay) {
+      console.log('📱 Usando día desde backup:', lastDay);
+      return lastDay;
+    }
+    
     return this.getItem(STORAGE_KEYS.CURRENT_DAY, 'lunes');
   }
 

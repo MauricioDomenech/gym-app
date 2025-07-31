@@ -86,8 +86,47 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
       }
     };
 
+    const handleVisibilityChange = () => {
+      if (!document.hidden) {
+        console.log('📱 Página visible de nuevo - recargando configuración...');
+        const loadState = async () => {
+          try {
+            const [savedWeek, savedDay] = await Promise.all([
+              DatabaseService.getCurrentWeek(),
+              DatabaseService.getCurrentDay(),
+            ]);
+            
+            console.log('🔄 Estado recargado:', { week: savedWeek, day: savedDay });
+            setCurrentWeekState(savedWeek);
+            setCurrentDayState(savedDay as DayOfWeek);
+          } catch (error) {
+            console.error('❌ Error recargando estado:', error);
+          }
+        };
+        loadState();
+      }
+    };
+
+    const handleBeforeUnload = () => {
+      console.log('💾 Guardando estado antes de salir...');
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('gym-app-last-week', currentWeek.toString());
+        localStorage.setItem('gym-app-last-day', currentDay);
+      }
+    };
+
     initializeData();
-  }, []);
+    
+    if (typeof window !== 'undefined') {
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+      window.addEventListener('beforeunload', handleBeforeUnload);
+      
+      return () => {
+        document.removeEventListener('visibilitychange', handleVisibilityChange);
+        window.removeEventListener('beforeunload', handleBeforeUnload);
+      };
+    }
+  }, [currentWeek, currentDay]);
 
   const setCurrentWeek = async (week: number) => {
     setCurrentWeekState(week);

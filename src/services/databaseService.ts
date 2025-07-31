@@ -261,14 +261,14 @@ export class DatabaseService {
     
     // Fallback a base de datos para server-side
     const defaultColumns: TableColumn[] = [
-      { key: 'comida', label: 'Comida', visible: true },
+      { key: 'comida', label: 'Comida', visible: false },
       { key: 'alimento', label: 'Alimento', visible: true },
       { key: 'cantidad', label: 'Cantidad', visible: true },
-      { key: 'proteinas', label: 'Proteínas', visible: true },
-      { key: 'grasas', label: 'Grasas', visible: true },
-      { key: 'carbs', label: 'Carbs', visible: true },
+      { key: 'proteinas', label: 'Proteínas', visible: false },
+      { key: 'grasas', label: 'Grasas', visible: false },
+      { key: 'carbs', label: 'Carbs', visible: false },
       { key: 'fibra', label: 'Fibra', visible: false },
-      { key: 'calorias', label: 'Calorías', visible: true },
+      { key: 'calorias', label: 'Calorías', visible: false },
     ];
     
     return await ApiClient.get(STORAGE_KEYS.TABLE_COLUMNS, defaultColumns);
