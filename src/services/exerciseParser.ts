@@ -57,13 +57,13 @@ export class ExerciseParser {
       }
       
       // Check if we're in the exercise subsection
-      if (inSection && trimmedLine === '### ENTRENAMIENTO') {
+      if (inSection && trimmedLine.startsWith('### ENTRENAMIENTO')) {
         inExerciseList = true;
         continue;
       }
       
       // If we hit another ### section, we're done with exercises
-      if (inSection && inExerciseList && trimmedLine.startsWith('###') && trimmedLine !== '### ENTRENAMIENTO') {
+      if (inSection && inExerciseList && trimmedLine.startsWith('###') && !trimmedLine.startsWith('### ENTRENAMIENTO')) {
         break;
       }
       
@@ -111,7 +111,7 @@ export class ExerciseParser {
       const line = lines[i].trim();
       
       // Stop if we hit another section
-      if (line.startsWith('###') && line !== '### ENTRENAMIENTO') break;
+      if (line.startsWith('###') && !line.startsWith('### ENTRENAMIENTO')) break;
       if (line.includes('##') && !line.includes('MARTES')) break;
       
       // Calentamiento
@@ -189,7 +189,7 @@ export class ExerciseParser {
       const line = lines[i].trim();
       
       // Stop if we hit another section
-      if (line.startsWith('###') && line !== '### ENTRENAMIENTO') break;
+      if (line.startsWith('###') && !line.startsWith('### ENTRENAMIENTO')) break;
       if (line.includes('##') && !line.includes('JUEVES')) break;
       
       // Cardio
@@ -245,7 +245,7 @@ export class ExerciseParser {
       const line = lines[i].trim();
       
       // Stop if we hit another section
-      if (line.startsWith('###') && line !== '### ENTRENAMIENTO') break;
+      if (line.startsWith('###') && !line.startsWith('### ENTRENAMIENTO')) break;
       if (line.includes('##') && !line.includes('SÁBADO')) break;
       
       // Cardio

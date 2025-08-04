@@ -15,6 +15,7 @@ export const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({ exercise }) => {
   } = useData();
 
   const [weights, setWeights] = useState<[number, number, number]>([0, 0, 0]);
+  const [savedWeights, setSavedWeights] = useState<[number, number, number]>([0, 0, 0]);
   const [isSaving, setIsSaving] = useState(false);
   const [justSaved, setJustSaved] = useState(false);
   const [saveTimer, setSaveTimer] = useState<NodeJS.Timeout | null>(null);
@@ -24,8 +25,10 @@ export const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({ exercise }) => {
     const existingProgress = getExerciseProgress(exercise.id, currentDay, currentWeek);
     if (existingProgress) {
       setWeights(existingProgress.weights);
+      setSavedWeights(existingProgress.weights);
     } else {
       setWeights([0, 0, 0]);
+      setSavedWeights([0, 0, 0]);
     }
   }, [exercise.id, currentDay, currentWeek, getExerciseProgress]);
 
@@ -65,6 +68,9 @@ export const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({ exercise }) => {
 
       await addWorkoutProgress(progress);
       
+      // Update saved weights after successful save
+      setSavedWeights(weights);
+      
       // Mostrar "Registrado" por 5 segundos
       setJustSaved(true);
       const timer = setTimeout(() => {
@@ -81,6 +87,7 @@ export const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({ exercise }) => {
   };
 
   const hasProgress = weights.some(weight => weight > 0);
+  const hasSavedProgress = savedWeights.some(weight => weight > 0);
   // Check if this exercise needs weight tracking
   const needsWeights = exercise.sets > 1 && exercise.reps > 0;
 
@@ -174,13 +181,13 @@ export const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({ exercise }) => {
       </div>
 
       {/* Progress Summary */}
-      {hasProgress && (
+      {hasSavedProgress && (
         <div className="p-2 bg-gray-50 dark:bg-slate-900 rounded text-xs">
           {needsWeights ? (
             <>
               <span className="text-gray-600 dark:text-gray-400">Pesos registrados:</span>
               <span className="ml-2 font-medium text-gray-900 dark:text-white">
-                {weights.map((w) => `${w}kg`).join(' • ')}
+                {savedWeights.map((w) => `${w}kg`).join(' • ')}
               </span>
             </>
           ) : (
