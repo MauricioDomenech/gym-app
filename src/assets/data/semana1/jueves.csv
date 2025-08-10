@@ -1,18 +1,18 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Pan de centeno,20g,2g,1g,10g,2g,54
+Desayuno,Pan de centeno,40g,4g,2g,20g,4g,108
 Desayuno,Jamón ibérico,25g,7g,8g,0g,0g,83
 Desayuno,Queso cabra sin lactosa,30g,7g,5g,1g,0g,73
 Desayuno,Semillas calabaza,4g,1g,1g,1g,1g,17
-SUBTOTAL DESAYUNO,,,17g,15g,12g,3g,227
-Post-entreno,Proteína de suero,44g,38g,1g,2g,0g,169
+SUBTOTAL DESAYUNO,,,19g,16g,22g,5g,281
+Post-entreno,Proteína de suero,35g,30g,1g,2g,0g,134
 Post-entreno,Uvas,80g,1g,0g,10g,1g,43
 Post-entreno,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-CARDIO,,,39g,1g,12g,1g,212
+SUBTOTAL POST-ENTRENO,,,31g,1g,12g,1g,177
 Almuerzo,Lubina,185g,36g,3g,0g,0g,166
-Almuerzo,Arroz basmati,25g (crudo),2g,1g,19g,1g,88
+Almuerzo,Arroz basmati,115g (crudo),9g,5g,87g,5g,405
 Almuerzo,Berenjenas,130g,1g,0g,8g,3g,31
 Almuerzo,Aceite oliva,1ml,0g,1g,0g,0g,9
-SUBTOTAL ALMUERZO,,,39g,5g,27g,4g,294
+SUBTOTAL ALMUERZO,,,46g,9g,95g,8g,611
 Merienda,Cerezas,80g,1g,0g,9g,2g,40
 Merienda,Yogur sin lactosa,70g,2g,2g,3g,0g,38
 Merienda,Almendras,5g,1g,3g,1g,1g,30
@@ -25,4 +25,4 @@ Cena,Garbanzos,20g (crudo),4g,1g,10g,3g,66
 Cena,Espinacas,120g,3g,0g,3g,3g,21
 Cena,Aceitunas,2 unidades,0g,1g,1g,1g,10
 SUBTOTAL CENA,,,55g,9g,14g,7g,349
-TOTALES JUEVES,,,195g,46g,78g,18g,1450
+TOTALES JUEVES,,,196g,51g,156g,24g,1786

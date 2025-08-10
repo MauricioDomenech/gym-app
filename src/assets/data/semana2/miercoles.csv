@@ -1,17 +1,17 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
 Desayuno,Tortilla de claras,5 claras,18g,0g,1g,0g,85
-Desayuno,Pan de centeno tostado,25g,2g,1g,16g,3g,78
-Desayuno,Lomo embuchado,35g,9g,8g,0g,0g,97
-Desayuno,Aguacate,25g,1g,3g,1g,1g,40
-SUBTOTAL DESAYUNO,,,30g,12g,18g,4g,300
-Post-entreno,Proteína de suero,75g,65g,2g,4g,0g,286
-Post-entreno,Avena,15g,1g,1g,9g,1g,54
+Desayuno,Pan de centeno tostado,45g,4g,2g,29g,5g,140
+Desayuno,Lomo embuchado,55g,14g,13g,0g,0g,152
+Desayuno,Aguacate,45g,2g,5g,2g,2g,72
+SUBTOTAL DESAYUNO,,,38g,20g,32g,7g,450
+Post-entreno,Proteína de suero,35g,30g,1g,2g,0g,133
+Post-entreno,Avena,40g,3g,3g,24g,3g,144
 Post-entreno,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-ENTRENO,,,66g,3g,13g,1g,340
+SUBTOTAL POST-ENTRENO,,,33g,4g,26g,3g,277
 Almuerzo,Solomillo de cerdo,135g,32g,7g,0g,0g,171
-Almuerzo,Pasta integral,27g (crudo),4g,1g,19g,3g,100
+Almuerzo,Pasta integral,97g (crudo),14g,4g,69g,11g,359
 Almuerzo,Tomates cherry,120g,1g,0g,4g,2g,20
-SUBTOTAL ALMUERZO,,,37g,8g,23g,5g,291
+SUBTOTAL ALMUERZO,,,47g,11g,73g,13g,550
 Merienda,Queso fresco batido 0%,100g,12g,0g,4g,0g,63
 Merienda,Pistachos sin sal,8g,2g,5g,2g,1g,45
 Merienda,Lomo embuchado,25g,6g,6g,0g,0g,69
@@ -22,4 +22,4 @@ Cena,Alubias blancas,25g (crudo),6g,1g,14g,5g,90
 Cena,Judías verdes,120g,2g,0g,5g,3g,26
 Cena,Aceitunas mixtas,2 unidades,0g,1g,1g,1g,10
 SUBTOTAL CENA,,,40g,7g,20g,9g,310
-TOTALES MIÉRCOLES,,,194g,41g,87g,22g,1450
+TOTALES MIERCOLES,,,179g,53g,164g,35g,1796

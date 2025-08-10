@@ -3,14 +3,14 @@ Desayuno,Huevos revueltos,3 huevos,18g,15g,1g,0g,210
 Desayuno,Proteína de suero,30g,26g,1g,2g,0g,105
 Desayuno,Avena,20g,2g,1g,12g,2g,72
 Desayuno,Creatina,6g,0g,0g,0g,0g,0
-Desayuno,Aguacate,25g,1g,4g,1g,1g,40
-SUBTOTAL DESAYUNO,,,47g,21g,16g,3g,427
+Desayuno,Aguacate,55g,2g,9g,2g,2g,88
+SUBTOTAL DESAYUNO,,,48g,26g,17g,4g,475
 Almuerzo,Pechuga de pollo,130g,30g,3g,0g,0g,144
-Almuerzo,Arroz integral,40g (crudo),3g,1g,30g,2g,140
+Almuerzo,Arroz integral,10g (crudo),1g,0g,8g,0g,35
 Almuerzo,Pimiento rojo,100g,1g,0g,6g,2g,26
 Almuerzo,Calabacín,80g,1g,0g,3g,1g,16
 Almuerzo,Aceite oliva,1ml,0g,1g,0g,0g,9
-SUBTOTAL ALMUERZO,,,35g,5g,39g,5g,335
+SUBTOTAL ALMUERZO,,,33g,4g,17g,3g,230
 Merienda,Atún en lata,170g (agua),50g,1g,0g,0g,208
 Merienda,Yogur griego sin lactosa,100g,10g,6g,6g,0g,102
 Merienda,Pavo lonchas,70g,21g,1g,0g,0g,91
@@ -21,4 +21,4 @@ Cena,Judías verdes,120g,2g,0g,5g,3g,26
 Cena,Patata cocida,70g,2g,0g,11g,2g,51
 Cena,Aceitunas,5 unidades,0g,2g,1g,1g,25
 SUBTOTAL CENA,,,31g,4g,17g,6g,228
-TOTALES DOMINGO,,,195g,42g,79g,15g,1431
+TOTALES DOMINGO,,,194g,46g,58g,14g,1374

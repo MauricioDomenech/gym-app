@@ -1,26 +1,26 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
 Desayuno,Huevos pochados,2 huevos,12g,10g,1g,0g,140
-,Pan de centeno,15g,1g,1g,10g,2g,47
-,Lomo embuchado,35g,9g,8g,0g,0g,97
-,Aguacate,15g,0g,2g,1g,1g,24
-SUBTOTAL DESAYUNO,,,22g,21g,12g,3g,308
-Post-cardio,Proteína de suero,63g,54g,1g,4g,0g,240
-,Mango,40g,0g,0g,6g,1g,24
-,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-CARDIO,,,54g,1g,10g,1g,264
+Desayuno,Pan de centeno,55g,4g,4g,37g,7g,172
+Desayuno,Lomo embuchado,55g,14g,13g,0g,0g,152
+Desayuno,Aguacate,15g,0g,2g,1g,1g,24
+SUBTOTAL DESAYUNO,,,30g,29g,39g,8g,489
+Post-cardio,Proteína de suero,35g,30g,1g,2g,0g,133
+Post-cardio,Mango,40g,0g,0g,6g,1g,24
+Post-cardio,Creatina,6g,0g,0g,0g,0g,0
+SUBTOTAL POST-CARDIO,,,30g,1g,8g,1g,157
 Almuerzo,Cordero lechal,145g,31g,10g,0g,0g,200
-,Arroz integral,18g (crudo),2g,1g,11g,1g,55
-,Calabaza,110g,1g,0g,6g,2g,27
-SUBTOTAL ALMUERZO,,,34g,11g,17g,3g,282
+Almuerzo,Arroz integral,123g (crudo),14g,7g,75g,7g,376
+Almuerzo,Calabaza,110g,1g,0g,6g,2g,27
+SUBTOTAL ALMUERZO,,,46g,17g,81g,9g,603
 Merienda,Yogur sin lactosa,80g,3g,2g,4g,0g,42
-,Pistachos,4g,1g,3g,1g,1g,23
-,Frambuesas,45g,1g,0g,3g,3g,16
-,Jamón serrano,60g,18g,6g,0g,0g,126
-,Atún en lata,60g (agua),17g,1g,0g,0g,75
-SUBTOTAL MERIENDA,,,40g,12g,8g,4g,282
+Merienda,Pistachos,4g,1g,3g,1g,1g,23
+Merienda,Frambuesas,45g,1g,0g,3g,3g,16
+Merienda,Jamón serrano,40g,12g,4g,0g,0g,84
+Merienda,Atún en lata,60g (agua),17g,1g,0g,0g,75
+SUBTOTAL MERIENDA,,,34g,10g,8g,4g,240
 Cena,Pechuga de pollo,170g,39g,7g,0g,0g,224
-,Garbanzos,14g (crudo),3g,1g,8g,3g,51
-,Espinacas frescas,120g,3g,1g,2g,2g,25
-,Aceitunas,2 unidades,0g,1g,1g,1g,10
+Cena,Garbanzos,14g (crudo),3g,1g,8g,3g,51
+Cena,Espinacas frescas,120g,3g,1g,2g,2g,25
+Cena,Aceitunas,2 unidades,0g,1g,1g,1g,10
 SUBTOTAL CENA,,,45g,10g,11g,6g,310
-TOTALES SÁBADO,,,195g,55g,58g,17g,1446
+TOTALES SABADO,,,185g,67g,147g,28g,1799

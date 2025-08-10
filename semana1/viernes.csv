@@ -1,17 +1,17 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
 Desayuno,Huevos revueltos,3 huevos,18g,15g,1g,0g,210
-Desayuno,Pan integral tostado,20g,2g,1g,13g,2g,69
-Desayuno,Pechuga de pavo,80g,24g,1g,0g,0g,104
+Desayuno,Pan integral tostado,40g,4g,2g,26g,4g,138
+Desayuno,Pechuga de pavo,60g,18g,1g,0g,0g,78
 Desayuno,Aguacate,20g,1g,3g,1g,1g,32
-SUBTOTAL DESAYUNO,,,45g,20g,15g,3g,415
+SUBTOTAL DESAYUNO,,,41g,21g,28g,5g,458
 Post-entreno,Proteína de suero,35g,30g,1g,2g,0g,134
-Post-entreno,Avena,12g,1g,1g,7g,1g,43
+Post-entreno,Avena,62g,5g,5g,36g,5g,222
 Post-entreno,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-ENTRENO,,,31g,2g,9g,1g,177
+SUBTOTAL POST-ENTRENO,,,35g,6g,38g,5g,356
 Almuerzo,Ternera magra,140g,33g,4g,0g,0g,168
-Almuerzo,Arroz integral,20g (crudo),2g,1g,15g,1g,74
+Almuerzo,Arroz integral,75g (crudo),7g,4g,56g,4g,278
 Almuerzo,Calabacín,120g,2g,0g,4g,2g,22
-SUBTOTAL ALMUERZO,,,37g,5g,19g,3g,264
+SUBTOTAL ALMUERZO,,,42g,8g,60g,6g,468
 Merienda,Yogur sin lactosa,80g,3g,2g,4g,0g,42
 Merienda,Semillas de chía,4g,1g,1g,1g,1g,20
 Merienda,Atún en lata,120g (agua),35g,1g,0g,0g,148
@@ -23,4 +23,4 @@ Cena,Lentejas verdes,15g (crudo),4g,0g,8g,1g,52
 Cena,Canónigos,60g,3g,0g,4g,3g,25
 Cena,Aceitunas,2 unidades,0g,1g,0g,0g,10
 SUBTOTAL CENA,,,25g,3g,12g,4g,175
-TOTALES VIERNES,,,196g,39g,61g,12g,1365
+TOTALES VIERNES,,,201g,47g,144g,21g,1791

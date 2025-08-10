@@ -1,14 +1,14 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Copos de avena,20g,2g,1g,12g,2g,69
+Desayuno,Copos de avena,70g,7g,4g,42g,7g,242
 Desayuno,Jamón de york sin grasa,55g,17g,3g,1g,0g,94
 Desayuno,Almendras laminadas,5g,1g,3g,1g,1g,30
-Desayuno,Aguacate,25g,1g,3g,1g,1g,40
+Desayuno,Aguacate,60g,3g,7g,3g,3g,96
 Desayuno,Arándanos,50g,0g,0g,7g,2g,25
-SUBTOTAL DESAYUNO,,,21g,10g,22g,6g,258
+SUBTOTAL DESAYUNO,,,28g,17g,54g,13g,486
 Post-entreno,Proteína de suero,35g,30g,1g,2g,0g,134
 Post-entreno,Plátano pequeño,60g,1g,0g,14g,2g,53
 Post-entreno,Creatina,6g,0g,0g,0g,0g,0
-SUBTOTAL POST-CARDIO,,,31g,1g,16g,2g,187
+SUBTOTAL POST-ENTRENO,,,31g,1g,16g,2g,187
 Almuerzo,Garbanzos cocidos,40g,3g,1g,8g,3g,54
 Almuerzo,Langostinos,195g,45g,2g,1g,0g,200
 Almuerzo,Pimiento rojo,100g,1g,0g,7g,2g,29
@@ -18,11 +18,12 @@ Merienda,Yogur griego 0% grasa,80g,8g,0g,4g,0g,48
 Merienda,Avellanas,5g,1g,3g,1g,1g,32
 Merienda,Melocotón,70g,1g,0g,5g,1g,26
 Merienda,Jamón serrano,65g,20g,6g,0g,0g,137
-Merienda,Pechuga de pavo,60g,18g,1g,0g,0g,78
-SUBTOTAL MERIENDA,,,48g,10g,10g,2g,321
+Merienda,Pechuga de pavo,40g,12g,1g,0g,0g,52
+SUBTOTAL MERIENDA,,,42g,10g,10g,2g,295
 Cena,Pechuga de pollo,185g,42g,7g,0g,0g,243
-Cena,Arroz integral,20g (crudo),2g,1g,15g,1g,76
+Cena,Arroz integral,75g (crudo),7g,4g,56g,4g,285
 Cena,Calabacín,140g,2g,0g,5g,2g,26
 Cena,Aceitunas verdes,2 unidades,0g,1g,0g,0g,10
-SUBTOTAL CENA,,,46g,9g,20g,3g,355
-TOTALES MARTES,,,195g,34g,84g,18g,1413
+Cena,Aceite de oliva,5g,0g,5g,0g,0g,45
+SUBTOTAL CENA,,,51g,17g,61g,6g,609
+TOTALES MARTES,,,201g,49g,157g,28g,1869

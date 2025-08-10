@@ -1,12 +1,12 @@
 Comida,Alimento,Cantidad,Proteínas,Grasas,Carbs,Fibra,Calorías
-Desayuno,Pancakes protéicos,8 claras + 25g harina de avena,29g,1g,18g,3g,198
+Desayuno,Pancakes protéicos,5g,6g,0g,4g,1g,40
 Desayuno,Creatina,6g,0g,0g,0g,0g,0
 Desayuno,Aguacate,13g,0g,2g,1g,1g,21
-Desayuno,Nueces,2g,1g,1g,0g,0g,14
-SUBTOTAL DESAYUNO,,,30g,4g,19g,4g,233
-Almuerzo,Arroz con pollo y verduras,200g con pechuga extra,58g,5g,35g,3g,385
+Desayuno,Nueces,0g,0g,0g,0g,0g,0
+SUBTOTAL DESAYUNO,,,6g,2g,5g,2g,61
+Almuerzo,Arroz con pollo y verduras,190g,55g,4g,34g,3g,366
 Almuerzo,Ensalada mediterránea,80g,2g,5g,3g,2g,56
-SUBTOTAL ALMUERZO,,,60g,10g,38g,5g,441
+SUBTOTAL ALMUERZO,,,57g,9g,37g,5g,422
 Merienda,Frutos secos mixtos,4g,1g,3g,0g,1g,25
 Merienda,Infusión de menta,250ml,0g,0g,0g,0g,0
 Merienda,Yogur griego natural,70g,7g,4g,4g,0g,64
@@ -16,5 +16,7 @@ Cena,Salmón a la plancha,200g,46g,10g,0g,0g,272
 Cena,Verduras al horno,100g,2g,4g,8g,4g,65
 Cena,Patata al vapor,15g,0g,0g,2g,0g,11
 Cena,Aceitunas gordal,1 unidad,0g,0g,0g,0g,5
-SUBTOTAL CENA,,,48g,14g,10g,4g,353
-TOTALES DOMINGO SEMANA 2,,,195g,52g,71g,14g,1449
+Cena,Aceite de oliva,5g,0g,5g,0g,0g,45
+Cena,Aceite de oliva,5g,0g,5g,0g,0g,45
+SUBTOTAL CENA,,,48g,24g,10g,4g,443
+TOTALES DOMINGO,,,168g,59g,56g,12g,1348

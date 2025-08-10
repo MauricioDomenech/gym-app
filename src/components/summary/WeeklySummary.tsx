@@ -149,7 +149,7 @@ export const WeeklySummary: React.FC<WeeklySummaryProps> = ({ className = '' }) 
               <div>
                 <p className="text-sm font-medium text-gray-900 dark:text-white">Calorías</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400">
-                  Objetivo: 1450 cal/día
+                  Objetivo: 1750 cal/día
                 </p>
               </div>
               <div className="text-right">
@@ -186,7 +186,7 @@ export const WeeklySummary: React.FC<WeeklySummaryProps> = ({ className = '' }) 
         <div className="space-y-4 text-sm text-gray-600 dark:text-gray-400">
           <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
             <h4 className="font-medium text-blue-800 dark:text-blue-200 mb-2">Objetivo del Plan</h4>
-            <p>Este plan está diseñado para recomposición corporal con un objetivo de 195g de proteína diaria y aproximadamente 1450 calorías para una persona de 96kg.</p>
+            <p>Este plan está diseñado para recomposición corporal con un objetivo de 195g de proteína diaria y aproximadamente 1800 calorías para una persona de 96kg.</p>
           </div>
           
           <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">

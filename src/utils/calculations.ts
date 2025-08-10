@@ -108,7 +108,7 @@ export class NutritionCalculations {
     calories: { current: number; goal: number; percentage: number };
   } {
     const PROTEIN_GOAL = 195; // 2g/kg for 96kg person
-    const CALORIE_GOAL = 1450; // Target calories
+    const CALORIE_GOAL = 1750; // Target calories
 
     return {
       protein: {
