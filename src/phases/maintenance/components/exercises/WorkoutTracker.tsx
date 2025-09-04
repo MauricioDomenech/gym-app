@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useData } from '../../contexts/DataContext';
-import type { Exercise, WorkoutProgress } from '../../models/types';
+import type { Exercise, WorkoutProgress } from '../../types/maintenance';
 
 interface WorkoutTrackerProps {
   exercise: Exercise;

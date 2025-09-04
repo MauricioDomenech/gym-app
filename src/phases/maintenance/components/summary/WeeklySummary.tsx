@@ -1,7 +1,7 @@
 import React from 'react';
 import { useData } from '../../contexts/DataContext';
-import type { WeeklySummary as WeeklySummaryType } from '../../models/types';
-import { NutritionCalculations } from '../../utils/calculations';
+import type { WeeklySummary as WeeklySummaryType } from '../../types/maintenance';
+import { NutritionCalculations } from '../../../../utils/calculations';
 
 interface WeeklySummaryProps {
   className?: string;

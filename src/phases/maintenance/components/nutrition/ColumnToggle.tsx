@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { TableColumn } from '../../models/types';
+import type { TableColumn } from '../../types/maintenance';
 
 interface ColumnToggleProps {
   columns: TableColumn[];

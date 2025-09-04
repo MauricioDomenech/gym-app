@@ -1,14 +1,14 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import type { DayNutrition, WorkoutDay, WorkoutProgress, TableColumn, DayOfWeek } from '../models/types';
+import type { DayNutrition, WorkoutDay, WorkoutProgress, TableColumn, DayOfWeek } from '../types/maintenance';
 import { CSVParser } from '../services/csvParser';
 import { ExerciseParser } from '../services/exerciseParser';
-import { DatabaseService } from '../services/databaseService';
+import { DatabaseService } from '../../../shared/services/databaseService';
 
 interface DataContextType {
   currentWeek: number;
   currentDay: DayOfWeek;
-  setCurrentWeek: (week: number) => void;
-  setCurrentDay: (day: DayOfWeek) => void;
+  setCurrentWeek: (week: number) => Promise<void>;
+  setCurrentDay: (day: DayOfWeek) => Promise<void>;
   
   getNutritionData: (week: number, day: string) => DayNutrition | null;
   getWeekNutrition: (week: number) => { [day: string]: DayNutrition };

@@ -1,21 +1,21 @@
-import type { NutritionItem, DayNutrition, NutritionTotals } from '../models/types';
+import type { NutritionItem, DayNutrition, NutritionTotals } from '../types/maintenance';
 
 // Import CSV files as text
-import semana1LunesCSV from '../assets/data/semana1/lunes.csv?raw';
-import semana1MartesCSV from '../assets/data/semana1/martes.csv?raw';
-import semana1MiercolesCSV from '../assets/data/semana1/miercoles.csv?raw';
-import semana1JuevesCSV from '../assets/data/semana1/jueves.csv?raw';
-import semana1ViernesCSV from '../assets/data/semana1/viernes.csv?raw';
-import semana1SabadoCSV from '../assets/data/semana1/sabado.csv?raw';
-import semana1DomingoCSV from '../assets/data/semana1/domingo.csv?raw';
+import semana1LunesCSV from '../../../assets/data/mantenimiento/semana1/lunes.csv?raw';
+import semana1MartesCSV from '../../../assets/data/mantenimiento/semana1/martes.csv?raw';
+import semana1MiercolesCSV from '../../../assets/data/mantenimiento/semana1/miercoles.csv?raw';
+import semana1JuevesCSV from '../../../assets/data/mantenimiento/semana1/jueves.csv?raw';
+import semana1ViernesCSV from '../../../assets/data/mantenimiento/semana1/viernes.csv?raw';
+import semana1SabadoCSV from '../../../assets/data/mantenimiento/semana1/sabado.csv?raw';
+import semana1DomingoCSV from '../../../assets/data/mantenimiento/semana1/domingo.csv?raw';
 
-import semana2LunesCSV from '../assets/data/semana2/lunes.csv?raw';
-import semana2MartesCSV from '../assets/data/semana2/martes.csv?raw';
-import semana2MiercolesCSV from '../assets/data/semana2/miercoles.csv?raw';
-import semana2JuevesCSV from '../assets/data/semana2/jueves.csv?raw';
-import semana2ViernesCSV from '../assets/data/semana2/viernes.csv?raw';
-import semana2SabadoCSV from '../assets/data/semana2/sabado.csv?raw';
-import semana2DomingoCSV from '../assets/data/semana2/domingo.csv?raw';
+import semana2LunesCSV from '../../../assets/data/mantenimiento/semana2/lunes.csv?raw';
+import semana2MartesCSV from '../../../assets/data/mantenimiento/semana2/martes.csv?raw';
+import semana2MiercolesCSV from '../../../assets/data/mantenimiento/semana2/miercoles.csv?raw';
+import semana2JuevesCSV from '../../../assets/data/mantenimiento/semana2/jueves.csv?raw';
+import semana2ViernesCSV from '../../../assets/data/mantenimiento/semana2/viernes.csv?raw';
+import semana2SabadoCSV from '../../../assets/data/mantenimiento/semana2/sabado.csv?raw';
+import semana2DomingoCSV from '../../../assets/data/mantenimiento/semana2/domingo.csv?raw';
 
 // CSV data mapping
 const csvData: { [week: number]: { [day: string]: string } } = {

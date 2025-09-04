@@ -1,8 +1,8 @@
-import type { Exercise, WorkoutDay } from '../models/types';
+import type { Exercise, WorkoutDay } from '../types/maintenance';
 
 // Import markdown files as text
-import semana1MD from '../assets/data/semana1/Plan Integral Entrenamiento y Nutrición - Semana 1.md?raw';
-import semana2MD from '../assets/data/semana2/Plan Integral Entrenamiento y Nutrición - Semana 2.md?raw';
+import semana1MD from '../../../assets/data/mantenimiento/semana1/Plan Integral Entrenamiento y Nutrición - Semana 1.md?raw';
+import semana2MD from '../../../assets/data/mantenimiento/semana2/Plan Integral Entrenamiento y Nutrición - Semana 2.md?raw';
 
 const markdownData: { [week: number]: string } = {
   1: semana1MD,

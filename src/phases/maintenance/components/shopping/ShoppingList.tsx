@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { useData } from '../../contexts/DataContext';
-import type { DayOfWeek } from '../../models/types';
+import type { DayOfWeek } from '../../types/maintenance';
 
 interface ShoppingListProps {
   className?: string;

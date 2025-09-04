@@ -1,4 +1,5 @@
-import type { WorkoutProgress, ShoppingList, ThemeMode, TableColumn } from '../models/types';
+import type { WorkoutProgress, ShoppingList, TableColumn } from '../../phases/maintenance/types/maintenance';
+import type { ThemeMode } from '../types/base';
 
 const STORAGE_KEYS = {
   WORKOUT_PROGRESS: 'gym-app-workout-progress',

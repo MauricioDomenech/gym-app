@@ -1,5 +1,5 @@
-import { supabase } from '../utils/supabase/client';
-import type { WorkoutProgress, ShoppingList } from '../models/types';
+import { supabase } from '../../utils/supabase/client';
+import type { WorkoutProgress, ShoppingList } from '../../phases/maintenance/types/maintenance';
 
 export class SupabaseService {
   public static async saveWorkoutProgress(progress: WorkoutProgress[]): Promise<void> {

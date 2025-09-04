@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useData } from '../../contexts/DataContext';
-import type { WorkoutProgress } from '../../models/types';
+import type { WorkoutProgress } from '../../types/maintenance';
 
 interface CopyWeekDataProps {
   currentWeek: number;

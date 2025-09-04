@@ -1,6 +1,6 @@
 import React from 'react';
 import { useData } from '../../contexts/DataContext';
-import type { NutritionItem, TableColumn } from '../../models/types';
+import type { NutritionItem, TableColumn } from '../../types/maintenance';
 import { ColumnToggle } from './ColumnToggle';
 
 interface NutritionTableProps {

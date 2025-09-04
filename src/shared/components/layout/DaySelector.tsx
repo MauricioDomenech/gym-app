@@ -1,6 +1,5 @@
 import React from 'react';
-import { useData } from '../../contexts/DataContext';
-import type { DayOfWeek } from '../../models/types';
+import type { DayOfWeek } from '../../../models/types';
 
 const dayLabels: { [key in DayOfWeek]: string } = {
   lunes: 'Lun',
@@ -22,12 +21,20 @@ const dayLabelsLong: { [key in DayOfWeek]: string } = {
   domingo: 'Domingo',
 };
 
-export const DaySelector: React.FC = () => {
-  const { currentDay, setCurrentDay, getDaysOfWeek, currentWeek } = useData();
-  const days = getDaysOfWeek();
+interface DaySelectorProps {
+  currentDay: DayOfWeek;
+  onDayChange: (day: DayOfWeek) => Promise<void>;
+  days: DayOfWeek[];
+  showSelector: boolean;
+}
 
-  // Don't show day selector on summary view
-  if (currentWeek === 0) {
+export const DaySelector: React.FC<DaySelectorProps> = ({ 
+  currentDay, 
+  onDayChange, 
+  days, 
+  showSelector 
+}) => {
+  if (!showSelector) {
     return null;
   }
 
@@ -45,7 +52,7 @@ export const DaySelector: React.FC = () => {
               value={currentDay}
               onChange={async (e) => {
                 try {
-                  await setCurrentDay(e.target.value as DayOfWeek);
+                  await onDayChange(e.target.value as DayOfWeek);
                 } catch (error) {
                   console.error('Error changing day:', error);
                 }
@@ -68,7 +75,7 @@ export const DaySelector: React.FC = () => {
                   key={day}
                   onClick={async () => {
                     try {
-                      await setCurrentDay(day);
+                      await onDayChange(day);
                     } catch (error) {
                       console.error('Error changing day:', error);
                     }
