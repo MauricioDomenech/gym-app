@@ -1,0 +1,20 @@
+comida,hora,alimento,cantidad,unidad,kcal,proteinas_g,carbohidratos_g,grasas_g,fibra_g,notas
+Desayuno,07:30,Huevo,2,unit,140.0,12.0,1.0,10.0,0.0,Ligero pre-entreno
+Desayuno,07:30,Pan integral (rebanada 50 g),1,slice,120.0,4.0,20.0,2.0,3.0,
+Desayuno,07:30,Plátano,1,unit,105.0,1.3,27.0,0.4,3.1,
+Merienda,11:00,Yogur sin lactosa,200,g,120.0,10.0,10.0,3.0,0.0,
+Merienda,11:00,Almendras,30,g,174.0,6.0,6.0,15.0,3.5,
+Merienda,11:00,Pera,1,unit,101.0,0.6,27.0,0.3,5.5,
+Comida,14:30,Merluza,220,g,198.0,44.0,0.0,2.2,0.0,
+Comida,14:30,Patata hervida,400,g,348.0,7.6,80.0,0.4,7.2,
+Comida,14:30,Zanahoria,120,g,49.2,1.1,12.0,0.2,3.4,Sin cebolla
+Comida,14:30,Brócoli cocido,150,g,52.5,3.6,10.5,0.6,4.9,Sin cebolla
+Comida,14:30,Aceite de oliva virgen extra,10,g,90.0,0.0,0.0,10.0,0.0,Aliño/cocción
+Merienda,18:00,Pan integral (rebanada 50 g),2,slice,240.0,8.0,40.0,4.0,6.0,Bocadillo
+Merienda,18:00,Pechuga de pavo (fiambre magro),80,g,128.0,23.2,0.0,2.4,0.0,Equivalente fiambre magro
+Merienda,18:00,Aguacate,50,g,80.0,1.0,4.5,7.5,3.5,Untado
+Comida,21:00,Mariscos (gambas/langostinos/calamares),220,g,217.8,44.0,2.2,3.3,0.0,
+Comida,21:00,Arroz integral cocido,260,g,288.6,6.8,59.8,2.3,4.7,
+Comida,21:00,Ensalada mixta,200,g,40.0,2.7,8.0,0.4,4.0,Sin cebolla
+Comida,21:00,Aceite de oliva virgen extra,10,g,90.0,0.0,0.0,10.0,0.0,Aliño/cocción
+TOTAL,,—,,,2582.1,175.9,308.0,74.0,48.8,

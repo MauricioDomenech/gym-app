@@ -1,0 +1,744 @@
+{
+    "plan":
+    [
+        {
+            "orden": 0,
+            "dia": "Lunes",
+            "musculos": "Empuje (Pecho + Deltoide anterior/lateral + Tríceps)",
+            "ejercicios":
+            [
+                {
+                    "nombre": "Press banca barra",
+                    "series": "4",
+                    "repeticiones": "6-8",
+                    "imagen": "img_lun_01.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Press en máquina convergente (Hammer/Technogym)",
+                            "imagen": "img_lun_01_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Press plano con mancuernas",
+                            "imagen": "img_lun_01_alt2.jpg"
+                        },
+                        {
+                            "nombre": "Smith plano",
+                            "imagen": "img_lun_01_alt3.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Press inclinado mancuernas (~30°)",
+                    "series": "3",
+                    "repeticiones": "8-10",
+                    "imagen": "img_lun_02.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Máquina inclinada",
+                            "imagen": "img_lun_02_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Smith inclinado",
+                            "imagen": "img_lun_02_alt2.jpg"
+                        },
+                        {
+                            "nombre": "Press inclinado barra",
+                            "imagen": "img_lun_02_alt3.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Fondos en paralelas (lastre si >12 reps)",
+                    "series": "3",
+                    "repeticiones": "8-12",
+                    "imagen": "img_lun_03.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Press declinado barra",
+                            "imagen": "img_lun_03_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Máquina declinada",
+                            "imagen": "img_lun_03_alt2.jpg"
+                        },
+                        {
+                            "nombre": "Press cerrado en Smith (énfasis tríceps)",
+                            "imagen": "img_lun_03_alt3.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Aperturas en polea",
+                    "series": "3",
+                    "repeticiones": "12-15 (dropset última)",
+                    "imagen": "img_lun_04.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Pec deck",
+                            "imagen": "img_lun_04_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Aperturas mancuernas",
+                            "imagen": "img_lun_04_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Press hombros (mancuernas o barra)",
+                    "series": "3",
+                    "repeticiones": "6-10",
+                    "imagen": "img_lun_05.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Máquina hombros",
+                            "imagen": "img_lun_05_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Smith militar",
+                            "imagen": "img_lun_05_alt2.jpg"
+                        },
+                        {
+                            "nombre": "Arnold press",
+                            "imagen": "img_lun_05_alt3.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Extensión tríceps overhead cuerda",
+                    "series": "3",
+                    "repeticiones": "8-12",
+                    "imagen": "img_lun_06.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Máquina tríceps tras nuca",
+                            "imagen": "img_lun_06_alt1.jpg"
+                        },
+                        {
+                            "nombre": "French press barra Z",
+                            "imagen": "img_lun_06_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Pushdown cuerda",
+                    "series": "2-3",
+                    "repeticiones": "12-15",
+                    "imagen": "img_lun_07.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Barra V/recta",
+                            "imagen": "img_lun_07_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Máquina empuje tríceps",
+                            "imagen": "img_lun_07_alt2.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orden": 1,
+            "dia": "Martes",
+            "musculos": "Tirón (Espalda + Deltoide posterior + Bíceps)",
+            "ejercicios":
+            [
+                {
+                    "nombre": "Dominadas pronas (lastre si >8-10)",
+                    "series": "4",
+                    "repeticiones": "6-8",
+                    "imagen": "img_mar_01.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Jalón polea agarre ancho",
+                            "imagen": "img_mar_01_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Jalón neutro",
+                            "imagen": "img_mar_01_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Remo con barra (torso ~45°)",
+                    "series": "3-4",
+                    "repeticiones": "6-10",
+                    "imagen": "img_mar_02.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Remo T-bar",
+                            "imagen": "img_mar_02_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Remo en máquina Hammer",
+                            "imagen": "img_mar_02_alt2.jpg"
+                        },
+                        {
+                            "nombre": "Remo pecho apoyado en banco",
+                            "imagen": "img_mar_02_alt3.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Remo en polea sentado (agarre estrecho)",
+                    "series": "3",
+                    "repeticiones": "8-12",
+                    "imagen": "img_mar_03.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Remo mancuerna 1 brazo",
+                            "imagen": "img_mar_03_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Remo bajo máquina",
+                            "imagen": "img_mar_03_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Face pull (cable a la cara)",
+                    "series": "3",
+                    "repeticiones": "12-15",
+                    "imagen": "img_mar_04.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Reverse pec deck",
+                            "imagen": "img_mar_04_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Pájaros mancuernas",
+                            "imagen": "img_mar_04_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Encogimientos trapecio (barra o DB)",
+                    "series": "2-3",
+                    "repeticiones": "10-15",
+                    "imagen": "img_mar_05.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Encogimiento en máquina",
+                            "imagen": "img_mar_05_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Farmer’s walk pesado",
+                            "imagen": "img_mar_05_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Curl barra",
+                    "series": "3",
+                    "repeticiones": "6-10",
+                    "imagen": "img_mar_06.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Curl en máquina",
+                            "imagen": "img_mar_06_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Curl mancuernas alterno",
+                            "imagen": "img_mar_06_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Curl concentración",
+                    "series": "2-3",
+                    "repeticiones": "10-12",
+                    "imagen": "img_mar_07.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Curl predicador (Scott)",
+                            "imagen": "img_mar_07_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Curl en cable con cuerda",
+                            "imagen": "img_mar_07_alt2.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orden": 2,
+            "dia": "Miércoles",
+            "musculos": "Pierna (Cuádriceps + Gemelos)",
+            "ejercicios":
+            [
+                {
+                    "nombre": "Sentadilla barra (profunda si puedes)",
+                    "series": "4",
+                    "repeticiones": "6-8",
+                    "imagen": "img_mie_01.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Sentadilla en Smith",
+                            "imagen": "img_mie_01_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Hack squat máquina",
+                            "imagen": "img_mie_01_alt2.jpg"
+                        },
+                        {
+                            "nombre": "Sentadilla frontal",
+                            "imagen": "img_mie_01_alt3.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Prensa de piernas (pies medios, ROM completo)",
+                    "series": "3-4",
+                    "repeticiones": "10-15",
+                    "imagen": "img_mie_02.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Prensa 45°",
+                            "imagen": "img_mie_02_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Prensa horizontal",
+                            "imagen": "img_mie_02_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Bulgarian split squat",
+                    "series": "3",
+                    "repeticiones": "8-12 (por pierna)",
+                    "imagen": "img_mie_03.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Zancadas caminando",
+                            "imagen": "img_mie_03_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Sentadilla goblet pesada",
+                            "imagen": "img_mie_03_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Extensión de cuádriceps",
+                    "series": "3",
+                    "repeticiones": "12-15 (dropset última)",
+                    "imagen": "img_mie_04.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Extensión unilateral",
+                            "imagen": "img_mie_04_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Sissy squat asistida",
+                            "imagen": "img_mie_04_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Elevación de talones de pie",
+                    "series": "3",
+                    "repeticiones": "10-15 (pausa 1 s arriba)",
+                    "imagen": "img_mie_05.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Calf press en prensa",
+                            "imagen": "img_mie_05_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Gemelo en Smith de pie",
+                            "imagen": "img_mie_05_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Core (opcional): Crunch con cable",
+                    "series": "3",
+                    "repeticiones": "12-15",
+                    "imagen": "img_mie_06.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Crunch en máquina",
+                            "imagen": "img_mie_06_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Ab wheel",
+                            "imagen": "img_mie_06_alt2.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orden": 3,
+            "dia": "Jueves",
+            "musculos": "Empuje (Volumen/aislamiento, técnica limpia)",
+            "ejercicios":
+            [
+                {
+                    "nombre": "Press mancuernas plano",
+                    "series": "3",
+                    "repeticiones": "8-10",
+                    "imagen": "img_jue_01.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Máquina convergente",
+                            "imagen": "img_jue_01_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Smith plano",
+                            "imagen": "img_jue_01_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Press inclinado máquina",
+                    "series": "3",
+                    "repeticiones": "10-12",
+                    "imagen": "img_jue_02.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Press inclinado mancuernas",
+                            "imagen": "img_jue_02_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Smith inclinado",
+                            "imagen": "img_jue_02_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Pec deck (fly)",
+                    "series": "3",
+                    "repeticiones": "12-15 (rest-pause última)",
+                    "imagen": "img_jue_03.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Cable fly alto→bajo",
+                            "imagen": "img_jue_03_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Aperturas mancuernas",
+                            "imagen": "img_jue_03_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Press hombros en máquina",
+                    "series": "3",
+                    "repeticiones": "8-12",
+                    "imagen": "img_jue_04.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Arnold press",
+                            "imagen": "img_jue_04_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Smith militar",
+                            "imagen": "img_jue_04_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Elevaciones laterales",
+                    "series": "3",
+                    "repeticiones": "12-15 (dropset)",
+                    "imagen": "img_jue_05.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Laterales en cable",
+                            "imagen": "img_jue_05_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Máquina lateral",
+                            "imagen": "img_jue_05_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Fondos tríceps en máquina",
+                    "series": "3",
+                    "repeticiones": "8-12",
+                    "imagen": "img_jue_06.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Press cerrado en Smith",
+                            "imagen": "img_jue_06_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Dips asistidos",
+                            "imagen": "img_jue_06_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Extensión tríceps en cuerda",
+                    "series": "2-3",
+                    "repeticiones": "12-15",
+                    "imagen": "img_jue_07.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Barra recta",
+                            "imagen": "img_jue_07_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Overhead en cable",
+                            "imagen": "img_jue_07_alt2.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orden": 4,
+            "dia": "Viernes",
+            "musculos": "Tirón (Volumen/aislamiento)",
+            "ejercicios":
+            [
+                {
+                    "nombre": "Jalón al pecho agarre neutro",
+                    "series": "3-4",
+                    "repeticiones": "8-12",
+                    "imagen": "img_vie_01.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Dominadas asistidas",
+                            "imagen": "img_vie_01_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Jalón supino",
+                            "imagen": "img_vie_01_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Remo pecho apoyado (banco inclinado)",
+                    "series": "3",
+                    "repeticiones": "8-12",
+                    "imagen": "img_vie_02.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Remo bajo máquina",
+                            "imagen": "img_vie_02_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Remo Hammer unilateral",
+                            "imagen": "img_vie_02_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Pullover en cable/máquina",
+                    "series": "2-3",
+                    "repeticiones": "12-15",
+                    "imagen": "img_vie_03.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Pullover mancuerna",
+                            "imagen": "img_vie_03_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Straight-arm pulldown",
+                            "imagen": "img_vie_03_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Reverse pec deck",
+                    "series": "3",
+                    "repeticiones": "12-15",
+                    "imagen": "img_vie_04.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Face pull",
+                            "imagen": "img_vie_04_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Pájaros mancuernas",
+                            "imagen": "img_vie_04_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Curl predicador",
+                    "series": "3",
+                    "repeticiones": "8-12",
+                    "imagen": "img_vie_05.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Curl en máquina",
+                            "imagen": "img_vie_05_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Barra Z en Scott",
+                            "imagen": "img_vie_05_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Curl en cable con cuerda",
+                    "series": "2-3",
+                    "repeticiones": "12-15 (dropset)",
+                    "imagen": "img_vie_06.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "High cable curl (doble polea)",
+                            "imagen": "img_vie_06_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Curl inclinado mancuernas",
+                            "imagen": "img_vie_06_alt2.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "orden": 5,
+            "dia": "Sábado",
+            "musculos": "Pierna (Isquios/Glúteo + Gemelos)",
+            "ejercicios":
+            [
+                {
+                    "nombre": "Peso muerto rumano",
+                    "series": "4",
+                    "repeticiones": "6-10",
+                    "imagen": "img_sab_01.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Buenos días barra ligera",
+                            "imagen": "img_sab_01_alt1.jpg"
+                        },
+                        {
+                            "nombre": "RDL con mancuernas",
+                            "imagen": "img_sab_01_alt2.jpg"
+                        },
+                        {
+                            "nombre": "Smith RDL",
+                            "imagen": "img_sab_01_alt3.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Hip Thrust barra (pausa 2 s arriba)",
+                    "series": "3-4",
+                    "repeticiones": "8-12",
+                    "imagen": "img_sab_02.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Máquina hip thrust",
+                            "imagen": "img_sab_02_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Puente glúteo barra + banda",
+                            "imagen": "img_sab_02_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Curl femoral sentado",
+                    "series": "3",
+                    "repeticiones": "10-15 (dropset última)",
+                    "imagen": "img_sab_03.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Curl prono",
+                            "imagen": "img_sab_03_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Curl nórdico asistido",
+                            "imagen": "img_sab_03_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Pull-through en cable",
+                    "series": "2-3",
+                    "repeticiones": "10-12",
+                    "imagen": "img_sab_04.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Peso muerto piernas rígidas",
+                            "imagen": "img_sab_04_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Kettlebell swing técnico (moderado)",
+                            "imagen": "img_sab_04_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Elevación de talones sentado (sóleo)",
+                    "series": "3",
+                    "repeticiones": "15-20",
+                    "imagen": "img_sab_05.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Gemelo en prensa sentado (improvisado)",
+                            "imagen": "img_sab_05_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Máquina sóleo",
+                            "imagen": "img_sab_05_alt2.jpg"
+                        }
+                    ]
+                },
+                {
+                    "nombre": "Core: Elevación de piernas colgado",
+                    "series": "3",
+                    "repeticiones": "10-15",
+                    "imagen": "img_sab_06.jpg",
+                    "alternativas":
+                    [
+                        {
+                            "nombre": "Captain’s chair",
+                            "imagen": "img_sab_06_alt1.jpg"
+                        },
+                        {
+                            "nombre": "Toes-to-bar (progresión)",
+                            "imagen": "img_sab_06_alt2.jpg"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
