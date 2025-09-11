@@ -58,7 +58,7 @@ export interface VolumeWorkoutProgress {
   seriesCount: number; // Cantidad de series usadas (2-5 series dependiendo del ejercicio)
   date: string;
   isAlternative: boolean;
-  alternativeIndex?: number;
+  alternativeIndex?: number | null;
 }
 
 // Volume-specific Week Plan Types

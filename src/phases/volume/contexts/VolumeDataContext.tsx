@@ -35,7 +35,7 @@ interface VolumeDataContextType {
   
   // Progress management
   saveWorkoutProgress: (progress: VolumeWorkoutProgress) => Promise<void>;
-  getExerciseProgress: (exerciseId: string, day: string, week: number, isAlternative?: boolean, alternativeIndex?: number) => VolumeWorkoutProgress | null;
+  getExerciseProgress: (exerciseId: string, day: string, week: number, isAlternative?: boolean, alternativeIndex?: number | null) => VolumeWorkoutProgress | null;
   
   // Shopping list management
   addShoppingList: (list: VolumeShoppingList) => Promise<void>;
@@ -181,7 +181,7 @@ export const VolumeDataProvider: React.FC<VolumeDataProviderProps> = ({ children
     day: string, 
     week: number,
     isAlternative: boolean = false,
-    alternativeIndex?: number
+    alternativeIndex?: number | null
   ): VolumeWorkoutProgress | null => {
     return workoutProgress.find(p => 
       p.exerciseId === exerciseId && 

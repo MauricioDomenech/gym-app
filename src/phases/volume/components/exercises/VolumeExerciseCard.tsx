@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { AlternativesList } from './AlternativesList';
 import { VolumeIndividualTracker } from './VolumeIndividualTracker';
 import type { VolumeExercise } from '../../types/volume';
