@@ -4,6 +4,11 @@ import type { VolumeExercise, VolumeWorkoutDay, VolumePlan } from '../types/volu
 import planVolumenJSON from '../../../assets/data/volumen/plan_volumen.json';
 
 export class VolumeExerciseParser {
+  // Normalize string by removing accents for consistent comparisons
+  private static normalizeString(str: string): string {
+    return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
   private static generateExerciseId(name: string, day: string, isAlternative: boolean = false, alternativeIndex?: number): string {
     const baseId = `${day}-${name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`;
     return isAlternative ? `${baseId}-alt-${alternativeIndex}` : baseId;
@@ -44,9 +49,9 @@ export class VolumeExerciseParser {
     try {
       const planData = this.parsePlanData();
       
-      // Find the day in the plan
+      // Find the day in the plan (normalize accents for comparison)
       const dayData = planData.plan.find((d: any) => 
-        d.dia.toLowerCase() === day.toLowerCase()
+        this.normalizeString(d.dia) === this.normalizeString(day)
       );
 
       if (!dayData) {
@@ -81,7 +86,7 @@ export class VolumeExerciseParser {
       
       // Process each day in the plan
       planData.plan.forEach((dayData: any) => {
-        const dayKey = dayData.dia.toLowerCase();
+        const dayKey = this.normalizeString(dayData.dia);
         const exercises = dayData.ejercicios.map((exercise: any) => 
           this.mapRawExerciseToVolumeExercise(exercise, dayKey)
         );
@@ -116,7 +121,7 @@ export class VolumeExerciseParser {
   public static getAvailableDays(): string[] {
     try {
       const planData = this.parsePlanData();
-      return planData.plan.map(day => day.dia.toLowerCase()).sort((a, b) => {
+      return planData.plan.map(day => this.normalizeString(day.dia)).sort((a, b) => {
         const order = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'];
         return order.indexOf(a) - order.indexOf(b);
       });

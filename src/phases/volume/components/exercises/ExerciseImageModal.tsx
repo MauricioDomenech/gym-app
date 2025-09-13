@@ -31,9 +31,9 @@ export const ExerciseImageModal: React.FC<ExerciseImageModalProps> = ({
     return null;
   }
 
-  // For now, we'll show a placeholder since the actual images aren't uploaded yet
-  // When you upload the images, just replace this with: <img src={imagePath} alt={exerciseName} />
-  const showPlaceholder = true; // Set to false when real images are available
+  // Build complete image path dynamically
+  const fullImagePath = `/src/assets/${imagePath}`;
+  const showPlaceholder = false; // Real images are now available
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto" role="dialog" aria-labelledby="modal-title" aria-modal="true">
@@ -104,7 +104,7 @@ export const ExerciseImageModal: React.FC<ExerciseImageModalProps> = ({
               /* Real image when available */
               <div className="flex justify-center">
                 <img
-                  src={imagePath}
+                  src={fullImagePath}
                   alt={exerciseName}
                   className="max-w-full max-h-[60vh] object-contain rounded-lg shadow-lg"
                   onError={(e) => {
@@ -113,7 +113,7 @@ export const ExerciseImageModal: React.FC<ExerciseImageModalProps> = ({
                     e.currentTarget.parentElement!.innerHTML = `
                       <div class="text-center py-8">
                         <p class="text-gray-500">No se pudo cargar la imagen</p>
-                        <p class="text-sm text-gray-400 mt-2">${imagePath}</p>
+                        <p class="text-sm text-gray-400 mt-2">${fullImagePath}</p>
                       </div>
                     `;
                   }}

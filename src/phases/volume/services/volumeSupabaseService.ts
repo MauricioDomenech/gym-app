@@ -27,6 +27,7 @@ export class VolumeSupabaseService {
       date: p.date,
       is_alternative: p.isAlternative,
       alternative_index: p.alternativeIndex === undefined ? null : p.alternativeIndex,
+      observations: p.observations || '',
     }));
 
     const { error: insertError } = await supabase
@@ -56,6 +57,7 @@ export class VolumeSupabaseService {
       date: row.date,
       isAlternative: row.is_alternative || false,
       alternativeIndex: row.alternative_index,
+      observations: row.observations || '',
     }));
   }
 
@@ -92,6 +94,7 @@ export class VolumeSupabaseService {
         date: progress.date,
         is_alternative: progress.isAlternative,
         alternative_index: progress.alternativeIndex === undefined ? null : progress.alternativeIndex,
+        observations: progress.observations || '',
       });
 
     if (insertError) {
@@ -137,6 +140,7 @@ export class VolumeSupabaseService {
       date: data.date,
       isAlternative: data.is_alternative || false,
       alternativeIndex: data.alternative_index,
+      observations: data.observations || '',
     };
   }
 

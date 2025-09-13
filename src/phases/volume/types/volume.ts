@@ -59,6 +59,7 @@ export interface VolumeWorkoutProgress {
   date: string;
   isAlternative: boolean;
   alternativeIndex?: number | null;
+  observations?: string; // Observaciones opcionales del usuario sobre el ejercicio
 }
 
 // Volume-specific Week Plan Types

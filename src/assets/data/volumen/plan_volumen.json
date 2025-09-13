@@ -171,7 +171,7 @@
                     "nombre": "Remo con barra (torso ~45°)",
                     "series": "3-4",
                     "repeticiones": "6-10",
-                    "imagen": "img_mar_02.jpg",
+                    "imagen": "img_mar_02.gif",
                     "alternativas":
                     [
                         {
@@ -306,7 +306,7 @@
                     "nombre": "Prensa de piernas (pies medios, ROM completo)",
                     "series": "3-4",
                     "repeticiones": "10-15",
-                    "imagen": "img_mie_02.jpg",
+                    "imagen": "img_mie_02.gif",
                     "alternativas":
                     [
                         {
@@ -315,7 +315,7 @@
                         },
                         {
                             "nombre": "Prensa horizontal",
-                            "imagen": "img_mie_02_alt2.jpg"
+                            "imagen": "img_mie_02_alt2.gif"
                         }
                     ]
                 },
@@ -379,7 +379,7 @@
                     [
                         {
                             "nombre": "Crunch en máquina",
-                            "imagen": "img_mie_06_alt1.jpg"
+                            "imagen": "img_mie_06_alt1.gif"
                         },
                         {
                             "nombre": "Ab wheel",
@@ -416,7 +416,7 @@
                     "nombre": "Press inclinado máquina",
                     "series": "3",
                     "repeticiones": "10-12",
-                    "imagen": "img_jue_02.jpg",
+                    "imagen": "img_jue_02.gif",
                     "alternativas":
                     [
                         {
@@ -603,12 +603,12 @@
                         },
                         {
                             "nombre": "Barra Z en Scott",
-                            "imagen": "img_vie_05_alt2.jpg"
+                            "imagen": "img_vie_05.jpg"
                         }
                     ]
                 },
                 {
-                    "nombre": "Curl en cable con cuerda",
+                    "nombre": "Curl inclinado mancuernas",
                     "series": "2-3",
                     "repeticiones": "12-15 (dropset)",
                     "imagen": "img_vie_06.jpg",
@@ -619,8 +619,8 @@
                             "imagen": "img_vie_06_alt1.jpg"
                         },
                         {
-                            "nombre": "Curl inclinado mancuernas",
-                            "imagen": "img_vie_06_alt2.jpg"
+                            "nombre": "Curl en cable con cuerda",
+                            "imagen": "img_mar_07_alt2.jpg"
                         }
                     ]
                 }

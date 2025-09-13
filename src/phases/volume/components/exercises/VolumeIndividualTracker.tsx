@@ -21,6 +21,8 @@ export const VolumeIndividualTracker: React.FC<VolumeIndividualTrackerProps> = (
   // Dynamic weights state based on series count
   const [weights, setWeights] = useState<number[]>(new Array(currentSeriesCount).fill(0));
   const [savedWeights, setSavedWeights] = useState<number[]>(new Array(currentSeriesCount).fill(0));
+  const [observations, setObservations] = useState<string>('');
+  const [savedObservations, setSavedObservations] = useState<string>('');
   const [isSaving, setIsSaving] = useState(false);
   const [justSaved, setJustSaved] = useState(false);
   const [saveTimer, setSaveTimer] = useState<NodeJS.Timeout | null>(null);
@@ -51,12 +53,16 @@ export const VolumeIndividualTracker: React.FC<VolumeIndividualTrackerProps> = (
       setCurrentSeriesCount(loadedSeriesCount);
       setWeights([...existingProgress.weights]);
       setSavedWeights([...existingProgress.weights]);
+      setObservations(existingProgress.observations || '');
+      setSavedObservations(existingProgress.observations || '');
     } else {
       // Reset to default for new exercise
       const newWeights = new Array(seriesInfo.defaultSeries).fill(0);
       setCurrentSeriesCount(seriesInfo.defaultSeries);
       setWeights(newWeights);
       setSavedWeights(newWeights);
+      setObservations('');
+      setSavedObservations('');
     }
   }, [exercise.id, currentDay, currentWeek, getExerciseProgress]); // Removed selectedAlternativeIndex
 
@@ -119,12 +125,14 @@ export const VolumeIndividualTracker: React.FC<VolumeIndividualTrackerProps> = (
         date: new Date().toISOString(),
         isAlternative: false, // Always save as main exercise for shared tracking
         alternativeIndex: null, // No alternative index for shared tracking
+        observations: observations.trim(),
       };
 
       await saveWorkoutProgress(progress);
       
-      // Update saved weights after successful save
+      // Update saved weights and observations after successful save
       setSavedWeights([...weights]);
+      setSavedObservations(observations.trim());
       
       // Show "Registrado" for 5 seconds
       setJustSaved(true);
@@ -151,8 +159,8 @@ export const VolumeIndividualTracker: React.FC<VolumeIndividualTrackerProps> = (
     setWeights(newWeights);
   };
 
-  const hasProgress = weights.some(weight => weight > 0);
-  const hasSavedProgress = savedWeights.some(weight => weight > 0);
+  const hasProgress = weights.some(weight => weight > 0) || observations.trim().length > 0;
+  const hasSavedProgress = savedWeights.some(weight => weight > 0) || savedObservations.length > 0;
   const canAdjustSeries = seriesInfo.minSeries !== seriesInfo.maxSeries;
 
   return (
@@ -248,6 +256,20 @@ export const VolumeIndividualTracker: React.FC<VolumeIndividualTrackerProps> = (
         )}
       </div>
 
+      {/* Observations Section */}
+      <div className="space-y-2">
+        <label className="block text-xs font-medium text-gray-700 dark:text-gray-300">
+          Observaciones (opcional)
+        </label>
+        <textarea
+          value={observations}
+          onChange={(e) => setObservations(e.target.value)}
+          placeholder="Agrega observaciones sobre este ejercicio..."
+          rows={3}
+          className="w-full px-2 py-2 border border-orange-300 dark:border-orange-700 rounded text-sm bg-white dark:bg-slate-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 resize-none"
+        />
+      </div>
+
       {/* Action Buttons */}
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
@@ -289,13 +311,28 @@ export const VolumeIndividualTracker: React.FC<VolumeIndividualTrackerProps> = (
 
       {/* Progress Summary */}
       {hasSavedProgress && (
-        <div className="p-2 bg-green-50 dark:bg-green-900/20 rounded text-xs border border-green-200 dark:border-green-800">
-          <span className="text-green-700 dark:text-green-300 font-medium">
-            🎯 Último registro ({savedWeights.length} series):
-          </span>
-          <span className="ml-2 text-green-800 dark:text-green-200">
-            {savedWeights.filter(w => w > 0).map((w, i) => `S${i + 1}: ${w}kg`).join(' • ') || 'Sin pesos registrados'}
-          </span>
+        <div className="space-y-2">
+          {savedWeights.some(w => w > 0) && (
+            <div className="p-2 bg-green-50 dark:bg-green-900/20 rounded text-xs border border-green-200 dark:border-green-800">
+              <span className="text-green-700 dark:text-green-300 font-medium">
+                🎯 Último registro ({savedWeights.length} series):
+              </span>
+              <span className="ml-2 text-green-800 dark:text-green-200">
+                {savedWeights.filter(w => w > 0).map((w, i) => `S${i + 1}: ${w}kg`).join(' • ') || 'Sin pesos registrados'}
+              </span>
+            </div>
+          )}
+          
+          {savedObservations && (
+            <div className="p-2 bg-blue-50 dark:bg-blue-900/20 rounded text-xs border border-blue-200 dark:border-blue-800">
+              <span className="text-blue-700 dark:text-blue-300 font-medium">
+                📝 Observaciones guardadas:
+              </span>
+              <div className="mt-1 text-blue-800 dark:text-blue-200">
+                {savedObservations}
+              </div>
+            </div>
+          )}
         </div>
       )}
 
