@@ -32,7 +32,7 @@ export const ExerciseImageModal: React.FC<ExerciseImageModalProps> = ({
   }
 
   // Build complete image path dynamically
-  const fullImagePath = `/src/assets/${imagePath}`;
+  const fullImagePath = `/images/${imagePath}`;
   const showPlaceholder = false; // Real images are now available
 
   return (
