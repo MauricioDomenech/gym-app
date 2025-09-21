@@ -2,24 +2,23 @@ comida,hora,alimento,cantidad,unidad,kcal,proteinas_g,carbohidratos_g,grasas_g,f
 Desayuno,07:30,Huevo,2.0,unit,140.0,12.0,1.0,10.0,0.0,Ligero pre-entreno
 Desayuno,07:30,Pan integral (rebanada 50 g),1.0,slice,120.0,4.0,20.0,2.0,3.0,
 Desayuno,07:30,Manzana,1.0,unit,95.0,0.5,25.0,0.3,4.4,
-Post-entreno mañana,09:45,Proteína aislada (whey) sin lactosa,22.2,g polvo,86.0,20.0,0.9,0.27,0.0,Aislado sin lactosa
-Post-entreno mañana,09:45,Creatina monohidratada,5.0,g,0.0,0.0,0.0,0.0,0.0,Post-entreno
-Post-entreno mañana,09:45,Avena (en batido),40.0,g,152.0,5.2,25.2,2.8,4.0,Añadir al batido
-Post-entreno mañana,09:45,Leche de almendra sin azúcar,250.0,ml,32.5,1.2,0.8,2.8,0.5,
-Comida,14:00,Pavo pechuga,190.0,g,304.0,55.1,0.0,5.7,0.0,
-Comida,14:00,Arroz blanco cocido,320.0,g,416.0,8.6,89.6,1.0,1.3,
-Comida,14:00,Ensalada mixta,220.0,g,44.0,2.9,8.8,0.4,4.4,Sin cebolla
+Post-entreno mañana,09:45,Proteína aislada (whey) sin lactosa,38.9,g polvo,150.4,35.0,1.6,0.47,0.0,Aislado sin lactosa
+Post-entreno mañana,09:45,Avena (en batido),45.0,g,171.0,5.9,28.4,3.1,4.5,Añadir al batido
+Post-entreno mañana,09:45,Leche de almendra sin azúcar,300.0,ml,39.0,1.5,0.9,3.3,0.6,
+Post-entreno mañana,09:45,Creatina monohidratada,5.0,g,0.0,0.0,0.0,0.0,0.0,Diaria (AM)
+Comida,14:00,Pavo pechuga,180.0,g,288.0,52.2,0.0,5.4,0.0,
+Comida,14:00,Arroz blanco (en crudo),110.0,g (en crudo),39600.0,770.0,8800.0,66.0,143.0,
+Comida,14:00,Ensalada mixta,200.0,g,40.0,2.7,8.0,0.4,4.0,Sin cebolla
 Comida,14:00,Aceite de oliva virgen extra,12.0,g,108.0,0.0,0.0,12.0,0.0,Aliño/cocción
 Merienda,17:30,Yogur sin lactosa,200.0,g,120.0,10.0,10.0,3.0,0.0,
 Merienda,17:30,Almendras,30.0,g,174.0,6.0,6.0,15.0,3.5,
 Merienda,17:30,Pera,1.0,unit,101.0,0.6,27.0,0.3,5.5,
-Post-cardio tarde,19:30,Proteína aislada (whey) sin lactosa,16.7,g polvo,64.5,15.0,0.7,0.2,0.0,Aislado sin lactosa
-Post-cardio tarde,19:30,Creatina monohidratada,5.0,g,0.0,0.0,0.0,0.0,0.0,Post-entreno
-Post-cardio tarde,19:30,Avena (en batido),30.0,g,114.0,3.9,18.9,2.1,3.0,Añadir al batido
-Post-cardio tarde,19:30,Leche de almendra sin azúcar,200.0,ml,26.0,1.0,0.6,2.2,0.4,
-Comida,21:30,Trucha,200.0,g,380.0,50.0,0.0,16.0,0.0,
-Comida,21:30,Batata asada,320.0,g,288.0,6.4,67.2,0.3,9.6,
+Post-cardio tarde,19:30,Proteína aislada (whey) sin lactosa,22.2,g polvo,86.0,20.0,0.9,0.27,0.0,Aislado sin lactosa
+Post-cardio tarde,19:30,Avena (en batido),35.0,g,133.0,4.5,22.0,2.4,3.5,Añadir al batido
+Post-cardio tarde,19:30,Leche de almendra sin azúcar,250.0,ml,32.5,1.2,0.8,2.8,0.5,
+Comida,21:30,Trucha,180.0,g,342.0,45.0,0.0,14.4,0.0,
+Comida,21:30,Batata (en crudo),300.0,g (en crudo),25800.0,480.0,6030.0,30.0,900.0,
 Comida,21:30,Brócoli cocido,180.0,g,63.0,4.3,12.6,0.7,5.9,Sin cebolla
 Comida,21:30,Zanahoria,120.0,g,49.2,1.1,12.0,0.2,3.4,Sin cebolla
 Comida,21:30,Aceite de oliva virgen extra,10.0,g,90.0,0.0,0.0,10.0,0.0,Aliño/cocción
-TOTAL,,—,,,2967.2,207.8,326.3,87.3,48.9,
+TOTAL,,—,,,67742.1,1456.5,15006.2,182.0,1081.8,

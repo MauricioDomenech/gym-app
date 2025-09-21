@@ -53,6 +53,7 @@ export const VolumeCopyWeekData: React.FC<VolumeCopyWeekDataProps> = ({ currentW
           date: new Date().toISOString(),
           isAlternative: sourceProgress.isAlternative,
           alternativeIndex: sourceProgress.alternativeIndex,
+          observations: sourceProgress.observations, // Copy observations
         };
 
         await saveWorkoutProgress(newProgress);
@@ -174,6 +175,7 @@ export const VolumeCopyWeekData: React.FC<VolumeCopyWeekDataProps> = ({ currentW
                       <li>• Ejercicios principales con sus pesos</li>
                       <li>• Alternativas seleccionadas con sus pesos</li>
                       <li>• Cantidad de series utilizadas</li>
+                      <li>• Observaciones de cada ejercicio</li>
                       <li>• Se respetará la configuración de cada ejercicio</li>
                     </ul>
                   </div>

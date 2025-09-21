@@ -141,6 +141,14 @@
                             "imagen": "img_lun_07_alt2.jpg"
                         }
                     ]
+                },
+                {
+                    "nombre": "Abdominales",
+                    "series": "4",
+                    "repeticiones": "30",
+                    "imagen": "img_lun_08.jpg",
+                    "alternativas":
+                    []
                 }
             ]
         },
@@ -272,6 +280,14 @@
                             "imagen": "img_mar_07_alt2.jpg"
                         }
                     ]
+                },
+                {
+                    "nombre": "Abdominales",
+                    "series": "3",
+                    "repeticiones": "30",
+                    "imagen": "img_mar_08.jpg",
+                    "alternativas":
+                    []
                 }
             ]
         },
@@ -513,6 +529,14 @@
                             "imagen": "img_jue_07_alt2.jpg"
                         }
                     ]
+                },
+                {
+                    "nombre": "Abdominales",
+                    "series": "4",
+                    "repeticiones": "30",
+                    "imagen": "img_jue_08.jpg",
+                    "alternativas":
+                    []
                 }
             ]
         },
@@ -623,6 +647,14 @@
                             "imagen": "img_mar_07_alt2.jpg"
                         }
                     ]
+                },
+                {
+                    "nombre": "Abdominales",
+                    "series": "3",
+                    "repeticiones": "30",
+                    "imagen": "img_vie_08.jpg",
+                    "alternativas":
+                    []
                 }
             ]
         },
@@ -737,6 +769,14 @@
                             "imagen": "img_sab_06_alt2.jpg"
                         }
                     ]
+                },
+                {
+                    "nombre": "Abdominales",
+                    "series": "3",
+                    "repeticiones": "30",
+                    "imagen": "img_sab_08.jpg",
+                    "alternativas":
+                    []
                 }
             ]
         }
