@@ -171,61 +171,69 @@ export function getProgressAlerts(params: ProgressAlertsParams): ProgressAlert[]
   }
 
   // 4. Low training adherence (< 70%)
+  // Only show when user has logged at least one entry this week
   if (currentWeek > 0) {
-    const weekWorkouts = workoutData[currentWeek];
-    if (weekWorkouts) {
-      let totalExercises = 0;
-      let completedExercises = 0;
-      for (const day of DAYS_OF_WEEK) {
-        const dayWorkout = weekWorkouts[day];
-        if (dayWorkout) {
-          const exerciseCount = dayWorkout.exercises.length;
-          totalExercises += exerciseCount;
-          const dayCompleted = workoutProgress.filter(
-            p => p.week === currentWeek && p.day === day
-          ).length;
-          completedExercises += Math.min(dayCompleted, exerciseCount);
+    const hasAnyWeekData = workoutProgress.some(p => p.week === currentWeek);
+    if (hasAnyWeekData) {
+      const weekWorkouts = workoutData[currentWeek];
+      if (weekWorkouts) {
+        let totalExercises = 0;
+        let completedExercises = 0;
+        for (const day of DAYS_OF_WEEK) {
+          const dayWorkout = weekWorkouts[day];
+          if (dayWorkout) {
+            const exerciseCount = dayWorkout.exercises.length;
+            totalExercises += exerciseCount;
+            const dayCompleted = workoutProgress.filter(
+              p => p.week === currentWeek && p.day === day
+            ).length;
+            completedExercises += Math.min(dayCompleted, exerciseCount);
+          }
         }
-      }
-      if (totalExercises > 0) {
-        const percent = (completedExercises / totalExercises) * 100;
-        if (percent < 70) {
-          alerts.push({
-            id: 'low-training',
-            severity: 'warning',
-            title: 'Adherencia baja al entrenamiento',
-            message: `Solo has completado el ${Math.round(percent)}% de los ejercicios planificados esta semana. Intenta mantener al menos un 70%.`,
-            week: currentWeek,
-          });
+        if (totalExercises > 0) {
+          const percent = (completedExercises / totalExercises) * 100;
+          if (percent < 70) {
+            alerts.push({
+              id: 'low-training',
+              severity: 'warning',
+              title: 'Adherencia baja al entrenamiento',
+              message: `Solo has completado el ${Math.round(percent)}% de los ejercicios planificados esta semana. Intenta mantener al menos un 70%.`,
+              week: currentWeek,
+            });
+          }
         }
       }
     }
   }
 
   // 5. Low cardio adherence (< 50%)
+  // Only show when user has logged at least one cardio entry this week
   if (currentWeek > 0) {
-    let plannedCardio = 0;
-    let completedCardio = 0;
-    for (const day of DAYS_OF_WEEK) {
-      const config = DefinicionExerciseParser.getCardioConfig(day);
-      if (config && config.tipo !== null) {
-        plannedCardio++;
-        const hasLog = cardioLogs.some(
-          l => l.week === currentWeek && l.day === day && l.completado
-        );
-        if (hasLog) completedCardio++;
+    const hasAnyCardioData = cardioLogs.some(l => l.week === currentWeek);
+    if (hasAnyCardioData) {
+      let plannedCardio = 0;
+      let completedCardio = 0;
+      for (const day of DAYS_OF_WEEK) {
+        const config = DefinicionExerciseParser.getCardioConfig(day);
+        if (config && config.tipo !== null) {
+          plannedCardio++;
+          const hasLog = cardioLogs.some(
+            l => l.week === currentWeek && l.day === day && l.completado
+          );
+          if (hasLog) completedCardio++;
+        }
       }
-    }
-    if (plannedCardio > 0) {
-      const percent = (completedCardio / plannedCardio) * 100;
-      if (percent < 50) {
-        alerts.push({
-          id: 'low-cardio',
-          severity: 'warning',
-          title: 'Adherencia baja al cardio',
-          message: `Has completado solo ${completedCardio} de ${plannedCardio} sesiones de cardio planificadas esta semana (${Math.round(percent)}%).`,
-          week: currentWeek,
-        });
+      if (plannedCardio > 0) {
+        const percent = (completedCardio / plannedCardio) * 100;
+        if (percent < 50) {
+          alerts.push({
+            id: 'low-cardio',
+            severity: 'warning',
+            title: 'Adherencia baja al cardio',
+            message: `Has completado solo ${completedCardio} de ${plannedCardio} sesiones de cardio planificadas esta semana (${Math.round(percent)}%).`,
+            week: currentWeek,
+          });
+        }
       }
     }
   }
