@@ -4,7 +4,7 @@ import { usePhase } from '../../contexts/PhaseContext';
 export const PhaseSelector: React.FC = () => {
   const { setPhase } = usePhase();
 
-  const handlePhaseSelect = (phase: 'maintenance' | 'volume') => {
+  const handlePhaseSelect = (phase: 'maintenance' | 'volume' | 'definicion') => {
     setPhase(phase);
   };
 
@@ -41,6 +41,17 @@ export const PhaseSelector: React.FC = () => {
               <div className="text-lg">Volumen</div>
               <div className="text-sm opacity-90 mt-1">
                 Rutina de ganancia de masa muscular
+              </div>
+            </button>
+
+            <button
+              onClick={() => handlePhaseSelect('definicion')}
+              className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 transform hover:scale-105 flex flex-col items-center"
+            >
+              <div className="text-2xl mb-2">🔥</div>
+              <div className="text-lg">Definicion</div>
+              <div className="text-sm opacity-90 mt-1">
+                Fase de corte con deficit progresivo (22 semanas)
               </div>
             </button>
           </div>

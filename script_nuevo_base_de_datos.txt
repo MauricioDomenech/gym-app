@@ -1,0 +1,117 @@
+-- =============================================
+-- SCRIPT: Nuevas tablas para fase DEFINICION
+-- Ejecutar en Supabase SQL Editor
+-- =============================================
+
+-- 1. Tabla de progreso de ejercicios (definicion)
+CREATE TABLE IF NOT EXISTS definicion_workout_progress (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  exercise_id TEXT NOT NULL,
+  day TEXT NOT NULL,
+  week INTEGER NOT NULL,
+  weights JSONB DEFAULT '[]'::jsonb,
+  series_count INTEGER DEFAULT 3,
+  date TIMESTAMPTZ DEFAULT NOW(),
+  is_alternative BOOLEAN DEFAULT FALSE,
+  alternative_index INTEGER,
+  observations TEXT DEFAULT '',
+  rpe_actual DECIMAL,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 2. Tabla de listas de compras (definicion)
+CREATE TABLE IF NOT EXISTS definicion_shopping_lists (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  selected_weeks JSONB DEFAULT '[]'::jsonb,
+  selected_days JSONB DEFAULT '[]'::jsonb,
+  items JSONB DEFAULT '[]'::jsonb,
+  generated_date TIMESTAMPTZ DEFAULT NOW(),
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 3. Tabla de ajustes/settings (definicion)
+CREATE TABLE IF NOT EXISTS definicion_settings (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  setting_key TEXT UNIQUE NOT NULL,
+  setting_value JSONB,
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 4. Tabla de composicion corporal (NUEVA)
+CREATE TABLE IF NOT EXISTS definicion_body_composition (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  week INTEGER NOT NULL,
+  date TIMESTAMPTZ DEFAULT NOW(),
+  peso DECIMAL NOT NULL,
+  grasa_corporal DECIMAL,
+  cintura DECIMAL,
+  cadera DECIMAL,
+  pecho DECIMAL,
+  brazo DECIMAL,
+  muslo DECIMAL,
+  notas TEXT DEFAULT '',
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 5. Tabla de registros de cardio (NUEVA)
+CREATE TABLE IF NOT EXISTS definicion_cardio_logs (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  day TEXT NOT NULL,
+  week INTEGER NOT NULL,
+  tipo TEXT NOT NULL,
+  duracion_minutos INTEGER DEFAULT 0,
+  completado BOOLEAN DEFAULT FALSE,
+  notas TEXT DEFAULT '',
+  date TIMESTAMPTZ DEFAULT NOW(),
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- =============================================
+-- POLITICAS RLS (publicas, igual que volumen)
+-- =============================================
+
+-- Habilitar RLS en todas las tablas
+ALTER TABLE definicion_workout_progress ENABLE ROW LEVEL SECURITY;
+ALTER TABLE definicion_shopping_lists ENABLE ROW LEVEL SECURITY;
+ALTER TABLE definicion_settings ENABLE ROW LEVEL SECURITY;
+ALTER TABLE definicion_body_composition ENABLE ROW LEVEL SECURITY;
+ALTER TABLE definicion_cardio_logs ENABLE ROW LEVEL SECURITY;
+
+-- Politicas publicas para definicion_workout_progress
+CREATE POLICY "Allow public select on definicion_workout_progress" ON definicion_workout_progress FOR SELECT USING (true);
+CREATE POLICY "Allow public insert on definicion_workout_progress" ON definicion_workout_progress FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update on definicion_workout_progress" ON definicion_workout_progress FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete on definicion_workout_progress" ON definicion_workout_progress FOR DELETE USING (true);
+
+-- Politicas publicas para definicion_shopping_lists
+CREATE POLICY "Allow public select on definicion_shopping_lists" ON definicion_shopping_lists FOR SELECT USING (true);
+CREATE POLICY "Allow public insert on definicion_shopping_lists" ON definicion_shopping_lists FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update on definicion_shopping_lists" ON definicion_shopping_lists FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete on definicion_shopping_lists" ON definicion_shopping_lists FOR DELETE USING (true);
+
+-- Politicas publicas para definicion_settings
+CREATE POLICY "Allow public select on definicion_settings" ON definicion_settings FOR SELECT USING (true);
+CREATE POLICY "Allow public insert on definicion_settings" ON definicion_settings FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update on definicion_settings" ON definicion_settings FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete on definicion_settings" ON definicion_settings FOR DELETE USING (true);
+
+-- Politicas publicas para definicion_body_composition
+CREATE POLICY "Allow public select on definicion_body_composition" ON definicion_body_composition FOR SELECT USING (true);
+CREATE POLICY "Allow public insert on definicion_body_composition" ON definicion_body_composition FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update on definicion_body_composition" ON definicion_body_composition FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete on definicion_body_composition" ON definicion_body_composition FOR DELETE USING (true);
+
+-- Politicas publicas para definicion_cardio_logs
+CREATE POLICY "Allow public select on definicion_cardio_logs" ON definicion_cardio_logs FOR SELECT USING (true);
+CREATE POLICY "Allow public insert on definicion_cardio_logs" ON definicion_cardio_logs FOR INSERT WITH CHECK (true);
+CREATE POLICY "Allow public update on definicion_cardio_logs" ON definicion_cardio_logs FOR UPDATE USING (true);
+CREATE POLICY "Allow public delete on definicion_cardio_logs" ON definicion_cardio_logs FOR DELETE USING (true);
+
+-- =============================================
+-- INDICES para mejorar rendimiento
+-- =============================================
+
+CREATE INDEX IF NOT EXISTS idx_def_workout_exercise ON definicion_workout_progress(exercise_id, day, week);
+CREATE INDEX IF NOT EXISTS idx_def_cardio_week ON definicion_cardio_logs(week, day);
+CREATE INDEX IF NOT EXISTS idx_def_body_week ON definicion_body_composition(week);
+CREATE INDEX IF NOT EXISTS idx_def_settings_key ON definicion_settings(setting_key);

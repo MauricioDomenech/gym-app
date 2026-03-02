@@ -4,6 +4,7 @@ import { PhaseProvider, usePhase } from './contexts/PhaseContext';
 import { PhaseSelector } from './components/phase/PhaseSelector';
 import { MaintenanceApp } from './phases/maintenance';
 import { VolumeApp } from './phases/volume';
+import { DefinicionApp } from './phases/definicion';
 
 const PhaseAwareContent: React.FC = () => {
   const { currentPhase, isPhaseSelected } = usePhase();
@@ -14,6 +15,10 @@ const PhaseAwareContent: React.FC = () => {
 
   if (currentPhase === 'volume') {
     return <VolumeApp />;
+  }
+
+  if (currentPhase === 'definicion') {
+    return <DefinicionApp />;
   }
 
   // Maintenance phase

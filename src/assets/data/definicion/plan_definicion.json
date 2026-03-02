@@ -1,0 +1,529 @@
+{
+  "plan": [
+    {
+      "orden": 0,
+      "dia": "Lunes",
+      "tipo": "Push 1 (Fuerza)",
+      "musculos": "Pecho + Deltoide anterior + Triceps + Core",
+      "ejercicios": [
+        {
+          "nombre": "Press banca inclinado 30°",
+          "series": "4",
+          "repeticiones": "5-7",
+          "descanso": "3 min",
+          "imagen": "img_def_lun_01.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8.5],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Press inclinado con mancuernas", "imagen": "img_def_lun_01_alt1.jpg" },
+            { "nombre": "Press inclinado en maquina Smith", "imagen": "img_def_lun_01_alt2.jpg" }
+          ]
+        },
+        {
+          "nombre": "Press hombros en maquina con respaldo",
+          "series": "3",
+          "repeticiones": "6-8",
+          "descanso": "2-3 min",
+          "imagen": "img_def_lun_02.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8.5],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Press militar con mancuernas sentado", "imagen": "img_def_lun_02_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Pec deck / Aperturas maquina",
+          "series": "3",
+          "repeticiones": "10-12",
+          "descanso": "90 seg",
+          "imagen": "img_def_lun_03.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Aperturas con mancuernas en banco plano", "imagen": "img_def_lun_03_alt1.jpg" },
+            { "nombre": "Cable crossover a la altura del pecho", "imagen": "img_def_lun_03_alt2.jpg" }
+          ]
+        },
+        {
+          "nombre": "Elevacion lateral con polea",
+          "series": "3",
+          "repeticiones": "12-15",
+          "descanso": "60 seg",
+          "imagen": "img_def_lun_04.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Elevacion lateral con mancuernas", "imagen": "img_def_lun_04_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Triceps pushdown (polea)",
+          "series": "3",
+          "repeticiones": "10-12",
+          "descanso": "60 seg",
+          "imagen": "img_def_lun_05.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Triceps en polea con cuerda", "imagen": "img_def_lun_05_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Cable crunch",
+          "series": "3",
+          "repeticiones": "12-15",
+          "descanso": "60 seg",
+          "imagen": "img_def_lun_06.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": []
+        },
+        {
+          "nombre": "Pallof press",
+          "series": "3",
+          "repeticiones": "10-12/lado",
+          "descanso": "60 seg",
+          "imagen": "img_def_lun_07.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8],
+          "rpe_deload": 6,
+          "alternativas": []
+        }
+      ]
+    },
+    {
+      "orden": 1,
+      "dia": "Martes",
+      "tipo": "Pull 1 (Fuerza)",
+      "musculos": "Espalda + Biceps + Antebrazos + Core",
+      "ejercicios": [
+        {
+          "nombre": "Dominadas / Jalon al pecho (pronado)",
+          "series": "4",
+          "repeticiones": "5-8",
+          "descanso": "3 min",
+          "imagen": "img_def_mar_01.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8.5],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Jalon al pecho en polea (agarre ancho)", "imagen": "img_def_mar_01_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Remo con pecho apoyado (chest-supported)",
+          "series": "4",
+          "repeticiones": "6-8",
+          "descanso": "2-3 min",
+          "imagen": "img_def_mar_02.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8.5],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Remo en maquina con apoyo de pecho", "imagen": "img_def_mar_02_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Face pull",
+          "series": "3",
+          "repeticiones": "15-20",
+          "descanso": "60 seg",
+          "imagen": "img_def_mar_03.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Reverse fly en maquina", "imagen": "img_def_mar_03_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Curl biceps barra EZ",
+          "series": "3",
+          "repeticiones": "8-10",
+          "descanso": "60 seg",
+          "imagen": "img_def_mar_04.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Curl con mancuernas alterno", "imagen": "img_def_mar_04_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Curl martillo",
+          "series": "3",
+          "repeticiones": "10-12",
+          "descanso": "60 seg",
+          "imagen": "img_def_mar_05.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": []
+        },
+        {
+          "nombre": "Wrist curl (curl de muneca)",
+          "series": "2",
+          "repeticiones": "15-20",
+          "descanso": "60 seg",
+          "imagen": "img_def_mar_06.jpg",
+          "rpe_progresion": [7.5, 8, 8.5, 8.5],
+          "rpe_deload": 6,
+          "alternativas": []
+        },
+        {
+          "nombre": "Reverse wrist curl",
+          "series": "2",
+          "repeticiones": "15-20",
+          "descanso": "60 seg",
+          "imagen": "img_def_mar_07.jpg",
+          "rpe_progresion": [7.5, 8, 8.5, 8.5],
+          "rpe_deload": 6,
+          "alternativas": []
+        },
+        {
+          "nombre": "Elevacion piernas en silla romana",
+          "series": "3",
+          "repeticiones": "10-15",
+          "descanso": "60 seg",
+          "imagen": "img_def_mar_08.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": []
+        },
+        {
+          "nombre": "Dead bug",
+          "series": "2",
+          "repeticiones": "10-12/lado",
+          "descanso": "60 seg",
+          "imagen": "img_def_mar_09.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8],
+          "rpe_deload": 6,
+          "alternativas": []
+        }
+      ]
+    },
+    {
+      "orden": 2,
+      "dia": "Miercoles",
+      "tipo": "Legs 1 (Fuerza)",
+      "musculos": "Cuadriceps + Isquiotibiales + Gluteos + Gemelos",
+      "ejercicios": [
+        {
+          "nombre": "Hack squat en maquina",
+          "series": "4",
+          "repeticiones": "5-7",
+          "descanso": "3-4 min",
+          "imagen": "img_def_mie_01.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8.5],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Prensa de piernas (posicion alta)", "imagen": "img_def_mie_01_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Curl femoral sentado",
+          "series": "3",
+          "repeticiones": "8-10",
+          "descanso": "2-3 min",
+          "imagen": "img_def_mie_02.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8.5],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Curl femoral tumbado", "imagen": "img_def_mie_02_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Prensa de piernas",
+          "series": "3",
+          "repeticiones": "8-12",
+          "descanso": "2-3 min",
+          "imagen": "img_def_mie_03.jpg",
+          "rpe_progresion": [7.5, 8, 8.5, 8.5],
+          "rpe_deload": 6.5,
+          "alternativas": []
+        },
+        {
+          "nombre": "Cable pull-through",
+          "series": "3",
+          "repeticiones": "12-15",
+          "descanso": "90 seg",
+          "imagen": "img_def_mie_04.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Hip extension en maquina", "imagen": "img_def_mie_04_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Elevacion de gemelos de pie",
+          "series": "4",
+          "repeticiones": "10-12",
+          "descanso": "60 seg",
+          "imagen": "img_def_mie_05.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Elevacion gemelos en prensa", "imagen": "img_def_mie_05_alt1.jpg" }
+          ]
+        }
+      ]
+    },
+    {
+      "orden": 3,
+      "dia": "Jueves",
+      "tipo": "Push 2 (Hipertrofia)",
+      "musculos": "Pecho + Hombros + Triceps",
+      "ejercicios": [
+        {
+          "nombre": "Press banca plano con mancuernas",
+          "series": "3",
+          "repeticiones": "8-12",
+          "descanso": "2-3 min",
+          "imagen": "img_def_jue_01.jpg",
+          "rpe_progresion": [7.5, 8, 8.5, 8.5],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Press plano en maquina", "imagen": "img_def_jue_01_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Cable crossover inclinado (polea baja)",
+          "series": "3",
+          "repeticiones": "12-15",
+          "descanso": "90 seg",
+          "imagen": "img_def_jue_02.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Aperturas inclinadas con mancuernas", "imagen": "img_def_jue_02_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Elevacion lateral (myo-reps)",
+          "series": "1",
+          "repeticiones": "12-15 + 4x3-5",
+          "descanso": "10-15 seg",
+          "imagen": "img_def_jue_03.jpg",
+          "rpe_progresion": [8.5, 9, 9.5, 9.5],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Elevacion lateral mancuernas 3x12-15", "imagen": "img_def_jue_03_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Triceps overhead cable",
+          "series": "3",
+          "repeticiones": "10-15",
+          "descanso": "60 seg",
+          "imagen": "img_def_jue_04.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Extensiones de triceps con mancuerna", "imagen": "img_def_jue_04_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Face pull / Reverse fly",
+          "series": "3",
+          "repeticiones": "15-20",
+          "descanso": "60 seg",
+          "imagen": "img_def_jue_05.jpg",
+          "rpe_progresion": [7.5, 8, 8.5, 8.5],
+          "rpe_deload": 6,
+          "alternativas": []
+        }
+      ]
+    },
+    {
+      "orden": 4,
+      "dia": "Viernes",
+      "tipo": "Pull 2 (Hipertrofia)",
+      "musculos": "Espalda + Biceps + Antebrazos",
+      "ejercicios": [
+        {
+          "nombre": "Jalon al pecho (supino o neutro)",
+          "series": "3",
+          "repeticiones": "8-12",
+          "descanso": "2 min",
+          "imagen": "img_def_vie_01.jpg",
+          "rpe_progresion": [7.5, 8, 8.5, 8.5],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Jalon con agarre V-bar", "imagen": "img_def_vie_01_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Remo pecho apoyado unilateral con mancuerna",
+          "series": "3",
+          "repeticiones": "10-12 (c/lado)",
+          "descanso": "90 seg",
+          "imagen": "img_def_vie_02.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Remo en maquina unilateral", "imagen": "img_def_vie_02_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Pullover (polea o mancuerna)",
+          "series": "3",
+          "repeticiones": "12-15",
+          "descanso": "90 seg",
+          "imagen": "img_def_vie_03.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": []
+        },
+        {
+          "nombre": "Curl inclinado / Bayesian curl",
+          "series": "3",
+          "repeticiones": "10-12",
+          "descanso": "60 seg",
+          "imagen": "img_def_vie_04.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Curl concentrado", "imagen": "img_def_vie_04_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Curl predicador",
+          "series": "3",
+          "repeticiones": "10-12 (dropset ultimo set)",
+          "descanso": "60 seg",
+          "imagen": "img_def_vie_05.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9.5],
+          "rpe_deload": 7,
+          "alternativas": []
+        },
+        {
+          "nombre": "Wrist curl con mancuerna",
+          "series": "3",
+          "repeticiones": "15-20",
+          "descanso": "60 seg",
+          "imagen": "img_def_vie_06.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": []
+        },
+        {
+          "nombre": "Farmer's walk con mancuernas",
+          "series": "2",
+          "repeticiones": "30-45 seg",
+          "descanso": "90 seg",
+          "imagen": "img_def_vie_07.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8],
+          "rpe_deload": 6,
+          "alternativas": []
+        }
+      ]
+    },
+    {
+      "orden": 5,
+      "dia": "Sabado",
+      "tipo": "Legs 2 (Hipertrofia) + Core",
+      "musculos": "Gluteos + Cuadriceps + Isquiotibiales + Gemelos + Core",
+      "ejercicios": [
+        {
+          "nombre": "Glute bridge en suelo con mancuerna",
+          "series": "4",
+          "repeticiones": "10-15",
+          "descanso": "2 min",
+          "imagen": "img_def_sab_01.jpg",
+          "rpe_progresion": [7.5, 8, 8.5, 8.5],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Hip extension en maquina", "imagen": "img_def_sab_01_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Sentadilla bulgara con mancuernas",
+          "series": "3",
+          "repeticiones": "10-12 (c/pierna)",
+          "descanso": "2 min",
+          "imagen": "img_def_sab_02.jpg",
+          "rpe_progresion": [7.5, 8, 8.5, 8.5],
+          "rpe_deload": 6,
+          "alternativas": [
+            { "nombre": "Zancadas con mancuernas", "imagen": "img_def_sab_02_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Extension de cuadriceps",
+          "series": "3",
+          "repeticiones": "12-15",
+          "descanso": "60 seg",
+          "imagen": "img_def_sab_03.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": []
+        },
+        {
+          "nombre": "Curl femoral tumbado",
+          "series": "3",
+          "repeticiones": "10-12",
+          "descanso": "60 seg",
+          "imagen": "img_def_sab_04.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": [
+            { "nombre": "Curl femoral sentado", "imagen": "img_def_sab_04_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Elevacion gemelos sentado",
+          "series": "4",
+          "repeticiones": "15-20",
+          "descanso": "60 seg",
+          "imagen": "img_def_sab_05.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": []
+        },
+        {
+          "nombre": "Cable kickback (gluteos)",
+          "series": "3",
+          "repeticiones": "12-15 (c/lado)",
+          "descanso": "60 seg",
+          "imagen": "img_def_sab_06.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": []
+        },
+        {
+          "nombre": "Cable crunch",
+          "series": "3",
+          "repeticiones": "12-15",
+          "descanso": "60 seg",
+          "imagen": "img_def_sab_07.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": []
+        },
+        {
+          "nombre": "Pallof press",
+          "series": "3",
+          "repeticiones": "10-12/lado",
+          "descanso": "60 seg",
+          "imagen": "img_def_sab_08.jpg",
+          "rpe_progresion": [7, 7.5, 8, 8],
+          "rpe_deload": 6,
+          "alternativas": []
+        },
+        {
+          "nombre": "Elevacion piernas en silla romana",
+          "series": "3",
+          "repeticiones": "10-15",
+          "descanso": "60 seg",
+          "imagen": "img_def_sab_09.jpg",
+          "rpe_progresion": [8, 8.5, 9, 9],
+          "rpe_deload": 7,
+          "alternativas": []
+        }
+      ]
+    }
+  ],
+  "cardio": {
+    "lunes": { "tipo": "liss", "duracion": "30 min", "detalle": "Caminata inclinada 8-10%, 5.5-6 km/h" },
+    "martes": { "tipo": "liss", "duracion": "25-30 min", "detalle": "Caminata inclinada 6-8%" },
+    "miercoles": null,
+    "jueves": { "tipo": "liss", "duracion": "25-30 min", "detalle": "Caminata inclinada" },
+    "viernes": { "tipo": "liss", "duracion": "25-30 min", "detalle": "Caminata inclinada" },
+    "sabado": { "tipo": "hiit", "duracion": "15-20 min", "detalle": "6-8 intervalos 30s sprint + 90s caminata", "opcional": true },
+    "domingo": null
+  }
+}

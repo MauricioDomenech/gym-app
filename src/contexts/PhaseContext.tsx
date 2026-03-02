@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState } from 'react';
 import type { ReactNode } from 'react';
 
-export type PhaseType = 'maintenance' | 'volume' | null;
+export type PhaseType = 'maintenance' | 'volume' | 'definicion' | null;
 
 interface PhaseContextType {
   currentPhase: PhaseType;
