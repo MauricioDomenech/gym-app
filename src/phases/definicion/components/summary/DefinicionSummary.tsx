@@ -2,6 +2,7 @@ import React from 'react';
 import { useDefinicionData } from '../../contexts/DefinicionDataContext';
 import { DefinicionBodyChart } from '../body/DefinicionBodyChart';
 import { DefinicionWeeklyCheckin } from '../checkin/DefinicionWeeklyCheckin';
+import { DefinicionWeeklyReport } from './DefinicionWeeklyReport';
 import { DEFINICION_SUB_PHASES, TOTAL_WEEKS, getMesocycleInfo } from '../../types/definicion';
 import type { DefinicionNutritionTotals } from '../../types/definicion';
 
@@ -318,6 +319,9 @@ export const DefinicionSummary: React.FC = () => {
           </table>
         </div>
       </div>
+
+      {/* Weekly Report Export */}
+      <DefinicionWeeklyReport />
 
       {/* Tips */}
       <div className="bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-lg p-6">
