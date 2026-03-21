@@ -211,13 +211,38 @@ export const DefinicionWeeklyCheckin: React.FC = () => {
             subtitle={`${checkinData.adherence.bodyTracking.weeksTracked} / ${checkinData.adherence.bodyTracking.weeksElapsed} semanas`}
             color="violet"
           />
-          {/* RPE */}
-          <AdherenceCard
-            title="RPE"
-            value={checkinData.adherence.rpe.adherencePercent}
-            subtitle={`Delta promedio: ${checkinData.adherence.rpe.averageDelta.toFixed(1)}`}
-            color="amber"
-          />
+          {/* RIR */}
+          {checkinData.adherence.rir.totalLogs > 0 ? (
+            <div className="p-4 bg-gray-50 dark:bg-slate-700 rounded-lg">
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-sm font-medium text-gray-700 dark:text-gray-300">Intensidad (RIR)</p>
+                <p className={`text-2xl font-bold ${
+                  checkinData.adherence.rir.averageRIR >= 1 && checkinData.adherence.rir.averageRIR <= 2
+                    ? 'text-emerald-600 dark:text-emerald-400'
+                    : checkinData.adherence.rir.averageRIR < 1
+                      ? 'text-red-600 dark:text-red-400'
+                      : 'text-amber-600 dark:text-amber-400'
+                }`}>
+                  {checkinData.adherence.rir.averageRIR.toFixed(1)}
+                </p>
+              </div>
+              <p className="text-xs text-gray-500 dark:text-gray-400">
+                RIR promedio ({checkinData.adherence.rir.totalLogs} registros) —
+                {checkinData.adherence.rir.averageRIR >= 1 && checkinData.adherence.rir.averageRIR <= 2
+                  ? ' Zona ideal para definicion'
+                  : checkinData.adherence.rir.averageRIR < 1
+                    ? ' Demasiada intensidad, cuidado con la fatiga'
+                    : ' Podrias empujar un poco mas'}
+              </p>
+            </div>
+          ) : (
+            <AdherenceCard
+              title="Intensidad (RIR)"
+              value={0}
+              subtitle="Sin registros de RIR"
+              color="amber"
+            />
+          )}
         </div>
       </div>
 

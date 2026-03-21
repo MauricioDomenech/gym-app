@@ -54,7 +54,7 @@ export const DefinicionCopyWeekData: React.FC<DefinicionCopyWeekDataProps> = ({ 
           isAlternative: sourceProgress.isAlternative,
           alternativeIndex: sourceProgress.alternativeIndex,
           observations: sourceProgress.observations,
-          rpeActual: sourceProgress.rpeActual,
+          rir: sourceProgress.rir,
         };
         await saveWorkoutProgress(newProgress);
       });
@@ -167,7 +167,7 @@ export const DefinicionCopyWeekData: React.FC<DefinicionCopyWeekDataProps> = ({ 
                     <div className="font-medium mb-1">Que se copiara:</div>
                     <ul className="space-y-1">
                       <li>Pesos de cada serie</li>
-                      <li>RPE registrado</li>
+                      <li>RIR registrado</li>
                       <li>Observaciones</li>
                       <li>Cantidad de series</li>
                     </ul>

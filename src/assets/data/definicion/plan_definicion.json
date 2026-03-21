@@ -12,8 +12,7 @@
           "repeticiones": "5-7",
           "descanso": "3 min",
           "imagen": "img_def_lun_01.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8.5],
-          "rpe_deload": 6,
+
           "alternativas": [
             { "nombre": "Press inclinado con mancuernas", "imagen": "img_def_lun_01_alt1.jpg" },
             { "nombre": "Press inclinado en maquina Smith", "imagen": "img_def_lun_01_alt2.jpg" }
@@ -25,8 +24,7 @@
           "repeticiones": "6-8",
           "descanso": "2-3 min",
           "imagen": "img_def_lun_02.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8.5],
-          "rpe_deload": 6,
+
           "alternativas": [
             { "nombre": "Press militar con mancuernas sentado", "imagen": "img_def_lun_02_alt1.jpg" }
           ]
@@ -37,8 +35,7 @@
           "repeticiones": "10-12",
           "descanso": "90 seg",
           "imagen": "img_def_lun_03.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Aperturas con mancuernas en banco plano", "imagen": "img_def_lun_03_alt1.jpg" },
             { "nombre": "Cable crossover a la altura del pecho", "imagen": "img_def_lun_03_alt2.jpg" }
@@ -50,8 +47,7 @@
           "repeticiones": "12-15",
           "descanso": "60 seg",
           "imagen": "img_def_lun_04.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Elevacion lateral con mancuernas", "imagen": "img_def_lun_04_alt1.jpg" }
           ]
@@ -62,8 +58,7 @@
           "repeticiones": "10-12",
           "descanso": "60 seg",
           "imagen": "img_def_lun_05.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Triceps en polea con cuerda", "imagen": "img_def_lun_05_alt1.jpg" }
           ]
@@ -74,8 +69,7 @@
           "repeticiones": "12-15",
           "descanso": "60 seg",
           "imagen": "img_def_lun_06.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": []
         },
         {
@@ -84,8 +78,6 @@
           "repeticiones": "10-12/lado",
           "descanso": "60 seg",
           "imagen": "img_def_lun_07.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8],
-          "rpe_deload": 6,
           "alternativas": []
         }
       ]
@@ -102,8 +94,7 @@
           "repeticiones": "5-8",
           "descanso": "3 min",
           "imagen": "img_def_mar_01.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8.5],
-          "rpe_deload": 6,
+
           "alternativas": [
             { "nombre": "Jalon al pecho en polea (agarre ancho)", "imagen": "img_def_mar_01_alt1.jpg" }
           ]
@@ -114,8 +105,7 @@
           "repeticiones": "6-8",
           "descanso": "2-3 min",
           "imagen": "img_def_mar_02.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8.5],
-          "rpe_deload": 6,
+
           "alternativas": [
             { "nombre": "Remo en maquina con apoyo de pecho", "imagen": "img_def_mar_02_alt1.jpg" }
           ]
@@ -126,8 +116,6 @@
           "repeticiones": "15-20",
           "descanso": "60 seg",
           "imagen": "img_def_mar_03.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8],
-          "rpe_deload": 6,
           "alternativas": [
             { "nombre": "Reverse fly en maquina", "imagen": "img_def_mar_03_alt1.jpg" }
           ]
@@ -138,8 +126,7 @@
           "repeticiones": "8-10",
           "descanso": "60 seg",
           "imagen": "img_def_mar_04.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Curl con mancuernas alterno", "imagen": "img_def_mar_04_alt1.jpg" }
           ]
@@ -150,8 +137,7 @@
           "repeticiones": "10-12",
           "descanso": "60 seg",
           "imagen": "img_def_mar_05.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": []
         },
         {
@@ -160,8 +146,6 @@
           "repeticiones": "15-20",
           "descanso": "60 seg",
           "imagen": "img_def_mar_06.jpg",
-          "rpe_progresion": [7.5, 8, 8.5, 8.5],
-          "rpe_deload": 6,
           "alternativas": []
         },
         {
@@ -170,8 +154,6 @@
           "repeticiones": "15-20",
           "descanso": "60 seg",
           "imagen": "img_def_mar_07.jpg",
-          "rpe_progresion": [7.5, 8, 8.5, 8.5],
-          "rpe_deload": 6,
           "alternativas": []
         },
         {
@@ -180,8 +162,7 @@
           "repeticiones": "10-15",
           "descanso": "60 seg",
           "imagen": "img_def_mar_08.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": []
         },
         {
@@ -190,8 +171,6 @@
           "repeticiones": "10-12/lado",
           "descanso": "60 seg",
           "imagen": "img_def_mar_09.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8],
-          "rpe_deload": 6,
           "alternativas": []
         }
       ]
@@ -208,8 +187,7 @@
           "repeticiones": "5-7",
           "descanso": "3-4 min",
           "imagen": "img_def_mie_01.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8.5],
-          "rpe_deload": 6,
+
           "alternativas": [
             { "nombre": "Prensa de piernas (posicion alta)", "imagen": "img_def_mie_01_alt1.jpg" }
           ]
@@ -220,8 +198,7 @@
           "repeticiones": "8-10",
           "descanso": "2-3 min",
           "imagen": "img_def_mie_02.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8.5],
-          "rpe_deload": 6,
+
           "alternativas": [
             { "nombre": "Curl femoral tumbado", "imagen": "img_def_mie_02_alt1.jpg" }
           ]
@@ -232,8 +209,6 @@
           "repeticiones": "8-12",
           "descanso": "2-3 min",
           "imagen": "img_def_mie_03.jpg",
-          "rpe_progresion": [7.5, 8, 8.5, 8.5],
-          "rpe_deload": 6.5,
           "alternativas": []
         },
         {
@@ -242,8 +217,7 @@
           "repeticiones": "12-15",
           "descanso": "90 seg",
           "imagen": "img_def_mie_04.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Hip extension en maquina", "imagen": "img_def_mie_04_alt1.jpg" }
           ]
@@ -254,8 +228,7 @@
           "repeticiones": "10-12",
           "descanso": "60 seg",
           "imagen": "img_def_mie_05.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Elevacion gemelos en prensa", "imagen": "img_def_mie_05_alt1.jpg" }
           ]
@@ -274,8 +247,6 @@
           "repeticiones": "8-12",
           "descanso": "2-3 min",
           "imagen": "img_def_jue_01.jpg",
-          "rpe_progresion": [7.5, 8, 8.5, 8.5],
-          "rpe_deload": 6,
           "alternativas": [
             { "nombre": "Press plano en maquina", "imagen": "img_def_jue_01_alt1.jpg" }
           ]
@@ -286,8 +257,7 @@
           "repeticiones": "12-15",
           "descanso": "90 seg",
           "imagen": "img_def_jue_02.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Aperturas inclinadas con mancuernas", "imagen": "img_def_jue_02_alt1.jpg" }
           ]
@@ -298,8 +268,6 @@
           "repeticiones": "12-15 + 4x3-5",
           "descanso": "10-15 seg",
           "imagen": "img_def_jue_03.jpg",
-          "rpe_progresion": [8.5, 9, 9.5, 9.5],
-          "rpe_deload": 7,
           "alternativas": [
             { "nombre": "Elevacion lateral mancuernas 3x12-15", "imagen": "img_def_jue_03_alt1.jpg" }
           ]
@@ -310,8 +278,7 @@
           "repeticiones": "10-15",
           "descanso": "60 seg",
           "imagen": "img_def_jue_04.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Extensiones de triceps con mancuerna", "imagen": "img_def_jue_04_alt1.jpg" }
           ]
@@ -322,8 +289,6 @@
           "repeticiones": "15-20",
           "descanso": "60 seg",
           "imagen": "img_def_jue_05.jpg",
-          "rpe_progresion": [7.5, 8, 8.5, 8.5],
-          "rpe_deload": 6,
           "alternativas": []
         }
       ]
@@ -340,8 +305,6 @@
           "repeticiones": "8-12",
           "descanso": "2 min",
           "imagen": "img_def_vie_01.jpg",
-          "rpe_progresion": [7.5, 8, 8.5, 8.5],
-          "rpe_deload": 6,
           "alternativas": [
             { "nombre": "Jalon con agarre V-bar", "imagen": "img_def_vie_01_alt1.jpg" }
           ]
@@ -352,8 +315,7 @@
           "repeticiones": "10-12 (c/lado)",
           "descanso": "90 seg",
           "imagen": "img_def_vie_02.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Remo en maquina unilateral", "imagen": "img_def_vie_02_alt1.jpg" }
           ]
@@ -364,8 +326,7 @@
           "repeticiones": "12-15",
           "descanso": "90 seg",
           "imagen": "img_def_vie_03.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": []
         },
         {
@@ -374,8 +335,7 @@
           "repeticiones": "10-12",
           "descanso": "60 seg",
           "imagen": "img_def_vie_04.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Curl concentrado", "imagen": "img_def_vie_04_alt1.jpg" }
           ]
@@ -386,8 +346,6 @@
           "repeticiones": "10-12 (dropset ultimo set)",
           "descanso": "60 seg",
           "imagen": "img_def_vie_05.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9.5],
-          "rpe_deload": 7,
           "alternativas": []
         },
         {
@@ -396,8 +354,7 @@
           "repeticiones": "15-20",
           "descanso": "60 seg",
           "imagen": "img_def_vie_06.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": []
         },
         {
@@ -406,8 +363,6 @@
           "repeticiones": "30-45 seg",
           "descanso": "90 seg",
           "imagen": "img_def_vie_07.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8],
-          "rpe_deload": 6,
           "alternativas": []
         }
       ]
@@ -424,8 +379,6 @@
           "repeticiones": "10-15",
           "descanso": "2 min",
           "imagen": "img_def_sab_01.jpg",
-          "rpe_progresion": [7.5, 8, 8.5, 8.5],
-          "rpe_deload": 6,
           "alternativas": [
             { "nombre": "Hip extension en maquina", "imagen": "img_def_sab_01_alt1.jpg" }
           ]
@@ -436,8 +389,6 @@
           "repeticiones": "10-12 (c/pierna)",
           "descanso": "2 min",
           "imagen": "img_def_sab_02.jpg",
-          "rpe_progresion": [7.5, 8, 8.5, 8.5],
-          "rpe_deload": 6,
           "alternativas": [
             { "nombre": "Zancadas con mancuernas", "imagen": "img_def_sab_02_alt1.jpg" }
           ]
@@ -448,8 +399,7 @@
           "repeticiones": "12-15",
           "descanso": "60 seg",
           "imagen": "img_def_sab_03.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": []
         },
         {
@@ -458,8 +408,7 @@
           "repeticiones": "10-12",
           "descanso": "60 seg",
           "imagen": "img_def_sab_04.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": [
             { "nombre": "Curl femoral sentado", "imagen": "img_def_sab_04_alt1.jpg" }
           ]
@@ -470,8 +419,7 @@
           "repeticiones": "15-20",
           "descanso": "60 seg",
           "imagen": "img_def_sab_05.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": []
         },
         {
@@ -480,8 +428,7 @@
           "repeticiones": "12-15 (c/lado)",
           "descanso": "60 seg",
           "imagen": "img_def_sab_06.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": []
         },
         {
@@ -490,8 +437,7 @@
           "repeticiones": "12-15",
           "descanso": "60 seg",
           "imagen": "img_def_sab_07.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": []
         },
         {
@@ -500,8 +446,6 @@
           "repeticiones": "10-12/lado",
           "descanso": "60 seg",
           "imagen": "img_def_sab_08.jpg",
-          "rpe_progresion": [7, 7.5, 8, 8],
-          "rpe_deload": 6,
           "alternativas": []
         },
         {
@@ -510,8 +454,7 @@
           "repeticiones": "10-15",
           "descanso": "60 seg",
           "imagen": "img_def_sab_09.jpg",
-          "rpe_progresion": [8, 8.5, 9, 9],
-          "rpe_deload": 7,
+
           "alternativas": []
         }
       ]

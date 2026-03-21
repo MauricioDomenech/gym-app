@@ -339,7 +339,7 @@ export const DefinicionSummary: React.FC = () => {
           <div className="bg-white dark:bg-slate-800 rounded-lg p-4">
             <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Entrenamiento</h4>
             <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-              <li>Respeta los RPE de cada mesociclo</li>
+              <li>Registra tu RIR en cada ejercicio para monitorear fatiga</li>
               <li>Los deloads son obligatorios, no los saltes</li>
               <li>Prioriza mantener fuerza sobre volumen</li>
               <li>El cardio LISS preserva mas musculo que HIIT</li>

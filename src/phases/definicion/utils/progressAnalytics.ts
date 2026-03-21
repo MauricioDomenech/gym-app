@@ -2,7 +2,6 @@ import {
   DEFINICION_SUB_PHASES,
   TOTAL_WEEKS,
   getMesocycleInfo,
-  getCurrentRPE,
 } from '../types/definicion';
 import type {
   DefinicionBodyComposition,
@@ -492,36 +491,21 @@ export function getAdherenceMetrics(params: AdherenceParams): AdherenceMetrics {
     ? Math.round((weeksTracked / weeksElapsed) * 100)
     : 0;
 
-  // --- RPE ---
-  const progressWithRpe = workoutProgress.filter(p => p.rpeActual != null);
-  let totalDelta = 0;
-  let rpeCount = 0;
+  // --- RIR ---
+  const progressWithRir = workoutProgress.filter(p => p.rir != null);
+  let totalRir = 0;
 
-  for (const progress of progressWithRpe) {
-    const mesocycleInfo = getMesocycleInfo(progress.week);
-    // Find the exercise to get rpeProgresion and rpeDeload
-    const weekWorkouts = workoutData[progress.week];
-    if (weekWorkouts) {
-      const dayWorkout = weekWorkouts[progress.day];
-      if (dayWorkout) {
-        const exercise = dayWorkout.exercises.find(e => e.id === progress.exerciseId);
-        if (exercise) {
-          const expectedRpe = getCurrentRPE(exercise.rpeProgresion, exercise.rpeDeload, mesocycleInfo);
-          totalDelta += Math.abs((progress.rpeActual as number) - expectedRpe);
-          rpeCount++;
-        }
-      }
-    }
+  for (const progress of progressWithRir) {
+    totalRir += progress.rir as number;
   }
 
-  const averageDelta = rpeCount > 0 ? Math.round((totalDelta / rpeCount) * 100) / 100 : 0;
-  const adherencePercent = Math.max(0, Math.round(100 - averageDelta * 10));
+  const averageRIR = progressWithRir.length > 0 ? Math.round((totalRir / progressWithRir.length) * 100) / 100 : 0;
 
   return {
     training: { weekPercent: weekTrainingPercent, overallPercent: overallTrainingPercent, streak },
     cardio: { weekPercent: weekCardioPercent, overallPercent: overallCardioPercent, totalMinutes },
     bodyTracking: { weeksTracked, weeksElapsed, consistency },
-    rpe: { averageDelta, adherencePercent },
+    rir: { averageRIR, totalLogs: progressWithRir.length },
   };
 }
 

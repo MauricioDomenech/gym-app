@@ -79,12 +79,22 @@ export function getMesocycleInfo(week: number): MesocycleInfo {
   };
 }
 
-export function getCurrentRPE(rpeProgresion: number[], rpeDeload: number, mesocycleInfo: MesocycleInfo): number {
-  if (mesocycleInfo.isDietBreak || mesocycleInfo.isDeload) {
-    return rpeDeload;
-  }
-  const weekIdx = Math.min(mesocycleInfo.weekInMesocycle - 1, rpeProgresion.length - 1);
-  return rpeProgresion[weekIdx] || rpeProgresion[rpeProgresion.length - 1] || 8;
+// ========================================
+// RIR (Reps In Reserve) TYPES
+// ========================================
+
+export type RIRValue = 0 | 1 | 2 | 3;
+
+export const RIR_OPTIONS: { value: RIRValue; label: string; description: string; color: string; activeColor: string }[] = [
+  { value: 3, label: '3+', description: 'Facil, me sobraban varias reps', color: 'bg-emerald-600', activeColor: 'bg-emerald-600 text-white' },
+  { value: 2, label: '2', description: 'Moderado, me quedaban 2 reps', color: 'bg-yellow-500', activeColor: 'bg-yellow-500 text-white' },
+  { value: 1, label: '1', description: 'Duro, me quedaba 1 rep', color: 'bg-orange-500', activeColor: 'bg-orange-500 text-white' },
+  { value: 0, label: '0', description: 'Al limite, no podia hacer mas', color: 'bg-red-600', activeColor: 'bg-red-600 text-white' },
+];
+
+export function getRIRLabel(rir: number): string {
+  const option = RIR_OPTIONS.find(o => o.value === rir);
+  return option ? option.description : '';
 }
 
 export function getCSVFolderForWeek(week: number): string {
@@ -156,8 +166,6 @@ export interface DefinicionExercise extends BaseExercise {
   descanso: string;
   imagen: string;
   alternativas: DefinicionAlternative[];
-  rpeProgresion: number[];
-  rpeDeload: number;
 }
 
 export interface DefinicionWorkoutDay extends BaseWorkoutDay {
@@ -220,7 +228,7 @@ export interface DefinicionWorkoutProgress {
   isAlternative: boolean;
   alternativeIndex?: number | null;
   observations?: string;
-  rpeActual?: number | null;
+  rir?: RIRValue | null;
 }
 
 // ========================================
@@ -277,8 +285,6 @@ export interface DefinicionPlan {
       repeticiones: string;
       descanso: string;
       imagen: string;
-      rpe_progresion: number[];
-      rpe_deload: number;
       alternativas: Array<{ nombre: string; imagen: string }>;
     }>;
   }>;
@@ -362,7 +368,7 @@ export interface AdherenceMetrics {
   training: { weekPercent: number; overallPercent: number; streak: number };
   cardio: { weekPercent: number; overallPercent: number; totalMinutes: number };
   bodyTracking: { weeksTracked: number; weeksElapsed: number; consistency: number };
-  rpe: { averageDelta: number; adherencePercent: number };
+  rir: { averageRIR: number; totalLogs: number };
 }
 
 export interface PhaseComparison {

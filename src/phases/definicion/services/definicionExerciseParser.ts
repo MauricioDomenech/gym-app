@@ -37,8 +37,6 @@ export class DefinicionExerciseParser {
       descanso: rawExercise.descanso || '60 seg',
       imagen: rawExercise.imagen,
       alternativas,
-      rpeProgresion: rawExercise.rpe_progresion || [7, 7.5, 8, 8.5],
-      rpeDeload: rawExercise.rpe_deload || 6,
     };
   }
 
@@ -100,7 +98,7 @@ export class DefinicionExerciseParser {
   }
 
   public static getAllWorkoutData(): { [week: number]: { [day: string]: DefinicionWorkoutDay } } {
-    // Same exercises for all 22 weeks — RPE varies by mesocycle (handled in components)
+    // Same exercises for all 22 weeks
     const weekWorkouts = this.getWeekWorkouts();
     const allData: { [week: number]: { [day: string]: DefinicionWorkoutDay } } = {};
     for (let w = 1; w <= 22; w++) {
@@ -169,8 +167,6 @@ export class DefinicionExerciseParser {
         descanso: exercise.descanso,
         imagen: alt.imagen,
         alternativas: [],
-        rpeProgresion: exercise.rpeProgresion,
-        rpeDeload: exercise.rpeDeload,
       };
     } catch (error) {
       console.error(`Error getting alternative ${alternativeIndex} for exercise ${exerciseId}:`, error);

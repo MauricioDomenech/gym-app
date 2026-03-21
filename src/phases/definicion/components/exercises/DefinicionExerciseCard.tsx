@@ -2,8 +2,6 @@ import React from 'react';
 import { DefinicionAlternativesList } from './DefinicionAlternativesList';
 import { DefinicionIndividualTracker } from './DefinicionIndividualTracker';
 import type { DefinicionExercise } from '../../types/definicion';
-import { getMesocycleInfo, getCurrentRPE } from '../../types/definicion';
-import { useDefinicionData } from '../../contexts/DefinicionDataContext';
 
 interface DefinicionExerciseCardProps {
   exercise: DefinicionExercise;
@@ -16,10 +14,6 @@ export const DefinicionExerciseCard: React.FC<DefinicionExerciseCardProps> = ({
   index,
   onShowImage,
 }) => {
-  const { currentWeek } = useDefinicionData();
-  const mesocycle = getMesocycleInfo(currentWeek);
-  const targetRPE = getCurrentRPE(exercise.rpeProgresion, exercise.rpeDeload, mesocycle);
-
   return (
     <div className="border border-emerald-200 dark:border-slate-700 rounded-lg p-6 bg-gradient-to-r from-white to-emerald-50 dark:from-slate-800 dark:to-slate-800/50">
       {/* Exercise Header */}
@@ -36,24 +30,13 @@ export const DefinicionExerciseCard: React.FC<DefinicionExerciseCardProps> = ({
 
           <div className="flex flex-wrap items-center gap-3 text-sm text-gray-600 dark:text-gray-400">
             <span className="font-medium">
-              📊 {exercise.series} series
+              {exercise.series} series
             </span>
             <span className="font-medium">
-              🔁 {exercise.repeticiones}
+              {exercise.repeticiones}
             </span>
             <span className="font-medium">
-              ⏱️ {exercise.descanso}
-            </span>
-            {/* RPE Badge */}
-            <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold ${
-              mesocycle.isDeload
-                ? 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300'
-                : targetRPE >= 9
-                  ? 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300'
-                  : 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300'
-            }`}>
-              RPE {targetRPE}
-              {mesocycle.isDeload && ' (Deload)'}
+              {exercise.descanso}
             </span>
           </div>
         </div>

@@ -24,7 +24,9 @@ export class DefinicionSupabaseService {
       isAlternative: row.is_alternative || false,
       alternativeIndex: row.alternative_index,
       observations: row.observations || '',
-      rpeActual: row.rpe_actual,
+      rir: row.rpe_actual != null && [0, 1, 2, 3].includes(row.rpe_actual)
+        ? (row.rpe_actual as 0 | 1 | 2 | 3)
+        : null,
     }));
   }
 
@@ -58,7 +60,7 @@ export class DefinicionSupabaseService {
         is_alternative: progress.isAlternative,
         alternative_index: progress.alternativeIndex === undefined ? null : progress.alternativeIndex,
         observations: progress.observations || '',
-        rpe_actual: progress.rpeActual === undefined ? null : progress.rpeActual,
+        rpe_actual: progress.rir === undefined ? null : progress.rir,
       });
 
     if (insertError) throw insertError;

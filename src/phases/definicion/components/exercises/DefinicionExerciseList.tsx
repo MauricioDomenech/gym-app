@@ -95,7 +95,7 @@ export const DefinicionExerciseList: React.FC = () => {
               <p><strong>Grupos musculares:</strong> {workoutData.musculos}</p>
               <p><strong>Total ejercicios:</strong> {workoutData.exercises.length}</p>
               {mesocycle.isDeload && (
-                <p className="mt-1 font-medium">↻ Semana de Deload — Reduce volumen y RPE</p>
+                <p className="mt-1 font-medium">↻ Semana de Deload — Reduce volumen e intensidad</p>
               )}
             </div>
           </div>

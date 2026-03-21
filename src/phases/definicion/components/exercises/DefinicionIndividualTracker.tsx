@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDefinicionData } from '../../contexts/DefinicionDataContext';
-import { parseSeriesString, getMesocycleInfo, getCurrentRPE } from '../../types/definicion';
-import type { DefinicionIndividualTrackerProps, DefinicionWorkoutProgress } from '../../types/definicion';
+import { parseSeriesString, RIR_OPTIONS, getRIRLabel } from '../../types/definicion';
+import type { DefinicionIndividualTrackerProps, DefinicionWorkoutProgress, RIRValue } from '../../types/definicion';
 
 export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerProps> = ({
   exercise,
@@ -15,16 +15,14 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
   } = useDefinicionData();
 
   const seriesInfo = parseSeriesString(exercise.series);
-  const mesocycle = getMesocycleInfo(currentWeek);
-  const targetRPE = getCurrentRPE(exercise.rpeProgresion, exercise.rpeDeload, mesocycle);
 
   const [currentSeriesCount, setCurrentSeriesCount] = useState(seriesInfo.defaultSeries);
   const [weights, setWeights] = useState<number[]>(new Array(currentSeriesCount).fill(0));
   const [savedWeights, setSavedWeights] = useState<number[]>(new Array(currentSeriesCount).fill(0));
   const [observations, setObservations] = useState<string>('');
   const [savedObservations, setSavedObservations] = useState<string>('');
-  const [rpeActual, setRpeActual] = useState<number | null>(null);
-  const [savedRpeActual, setSavedRpeActual] = useState<number | null>(null);
+  const [rir, setRir] = useState<RIRValue | null>(null);
+  const [savedRir, setSavedRir] = useState<RIRValue | null>(null);
   const [isSaving, setIsSaving] = useState(false);
   const [justSaved, setJustSaved] = useState(false);
   const [saveTimer, setSaveTimer] = useState<NodeJS.Timeout | null>(null);
@@ -50,8 +48,9 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
       setSavedWeights([...existingProgress.weights]);
       setObservations(existingProgress.observations || '');
       setSavedObservations(existingProgress.observations || '');
-      setRpeActual(existingProgress.rpeActual ?? null);
-      setSavedRpeActual(existingProgress.rpeActual ?? null);
+      const loadedRir = existingProgress.rir ?? null;
+      setRir(loadedRir as RIRValue | null);
+      setSavedRir(loadedRir as RIRValue | null);
     } else {
       const newWeights = new Array(seriesInfo.defaultSeries).fill(0);
       setCurrentSeriesCount(seriesInfo.defaultSeries);
@@ -59,8 +58,8 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
       setSavedWeights(newWeights);
       setObservations('');
       setSavedObservations('');
-      setRpeActual(null);
-      setSavedRpeActual(null);
+      setRir(null);
+      setSavedRir(null);
     }
   }, [exercise.id, currentDay, currentWeek, getExerciseProgress]);
 
@@ -114,13 +113,13 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
         isAlternative: false,
         alternativeIndex: null,
         observations: observations.trim(),
-        rpeActual: rpeActual,
+        rir: rir,
       };
 
       await saveWorkoutProgress(progress);
       setSavedWeights([...weights]);
       setSavedObservations(observations.trim());
-      setSavedRpeActual(rpeActual);
+      setSavedRir(rir);
 
       setJustSaved(true);
       const timer = setTimeout(() => {
@@ -141,14 +140,12 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
   const clearWeights = () => {
     const newWeights = new Array(currentSeriesCount).fill(0);
     setWeights(newWeights);
-    setRpeActual(null);
+    setRir(null);
   };
 
-  const hasProgress = weights.some(weight => weight > 0) || observations.trim().length > 0 || rpeActual !== null;
-  const hasSavedProgress = savedWeights.some(weight => weight > 0) || savedObservations.length > 0 || savedRpeActual !== null;
+  const hasProgress = weights.some(weight => weight > 0) || observations.trim().length > 0 || rir !== null;
+  const hasSavedProgress = savedWeights.some(weight => weight > 0) || savedObservations.length > 0 || savedRir !== null;
   const canAdjustSeries = seriesInfo.minSeries !== seriesInfo.maxSeries;
-
-  const rpeOptions = [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10];
 
   return (
     <div className="space-y-4 p-4 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-lg border border-emerald-200 dark:border-emerald-800">
@@ -157,16 +154,6 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
         <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
           Seguimiento:
         </h4>
-        <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold ${
-          mesocycle.isDeload
-            ? 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300'
-            : targetRPE >= 9
-              ? 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300'
-              : 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300'
-        }`}>
-          RPE Objetivo: {targetRPE}
-          {mesocycle.isDeload && ' (Deload)'}
-        </span>
       </div>
 
       {/* Series Count Selector */}
@@ -252,44 +239,34 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
         )}
       </div>
 
-      {/* RPE Selector */}
+      {/* RIR Selector */}
       <div className="space-y-2">
         <label className="block text-xs font-medium text-gray-700 dark:text-gray-300">
-          RPE percibido:
+          Reps en reserva (cuantas reps mas podrias haber hecho):
         </label>
-        <div className="flex flex-wrap gap-1">
-          {rpeOptions.map(rpe => (
+        <div className="grid grid-cols-4 gap-2">
+          {RIR_OPTIONS.map(option => (
             <button
-              key={rpe}
-              onClick={() => setRpeActual(rpeActual === rpe ? null : rpe)}
-              className={`px-2.5 py-1 text-xs rounded-md transition-colors duration-200 ${
-                rpeActual === rpe
-                  ? rpe >= 9
-                    ? 'bg-red-600 text-white'
-                    : rpe >= 8
-                      ? 'bg-amber-600 text-white'
-                      : 'bg-emerald-600 text-white'
-                  : 'bg-gray-200 dark:bg-slate-600 text-gray-700 dark:text-gray-300 hover:bg-emerald-200 dark:hover:bg-emerald-800'
+              key={option.value}
+              onClick={() => setRir(rir === option.value ? null : option.value)}
+              className={`flex flex-col items-center px-2 py-2 rounded-lg transition-colors duration-200 border-2 ${
+                rir === option.value
+                  ? `${option.activeColor} border-transparent shadow-md`
+                  : 'bg-gray-100 dark:bg-slate-600 text-gray-700 dark:text-gray-300 border-transparent hover:border-gray-300 dark:hover:border-slate-500'
               }`}
             >
-              {rpe}
+              <span className="text-lg font-bold">{option.label}</span>
+              <span className={`text-[10px] leading-tight text-center mt-0.5 ${
+                rir === option.value ? 'text-white/90' : 'text-gray-500 dark:text-gray-400'
+              }`}>
+                {option.value === 3 ? 'Facil' : option.value === 2 ? 'Moderado' : option.value === 1 ? 'Duro' : 'Al limite'}
+              </span>
             </button>
           ))}
         </div>
-        {rpeActual !== null && (
-          <p className={`text-xs ${
-            rpeActual > targetRPE + 0.5
-              ? 'text-red-600 dark:text-red-400'
-              : rpeActual < targetRPE - 0.5
-                ? 'text-amber-600 dark:text-amber-400'
-                : 'text-emerald-600 dark:text-emerald-400'
-          }`}>
-            {rpeActual > targetRPE + 0.5
-              ? `RPE superior al objetivo (${targetRPE}). Considera reducir carga.`
-              : rpeActual < targetRPE - 0.5
-                ? `RPE inferior al objetivo (${targetRPE}). Puedes aumentar carga.`
-                : `RPE en rango con el objetivo (${targetRPE}).`
-            }
+        {rir !== null && (
+          <p className="text-xs text-gray-600 dark:text-gray-400 italic">
+            {getRIRLabel(rir)}
           </p>
         )}
       </div>
@@ -361,13 +338,13 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
             </div>
           )}
 
-          {savedRpeActual !== null && (
+          {savedRir !== null && (
             <div className="p-2 bg-emerald-50 dark:bg-emerald-900/20 rounded text-xs border border-emerald-200 dark:border-emerald-800">
               <span className="text-emerald-700 dark:text-emerald-300 font-medium">
-                RPE registrado:
+                RIR registrado:
               </span>
               <span className="ml-2 text-emerald-800 dark:text-emerald-200">
-                {savedRpeActual} (objetivo: {targetRPE})
+                {savedRir === 0 ? '0 — Al limite' : savedRir === 1 ? '1 — Duro' : savedRir === 2 ? '2 — Moderado' : '3+ — Facil'}
               </span>
             </div>
           )}

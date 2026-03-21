@@ -71,7 +71,7 @@ const WeekContent: React.FC<{ mesocycleIsDeload: boolean }> = ({ mesocycleIsDelo
       {mesocycleIsDeload && (
         <div className="mb-4 p-3 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 rounded-lg text-center">
           <span className="text-purple-700 dark:text-purple-300 text-sm font-medium">
-            ↻ Semana de Deload — Reduce volumen y RPE
+            ↻ Semana de Deload — Reduce volumen e intensidad
           </span>
         </div>
       )}
