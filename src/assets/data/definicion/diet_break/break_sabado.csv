@@ -2,7 +2,7 @@ comida,hora,alimento,cantidad,unidad,kcal,proteinas_g,carbohidratos_g,grasas_g,f
 Desayuno,07:00,Huevos revueltos (2 enteros),2,unit,140,12,1,10,0,Yema blanda
 Desayuno,07:00,Pan integral (rebanadas),2,slice,160,8,28,2,4,Porcion doble
 Desayuno,07:00,Cafe con leche de cabra,200,ml,60,4,5.5,2.5,0,
-Batido post-entreno,10:00,Whey protein (2 scoops),60,g,233.3,48,4,2.7,0,
+Batido post-entreno,10:00,Whey protein (1 scoop),30,g,116.7,24,2,1.4,0,
 Batido post-entreno,10:00,Crema de arroz,60,g,220.2,4.2,49.8,0.6,0.6,Porcion aumentada
 Batido post-entreno,10:00,Salvado de trigo integral,6,g,13,1,1.5,0.5,2.5,Por diverticulos
 Batido post-entreno,10:00,Platano,1,unit,105,1.3,27,0.4,3.1,
@@ -12,6 +12,7 @@ Comida,13:00,Pechuga de pollo plancha,120,g,198,37.2,0,4.3,0,Para completar prot
 Comida,13:00,Arroz blanco cocido,120,g,156,3.2,33.8,0.4,0.5,Acompanamiento
 Comida,13:00,AOVE,10,ml,88.4,0,0,10,0,
 Snack pre-cardio,16:30,Yogur sin lactosa natural,150,g,66,6,7.2,1.8,0,Kaiku o Hacendado
+Snack pre-cardio,16:30,Whey protein (1 scoop),30,g,116.7,24,2,1.4,0,Redistribuido del batido
 Snack pre-cardio,16:30,Almendras,30,g,173.7,6.4,6.5,14.8,3.8,Porcion aumentada
 Snack pre-cardio,16:30,Manzana,1,unit,80,0.5,21,0.3,3.5,
 Post-cardio,18:00,Pavo en lonchas,100,g,105,21,1,1.5,0,
