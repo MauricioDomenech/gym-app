@@ -3,6 +3,7 @@ import { useDefinicionData } from '../../contexts/DefinicionDataContext';
 import { DefinicionBodyChart } from '../body/DefinicionBodyChart';
 import { DefinicionWeeklyCheckin } from '../checkin/DefinicionWeeklyCheckin';
 import { DefinicionWeeklyReport } from './DefinicionWeeklyReport';
+import { DefinicionWeeklyDataExchange } from './DefinicionWeeklyDataExchange';
 import { DEFINICION_SUB_PHASES, TOTAL_WEEKS, getMesocycleInfo } from '../../types/definicion';
 import type { DefinicionNutritionTotals } from '../../types/definicion';
 
@@ -319,6 +320,9 @@ export const DefinicionSummary: React.FC = () => {
           </table>
         </div>
       </div>
+
+      {/* Weekly Data Export/Import */}
+      <DefinicionWeeklyDataExchange />
 
       {/* Weekly Report Export */}
       <DefinicionWeeklyReport />
