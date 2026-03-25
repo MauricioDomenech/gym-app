@@ -64,7 +64,7 @@
           ]
         },
         {
-          "nombre": "Cable crunch",
+          "nombre": "Crunch en maquina",
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "60 seg",
@@ -212,15 +212,13 @@
           "alternativas": []
         },
         {
-          "nombre": "Cable pull-through",
+          "nombre": "Hiperextension en banco a 45",
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "90 seg",
           "imagen": "img_def_mie_04.jpg",
 
-          "alternativas": [
-            { "nombre": "Hip extension en maquina", "imagen": "img_def_mie_04_alt1.jpg" }
-          ]
+          "alternativas": []
         },
         {
           "nombre": "Elevacion de gemelos de pie",
@@ -432,7 +430,7 @@
           "alternativas": []
         },
         {
-          "nombre": "Cable crunch",
+          "nombre": "Ab rollout con rueda",
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "60 seg",
