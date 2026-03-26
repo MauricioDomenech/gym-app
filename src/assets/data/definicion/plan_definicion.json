@@ -288,6 +288,17 @@
           "descanso": "60 seg",
           "imagen": "img_def_jue_05.jpg",
           "alternativas": []
+        },
+        {
+          "nombre": "Fondos en maquina",
+          "series": "3",
+          "repeticiones": "10-12",
+          "descanso": "90 seg",
+          "imagen": "img_def_jue_06.jpg",
+          "alternativas": [
+            { "nombre": "Press cerrado en maquina", "imagen": "img_def_jue_06_alt1.jpg" },
+            { "nombre": "Fondos en paralelas", "imagen": "img_def_jue_06_alt2.jpg" }
+          ]
         }
       ]
     },
