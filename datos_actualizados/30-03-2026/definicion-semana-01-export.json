@@ -1,0 +1,733 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "exportDate": "2026-03-30T06:28:25.217Z",
+  "weekFrom": 1,
+  "subPhase": "Fase 1 — Deficit",
+  "mesocycle": "M1.1",
+  "workoutProgress": [
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 1,
+      "weights": [
+        26,
+        26,
+        26,
+        26
+      ],
+      "seriesCount": 4,
+      "date": "2026-03-23T08:19:57.237+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Inclinado con mancuernas",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-press-hombros-en-maquina-con-respaldo",
+      "day": "lunes",
+      "week": 1,
+      "weights": [
+        32.5,
+        32.5,
+        32.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-23T08:26:15.023+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Press hombros en maquina con respaldo. Hice 8 repeticiones.",
+      "rir": 0
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 1,
+      "weights": [
+        45,
+        45,
+        45
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-23T08:40:26.341+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Pec deck / Aperturas maquina\nPoleas: 10x10,2",
+      "rir": 0
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 1,
+      "weights": [
+        3.5,
+        3.5,
+        3.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-23T08:46:06.511+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Elevacion lateral con polea, hice 15 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 1,
+      "weights": [
+        21.6,
+        21.6,
+        21.6
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-23T08:56:11.654+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Triceps en polea con cuerda,  hice 12 repeticiones. La última pude hacer 9 nada más, me quedé sin fuerza, no se si se podrá descansar más de 60 segundos para recuperar mejor",
+      "rir": 0
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 1,
+      "weights": [
+        12.5,
+        12.5,
+        12.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-23T08:58:16.399+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Polea, 12 de cada lado",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-cable-crunch",
+      "day": "lunes",
+      "week": 1,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-23T09:08:53.891+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Máquina abs hice 12 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 1,
+      "weights": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "seriesCount": 4,
+      "date": "2026-03-24T08:24:43.374+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 8 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 1,
+      "weights": [
+        59,
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 4,
+      "date": "2026-03-24T08:25:04.831+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Jalón pecho en polea, hice 8 repeticiones, el siguiente peso en la máquina es de 66 kilos",
+      "rir": 2
+    },
+    {
+      "exerciseId": "martes-face-pull",
+      "day": "martes",
+      "week": 1,
+      "weights": [
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-24T08:35:48.917+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Reverse fly, hice 15 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-curl-martillo",
+      "day": "martes",
+      "week": 1,
+      "weights": [
+        10,
+        10,
+        10
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-24T08:53:19.402+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Curl martillo, hice 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 1,
+      "weights": [
+        4,
+        4
+      ],
+      "seriesCount": 2,
+      "date": "2026-03-24T08:57:05.562+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 20 repeticiones",
+      "rir": 3
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 1,
+      "weights": [
+        20,
+        20,
+        20
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-24T08:57:12.975+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Barra Ez, hice 10 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-reverse-wrist-curl",
+      "day": "martes",
+      "week": 1,
+      "weights": [
+        4,
+        4
+      ],
+      "seriesCount": 2,
+      "date": "2026-03-24T09:04:30.813+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 15 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-elevacion-piernas-en-silla-romana",
+      "day": "martes",
+      "week": 1,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-24T09:10:28.714+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-dead-bug",
+      "day": "martes",
+      "week": 1,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-03-24T09:16:49.194+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 10 por lado, tuve que descansar 2 minutos entre series sino no podía hacer ninguna",
+      "rir": 0
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 1,
+      "weights": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "seriesCount": 4,
+      "date": "2026-03-25T07:40:39.598+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 7 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 1,
+      "weights": [
+        34.3,
+        34.3,
+        34.3
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-25T07:57:17.764+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 8 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 1,
+      "weights": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "seriesCount": 4,
+      "date": "2026-03-25T07:59:29.482+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 1,
+      "weights": [
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-25T08:03:15.118+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 2
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 1,
+      "weights": [
+        10,
+        10,
+        10
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-25T09:35:40.744+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 1,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-26T07:39:16.133+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Plano maquina 2: hice 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 1,
+      "weights": [
+        18,
+        18,
+        18
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-26T07:52:16.482+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Polea: hice 12 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-myo-reps",
+      "day": "jueves",
+      "week": 1,
+      "weights": [
+        5.7
+      ],
+      "seriesCount": 1,
+      "date": "2026-03-26T08:05:26.465+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Polea: hice 12 y luego 3,5",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-triceps-overhead-cable",
+      "day": "jueves",
+      "week": 1,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-26T08:06:45.643+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Polea: hice 15 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-face-pull--reverse-fly",
+      "day": "jueves",
+      "week": 1,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-26T08:10:29.678+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Reverse con poleas: hice 12 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 1,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T07:41:31.665+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Supino: hice 10 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 1,
+      "weights": [
+        30,
+        30,
+        30
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T07:47:51.673+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Unilateral: hice 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 1,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 4,
+      "date": "2026-03-27T07:48:34.519+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "",
+      "rir": 3
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 1,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T07:48:42.124+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "",
+      "rir": 3
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 1,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T07:48:47.144+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "",
+      "rir": 3
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 1,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T07:48:53.062+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "",
+      "rir": 3
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 1,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 4,
+      "date": "2026-03-27T07:48:59.946+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "",
+      "rir": 3
+    },
+    {
+      "exerciseId": "sabado-cable-kickback-gluteos",
+      "day": "sabado",
+      "week": 1,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T07:49:07.256+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "",
+      "rir": 3
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 1,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T07:49:16.403+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "",
+      "rir": 3
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 1,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T07:49:21.855+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "",
+      "rir": 3
+    },
+    {
+      "exerciseId": "sabado-elevacion-piernas-en-silla-romana",
+      "day": "sabado",
+      "week": 1,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T07:49:28.055+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "",
+      "rir": 3
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 1,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T08:01:04.7+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Polea: hice 12 repeticiones",
+      "rir": 2
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 1,
+      "weights": [
+        7.9,
+        7.9,
+        7.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T08:10:39.624+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Bayesian: hice 12",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 1,
+      "weights": [
+        20,
+        20,
+        20
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T08:12:15.721+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "hice 10 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 1,
+      "weights": [
+        4,
+        4,
+        4
+      ],
+      "seriesCount": 3,
+      "date": "2026-03-27T08:27:57.213+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 20 repeticiones",
+      "rir": 3
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 1,
+      "weights": [
+        20,
+        20
+      ],
+      "seriesCount": 2,
+      "date": "2026-03-27T08:31:15.222+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 2 vueltas, podría haber hecho con 24 kilos en cada mano",
+      "rir": 2
+    }
+  ],
+  "bodyComposition": {
+    "week": 1,
+    "date": "2026-03-30T06:22:12.342+00:00",
+    "peso": 103.4,
+    "grasaCorporal": 33.4,
+    "cintura": null,
+    "cadera": null,
+    "pecho": null,
+    "brazo": null,
+    "muslo": null,
+    "notas": ""
+  },
+  "cardioLogs": [
+    {
+      "day": "jueves",
+      "week": 1,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": true,
+      "notas": "",
+      "date": "2026-03-26T18:10:21.446+00:00"
+    },
+    {
+      "day": "lunes",
+      "week": 1,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": true,
+      "notas": "",
+      "date": "2026-03-24T07:24:04.246+00:00"
+    },
+    {
+      "day": "martes",
+      "week": 1,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": true,
+      "notas": "",
+      "date": "2026-03-25T06:07:35.057+00:00"
+    },
+    {
+      "day": "sabado",
+      "week": 1,
+      "tipo": "caminata",
+      "duracionMinutos": 90,
+      "completado": true,
+      "notas": "",
+      "date": "2026-03-28T18:39:55.6+00:00"
+    }
+  ]
+}

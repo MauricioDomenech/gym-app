@@ -52,4 +52,28 @@ Medición tomada el sábado 22 de marzo, un día antes del inicio.
 
 ### Semana 1 (23–29 marzo 2026)
 
-_Pendiente — primer check-in: domingo 29 de marzo_
+| Métrica | Línea base (22/03) | Semana 1 (30/03) | Cambio |
+|---|---|---|---|
+| Peso | 103.00 kg | 103.40 kg | +0.40 kg |
+| IMC | 33.3 | 33.4 | +0.1 |
+| Grasa corporal | 20.8% | 20.9% | +0.1% |
+| Músculo esquelético | 51.1% | 51.0% | -0.1% |
+| Peso sin grasa | 81.58 kg | 81.79 kg | +0.21 kg |
+| Grasa subcutánea | 16.7% | 16.8% | +0.1% |
+| Grasa visceral | 15 | 15 | = |
+| Agua corporal | 57.2% | 57.0% | -0.2% |
+| Masa muscular | 77.46 kg | 77.65 kg | +0.19 kg |
+| Masa ósea | 4.12 kg | 4.14 kg | +0.02 |
+| Proteína | 18.1% | 18.0% | -0.1% |
+| TMB | 2148 kcal | 2157 kcal | +9 |
+
+**Notas:**
+- L-V dieta y entreno al 100%. Sábado-domingo viaje, no entrenó sábado, comida fuera de plan
+- Subida de 0.40 kg = ruido estadístico (pesaje domingo post-viaje, sin promedio semanal)
+- Sin cambios en el plan nutricional. Se implementa pesaje diario desde semana 2
+- Ajustes gym: descanso tríceps pushdown 60→90 seg, dead bug 60→120 seg
+- Reporte completo: `reportes/semana-01.md`
+
+### Semana 2 (30 marzo – 5 abril 2026)
+
+_Pendiente — check-in: domingo 5 de abril_

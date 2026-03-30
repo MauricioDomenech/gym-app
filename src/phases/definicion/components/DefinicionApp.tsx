@@ -9,6 +9,7 @@ import { DefinicionExerciseList } from './exercises/DefinicionExerciseList';
 import { DefinicionShoppingList } from './shopping/DefinicionShoppingList';
 import { DefinicionCardioTracker } from './cardio/DefinicionCardioTracker';
 import { DefinicionBodyTracker } from './body/DefinicionBodyTracker';
+import { DefinicionDailyWeightInput } from './body/DefinicionDailyWeightInput';
 import { DefinicionSummary } from './summary/DefinicionSummary';
 import { DefinicionProgressAlerts } from './checkin/DefinicionProgressAlerts';
 import { getMesocycleInfo } from '../types/definicion';
@@ -132,7 +133,12 @@ const WeekContent: React.FC<{ mesocycleIsDeload: boolean }> = ({ mesocycleIsDelo
         </div>
       )}
       {activeTab === 'cardio' && <DefinicionCardioTracker />}
-      {activeTab === 'body' && <DefinicionBodyTracker />}
+      {activeTab === 'body' && (
+        <div className="space-y-6">
+          <DefinicionDailyWeightInput />
+          <DefinicionBodyTracker />
+        </div>
+      )}
       {activeTab === 'shopping' && <DefinicionShoppingList />}
     </div>
   );

@@ -1,5 +1,5 @@
 import { supabase } from '../../../utils/supabase/client';
-import type { DefinicionWorkoutProgress, DefinicionShoppingList, DefinicionTableColumn, DefinicionBodyComposition, DefinicionCardioLog } from '../types/definicion';
+import type { DefinicionWorkoutProgress, DefinicionShoppingList, DefinicionTableColumn, DefinicionBodyComposition, DefinicionCardioLog, DefinicionDailyWeight } from '../types/definicion';
 import { DEFAULT_TABLE_COLUMNS } from '../types/definicion';
 
 export class DefinicionSupabaseService {
@@ -196,6 +196,48 @@ export class DefinicionSupabaseService {
   }
 
   // ========================================
+  // DAILY WEIGHTS
+  // ========================================
+
+  public static async getDefinicionDailyWeights(): Promise<DefinicionDailyWeight[]> {
+    const { data, error } = await supabase
+      .from('definicion_daily_weights')
+      .select('*')
+      .order('week', { ascending: true });
+
+    if (error) throw error;
+
+    return (data || []).map(row => ({
+      week: row.week,
+      day: row.day,
+      peso: row.peso,
+      date: row.date,
+      notas: row.notas || '',
+    }));
+  }
+
+  public static async addDefinicionDailyWeight(entry: DefinicionDailyWeight): Promise<void> {
+    // Delete existing for this week/day
+    await supabase
+      .from('definicion_daily_weights')
+      .delete()
+      .eq('week', entry.week)
+      .eq('day', entry.day);
+
+    const { error } = await supabase
+      .from('definicion_daily_weights')
+      .insert({
+        week: entry.week,
+        day: entry.day,
+        peso: entry.peso,
+        date: entry.date,
+        notas: entry.notas || '',
+      });
+
+    if (error) throw error;
+  }
+
+  // ========================================
   // SETTINGS
   // ========================================
 
@@ -273,6 +315,7 @@ export class DefinicionSupabaseService {
       'definicion_settings',
       'definicion_body_composition',
       'definicion_cardio_logs',
+      'definicion_daily_weights',
     ];
 
     for (const table of tables) {

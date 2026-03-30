@@ -11,6 +11,7 @@ import type {
   DefinicionBodyComposition,
   DefinicionCardioLog,
   DefinicionCardioConfig,
+  DefinicionDailyWeight,
 } from '../types/definicion';
 import { DEFAULT_TABLE_COLUMNS } from '../types/definicion';
 import type { DayOfWeek } from '../../../shared/types/base';
@@ -27,6 +28,7 @@ interface DefinicionDataContextType {
   tableColumns: DefinicionTableColumn[];
   bodyComposition: DefinicionBodyComposition[];
   cardioLogs: DefinicionCardioLog[];
+  dailyWeights: DefinicionDailyWeight[];
 
   setCurrentWeek: (week: number) => void;
   setCurrentDay: (day: string) => Promise<void>;
@@ -44,6 +46,7 @@ interface DefinicionDataContextType {
 
   addBodyComposition: (entry: DefinicionBodyComposition) => Promise<void>;
   addCardioLog: (log: DefinicionCardioLog) => Promise<void>;
+  addDailyWeight: (entry: DefinicionDailyWeight) => Promise<void>;
 
   refreshData: () => Promise<void>;
 }
@@ -65,6 +68,7 @@ export const DefinicionDataProvider: React.FC<DefinicionDataProviderProps> = ({ 
   const [tableColumns, setTableColumns] = useState<DefinicionTableColumn[]>(DEFAULT_TABLE_COLUMNS);
   const [bodyComposition, setBodyComposition] = useState<DefinicionBodyComposition[]>([]);
   const [cardioLogs, setCardioLogs] = useState<DefinicionCardioLog[]>([]);
+  const [dailyWeights, setDailyWeights] = useState<DefinicionDailyWeight[]>([]);
 
   useEffect(() => {
     loadInitialData();
@@ -88,6 +92,7 @@ export const DefinicionDataProvider: React.FC<DefinicionDataProviderProps> = ({ 
         currentDayFromDB,
         bodyFromDB,
         cardioFromDB,
+        dailyWeightsFromDB,
       ] = await Promise.all([
         DefinicionSupabaseService.getDefinicionWorkoutProgress(),
         DefinicionSupabaseService.getDefinicionShoppingLists(),
@@ -96,6 +101,7 @@ export const DefinicionDataProvider: React.FC<DefinicionDataProviderProps> = ({ 
         DefinicionSupabaseService.getCurrentDefinicionDay(),
         DefinicionSupabaseService.getDefinicionBodyComposition(),
         DefinicionSupabaseService.getDefinicionCardioLogs(),
+        DefinicionSupabaseService.getDefinicionDailyWeights(),
       ]);
 
       setWorkoutProgress(progressFromDB);
@@ -105,6 +111,7 @@ export const DefinicionDataProvider: React.FC<DefinicionDataProviderProps> = ({ 
       setCurrentDay(currentDayFromDB);
       setBodyComposition(bodyFromDB);
       setCardioLogs(cardioFromDB);
+      setDailyWeights(dailyWeightsFromDB);
 
     } catch (error) {
       console.error('Error loading definicion data:', error);
@@ -229,18 +236,31 @@ export const DefinicionDataProvider: React.FC<DefinicionDataProviderProps> = ({ 
     }
   };
 
+  const addDailyWeight = async (entry: DefinicionDailyWeight): Promise<void> => {
+    try {
+      await DefinicionSupabaseService.addDefinicionDailyWeight(entry);
+      setDailyWeights(prev => {
+        const filtered = prev.filter(w => !(w.week === entry.week && w.day === entry.day));
+        return [...filtered, entry];
+      });
+    } catch (error) {
+      console.error('Error adding daily weight:', error);
+      throw error;
+    }
+  };
+
   const refreshData = async (): Promise<void> => {
     await loadInitialData();
   };
 
   const value: DefinicionDataContextType = {
     currentWeek, currentDay, isLoading,
-    nutritionData, workoutData, workoutProgress, shoppingLists, tableColumns, bodyComposition, cardioLogs,
+    nutritionData, workoutData, workoutProgress, shoppingLists, tableColumns, bodyComposition, cardioLogs, dailyWeights,
     setCurrentWeek: handleSetCurrentWeek, setCurrentDay: handleSetCurrentDay,
     getCurrentNutrition, getCurrentWorkout, getCardioConfig, getDaysOfWeek,
     saveWorkoutProgress, getExerciseProgress,
     addShoppingList, updateTableColumns,
-    addBodyComposition, addCardioLog,
+    addBodyComposition, addCardioLog, addDailyWeight,
     refreshData,
   };
 

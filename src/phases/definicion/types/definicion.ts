@@ -215,6 +215,18 @@ export interface DefinicionBodyComposition {
 }
 
 // ========================================
+// DAILY WEIGHT TYPES
+// ========================================
+
+export interface DefinicionDailyWeight {
+  week: number;
+  day: string;
+  peso: number;
+  date: string;
+  notas: string;
+}
+
+// ========================================
 // WORKOUT PROGRESS TYPES
 // ========================================
 
@@ -258,6 +270,7 @@ export interface DefinicionAppState extends BaseAppState {
   shoppingLists: DefinicionShoppingList[];
   bodyComposition: DefinicionBodyComposition[];
   cardioLogs: DefinicionCardioLog[];
+  dailyWeights: DefinicionDailyWeight[];
 }
 
 export interface DefinicionTableColumn {
