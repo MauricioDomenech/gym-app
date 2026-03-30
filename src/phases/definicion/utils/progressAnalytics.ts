@@ -16,7 +16,7 @@ import type {
 } from '../types/definicion';
 import { DefinicionExerciseParser } from '../services/definicionExerciseParser';
 
-const START_WEIGHT = 102;
+const START_WEIGHT = 103;
 const GOAL_WEIGHT = 93;
 const KCAL_PER_KG_FAT = 7700;
 const DAYS_OF_WEEK = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'] as const;
