@@ -12,14 +12,13 @@ Comida,13:00,Zanahoria,80,g,32.8,0.7,8,0.2,2.2,
 Comida,13:00,Pimiento rojo,80,g,24.8,0.8,4.8,0.2,1.7,
 Comida,13:00,Arroz blanco cocido,140,g,182,3.8,39.5,0.4,0.6,Acompanamiento
 Comida,13:00,AOVE,10,ml,88.4,0,0,10,0,
-Snack pre-cardio,16:30,Yogur vegetal natural Danone,150,g,99,5.6,11.3,3.2,1.4,Danone
-Snack pre-cardio,16:30,Whey protein (1 scoop),30,g,116.7,24,2,1.4,0,Redistribuido del batido
-Snack pre-cardio,16:30,Anacardos,25,g,138.3,4.6,7.6,11,0.8,Porcion aumentada
-Snack pre-cardio,16:30,Naranja,1,unit,65,1,16,0.2,3.3,
-Post-cardio,18:00,Pavo en lonchas,100,g,105,21,1,1.5,0,
-Post-cardio,18:00,Tomate cherry,100,g,18,0.9,3.9,0.2,1.2,
+Snack tarde,18:00,Yogur vegetal natural Danone,150,g,99,5.6,11.3,3.2,1.4,Danone
+Snack tarde,18:00,Whey protein (1 scoop),30,g,116.7,24,2,1.4,0,Redistribuido del batido
+Snack tarde,18:00,Anacardos,25,g,138.3,4.6,7.6,11,0.8,Porcion aumentada
+Snack tarde,18:00,Naranja,1,unit,65,1,16,0.2,3.3,
+Snack tarde,18:00,Pavo en lonchas,100,g,105,21,1,1.5,0,
 Cena,20:30,Atun plancha,180,g,234,52.2,0,1.1,0,Fresco
 Cena,20:30,Patata al horno,260,g,200.2,5.2,44.2,0.3,5.7,Porcion aumentada
 Cena,20:30,Ensalada (espinacas tomate pepino),200,g,38,3,5.4,0.6,2.6,Sin cebolla
 Cena,20:30,AOVE,8,ml,70.7,0,0,8,0,
-TOTAL,,—,,,2571.9,205.9,312.4,59.4,54.4,
+TOTAL,,—,,,2551.6,202.8,313.7,56.9,51.6,Dia sin cardio

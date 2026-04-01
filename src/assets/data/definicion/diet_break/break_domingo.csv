@@ -11,12 +11,12 @@ Comida,13:00,Ensalada mixta grande,250,g,47.5,3,7.5,0.8,3.8,Sin cebolla
 Comida,13:00,Pavo en lonchas,100,g,105,21,1,1.5,0,Extra proteina
 Comida,13:00,Arroz blanco cocido,230,g,299,6.2,64.9,0.7,0.9,Porcion aumentada
 Comida,13:00,AOVE,8,ml,70.7,0,0,8,0,
-Snack pre-cardio,16:30,Yogur vegetal natural Danone,150,g,99,5.6,11.3,3.2,1.4,Danone
-Snack pre-cardio,16:30,Whey protein (1 scoop),30,g,116.7,24,2,1.4,0,Redistribuido del batido
-Snack pre-cardio,16:30,Anacardos,30,g,165.9,5.5,9.1,13.2,1,Porcion aumentada
-Snack pre-cardio,16:30,Melocoton,1,unit,58,1,14,0.4,2,
-Post-cardio,18:00,Pavo en lonchas,100,g,105,21,1,1.5,0,Dia de descanso - snack ligero
-Post-cardio,18:00,Pepino,100,g,15,0.7,3.6,0.1,0.5,
+Snack tarde,18:00,Yogur vegetal natural Danone,150,g,99,5.6,11.3,3.2,1.4,Danone
+Snack tarde,18:00,Whey protein (1 scoop),30,g,116.7,24,2,1.4,0,Redistribuido del batido
+Snack tarde,18:00,Anacardos,30,g,165.9,5.5,9.1,13.2,1,
+Snack tarde,18:00,Melocoton,1,unit,58,1,14,0.4,2,
+Snack tarde,18:00,Pavo en lonchas,100,g,105,21,1,1.5,0,
+Snack tarde,18:00,Pepino,100,g,15,0.7,3.6,0.1,0.5,
 Cena,20:30,Lomo de cerdo plancha,180,g,257.4,48.6,0,5.4,0,
 Cena,20:30,Patata al horno,260,g,200.2,5.2,44.2,0.3,5.7,Porcion aumentada
 Cena,20:30,Ensalada (lechuga tomate pepino),200,g,34,2,5.4,0.6,2.6,Sin cebolla
