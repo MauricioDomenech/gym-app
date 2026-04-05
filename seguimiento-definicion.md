@@ -76,4 +76,32 @@ Medición tomada el sábado 22 de marzo, un día antes del inicio.
 
 ### Semana 2 (30 marzo – 5 abril 2026)
 
-_Pendiente — check-in: domingo 5 de abril_
+| Métrica | Semana 1 (30/03) | Semana 2 (05/04) | Cambio |
+|---|---|---|---|
+| Peso | 103.40 kg | 102.30 kg | **-1.10 kg** |
+| IMC | 33.4 | 33.0 | -0.4 |
+| Grasa corporal | 20.9% | 20.7% | -0.2% |
+| Músculo esquelético | 51.0% | 51.2% | +0.2% |
+| Peso sin grasa | 81.79 kg | 81.12 kg | -0.67 kg |
+| Grasa subcutánea | 16.8% | 16.7% | -0.1% |
+| Grasa visceral | 15 | 15 | = |
+| Agua corporal | 57.1% | 57.3% | +0.2% |
+| Masa muscular | 77.65 kg | 77.03 kg | -0.62 kg |
+| Masa ósea | 4.14 kg | 4.09 kg | -0.05 kg |
+| Proteína | 18.0% | 18.1% | +0.1% |
+| TMB | 2157 kcal | 2135 kcal | -22 |
+
+**Acumulado desde línea base (22/03): -0.70 kg**
+
+**Notas:**
+- Adherencia: 5/6 gym (sábado no fue al gym, 2da semana seguida sin Legs 2) + 4-5 sesiones cardio (~180-200 min)
+- Deficit calórico real estimado: ~700 kcal/día (TDEE ~2900 kcal)
+- Bajada de 1.07% peso corporal — rango agresivo pero válido; grueso es agua/glucógeno
+- Rendimiento gym mejoró vs semana 1: bajó RPE en varios ejercicios clave manteniendo pesos
+- Problema: dolor antebrazo derecho en curl martillo 10kg → cambiar a incline DB curl o cable hammer
+- Ajustes nutrición: sin cambios. Reevaluar semana 4 si promedio se estanca
+- Reporte completo: `reportes/semana-02.md`
+
+### Semana 3 (6 – 12 abril 2026)
+
+_Pendiente — check-in: domingo 12 de abril_
