@@ -1,0 +1,774 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "exportDate": "2026-04-12T08:21:59.969Z",
+  "weekFrom": 3,
+  "subPhase": "Fase 1 — Deficit",
+  "mesocycle": "M1.3",
+  "workoutProgress": [
+    {
+      "exerciseId": "lunes-cable-crunch",
+      "day": "lunes",
+      "week": 3,
+      "weights": [
+        95,
+        95,
+        95
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-06T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 95kg (semana 2 hiciste 12 faciles a 90kg). Buscar 12 reps.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 3,
+      "weights": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-06T06:53:26.58+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "No puedo bajar a 27 porque son mancuernas. Hice 7 al límite, la última llegue con lo justo",
+      "rir": 0
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 3,
+      "weights": [
+        21.6,
+        21.6,
+        21.6
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-06T07:31:52.358+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones, la última casi no llego",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 3,
+      "weights": [
+        59,
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-07T06:14:43.869+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 10 repeticiones. El siguiente peso es 66 kg",
+      "rir": 2
+    },
+    {
+      "exerciseId": "martes-curl-martillo",
+      "day": "martes",
+      "week": 3,
+      "weights": [
+        10,
+        10,
+        10
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-07T06:44:26.387+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "INCLINE DB CURL (banco 45° con mancuernas) hice 12 repeticiones pero descansando 2 minutos sino no llegaba",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-face-pull",
+      "day": "martes",
+      "week": 3,
+      "weights": [
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-07T07:13:07.014+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 13 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 3,
+      "weights": [
+        60,
+        60,
+        60
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-08T06:45:09.81+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 10 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 3,
+      "weights": [
+        7.9,
+        7.9,
+        7.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-09T06:54:39.659+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "la maquina no tiene 9, salta a 10,2. No puedo ni hacer 6 con ese peso. Hice 12 repeticiones ahora con 7,9",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-face-pull--reverse-fly",
+      "day": "jueves",
+      "week": 3,
+      "weights": [
+        3.4,
+        3.4,
+        3.4
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-09T07:14:07.255+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "hice 22 repeticiones, el siguiente peso es 5,7",
+      "rir": 2
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 3,
+      "weights": [
+        45,
+        45,
+        45
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-10T06:33:51.532+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "hice con otra máquina ahora, 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 3,
+      "weights": [
+        10.2,
+        10.2,
+        10.2
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-10T06:46:04.236+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "No hay 9 en esa máquina, pase a 10,2 kg. Hice 10 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 3,
+      "weights": [
+        5,
+        5,
+        5
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-10T07:02:51.775+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 20 repeticiones y fácil, subir a 6 para la próxima",
+      "rir": 3
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 3,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-11T07:40:49.613+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 3,
+      "weights": [
+        12.5,
+        12.5,
+        12.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-11T08:05:44.558+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-press-hombros-en-maquina-con-respaldo",
+      "day": "lunes",
+      "week": 3,
+      "weights": [
+        32.5,
+        32.5,
+        32.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-06T07:05:04.639+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 9 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 3,
+      "weights": [
+        30,
+        30,
+        30,
+        30
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-07T06:22:57.841+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 10 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 3,
+      "weights": [
+        5,
+        5
+      ],
+      "seriesCount": 2,
+      "date": "2026-04-07T06:53:13.121+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 20 repeticiones",
+      "rir": 2
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 3,
+      "weights": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-08T06:25:43.766+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 8 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 3,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-08T06:52:14.513+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-myo-reps",
+      "day": "jueves",
+      "week": 3,
+      "weights": [
+        5.7
+      ],
+      "seriesCount": 1,
+      "date": "2026-04-09T07:03:11.047+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Myo-reps 5.7kg. Activacion 12-15 reps cerca del fallo, luego mini-series DECRECIENTES: 5, 4, 3 (15-20 seg entre cada).",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-fondos-en-maquina",
+      "day": "jueves",
+      "week": 3,
+      "weights": [
+        54,
+        54,
+        54
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-09T07:22:12.917+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 54kg maquina. Buscar 14 reps (semana 2 hiciste 12 RIR 2). Si salen 14 facil, subir a 57kg.\n\nEstá maquina si le agrego peso me ayuda al movimiento, le tengo que sacar para que sea más difícil, el próximo peso es 50, ahora hice 14 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 3,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-10T06:42:34.14+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 14 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 3,
+      "weights": [
+        24,
+        24
+      ],
+      "seriesCount": 2,
+      "date": "2026-04-10T07:04:33.019+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 24kg (semana 2 RIR 0 'justo'). Buscar 40-45 seg por serie. Si sale facil, subir a 26kg la proxima.",
+      "rir": 0
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 3,
+      "weights": [
+        32,
+        32,
+        32
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-11T07:46:06.761+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-elevacion-piernas-en-silla-romana",
+      "day": "sabado",
+      "week": 3,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-11T08:09:44.484+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Bodyweight. 12 repeticiones al límite, muy cansado y al borde del calambre de las abdominales por hacer los 3 juntos mmmm",
+      "rir": 0
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 3,
+      "weights": [
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-06T07:14:12.083+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Finalmente pude hacer en la maquina de pec deck, hice 13 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 3,
+      "weights": [
+        95,
+        95,
+        95
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-06T07:38:55.026+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "La primera serie hice 15 con 95 kilos, pero al empezar la segunda casi se me acalambraron las abdominales, así que no hice más repeticiones. Que hacemos para la próxima semana?",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 3,
+      "weights": [
+        20,
+        20,
+        20
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-07T06:38:29.303+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones, pero entre la 2da y 3ra tuve que descansar 2 minutos sino no llegaba",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-reverse-wrist-curl",
+      "day": "martes",
+      "week": 3,
+      "weights": [
+        4,
+        4
+      ],
+      "seriesCount": 2,
+      "date": "2026-04-07T07:01:12.047+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 18 repeticiones, con la izquierda me cuesta mucho más, descanse 90 segundos sino no llegaba",
+      "rir": 0
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 3,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-08T07:03:26.112+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 10 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 3,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-10T06:19:56.7+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 3,
+      "weights": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-11T07:24:20.036+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 15 repeticiones",
+      "rir": 2
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 3,
+      "weights": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-11T07:55:48.337+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 15 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 3,
+      "weights": [
+        4.5,
+        4.5,
+        4.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-06T07:22:00.625+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 3,
+      "weights": [
+        15,
+        15,
+        15
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-06T07:40:40.234+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 10 por lado",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-elevacion-piernas-en-silla-romana",
+      "day": "martes",
+      "week": 3,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-07T07:06:09.573+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 15 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 3,
+      "weights": [
+        34.3,
+        34.3,
+        34.3
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-08T06:40:29.6+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 11 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 3,
+      "weights": [
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-09T06:41:21.491+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 10 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-triceps-overhead-cable",
+      "day": "jueves",
+      "week": 3,
+      "weights": [
+        19.3,
+        19.3,
+        19.3
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-09T07:06:40.306+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "BAJAR a 18kg. Semana 2 con 19kg la ultima serie cayo a 9.5 reps = peso excesivo. DESCANSO 90 seg. Completar 12-12-12. No se puede bajar, la maquina de 19,3 baja a 17. Ahora sí puede hacer las 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 3,
+      "weights": [
+        27,
+        27,
+        27
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-10T06:54:51.535+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Cambie a una máquina que me permite hacer el dropset mejor. Hice 12 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 3,
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-11T07:33:24.23+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Búlgara, solo peso corporal, hice 10 repeticiones",
+      "rir": 2
+    },
+    {
+      "exerciseId": "sabado-cable-kickback-gluteos",
+      "day": "sabado",
+      "week": 3,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-11T08:01:32.553+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 12 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 3,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-11T08:01:47.23+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Bodyweight. 12 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-dead-bug",
+      "day": "martes",
+      "week": 3,
+      "weights": [
+        1,
+        1
+      ],
+      "seriesCount": 2,
+      "date": "2026-04-07T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Bodyweight. 10 por lado, 90 seg descanso (como semana 2).",
+      "rir": null
+    }
+  ],
+  "bodyComposition": {
+    "week": 3,
+    "date": "2026-04-12T08:00:08.434+00:00",
+    "peso": 102.5,
+    "grasaCorporal": null,
+    "cintura": null,
+    "cadera": null,
+    "pecho": null,
+    "brazo": null,
+    "muslo": null,
+    "notas": ""
+  },
+  "cardioLogs": [
+    {
+      "day": "jueves",
+      "week": 3,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "",
+      "date": "2026-04-10T05:21:08.355+00:00"
+    },
+    {
+      "day": "lunes",
+      "week": 3,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "",
+      "date": "2026-04-06T17:37:50.291+00:00"
+    },
+    {
+      "day": "martes",
+      "week": 3,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "",
+      "date": "2026-04-08T05:48:49.824+00:00"
+    },
+    {
+      "day": "sabado",
+      "week": 3,
+      "tipo": "hiit",
+      "duracionMinutos": 16,
+      "completado": true,
+      "notas": "Hice 8 series",
+      "date": "2026-04-11T08:30:26.427+00:00"
+    },
+    {
+      "day": "viernes",
+      "week": 3,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "",
+      "date": "2026-04-10T18:03:14.224+00:00"
+    }
+  ]
+}
