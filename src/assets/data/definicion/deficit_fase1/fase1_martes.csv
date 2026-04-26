@@ -1,22 +1,19 @@
 comida,hora,alimento,cantidad,unidad,kcal,proteinas_g,carbohidratos_g,grasas_g,fibra_g,notas
-Desayuno,07:00,Huevos revueltos (3 enteros),3,unit,210,18,1.5,15,0,Yema blanda
-Desayuno,07:00,Pan integral (rebanada),1,slice,80,4,14,1,2,
-Desayuno,07:00,Cafe con leche de cabra,150,ml,45,3,4,2,0,
-Batido post-entreno,10:00,Whey protein (1 scoop),30,g,116.7,24,2,1.4,0,
-Batido post-entreno,10:00,Salvado de trigo integral,6,g,13,1,1.5,0.5,2.5,Por diverticulos
-Batido post-entreno,10:00,Platano,1,unit,105,1.3,27,0.4,3.1,
-Comida,13:00,Merluza plancha,220,g,180.4,37.8,0,1.5,0,
-Comida,13:00,Arroz integral,50,g,155,3.4,32.2,1.3,2.3,Pesar en crudo
-Comida,13:00,Judias verdes al vapor,150,g,46.5,2.7,10.5,0.2,5.1,
-Comida,13:00,AOVE,10,ml,88.4,0,0,10,0,
-Snack pre-cardio,16:30,Yogur vegetal natural Danone,125,g,83,4.6,9.4,2.6,1.1,Danone
-Snack pre-cardio,16:30,Whey protein (1 scoop),30,g,116.7,24,2,1.4,0,Redistribuido del batido
-Snack pre-cardio,16:30,Nueces,17,g,111.2,2.6,2.3,11.1,1.1,Sustituidas por anacardos (match grasa)
-Snack pre-cardio,16:30,Pera,1,unit,85,0.5,22,0.2,4.5,
-Post-cardio,18:00,Pavo en lonchas,120,g,126,25.2,1.2,1.8,0,
-Post-cardio,18:00,Tomate cherry,100,g,18,0.9,3.9,0.2,1.2,
-Cena,20:30,Ternera plancha,180,g,270,46.8,0,9,0,Filete fino
-Cena,20:30,Patata al horno,200,g,154,4,34,0.2,4.4,Porcion aumentada
-Cena,20:30,Ensalada (lechuga tomate pepino),150,g,25.5,1.5,4.1,0.5,2,Sin cebolla
-Cena,20:30,AOVE,5,ml,44.2,0,0,5,0,
-TOTAL,,—,,,2070.7,204.9,164.0,69.4,29.1,Carb cycling: sin crema de arroz (dia pull)
+Desayuno,07:00,Huevos revueltos (3 enteros),3,unit,210,18.0,1.5,15.0,0.0,Yema blanda
+Desayuno,07:00,Pan integral (rebanada),1,slice,80,4.0,14.0,1.0,2.0,
+Desayuno,07:00,Cafe con leche de cabra,150,ml,45,3.0,4.0,2.0,0.0,150ml leche de cabra entera
+Batido post-entreno,10:00,Whey protein (1 scoop),30,g,117,24.0,2.0,1.4,0.0,
+Batido post-entreno,10:00,Salvado de trigo integral,6,g,13,1.0,1.5,0.5,2.5,Por diverticulos
+Batido post-entreno,10:00,Platano,1,unit,105,1.3,27.0,0.4,3.1,
+Comida,13:00,Bonito a la plancha,200,g,288,46.0,0.0,9.0,0.0,Pesar crudo. Sustituye merluza (cansado de comerla)
+Comida,13:00,Arroz integral,45,g,163,3.2,33.1,1.2,1.6,Pesar en crudo
+Comida,13:00,Judias verdes al vapor,150,g,47,2.7,10.5,0.3,5.1,Sin aceite
+Snack pre-cardio,16:30,Yogur vegetal natural Danone,125,g,83,4.6,9.4,2.6,1.1,Danone vegetal natural
+Snack pre-cardio,16:30,Whey protein (1 scoop),30,g,117,24.0,2.0,1.4,0.0,
+Snack pre-cardio,16:30,Anacardos,16,g,89,2.9,5.2,7.0,0.4,Pesar exacto en bascula
+Snack pre-cardio,16:30,Pera,1,unit,86,0.6,22.5,0.2,4.7,
+Cena,20:30,Atun claro en aceite de oliva (escurrido),150,g,300,38.2,0.0,16.4,0.0,Lata escurrida
+Cena,20:30,Boniato al horno,110,g,95,1.8,22.0,0.1,3.3,Pesar crudo
+Cena,20:30,Espinacas salteadas,200,g,46,5.8,7.2,0.8,4.4,Sin aceite
+Cena,20:30,Ensalada (lechuga tomate pepino),150,g,26,1.5,4.1,0.4,2.0,Sin cebolla sin aliño. Sal marina 1.5g.
+TOTAL,,—,,,1909,182.6,166.0,60.2,30.2,Pull+LISS. Sin AOVE. Sin post-cardio (eliminada). 5 comidas. Bonito 200g sustituye merluza.
