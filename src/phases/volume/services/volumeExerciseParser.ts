@@ -1,7 +1,26 @@
-import type { VolumeExercise, VolumeWorkoutDay, VolumePlan } from '../types/volume';
+import type { VolumeExercise, VolumeWorkoutDay } from '../types/volume';
 
 // Import JSON file as text and parse it
 import planVolumenJSON from '../../../assets/data/volumen/plan_volumen.json';
+
+interface RawVolumeExercise {
+  nombre: string;
+  series: string;
+  repeticiones: string;
+  imagen: string;
+  alternativas?: Array<{ nombre: string; imagen: string }>;
+}
+
+interface RawVolumeDay {
+  orden: number;
+  dia: string;
+  musculos: string;
+  ejercicios: RawVolumeExercise[];
+}
+
+interface RawVolumePlan {
+  plan: RawVolumeDay[];
+}
 
 export class VolumeExerciseParser {
   // Normalize string by removing accents for consistent comparisons
@@ -14,23 +33,23 @@ export class VolumeExerciseParser {
     return isAlternative ? `${baseId}-alt-${alternativeIndex}` : baseId;
   }
 
-  private static parsePlanData(): VolumePlan {
+  private static parsePlanData(): RawVolumePlan {
     try {
       // If imported as JSON, use directly; otherwise parse as string
       const planData = typeof planVolumenJSON === 'string' ? JSON.parse(planVolumenJSON) : planVolumenJSON;
-      return planData as VolumePlan;
+      return planData as RawVolumePlan;
     } catch (error) {
       console.error('Error parsing volume plan JSON:', error);
       return { plan: [] };
     }
   }
 
-  private static mapRawExerciseToVolumeExercise(rawExercise: any, day: string): VolumeExercise {
+  private static mapRawExerciseToVolumeExercise(rawExercise: RawVolumeExercise, day: string): VolumeExercise {
     // Generate main exercise ID
     const mainId = this.generateExerciseId(rawExercise.nombre, day);
 
     // Process alternatives if they exist
-    const alternativas = rawExercise.alternativas?.map((alt: any) => ({
+    const alternativas = rawExercise.alternativas?.map((alt) => ({
       nombre: alt.nombre,
       imagen: alt.imagen,
     })) || [];
@@ -50,7 +69,7 @@ export class VolumeExerciseParser {
       const planData = this.parsePlanData();
       
       // Find the day in the plan (normalize accents for comparison)
-      const dayData = planData.plan.find((d: any) => 
+      const dayData = planData.plan.find((d) => 
         this.normalizeString(d.dia) === this.normalizeString(day)
       );
 
@@ -60,7 +79,7 @@ export class VolumeExerciseParser {
       }
 
       // Map exercises
-      const exercises = (dayData as any).ejercicios.map((exercise: any) => 
+      const exercises = dayData.ejercicios.map((exercise) => 
         this.mapRawExerciseToVolumeExercise(exercise, day)
       );
 
@@ -85,9 +104,9 @@ export class VolumeExerciseParser {
       const planData = this.parsePlanData();
       
       // Process each day in the plan
-      planData.plan.forEach((dayData: any) => {
+      planData.plan.forEach((dayData) => {
         const dayKey = this.normalizeString(dayData.dia);
-        const exercises = dayData.ejercicios.map((exercise: any) => 
+        const exercises = dayData.ejercicios.map((exercise) => 
           this.mapRawExerciseToVolumeExercise(exercise, dayKey)
         );
 

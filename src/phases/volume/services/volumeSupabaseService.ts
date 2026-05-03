@@ -212,7 +212,7 @@ export class VolumeSupabaseService {
   // VOLUME SETTINGS METHODS
   // ========================================
 
-  public static async getVolumeSetting(key: string): Promise<any> {
+  public static async getVolumeSetting(key: string): Promise<unknown> {
     const { data, error } = await supabase
       .from('volume_settings')
       .select('setting_value')
@@ -226,7 +226,7 @@ export class VolumeSupabaseService {
     return data?.setting_value || null;
   }
 
-  public static async saveVolumeSetting(key: string, value: any): Promise<void> {
+  public static async saveVolumeSetting(key: string, value: unknown): Promise<void> {
     const { error } = await supabase
       .from('volume_settings')
       .upsert({
@@ -245,7 +245,7 @@ export class VolumeSupabaseService {
   public static async getVolumeTableColumns(): Promise<VolumeTableColumn[]> {
     try {
       const columns = await this.getVolumeSetting('volume-table-columns');
-      return columns || [
+      return Array.isArray(columns) ? columns as VolumeTableColumn[] : [
         { key: 'comida', label: 'Comida', visible: true },
         { key: 'hora', label: 'Hora', visible: true },
         { key: 'alimento', label: 'Alimento', visible: true },
@@ -271,7 +271,7 @@ export class VolumeSupabaseService {
   public static async getCurrentVolumeWeek(): Promise<number> {
     try {
       const week = await this.getVolumeSetting('volume-current-week');
-      return parseInt(week) || 1;
+      return Number(week) || 1;
     } catch (error) {
       console.error('Error getting current volume week:', error);
       return 1;
@@ -285,7 +285,7 @@ export class VolumeSupabaseService {
   public static async getCurrentVolumeDay(): Promise<string> {
     try {
       const day = await this.getVolumeSetting('volume-current-day');
-      return day || 'lunes';
+      return typeof day === 'string' ? day : 'lunes';
     } catch (error) {
       console.error('Error getting current volume day:', error);
       return 'lunes';

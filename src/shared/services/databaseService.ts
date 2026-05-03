@@ -15,7 +15,7 @@ const STORAGE_KEYS = {
 class ApiClient {
   private static baseUrl = '/api/database';
 
-  private static async call(action: string, key: string, value?: any): Promise<any> {
+  private static async call(action: string, key: string, value?: unknown): Promise<{ data?: unknown; success?: boolean }> {
     const userId = this.getUserId();
     
     try {
@@ -59,7 +59,7 @@ class ApiClient {
   public static async get<T>(key: string, defaultValue: T): Promise<T> {
     try {
       const result = await this.call('get', key);
-      return result.data !== null ? result.data : defaultValue;
+      return result.data !== null && result.data !== undefined ? result.data as T : defaultValue;
     } catch (error) {
       console.error(`Failed to get ${key}:`, error);
       return defaultValue;

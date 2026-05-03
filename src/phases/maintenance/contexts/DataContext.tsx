@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import type { DayNutrition, WorkoutDay, WorkoutProgress, TableColumn, DayOfWeek } from '../types/maintenance';
 import { CSVParser } from '../services/csvParser';

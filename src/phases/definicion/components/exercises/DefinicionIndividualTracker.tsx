@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDefinicionData } from '../../contexts/DefinicionDataContext';
 import { parseSeriesString, RIR_OPTIONS, getRIRLabel } from '../../types/definicion';
+import { buildWorkoutNotes, parseWorkoutNotes } from '../../utils/workoutNotes';
 import type { DefinicionIndividualTrackerProps, DefinicionWorkoutProgress, RIRValue } from '../../types/definicion';
 
 export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerProps> = ({
@@ -19,6 +20,8 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
   const [currentSeriesCount, setCurrentSeriesCount] = useState(seriesInfo.defaultSeries);
   const [weights, setWeights] = useState<number[]>(new Array(currentSeriesCount).fill(0));
   const [savedWeights, setSavedWeights] = useState<number[]>(new Array(currentSeriesCount).fill(0));
+  const [coachPlan, setCoachPlan] = useState<string>('');
+  const [savedCoachPlan, setSavedCoachPlan] = useState<string>('');
   const [observations, setObservations] = useState<string>('');
   const [savedObservations, setSavedObservations] = useState<string>('');
   const [rir, setRir] = useState<RIRValue | null>(null);
@@ -27,14 +30,9 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
   const [justSaved, setJustSaved] = useState(false);
   const [saveTimer, setSaveTimer] = useState<NodeJS.Timeout | null>(null);
 
-  const getTrackingId = (): string => {
-    return exercise.id;
-  };
-
   useEffect(() => {
-    const trackingId = getTrackingId();
     const existingProgress = getExerciseProgress(
-      trackingId,
+      exercise.id,
       currentDay,
       currentWeek,
       false,
@@ -46,8 +44,11 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
       setCurrentSeriesCount(loadedSeriesCount);
       setWeights([...existingProgress.weights]);
       setSavedWeights([...existingProgress.weights]);
-      setObservations(existingProgress.observations || '');
-      setSavedObservations(existingProgress.observations || '');
+      const parsedNotes = parseWorkoutNotes(existingProgress.observations);
+      setCoachPlan(parsedNotes.coachPlan);
+      setSavedCoachPlan(parsedNotes.coachPlan);
+      setObservations(parsedNotes.userFeedback);
+      setSavedObservations(parsedNotes.userFeedback);
       const loadedRir = existingProgress.rir ?? null;
       setRir(loadedRir as RIRValue | null);
       setSavedRir(loadedRir as RIRValue | null);
@@ -56,12 +57,14 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
       setCurrentSeriesCount(seriesInfo.defaultSeries);
       setWeights(newWeights);
       setSavedWeights(newWeights);
+      setCoachPlan('');
+      setSavedCoachPlan('');
       setObservations('');
       setSavedObservations('');
       setRir(null);
       setSavedRir(null);
     }
-  }, [exercise.id, currentDay, currentWeek, getExerciseProgress]);
+  }, [exercise.id, currentDay, currentWeek, getExerciseProgress, seriesInfo.defaultSeries]);
 
   useEffect(() => {
     return () => {
@@ -102,9 +105,8 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
     }
 
     try {
-      const trackingId = getTrackingId();
       const progress: DefinicionWorkoutProgress = {
-        exerciseId: trackingId,
+        exerciseId: exercise.id,
         day: currentDay,
         week: currentWeek,
         weights: [...weights],
@@ -112,12 +114,13 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
         date: new Date().toISOString(),
         isAlternative: false,
         alternativeIndex: null,
-        observations: observations.trim(),
+        observations: buildWorkoutNotes(coachPlan, observations),
         rir: rir,
       };
 
       await saveWorkoutProgress(progress);
       setSavedWeights([...weights]);
+      setSavedCoachPlan(coachPlan.trim());
       setSavedObservations(observations.trim());
       setSavedRir(rir);
 
@@ -143,8 +146,8 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
     setRir(null);
   };
 
-  const hasProgress = weights.some(weight => weight > 0) || observations.trim().length > 0 || rir !== null;
-  const hasSavedProgress = savedWeights.some(weight => weight > 0) || savedObservations.length > 0 || savedRir !== null;
+  const hasProgress = weights.some(weight => weight > 0) || observations.trim().length > 0 || coachPlan.trim().length > 0 || rir !== null;
+  const hasSavedProgress = savedWeights.some(weight => weight > 0) || savedCoachPlan.length > 0 || savedObservations.length > 0 || savedRir !== null;
   const canAdjustSeries = seriesInfo.minSeries !== seriesInfo.maxSeries;
 
   return (
@@ -271,15 +274,32 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
         )}
       </div>
 
+      {/* Imported Coach Plan */}
+      {coachPlan && (
+        <div className="p-3 bg-sky-50 dark:bg-sky-900/20 rounded-md border border-sky-200 dark:border-sky-800">
+          <div className="flex items-center gap-2 mb-1">
+            <svg className="w-4 h-4 text-sky-700 dark:text-sky-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6M8 4h8l2 2v14H6V6l2-2z" />
+            </svg>
+            <span className="text-xs font-semibold text-sky-800 dark:text-sky-200">
+              Objetivo de esta semana
+            </span>
+          </div>
+          <p className="text-xs text-sky-700 dark:text-sky-300 whitespace-pre-line">
+            {coachPlan}
+          </p>
+        </div>
+      )}
+
       {/* Observations */}
       <div className="space-y-2">
         <label className="block text-xs font-medium text-gray-700 dark:text-gray-300">
-          Observaciones (opcional)
+          Feedback del entrenamiento (opcional)
         </label>
         <textarea
           value={observations}
           onChange={(e) => setObservations(e.target.value)}
-          placeholder="Agrega observaciones sobre este ejercicio..."
+          placeholder="Como salio este ejercicio, molestias, tecnica, si el peso quedo facil o pesado..."
           rows={3}
           className="w-full px-2 py-2 border border-emerald-300 dark:border-emerald-700 rounded text-sm bg-white dark:bg-slate-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 resize-none"
         />
@@ -352,9 +372,9 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
           {savedObservations && (
             <div className="p-2 bg-blue-50 dark:bg-blue-900/20 rounded text-xs border border-blue-200 dark:border-blue-800">
               <span className="text-blue-700 dark:text-blue-300 font-medium">
-                Observaciones guardadas:
+                Feedback guardado:
               </span>
-              <div className="mt-1 text-blue-800 dark:text-blue-200">
+              <div className="mt-1 text-blue-800 dark:text-blue-200 whitespace-pre-line">
                 {savedObservations}
               </div>
             </div>

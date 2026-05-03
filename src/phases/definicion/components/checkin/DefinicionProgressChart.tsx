@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEFINICION_SUB_PHASES, TOTAL_WEEKS } from '../../types/definicion';
+import { TOTAL_WEEKS } from '../../types/definicion';
 import type { DefinicionBodyComposition, WeightProjection } from '../../types/definicion';
 import { getExpectedWeight } from '../../utils/progressAnalytics';
 
@@ -65,16 +65,13 @@ export const DefinicionProgressChart: React.FC<DefinicionProgressChartProps> = (
     ? sortedData.map((d, i) => `${i === 0 ? 'M' : 'L'} ${xScale(d.week)},${yScale(d.peso)}`).join(' ')
     : '';
 
-  // Projection line (from last real point to week 22)
+  // Projection line (from last real point to the end of the current plan)
   let projectionPath = '';
   if (lastData && sortedData.length >= 2) {
     const slope = -projection.weeklyLossRate;
     const projectedEnd = lastData.peso + slope * (TOTAL_WEEKS - lastData.week);
     projectionPath = `M ${xScale(lastData.week)},${yScale(lastData.peso)} L ${xScale(TOTAL_WEEKS)},${yScale(projectedEnd)}`;
   }
-
-  // Diet break zones
-  const dietBreakPhases = DEFINICION_SUB_PHASES.filter(p => p.esDietBreak);
 
   // Y-axis ticks
   const yTicks: number[] = [];
@@ -92,24 +89,6 @@ export const DefinicionProgressChart: React.FC<DefinicionProgressChartProps> = (
   return (
     <div className="overflow-x-auto">
       <svg viewBox={`0 0 ${width} ${height}`} className="w-full max-w-3xl mx-auto" style={{ minWidth: 400 }}>
-        {/* Diet break zones */}
-        {dietBreakPhases.map(phase => {
-          const x1 = xScale(phase.semanaInicio - 0.4);
-          const x2 = xScale(phase.semanaFin + 0.4);
-          return (
-            <rect
-              key={phase.id}
-              x={Math.max(x1, padding.left)}
-              y={padding.top}
-              width={Math.min(x2 - x1, chartWidth - (x1 - padding.left))}
-              height={chartHeight}
-              fill="rgba(251, 191, 36, 0.1)"
-              stroke="rgba(251, 191, 36, 0.3)"
-              strokeDasharray="4"
-            />
-          );
-        })}
-
         {/* Horizontal grid lines */}
         {yTicks.map(tick => (
           <line
@@ -268,10 +247,6 @@ export const DefinicionProgressChart: React.FC<DefinicionProgressChartProps> = (
         <div className="flex items-center gap-1.5">
           <svg width="20" height="4"><line x1="0" y1="2" x2="20" y2="2" stroke="#3b82f6" strokeWidth="1.5" strokeDasharray="4 2" /></svg>
           <span>Proyeccion</span>
-        </div>
-        <div className="flex items-center gap-1.5">
-          <div className="w-3 h-1 bg-amber-300 rounded"></div>
-          <span>Diet Break</span>
         </div>
       </div>
     </div>

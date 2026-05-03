@@ -1,5 +1,4 @@
 import React from 'react';
-import { DEFINICION_SUB_PHASES } from '../../types/definicion';
 import type { DefinicionBodyComposition } from '../../types/definicion';
 
 interface DefinicionBodyChartProps {
@@ -41,9 +40,6 @@ export const DefinicionBodyChart: React.FC<DefinicionBodyChartProps> = ({ data, 
     yTicks.push(v);
   }
 
-  // Diet break zones
-  const dietBreakPhases = DEFINICION_SUB_PHASES.filter(p => p.esDietBreak);
-
   return (
     <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
       <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
@@ -51,24 +47,6 @@ export const DefinicionBodyChart: React.FC<DefinicionBodyChartProps> = ({ data, 
       </h3>
       <div className="overflow-x-auto">
         <svg viewBox={`0 0 ${width} ${height}`} className="w-full max-w-3xl mx-auto" style={{ minWidth: 400 }}>
-          {/* Diet break zones */}
-          {dietBreakPhases.map(phase => {
-            const x1 = xScale(phase.semanaInicio);
-            const x2 = xScale(phase.semanaFin);
-            return (
-              <rect
-                key={phase.id}
-                x={Math.max(x1, padding.left)}
-                y={padding.top}
-                width={Math.min(x2 - x1 + xScale(1) - xScale(0), chartWidth)}
-                height={chartHeight}
-                fill="rgba(251, 191, 36, 0.1)"
-                stroke="rgba(251, 191, 36, 0.3)"
-                strokeDasharray="4"
-              />
-            );
-          })}
-
           {/* Grid lines */}
           {yTicks.map(tick => (
             <g key={tick}>
@@ -173,10 +151,6 @@ export const DefinicionBodyChart: React.FC<DefinicionBodyChartProps> = ({ data, 
         <div className="flex items-center gap-1">
           <div className="w-3 h-3 rounded-full bg-emerald-600"></div>
           <span>Peso registrado</span>
-        </div>
-        <div className="flex items-center gap-1">
-          <div className="w-3 h-1 bg-amber-300"></div>
-          <span>Diet Break</span>
         </div>
       </div>
 

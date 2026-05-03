@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { VolumeCSVParser } from '../services/volumeCSVParser';
 import { VolumeExerciseParser } from '../services/volumeExerciseParser';

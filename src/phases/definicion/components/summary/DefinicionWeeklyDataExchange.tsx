@@ -161,21 +161,34 @@ export const DefinicionWeeklyDataExchange: React.FC = () => {
           </button>
 
           {importResult && (
-            <div className={`mt-3 p-3 rounded-md text-sm ${
-              importResult.success
-                ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
-                : 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300'
-            }`}>
-              {importResult.success ? (
-                <svg className="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
-              ) : (
-                <svg className="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-                </svg>
+            <div className="mt-3 space-y-3">
+              <div className={`p-3 rounded-md text-sm ${
+                importResult.success
+                  ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
+                  : 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300'
+              }`}>
+                {importResult.success ? (
+                  <svg className="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                ) : (
+                  <svg className="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                  </svg>
+                )}
+                {importResult.message}
+              </div>
+
+              {importResult.success && importResult.coachNotes && (
+                <div className="p-3 rounded-md text-sm bg-sky-50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800">
+                  <div className="font-semibold text-sky-800 dark:text-sky-200 mb-1">
+                    Notas del coach para semana {importResult.weekTo}
+                  </div>
+                  <p className="text-sky-700 dark:text-sky-300 whitespace-pre-line">
+                    {importResult.coachNotes}
+                  </p>
+                </div>
               )}
-              {importResult.message}
             </div>
           )}
         </div>

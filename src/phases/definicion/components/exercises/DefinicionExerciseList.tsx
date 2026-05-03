@@ -4,15 +4,19 @@ import { DefinicionExerciseCard } from './DefinicionExerciseCard';
 import { DefinicionExerciseImageModal } from './DefinicionExerciseImageModal';
 import { DefinicionCopyWeekData } from './DefinicionCopyWeekData';
 import { getMesocycleInfo } from '../../types/definicion';
+import { parseWorkoutNotes } from '../../utils/workoutNotes';
 
 export const DefinicionExerciseList: React.FC = () => {
-  const { getCurrentWorkout, currentDay, currentWeek } = useDefinicionData();
+  const { getCurrentWorkout, currentDay, currentWeek, workoutProgress } = useDefinicionData();
   const [selectedImagePath, setSelectedImagePath] = useState<string>('');
   const [selectedExerciseName, setSelectedExerciseName] = useState<string>('');
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
 
   const workoutData = getCurrentWorkout();
   const mesocycle = getMesocycleInfo(currentWeek);
+  const dayProgress = workoutProgress.filter(p => p.week === currentWeek && p.day === currentDay);
+  const recommendationsCount = dayProgress.filter(p => parseWorkoutNotes(p.observations).coachPlan).length;
+  const completedCount = dayProgress.filter(p => p.weights.some(weight => weight > 0)).length;
 
   const handleShowImage = (imagePath: string, exerciseName: string) => {
     setSelectedImagePath(imagePath);
@@ -94,6 +98,8 @@ export const DefinicionExerciseList: React.FC = () => {
               <p><strong>Dia:</strong> {workoutData.dia} — {workoutData.tipo}</p>
               <p><strong>Grupos musculares:</strong> {workoutData.musculos}</p>
               <p><strong>Total ejercicios:</strong> {workoutData.exercises.length}</p>
+              <p><strong>Plan importado:</strong> {recommendationsCount} recomendaciones cargadas para este dia</p>
+              <p><strong>Registros con peso:</strong> {completedCount} de {workoutData.exercises.length}</p>
               {mesocycle.isDeload && (
                 <p className="mt-1 font-medium">↻ Semana de Deload — Reduce volumen e intensidad</p>
               )}

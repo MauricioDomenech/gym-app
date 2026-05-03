@@ -4,7 +4,8 @@ import { DEFINICION_SUB_PHASES, RECOMP_PLAN, getSubPhaseForWeek, TOTAL_WEEKS } f
 
 export const DefinicionPhaseTimeline: React.FC = () => {
   const { currentWeek, setCurrentWeek } = useDefinicionData();
-  const currentSubPhase = getSubPhaseForWeek(currentWeek);
+  const isSummary = currentWeek === 0;
+  const currentSubPhase = getSubPhaseForWeek(isSummary ? 1 : currentWeek);
 
   const handleSubPhaseClick = (subPhase: typeof DEFINICION_SUB_PHASES[0]) => {
     setCurrentWeek(subPhase.semanaInicio);
@@ -41,11 +42,19 @@ export const DefinicionPhaseTimeline: React.FC = () => {
           })}
         </div>
         <div className="text-center text-sm text-gray-600 dark:text-gray-400">
-          <span className="font-medium text-emerald-700 dark:text-emerald-400">
-            Semana {currentWeek}/{TOTAL_WEEKS}
-          </span>
-          {' — '}
-          <span>{currentSubPhase.nombre}</span>
+          {isSummary ? (
+            <span className="font-medium text-emerald-700 dark:text-emerald-400">
+              Resumen del plan — {TOTAL_WEEKS} semanas hasta {RECOMP_PLAN.endLabel}
+            </span>
+          ) : (
+            <>
+              <span className="font-medium text-emerald-700 dark:text-emerald-400">
+                Semana {currentWeek}/{TOTAL_WEEKS}
+              </span>
+              {' — '}
+              <span>{currentSubPhase.nombre}</span>
+            </>
+          )}
           {' '}
           <span className="text-gray-500">({RECOMP_PLAN.kcalRange})</span>
         </div>
@@ -66,10 +75,10 @@ export const DefinicionPhaseTimeline: React.FC = () => {
           </button>
           <div className="text-center">
             <div className={`text-sm font-semibold ${currentSubPhase.esDietBreak ? 'text-amber-600 dark:text-amber-400' : 'text-emerald-600 dark:text-emerald-400'}`}>
-              {currentSubPhase.nombre}
+              {isSummary ? 'Resumen del plan' : currentSubPhase.nombre}
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-400">
-              Semana {currentWeek}/{TOTAL_WEEKS} — {RECOMP_PLAN.kcalAverage} kcal prom.
+              {isSummary ? `${TOTAL_WEEKS} semanas hasta ${RECOMP_PLAN.endLabel}` : `Semana ${currentWeek}/${TOTAL_WEEKS}`} — {RECOMP_PLAN.kcalAverage} kcal prom.
             </div>
           </div>
           <button

@@ -27,20 +27,12 @@ export const VolumeIndividualTracker: React.FC<VolumeIndividualTrackerProps> = (
   const [justSaved, setJustSaved] = useState(false);
   const [saveTimer, setSaveTimer] = useState<NodeJS.Timeout | null>(null);
 
-  // Use the same tracking ID for all alternatives (shared tracking)
-  const getTrackingId = (): string => {
-    return exercise.id; // Same ID for main exercise and all alternatives
-  };
-
-
   // Load existing progress when component mounts or day/week changes
   // Note: selectedAlternativeIndex is not included as dependency since we want shared tracking
   useEffect(() => {
-    const trackingId = getTrackingId();
-    
     // Always load as main exercise (no alternative tracking)
     const existingProgress = getExerciseProgress(
-      trackingId, 
+      exercise.id, 
       currentDay, 
       currentWeek, 
       false, // Always false for shared tracking
@@ -64,7 +56,7 @@ export const VolumeIndividualTracker: React.FC<VolumeIndividualTrackerProps> = (
       setObservations('');
       setSavedObservations('');
     }
-  }, [exercise.id, currentDay, currentWeek, getExerciseProgress]); // Removed selectedAlternativeIndex
+  }, [exercise.id, currentDay, currentWeek, getExerciseProgress, seriesInfo.defaultSeries]); // Removed selectedAlternativeIndex
 
   // Cleanup timer on unmount
   useEffect(() => {
@@ -114,10 +106,8 @@ export const VolumeIndividualTracker: React.FC<VolumeIndividualTrackerProps> = (
     }
     
     try {
-      const trackingId = getTrackingId();
-
       const progress: VolumeWorkoutProgress = {
-        exerciseId: trackingId,
+        exerciseId: exercise.id,
         day: currentDay,
         week: currentWeek,
         weights: [...weights], // Copy weights array

@@ -273,7 +273,7 @@ export class DefinicionSupabaseService {
   // SETTINGS
   // ========================================
 
-  public static async getDefinicionSetting(key: string): Promise<any> {
+  public static async getDefinicionSetting(key: string): Promise<unknown> {
     const { data, error } = await supabase
       .from('definicion_settings')
       .select('setting_value')
@@ -284,7 +284,7 @@ export class DefinicionSupabaseService {
     return data?.setting_value || null;
   }
 
-  public static async saveDefinicionSetting(key: string, value: any): Promise<void> {
+  public static async saveDefinicionSetting(key: string, value: unknown): Promise<void> {
     const { error } = await supabase
       .from('definicion_settings')
       .upsert({
@@ -299,7 +299,7 @@ export class DefinicionSupabaseService {
   public static async getDefinicionTableColumns(): Promise<DefinicionTableColumn[]> {
     try {
       const columns = await this.getDefinicionSetting('definicion-table-columns');
-      return columns || DEFAULT_TABLE_COLUMNS;
+      return Array.isArray(columns) ? columns as DefinicionTableColumn[] : DEFAULT_TABLE_COLUMNS;
     } catch (error) {
       console.error('Error getting definicion table columns:', error);
       return DEFAULT_TABLE_COLUMNS;
@@ -313,7 +313,7 @@ export class DefinicionSupabaseService {
   public static async getCurrentDefinicionWeek(): Promise<number> {
     try {
       const week = await this.getDefinicionSetting('definicion-current-week');
-      return parseInt(week) || 1;
+      return Number(week) || 1;
     } catch {
       return 1;
     }
@@ -326,7 +326,7 @@ export class DefinicionSupabaseService {
   public static async getCurrentDefinicionDay(): Promise<string> {
     try {
       const day = await this.getDefinicionSetting('definicion-current-day');
-      return day || 'lunes';
+      return typeof day === 'string' ? day : 'lunes';
     } catch {
       return 'lunes';
     }

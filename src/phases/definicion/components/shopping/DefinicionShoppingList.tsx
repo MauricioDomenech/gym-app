@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDefinicionData } from '../../contexts/DefinicionDataContext';
-import { TOTAL_WEEKS, getSubPhaseForWeek } from '../../types/definicion';
+import { TOTAL_WEEKS, getMesocycleInfo } from '../../types/definicion';
 import type { DefinicionShoppingItem } from '../../types/definicion';
 
 export const DefinicionShoppingList: React.FC = () => {
@@ -149,7 +149,7 @@ export const DefinicionShoppingList: React.FC = () => {
           </label>
           <div className="flex flex-wrap gap-1">
             {weekNumbers.map(week => {
-              const subPhase = getSubPhaseForWeek(week);
+              const mesocycle = getMesocycleInfo(week);
               return (
                 <label key={week} className="flex items-center cursor-pointer">
                   <input
@@ -160,9 +160,9 @@ export const DefinicionShoppingList: React.FC = () => {
                   />
                   <span className={`px-2 py-1 text-xs rounded-md transition-colors cursor-pointer ${
                     selectedWeeks.includes(week)
-                      ? subPhase.esDietBreak
-                        ? 'bg-amber-500 text-white'
-                        : 'bg-emerald-600 text-white'
+                      ? 'bg-emerald-600 text-white'
+                      : mesocycle.isDeload
+                        ? 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 hover:bg-purple-200 dark:hover:bg-purple-900/50'
                       : 'bg-gray-200 dark:bg-slate-600 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-slate-500'
                   }`}>
                     S{week}
@@ -180,14 +180,16 @@ export const DefinicionShoppingList: React.FC = () => {
             </button>
             <button
               onClick={() => {
-                const phase = getSubPhaseForWeek(currentWeek);
+                const mesocycle = getMesocycleInfo(currentWeek);
+                const startWeek = ((mesocycle.mesocycleNumber - 1) * 5) + 1;
+                const endWeek = Math.min(startWeek + 4, TOTAL_WEEKS);
                 const weeks = [];
-                for (let w = phase.semanaInicio; w <= phase.semanaFin; w++) weeks.push(w);
+                for (let w = startWeek; w <= endWeek; w++) weeks.push(w);
                 setSelectedWeeks(weeks);
               }}
               className="text-xs text-emerald-600 dark:text-emerald-400 hover:underline"
             >
-              Fase actual
+              Mesociclo actual
             </button>
           </div>
         </div>

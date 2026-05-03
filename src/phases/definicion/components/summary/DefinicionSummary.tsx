@@ -3,7 +3,7 @@ import { useDefinicionData } from '../../contexts/DefinicionDataContext';
 import { DefinicionBodyChart } from '../body/DefinicionBodyChart';
 import { DefinicionWeeklyCheckin } from '../checkin/DefinicionWeeklyCheckin';
 import { DefinicionWeeklyDataExchange } from './DefinicionWeeklyDataExchange';
-import { DEFINICION_SUB_PHASES, RECOMP_PLAN, TOTAL_WEEKS, getMesocycleInfo } from '../../types/definicion';
+import { RECOMP_PLAN, TOTAL_WEEKS, getMesocycleInfo, getSubPhaseForWeek } from '../../types/definicion';
 import type { DefinicionNutritionTotals } from '../../types/definicion';
 
 export const DefinicionSummary: React.FC = () => {
@@ -70,6 +70,16 @@ export const DefinicionSummary: React.FC = () => {
 
   const workoutStats = getWorkoutStats();
   const cardioStats = getCardioStats();
+  const latestTrackedWeek = Math.max(
+    0,
+    ...workoutProgress.map(p => p.week),
+    ...bodyComposition.map(b => b.week),
+    ...cardioLogs.map(c => c.week)
+  );
+  const displayWeek = Math.max(1, currentWeek || latestTrackedWeek || 1);
+  const planNutritionAverage = getSubPhaseNutritionAverage(1, TOTAL_WEEKS);
+  const planProgress = workoutProgress.filter(p => p.week >= 1 && p.week <= TOTAL_WEEKS).length;
+  const firstBodyEntry = bodyComposition.find(b => b.week >= 1 && b.week <= TOTAL_WEEKS);
 
   return (
     <div className="max-w-7xl mx-auto space-y-8">
@@ -93,67 +103,44 @@ export const DefinicionSummary: React.FC = () => {
       {/* Weekly Check-in */}
       <DefinicionWeeklyCheckin />
 
-      {/* Phase Timeline Overview */}
+      {/* Plan Overview */}
       <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-          Progreso por Bloques
+          Marco del Plan
         </h3>
-        <div className="space-y-4">
-          {DEFINICION_SUB_PHASES.map(phase => {
-            const avgNutrition = getSubPhaseNutritionAverage(phase.semanaInicio, phase.semanaFin);
-            const phaseProgress = workoutProgress.filter(p =>
-              p.week >= phase.semanaInicio && p.week <= phase.semanaFin
-            ).length;
-            const phaseWeeksCount = phase.semanaFin - phase.semanaInicio + 1;
-            const bodyEntry = bodyComposition.find(b =>
-              b.week >= phase.semanaInicio && b.week <= phase.semanaFin
-            );
-
-            return (
-              <div
-                key={phase.id}
-                className={`p-4 rounded-lg border-2 ${
-                  phase.esDietBreak
-                    ? 'border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-900/10'
-                    : 'border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-900/10'
-                }`}
-              >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">
-                      {phase.nombre}
-                    </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Semanas {phase.semanaInicio}-{phase.semanaFin} ({phaseWeeksCount} sem.) — referencia previa {phase.kcalDiarias} kcal/dia
-                      {phase.deficit > 0 && ` (ahora se ajusta por check-in)`}
-                    </p>
-                  </div>
-                  <div className="flex gap-4 text-sm">
-                    <div className="text-center">
-                      <p className="text-xs text-gray-500 dark:text-gray-400">Promedio kcal</p>
-                      <p className="font-bold text-emerald-700 dark:text-emerald-300">
-                        {avgNutrition.kcal.toFixed(0)}
-                      </p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-xs text-gray-500 dark:text-gray-400">Ejercicios</p>
-                      <p className="font-bold text-emerald-700 dark:text-emerald-300">
-                        {phaseProgress}
-                      </p>
-                    </div>
-                    {bodyEntry && (
-                      <div className="text-center">
-                        <p className="text-xs text-gray-500 dark:text-gray-400">Peso</p>
-                        <p className="font-bold text-violet-700 dark:text-violet-300">
-                          {bodyEntry.peso} kg
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                </div>
+        <div className="p-4 rounded-lg border-2 border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-900/10">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div>
+              <h4 className="font-semibold text-gray-900 dark:text-white">
+                {RECOMP_PLAN.name}
+              </h4>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Semanas 1-{TOTAL_WEEKS} hasta {RECOMP_PLAN.endLabel}. Sin diet breaks programados; cualquier pausa o subida de calorias se decide en el check-in semanal.
+              </p>
+            </div>
+            <div className="grid grid-cols-3 gap-4 text-sm">
+              <div className="text-center">
+                <p className="text-xs text-gray-500 dark:text-gray-400">Promedio kcal</p>
+                <p className="font-bold text-emerald-700 dark:text-emerald-300">
+                  {planNutritionAverage.kcal.toFixed(0)}
+                </p>
               </div>
-            );
-          })}
+              <div className="text-center">
+                <p className="text-xs text-gray-500 dark:text-gray-400">Ejercicios</p>
+                <p className="font-bold text-emerald-700 dark:text-emerald-300">
+                  {planProgress}
+                </p>
+              </div>
+              {firstBodyEntry && (
+                <div className="text-center">
+                  <p className="text-xs text-gray-500 dark:text-gray-400">Primer peso</p>
+                  <p className="font-bold text-violet-700 dark:text-violet-300">
+                    {firstBodyEntry.peso} kg
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -232,15 +219,15 @@ export const DefinicionSummary: React.FC = () => {
             <div className="text-emerald-600 dark:text-emerald-400 text-3xl mb-2">📅</div>
             <h4 className="text-sm font-medium text-gray-600 dark:text-gray-400">Progreso</h4>
             <p className="text-2xl font-bold text-gray-900 dark:text-white mt-1">
-              {currentWeek}/{TOTAL_WEEKS}
+              {displayWeek}/{TOTAL_WEEKS}
             </p>
             <p className="text-xs text-gray-500 dark:text-gray-400">
-              semanas
+              semanas hasta {RECOMP_PLAN.endLabel}
             </p>
             <div className="mt-2 w-full bg-gray-200 dark:bg-slate-600 rounded-full h-2">
               <div
                 className="bg-emerald-600 h-2 rounded-full transition-all"
-                style={{ width: `${(currentWeek / TOTAL_WEEKS) * 100}%` }}
+                style={{ width: `${Math.min((displayWeek / TOTAL_WEEKS) * 100, 100)}%` }}
               />
             </div>
           </div>
@@ -262,7 +249,7 @@ export const DefinicionSummary: React.FC = () => {
             <thead>
               <tr className="border-b border-gray-200 dark:border-slate-700">
                 <th className="text-left py-2 px-2 text-gray-700 dark:text-gray-300">Sem</th>
-                <th className="text-left py-2 px-2 text-gray-700 dark:text-gray-300">Fase</th>
+                <th className="text-left py-2 px-2 text-gray-700 dark:text-gray-300">Plan</th>
                 <th className="text-center py-2 px-2 text-gray-700 dark:text-gray-300">Meso</th>
                 <th className="text-center py-2 px-2 text-gray-700 dark:text-gray-300">Ej. Reg.</th>
                 <th className="text-center py-2 px-2 text-gray-700 dark:text-gray-300">Cardio</th>
@@ -272,7 +259,7 @@ export const DefinicionSummary: React.FC = () => {
             <tbody>
               {Array.from({ length: TOTAL_WEEKS }, (_, i) => i + 1).map(week => {
                 const meso = getMesocycleInfo(week);
-                const subPhase = DEFINICION_SUB_PHASES.find(p => week >= p.semanaInicio && week <= p.semanaFin);
+                const subPhase = getSubPhaseForWeek(week);
                 const weekProgress = workoutProgress.filter(p => p.week === week).length;
                 const weekCardio = cardioLogs.filter(l => l.week === week && l.completado).length;
                 const bodyEntry = bodyComposition.find(b => b.week === week);
@@ -286,16 +273,12 @@ export const DefinicionSummary: React.FC = () => {
                   >
                     <td className="py-1.5 px-2 font-medium">S{week}</td>
                     <td className="py-1.5 px-2 text-xs">
-                      <span className={`px-1.5 py-0.5 rounded-full ${
-                        subPhase?.esDietBreak
-                          ? 'bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
-                          : 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300'
-                      }`}>
-                        {subPhase?.nombreCorto}
+                      <span className="px-1.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300">
+                        {subPhase.nombreCorto}
                       </span>
                     </td>
                     <td className="py-1.5 px-2 text-center text-xs">
-                      {meso.isDietBreak ? 'DB' : `M${meso.mesocycleNumber}.${meso.weekInMesocycle}`}
+                      M{meso.mesocycleNumber}.{meso.weekInMesocycle}
                       {meso.isDeload && ' ↻'}
                     </td>
                     <td className="py-1.5 px-2 text-center">

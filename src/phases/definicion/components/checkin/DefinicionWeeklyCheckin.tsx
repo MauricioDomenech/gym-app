@@ -333,15 +333,15 @@ export const DefinicionWeeklyCheckin: React.FC = () => {
         </div>
       </div>
 
-      {/* 5. Comparacion por Fases */}
+      {/* 5. Resumen del Plan */}
       {phasesWithData.length > 0 && (
         <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Comparacion por Fases</h3>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Resumen del Plan</h3>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-gray-200 dark:border-slate-700">
-                  <th className="text-left py-2 px-2 text-gray-600 dark:text-gray-400">Fase</th>
+                  <th className="text-left py-2 px-2 text-gray-600 dark:text-gray-400">Plan</th>
                   <th className="text-center py-2 px-2 text-gray-600 dark:text-gray-400">Cambio peso</th>
                   <th className="text-center py-2 px-2 text-gray-600 dark:text-gray-400">Ritmo/sem</th>
                   <th className="text-center py-2 px-2 text-gray-600 dark:text-gray-400">Entreno</th>

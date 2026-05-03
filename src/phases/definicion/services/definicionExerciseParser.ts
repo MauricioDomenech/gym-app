@@ -1,6 +1,10 @@
 import type { DefinicionExercise, DefinicionWorkoutDay, DefinicionPlan, DefinicionCardioConfig } from '../types/definicion';
+import { TOTAL_WEEKS } from '../types/definicion';
 
 import planDefinicionJSON from '../../../assets/data/definicion/plan_definicion.json';
+
+type RawDefinicionExercise = DefinicionPlan['plan'][number]['ejercicios'][number];
+type RawDefinicionDay = DefinicionPlan['plan'][number];
 
 export class DefinicionExerciseParser {
   private static normalizeString(str: string): string {
@@ -22,9 +26,9 @@ export class DefinicionExerciseParser {
     }
   }
 
-  private static mapRawExercise(rawExercise: any, day: string): DefinicionExercise {
+  private static mapRawExercise(rawExercise: RawDefinicionExercise, day: string): DefinicionExercise {
     const mainId = this.generateExerciseId(rawExercise.nombre, day);
-    const alternativas = rawExercise.alternativas?.map((alt: any) => ({
+    const alternativas = rawExercise.alternativas?.map((alt) => ({
       nombre: alt.nombre,
       imagen: alt.imagen,
     })) || [];
@@ -43,13 +47,13 @@ export class DefinicionExerciseParser {
   public static getDayWorkout(day: string): DefinicionWorkoutDay | null {
     try {
       const planData = this.parsePlanData();
-      const dayData = planData.plan.find((d: any) =>
+      const dayData = planData.plan.find((d: RawDefinicionDay) =>
         this.normalizeString(d.dia) === this.normalizeString(day)
       );
 
       if (!dayData) return null;
 
-      const exercises = dayData.ejercicios.map((exercise: any) =>
+      const exercises = dayData.ejercicios.map((exercise) =>
         this.mapRawExercise(exercise, this.normalizeString(day))
       );
 
@@ -74,9 +78,9 @@ export class DefinicionExerciseParser {
     try {
       const planData = this.parsePlanData();
 
-      planData.plan.forEach((dayData: any) => {
+      planData.plan.forEach((dayData: RawDefinicionDay) => {
         const dayKey = this.normalizeString(dayData.dia);
-        const exercises = dayData.ejercicios.map((exercise: any) =>
+        const exercises = dayData.ejercicios.map((exercise) =>
           this.mapRawExercise(exercise, dayKey)
         );
 
@@ -98,10 +102,10 @@ export class DefinicionExerciseParser {
   }
 
   public static getAllWorkoutData(): { [week: number]: { [day: string]: DefinicionWorkoutDay } } {
-    // Same exercises for all 22 weeks
+    // Same exercises for the full recomp plan.
     const weekWorkouts = this.getWeekWorkouts();
     const allData: { [week: number]: { [day: string]: DefinicionWorkoutDay } } = {};
-    for (let w = 1; w <= 22; w++) {
+    for (let w = 1; w <= TOTAL_WEEKS; w++) {
       allData[w] = weekWorkouts;
     }
     return allData;

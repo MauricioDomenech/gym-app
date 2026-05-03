@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { DefinicionCSVParser } from '../services/definicionCSVParser';
 import { DefinicionExerciseParser } from '../services/definicionExerciseParser';

@@ -5,7 +5,7 @@ export type { DayOfWeek } from '../../../shared/types/base';
 // SUB-PHASE CONFIGURATION
 // ========================================
 
-export type DefinicionSubPhase = 'deficit_1' | 'diet_break_1' | 'deficit_2' | 'diet_break_2' | 'deficit_3';
+export type DefinicionSubPhase = 'recomp_lenta_2026';
 
 export interface DefinicionSubPhaseConfig {
   id: DefinicionSubPhase;
@@ -20,19 +20,13 @@ export interface DefinicionSubPhaseConfig {
   darkColor: string;
 }
 
-export const DEFINICION_SUB_PHASES: DefinicionSubPhaseConfig[] = [
-  { id: 'deficit_1', nombre: 'Fase 1 — Deficit', nombreCorto: 'Fase 1', semanaInicio: 1, semanaFin: 7, kcalDiarias: 2150, deficit: 550, esDietBreak: false, color: 'emerald-600', darkColor: 'emerald-400' },
-  { id: 'diet_break_1', nombre: 'Diet Break 1', nombreCorto: 'DB 1', semanaInicio: 8, semanaFin: 8, kcalDiarias: 2700, deficit: 0, esDietBreak: true, color: 'amber-500', darkColor: 'amber-400' },
-  { id: 'deficit_2', nombre: 'Fase 2 — Deficit', nombreCorto: 'Fase 2', semanaInicio: 9, semanaFin: 15, kcalDiarias: 2250, deficit: 450, esDietBreak: false, color: 'emerald-600', darkColor: 'emerald-400' },
-  { id: 'diet_break_2', nombre: 'Diet Break 2', nombreCorto: 'DB 2', semanaInicio: 16, semanaFin: 16, kcalDiarias: 2700, deficit: 0, esDietBreak: true, color: 'amber-500', darkColor: 'amber-400' },
-  { id: 'deficit_3', nombre: 'Fase 3 — Deficit', nombreCorto: 'Fase 3', semanaInicio: 17, semanaFin: 22, kcalDiarias: 2300, deficit: 400, esDietBreak: false, color: 'emerald-600', darkColor: 'emerald-400' },
-];
-
-export const TOTAL_WEEKS = 22;
+export const TOTAL_WEEKS = 42;
 
 export const RECOMP_PLAN = {
   name: 'Plan Recomp Lenta 2026',
   targetLabel: 'Bajar grasa lentamente hasta fin de 2026',
+  endLabel: 'Diciembre 2026',
+  totalWeeks: TOTAL_WEEKS,
   kcalRange: '1930-2028 kcal/dia',
   kcalAverage: 1965,
   proteinRange: '190-210 g/dia',
@@ -42,6 +36,21 @@ export const RECOMP_PLAN = {
   rapidWeeklyLossKg: 0.8,
   noChangeWeeksForAdjustment: 3,
 } as const;
+
+export const DEFINICION_SUB_PHASES: DefinicionSubPhaseConfig[] = [
+  {
+    id: 'recomp_lenta_2026',
+    nombre: RECOMP_PLAN.name,
+    nombreCorto: 'Recomp',
+    semanaInicio: 1,
+    semanaFin: TOTAL_WEEKS,
+    kcalDiarias: RECOMP_PLAN.kcalAverage,
+    deficit: 0,
+    esDietBreak: false,
+    color: 'emerald-600',
+    darkColor: 'emerald-400',
+  },
+];
 
 // ========================================
 // MESOCYCLE UTILITIES
@@ -60,32 +69,12 @@ export function getSubPhaseForWeek(week: number): DefinicionSubPhaseConfig {
 }
 
 export function getMesocycleInfo(week: number): MesocycleInfo {
-  const subPhase = getSubPhaseForWeek(week);
-
-  if (subPhase.esDietBreak) {
-    return {
-      mesocycleNumber: subPhase.id === 'diet_break_1' ? 2 : 4,
-      weekInMesocycle: 1,
-      isDeload: false,
-      isDietBreak: true,
-    };
-  }
-
-  // Training weeks follow 5-week mesocycles: 4 progressive + 1 deload
-  // Deficit 1 (sem 1-7): meso 1 = sem 1-5 (deload sem 5), rest sem 6-7 start meso 2
-  // Deficit 2 (sem 9-15): meso 3 = sem 9-13 (deload sem 13), rest sem 14-15
-  // Deficit 3 (sem 17-22): meso 5 = sem 17-21 (deload sem 21), sem 22
-
-  const weekInPhase = week - subPhase.semanaInicio + 1;
-  const mesocycleWeek = ((weekInPhase - 1) % 5) + 1;
-  const mesocycleNumber = Math.floor((weekInPhase - 1) / 5);
-
-  let baseMeso = 1;
-  if (subPhase.id === 'deficit_2') baseMeso = 3;
-  if (subPhase.id === 'deficit_3') baseMeso = 5;
+  const clampedWeek = Math.max(1, Math.min(week, TOTAL_WEEKS));
+  const mesocycleWeek = ((clampedWeek - 1) % 5) + 1;
+  const mesocycleNumber = Math.floor((clampedWeek - 1) / 5) + 1;
 
   return {
-    mesocycleNumber: baseMeso + mesocycleNumber,
+    mesocycleNumber,
     weekInMesocycle: mesocycleWeek,
     isDeload: mesocycleWeek === 5,
     isDietBreak: false,
@@ -110,16 +99,9 @@ export function getRIRLabel(rir: number): string {
   return option ? option.description : '';
 }
 
-export function getCSVFolderForWeek(week: number): string {
-  const subPhase = getSubPhaseForWeek(week);
-  switch (subPhase.id) {
-    case 'deficit_1': return 'deficit_fase1';
-    case 'diet_break_1': return 'diet_break';
-    case 'deficit_2': return 'deficit_fase2';
-    case 'diet_break_2': return 'diet_break';
-    case 'deficit_3': return 'deficit_fase3';
-    default: return 'deficit_fase1';
-  }
+export function getCSVFolderForWeek(_week: number): string {
+  void _week;
+  return 'deficit_fase1';
 }
 
 export function getWeeksForSubPhase(subPhaseId: DefinicionSubPhase): number[] {

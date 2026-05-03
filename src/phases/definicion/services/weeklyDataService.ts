@@ -4,7 +4,8 @@ import type {
   DefinicionBodyComposition,
   DefinicionCardioLog,
 } from '../types/definicion';
-import { getSubPhaseForWeek, getMesocycleInfo } from '../types/definicion';
+import { getSubPhaseForWeek, getMesocycleInfo, TOTAL_WEEKS } from '../types/definicion';
+import { buildWorkoutNotes, parseWorkoutNotes } from '../utils/workoutNotes';
 
 // ========================================
 // EXPORT/IMPORT JSON SCHEMA
@@ -43,7 +44,7 @@ function validateImportData(data: unknown): data is WeeklyImportData {
 
   if (d.version !== '1.0') return false;
   if (d.phase !== 'definicion') return false;
-  if (typeof d.weekTo !== 'number' || d.weekTo < 1 || d.weekTo > 22) return false;
+  if (typeof d.weekTo !== 'number' || d.weekTo < 1 || d.weekTo > TOTAL_WEEKS) return false;
   if (!Array.isArray(d.workoutProgress)) return false;
 
   for (const p of d.workoutProgress) {
@@ -78,9 +79,7 @@ export function buildWeeklyExport(
     exportDate: new Date().toISOString(),
     weekFrom: week,
     subPhase: subPhase.nombre,
-    mesocycle: meso.isDietBreak
-      ? 'Diet Break'
-      : `M${meso.mesocycleNumber}.${meso.weekInMesocycle}${meso.isDeload ? ' (Deload)' : ''}`,
+    mesocycle: `M${meso.mesocycleNumber}.${meso.weekInMesocycle}${meso.isDeload ? ' (Deload)' : ''}`,
     workoutProgress: workoutProgress.filter(p => p.week === week),
     bodyComposition: bodyComposition.find(b => b.week === week) || null,
     cardioLogs: cardioLogs.filter(l => l.week === week),
@@ -107,6 +106,8 @@ export function downloadWeeklyExport(data: WeeklyExportData): void {
 export interface ImportResult {
   success: boolean;
   message: string;
+  weekTo?: number;
+  coachNotes?: string;
   imported: {
     workoutProgress: number;
     bodyComposition: boolean;
@@ -123,18 +124,21 @@ export async function importWeeklyData(jsonString: string): Promise<ImportResult
   }
 
   if (!validateImportData(data)) {
-    return { success: false, message: 'Formato invalido. Verifica que el JSON tenga version "1.0", phase "definicion" y weekTo valido.', imported: { workoutProgress: 0, bodyComposition: false, cardioLogs: 0 } };
+    return { success: false, message: `Formato invalido. Verifica que el JSON tenga version "1.0", phase "definicion" y weekTo entre 1 y ${TOTAL_WEEKS}.`, imported: { workoutProgress: 0, bodyComposition: false, cardioLogs: 0 } };
   }
 
   const result: ImportResult = {
     success: true,
     message: '',
+    weekTo: data.weekTo,
+    coachNotes: data.coachNotes?.trim() || '',
     imported: { workoutProgress: 0, bodyComposition: false, cardioLogs: 0 },
   };
 
   try {
     // Import workout progress
     for (const progress of data.workoutProgress) {
+      const parsedNotes = parseWorkoutNotes(progress.observations);
       const entry: DefinicionWorkoutProgress = {
         exerciseId: progress.exerciseId,
         day: progress.day,
@@ -144,7 +148,9 @@ export async function importWeeklyData(jsonString: string): Promise<ImportResult
         date: progress.date || new Date().toISOString(),
         isAlternative: progress.isAlternative || false,
         alternativeIndex: progress.alternativeIndex ?? null,
-        observations: progress.observations || '',
+        observations: progress.observations
+          ? buildWorkoutNotes(parsedNotes.coachPlan, parsedNotes.userFeedback)
+          : '',
         rir: progress.rir ?? null,
       };
       await DefinicionSupabaseService.addDefinicionWorkoutProgress(entry);

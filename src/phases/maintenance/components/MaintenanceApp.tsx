@@ -10,6 +10,7 @@ import { ShoppingList } from './shopping/ShoppingList';
 
 const MaintenanceContent: React.FC = () => {
   const { currentWeek, currentDay, setCurrentDay, getDaysOfWeek, isLoading } = useData();
+  const [activeTab, setActiveTab] = React.useState<'nutrition' | 'shopping'>('nutrition');
 
   if (isLoading) {
     return (
@@ -31,9 +32,6 @@ const MaintenanceContent: React.FC = () => {
         </div>
       );
     }
-
-    // Regular week view with shopping list tab
-    const [activeTab, setActiveTab] = React.useState<'nutrition' | 'shopping'>('nutrition');
 
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

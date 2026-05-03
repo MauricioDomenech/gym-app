@@ -528,7 +528,10 @@ export function getPhaseComparison(params: PhaseComparisonParams): PhaseComparis
     const startWeight = phaseBodyData.length > 0 ? phaseBodyData[0].peso : null;
     const endWeight = phaseBodyData.length > 0 ? phaseBodyData[phaseBodyData.length - 1].peso : null;
     const weightChange = startWeight !== null && endWeight !== null ? Math.round((endWeight - startWeight) * 100) / 100 : null;
-    const weeklyRate = weightChange !== null && numWeeks > 0 ? Math.round((weightChange / numWeeks) * 100) / 100 : null;
+    const actualWeekSpan = phaseBodyData.length >= 2
+      ? Math.max(1, phaseBodyData[phaseBodyData.length - 1].week - phaseBodyData[0].week)
+      : numWeeks;
+    const weeklyRate = weightChange !== null && actualWeekSpan > 0 ? Math.round((weightChange / actualWeekSpan) * 100) / 100 : null;
 
     // Training adherence for this phase
     let totalExercises = 0;

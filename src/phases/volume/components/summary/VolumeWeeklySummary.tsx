@@ -10,7 +10,7 @@ export const VolumeWeeklySummary: React.FC = () => {
   const calculateWeeklySummary = (week: number) => {
     const days = getDaysOfWeek();
     const totalsByDay: { [day: string]: VolumeNutritionTotals } = {};
-    let weeklyTotals: VolumeNutritionTotals = {
+    const weeklyTotals: VolumeNutritionTotals = {
       kcal: 0,
       proteinas_g: 0,
       carbohidratos_g: 0,

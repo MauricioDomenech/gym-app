@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createClient } from '@supabase/supabase-js';
+import type { SupabaseClient } from '@supabase/supabase-js';
 
 const STORAGE_KEYS = {
   WORKOUT_PROGRESS: 'gym-app-workout-progress',
@@ -10,7 +11,7 @@ const STORAGE_KEYS = {
   CURRENT_DAY: 'gym-app-current-day',
 } as const;
 
-let supabaseClient: any = null;
+let supabaseClient: SupabaseClient | null = null;
 
 async function getSupabaseClient() {
   if (supabaseClient) {
@@ -58,7 +59,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     console.log('🔑 Performing action:', action, 'for key:', key);
 
     switch (action) {
-      case 'get':
+      case 'get': {
         const { data: setting, error: getError } = await supabase
           .from('user_settings')
           .select('setting_value')
@@ -71,8 +72,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
         console.log('📖 Retrieved item:', setting ? 'found' : 'not found');
         return res.status(200).json({ data: setting?.setting_value || null });
+      }
 
-      case 'set':
+      case 'set': {
         const { error: setError } = await supabase
           .from('user_settings')
           .upsert({
@@ -89,8 +91,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
         console.log('💾 Saved item successfully');
         return res.status(200).json({ success: true });
+      }
 
-      case 'delete':
+      case 'delete': {
         const { error: deleteError } = await supabase
           .from('user_settings')
           .delete()
@@ -102,8 +105,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
         console.log('🗑️ Deleted item successfully');
         return res.status(200).json({ success: true });
+      }
 
-      case 'clear':
+      case 'clear': {
         const settingKeys = Object.values(STORAGE_KEYS);
         const { error: clearError } = await supabase
           .from('user_settings')
@@ -116,6 +120,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
         console.log('🧹 Cleared all data successfully');
         return res.status(200).json({ success: true });
+      }
 
       default:
         console.error('❌ Invalid action:', action);
