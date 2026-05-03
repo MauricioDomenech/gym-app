@@ -1,0 +1,783 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "exportDate": "2026-05-03T09:29:20.445Z",
+  "weekFrom": 6,
+  "subPhase": "Fase 1 — Deficit",
+  "mesocycle": "M2.1",
+  "workoutProgress": [
+    {
+      "exerciseId": "lunes-press-hombros-en-maquina-con-respaldo",
+      "day": "lunes",
+      "week": 6,
+      "weights": [
+        35,
+        35,
+        35
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 35kg. Buscar 9 reps (S5 hiciste 8 a RIR 1). Si salen 9 a RIR 1, evaluar subir semana 7.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 6,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 59kg (S5 absorbiste el salto desde 52, hiciste 12r RIR 1, salto absorbido). Buscar 13 reps. Si salen 13 RIR 1, subir al siguiente peso semana 7.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 6,
+      "weights": [
+        86,
+        86,
+        86
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 86kg pero buscar 13 reps a RIR 1 (S5 hiciste 15 a RIR 0 = al fallo, dijiste 'muy al limite'). DESCANSO 90 SEG. NO forzar fallo, parar a 13 con 1-2 en reserva.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 6,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 5.7kg (S5 hiciste 12r RIR 0 al fallo). Buscar 13 reps. La ultima serie suele ir al limite, esta bien.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 6,
+      "weights": [
+        17.5,
+        17.5,
+        17.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 17.5kg (S5 hiciste 12r RIR 0 con 15kg, target superado al fallo). Buscar 10 reps por lado. Si no llegas a 9, bajar a 16.3kg.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-cable-crunch",
+      "day": "lunes",
+      "week": 6,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 90kg. DESCANSO 90 SEG. Max 12 reps. Sin reportes de calambre.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 6,
+      "weights": [
+        59,
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-28T06:58:05.001+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 13 repeticiones. Siguiente peso 66 kg",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-face-pull",
+      "day": "martes",
+      "week": 6,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-28T07:11:56.655+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 13 repeticiones pero al fallo, en la última tuve que descansar unos segundos para poder completar",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-myo-reps",
+      "day": "jueves",
+      "week": 6,
+      "weights": [
+        5.7
+      ],
+      "seriesCount": 1,
+      "date": "2026-04-30T06:50:30.79+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Myo-reps 5.7kg. Activacion 12-15 reps cerca del fallo, luego mini-series DECRECIENTES: 5, 4, 3 (15-20 seg entre cada). Mismo protocolo.",
+      "rir": 0
+    },
+    {
+      "exerciseId": "sabado-elevacion-piernas-en-silla-romana",
+      "day": "sabado",
+      "week": 6,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-02T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "OPCIONAL/ELIMINABLE. S4 y S5 no se hizo (calambres y reventado). Si llegas con energia, BW 10-12 reps. Si no, saltar sin culpa. Sustituto si quieres core extra: side plank 30 seg/lado x 3.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 6,
+      "weights": [
+        20,
+        20,
+        20
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-28T07:25:06.509+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Hice 13 repeticiones. La siguiente pesa que puedo agregar es de 1,25 kg de cada lado, serían 2,5kg en total que puedo agregar a los 10 actuales",
+      "rir": 2
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 6,
+      "weights": [
+        8,
+        8
+      ],
+      "seriesCount": 2,
+      "date": "2026-04-28T07:44:14.442+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 8kg (S5 hiciste 20r RIR 1 con 7kg, sigue facil. Confirmaste que el siguiente peso es 8kg). Buscar 18 reps. Si salen 20, subir a 9kg semana 7.\n\nHice 18 repeticiones, ahora sí se sintió que trabaja el músculo",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 6,
+      "weights": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-28T07:07:14.391+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Si la maquina principal tiene 32kg: Mantener 32kg buscar 11 reps (S5 reportaste haber usado otra maquina con 45kg/12r). Si vuelves a la otra maquina, mantener 45kg buscar 13r. ACLARACION: usar siempre la misma maquina cuando sea posible para que las cargas sean comparables.\n\nHice con la máquina de 45 kg 13 repeticiones. Te iré diciendo con que máquina la hago porque depende si en ese momento está libre una u la otra. En esta maquina el siguiente peso es 52 Kg.",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-curl-martillo",
+      "day": "martes",
+      "week": 6,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-28T07:33:57.033+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "INCLINE DB CURL. Mantener 12kg (S5 absorbiste el salto desde 10kg, 10r RIR 1 con 2 min). DESCANSO 90 SEG (recortar). Buscar 11 reps. Si no llegas a 10 con 90 seg, mantener 2 min una semana mas.\n\nPude hacer 12 repeticiones. El descanso de 2 minutos no es negociable, revisa los estudios científicos y todos concluyen que esperando 2 minutos entre series es mejor para hipertrofia",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-reverse-wrist-curl",
+      "day": "martes",
+      "week": 6,
+      "weights": [
+        5,
+        5
+      ],
+      "seriesCount": 2,
+      "date": "2026-04-28T07:51:48.392+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 5kg (S5 hiciste 20r RIR 0 con 4kg, target cumplido). Buscar 18 reps. La izquierda cuesta mas, esta bien.\n\nVolví a hacer con 4 kg 20 repeticiones, la próxima semana subimos",
+      "rir": 0
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 6,
+      "weights": [
+        45,
+        45,
+        45,
+        45
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-29T06:33:55.843+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "DIA DE REFEED — vas a tener mas glucogeno disponible, aprovechar. Mantener 45kg (S5 absorbiste el salto desde 40, 8r RIR 1). Buscar 9 reps. Si salen 9 RIR 1, subir 2.5kg semana 7.\n\nHice 9 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 6,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-29T06:36:28.973+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 55kg (S5 hiciste 12r RIR 1 con 50kg, RIR 1 + target). DESCANSO 2 min OK para gemelos. Buscar 10 reps. ATENCION: si esto te deja gemelos cansados para sabado (como S5), considerar bajar volumen sabado.\n\nHice 10 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 6,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-29T06:45:04.138+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 40kg (S5 hiciste 12r RIR 1 con 36kg, RIR 1 + target). Buscar 10 reps. Si no llegas a 9, bajar a 38kg.\n\nHice 10 repeticiones. La maquina no tiene 40.",
+      "rir": 0
+    },
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 6,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-04-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CAMBIO A SMITH INCLINADO. Mancuernas topadas a 28kg (no podes subirlas arriba). Empezar con 50kg en barra Smith inclinada (la barra Smith pesa menos que disponer DBs equivalentes). Buscar 8 reps. Si sale facil RIR 2, subir 5kg semana 7. Si no llegas a 6, bajar a 45kg. REPORTAR el peso final con que te quedaste y RIR.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 6,
+      "weights": [
+        24,
+        24,
+        24
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 24kg (S5 hiciste 13r RIR 2 con 21.6kg, RIR 2 + target superado). DESCANSO 90 SEG. Buscar 10 reps. Si no llegas a 9, bajar a 22.7kg.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-dead-bug",
+      "day": "martes",
+      "week": 6,
+      "weights": [
+        1,
+        1
+      ],
+      "seriesCount": 2,
+      "date": "2026-04-28T08:10:54.001+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Bodyweight. 10 por lado. DESCANSO 90 seg.",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-elevacion-piernas-en-silla-romana",
+      "day": "martes",
+      "week": 6,
+      "weights": [
+        4,
+        4,
+        4
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-28T08:01:35.93+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CAMBIO DE EJERCICIO. La silla romana BW topo (16r). Cambiar a HANGING LEG RAISES (colgado de barra) con mancuerna de 4kg fijada entre los pies. Si no podes fijar, usar tobilleras lastradas de 2kg cada una. Buscar 12 reps. Alternativa si no hay barra de dominadas: TOES-TO-BAR en maquina captain's chair pero con mancuerna entre las piernas.\n\nNo me gustó ninguno de esos, ya fue, voy a seguir haciendo el de la silla del capitán y le iré agregando repeticiones.",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 6,
+      "weights": [
+        5,
+        5,
+        5
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-29T06:59:07.456+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 5kg (S5 hiciste 12r RIR 1 con 2.5kg, target cumplido). Buscar 12 reps con disco/mancuerna de 5kg al pecho. Si no llegas a 10, volver a 2.5kg.\n\nHice 12 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 6,
+      "weights": [
+        80,
+        80,
+        80
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-29T07:01:10.567+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 80kg (S5 saltaste de 60 a 80kg por sentirte fuerte, hiciste 12r RIR 1 — aceptado pero ahora consolidar). Buscar 13 reps. Si salen 13 RIR 1-2, subir a 85kg semana 7.\n\nHice 13 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 6,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-30T06:36:40.213+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 73kg (S5 hiciste 12r RIR 1 con 66kg, ultima al fallo. Confirmaste siguiente peso 73kg). Buscar 9 reps. Salto +10.6%, si no llegas a 7, bajar a 70kg si la maquina lo permite, sino mantener 66kg.\n\nHice 9 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 6,
+      "weights": [
+        10.2,
+        10.2,
+        10.2
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-30T06:58:36.711+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 10.2kg (S5 hiciste 15r con 7.9kg con 2 min descanso, target cumplido). DESCANSO 90 SEG. Buscar 12 reps. Si no llegas a 10, volver a 7.9kg.\n\nHice 10 repeticiones, imposible descansar menos de 2 minutos",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-triceps-overhead-cable",
+      "day": "jueves",
+      "week": 6,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-30T07:00:31.789+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 24kg (S5 hiciste 12r RIR 2 con 21.6kg, RIR 2 + target). DESCANSO 90 SEG. Buscar 10 reps. Si no llegas a 9, volver a 21.6kg.\n\nEl peso correcto era 23,8 kg, hice 10 repeticiones. Imposible descansar menos de 2 minutos",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-face-pull--reverse-fly",
+      "day": "jueves",
+      "week": 6,
+      "weights": [
+        7.9,
+        7.9,
+        7.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-30T07:15:16.874+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 7.9kg (S5 hiciste 17r RIR 2 con 5.7kg, RIR 2 + target. Confirmaste siguiente 7.9kg). Buscar 13 reps. DESCANSO 90 SEG.\n\nHice 13 repeticiones, la ultima al fallo. Imposible descansar menos de 2 minutos",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-fondos-en-maquina",
+      "day": "jueves",
+      "week": 6,
+      "weights": [
+        45,
+        45,
+        45
+      ],
+      "seriesCount": 3,
+      "date": "2026-04-30T07:15:45.318+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "BAJAR a 45kg en escala (es MAS dificil que 50, maquina inversa). S5 hiciste 12r RIR 2 con 50kg, RIR 2 confirma margen. Buscar 10 reps. Si no llegas a 9, volver a 50kg.\n\nHice 10 repeticiones, la ultima serie hice 9.",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 6,
+      "weights": [
+        64,
+        64,
+        64
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-01T07:51:26.756+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 64kg (S5 hiciste 14r RIR 1 con 59kg, target + RIR 1). Buscar 11 reps. Si no llegas a 10, bajar a 62kg si la maquina lo permite, sino mantener 59kg.\n\nNO EXISTE 64, próximo peso fue 66. Hice 10 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 6,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-01T08:03:41.167+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 59kg (S5 hiciste 11r RIR 1 con 52kg, target cumplido. Confirmaste siguiente 59kg). Buscar 9 reps. Salto +13.5%. Si no llegas a 8, volver a 52kg.\n\nHice 10 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 6,
+      "weights": [
+        26.1,
+        26.1,
+        26.1
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-01T08:12:04.14+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 26.1kg (S5 absorbiste el salto desde 23.8, 12r RIR 1). Buscar 13 reps. Si salen 13 RIR 1-2, subir semana 7.\n\nHice 13 repeticiones, el siguiente peso de esta maquina es 28,4",
+      "rir": 2
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 6,
+      "weights": [
+        12.4,
+        12.4,
+        12.4
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-01T08:16:41.706+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 12.4kg (S5 hiciste 13r RIR 1 con 10.2kg con 2 min descanso. Confirmaste siguiente 12.4kg). DESCANSO 2 MIN OK. Buscar 10 reps. Si no llegas a 8, volver a 10.2kg.\n\nHice 10 repeticiones, muy justa la última",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 6,
+      "weights": [
+        8,
+        8,
+        8
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-01T08:33:48.731+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 8kg (S5 hiciste 20r RIR 2 con 7kg. Confirmaste siguiente 8kg). Buscar 18 reps. Si salen 20, subir a 9kg semana 7.\n\nHice 20 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 6,
+      "weights": [
+        24,
+        24
+      ],
+      "seriesCount": 2,
+      "date": "2026-05-01T08:34:35.005+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 24kg pero CRONOMETRAR el tiempo (3era semana sin reportar). Target: 45 seg/serie. Si salen 45 seg facil, subir a 26kg semana 7. Si no llegas a 30 seg, bajar a 22kg. Sin tiempo no puedo prescribir progresion.\n\nEstá bien ese tiempo y ese peso, lo hago bien lento, no mido tiempo pero seguro es más de 45 segundos",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 6,
+      "weights": [
+        32,
+        32,
+        32
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-01T08:36:20.207+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 32kg (S5 hiciste 12r RIR 2 con 27kg, RIR 2 + target. Confirmaste siguiente 32kg). DESCANSO 90-120 seg. Buscar 9 reps. ORDEN: bayesian → wrist curl → predicador (S5 confirmaste que asi rinde mejor por descanso intermedio de flexores)\n\nHice 10, siguiente peso es 36",
+      "rir": 3
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 6,
+      "weights": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-02T08:01:36.08+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "TOPE de mancuerna 20kg confirmado. ALTERNATIVAS: (a) Apilar disco de 2-5kg encima de la mancuerna 20kg para llegar a 22-25kg (preferible si tienes discos sueltos). (b) B-stance hip thrust con mancuerna 22kg (una pierna apoyada con punta del pie, otra carga el peso). (c) Glute kickback en maquina si la sala lo tiene. Hip thrust convencional NO (ya dijiste que no te gusta). Probar opcion (a) primero. Buscar 14 reps con 22-25kg. REPORTAR que opcion usaste.\n\nHice 15 repeticiones con 25 kilos.",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 6,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-02T08:09:55.31+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "BW + TEMPO LENTO. S5 hiciste 14r BW RIR 0, sigues con problema de balance. Cambiar a TEMPO 3-1-1 (3 seg bajada, 1 seg pausa abajo, 1 seg subida). Buscar 12 reps por pierna. El tempo lento aumenta el estimulo sin requerir peso adicional. Si salen 12 a RIR 1, semana 7 subir a 4 seg bajada o intentar mancuerna 8kg.\n\nHice 12 repeticiones, está vez fue mejor el equilibrio y balance, fue solo con mi peso corporal. Seguiría una dos semanas más así hasta ganar más fuerza y equilibrio.",
+      "rir": 0
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 6,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-02T08:21:19.462+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 41kg (S5 absorbiste el salto desde 36, 11r RIR 1). Buscar 12 reps. Si salen 12 RIR 1-2, subir al siguiente peso semana 7.\n\nHice 12 repeticiones, la última al fallo",
+      "rir": 0
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 6,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-02T08:25:44.973+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 36kg (S5 hiciste 13r RIR 0, ultima al fallo). Buscar 13 reps SIN forzar fallo (RIR 1). Si volves a fallar a 13, mantener una semana mas.\n\nHice 13 repeticiones",
+      "rir": 0
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 6,
+      "weights": [
+        45,
+        45,
+        45,
+        45
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-02T08:32:16.19+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 45kg (S5 mantuviste 40kg por fatiga de gemelos pie del miercoles, 16r RIR 0). Recuperar progresion. Buscar 12 reps. Si miercoles dejaste gemelos pie en 50→55kg, esto puede dejarte cansado. Si no llegas a 10, bajar a 42.5kg.\n\nHice 12 repeticiones",
+      "rir": 2
+    },
+    {
+      "exerciseId": "sabado-cable-kickback-gluteos",
+      "day": "sabado",
+      "week": 6,
+      "weights": [
+        14.7,
+        14.7,
+        14.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-02T09:00:17.265+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 14.7kg (S5 hiciste 12r RIR 1, target cumplido). DESCANSO 90 seg. Buscar 13 reps. Si salen 13 RIR 1, subir a 17kg semana 7 (confirmaste siguiente peso).\n\nHice 13 repeticiones",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 6,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-02T09:00:25.081+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Bodyweight. 12 reps. DESCANSO 90-120 seg. Mantener al limite.",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 6,
+      "weights": [
+        14.7,
+        14.7,
+        14.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-02T09:02:47.522+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 14.7kg (S5 hiciste 11r RIR 0 al fallo). Buscar 12 reps por lado SIN forzar fallo. ORDEN IMPORTANTE: pallof + ab rollout antes de cualquier cosa opcional para llegar con energia.\n\nNo hizo falta hacer el ab rollout antes, los hice en el orden que está aquí y todo bien está vez. Hice 13 repeticiones, siguiente peso es 17",
+      "rir": 2
+    }
+  ],
+  "bodyComposition": {
+    "week": 6,
+    "date": "2026-05-03T08:44:20.595+00:00",
+    "peso": 101.2,
+    "grasaCorporal": null,
+    "cintura": null,
+    "cadera": null,
+    "pecho": null,
+    "brazo": null,
+    "muslo": null,
+    "notas": ""
+  },
+  "cardioLogs": [
+    {
+      "day": "lunes",
+      "week": 6,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "Cinta 6-8% inclinacion, ritmo conversacional",
+      "date": "2026-04-27T17:00:00+00:00"
+    },
+    {
+      "day": "martes",
+      "week": 6,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "Cinta 6-8% inclinacion, ritmo conversacional",
+      "date": "2026-04-28T17:00:00+00:00"
+    },
+    {
+      "day": "viernes",
+      "week": 6,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "Cinta 6-8% inclinacion, ritmo conversacional. NO caminata como S5, vuelve a LISS estructurado.",
+      "date": "2026-05-01T17:00:00+00:00"
+    },
+    {
+      "day": "miercoles",
+      "week": 6,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "DIA DE REFEED. Cinta 6-8%, ritmo conversacional. El cardio quema parte del extra calorico.",
+      "date": "2026-04-30T05:41:35.785+00:00"
+    },
+    {
+      "day": "jueves",
+      "week": 6,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "Caminata",
+      "date": "2026-05-01T06:03:42.656+00:00"
+    },
+    {
+      "day": "sabado",
+      "week": 6,
+      "tipo": "hiit",
+      "duracionMinutos": 18,
+      "completado": true,
+      "notas": "HIIT sabado mantenido. 8-10 series 20-30 seg sprint / 60-90 seg recuperacion despues del gym de piernas.",
+      "date": "2026-05-02T09:25:21.34+00:00"
+    }
+  ]
+}

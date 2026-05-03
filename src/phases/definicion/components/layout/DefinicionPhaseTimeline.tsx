@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDefinicionData } from '../../contexts/DefinicionDataContext';
-import { DEFINICION_SUB_PHASES, getSubPhaseForWeek, TOTAL_WEEKS } from '../../types/definicion';
+import { DEFINICION_SUB_PHASES, RECOMP_PLAN, getSubPhaseForWeek, TOTAL_WEEKS } from '../../types/definicion';
 
 export const DefinicionPhaseTimeline: React.FC = () => {
   const { currentWeek, setCurrentWeek } = useDefinicionData();
@@ -47,7 +47,7 @@ export const DefinicionPhaseTimeline: React.FC = () => {
           {' — '}
           <span>{currentSubPhase.nombre}</span>
           {' '}
-          <span className="text-gray-500">({currentSubPhase.kcalDiarias} kcal/dia)</span>
+          <span className="text-gray-500">({RECOMP_PLAN.kcalRange})</span>
         </div>
       </div>
 
@@ -69,7 +69,7 @@ export const DefinicionPhaseTimeline: React.FC = () => {
               {currentSubPhase.nombre}
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-400">
-              Semana {currentWeek}/{TOTAL_WEEKS} — {currentSubPhase.kcalDiarias} kcal
+              Semana {currentWeek}/{TOTAL_WEEKS} — {RECOMP_PLAN.kcalAverage} kcal prom.
             </div>
           </div>
           <button

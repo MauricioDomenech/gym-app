@@ -1,5 +1,6 @@
 import {
   DEFINICION_SUB_PHASES,
+  RECOMP_PLAN,
   TOTAL_WEEKS,
   getMesocycleInfo,
 } from '../types/definicion';
@@ -17,8 +18,6 @@ import type {
 import { DefinicionExerciseParser } from '../services/definicionExerciseParser';
 
 const START_WEIGHT = 103;
-const GOAL_WEIGHT = 93;
-const KCAL_PER_KG_FAT = 7700;
 const DAYS_OF_WEEK = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'] as const;
 
 // ========================================
@@ -28,15 +27,7 @@ const DAYS_OF_WEEK = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'saba
 export function getExpectedWeight(week: number, startWeight: number = START_WEIGHT): number {
   if (week < 1) return startWeight;
   const clampedWeek = Math.min(week, TOTAL_WEEKS);
-  let weight = startWeight;
-  for (let w = 1; w <= clampedWeek; w++) {
-    const subPhase = DEFINICION_SUB_PHASES.find(p => w >= p.semanaInicio && w <= p.semanaFin);
-    if (subPhase && !subPhase.esDietBreak) {
-      weight -= (subPhase.deficit * 7) / KCAL_PER_KG_FAT;
-    }
-    // Diet break: weight stays the same
-  }
-  return Math.round(weight * 100) / 100;
+  return Math.round((startWeight - (RECOMP_PLAN.targetWeeklyLossMax * clampedWeek)) * 100) / 100;
 }
 
 // ========================================
@@ -86,11 +77,11 @@ export function getWeightProjection(bodyData: DefinicionBodyComposition[]): Weig
   const lastWeight = sorted[sorted.length - 1].peso;
   let weeksToGoal: number | null = null;
   if (slope < 0 && weeklyLossRate > 0) {
-    weeksToGoal = Math.round(((lastWeight - GOAL_WEIGHT) / weeklyLossRate) * 10) / 10;
+    weeksToGoal = Math.round(((lastWeight - projectedFinishWeight) / weeklyLossRate) * 10) / 10;
     if (weeksToGoal < 0) weeksToGoal = 0;
   }
 
-  const onTrack = Math.abs(projectedFinishWeight - GOAL_WEIGHT) <= 1;
+  const onTrack = weeklyLossRate >= RECOMP_PLAN.targetWeeklyLossMin && weeklyLossRate <= RECOMP_PLAN.acceptableWeeklyLossMax;
 
   return { projectedFinishWeight, weeklyLossRate, weeksToGoal, onTrack, dataPoints: n };
 }
@@ -112,18 +103,18 @@ export function getProgressAlerts(params: ProgressAlertsParams): ProgressAlert[]
   const alerts: ProgressAlert[] = [];
   const sorted = [...bodyComposition].sort((a, b) => a.week - b.week);
 
-  // 1. Plateau: 2+ consecutive entries with < 0.2kg difference
-  if (sorted.length >= 2) {
+  // 1. Plateau: 3+ consecutive entries with < 0.2kg difference
+  if (sorted.length >= 3) {
     let consecutivePlateau = 1;
     for (let i = 1; i < sorted.length; i++) {
       if (Math.abs(sorted[i].peso - sorted[i - 1].peso) < 0.2) {
         consecutivePlateau++;
-        if (consecutivePlateau >= 2) {
+        if (consecutivePlateau >= RECOMP_PLAN.noChangeWeeksForAdjustment) {
           alerts.push({
             id: 'plateau',
             severity: 'warning',
             title: 'Posible estancamiento',
-            message: `Tu peso se ha mantenido estable (±0.2kg) durante ${consecutivePlateau} registros consecutivos. Considera revisar tu déficit calórico o ajustar el cardio.`,
+            message: `Tu peso se mantuvo estable (±0.2kg) durante ${consecutivePlateau} registros consecutivos. Revisa adherencia real antes de tocar calorias.`,
             week: sorted[i].week,
           });
           break;
@@ -134,20 +125,19 @@ export function getProgressAlerts(params: ProgressAlertsParams): ProgressAlert[]
     }
   }
 
-  // 2. Rapid loss: > 1% body weight per week between entries
+  // 2. Rapid loss for slow recomp plan
   if (sorted.length >= 2) {
     for (let i = 1; i < sorted.length; i++) {
       const loss = sorted[i - 1].peso - sorted[i].peso;
       if (loss <= 0) continue;
       const weekDelta = sorted[i].week - sorted[i - 1].week;
-      const percentLoss = (loss / sorted[i - 1].peso) * 100;
-      const weeklyPercentLoss = percentLoss / Math.max(weekDelta, 1);
-      if (weeklyPercentLoss > 1) {
+      const weeklyLoss = loss / Math.max(weekDelta, 1);
+      if (weeklyLoss > RECOMP_PLAN.rapidWeeklyLossKg) {
         alerts.push({
           id: 'rapid-loss',
           severity: 'warning',
-          title: 'Pérdida de peso muy rápida',
-          message: `Perdiste ${loss.toFixed(1)}kg (${weeklyPercentLoss.toFixed(1)}%/sem) entre la semana ${sorted[i - 1].week} y ${sorted[i].week}. Una pérdida mayor al 1% semanal puede implicar pérdida muscular.`,
+          title: 'Bajada demasiado rapida',
+          message: `Perdiste ${weeklyLoss.toFixed(1)}kg/sem entre la semana ${sorted[i - 1].week} y ${sorted[i].week}. Para recomposicion lenta, revisa energia, fuerza y recuperacion antes de mantener este ritmo.`,
           week: sorted[i].week,
         });
         break;
@@ -163,7 +153,7 @@ export function getProgressAlerts(params: ProgressAlertsParams): ProgressAlert[]
         id: 'weight-not-logged',
         severity: 'info',
         title: 'Peso no registrado',
-        message: `No has registrado tu peso en la semana ${currentWeek}. El seguimiento semanal es clave para evaluar el progreso.`,
+        message: `No registraste peso en la semana ${currentWeek}. El check-in semanal necesita peso, fuerza, cardio y adherencia real.`,
         week: currentWeek,
       });
     }
@@ -244,8 +234,8 @@ export function getProgressAlerts(params: ProgressAlertsParams): ProgressAlert[]
       alerts.push({
         id: 'on-track',
         severity: 'success',
-        title: 'Objetivo alcanzable',
-        message: `Según tu progreso actual, se proyecta un peso final de ${projection.projectedFinishWeight.toFixed(1)}kg. ¡Vas por buen camino hacia los ${GOAL_WEIGHT}kg!`,
+        title: 'Ritmo compatible con recomposicion',
+        message: `Tu ritmo promedio (${projection.weeklyLossRate.toFixed(2)}kg/sem) encaja con ${RECOMP_PLAN.name}. Mantener si fuerza y energia acompanian.`,
       });
     }
   }

@@ -2,8 +2,21 @@ import React, { useMemo } from 'react';
 import { useDefinicionData } from '../../contexts/DefinicionDataContext';
 import { buildWeeklyCheckinData } from '../../utils/progressAnalytics';
 import { DefinicionProgressChart } from './DefinicionProgressChart';
-import { TOTAL_WEEKS } from '../../types/definicion';
+import { RECOMP_PLAN, TOTAL_WEEKS } from '../../types/definicion';
 import type { ProgressAlert } from '../../types/definicion';
+
+function parseNotesBlock(notes: string, blockName: string): Record<string, string> {
+  const regex = new RegExp(`\\n?\\[${blockName}\\]\\n([\\s\\S]*?)\\n\\[\\/${blockName}\\]`);
+  const match = notes.match(regex);
+  if (!match) return {};
+
+  return match[1].split('\n').reduce<Record<string, string>>((acc, line) => {
+    const separator = line.indexOf('=');
+    if (separator <= 0) return acc;
+    acc[line.slice(0, separator).trim()] = line.slice(separator + 1).trim();
+    return acc;
+  }, {});
+}
 
 export const DefinicionWeeklyCheckin: React.FC = () => {
   const { bodyComposition, workoutProgress, workoutData, cardioLogs, currentWeek } = useDefinicionData();
@@ -32,23 +45,66 @@ export const DefinicionWeeklyCheckin: React.FC = () => {
   );
 
   const projection = checkinData.projection;
+  const currentBody = useMemo(() =>
+    bodyComposition.find(b => b.week === effectiveWeek) || null,
+    [bodyComposition, effectiveWeek]
+  );
+
+  const previousBody = useMemo(() =>
+    [...bodyComposition]
+      .filter(b => b.week < effectiveWeek)
+      .sort((a, b) => b.week - a.week)[0] || null,
+    [bodyComposition, effectiveWeek]
+  );
+
+  const weeklyChange = currentBody && previousBody
+    ? Math.round((currentBody.peso - previousBody.peso) * 100) / 100
+    : null;
+  const weeklyLoss = weeklyChange !== null ? -weeklyChange : null;
+
+  const biaData = useMemo(() => {
+    const fallback = parseNotesBlock(currentBody?.notas || '', 'BIA_EXTRA');
+    return {
+      grasaVisceral: currentBody?.grasaVisceral?.toString() || fallback.grasaVisceral,
+      masaMuscular: currentBody?.masaMuscular?.toString() || fallback.masaMuscular,
+      aguaCorporal: currentBody?.aguaCorporal?.toString() || fallback.aguaCorporal,
+      tmb: currentBody?.tmb?.toString() || fallback.tmb,
+      imc: currentBody?.imc?.toString() || fallback.imc,
+    };
+  }, [currentBody]);
+  const adherenceData = useMemo(() => {
+    const fallback = parseNotesBlock(currentBody?.notas || '', 'CHECKIN_RECOMP_LENTA');
+    return {
+      comidasRelax: currentBody?.comidasRelax?.toString() || fallback.comidasRelax,
+      adherenciaNutricion: currentBody?.adherenciaNutricion?.toString() || fallback.adherenciaNutricion,
+      suenoPromedio: currentBody?.suenoPromedio?.toString() || fallback.suenoPromedio,
+      hambre: currentBody?.hambre?.toString() || fallback.hambre,
+      energia: currentBody?.energia?.toString() || fallback.energia,
+      molestias: currentBody?.molestias || fallback.molestias,
+    };
+  }, [currentBody]);
 
   const status = useMemo(() => {
     if (checkinData.actualWeight === null) {
       return { label: 'Sin datos de peso', color: 'gray', bgClass: 'bg-gray-100 dark:bg-gray-800', textClass: 'text-gray-700 dark:text-gray-300', icon: '?' };
     }
-    const diff = checkinData.weightDiff ?? 0;
-    if (diff < -2) {
-      return { label: 'Perdida muy rapida', color: 'red', bgClass: 'bg-red-100 dark:bg-red-900/30', textClass: 'text-red-700 dark:text-red-300', icon: '!!' };
+    if (weeklyLoss === null) {
+      return { label: 'Primer dato de seguimiento', color: 'blue', bgClass: 'bg-blue-100 dark:bg-blue-900/30', textClass: 'text-blue-700 dark:text-blue-300', icon: 'i' };
     }
-    if (diff < -0.5) {
-      return { label: 'Adelantado al ritmo', color: 'cyan', bgClass: 'bg-cyan-100 dark:bg-cyan-900/30', textClass: 'text-cyan-700 dark:text-cyan-300', icon: 'i' };
+    if (weeklyLoss > RECOMP_PLAN.rapidWeeklyLossKg) {
+      return { label: 'Bajada demasiado rapida', color: 'red', bgClass: 'bg-red-100 dark:bg-red-900/30', textClass: 'text-red-700 dark:text-red-300', icon: '!!' };
     }
-    if (diff > 0.5) {
-      return { label: 'Por encima del ritmo', color: 'amber', bgClass: 'bg-amber-100 dark:bg-amber-900/30', textClass: 'text-amber-700 dark:text-amber-300', icon: '!' };
+    if (weeklyLoss > RECOMP_PLAN.acceptableWeeklyLossMax) {
+      return { label: 'Ritmo alto, vigilar recuperacion', color: 'cyan', bgClass: 'bg-cyan-100 dark:bg-cyan-900/30', textClass: 'text-cyan-700 dark:text-cyan-300', icon: 'i' };
     }
-    return { label: 'En ritmo', color: 'green', bgClass: 'bg-green-100 dark:bg-green-900/30', textClass: 'text-green-700 dark:text-green-300', icon: '\u2713' };
-  }, [checkinData.actualWeight, checkinData.weightDiff]);
+    if (weeklyLoss >= RECOMP_PLAN.targetWeeklyLossMin && weeklyLoss <= RECOMP_PLAN.targetWeeklyLossMax) {
+      return { label: 'Ritmo objetivo', color: 'green', bgClass: 'bg-green-100 dark:bg-green-900/30', textClass: 'text-green-700 dark:text-green-300', icon: '\u2713' };
+    }
+    if (weeklyLoss >= 0) {
+      return { label: 'Bajada lenta o estable', color: 'amber', bgClass: 'bg-amber-100 dark:bg-amber-900/30', textClass: 'text-amber-700 dark:text-amber-300', icon: '!' };
+    }
+    return { label: 'Peso al alza', color: 'amber', bgClass: 'bg-amber-100 dark:bg-amber-900/30', textClass: 'text-amber-700 dark:text-amber-300', icon: '!' };
+  }, [checkinData.actualWeight, weeklyLoss]);
 
   // Last 4 body composition entries for mini table
   const sortedBody = useMemo(() =>
@@ -74,7 +130,7 @@ export const DefinicionWeeklyCheckin: React.FC = () => {
             <div>
               <h3 className={`text-xl font-bold ${status.textClass}`}>{status.label}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Semana {effectiveWeek} de {TOTAL_WEEKS}
+                {RECOMP_PLAN.name} — Semana {effectiveWeek}
               </p>
             </div>
           </div>
@@ -86,14 +142,14 @@ export const DefinicionWeeklyCheckin: React.FC = () => {
               </div>
             )}
             <div className="text-center">
-              <p className="text-xs text-gray-500 dark:text-gray-400">Esperado</p>
-              <p className="text-lg font-bold text-gray-900 dark:text-white">{checkinData.expectedWeight.toFixed(1)} kg</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">Objetivo/sem</p>
+              <p className="text-lg font-bold text-gray-900 dark:text-white">{RECOMP_PLAN.targetWeeklyLossMin}-{RECOMP_PLAN.targetWeeklyLossMax} kg</p>
             </div>
-            {checkinData.weightDiff !== null && (
+            {weeklyChange !== null && (
               <div className="text-center">
-                <p className="text-xs text-gray-500 dark:text-gray-400">Diferencia</p>
-                <p className={`text-lg font-bold ${checkinData.weightDiff <= 0 ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
-                  {checkinData.weightDiff > 0 ? '+' : ''}{checkinData.weightDiff.toFixed(1)} kg
+                <p className="text-xs text-gray-500 dark:text-gray-400">Cambio</p>
+                <p className={`text-lg font-bold ${weeklyChange <= 0 ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
+                  {weeklyChange > 0 ? '+' : ''}{weeklyChange.toFixed(1)} kg
                 </p>
               </div>
             )}
@@ -113,6 +169,16 @@ export const DefinicionWeeklyCheckin: React.FC = () => {
         </div>
       </div>
 
+      <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Marco Actual</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+          <PlanMetric label="Objetivo" value={RECOMP_PLAN.targetLabel} />
+          <PlanMetric label="Calorias" value={`${RECOMP_PLAN.kcalRange} (~${RECOMP_PLAN.kcalAverage})`} />
+          <PlanMetric label="Proteina" value={RECOMP_PLAN.proteinRange} />
+          <PlanMetric label="Alerta roja" value={`>${RECOMP_PLAN.rapidWeeklyLossKg} kg/sem`} />
+        </div>
+      </div>
+
       {/* 2. Analisis de Peso */}
       <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Analisis de Peso</h3>
@@ -124,17 +190,17 @@ export const DefinicionWeeklyCheckin: React.FC = () => {
             </p>
           </div>
           <div className="text-center p-3 bg-gray-50 dark:bg-slate-700 rounded-lg">
-            <p className="text-xs text-gray-500 dark:text-gray-400">Peso Esperado</p>
-            <p className="text-xl font-bold text-gray-900 dark:text-white">{checkinData.expectedWeight.toFixed(1)} kg</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Cambio Semanal</p>
+            <p className={`text-xl font-bold ${
+              weeklyChange === null ? 'text-gray-400' :
+              weeklyChange <= 0 ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'
+            }`}>
+              {weeklyChange !== null ? `${weeklyChange > 0 ? '+' : ''}${weeklyChange.toFixed(1)} kg` : '-'}
+            </p>
           </div>
           <div className="text-center p-3 bg-gray-50 dark:bg-slate-700 rounded-lg">
-            <p className="text-xs text-gray-500 dark:text-gray-400">Diferencia</p>
-            <p className={`text-xl font-bold ${
-              checkinData.weightDiff === null ? 'text-gray-400' :
-              checkinData.weightDiff <= 0 ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'
-            }`}>
-              {checkinData.weightDiff !== null ? `${checkinData.weightDiff > 0 ? '+' : ''}${checkinData.weightDiff.toFixed(1)} kg` : '-'}
-            </p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Rango Objetivo</p>
+            <p className="text-xl font-bold text-emerald-600 dark:text-emerald-400">{RECOMP_PLAN.targetWeeklyLossMin}-{RECOMP_PLAN.targetWeeklyLossMax}</p>
           </div>
           <div className="text-center p-3 bg-gray-50 dark:bg-slate-700 rounded-lg">
             <p className="text-xs text-gray-500 dark:text-gray-400">Perdida/sem</p>
@@ -177,6 +243,27 @@ export const DefinicionWeeklyCheckin: React.FC = () => {
           </div>
         )}
       </div>
+
+      {(Object.keys(biaData).length > 0 || Object.keys(adherenceData).length > 0) && (
+        <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Check-in Semanal</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+            <MiniMetric label="Grasa visceral" value={biaData.grasaVisceral} />
+            <MiniMetric label="Masa muscular" value={biaData.masaMuscular ? `${biaData.masaMuscular} kg` : undefined} />
+            <MiniMetric label="Agua" value={biaData.aguaCorporal ? `${biaData.aguaCorporal}%` : undefined} />
+            <MiniMetric label="Comidas relax" value={adherenceData.comidasRelax} />
+            <MiniMetric label="Adherencia" value={adherenceData.adherenciaNutricion ? `${adherenceData.adherenciaNutricion}%` : undefined} />
+            <MiniMetric label="Sueno" value={adherenceData.suenoPromedio ? `${adherenceData.suenoPromedio} h` : undefined} />
+            <MiniMetric label="Hambre" value={adherenceData.hambre} />
+            <MiniMetric label="Energia" value={adherenceData.energia} />
+            <MiniMetric label="TMB" value={biaData.tmb ? `${biaData.tmb} kcal` : undefined} />
+            <MiniMetric label="IMC" value={biaData.imc} />
+          </div>
+          {adherenceData.molestias && (
+            <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">Molestias: {adherenceData.molestias}</p>
+          )}
+        </div>
+      )}
 
       {/* 3. Grafico de Progreso */}
       <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
@@ -334,6 +421,20 @@ const AdherenceCard: React.FC<AdherenceCardProps> = ({ title, value, subtitle, c
     </div>
   );
 };
+
+const PlanMetric: React.FC<{ label: string; value: string }> = ({ label, value }) => (
+  <div className="p-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg border border-emerald-100 dark:border-emerald-800">
+    <p className="text-xs text-emerald-700 dark:text-emerald-300">{label}</p>
+    <p className="mt-1 text-sm font-semibold text-gray-900 dark:text-white">{value}</p>
+  </div>
+);
+
+const MiniMetric: React.FC<{ label: string; value?: string }> = ({ label, value }) => (
+  <div className="p-3 bg-gray-50 dark:bg-slate-700 rounded-lg">
+    <p className="text-xs text-gray-500 dark:text-gray-400">{label}</p>
+    <p className="mt-1 text-sm font-semibold text-gray-900 dark:text-white">{value || '-'}</p>
+  </div>
+);
 
 const alertStyles: Record<string, { bg: string; border: string; icon: string; iconBg: string }> = {
   success: { bg: 'bg-green-50 dark:bg-green-900/20', border: 'border-green-200 dark:border-green-800', icon: '\u2713', iconBg: 'bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-300' },

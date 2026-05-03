@@ -3,6 +3,36 @@ import { useDefinicionData } from '../../contexts/DefinicionDataContext';
 import { DefinicionBodyChart } from './DefinicionBodyChart';
 import type { DefinicionBodyComposition } from '../../types/definicion';
 
+const BIA_BLOCK = 'BIA_EXTRA';
+const CHECKIN_BLOCK = 'CHECKIN_RECOMP_LENTA';
+
+function parseBlock(notes: string, blockName: string): Record<string, string> {
+  const regex = new RegExp(`\\n?\\[${blockName}\\]\\n([\\s\\S]*?)\\n\\[\\/${blockName}\\]`);
+  const match = notes.match(regex);
+  if (!match) return {};
+
+  return match[1].split('\n').reduce<Record<string, string>>((acc, line) => {
+    const separator = line.indexOf('=');
+    if (separator <= 0) return acc;
+    const key = line.slice(0, separator).trim();
+    const value = line.slice(separator + 1).trim();
+    if (key) acc[key] = value;
+    return acc;
+  }, {});
+}
+
+function stripBlocks(notes: string): string {
+  return notes
+    .replace(/\n?\[BIA_EXTRA\]\n[\s\S]*?\n\[\/BIA_EXTRA\]/g, '')
+    .replace(/\n?\[CHECKIN_RECOMP_LENTA\]\n[\s\S]*?\n\[\/CHECKIN_RECOMP_LENTA\]/g, '')
+    .trim();
+}
+
+function readNumber(values: Record<string, string>, key: string): number {
+  const parsed = parseFloat(values[key] || '');
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
 export const DefinicionBodyTracker: React.FC = () => {
   const { currentWeek, bodyComposition, addBodyComposition } = useDefinicionData();
 
@@ -10,14 +40,55 @@ export const DefinicionBodyTracker: React.FC = () => {
 
   const [peso, setPeso] = useState<number>(existingEntry?.peso || 0);
   const [grasaCorporal, setGrasaCorporal] = useState<number>(existingEntry?.grasaCorporal || 0);
+  const [grasaSubcutanea, setGrasaSubcutanea] = useState<number>(0);
+  const [grasaVisceral, setGrasaVisceral] = useState<number>(0);
+  const [musculoEsqueletico, setMusculoEsqueletico] = useState<number>(0);
+  const [masaMuscular, setMasaMuscular] = useState<number>(0);
+  const [aguaCorporal, setAguaCorporal] = useState<number>(0);
+  const [pesoSinGrasa, setPesoSinGrasa] = useState<number>(0);
+  const [masaOsea, setMasaOsea] = useState<number>(0);
+  const [proteinaCorporal, setProteinaCorporal] = useState<number>(0);
+  const [tmb, setTmb] = useState<number>(0);
+  const [imc, setImc] = useState<number>(0);
   const [cintura, setCintura] = useState<number>(existingEntry?.cintura || 0);
   const [cadera, setCadera] = useState<number>(existingEntry?.cadera || 0);
   const [pecho, setPecho] = useState<number>(existingEntry?.pecho || 0);
   const [brazo, setBrazo] = useState<number>(existingEntry?.brazo || 0);
   const [muslo, setMuslo] = useState<number>(existingEntry?.muslo || 0);
+  const [comidasRelax, setComidasRelax] = useState<number>(0);
+  const [adherenciaNutricion, setAdherenciaNutricion] = useState<number>(0);
+  const [suenoPromedio, setSuenoPromedio] = useState<number>(0);
+  const [hambre, setHambre] = useState<number>(0);
+  const [energia, setEnergia] = useState<number>(0);
+  const [molestias, setMolestias] = useState<string>('');
   const [notas, setNotas] = useState<string>(existingEntry?.notas || '');
   const [isSaving, setIsSaving] = useState(false);
   const [justSaved, setJustSaved] = useState(false);
+
+  const hydrateExtendedFields = (entry?: DefinicionBodyComposition) => {
+    const rawNotes = entry?.notas || '';
+    const bia = parseBlock(rawNotes, BIA_BLOCK);
+    const checkin = parseBlock(rawNotes, CHECKIN_BLOCK);
+
+    setGrasaSubcutanea(entry?.grasaSubcutanea || readNumber(bia, 'grasaSubcutanea'));
+    setGrasaVisceral(entry?.grasaVisceral || readNumber(bia, 'grasaVisceral'));
+    setMusculoEsqueletico(entry?.musculoEsqueletico || readNumber(bia, 'musculoEsqueletico'));
+    setMasaMuscular(entry?.masaMuscular || readNumber(bia, 'masaMuscular'));
+    setAguaCorporal(entry?.aguaCorporal || readNumber(bia, 'aguaCorporal'));
+    setPesoSinGrasa(entry?.pesoSinGrasa || readNumber(bia, 'pesoSinGrasa'));
+    setMasaOsea(entry?.masaOsea || readNumber(bia, 'masaOsea'));
+    setProteinaCorporal(entry?.proteinaCorporal || readNumber(bia, 'proteinaCorporal'));
+    setTmb(entry?.tmb || readNumber(bia, 'tmb'));
+    setImc(entry?.imc || readNumber(bia, 'imc'));
+
+    setComidasRelax(entry?.comidasRelax || readNumber(checkin, 'comidasRelax'));
+    setAdherenciaNutricion(entry?.adherenciaNutricion || readNumber(checkin, 'adherenciaNutricion'));
+    setSuenoPromedio(entry?.suenoPromedio || readNumber(checkin, 'suenoPromedio'));
+    setHambre(entry?.hambre || readNumber(checkin, 'hambre'));
+    setEnergia(entry?.energia || readNumber(checkin, 'energia'));
+    setMolestias(entry?.molestias || checkin.molestias || '');
+    setNotas(stripBlocks(rawNotes));
+  };
 
   useEffect(() => {
     const entry = bodyComposition.find(b => b.week === currentWeek);
@@ -29,7 +100,7 @@ export const DefinicionBodyTracker: React.FC = () => {
       setPecho(entry.pecho || 0);
       setBrazo(entry.brazo || 0);
       setMuslo(entry.muslo || 0);
-      setNotas(entry.notas || '');
+      hydrateExtendedFields(entry);
     } else {
       setPeso(0);
       setGrasaCorporal(0);
@@ -38,7 +109,7 @@ export const DefinicionBodyTracker: React.FC = () => {
       setPecho(0);
       setBrazo(0);
       setMuslo(0);
-      setNotas('');
+      hydrateExtendedFields();
     }
   }, [currentWeek, bodyComposition]);
 
@@ -55,11 +126,27 @@ export const DefinicionBodyTracker: React.FC = () => {
         date: new Date().toISOString(),
         peso,
         grasaCorporal: grasaCorporal > 0 ? grasaCorporal : undefined,
+        grasaSubcutanea: grasaSubcutanea > 0 ? grasaSubcutanea : undefined,
+        grasaVisceral: grasaVisceral > 0 ? grasaVisceral : undefined,
+        musculoEsqueletico: musculoEsqueletico > 0 ? musculoEsqueletico : undefined,
+        masaMuscular: masaMuscular > 0 ? masaMuscular : undefined,
+        aguaCorporal: aguaCorporal > 0 ? aguaCorporal : undefined,
+        pesoSinGrasa: pesoSinGrasa > 0 ? pesoSinGrasa : undefined,
+        masaOsea: masaOsea > 0 ? masaOsea : undefined,
+        proteinaCorporal: proteinaCorporal > 0 ? proteinaCorporal : undefined,
+        tmb: tmb > 0 ? tmb : undefined,
+        imc: imc > 0 ? imc : undefined,
         cintura: cintura > 0 ? cintura : undefined,
         cadera: cadera > 0 ? cadera : undefined,
         pecho: pecho > 0 ? pecho : undefined,
         brazo: brazo > 0 ? brazo : undefined,
         muslo: muslo > 0 ? muslo : undefined,
+        comidasRelax: comidasRelax > 0 ? comidasRelax : undefined,
+        adherenciaNutricion: adherenciaNutricion > 0 ? adherenciaNutricion : undefined,
+        suenoPromedio: suenoPromedio > 0 ? suenoPromedio : undefined,
+        hambre: hambre > 0 ? hambre : undefined,
+        energia: energia > 0 ? energia : undefined,
+        molestias: molestias.trim() || undefined,
         notas: notas.trim(),
       };
       await addBodyComposition(entry);
@@ -87,7 +174,7 @@ export const DefinicionBodyTracker: React.FC = () => {
           Composicion Corporal - Semana {currentWeek}
         </h2>
         <p className="text-gray-600 dark:text-gray-400">
-          Registro semanal de medidas corporales
+          Check-in semanal del Plan Recomp Lenta 2026
         </p>
       </div>
 
@@ -212,6 +299,54 @@ export const DefinicionBodyTracker: React.FC = () => {
           </div>
         </div>
 
+        <div className="mt-6 border-t border-violet-100 dark:border-slate-700 pt-5">
+          <div className="mb-3">
+            <h4 className="text-sm font-semibold text-gray-900 dark:text-white">Datos extra de balanza BIA</h4>
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              Usalos como tendencia, no como medicion exacta.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+            <MetricInput label="Grasa subcutanea %" value={grasaSubcutanea} onChange={setGrasaSubcutanea} max={60} />
+            <MetricInput label="Grasa visceral" value={grasaVisceral} onChange={setGrasaVisceral} max={40} />
+            <MetricInput label="Musculo esqueletico %" value={musculoEsqueletico} onChange={setMusculoEsqueletico} max={80} />
+            <MetricInput label="Masa muscular kg" value={masaMuscular} onChange={setMasaMuscular} max={120} />
+            <MetricInput label="Agua corporal %" value={aguaCorporal} onChange={setAguaCorporal} max={80} />
+            <MetricInput label="Peso sin grasa kg" value={pesoSinGrasa} onChange={setPesoSinGrasa} max={150} />
+            <MetricInput label="Masa osea kg" value={masaOsea} onChange={setMasaOsea} max={10} />
+            <MetricInput label="Proteina %" value={proteinaCorporal} onChange={setProteinaCorporal} max={40} />
+            <MetricInput label="TMB kcal" value={tmb} onChange={setTmb} max={4000} step={1} />
+            <MetricInput label="IMC" value={imc} onChange={setImc} max={60} />
+          </div>
+        </div>
+
+        <div className="mt-6 border-t border-violet-100 dark:border-slate-700 pt-5">
+          <div className="mb-3">
+            <h4 className="text-sm font-semibold text-gray-900 dark:text-white">Check-in de adherencia</h4>
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              Estos datos ayudan a interpretar la semana antes de decidir cambios.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+            <MetricInput label="Comidas relax" value={comidasRelax} onChange={setComidasRelax} max={14} step={1} />
+            <MetricInput label="Adherencia %" value={adherenciaNutricion} onChange={setAdherenciaNutricion} max={100} step={1} />
+            <MetricInput label="Sueno h/dia" value={suenoPromedio} onChange={setSuenoPromedio} max={12} />
+            <MetricInput label="Hambre 1-10" value={hambre} onChange={setHambre} max={10} step={1} />
+            <MetricInput label="Energia 1-10" value={energia} onChange={setEnergia} max={10} step={1} />
+          </div>
+          <div className="mt-4">
+            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+              Molestias / fatiga
+            </label>
+            <input
+              value={molestias}
+              onChange={(e) => setMolestias(e.target.value)}
+              placeholder="Ej: hombro bien, gemelos cargados, sueño flojo..."
+              className="w-full px-3 py-2 border border-violet-300 dark:border-violet-700 rounded-md bg-white dark:bg-slate-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-violet-500"
+            />
+          </div>
+        </div>
+
         {/* Notas */}
         <div className="mt-4">
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
@@ -291,3 +426,29 @@ export const DefinicionBodyTracker: React.FC = () => {
     </div>
   );
 };
+
+interface MetricInputProps {
+  label: string;
+  value: number;
+  onChange: (value: number) => void;
+  max?: number;
+  step?: number;
+}
+
+const MetricInput: React.FC<MetricInputProps> = ({ label, value, onChange, max, step = 0.1 }) => (
+  <div>
+    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+      {label}
+    </label>
+    <input
+      type="number"
+      min="0"
+      max={max}
+      step={step}
+      value={value || ''}
+      onChange={(e) => onChange(parseFloat(e.target.value) || 0)}
+      placeholder="0"
+      className="w-full px-3 py-2 border border-violet-300 dark:border-violet-700 rounded-md bg-white dark:bg-slate-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-violet-500"
+    />
+  </div>
+);

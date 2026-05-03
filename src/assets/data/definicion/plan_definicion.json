@@ -478,7 +478,7 @@
     "miercoles": { "tipo": "liss", "duracion": "45 min", "detalle": "Caminata inclinada 6-8%", "fc_objetivo": "115-133 bpm" },
     "jueves": { "tipo": "liss", "duracion": "45 min", "detalle": "Caminata inclinada 6-8%", "fc_objetivo": "115-133 bpm" },
     "viernes": { "tipo": "liss", "duracion": "45 min", "detalle": "Caminata inclinada 6-8%", "fc_objetivo": "115-133 bpm" },
-    "sabado": { "tipo": "hiit", "duracion": "15-20 min", "detalle": "6-8 intervalos 30s sprint + 90s caminata", "fc_objetivo": "150-159 bpm", "opcional": true },
+    "sabado": { "tipo": "hiit", "duracion": "15-20 min", "detalle": "6-8 intervalos 30s sprint + 90s caminata", "fc_objetivo": "150-159 bpm", "opcional": false },
     "domingo": null
   }
 }

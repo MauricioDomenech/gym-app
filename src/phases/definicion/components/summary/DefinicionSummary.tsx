@@ -3,7 +3,7 @@ import { useDefinicionData } from '../../contexts/DefinicionDataContext';
 import { DefinicionBodyChart } from '../body/DefinicionBodyChart';
 import { DefinicionWeeklyCheckin } from '../checkin/DefinicionWeeklyCheckin';
 import { DefinicionWeeklyDataExchange } from './DefinicionWeeklyDataExchange';
-import { DEFINICION_SUB_PHASES, TOTAL_WEEKS, getMesocycleInfo } from '../../types/definicion';
+import { DEFINICION_SUB_PHASES, RECOMP_PLAN, TOTAL_WEEKS, getMesocycleInfo } from '../../types/definicion';
 import type { DefinicionNutritionTotals } from '../../types/definicion';
 
 export const DefinicionSummary: React.FC = () => {
@@ -76,11 +76,18 @@ export const DefinicionSummary: React.FC = () => {
       {/* Header */}
       <div className="text-center">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-          Resumen del Plan de Definicion
+          {RECOMP_PLAN.name}
         </h2>
         <p className="text-gray-600 dark:text-gray-400">
-          Plan de 22 semanas — Analisis completo
+          {RECOMP_PLAN.targetLabel} — revision semanal antes de generar el siguiente import
         </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <SummaryPlanCard label="Calorias base" value={`${RECOMP_PLAN.kcalRange}`} detail={`Promedio ~${RECOMP_PLAN.kcalAverage} kcal`} />
+        <SummaryPlanCard label="Proteina" value={RECOMP_PLAN.proteinRange} detail="Prioridad para retener masa muscular" />
+        <SummaryPlanCard label="Ritmo objetivo" value={`${RECOMP_PLAN.targetWeeklyLossMin}-${RECOMP_PLAN.targetWeeklyLossMax} kg/sem`} detail={`Vigilar si supera ${RECOMP_PLAN.rapidWeeklyLossKg} kg/sem`} />
+        <SummaryPlanCard label="Cardio" value="Obligatorio" detail="LISS lunes-viernes + HIIT semanal" />
       </div>
 
       {/* Weekly Check-in */}
@@ -89,7 +96,7 @@ export const DefinicionSummary: React.FC = () => {
       {/* Phase Timeline Overview */}
       <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-          Progreso por Sub-Fase
+          Progreso por Bloques
         </h3>
         <div className="space-y-4">
           {DEFINICION_SUB_PHASES.map(phase => {
@@ -117,8 +124,8 @@ export const DefinicionSummary: React.FC = () => {
                       {phase.nombre}
                     </h4>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Semanas {phase.semanaInicio}-{phase.semanaFin} ({phaseWeeksCount} sem.) — {phase.kcalDiarias} kcal/dia
-                      {phase.deficit > 0 && ` (deficit ${phase.deficit} kcal)`}
+                      Semanas {phase.semanaInicio}-{phase.semanaFin} ({phaseWeeksCount} sem.) — referencia previa {phase.kcalDiarias} kcal/dia
+                      {phase.deficit > 0 && ` (ahora se ajusta por check-in)`}
                     </p>
                   </div>
                   <div className="flex gap-4 text-sm">
@@ -333,10 +340,10 @@ export const DefinicionSummary: React.FC = () => {
           <div className="bg-white dark:bg-slate-800 rounded-lg p-4">
             <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Nutricion</h4>
             <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-              <li>Mantiene la proteina alta (~180g/dia)</li>
-              <li>Los diet breaks ayudan a la adherencia</li>
-              <li>Ajusta calorias gradualmente entre fases</li>
-              <li>No bajes mas de 500-600 kcal de deficit</li>
+              <li>Calorias actuales como punto de partida</li>
+              <li>Proteina alta todos los dias</li>
+              <li>Comidas relax registradas como adherencia real</li>
+              <li>Subir calorias si la bajada o la fatiga se aceleran</li>
             </ul>
           </div>
 
@@ -344,9 +351,9 @@ export const DefinicionSummary: React.FC = () => {
             <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Entrenamiento</h4>
             <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
               <li>Registra tu RIR en cada ejercicio para monitorear fatiga</li>
-              <li>Los deloads son obligatorios, no los saltes</li>
+              <li>Consolidar si la semana anterior tuvo muchos RIR 0</li>
               <li>Prioriza mantener fuerza sobre volumen</li>
-              <li>El cardio LISS preserva mas musculo que HIIT</li>
+              <li>Cardio obligatorio, sin compensaciones punitivas</li>
             </ul>
           </div>
         </div>
@@ -354,3 +361,11 @@ export const DefinicionSummary: React.FC = () => {
     </div>
   );
 };
+
+const SummaryPlanCard: React.FC<{ label: string; value: string; detail: string }> = ({ label, value, detail }) => (
+  <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-4 border border-emerald-100 dark:border-slate-700">
+    <p className="text-xs font-medium text-emerald-700 dark:text-emerald-300">{label}</p>
+    <p className="mt-1 text-lg font-bold text-gray-900 dark:text-white">{value}</p>
+    <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">{detail}</p>
+  </div>
+);

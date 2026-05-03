@@ -30,6 +30,19 @@ export const DEFINICION_SUB_PHASES: DefinicionSubPhaseConfig[] = [
 
 export const TOTAL_WEEKS = 22;
 
+export const RECOMP_PLAN = {
+  name: 'Plan Recomp Lenta 2026',
+  targetLabel: 'Bajar grasa lentamente hasta fin de 2026',
+  kcalRange: '1930-2028 kcal/dia',
+  kcalAverage: 1965,
+  proteinRange: '190-210 g/dia',
+  targetWeeklyLossMin: 0.25,
+  targetWeeklyLossMax: 0.45,
+  acceptableWeeklyLossMax: 0.6,
+  rapidWeeklyLossKg: 0.8,
+  noChangeWeeksForAdjustment: 3,
+} as const;
+
 // ========================================
 // MESOCYCLE UTILITIES
 // ========================================
@@ -206,11 +219,27 @@ export interface DefinicionBodyComposition {
   date: string;
   peso: number;
   grasaCorporal?: number;
+  grasaSubcutanea?: number;
+  grasaVisceral?: number;
+  musculoEsqueletico?: number;
+  masaMuscular?: number;
+  aguaCorporal?: number;
+  pesoSinGrasa?: number;
+  masaOsea?: number;
+  proteinaCorporal?: number;
+  tmb?: number;
+  imc?: number;
   cintura?: number;
   cadera?: number;
   pecho?: number;
   brazo?: number;
   muslo?: number;
+  comidasRelax?: number;
+  adherenciaNutricion?: number;
+  suenoPromedio?: number;
+  hambre?: number;
+  energia?: number;
+  molestias?: string;
   notas: string;
 }
 

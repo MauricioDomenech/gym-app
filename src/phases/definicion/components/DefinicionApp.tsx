@@ -12,7 +12,7 @@ import { DefinicionBodyTracker } from './body/DefinicionBodyTracker';
 import { DefinicionDailyWeightInput } from './body/DefinicionDailyWeightInput';
 import { DefinicionSummary } from './summary/DefinicionSummary';
 import { DefinicionProgressAlerts } from './checkin/DefinicionProgressAlerts';
-import { getMesocycleInfo } from '../types/definicion';
+import { RECOMP_PLAN, getMesocycleInfo } from '../types/definicion';
 import type { DayOfWeek } from '../../../shared/types/base';
 
 const DefinicionContent: React.FC = () => {
@@ -46,7 +46,7 @@ const DefinicionContent: React.FC = () => {
   return (
     <div className="min-h-screen bg-emerald-50 dark:bg-slate-900">
       <Header
-        title="Plan Nutricional y Ejercicios - Definicion"
+        title={RECOMP_PLAN.name}
         className="bg-gradient-to-r from-emerald-600 to-teal-600"
       />
       <DefinicionPhaseTimeline />
