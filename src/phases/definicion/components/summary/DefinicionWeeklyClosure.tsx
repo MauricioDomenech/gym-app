@@ -87,6 +87,11 @@ export const DefinicionWeeklyClosure: React.FC = () => {
         ))}
       </div>
 
+      <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <PlanningSignalPanel title="Foco para decidir" items={closure.planningSignals.decisionFocus} />
+        <PlanningSignalPanel title="Recomendaciones para revisar" items={closure.planningSignals.recommendations} />
+      </div>
+
       <div className="mt-5 p-4 rounded-lg bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-700">
         <p className="text-sm font-semibold text-gray-900 dark:text-white">Siguiente paso</p>
         <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
@@ -127,5 +132,18 @@ const ChecklistRow: React.FC<{ item: WeeklyClosureChecklistItem }> = ({ item }) 
         {item.ok ? 'OK' : item.required ? 'Falta' : 'Opcional'}
       </span>
     </div>
+  </div>
+);
+
+const PlanningSignalPanel: React.FC<{ title: string; items: string[] }> = ({ title, items }) => (
+  <div className="p-4 rounded-lg bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-700">
+    <p className="text-sm font-semibold text-gray-900 dark:text-white">{title}</p>
+    <ul className="mt-2 space-y-1.5">
+      {items.map(item => (
+        <li key={item} className="text-xs text-gray-600 dark:text-gray-400">
+          {item}
+        </li>
+      ))}
+    </ul>
   </div>
 );

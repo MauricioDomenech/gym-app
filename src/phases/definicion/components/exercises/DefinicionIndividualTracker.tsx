@@ -4,6 +4,15 @@ import { parseSeriesString, RIR_OPTIONS, getRIRLabel } from '../../types/definic
 import { buildWorkoutNotes, parseWorkoutNotes } from '../../utils/workoutNotes';
 import type { DefinicionIndividualTrackerProps, DefinicionWorkoutProgress, RIRValue } from '../../types/definicion';
 
+const QUICK_FEEDBACK_OPTIONS = [
+  'Bien',
+  'Facil',
+  'Pesado',
+  'Molestia',
+  'Subir',
+  'Mantener',
+];
+
 export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerProps> = ({
   exercise,
   onProgressSaved,
@@ -144,6 +153,15 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
     const newWeights = new Array(currentSeriesCount).fill(0);
     setWeights(newWeights);
     setRir(null);
+  };
+
+  const addQuickFeedback = (feedback: string) => {
+    setObservations(prev => {
+      const current = prev.trim();
+      if (!current) return feedback;
+      if (current.toLowerCase().includes(feedback.toLowerCase())) return current;
+      return `${current}; ${feedback}`;
+    });
   };
 
   const hasProgress = weights.some(weight => weight > 0) || observations.trim().length > 0 || coachPlan.trim().length > 0 || rir !== null;
@@ -303,6 +321,18 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
           rows={3}
           className="w-full px-2 py-2 border border-emerald-300 dark:border-emerald-700 rounded text-sm bg-white dark:bg-slate-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 resize-none"
         />
+        <div className="flex flex-wrap gap-1.5">
+          {QUICK_FEEDBACK_OPTIONS.map(option => (
+            <button
+              key={option}
+              type="button"
+              onClick={() => addQuickFeedback(option)}
+              className="px-2 py-1 text-[11px] font-medium rounded border border-emerald-200 dark:border-emerald-700 text-emerald-700 dark:text-emerald-300 bg-white dark:bg-slate-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition-colors"
+            >
+              {option}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Action Buttons */}

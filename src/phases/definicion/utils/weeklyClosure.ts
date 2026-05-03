@@ -6,6 +6,7 @@ import type {
   DefinicionDailyWeight,
   DefinicionWorkoutDay,
   DefinicionWorkoutProgress,
+  RIRValue,
 } from '../types/definicion';
 import { parseWorkoutNotes } from './workoutNotes';
 
@@ -39,6 +40,8 @@ export interface WeeklyClosureSummary {
     cardioPlanned: number;
     cardioPercent: number;
     rirLogs: number;
+    averageRir: number | null;
+    zeroRirLogs: number;
     feedbackLogs: number;
     coachTargets: number;
     nutritionAdherencePercent: number | null;
@@ -47,6 +50,11 @@ export interface WeeklyClosureSummary {
     hunger: number | null;
     energy: number | null;
     discomforts: string | null;
+  };
+  planningSignals: {
+    dataQuality: ReadinessStatus;
+    decisionFocus: string[];
+    recommendations: string[];
   };
   checklist: WeeklyClosureChecklistItem[];
   nextStep: string;
@@ -90,6 +98,13 @@ export function buildWeeklyClosureSummary(params: BuildWeeklyClosureParams): Wee
     : 0;
 
   const rirLogs = weekWorkoutProgress.filter(p => p.rir !== null && p.rir !== undefined).length;
+  const rirValues = weekWorkoutProgress
+    .map(p => p.rir)
+    .filter((rir): rir is RIRValue => typeof rir === 'number');
+  const averageRir = rirValues.length > 0
+    ? Math.round((rirValues.reduce<number>((sum, rir) => sum + rir, 0) / rirValues.length) * 100) / 100
+    : null;
+  const zeroRirLogs = rirValues.filter(rir => rir === 0).length;
   const feedbackLogs = weekWorkoutProgress.filter(p => parseWorkoutNotes(p.observations).userFeedback).length;
   const coachTargets = weekWorkoutProgress.filter(p => parseWorkoutNotes(p.observations).coachPlan).length;
 
@@ -167,6 +182,19 @@ export function buildWeeklyClosureSummary(params: BuildWeeklyClosureParams): Wee
       : 'missing';
 
   const status = getWeeklyClosureStatus(readiness);
+  const planningSignals = buildPlanningSignals({
+    readiness,
+    weeklyChange,
+    workoutPercent,
+    cardioPercent,
+    feedbackLogs,
+    rirLogs,
+    averageRir,
+    zeroRirLogs,
+    nutritionAdherence: weekBody?.adherenciaNutricion ?? null,
+    relaxMeals: weekBody?.comidasRelax ?? null,
+    dailyWeightEntries: weekDailyWeights.length,
+  });
 
   return {
     week,
@@ -187,6 +215,8 @@ export function buildWeeklyClosureSummary(params: BuildWeeklyClosureParams): Wee
       cardioPlanned: plannedCardioDays.length,
       cardioPercent,
       rirLogs,
+      averageRir,
+      zeroRirLogs,
       feedbackLogs,
       coachTargets,
       nutritionAdherencePercent: weekBody?.adherenciaNutricion ?? null,
@@ -196,10 +226,100 @@ export function buildWeeklyClosureSummary(params: BuildWeeklyClosureParams): Wee
       energy: weekBody?.energia ?? null,
       discomforts: weekBody?.molestias?.trim() || null,
     },
+    planningSignals,
     checklist,
     nextStep: readiness === 'ready'
       ? `Exporta la semana ${week}, revisamos conversando y recien despues genero el JSON de la semana ${week + 1}.`
       : `Completa los faltantes de la semana ${week} y vuelve al cierre antes de exportar.`,
+  };
+}
+
+interface PlanningSignalParams {
+  readiness: ReadinessStatus;
+  weeklyChange: number | null;
+  workoutPercent: number;
+  cardioPercent: number;
+  feedbackLogs: number;
+  rirLogs: number;
+  averageRir: number | null;
+  zeroRirLogs: number;
+  nutritionAdherence: number | null;
+  relaxMeals: number | null;
+  dailyWeightEntries: number;
+}
+
+function buildPlanningSignals(params: PlanningSignalParams): WeeklyClosureSummary['planningSignals'] {
+  const decisionFocus: string[] = [];
+  const recommendations: string[] = [];
+  const adherenceIsUsable = params.nutritionAdherence !== null && params.nutritionAdherence >= 80;
+
+  if (params.dailyWeightEntries < 3) {
+    decisionFocus.push('Peso: faltan pesos diarios para interpretar tendencia.');
+  }
+
+  if (params.nutritionAdherence === null) {
+    decisionFocus.push('Nutricion: falta adherencia semanal y comidas relax.');
+    recommendations.push('No ajustar calorias solo por peso si no hay adherencia nutricional registrada.');
+  } else if (params.nutritionAdherence < 80) {
+    decisionFocus.push(`Nutricion: adherencia baja (${params.nutritionAdherence}%).`);
+    recommendations.push('Antes de bajar calorias, priorizar mejorar ejecucion del plan durante una semana.');
+  }
+
+  if (params.relaxMeals !== null && params.relaxMeals >= 4) {
+    decisionFocus.push(`Nutricion: ${params.relaxMeals} comidas relax pueden distorsionar el peso semanal.`);
+  }
+
+  if (params.cardioPercent < 100) {
+    decisionFocus.push(`Cardio: completado ${params.cardioPercent}% del cardio obligatorio.`);
+    recommendations.push('No compensar con recorte agresivo de calorias; primero completar el cardio planificado.');
+  }
+
+  if (params.workoutPercent < 70) {
+    decisionFocus.push(`Entrenamiento: solo ${params.workoutPercent}% de ejercicios con peso.`);
+  }
+
+  if (params.feedbackLogs === 0) {
+    decisionFocus.push('Entrenamiento: falta feedback cualitativo de ejercicios.');
+    recommendations.push('Registrar al menos feedback corto en ejercicios pesados o con molestias para ajustar cargas.');
+  }
+
+  if (params.averageRir !== null && params.averageRir < 1) {
+    decisionFocus.push(`Fatiga: RIR promedio bajo (${params.averageRir}).`);
+    recommendations.push('Vigilar fatiga antes de subir cargas o volumen.');
+  }
+
+  if (params.zeroRirLogs >= 5) {
+    decisionFocus.push(`Intensidad: ${params.zeroRirLogs} registros a RIR 0.`);
+  }
+
+  if (params.weeklyChange !== null) {
+    const weeklyLoss = -params.weeklyChange;
+    if (weeklyLoss > RECOMP_PLAN.rapidWeeklyLossKg) {
+      decisionFocus.push(`Peso: bajada rapida (${weeklyLoss.toFixed(2)} kg).`);
+      recommendations.push('Si fuerza o energia bajan, considerar subir calorias o reducir agresividad.');
+    } else if (adherenceIsUsable && weeklyLoss < RECOMP_PLAN.targetWeeklyLossMin) {
+      decisionFocus.push(`Peso: bajada menor al objetivo (${weeklyLoss.toFixed(2)} kg).`);
+      recommendations.push('Si adherencia y cardio fueron altos, evaluar ajuste pequeno tras conversar.');
+    } else if (adherenceIsUsable && weeklyLoss <= RECOMP_PLAN.targetWeeklyLossMax) {
+      decisionFocus.push(`Peso: ritmo dentro del objetivo (${weeklyLoss.toFixed(2)} kg).`);
+      recommendations.push('Mantener calorias y progresion si fuerza, energia y hambre estan controladas.');
+    }
+  }
+
+  if (decisionFocus.length === 0) {
+    decisionFocus.push('Datos completos sin alertas relevantes.');
+  }
+
+  if (recommendations.length === 0) {
+    recommendations.push(params.readiness === 'ready'
+      ? 'Semana lista para revisar y decidir el siguiente JSON.'
+      : 'Completar datos faltantes antes de tomar decisiones finas.');
+  }
+
+  return {
+    dataQuality: params.readiness,
+    decisionFocus,
+    recommendations,
   };
 }
 

@@ -5,6 +5,8 @@ import type { DefinicionBodyComposition } from '../../types/definicion';
 
 const BIA_BLOCK = 'BIA_EXTRA';
 const CHECKIN_BLOCK = 'CHECKIN_RECOMP_LENTA';
+const ADHERENCE_PRESETS = [100, 90, 80, 70, 60];
+const RELAX_MEAL_PRESETS = [0, 1, 2, 3, 4];
 
 function parseBlock(notes: string, blockName: string): Record<string, string> {
   const regex = new RegExp(`\\n?\\[${blockName}\\]\\n([\\s\\S]*?)\\n\\[\\/${blockName}\\]`);
@@ -334,6 +336,21 @@ export const DefinicionBodyTracker: React.FC = () => {
             <MetricInput label="Hambre 1-10" value={hambre} onChange={setHambre} max={10} step={1} />
             <MetricInput label="Energia 1-10" value={energia} onChange={setEnergia} max={10} step={1} />
           </div>
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <QuickPresetGroup
+              label="Adherencia rapida"
+              suffix="%"
+              values={ADHERENCE_PRESETS}
+              selectedValue={adherenciaNutricion}
+              onSelect={setAdherenciaNutricion}
+            />
+            <QuickPresetGroup
+              label="Comidas relax rapidas"
+              values={RELAX_MEAL_PRESETS}
+              selectedValue={comidasRelax}
+              onSelect={setComidasRelax}
+            />
+          </div>
           <div className="mt-4">
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Molestias / fatiga
@@ -450,5 +467,35 @@ const MetricInput: React.FC<MetricInputProps> = ({ label, value, onChange, max, 
       placeholder="0"
       className="w-full px-3 py-2 border border-violet-300 dark:border-violet-700 rounded-md bg-white dark:bg-slate-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-violet-500"
     />
+  </div>
+);
+
+interface QuickPresetGroupProps {
+  label: string;
+  values: number[];
+  selectedValue: number;
+  onSelect: (value: number) => void;
+  suffix?: string;
+}
+
+const QuickPresetGroup: React.FC<QuickPresetGroupProps> = ({ label, values, selectedValue, onSelect, suffix = '' }) => (
+  <div>
+    <p className="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">{label}</p>
+    <div className="flex flex-wrap gap-1.5">
+      {values.map(value => (
+        <button
+          key={value}
+          type="button"
+          onClick={() => onSelect(value)}
+          className={`px-2.5 py-1 text-xs font-medium rounded border transition-colors ${
+            selectedValue === value
+              ? 'bg-violet-600 border-violet-600 text-white'
+              : 'bg-white dark:bg-slate-800 border-violet-200 dark:border-violet-700 text-violet-700 dark:text-violet-300 hover:bg-violet-50 dark:hover:bg-violet-900/30'
+          }`}
+        >
+          {value}{suffix}
+        </button>
+      ))}
+    </div>
   </div>
 );
