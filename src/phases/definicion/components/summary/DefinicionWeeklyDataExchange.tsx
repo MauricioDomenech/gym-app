@@ -10,7 +10,7 @@ import type { ImportResult } from '../../services/weeklyDataService';
 
 export const DefinicionWeeklyDataExchange: React.FC = () => {
   const {
-    workoutProgress, bodyComposition, cardioLogs, currentWeek, refreshData,
+    workoutData, workoutProgress, bodyComposition, cardioLogs, dailyWeights, currentWeek, refreshData,
   } = useDefinicionData();
 
   const [exportWeek, setExportWeek] = useState(currentWeek > 0 ? currentWeek : 1);
@@ -25,7 +25,7 @@ export const DefinicionWeeklyDataExchange: React.FC = () => {
   // ========================================
 
   const handleExport = () => {
-    const data = buildWeeklyExport(exportWeek, workoutProgress, bodyComposition, cardioLogs);
+    const data = buildWeeklyExport(exportWeek, workoutData, workoutProgress, bodyComposition, cardioLogs, dailyWeights);
     downloadWeeklyExport(data);
     setExportDone(true);
     setTimeout(() => setExportDone(false), 4000);

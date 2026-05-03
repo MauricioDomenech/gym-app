@@ -3,9 +3,14 @@ import type {
   DefinicionWorkoutProgress,
   DefinicionBodyComposition,
   DefinicionCardioLog,
+  DefinicionDailyWeight,
+  DefinicionWorkoutDay,
 } from '../types/definicion';
 import { getSubPhaseForWeek, getMesocycleInfo, TOTAL_WEEKS } from '../types/definicion';
+import { DefinicionExerciseParser } from './definicionExerciseParser';
 import { buildWorkoutNotes, parseWorkoutNotes } from '../utils/workoutNotes';
+import { buildWeeklyClosureSummary } from '../utils/weeklyClosure';
+import type { WeeklyClosureSummary } from '../utils/weeklyClosure';
 
 // ========================================
 // EXPORT/IMPORT JSON SCHEMA
@@ -20,7 +25,9 @@ export interface WeeklyExportData {
   mesocycle: string;
   workoutProgress: DefinicionWorkoutProgress[];
   bodyComposition: DefinicionBodyComposition | null;
+  dailyWeights: DefinicionDailyWeight[];
   cardioLogs: DefinicionCardioLog[];
+  weeklyClosure: WeeklyClosureSummary;
 }
 
 export interface WeeklyImportData {
@@ -66,12 +73,23 @@ function validateImportData(data: unknown): data is WeeklyImportData {
 
 export function buildWeeklyExport(
   week: number,
+  workoutData: { [week: number]: { [day: string]: DefinicionWorkoutDay } },
   workoutProgress: DefinicionWorkoutProgress[],
   bodyComposition: DefinicionBodyComposition[],
   cardioLogs: DefinicionCardioLog[],
+  dailyWeights: DefinicionDailyWeight[],
 ): WeeklyExportData {
   const subPhase = getSubPhaseForWeek(week);
   const meso = getMesocycleInfo(week);
+  const weeklyClosure = buildWeeklyClosureSummary({
+    week,
+    workoutData,
+    workoutProgress,
+    bodyComposition,
+    cardioLogs,
+    dailyWeights,
+    getCardioConfig: (day) => DefinicionExerciseParser.getCardioConfig(day),
+  });
 
   return {
     version: '1.0',
@@ -82,7 +100,9 @@ export function buildWeeklyExport(
     mesocycle: `M${meso.mesocycleNumber}.${meso.weekInMesocycle}${meso.isDeload ? ' (Deload)' : ''}`,
     workoutProgress: workoutProgress.filter(p => p.week === week),
     bodyComposition: bodyComposition.find(b => b.week === week) || null,
+    dailyWeights: dailyWeights.filter(w => w.week === week),
     cardioLogs: cardioLogs.filter(l => l.week === week),
+    weeklyClosure,
   };
 }
 

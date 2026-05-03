@@ -2,6 +2,7 @@ import React from 'react';
 import { useDefinicionData } from '../../contexts/DefinicionDataContext';
 import { DefinicionBodyChart } from '../body/DefinicionBodyChart';
 import { DefinicionWeeklyCheckin } from '../checkin/DefinicionWeeklyCheckin';
+import { DefinicionWeeklyClosure } from './DefinicionWeeklyClosure';
 import { DefinicionWeeklyDataExchange } from './DefinicionWeeklyDataExchange';
 import { RECOMP_PLAN, TOTAL_WEEKS, getMesocycleInfo, getSubPhaseForWeek } from '../../types/definicion';
 import type { DefinicionNutritionTotals } from '../../types/definicion';
@@ -102,6 +103,9 @@ export const DefinicionSummary: React.FC = () => {
 
       {/* Weekly Check-in */}
       <DefinicionWeeklyCheckin />
+
+      {/* Weekly Closure */}
+      <DefinicionWeeklyClosure />
 
       {/* Plan Overview */}
       <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-6">
