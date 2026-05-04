@@ -48,11 +48,14 @@ export const DefinicionIndividualTracker: React.FC<DefinicionIndividualTrackerPr
       null
     );
 
-    if (existingProgress && existingProgress.weights.length > 0) {
-      const loadedSeriesCount = existingProgress.seriesCount || existingProgress.weights.length;
+    if (existingProgress) {
+      const loadedSeriesCount = existingProgress.seriesCount || existingProgress.weights.length || seriesInfo.defaultSeries;
+      const loadedWeights = existingProgress.weights.length > 0
+        ? existingProgress.weights
+        : new Array(loadedSeriesCount).fill(0);
       setCurrentSeriesCount(loadedSeriesCount);
-      setWeights([...existingProgress.weights]);
-      setSavedWeights([...existingProgress.weights]);
+      setWeights([...loadedWeights]);
+      setSavedWeights([...loadedWeights]);
       const parsedNotes = parseWorkoutNotes(existingProgress.observations);
       setCoachPlan(parsedNotes.coachPlan);
       setSavedCoachPlan(parsedNotes.coachPlan);
