@@ -1,0 +1,754 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "importDate": "2026-05-12T06:07:52.248Z",
+  "weekTo": 8,
+  "workoutProgress": [
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 8,
+      "weights": [
+        86,
+        86,
+        86
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-11T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 86kg. Buscar 13 reps con RIR 1, duro pero sin calambres y sin fallo. Descanso completo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 8,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-11T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CONSOLIDAR. Mantener 5.7kg pero sin rest-pause. Buscar 12-13 reps limpias y cortar antes del fallo. Objetivo: calidad y hombro estable, no intensidad extra.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 8,
+      "weights": [
+        17.5,
+        17.5,
+        17.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-11T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CONSOLIDAR. Mantener 17.5kg. Buscar 9-10 reps por lado con control y RIR 1. Si vuelve a sentirse pesado/RIR 0, mantener otra semana.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 8,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-11T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEMANA PUENTE. Mantener 59kg. Buscar 12-13 reps con RIR 1-2, sin estirar de mas el hombro derecho. Si aparece molestia, acortar rango y dejar 2 RIR.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 8,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-11T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEMANA PUENTE. Mantener 50kg por viaje + molestia de hombro derecho. Buscar 8-9 reps con RIR 1-2, sin forzar rango doloroso. Si el hombro molesta mas de 2/10, bajar a 45kg y priorizar tecnica.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-press-hombros-en-maquina-con-respaldo",
+      "day": "lunes",
+      "week": 8,
+      "weights": [
+        35,
+        35,
+        35
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-11T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEMANA PUENTE. Mantener 35kg. Buscar 9 reps limpias con RIR 1-2. Si el hombro derecho se siente sensible, no perseguir la rep 10; controlar recorrido y escapulas.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 8,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-11T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEMANA PUENTE. Mantener peso correcto 23.8kg. Buscar 12-13 reps con RIR 1. Guardar 26.1kg para la semana siguiente si esta semana vuelve a salir solido.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 8,
+      "weights": [
+        22.5,
+        22.5,
+        22.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-12T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 22.5kg. Buscar 10-11 reps con RIR 1-2. Subida pospuesta por semana puente.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-martillo",
+      "day": "martes",
+      "week": 8,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-12T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 12kg. Buscar 12 reps limpias con RIR 1. Descanso 2 min aceptado. Subir solo cuando quede RIR 2 real.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-dead-bug",
+      "day": "martes",
+      "week": 8,
+      "weights": [
+        1,
+        1
+      ],
+      "seriesCount": 2,
+      "date": "2026-05-12T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener. 10 por lado, lento y controlado. Calidad por encima de reps.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 8,
+      "weights": [
+        66,
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-12T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEMANA PUENTE. Mantener 66kg. Buscar 10 reps con RIR 1-2; si sale muy bien, permitir 11 en la ultima, pero no subir peso todavia.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-elevacion-piernas-en-silla-romana",
+      "day": "martes",
+      "week": 8,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-12T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener silla romana. Buscar 15-17 reps limpias sin llegar al fallo; parar si se pierde control lumbar o aparecen calambres.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-face-pull",
+      "day": "martes",
+      "week": 8,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-12T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CONSOLIDAR. Mantener 59kg. Buscar 12-13 reps sin rest-pause y sin fallo. Si queda RIR 0 otra vez, mantener igual la semana siguiente.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 8,
+      "weights": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-12T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener maquina de 52kg. Semana pasada salio 10 reps RIR 2; buscar 10-11 reps con la misma maquina y mismo setup. No cambiar de maquina sin anotarlo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-reverse-wrist-curl",
+      "day": "martes",
+      "week": 8,
+      "weights": [
+        5,
+        5
+      ],
+      "seriesCount": 2,
+      "date": "2026-05-12T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 5kg. Buscar 16-17 reps con control, especialmente lado izquierdo. No acelerar la excentrica.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 8,
+      "weights": [
+        8,
+        8
+      ],
+      "seriesCount": 2,
+      "date": "2026-05-12T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 8kg. Buscar 20 reps limpias con RIR 1. No subir a 9kg esta semana; priorizar control y rango completo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 8,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-13T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 41kg. Buscar 10-11 reps con RIR 1. No ir al fallo; controlar la excentrica.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 8,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-13T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 55kg. Buscar 11 reps con RIR 1, sin subir. Si quedan cargados para sabado, mantener 10-11 reps limpias.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 8,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-13T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CONSOLIDAR. Mantener 50kg. Semana pasada 10 reps RIR 1 pero pesado; repetir 10 reps con mejor margen, sin subir. Si el viaje dejo fatiga, 9 reps con RIR 1 esta perfecto.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 8,
+      "weights": [
+        5,
+        5,
+        5
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-13T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REPETIR por falta de feedback. Mantener 5kg. Buscar 13 reps con extension controlada, sin hiperextender lumbar.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 8,
+      "weights": [
+        85,
+        85,
+        85
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-13T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CONSOLIDAR. Mantener 85kg. Buscar 11 reps con RIR 1-2. No subir esta semana; prioridad recuperar ritmo post-viaje.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 8,
+      "weights": [
+        10.2,
+        10.2,
+        10.2
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CONSOLIDAR. Mantener 10.2kg. Buscar 10 reps limpias con RIR 1, sin llegar tan cerca del fallo. Ajustar angulo si molesta el hombro.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-myo-reps",
+      "day": "jueves",
+      "week": 8,
+      "weights": [
+        5.7
+      ],
+      "seriesCount": 1,
+      "date": "2026-05-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REDUCIR INTENSIDAD. Mantener 5.7kg pero hacer myo-reps conservador: activacion 12-13 reps, luego 4-3-3. Cortar si aparece fallo tecnico.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-face-pull--reverse-fly",
+      "day": "jueves",
+      "week": 8,
+      "weights": [
+        7.9,
+        7.9,
+        7.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CONSOLIDAR. Mantener 7.9kg. Buscar 12-13 reps, mejor tecnica y sin fallo. Mantener porque fue duro aunque mejoro.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-fondos-en-maquina",
+      "day": "jueves",
+      "week": 8,
+      "weights": [
+        45,
+        45,
+        45
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEMANA PUENTE. Mantener 45kg de ayuda. Buscar 10-11 reps con RIR 1-2. Recordatorio: en esta maquina bajar el numero a 41kg significa menos ayuda y mas dificultad; dejar 41kg para cuando hombro/triceps esten frescos.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 8,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CONSOLIDAR. Mantener 73kg. Buscar 9 reps con RIR 1-2. Si el hombro derecho aparece, reducir rango o bajar carga; no perseguir subida.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-triceps-overhead-cable",
+      "day": "jueves",
+      "week": 8,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 23.8kg. Buscar 10 reps con RIR 1-2. Si se siente pesado, priorizar codos fijos y recorrido controlado.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 8,
+      "weights": [
+        12.5,
+        12.5,
+        12.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CONSOLIDAR. Mantener 12.5kg. Buscar 10 reps con mejor control y sin convertirlo en fallo. Si sigue RIR 0, mantener otra semana.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 8,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "UNICA SUBIDA CLARA. Subir a 41kg porque 36kg salio facil con RIR 2. Buscar 8-9 reps con RIR 1-2. Si no llegas a 8 limpias, volver a 36kg y buscar 11-12.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 8,
+      "weights": [
+        24,
+        24
+      ],
+      "seriesCount": 2,
+      "date": "2026-05-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 24kg. Pesado pero util: caminar lento, agarre fuerte, postura alta. No subir ni alargar si el agarre llega al limite.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 8,
+      "weights": [
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "CONSOLIDAR. Mantener 66kg. Semana pasada salio 10 reps pesado; repetir 10 reps con mejor margen. Si sale RIR 2, recien buscar 11.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 8,
+      "weights": [
+        28.4,
+        28.4,
+        28.4
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 28.4kg. Buscar 11-12 reps con RIR 1. Guardar 30.4kg para la proxima si vuelve a salir bien.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 8,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 59kg. Buscar 10-11 reps con RIR 1. No subir por semana puente.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 8,
+      "weights": [
+        9,
+        9,
+        9
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 9kg. Objetivo 20/20/18-20 reps, sin subir a 10kg todavia. La subida queda anotada para cuando las 3 series lleguen a 20 con margen.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 8,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REPETIR por falta de feedback. Bodyweight, 12 reps. Descanso 90-120 seg. No buscar fallo; dejar 1 RIR si el core viene fatigado.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-cable-kickback-gluteos",
+      "day": "sabado",
+      "week": 8,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REPETIR por falta de feedback. Mantener subida a 17kg. Buscar 10-11 reps con RIR 1-2. Si no llegas a 9, volver a 14.7kg.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 8,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REPETIR por falta de feedback. Mantener 36kg y buscar 13 reps con RIR 1. Si vuelve a fallo, mantener otra semana.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 8,
+      "weights": [
+        45,
+        45,
+        45,
+        45
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REPETIR por falta de feedback. Mantener 45kg. Buscar 13 reps, o 12 reps limpias si gemelos llegan fatigados del miercoles.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-piernas-en-silla-romana",
+      "day": "sabado",
+      "week": 8,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REPETIR por falta de feedback. 10-12 reps bodyweight si el core llega bien. Si hay calambres o fatiga alta, saltar sin compensar.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 8,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REPETIR por falta de feedback. Mantener 41kg y buscar 12 reps sin fallo, RIR 1. No subir.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 8,
+      "weights": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REPETIR por falta de feedback. Mantener 25kg. Buscar 16 reps si sale limpio; mantener opcion de apilar disco/mancuerna.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 8,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REPETIR por falta de feedback. Mantener 17kg. Buscar 10 reps por lado con control. Si no llegas a 9, volver a 14.7kg.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 8,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REPETIR por falta de feedback. Mantener solo peso corporal. Buscar 12 reps por pierna con mejor equilibrio, tempo 3-1-1. No añadir mancuerna todavia.",
+      "rir": null
+    }
+  ],
+  "cardioLogs": [
+    {
+      "day": "lunes",
+      "week": 8,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "OBLIGATORIO. Semana puente: LISS zona 2 en cinta 6-8% inclinacion, ritmo conversacional. Objetivo volver a rutina, no compensar el viaje.",
+      "date": "2026-05-11T17:00:00.000Z"
+    },
+    {
+      "day": "martes",
+      "week": 8,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS zona 2. Mantener intensidad baja para acumular adherencia sin interferir con entrenamiento.",
+      "date": "2026-05-12T17:00:00.000Z"
+    },
+    {
+      "day": "miercoles",
+      "week": 8,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS zona 2, especialmente suave despues de piernas. Registrar completado real.",
+      "date": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "day": "jueves",
+      "week": 8,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS zona 2. No subir intensidad para compensar comidas fuera de plan.",
+      "date": "2026-05-14T17:00:00.000Z"
+    },
+    {
+      "day": "viernes",
+      "week": 8,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS estructurado, no caminata casual. Cinta 6-8% inclinacion, ritmo conversacional.",
+      "date": "2026-05-15T17:00:00.000Z"
+    },
+    {
+      "day": "sabado",
+      "week": 8,
+      "tipo": "hiit",
+      "duracionMinutos": 18,
+      "completado": false,
+      "notas": "OBLIGATORIO si las piernas responden bien. HIIT 8-10 series: 20-30 seg fuerte / 60-90 seg recuperacion. Si hay fatiga alta, hacerlo moderado pero registrarlo.",
+      "date": "2026-05-16T09:00:00.000Z"
+    }
+  ],
+  "coachNotes": "Semana 8: SEMANA PUENTE post-viaje. La semana 7 tuvo buen cumplimiento de entrenamiento y fuerza sostenida/subiendo, pero el viernes tarde-lunes tarde hubo viaje, faltaron datos de domingo y el fin de semana tuvo comidas fuera del plan. No usar esta semana para recortar calorias agresivamente ni compensar. Mantener calorias base de la fase (~1965 kcal/dia promedio) y volver a adherencia real: proteina 190-210g/dia, registrar comidas relax si aparecen, pesos diarios desde que vuelvas a rutina. Cardio sigue obligatorio, pero el objetivo es completar y registrar, no castigar. Entrenamiento: consolidar casi todo, repetir ejercicios sin feedback, cuidar hombro derecho, evitar rest-pause/fallo salvo que el ejercicio lo pida. Solo se sube predicador a 41kg porque 36kg salio facil con RIR 2; el resto de posibles subidas se posponen hasta confirmar ritmo normal. Objetivo de la semana: salir con RIR promedio mas cerca de 1-2 y menos RIR 0."
+}

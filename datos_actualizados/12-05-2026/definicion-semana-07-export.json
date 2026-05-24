@@ -1,0 +1,883 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "exportDate": "2026-05-12T05:59:47.081Z",
+  "weekFrom": 7,
+  "subPhase": "Plan Recomp Lenta 2026",
+  "mesocycle": "M2.2",
+  "workoutProgress": [
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 7,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-09T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Semana 6: 13 reps RIR 0. Mantener 36kg y buscar 13 reps con RIR 1. Si vuelve a fallo, mantener semana 8.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 7,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-09T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nBodyweight. Mantener 12 reps. Descanso 90-120 seg. No buscar fallo; dejar 1 RIR si el core viene fatigado.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 7,
+      "weights": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-09T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 25kg. Semana 6: 15 reps RIR 1. Buscar 16 reps. Mantener opcion de apilar disco/mancuerna como hiciste.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 7,
+      "weights": [
+        45,
+        45,
+        45,
+        45
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-09T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 45kg. Semana 6: 12 reps RIR 2. Buscar 13 reps. Si gemelos vienen fatigados del miercoles, mantener 12 reps limpias.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-piernas-en-silla-romana",
+      "day": "sabado",
+      "week": 7,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-09T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nOPCIONAL/ELIMINABLE por calambres y fatiga. Si llegas bien, 10-12 reps bodyweight. Si no, saltar sin culpa; no compensar.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 7,
+      "weights": [
+        5,
+        5,
+        5
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-06T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 5kg. Semana 6: 12 reps RIR 1. Buscar 13 reps manteniendo extension controlada, sin hiperextender lumbar.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 7,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-09T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener solo peso corporal 1-2 semanas mas como pediste. Buscar 12 reps por pierna con mejor equilibrio, tempo controlado 3-1-1. No añadir mancuerna todavia.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-cable-kickback-gluteos",
+      "day": "sabado",
+      "week": 7,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-09T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 17kg. Semana 6: 14.7kg x 13 reps RIR 1. Buscar 10-11 reps con RIR 1-2. Si no llegas a 9, volver a 14.7kg.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 7,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-09T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Semana 6: 12 reps con ultima al fallo. Mantener 41kg y buscar 12 reps sin fallo, RIR 1. No subir esta semana.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 7,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-09T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 17kg. Semana 6: 14.7kg x 13 reps RIR 2. Buscar 10 reps por lado con control. Si no llegas a 9, volver a 14.7kg.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 7,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-04T06:35:47.905+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR por ausencia semana 6. Smith inclinado 50kg. Buscar 8 reps con RIR 1-2. Si salen 8 facil con RIR 2, evaluar 55kg semana 8; si no llegas a 6, bajar a 45kg. Reportar reps y RIR.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 8 repeticiones. Tenía una pequeña molestia en el hombro derecho, pero no fue con este ejercicio, ya venía con esa molestia, de unos días.; Facil; Subir\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "lunes-press-hombros-en-maquina-con-respaldo",
+      "day": "lunes",
+      "week": 7,
+      "weights": [
+        35,
+        35,
+        35
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-04T06:46:10.051+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR por ausencia semana 6. Mantener 35kg. Buscar 9 reps con RIR 1. Si salen 9 limpias, evaluar subir semana 8.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice las 9 repeticiones.; Bien\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 7,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-04T06:51:52.402+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR por ausencia semana 6. Mantener 59kg. Buscar 13 reps con RIR 1. Si sale al fallo, mantener una semana mas.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice las 13 repeticiones, pero como te comenté antes estaba esa molestia en al hombro derecho\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 7,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-04T07:00:47.194+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR por ausencia semana 6. Mantener 5.7kg. Buscar 13 reps. Ultima serie puede quedar cerca del fallo, pero evita rest-pause.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones, pero hice rest-pause sino no loego; Pesado\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 7,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-04T07:15:20.105+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR por ausencia semana 6. Mantener subida a 24kg. Buscar 10 reps con RIR 1-2. Si no llegas a 9, bajar a 22.7kg.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nEl peso correcto era 23,8kg. Hice 12 repeticiones. El siguiente peso es 26,1 kg\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 7,
+      "weights": [
+        86,
+        86,
+        86
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-04T07:23:35.359+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR por ausencia semana 6. Mantener 86kg. Buscar 13 reps con RIR 1-2. NO ir al fallo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice las 13 repeticiones, duro pero bien, sin calambres.\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 7,
+      "weights": [
+        17.5,
+        17.5,
+        17.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-04T08:00:26.052+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR por ausencia semana 6. Mantener subida a 17.5kg. Buscar 10 reps por lado. Si no llegas a 9, bajar a 16.3kg.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice las 10 de cada lado.; Pesado\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 7,
+      "weights": [
+        66,
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-05T06:09:09.332+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 66kg. Semana 6: 59kg x 13 reps RIR 1. Buscar 8-10 reps con RIR 1-2. Si no llegas a 8, volver a 59kg y buscar 14 reps.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 7,
+      "weights": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-05T06:17:00.691+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSi usas la maquina de 45kg de semana 6, probar 52kg y buscar 9-10 reps con RIR 1-2. Si usas la maquina principal de 32kg, mantener 32kg y buscar 12 reps. Reportar siempre que maquina usaste.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nUse la maquina de 52 Kg. Hice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 7,
+      "weights": [
+        22.5,
+        22.5,
+        22.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-05T06:31:21.295+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 22.5kg total (+2.5kg). Semana 6: 20kg x 13 reps RIR 2. Buscar 9-10 reps con RIR 1-2. Si no llegas a 8, volver a 20kg.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 7,
+      "weights": [
+        8,
+        8
+      ],
+      "seriesCount": 2,
+      "date": "2026-05-05T06:38:32.266+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 8kg. Semana 6: 18 reps RIR 1 y mejor sensacion muscular. Buscar 19-20 reps. Si salen 20 con RIR 1, subir a 9kg semana 8.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 20 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-face-pull",
+      "day": "martes",
+      "week": 7,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-05T17:01:02.71+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Semana 6: 13 reps al fallo con rest-pause. Mantener 59kg y buscar 13 reps limpias, sin pausa intra-serie. Si vuelve a ser RIR 0, mantener semana 8.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-reverse-wrist-curl",
+      "day": "martes",
+      "week": 7,
+      "weights": [
+        5,
+        5
+      ],
+      "seriesCount": 2,
+      "date": "2026-05-05T17:03:28.121+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR realmente a 5kg. Semana 6 volviste a 4kg e hiciste 20 reps. Buscar 16-18 reps con control, especialmente lado izquierdo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 16 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-curl-martillo",
+      "day": "martes",
+      "week": 7,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-05T17:53:45.542+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nINCLINE DB CURL. Mantener 12kg. Semana 6: 12 reps RIR 1. Descanso 2 min aceptado. Buscar 12 reps mas limpias; subir solo si queda RIR 2 real.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-elevacion-piernas-en-silla-romana",
+      "day": "martes",
+      "week": 7,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-06T06:43:31.048+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener silla del capitan como preferiste. Progresar por reps: buscar 17 reps limpias. Sin cambios a colgado ni mancuerna por ahora.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 17\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-dead-bug",
+      "day": "martes",
+      "week": 7,
+      "weights": [
+        1,
+        1
+      ],
+      "seriesCount": 2,
+      "date": "2026-05-06T06:43:41.764+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nBodyweight. Mantener 10 por lado. Descanso 90 seg. Calidad y control por encima de reps.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nMantener\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 7,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-06T07:08:36.687+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR suave si existe 47.5kg. Semana 6: 45kg x 9 reps RIR 1. Buscar 8-9 reps con RIR 1-2. Si no existe 47.5kg, mantener 45kg y buscar 10 reps.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nPase a 50 kilos, hice 10 repeticiones; Pesado\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 7,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-06T07:09:03.115+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Semana 6: 41kg x 10 reps RIR 0 porque la maquina no tiene 40kg. Mantener 41kg y buscar 10 reps sin fallo, RIR 1.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 7,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-05-06T07:13:25.707+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 55kg. Semana 6: 10 reps RIR 1. Buscar 11 reps. Descanso 2 min OK. Vigilar si deja gemelos cansados para sabado.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones; Pesado\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 7,
+      "weights": [
+        85,
+        85,
+        85
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-06T07:22:01.973+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 85kg si existe. Semana 6: 80kg x 13 reps RIR 1. Buscar 10-11 reps con RIR 1-2. Si 85kg no existe o se siente demasiado, mantener 80kg y buscar 14 reps.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones; Pesado\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 7,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-07T06:58:22.728+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Semana 6: 73kg x 9 reps RIR 0. Mantener 73kg y buscar 9 reps con mejor margen, RIR 1. No subir esta semana.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 9 repeticiones; Pesado\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 7,
+      "weights": [
+        10.2,
+        10.2,
+        10.2
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-07T07:08:23.767+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Semana 6: 10 reps RIR 0, descanso 2 min necesario. Mantener 10.2kg, buscar 10-11 reps con 2 min y tecnica limpia. No forzar fallo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones, muy cerca del fallo la última.; Pesado\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-myo-reps",
+      "day": "jueves",
+      "week": 7,
+      "weights": [
+        5.7
+      ],
+      "seriesCount": 1,
+      "date": "2026-05-07T07:16:01.659+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener protocolo myo-reps 5.7kg. Activacion 12-15 reps cerca del fallo, luego mini-series decrecientes 5,4,3. No añadir otra tecnica intensiva esta sesion.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nPesado\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-triceps-overhead-cable",
+      "day": "jueves",
+      "week": 7,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-07T07:23:40.406+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Peso correcto 23.8kg. Semana 6: 10 reps RIR 0, descanso 2 min necesario. Mantener 23.8kg y buscar 10 reps sin fallo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones; Pesado\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-face-pull--reverse-fly",
+      "day": "jueves",
+      "week": 7,
+      "weights": [
+        7.9,
+        7.9,
+        7.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-07T07:33:43.396+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Semana 6: 13 reps al fallo. Mantener 7.9kg y buscar 13 reps sin fallo. Si queda RIR 0, mantener semana 8.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice las 13 repeticiones, duro al final, pero mejor que la semana pasada.; Mantener\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-fondos-en-maquina",
+      "day": "jueves",
+      "week": 7,
+      "weights": [
+        45,
+        45,
+        45
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-07T07:38:03.065+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Semana 6: 10 reps, ultima serie 9. Mantener 45kg y buscar 10 reps en todas las series. Si no sale, mantener igual.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones.; Bien. Recuerda que esta maquina el peso funciona a mi favor, si lo bajamos es menos ayuda al movimiento. El siguiente peso es 41 kg\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 7,
+      "weights": [
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-08T06:51:05.382+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nUsar 66kg porque no existe 64kg. Semana 6: 66kg x 10 reps RIR 1. Mantener 66kg y buscar 11 reps. Si sale RIR 1, subir solo cuando exista siguiente salto tolerable.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones.; Pesado\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 7,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-08T07:05:15.977+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 59kg. Semana 6: 10 reps RIR 1. Buscar 11 reps. Si salen 11 con RIR 1, evaluar subida semana 8.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones; Bien\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 7,
+      "weights": [
+        28.4,
+        28.4,
+        28.4
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-08T07:07:37.189+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 28.4kg si te ves bien. Semana 6: 26.1kg x 13 reps RIR 2. Buscar 10-11 reps. Si se siente demasiado, volver a 26.1kg y buscar 14 reps.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones.; Bien. Siguiente peso es 30,4 kg, para que lo tengas en cuenta en el futuro\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 7,
+      "weights": [
+        12.5,
+        12.5,
+        12.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-08T07:23:03.916+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Semana 6: 10 reps muy justas, RIR 0. Mantener 12.4kg y buscar 10 reps con mejor control. No subir.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones, costo un poco menos que la semana pasada, pero sigue estando duro, me gusta porque siento que el músculo trabaja perfectamente.; Mantener\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 7,
+      "weights": [
+        9,
+        9,
+        9
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-08T07:32:13.958+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 9kg si existe. Semana 6: 8kg x 20 reps RIR 1. Buscar 16-18 reps. Si no existe 9kg, mantener 8kg y hacer tempo mas controlado.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nLas dos primeras series hice 20, en la última se me murió el músculo jejej, llegué a las 18. Siguiente peso es 10kg para que lo tengas en cuenta para el futuro\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 7,
+      "weights": [
+        24,
+        24
+      ],
+      "seriesCount": 2,
+      "date": "2026-05-08T07:40:16.934+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 24kg. No hace falta cronometrar si te resulta molesto, pero reporta sensacion: facil / justo / al limite. Mantener caminata lenta y controlada.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nPesado\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 7,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-05-08T07:42:07.516+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 36kg. Semana 6: 32kg x 10 reps RIR 3. Buscar 8-9 reps con RIR 1-2. Mantener orden bayesian -> wrist curl -> predicador.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones; Facil. Siguiente peso es 41 y el que sigue es 45.\n[/USER_FEEDBACK]",
+      "rir": 2
+    }
+  ],
+  "bodyComposition": null,
+  "dailyWeights": [
+    {
+      "week": 7,
+      "day": "jueves",
+      "peso": 99.95,
+      "date": "2026-05-07T05:51:06.192+00:00",
+      "notas": ""
+    },
+    {
+      "week": 7,
+      "day": "lunes",
+      "peso": 101.3,
+      "date": "2026-05-04T05:43:28.57+00:00",
+      "notas": ""
+    },
+    {
+      "week": 7,
+      "day": "martes",
+      "peso": 100.8,
+      "date": "2026-05-05T05:29:02.387+00:00",
+      "notas": ""
+    },
+    {
+      "week": 7,
+      "day": "miercoles",
+      "peso": 100.4,
+      "date": "2026-05-06T06:08:46.065+00:00",
+      "notas": ""
+    },
+    {
+      "week": 7,
+      "day": "viernes",
+      "peso": 100.7,
+      "date": "2026-05-08T05:41:21.067+00:00",
+      "notas": ""
+    }
+  ],
+  "cardioLogs": [
+    {
+      "day": "viernes",
+      "week": 7,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS estructurado, no solo caminata casual. Cinta 6-8% inclinacion, ritmo conversacional.",
+      "date": "2026-05-08T17:00:00+00:00"
+    },
+    {
+      "day": "sabado",
+      "week": 7,
+      "tipo": "hiit",
+      "duracionMinutos": 18,
+      "completado": false,
+      "notas": "OBLIGATORIO. HIIT 8-10 series: 20-30 seg sprint / 60-90 seg recuperacion. Si afecta piernas, reportar para reubicar, pero no marcar como opcional.",
+      "date": "2026-05-09T09:00:00+00:00"
+    },
+    {
+      "day": "lunes",
+      "week": 7,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "OBLIGATORIO. Cinta 6-8% inclinacion, ritmo conversacional / zona 2. Registrar si se completa.",
+      "date": "2026-05-05T17:00:15.554+00:00"
+    },
+    {
+      "day": "martes",
+      "week": 7,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "OBLIGATORIO. Cinta 6-8% inclinacion, ritmo conversacional / zona 2. Si no puedes hacerlo por agenda, registrar como no completado sin compensar con castigo.",
+      "date": "2026-05-05T17:00:21.584+00:00"
+    },
+    {
+      "day": "miercoles",
+      "week": 7,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "OBLIGATORIO. Cinta 6-8% inclinacion, ritmo conversacional / zona 2. Mantener intensidad baja para no interferir con piernas.",
+      "date": "2026-05-06T17:21:11.547+00:00"
+    },
+    {
+      "day": "jueves",
+      "week": 7,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "OBLIGATORIO. Cinta 6-8% inclinacion, ritmo conversacional / zona 2. Registrar completado real.",
+      "date": "2026-05-08T05:40:08.034+00:00"
+    }
+  ],
+  "weeklyClosure": {
+    "week": 7,
+    "readiness": "missing",
+    "statusLabel": "Faltan datos clave",
+    "statusDetail": "Todavia no hay suficiente informacion para decidir ajustes con confianza.",
+    "requiredCompleted": 2,
+    "requiredTotal": 5,
+    "metrics": {
+      "weeklyChangeKg": null,
+      "targetWeeklyLossRangeKg": "0.25-0.45",
+      "dailyWeightAverageKg": 100.63,
+      "dailyWeightEntries": 5,
+      "workoutCompleted": 39,
+      "workoutPlanned": 43,
+      "workoutPercent": 91,
+      "cardioCompleted": 4,
+      "cardioPlanned": 6,
+      "cardioPercent": 67,
+      "rirLogs": 33,
+      "averageRir": 0.79,
+      "zeroRirLogs": 11,
+      "feedbackLogs": 33,
+      "coachTargets": 43,
+      "nutritionAdherencePercent": null,
+      "relaxMeals": null,
+      "sleepAverage": null,
+      "hunger": null,
+      "energy": null,
+      "discomforts": null
+    },
+    "planningSignals": {
+      "dataQuality": "missing",
+      "decisionFocus": [
+        "Nutricion: falta adherencia semanal y comidas relax.",
+        "Cardio: completado 67% del cardio obligatorio.",
+        "Fatiga: RIR promedio bajo (0.79).",
+        "Intensidad: 11 registros a RIR 0."
+      ],
+      "recommendations": [
+        "No ajustar calorias solo por peso si no hay adherencia nutricional registrada.",
+        "No compensar con recorte agresivo de calorias; primero completar el cardio planificado.",
+        "Vigilar fatiga antes de subir cargas o volumen."
+      ]
+    },
+    "checklist": [
+      {
+        "label": "Peso semanal / BIA",
+        "value": "Sin registro semanal",
+        "ok": false,
+        "required": true
+      },
+      {
+        "label": "Pesos diarios",
+        "value": "5 registros, promedio 100.6 kg",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "Cardio obligatorio",
+        "value": "4/6 sesiones completadas",
+        "ok": false,
+        "required": true
+      },
+      {
+        "label": "Entrenamiento",
+        "value": "39/43 ejercicios con peso (91%)",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "RIR",
+        "value": "33 ejercicios con RIR",
+        "ok": true,
+        "required": false
+      },
+      {
+        "label": "Feedback de ejercicios",
+        "value": "33 comentarios guardados",
+        "ok": true,
+        "required": false
+      },
+      {
+        "label": "Adherencia nutricional",
+        "value": "Sin adherencia registrada",
+        "ok": false,
+        "required": true
+      }
+    ],
+    "nextStep": "Completa los faltantes de la semana 7 y vuelve al cierre antes de exportar."
+  }
+}
