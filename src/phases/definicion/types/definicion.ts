@@ -76,7 +76,7 @@ export function getMesocycleInfo(week: number): MesocycleInfo {
   return {
     mesocycleNumber,
     weekInMesocycle: mesocycleWeek,
-    isDeload: mesocycleWeek === 5,
+    isDeload: false,
     isDietBreak: false,
   };
 }
