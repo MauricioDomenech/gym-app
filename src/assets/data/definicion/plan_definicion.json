@@ -3,8 +3,8 @@
     {
       "orden": 0,
       "dia": "Lunes",
-      "tipo": "Push 1 (Fuerza)",
-      "musculos": "Pecho + Deltoide anterior + Triceps + Core",
+      "tipo": "Push 1 (Pecho dominante)",
+      "musculos": "Pecho + Deltoide lateral + Triceps + Core",
       "ejercicios": [
         {
           "nombre": "Press banca inclinado 30°",
@@ -16,17 +16,6 @@
           "alternativas": [
             { "nombre": "Press inclinado con mancuernas", "imagen": "img_def_lun_01_alt1.jpg" },
             { "nombre": "Press inclinado en maquina Smith", "imagen": "img_def_lun_01_alt2.jpg" }
-          ]
-        },
-        {
-          "nombre": "Press hombros en maquina con respaldo",
-          "series": "3",
-          "repeticiones": "6-8",
-          "descanso": "2-3 min",
-          "imagen": "img_def_lun_02.jpg",
-
-          "alternativas": [
-            { "nombre": "Press militar con mancuernas sentado", "imagen": "img_def_lun_02_alt1.jpg" }
           ]
         },
         {
@@ -42,6 +31,16 @@
           ]
         },
         {
+          "nombre": "Cable fly alto-bajo",
+          "series": "2",
+          "repeticiones": "12-15",
+          "descanso": "60-90 seg",
+          "imagen": "img_def_lun_08.jpg",
+          "alternativas": [
+            { "nombre": "Pec deck unilateral", "imagen": "img_def_lun_08_alt1.jpg" }
+          ]
+        },
+        {
           "nombre": "Elevacion lateral con polea",
           "series": "3",
           "repeticiones": "12-15",
@@ -50,6 +49,17 @@
 
           "alternativas": [
             { "nombre": "Elevacion lateral con mancuernas", "imagen": "img_def_lun_04_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Triceps overhead cable",
+          "series": "3",
+          "repeticiones": "10-15",
+          "descanso": "60 seg",
+          "imagen": "img_def_jue_04.jpg",
+
+          "alternativas": [
+            { "nombre": "Extensiones de triceps con mancuerna", "imagen": "img_def_jue_04_alt1.jpg" }
           ]
         },
         {
@@ -86,7 +96,7 @@
       "orden": 1,
       "dia": "Martes",
       "tipo": "Pull 1 (Fuerza)",
-      "musculos": "Espalda + Biceps + Antebrazos + Core",
+      "musculos": "Espalda + Biceps + Antebrazos",
       "ejercicios": [
         {
           "nombre": "Dominadas / Jalon al pecho (pronado)",
@@ -132,7 +142,7 @@
           ]
         },
         {
-          "nombre": "Curl martillo",
+          "nombre": "Curl martillo en cuerda (polea baja)",
           "series": "3",
           "repeticiones": "10-12",
           "descanso": "60 seg",
@@ -149,28 +159,11 @@
           "alternativas": []
         },
         {
-          "nombre": "Reverse wrist curl",
+          "nombre": "Curl inverso barra Z / polea",
           "series": "2",
-          "repeticiones": "15-20",
+          "repeticiones": "12-15",
           "descanso": "60 seg",
           "imagen": "img_def_mar_07.jpg",
-          "alternativas": []
-        },
-        {
-          "nombre": "Elevacion piernas en silla romana",
-          "series": "3",
-          "repeticiones": "10-15",
-          "descanso": "60 seg",
-          "imagen": "img_def_mar_08.jpg",
-
-          "alternativas": []
-        },
-        {
-          "nombre": "Dead bug",
-          "series": "2",
-          "repeticiones": "10-12/lado",
-          "descanso": "60 seg",
-          "imagen": "img_def_mar_09.jpg",
           "alternativas": []
         }
       ]
@@ -236,9 +229,38 @@
     {
       "orden": 3,
       "dia": "Jueves",
-      "tipo": "Push 2 (Hipertrofia)",
-      "musculos": "Pecho + Hombros + Triceps",
+      "tipo": "Push 2 (Hombros + Hipertrofia)",
+      "musculos": "Hombros completos + Pecho accesorio + Triceps",
       "ejercicios": [
+        {
+          "nombre": "Press hombros en maquina con respaldo",
+          "series": "3",
+          "repeticiones": "8-12",
+          "descanso": "2-3 min",
+          "imagen": "img_def_lun_02.jpg",
+
+          "alternativas": [
+            { "nombre": "Press militar con mancuernas sentado", "imagen": "img_def_lun_02_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Elevacion lateral (myo-reps)",
+          "series": "1",
+          "repeticiones": "12-15 + 4x3-5",
+          "descanso": "10-15 seg",
+          "imagen": "img_def_jue_03.jpg",
+          "alternativas": [
+            { "nombre": "Elevacion lateral mancuernas 3x12-15", "imagen": "img_def_jue_03_alt1.jpg" }
+          ]
+        },
+        {
+          "nombre": "Face pull / Reverse fly",
+          "series": "3",
+          "repeticiones": "15-20",
+          "descanso": "60 seg",
+          "imagen": "img_def_jue_05.jpg",
+          "alternativas": []
+        },
         {
           "nombre": "Press banca plano con mancuernas",
           "series": "3",
@@ -261,43 +283,13 @@
           ]
         },
         {
-          "nombre": "Elevacion lateral (myo-reps)",
-          "series": "1",
-          "repeticiones": "12-15 + 4x3-5",
-          "descanso": "10-15 seg",
-          "imagen": "img_def_jue_03.jpg",
-          "alternativas": [
-            { "nombre": "Elevacion lateral mancuernas 3x12-15", "imagen": "img_def_jue_03_alt1.jpg" }
-          ]
-        },
-        {
-          "nombre": "Triceps overhead cable",
+          "nombre": "Extension de triceps unilateral cross-body en polea",
           "series": "3",
-          "repeticiones": "10-15",
-          "descanso": "60 seg",
-          "imagen": "img_def_jue_04.jpg",
-
-          "alternativas": [
-            { "nombre": "Extensiones de triceps con mancuerna", "imagen": "img_def_jue_04_alt1.jpg" }
-          ]
-        },
-        {
-          "nombre": "Face pull / Reverse fly",
-          "series": "3",
-          "repeticiones": "15-20",
-          "descanso": "60 seg",
-          "imagen": "img_def_jue_05.jpg",
-          "alternativas": []
-        },
-        {
-          "nombre": "Fondos en maquina",
-          "series": "3",
-          "repeticiones": "10-12",
-          "descanso": "90 seg",
+          "repeticiones": "12-15",
+          "descanso": "60-90 seg",
           "imagen": "img_def_jue_06.jpg",
           "alternativas": [
-            { "nombre": "Press cerrado en maquina", "imagen": "img_def_jue_06_alt1.jpg" },
-            { "nombre": "Fondos en paralelas", "imagen": "img_def_jue_06_alt2.jpg" }
+            { "nombre": "Triceps pushdown unilateral en polea alta", "imagen": "img_def_jue_06_alt1.jpg" }
           ]
         }
       ]
@@ -355,6 +347,14 @@
           "repeticiones": "10-12 (dropset ultimo set)",
           "descanso": "60 seg",
           "imagen": "img_def_vie_05.jpg",
+          "alternativas": []
+        },
+        {
+          "nombre": "Curl en polea alta",
+          "series": "2",
+          "repeticiones": "12-15",
+          "descanso": "60 seg",
+          "imagen": "img_def_vie_08.jpg",
           "alternativas": []
         },
         {
@@ -432,15 +432,6 @@
           "alternativas": []
         },
         {
-          "nombre": "Cable kickback (gluteos)",
-          "series": "3",
-          "repeticiones": "12-15 (c/lado)",
-          "descanso": "60 seg",
-          "imagen": "img_def_sab_06.jpg",
-
-          "alternativas": []
-        },
-        {
           "nombre": "Ab rollout con rueda",
           "series": "3",
           "repeticiones": "12-15",
@@ -455,15 +446,6 @@
           "repeticiones": "10-12/lado",
           "descanso": "60 seg",
           "imagen": "img_def_sab_08.jpg",
-          "alternativas": []
-        },
-        {
-          "nombre": "Elevacion piernas en silla romana",
-          "series": "3",
-          "repeticiones": "10-15",
-          "descanso": "60 seg",
-          "imagen": "img_def_sab_09.jpg",
-
           "alternativas": []
         }
       ]

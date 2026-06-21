@@ -1,0 +1,922 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "exportDate": "2026-06-08T06:05:27.921Z",
+  "weekFrom": 11,
+  "subPhase": "Plan Recomp Lenta 2026",
+  "mesocycle": "M3.1",
+  "workoutProgress": [
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 11,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-03T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 55kg. Semana 10: 12 reps con RIR 1. Buscar 12-13 reps con pausa arriba y estiramiento abajo, sin rebotes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 11,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-01T06:55:36.749+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 90kg solo si el cuello está bien. Semana 10: 10 reps con RIR 2. Buscar 10-11 reps sin tirar del cuello. Si aparece molestia cervical, cambiar por dead bug o crunch suave sin carga.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 11,
+      "weights": [
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-02T07:00:22.066+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 25kg. Semana 10: 10 reps con RIR 1. Buscar 10-11 reps limpias, sin balanceo y sin tensión cervical.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-myo-reps",
+      "day": "jueves",
+      "week": 11,
+      "weights": [
+        5.7
+      ],
+      "seriesCount": 1,
+      "date": "2026-06-04T06:45:02.581+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 5.7kg y protocolo conservador. Activación 12-13 reps, mini-series 4-3-3. Cortar antes del fallo técnico, especialmente si la izquierda llega fatigada del lunes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nBien, me sobró está vez\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 11,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-05T06:49:19.067+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 59kg. Semana 9: 11 reps con RIR 1, limitado por agarre/dedos. Usar straps o agarre asístido si hace falta. Buscar 11-12 reps sin que el grip corte la espalda; no subir a 66kg todavía.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nCon los atrapa fui bien, hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 11,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-06T08:15:36.842+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener peso corporal, como pediste. Semana 10: 12 reps con RIR 1 y salió bien. Repetir una semana más con tempo 3-1-1 y mejor equilibrio.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 11,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-06T09:18:05.386+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR por falta de feedback. Mantener 17kg. Buscar 10 reps por lado con control y sin rotar el tronco. Si no llegas a 9 limpias, volver a 14.7kg.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-elevacion-piernas-en-silla-romana",
+      "day": "sabado",
+      "week": 11,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-06T09:18:11.934+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener peso corporal. Semana 10: 15 reps con RIR 1. Buscar 15 reps limpias, sin impulso y sin tensión cervical.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nNo lo hice\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 11,
+      "weights": [
+        85,
+        85,
+        85
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-03T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 85kg. Semana 10: 12 reps con RIR 1. Buscar 12-13 reps con pausa controlada abajo y sin bloquear rodillas.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 11,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-01T07:05:59.586+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 59kg una semana más. Semana 10: 14 reps con RIR 2 y siguiente peso 66kg, pero no conviene subir tras dolor de cuello/trapecio. Buscar 14-15 reps con hombros bajos y rango cómodo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 14 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 11,
+      "weights": [
+        12,
+        12
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-02T07:02:35.927+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 12kg. Semana 10: 10kg x 20 reps con RIR 2 y siguiente peso 12kg. Buscar 12-15 reps con rango completo. Si se acorta el recorrido, volver a 10kg.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHoce 16\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-elevacion-piernas-en-silla-romana",
+      "day": "martes",
+      "week": 11,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-02T07:03:01.023+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener peso corporal. Semana 10: 15 reps con RIR 0. Buscar 14-15 reps limpias, sin balanceo y sin tirar del cuello.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 15 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-dead-bug",
+      "day": "martes",
+      "week": 11,
+      "weights": [
+        1,
+        1
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-02T07:03:17.467+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener dificultad. Semana 10: 12 por lado con RIR 0. Buscar 12 por lado con respiración, pelvis estable y cuello relajado.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-triceps-overhead-cable",
+      "day": "jueves",
+      "week": 11,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-04T06:47:01.432+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 23.8kg. Semana 9: 11 reps con RIR 1 pero última serie al fallo. Buscar 10-11 reps dejando 1 RIR real; no subir hasta evitar fallo en todas las series.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 11,
+      "weights": [
+        12.5,
+        12.5,
+        12.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-05T06:56:59.773+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 12.5kg. Semana 9: 12 reps con RIR 1. Buscar 12-13 reps con tensión continua y sin balanceo. Subir solo si queda RIR 2 real.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 11,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-06T08:29:37.004+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 41kg. Semana 10: 13 reps con RIR 1. Buscar 13-14 reps con control antes de subir a 45kg; no bloquear rodilla agresivamente.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 14 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 11,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-03T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 50kg. Semana 10: 11 reps con RIR 1. Buscar 11 reps sólidas, profundidad consistente y cuello relajado contra el respaldo. No subir esta semana.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 11,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-03T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 41kg. Semana 10: 11 reps con RIR 1. Buscar 11-12 reps con excéntrica controlada y sin ir al fallo.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 11,
+      "weights": [
+        17.5,
+        17.5,
+        17.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-01T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 17.5kg. Semana 10: 10 reps por lado con RIR 2. Buscar 10-11 reps por lado, pelvis estable y cuello neutro.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 11,
+      "weights": [
+        73,
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-02T06:16:21.589+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR. Semana 10 no cuenta porque usaste otra máquina. Mantener 73kg en la máquina habitual y buscar 9-10 reps con técnica limpia y 1 RIR real. No subir todavía.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 9 repeticiones; Pesado\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "martes-curl-martillo",
+      "day": "martes",
+      "week": 11,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-02T07:12:14.185+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 12kg. Semana 10: 13 reps con RIR 1 y siguiente peso 14kg. Buscar 13-14 reps limpias antes de subir; no balancear ni encoger trapecios.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-face-pull--reverse-fly",
+      "day": "jueves",
+      "week": 11,
+      "weights": [
+        7.9,
+        7.9,
+        7.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-04T07:01:21.686+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 7.9kg. Semana 9: 13 reps, última con rest-pause. Buscar 12-13 reps continuas sin rest-pause; priorizar control escapular.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 11,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-05T07:01:55.819+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 10kg. Semana 9: 18 reps con RIR 2 tras subida. Buscar 18-20 reps con rango completo antes de volver a subir.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSubi a 12, hice 16 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 11,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-06T08:34:04.279+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR. Semana 10 no cuenta porque usaste otra máquina. Mantener 36kg en la máquina habitual y buscar 13-14 reps con excéntrica controlada.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 11,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-01T06:21:46.882+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 50kg. Semana 10: 11 reps con RIR 2, pero la semana quedó parcial por dolor de cuello/trapecio. Buscar 11 reps limpias con 1-2 RIR, cuello neutro y hombros bajos. Si el cuello molesta más de 2/10, bajar a 45kg o cortar el ejercicio.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 11,
+      "weights": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-02T06:37:06.12+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 52kg. Semana 10: 11 reps con RIR 2. Buscar 11-12 reps con pecho apoyado, cuello neutro y sin elevar trapecios. Subir solo cuando salga sólido en la máquina habitual.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "martes-reverse-wrist-curl",
+      "day": "martes",
+      "week": 11,
+      "weights": [
+        5,
+        5
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-02T07:44:27.722+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 5kg. Semana 10: 16 reps con RIR 0. Buscar 15-16 reps dejando 1 RIR real, con excéntrica controlada y sin dolor de muñeca/codo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 15 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-fondos-en-maquina",
+      "day": "jueves",
+      "week": 11,
+      "weights": [
+        45,
+        45,
+        45
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-04T07:07:26.602+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 45kg de ayuda. Semana 9: 12 reps con RIR 1. Buscar 12-13 reps con hombro estable. Reducir profundidad si aparece molestia; no quitar ayuda todavía.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones. Siguiente peso es 41\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 11,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-05T07:11:15.955+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 41kg. Semana 9: 10 reps con RIR 1. Buscar 10-11 reps con mejor margen; no subir a 45kg todavía.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 11,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-06T08:51:52.748+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 50kg. Semana 10: hiciste 12 reps con RIR 2 usando 50kg. Buscar 12-13 reps con pausa arriba/abajo. No subir todavía.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-press-hombros-en-maquina-con-respaldo",
+      "day": "lunes",
+      "week": 11,
+      "weights": [
+        35,
+        35,
+        35
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-01T06:34:13.02+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 35kg. Semana 10: 10 reps con RIR 1. Buscar 10 reps limpias, sin encoger trapecios ni sacar la cabeza hacia delante. No subir con el cuello sensible.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 11,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-01T06:40:49.914+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 5.7kg. Semana 10: 11 reps con RIR 1, sin fallo y todo bien. Buscar 11-12 reps limpias, empezando por izquierda, sin encoger trapecios.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nEste lo hice con menos pesos para no afectar la recuperación del trapecios. La semana que viene vuelve a repetir lo que estaba para esta semana\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 11,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-04T06:27:37.408+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 73kg. Semana 9: 10 reps con RIR 1 tras consolidar. Buscar 10 reps limpias con 1 RIR real. No subir mientras el hombro y el déficit sigan siendo variables.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 11,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-05T06:22:02.301+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 73kg. Semana 9: 66kg x 12 reps con RIR 1 y ya se había esperado antes de subir. Buscar 8-9 reps limpias con RIR 1-2. Si no llegas a 8, volver a 66kg.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 9 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 11,
+      "weights": [
+        24,
+        24
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-05T07:24:55.455+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR por falta de feedback específico. Mantener 24kg y 2 series. Objetivo: agarre sólido y postura alta, sin sumar fatiga extra. Si el grip limita, usar straps solo si no hay dolor.\n[/COACH_PLAN]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-cable-kickback-gluteos",
+      "day": "sabado",
+      "week": 11,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-06T09:07:54.806+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 17kg. Semana 10: 12 reps con RIR 1. Buscar 12 reps limpias con pelvis estable, sin arquear lumbar.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 11,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-03T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener peso corporal. Semana 10: 12 reps con RIR 2 y todo bien tras quitar carga. Buscar 12-15 reps, tempo controlado y sin hiperextender lumbar. Mantener una semana más sin peso.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 11,
+      "weights": [
+        26.1,
+        26.1,
+        26.1
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-01T06:53:52.382+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Mantener 26.1kg. Semana 10: 10 reps con RIR 0. Buscar 9-10 reps dejando 1 RIR real, codos fijos y cuello relajado. Si vuelve a ser fallo, bajar a 23.8kg.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-face-pull",
+      "day": "martes",
+      "week": 11,
+      "weights": [
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-02T06:41:29.812+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 62kg. Semana 10: 10 reps con RIR 1. Buscar 10-12 reps limpias, sin convertirlo en tirón de trapecio/cuello. Si el cuello molesta, bajar peso y priorizar control escapular.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nEl peso es 66kg, no se de dónde te inventaste el peso, NO TE INVENTES NADA. Hice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 11,
+      "weights": [
+        14,
+        14,
+        14
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-04T06:33:14.246+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDAR. Mantener 10.2kg. Semana 9: 10 reps, primera serie RIR 2, segunda RIR 1 y última al límite. Buscar 10 reps por serie dejando 1 RIR; si la última vuelve al fallo, cortar en 9.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nCambie el ejercicio, ahora es polea alta, quiero mejorar el pecho bajo. Hice 10 repeticiones al fallo\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 11,
+      "weights": [
+        32.9,
+        32.9,
+        32.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-05T06:33:17.279+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSUBIR a 32.9kg. Semana 9: 30.6kg x 12 reps con RIR 2. Buscar 9-10 reps con dorsales, codos semifijos y sin compensar con lumbar. Si no llegas a 9 limpias, volver a 30.6kg.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 11,
+      "weights": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-06T08:10:41.967+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 25kg. Semana 10: 16 reps con RIR 1. Buscar 16-17 reps con pausa arriba, pelvis neutra y cuello relajado en el suelo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 20 repeticiones. No puedo subir peso porque no hay más\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 11,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-06T09:09:17.628+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nREPETIR ejercicio original, como pediste. Semana 10 hiciste crunch normal por molestia de hombro. Volver al ab rollout solo si hombro y cuello están bien; si molesta, cambiar por dead bug/crunch suave y registrarlo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones con la rueda\n[/USER_FEEDBACK]",
+      "rir": 2
+    }
+  ],
+  "bodyComposition": {
+    "week": 11,
+    "date": "2026-06-07T07:46:39.45+00:00",
+    "peso": 100.7,
+    "grasaCorporal": null,
+    "grasaSubcutanea": null,
+    "grasaVisceral": null,
+    "musculoEsqueletico": null,
+    "masaMuscular": null,
+    "aguaCorporal": null,
+    "pesoSinGrasa": null,
+    "masaOsea": null,
+    "proteinaCorporal": null,
+    "tmb": null,
+    "imc": null,
+    "cintura": null,
+    "cadera": null,
+    "pecho": null,
+    "brazo": null,
+    "muslo": null,
+    "comidasRelax": null,
+    "adherenciaNutricion": null,
+    "suenoPromedio": null,
+    "hambre": null,
+    "energia": null,
+    "molestias": null,
+    "notas": ""
+  },
+  "dailyWeights": [
+    {
+      "week": 11,
+      "day": "lunes",
+      "peso": 102.9,
+      "date": "2026-06-01T06:05:24.307+00:00",
+      "notas": ""
+    },
+    {
+      "week": 11,
+      "day": "martes",
+      "peso": 101.6,
+      "date": "2026-06-02T05:23:11.995+00:00",
+      "notas": ""
+    },
+    {
+      "week": 11,
+      "day": "miercoles",
+      "peso": 100.2,
+      "date": "2026-06-03T07:42:06.747+00:00",
+      "notas": ""
+    },
+    {
+      "week": 11,
+      "day": "jueves",
+      "peso": 100.1,
+      "date": "2026-06-04T05:24:35.073+00:00",
+      "notas": ""
+    },
+    {
+      "week": 11,
+      "day": "viernes",
+      "peso": 99.85,
+      "date": "2026-06-05T05:24:26.572+00:00",
+      "notas": ""
+    },
+    {
+      "week": 11,
+      "day": "sabado",
+      "peso": 100,
+      "date": "2026-06-06T08:01:41.837+00:00",
+      "notas": ""
+    },
+    {
+      "week": 11,
+      "day": "domingo",
+      "peso": 100.7,
+      "date": "2026-06-07T07:46:28.771+00:00",
+      "notas": ""
+    }
+  ],
+  "cardioLogs": [
+    {
+      "day": "jueves",
+      "week": 11,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "OBLIGATORIO con semáforo de dolor. Si el trapecio/cuello sigue sensible, cinta suave y postura relajada; si supera 3/10, parar y registrar.",
+      "date": "2026-06-04T17:00:00+00:00"
+    },
+    {
+      "day": "lunes",
+      "week": 11,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": true,
+      "notas": "OBLIGATORIO si el cuello/trapecio está en verde. LISS zona 2 en cinta 6-8% inclinación, ritmo conversacional. Si duele más de 3/10, hacerlo caminata suave o registrarlo como no realizado.",
+      "date": "2026-06-02T05:23:03.354+00:00"
+    },
+    {
+      "day": "martes",
+      "week": 11,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS zona 2 suave para no interferir con Pull ni cargar trapecios. Evitar bracear fuerte si el cuello sigue sensible.",
+      "date": "2026-06-02T17:00:00+00:00"
+    },
+    {
+      "day": "miercoles",
+      "week": 11,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS zona 2 después de piernas. Mantenerlo suave; no compensar los cardios perdidos de semana 10 con más intensidad.",
+      "date": "2026-06-03T17:00:00+00:00"
+    },
+    {
+      "day": "sabado",
+      "week": 11,
+      "tipo": "hiit",
+      "duracionMinutos": 18,
+      "completado": true,
+      "notas": "HIIT solo si cuello/trapecio y hombro están bien. Si hay molestia, convertir a LISS suave 30-45 min y registrarlo; no forzar sprints con dolor.",
+      "date": "2026-06-06T09:38:53.06+00:00"
+    },
+    {
+      "day": "viernes",
+      "week": 11,
+      "tipo": "liss",
+      "duracionMinutos": 45,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS estructurado, no caminata casual, pero sin tensión cervical. Cinta 6-8% inclinación si el cuello lo tolera.",
+      "date": "2026-06-05T17:00:00+00:00"
+    }
+  ],
+  "weeklyClosure": {
+    "week": 11,
+    "readiness": "partial",
+    "statusLabel": "Revisable con faltantes",
+    "statusDetail": "Podemos analizar la semana, pero conviene completar los datos marcados antes del export.",
+    "requiredCompleted": 3,
+    "requiredTotal": 5,
+    "metrics": {
+      "weeklyChangeKg": -0.8,
+      "targetWeeklyLossRangeKg": "0.25-0.45",
+      "dailyWeightAverageKg": 100.76,
+      "dailyWeightEntries": 7,
+      "workoutCompleted": 38,
+      "workoutPlanned": 43,
+      "workoutPercent": 88,
+      "cardioCompleted": 2,
+      "cardioPlanned": 6,
+      "cardioPercent": 33,
+      "rirLogs": 36,
+      "averageRir": 1.03,
+      "zeroRirLogs": 6,
+      "feedbackLogs": 36,
+      "coachTargets": 43,
+      "nutritionAdherencePercent": null,
+      "relaxMeals": null,
+      "sleepAverage": null,
+      "hunger": null,
+      "energy": null,
+      "discomforts": null
+    },
+    "planningSignals": {
+      "dataQuality": "partial",
+      "decisionFocus": [
+        "Nutricion: falta adherencia semanal y comidas relax.",
+        "Cardio: completado 33% del cardio obligatorio.",
+        "Intensidad: 6 registros a RIR 0."
+      ],
+      "recommendations": [
+        "No ajustar calorias solo por peso si no hay adherencia nutricional registrada.",
+        "No compensar con recorte agresivo de calorias; primero completar el cardio planificado."
+      ]
+    },
+    "checklist": [
+      {
+        "label": "Peso semanal / BIA",
+        "value": "100.7 kg registrado",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "Pesos diarios",
+        "value": "7 registros, promedio 100.8 kg",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "Cardio obligatorio",
+        "value": "2/6 sesiones completadas",
+        "ok": false,
+        "required": true
+      },
+      {
+        "label": "Entrenamiento",
+        "value": "38/43 ejercicios con peso (88%)",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "RIR",
+        "value": "36 ejercicios con RIR",
+        "ok": true,
+        "required": false
+      },
+      {
+        "label": "Feedback de ejercicios",
+        "value": "36 comentarios guardados",
+        "ok": true,
+        "required": false
+      },
+      {
+        "label": "Adherencia nutricional",
+        "value": "Sin adherencia registrada",
+        "ok": false,
+        "required": true
+      }
+    ],
+    "nextStep": "Completa los faltantes de la semana 11 y vuelve al cierre antes de exportar."
+  }
+}
