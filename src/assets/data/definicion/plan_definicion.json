@@ -96,7 +96,7 @@
       "orden": 1,
       "dia": "Martes",
       "tipo": "Pull 1 (Fuerza)",
-      "musculos": "Espalda + Biceps + Antebrazos",
+      "musculos": "Espalda + Deltoide posterior + Biceps + Antebrazos",
       "ejercicios": [
         {
           "nombre": "Dominadas / Jalon al pecho (pronado)",
@@ -121,13 +121,14 @@
           ]
         },
         {
-          "nombre": "Face pull",
+          "nombre": "Reverse cable fly",
           "series": "3",
           "repeticiones": "15-20",
           "descanso": "60 seg",
           "imagen": "img_def_mar_03.jpg",
           "alternativas": [
-            { "nombre": "Reverse fly en maquina", "imagen": "img_def_mar_03_alt1.jpg" }
+            { "nombre": "Reverse fly en maquina", "imagen": "img_def_mar_03_alt1.jpg" },
+            { "nombre": "Face pull", "imagen": "img_def_mar_03.jpg" }
           ]
         },
         {
@@ -229,18 +230,19 @@
     {
       "orden": 3,
       "dia": "Jueves",
-      "tipo": "Push 2 (Hombros + Hipertrofia)",
-      "musculos": "Hombros completos + Pecho accesorio + Triceps",
+      "tipo": "Push 2 (Deltoide medio/posterior + Hipertrofia)",
+      "musculos": "Deltoide medio + Deltoide posterior + Pecho accesorio + Triceps",
       "ejercicios": [
         {
-          "nombre": "Press hombros en maquina con respaldo",
+          "nombre": "Elevacion lateral unilateral en polea",
           "series": "3",
-          "repeticiones": "8-12",
-          "descanso": "2-3 min",
-          "imagen": "img_def_lun_02.jpg",
+          "repeticiones": "12-15",
+          "descanso": "60-90 seg",
+          "imagen": "img_def_jue_03.jpg",
 
           "alternativas": [
-            { "nombre": "Press militar con mancuernas sentado", "imagen": "img_def_lun_02_alt1.jpg" }
+            { "nombre": "Elevacion lateral en maquina", "imagen": "img_def_jue_03_alt1.jpg" },
+            { "nombre": "Elevacion lateral con mancuernas", "imagen": "img_def_jue_03_alt1.jpg" }
           ]
         },
         {
@@ -254,7 +256,7 @@
           ]
         },
         {
-          "nombre": "Face pull / Reverse fly",
+          "nombre": "Reverse cable fly",
           "series": "3",
           "repeticiones": "15-20",
           "descanso": "60 seg",

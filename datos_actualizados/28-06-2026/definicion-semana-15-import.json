@@ -1,0 +1,721 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "importDate": "2026-06-28T09:20:35.654Z",
+  "weekTo": 15,
+  "workoutProgress": [
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 15,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 55kg. Semana 14: 10 reps con RIR 1. Buscar 10-11 reps limpias, sin llegar al fallo; no subir hasta sostener margen real.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 15,
+      "weights": [
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 66kg si es la siguiente carga real disponible. Semana 14: 59kg x 15 reps con RIR 1. Buscar 10-12 reps con control; si el salto rompe técnica, volver a 59kg y dejar feedback.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-cable-fly-alto-bajo",
+      "day": "lunes",
+      "week": 15,
+      "weights": [
+        14.7,
+        14.7
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Corregir peso real a 14.7kg. Semana 14: 12 reps con RIR 0. Mantener 14.7kg, buscar 12 reps con RIR 1-2 y sin dolor de hombro; no subir todavía.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 15,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 5.7kg. Semana 14: 13 reps con RIR 1. Buscar 13-14 reps limpias, sin encoger trapecios.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-overhead-cable",
+      "day": "lunes",
+      "week": 15,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 23.8kg. Semana 14: 11 reps con RIR 1. Buscar 11-12 reps con codos fijos y hombro cómodo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 15,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "BAJAR a 23.8kg. Semana 14: con 26.1kg hiciste 12 solo en la primera serie, luego 10 y RIR 0 tras overhead. Buscar 10-12 reps parejas, codos fijos y sin fallo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 15,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 90kg. Semana 14: 15 reps con RIR 0. No subir core; buscar 12-15 reps más controladas y sin tirar del cuello.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 15,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 17kg. Semana 14: 13 reps con RIR 1. Peso real confirmado: no usar 17.5kg. Buscar 13 reps por lado con pelvis estable.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 15,
+      "weights": [
+        73,
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 73kg. Semana 14: 9 reps con RIR 1. Buscar 9-10 reps limpias, sin llegar al fallo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 15,
+      "weights": [
+        59,
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 59kg. Semana 14: 52kg x 14 reps con RIR 1 y ya confirmaste que 59kg es el siguiente peso. Buscar 8-10 reps sólidas en la misma máquina.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-reverse-cable-fly",
+      "day": "martes",
+      "week": 15,
+      "weights": [
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 66kg según el peso real que venías registrando. Semana 14: 11 reps con RIR 1. Enfocar deltoide posterior: brazos semiabiertos, pausa atrás y sin convertirlo en tirón de trapecio/cuello.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 15,
+      "weights": [
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 25kg. Semana 14: 12 reps con RIR 1. Buscar 12 reps limpias con margen real antes de subir.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-martillo-en-cuerda-polea-baja",
+      "day": "martes",
+      "week": 15,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 12kg. Semana 14: 13 reps con RIR 2. Buscar 13-14 reps limpias; no subir hasta confirmar el siguiente peso real de la polea.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 15,
+      "weights": [
+        12,
+        12
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 12kg. Semana 14: 16 reps con RIR 1. Buscar 16-18 reps en ambas series con rango completo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-inverso-barra-z--polea",
+      "day": "martes",
+      "week": 15,
+      "weights": [
+        10,
+        10
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 10kg. Semana 14: ejercicio nuevo, 12 reps con RIR 1. Usar 10kg como peso real de referencia, buscar 12-13 reps sin dolor de muñeca/codo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 15,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-07-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 50kg. RIR semana 13: 2. Semana 13 feedback: Hice 12 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 15,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 41kg. RIR semana 13: 0. Semana 13 feedback: Hice 11 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 15,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 90kg. RIR semana 13: 2. Semana 13 feedback: Hice 11 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 15,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener peso corporal / sin carga. RIR semana 13: 1. Semana 13 feedback: Hice 15 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 15,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-07-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 55kg. RIR semana 13: 0. Semana 13 feedback: Hice 13 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-unilateral-en-polea",
+      "day": "jueves",
+      "week": 15,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-02T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "NUEVO: reemplaza press de hombros para sacar prioridad al deltoide anterior y enfocar deltoide medio. Empezar con 5.7kg por lado, 12-15 reps estrictas, sin balanceo ni trapecio. Si queda demasiado liviano, dejar feedback antes de subir.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-myo-reps",
+      "day": "jueves",
+      "week": 15,
+      "weights": [
+        5.7
+      ],
+      "seriesCount": 1,
+      "date": "2026-07-02T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 5.7kg. RIR semana 13: 3. Semana 13 feedback: Terminé super bien, quizás pueda hacer 6x5x4x3x2x1, que opinas ? Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-reverse-cable-fly",
+      "day": "jueves",
+      "week": 15,
+      "weights": [
+        7.9,
+        7.9,
+        7.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-02T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 7.9kg. Semana 14: 13 reps con RIR 1. Es reverse cable fly, no face pull: buscar 13-15 reps con control escapular, pausa breve atrás y foco en deltoide posterior.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 15,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-02T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 73kg. Semana 14: 10 reps con RIR 1. Buscar 10-11 reps limpias; no subir mientras jueves prioriza hombros.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 15,
+      "weights": [
+        14,
+        14,
+        14
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-02T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 14kg. Semana 14: 11 reps con RIR 1. Buscar 12 reps con tensión continua, sin ir al fallo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-extension-de-triceps-unilateral-cross-body-en-polea",
+      "day": "jueves",
+      "week": 15,
+      "weights": [
+        10.2,
+        10.2,
+        10.2
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-02T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Corregir peso real a 10.2kg en esta máquina. Semana 14: 12 reps con RIR 1. Mantener 10.2kg, buscar 12-13 reps por lado, pressdown hacia cadera contraria.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 15,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 73kg. Semana 14: 10 reps con RIR 1. Buscar 10 reps limpias con margen real; no subir todavía.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 15,
+      "weights": [
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 66kg solo si es el siguiente salto real de la máquina. Semana 14: 59kg x 13 reps con RIR 2. Buscar 8-10 reps sólidas; si el salto compromete técnica o agarre, volver a 59kg.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 15,
+      "weights": [
+        32.9,
+        32.9,
+        32.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 32.9kg. Semana 14: 11 reps con RIR 1. Buscar 11-12 reps con dorsales, codos semifijos y sin compensar lumbar.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 15,
+      "weights": [
+        12.5,
+        12.5,
+        12.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 12.5kg. Semana 14: 12 reps con RIR 1. Buscar 12-13 reps con tensión continua y sin balanceo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 15,
+      "weights": [
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Corregir a máquina nueva con 25kg. Semana 14: 25kg x 12 reps con RIR 0. Mantener 25kg, buscar 10-12 reps con margen y técnica estricta; no usar 41kg en esta máquina.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-en-polea-alta",
+      "day": "viernes",
+      "week": 15,
+      "weights": [
+        12.5,
+        12.5
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SUBIR a 12.5kg si es el siguiente peso real disponible. Semana 14: 10.2kg x 15 reps con RIR 3, muy fácil. Buscar 12-15 reps con control; si no existe 12.5kg, usar el siguiente inmediato y dejar feedback.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 15,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 12kg. Semana 14: 16 reps con RIR 2. Buscar 16-18 reps con rango completo antes de subir.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 15,
+      "weights": [
+        24,
+        24
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 24kg. RIR semana 13: 0. Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 15,
+      "weights": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 4,
+      "date": "2026-07-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 25kg. RIR semana 13: 2. Semana 13 feedback: Hice 20 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 15,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener peso corporal / sin carga. RIR semana 13: 1. Semana 13 feedback: Hice 13 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 15,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 41kg. RIR semana 13: 2. Semana 13 feedback: Hice 14 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 15,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 36kg. RIR semana 13: 2. Semana 13 feedback: Hice 14 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 15,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-07-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 50kg. RIR semana 13: 1. Semana 13 feedback: Hice 14 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 15,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener peso corporal / sin carga. RIR semana 13: 1. Semana 13 feedback: Hice 13 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 15,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-07-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "Mantener 17kg. Semana 13 feedback: No lo hice, estaba cansado Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "rir": null
+    }
+  ],
+  "cardioLogs": [
+    {
+      "day": "lunes",
+      "week": 15,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS zona 2 en cinta 6-8% inclinación, 30 min, ritmo conversacional. Registrar completado real.",
+      "date": "2026-06-29T17:00:00.000Z"
+    },
+    {
+      "day": "martes",
+      "week": 15,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS zona 2 suave, 30 min. Mantener intensidad baja para no interferir con Pull.",
+      "date": "2026-06-30T17:00:00.000Z"
+    },
+    {
+      "day": "miercoles",
+      "week": 15,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS zona 2 después de piernas, 30 min. No compensar con más intensidad; completar suave es suficiente.",
+      "date": "2026-07-01T17:00:00.000Z"
+    },
+    {
+      "day": "jueves",
+      "week": 15,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS zona 2, 30 min. Cinta suave, postura relajada y ritmo conversacional.",
+      "date": "2026-07-02T17:00:00.000Z"
+    },
+    {
+      "day": "viernes",
+      "week": 15,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS estructurado de 30 min, no caminata casual. Cinta 6-8% inclinación si se tolera bien.",
+      "date": "2026-07-03T17:00:00.000Z"
+    },
+    {
+      "day": "sabado",
+      "week": 15,
+      "tipo": "hiit",
+      "duracionMinutos": 18,
+      "completado": false,
+      "notas": "HIIT 18 min si vas al gym. Si piernas están pesadas, hacer LISS suave 30 min y registrarlo; no dejarlo sin registrar.",
+      "date": "2026-07-04T09:00:00.000Z"
+    }
+  ],
+  "coachNotes": "Semana 15: import generado desde el export de semana 14. Semana 14 fue parcial: entrenamiento 38/41, cardio 1/6, RIR medio 1.0, 5 registros a RIR 0 y sin adherencia nutricional registrada. Regla aplicada: ejercicios/días sin feedback repiten el comentario de semana 14; ejercicios con feedback se ajustan solo cuando hay evidencia clara o corrección de peso real. Ajustes principales: Pec deck 66kg si el salto existe; remo martes 59kg; pushdown baja a 23.8kg; cable fly corrige a 14.7kg; jueves reemplaza press de hombros por elevación lateral unilateral en polea 5.7kg para priorizar deltoide medio; reverse cable fly queda explícito para deltoide posterior; cross-body corrige a 10.2kg; predicador cambia a máquina de 25kg; curl polea alta sube a 12.5kg si existe; remo unilateral viernes prueba 66kg solo si el salto real mantiene técnica. Prioridad de semana 15: completar 6/6 cardio o registrar motivo, sostener técnica, evitar más RIR 0 en aislamientos de brazo y dejar feedback en miércoles/sábado si se entrenan."
+}

@@ -1,0 +1,867 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "exportDate": "2026-06-28T09:14:02.537Z",
+  "weekFrom": 14,
+  "subPhase": "Plan Recomp Lenta 2026",
+  "mesocycle": "M3.4",
+  "workoutProgress": [
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 14,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-24T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 50kg. RIR semana 13: 2. Semana 13 feedback: Hice 12 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 14,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-24T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 41kg. RIR semana 13: 0. Semana 13 feedback: Hice 11 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 14,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-24T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 90kg. RIR semana 13: 2. Semana 13 feedback: Hice 11 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 14,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-24T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener peso corporal / sin carga. RIR semana 13: 1. Semana 13 feedback: Hice 15 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 14,
+      "weights": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 25kg. RIR semana 13: 2. Semana 13 feedback: Hice 20 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 14,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 41kg. RIR semana 13: 2. Semana 13 feedback: Hice 14 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 14,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 50kg. RIR semana 13: 1. Semana 13 feedback: Hice 14 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 14,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 17kg. Semana 13 feedback: No lo hice, estaba cansado Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 14,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-22T06:58:21.941+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 55kg. RIR semana 13: 2. Semana 13 feedback: Hice 10 Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-cable-fly-alto-bajo",
+      "day": "lunes",
+      "week": 14,
+      "weights": [
+        14,
+        14
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-22T07:09:24.505+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nNUEVO. Arrancar con 14kg, 2x12-15, RIR 1-2. Si se siente pesado o cambia la polea, bajar y dejar feedback.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nEl peso es 14,7 kg en esta máquina. Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 14,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-24T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 55kg. RIR semana 13: 0. Semana 13 feedback: Hice 13 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 14,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener peso corporal / sin carga. RIR semana 13: 1. Semana 13 feedback: Hice 13 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 14,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 36kg. RIR semana 13: 2. Semana 13 feedback: Hice 14 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 14,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-27T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener peso corporal / sin carga. RIR semana 13: 1. Semana 13 feedback: Hice 13 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 14,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-22T07:05:30.333+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 59kg. RIR semana 13: 1. Semana 13 feedback: Hice 15 repeticiones. Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 15 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 14,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-22T07:21:46.321+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 5.7kg. RIR semana 13: 1. Semana 13 feedback: Hice 12 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-triceps-overhead-cable",
+      "day": "lunes",
+      "week": 14,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-22T07:32:41.868+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 23.8kg. mismo ejercicio movido a lunes. RIR semana 13: 1. Semana 13 feedback: Hice 11 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 14,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-22T07:40:32.41+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 90kg. RIR semana 13: 1. Semana 13 feedback: Hice 13 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 15 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 14,
+      "weights": [
+        26.1,
+        26.1,
+        26.1
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-22T07:48:34.328+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 26.1kg. RIR semana 13: 0. Semana 13 feedback: Hice 12 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones. La primera serie pude hacer 12, después no, se nota el cansancio del músculo después del ejercicio anterior. Quizás haya que bajar peso en este.\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 14,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-22T07:58:24.826+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 17kg. RIR semana 13: 1. Semana 13 feedback: NO EXISTE 17,5 te lo inventas, es 17kg, ya lo corregi, no lo cambies! Hice 13 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 14,
+      "weights": [
+        73,
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-23T06:43:46.954+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 73kg. RIR semana 13: 1. Semana 13 feedback: Hice 9 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 9 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 14,
+      "weights": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 4,
+      "date": "2026-06-23T06:53:17.371+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 52kg. RIR semana 13: 2. Semana 13 feedback: El siguiente peso es 59 kg. hice 12 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 14 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 14,
+      "weights": [
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-23T07:16:14.995+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 25kg. RIR semana 13: 1. Semana 13 feedback: Hice 12 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 14,
+      "weights": [
+        12,
+        12
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-23T07:28:34.983+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 12kg. RIR semana 13: 1. Semana 13 feedback: Hice 16 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 16 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-curl-martillo-en-cuerda-polea-baja",
+      "day": "martes",
+      "week": 14,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-23T07:33:27.62+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 12kg. renombrado a polea baja; arrancar con carga previa. RIR semana 13: 1. Semana 13 feedback: Hice 12 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "martes-face-pull",
+      "day": "martes",
+      "week": 14,
+      "weights": [
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-23T07:45:06.733+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 66kg. RIR semana 13: 1. Semana 13 feedback: Hice 11 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-curl-inverso-barra-z--polea",
+      "day": "martes",
+      "week": 14,
+      "weights": [
+        10,
+        10
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-23T07:47:49.309+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 5kg. reemplazo para braquiorradial; arrancar conservador. RIR semana 13: 1. Semana 13 feedback: Hice 16 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nEjercicio nuevo, hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-press-hombros-en-maquina-con-respaldo",
+      "day": "jueves",
+      "week": 14,
+      "weights": [
+        35,
+        35,
+        35
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-25T06:27:20.592+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 35kg. mismo ejercicio movido a jueves. RIR semana 13: 0. Semana 13 feedback: Hice 11 repeticiones, la última 9 y medio, al fallo 😭 Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-myo-reps",
+      "day": "jueves",
+      "week": 14,
+      "weights": [
+        5.7
+      ],
+      "seriesCount": 1,
+      "date": "2026-06-25T06:31:59.465+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 5.7kg. RIR semana 13: 3. Semana 13 feedback: Terminé super bien, quizás pueda hacer 6x5x4x3x2x1, que opinas ? Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-face-pull--reverse-fly",
+      "day": "jueves",
+      "week": 14,
+      "weights": [
+        7.9,
+        7.9,
+        7.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-25T06:41:41.589+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 7.9kg. RIR semana 13: 1. Semana 13 feedback: Primera vez que llego a las 13 sin parar Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 14,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-25T06:53:33.413+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 73kg. RIR semana 13: 1. Semana 13 feedback: Hice 10 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 14,
+      "weights": [
+        14,
+        14,
+        14
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-25T07:04:33.193+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 14kg. RIR semana 13: 1. Semana 13 feedback: Hice 11 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-extension-de-triceps-unilateral-cross-body-en-polea",
+      "day": "jueves",
+      "week": 14,
+      "weights": [
+        10.2,
+        10.2,
+        10.2
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-25T07:08:44.272+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nNUEVO reemplazo de fondos. Arrancar con 14kg unilateral, 3x12-15, RIR 1-2; pressdown hacia cadera contraria, sin dolor de codo/hombro.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones con 10,2 kg que es lo que tiene ese máquina\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 14,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-26T06:24:09.309+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 73kg. RIR semana 13: 0. Semana 13 feedback: Hice 9 y medio Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 14,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-26T06:37:48.135+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 59kg. RIR semana 13: 2. Semana 13 feedback: Hice 13 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 14,
+      "weights": [
+        32.9,
+        32.9,
+        32.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-26T06:48:54.876+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 32.9kg. RIR semana 13: 1. Semana 13 feedback: Hice 11 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 14,
+      "weights": [
+        12.5,
+        12.5,
+        12.5
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-26T07:04:59.133+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 12.5kg. RIR semana 13: 1. Semana 13 feedback: Hice 13 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 14,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-26T07:14:37.472+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 12kg. RIR semana 13: 1. Semana 13 feedback: Hice 16 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 16 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "viernes-curl-en-polea-alta",
+      "day": "viernes",
+      "week": 14,
+      "weights": [
+        7.9,
+        7.9
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-26T07:19:58.184+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nNUEVO. Arrancar con 7.9kg, 2x12-15, RIR 1-2. Omitir o bajar si codo/agarre llegan cargados.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nLo hice con 10,2, hice 15 repeticiones, muy facil\n[/USER_FEEDBACK]",
+      "rir": 3
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 14,
+      "weights": [
+        24,
+        24
+      ],
+      "seriesCount": 2,
+      "date": "2026-06-26T08:28:49.753+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 24kg. RIR semana 13: 0. Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 14,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-06-26T08:29:31.511+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nMantener 41kg. RIR semana 13: 0. Semana 13 feedback: Hice 12 repeticiones Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice en otra máquina, 25kg, anota este peso porque vamos a hacer aquí ahora, hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 0
+    }
+  ],
+  "bodyComposition": {
+    "week": 14,
+    "date": "2026-06-28T09:13:32.617Z",
+    "peso": 99.1,
+    "notas": ""
+  },
+  "dailyWeights": [
+    {
+      "week": 14,
+      "day": "sabado",
+      "peso": 99.1,
+      "date": "2026-06-27T06:55:45.01+00:00",
+      "notas": ""
+    },
+    {
+      "week": 14,
+      "day": "lunes",
+      "peso": 99.9,
+      "date": "2026-06-22T05:42:19.276+00:00",
+      "notas": ""
+    },
+    {
+      "week": 14,
+      "day": "martes",
+      "peso": 98.9,
+      "date": "2026-06-23T05:20:12.627+00:00",
+      "notas": ""
+    },
+    {
+      "week": 14,
+      "day": "miercoles",
+      "peso": 99.1,
+      "date": "2026-06-24T05:44:28.908+00:00",
+      "notas": ""
+    },
+    {
+      "week": 14,
+      "day": "jueves",
+      "peso": 99.05,
+      "date": "2026-06-25T05:15:32.233+00:00",
+      "notas": ""
+    },
+    {
+      "week": 14,
+      "day": "viernes",
+      "peso": 98.85,
+      "date": "2026-06-26T05:25:50.816+00:00",
+      "notas": ""
+    },
+    {
+      "week": 14,
+      "day": "domingo",
+      "peso": 99.1,
+      "date": "2026-06-28T09:13:27.551Z",
+      "notas": ""
+    }
+  ],
+  "cardioLogs": [
+    {
+      "day": "miercoles",
+      "week": 14,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS zona 2 después de piernas, 30 min. No compensar con más intensidad; completar suave es suficiente.",
+      "date": "2026-06-24T17:00:00+00:00"
+    },
+    {
+      "day": "viernes",
+      "week": 14,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "OBLIGATORIO. LISS estructurado de 30 min, no caminata casual. Cinta 6-8% inclinación si se tolera bien.",
+      "date": "2026-06-26T17:00:00+00:00"
+    },
+    {
+      "day": "sabado",
+      "week": 14,
+      "tipo": "hiit",
+      "duracionMinutos": 18,
+      "completado": false,
+      "notas": "HIIT 18 min si vas al gym. Con sábado recortado, mantenerlo solo si piernas responden bien; si no, LISS suave 30 min y registrarlo.",
+      "date": "2026-06-27T09:00:00+00:00"
+    },
+    {
+      "day": "lunes",
+      "week": 14,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "No pude ir",
+      "date": "2026-06-23T04:46:19.003+00:00"
+    },
+    {
+      "day": "martes",
+      "week": 14,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "No fui",
+      "date": "2026-06-24T05:44:15.652+00:00"
+    },
+    {
+      "day": "jueves",
+      "week": 14,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": true,
+      "notas": "OBLIGATORIO. LISS zona 2, 30 min. Cinta suave, postura relajada y ritmo conversacional.",
+      "date": "2026-06-26T05:25:42.296+00:00"
+    }
+  ],
+  "weeklyClosure": {
+    "week": 14,
+    "readiness": "partial",
+    "statusLabel": "Revisable con faltantes",
+    "statusDetail": "Podemos analizar la semana, pero conviene completar los datos marcados antes del export.",
+    "requiredCompleted": 3,
+    "requiredTotal": 5,
+    "metrics": {
+      "weeklyChangeKg": -0.1,
+      "targetWeeklyLossRangeKg": "0.25-0.45",
+      "dailyWeightAverageKg": 99.14,
+      "dailyWeightEntries": 7,
+      "workoutCompleted": 38,
+      "workoutPlanned": 41,
+      "workoutPercent": 93,
+      "cardioCompleted": 1,
+      "cardioPlanned": 6,
+      "cardioPercent": 17,
+      "rirLogs": 29,
+      "averageRir": 1,
+      "zeroRirLogs": 5,
+      "feedbackLogs": 27,
+      "coachTargets": 41,
+      "nutritionAdherencePercent": null,
+      "relaxMeals": null,
+      "sleepAverage": null,
+      "hunger": null,
+      "energy": null,
+      "discomforts": null
+    },
+    "planningSignals": {
+      "dataQuality": "partial",
+      "decisionFocus": [
+        "Nutricion: falta adherencia semanal y comidas relax.",
+        "Cardio: completado 17% del cardio obligatorio.",
+        "Intensidad: 5 registros a RIR 0."
+      ],
+      "recommendations": [
+        "No ajustar calorias solo por peso si no hay adherencia nutricional registrada.",
+        "No compensar con recorte agresivo de calorias; primero completar el cardio planificado."
+      ]
+    },
+    "checklist": [
+      {
+        "label": "Peso semanal / BIA",
+        "value": "99.1 kg registrado",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "Pesos diarios",
+        "value": "7 registros, promedio 99.1 kg",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "Cardio obligatorio",
+        "value": "1/6 sesiones completadas",
+        "ok": false,
+        "required": true
+      },
+      {
+        "label": "Entrenamiento",
+        "value": "38/41 ejercicios con peso (93%)",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "RIR",
+        "value": "29 ejercicios con RIR",
+        "ok": true,
+        "required": false
+      },
+      {
+        "label": "Feedback de ejercicios",
+        "value": "27 comentarios guardados",
+        "ok": true,
+        "required": false
+      },
+      {
+        "label": "Adherencia nutricional",
+        "value": "Sin adherencia registrada",
+        "ok": false,
+        "required": true
+      }
+    ],
+    "nextStep": "Completa los faltantes de la semana 14 y vuelve al cierre antes de exportar."
+  }
+}
