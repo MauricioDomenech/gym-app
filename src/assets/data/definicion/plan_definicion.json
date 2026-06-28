@@ -121,13 +121,13 @@
           ]
         },
         {
-          "nombre": "Reverse cable fly",
+          "nombre": "Reverse fly en maquina",
           "series": "3",
           "repeticiones": "15-20",
           "descanso": "60 seg",
-          "imagen": "img_def_mar_03.jpg",
+          "imagen": "img_def_mar_03_alt1.jpg",
           "alternativas": [
-            { "nombre": "Reverse fly en maquina", "imagen": "img_def_mar_03_alt1.jpg" },
+            { "nombre": "Reverse cable fly", "imagen": "img_def_mar_03.jpg" },
             { "nombre": "Face pull", "imagen": "img_def_mar_03.jpg" }
           ]
         },
@@ -246,13 +246,13 @@
           ]
         },
         {
-          "nombre": "Elevacion lateral (myo-reps)",
-          "series": "1",
-          "repeticiones": "12-15 + 4x3-5",
-          "descanso": "10-15 seg",
+          "nombre": "Remo al menton en polea agarre amplio",
+          "series": "2",
+          "repeticiones": "10-15",
+          "descanso": "60-90 seg",
           "imagen": "img_def_jue_03.jpg",
           "alternativas": [
-            { "nombre": "Elevacion lateral mancuernas 3x12-15", "imagen": "img_def_jue_03_alt1.jpg" }
+            { "nombre": "Remo al menton con mancuernas agarre amplio", "imagen": "img_def_jue_03_alt1.jpg" }
           ]
         },
         {

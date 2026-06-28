@@ -167,7 +167,7 @@
       "rir": null
     },
     {
-      "exerciseId": "martes-reverse-cable-fly",
+      "exerciseId": "martes-reverse-fly-en-maquina",
       "day": "martes",
       "week": 15,
       "weights": [
@@ -179,7 +179,7 @@
       "date": "2026-06-30T08:00:00.000Z",
       "isAlternative": false,
       "alternativeIndex": null,
-      "observations": "Mantener 66kg según el peso real que venías registrando. Semana 14: 11 reps con RIR 1. Enfocar deltoide posterior: brazos semiabiertos, pausa atrás y sin convertirlo en tirón de trapecio/cuello.",
+      "observations": "Mantener 66kg en reverse fly en máquina. Semana 14: 11 reps con RIR 1. Enfocar deltoide posterior: brazos semiabiertos, pausa atrás y sin convertirlo en tirón de trapecio/cuello.",
       "rir": null
     },
     {
@@ -343,17 +343,18 @@
       "rir": null
     },
     {
-      "exerciseId": "jueves-elevacion-lateral-myo-reps",
+      "exerciseId": "jueves-remo-al-menton-en-polea-agarre-amplio",
       "day": "jueves",
       "week": 15,
       "weights": [
-        5.7
+        10.2,
+        10.2
       ],
-      "seriesCount": 1,
+      "seriesCount": 2,
       "date": "2026-07-02T08:00:00.000Z",
       "isAlternative": false,
       "alternativeIndex": null,
-      "observations": "Mantener 5.7kg. RIR semana 13: 3. Semana 13 feedback: Terminé super bien, quizás pueda hacer 6x5x4x3x2x1, que opinas ? Semana 14: consolidar con técnica limpia; no subir carga esta semana por cambios de plan, bajada rápida de peso y varios RIR 0 recientes.",
+      "observations": "NUEVO: reemplaza las laterales myo-reps para no duplicar el mismo patrón. Empezar con 10.2kg, 2 series de 10-15 reps. Agarre amplio, tirar hasta pecho alto/clavícula, codos abiertos pero sin forzar hombro. Si molesta, cortar y dejar feedback.",
       "rir": null
     },
     {
@@ -717,5 +718,5 @@
       "date": "2026-07-04T09:00:00.000Z"
     }
   ],
-  "coachNotes": "Semana 15: import generado desde el export de semana 14. Semana 14 fue parcial: entrenamiento 38/41, cardio 1/6, RIR medio 1.0, 5 registros a RIR 0 y sin adherencia nutricional registrada. Regla aplicada: ejercicios/días sin feedback repiten el comentario de semana 14; ejercicios con feedback se ajustan solo cuando hay evidencia clara o corrección de peso real. Ajustes principales: Pec deck 66kg si el salto existe; remo martes 59kg; pushdown baja a 23.8kg; cable fly corrige a 14.7kg; jueves reemplaza press de hombros por elevación lateral unilateral en polea 5.7kg para priorizar deltoide medio; reverse cable fly queda explícito para deltoide posterior; cross-body corrige a 10.2kg; predicador cambia a máquina de 25kg; curl polea alta sube a 12.5kg si existe; remo unilateral viernes prueba 66kg solo si el salto real mantiene técnica. Prioridad de semana 15: completar 6/6 cardio o registrar motivo, sostener técnica, evitar más RIR 0 en aislamientos de brazo y dejar feedback en miércoles/sábado si se entrenan."
+  "coachNotes": "Semana 15: import generado desde el export de semana 14. Semana 14 fue parcial: entrenamiento 38/41, cardio 1/6, RIR medio 1.0, 5 registros a RIR 0 y sin adherencia nutricional registrada. Regla aplicada: ejercicios/días sin feedback repiten el comentario de semana 14; ejercicios con feedback se ajustan solo cuando hay evidencia clara o corrección de peso real. Ajustes principales: Pec deck 66kg si el salto existe; remo martes 59kg; martes queda como reverse fly en máquina; pushdown baja a 23.8kg; cable fly corrige a 14.7kg; jueves reemplaza press de hombros por elevación lateral unilateral en polea 5.7kg para priorizar deltoide medio; laterales myo-reps se reemplazan por remo al mentón en polea agarre amplio 10.2kg x 2 series para sumar otro patrón de deltoide medio; reverse cable fly queda explícito para deltoide posterior; cross-body corrige a 10.2kg; predicador cambia a máquina de 25kg; curl polea alta sube a 12.5kg si existe; remo unilateral viernes prueba 66kg solo si el salto real mantiene técnica. Prioridad de semana 15: completar 6/6 cardio o registrar motivo, sostener técnica, evitar más RIR 0 en aislamientos de brazo y dejar feedback en miércoles/sábado si se entrenan."
 }
