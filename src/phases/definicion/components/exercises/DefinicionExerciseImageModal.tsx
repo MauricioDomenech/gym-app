@@ -54,13 +54,13 @@ export const DefinicionExerciseImageModal: React.FC<DefinicionExerciseImageModal
             </div>
           </div>
 
-          {/* Image */}
+          {/* Exercise demo */}
           <div className="p-4">
             {!imageError ? (
               <img
                 src={`/images/${imagePath}`}
                 alt={exerciseName}
-                className="w-full h-auto rounded-lg"
+                className="w-full max-w-sm h-auto mx-auto rounded-lg"
                 onError={() => setImageError(true)}
               />
             ) : (
@@ -78,9 +78,17 @@ export const DefinicionExerciseImageModal: React.FC<DefinicionExerciseImageModal
 
           {/* Footer */}
           <div className="px-6 py-3 bg-gray-50 dark:bg-slate-900/50 border-t border-gray-200 dark:border-slate-700 flex items-center justify-between">
-            <span className="text-xs text-gray-400">
-              <kbd className="px-1.5 py-0.5 bg-gray-200 dark:bg-slate-600 rounded text-xs">Esc</kbd> para cerrar
-            </span>
+            <div className="text-xs text-gray-400">
+              <div><kbd className="px-1.5 py-0.5 bg-gray-200 dark:bg-slate-600 rounded text-xs">Esc</kbd> para cerrar</div>
+              <a
+                href="https://gymvisual.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-emerald-600 dark:hover:text-emerald-400"
+              >
+                Animación © Gym visual
+              </a>
+            </div>
             <button
               onClick={onClose}
               className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm rounded-md transition-colors"

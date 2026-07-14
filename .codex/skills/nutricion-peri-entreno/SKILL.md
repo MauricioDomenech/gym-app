@@ -3,36 +3,38 @@ name: nutricion-peri-entreno
 description: "Pre, intra, and post-workout nutrition."
 ---
 
-# Nutricion Peri-Entrenamiento
+# Nutrición Peri-Entrenamiento
 
 ## Ventana anabolica real
 
-La "ventana anabolica" de 30 minutos es un MITO. La evidencia actual (Schoenfeld & Aragon, 2013) muestra que la ventana real es de **4-6 horas** alrededor del entrenamiento. Lo que importa es la comida PRE + POST combinadas.
+La “ventana anabólica” de 30 minutos es una simplificación. La comida previa,
+posterior y el total diario importan; no hay que convertir 4-6 horas en una ventana
+rígida para todas las personas.
 
 ---
 
 ## PRE-ENTRENAMIENTO
 
 ### Objetivo
-Proveer energia (glucogeno) + aminoacidos para rendimiento y proteccion muscular.
+Proveer energía (glucógeno) + aminoacidos para rendimiento y proteccion muscular.
 
-### Segun tiempo disponible antes de entrenar
+### Según tiempo disponible antes de entrenar
 
 | Tiempo antes | Que comer | Ejemplo |
 |--------------|-----------|---------|
-| **3-4h antes** | Comida completa (proteina + carbs complejos + grasa moderada) | 150g pollo + 200g arroz + ensalada + aceite oliva |
-| **1.5-2h antes** | Comida moderada (proteina + carbs, poca grasa) | 2 huevos + 80g avena + platano |
-| **30-60 min antes** | Snack ligero (carbs rapidos + algo de proteina) | Platano + scoop whey en agua / tostada con miel |
-| **<30 min antes** | Solo carbs rapidos si acaso | Platano o datiles (2-3 unidades) |
+| **3-4h antes** | Comida completa (proteína + carbs complejos + grasa moderada) | 150g pollo + 200g arroz + ensalada + aceite oliva |
+| **1.5-2h antes** | Comida moderada (proteína + carbs, poca grasa) | 2 huevos + 80g avena + platano |
+| **30-60 min antes** | Snack ligero (carbs rápidos + algo de proteína) | Platano + scoop whey en agua / tostada con miel |
+| **<30 min antes** | Solo carbs rápidos si acaso | Platano o datiles (2-3 unidades) |
 
 ### Macros pre-entreno recomendados
-- **Proteina**: 20-40g
+- **Proteína**: 20-40g
 - **Carbohidratos**: 30-60g (complejos si hay tiempo, simples si falta tiempo)
 - **Grasa**: Minimizar si queda <2h (ralentiza digestion)
 
 ### 5 ejemplos de comidas pre-entreno
 
-#### Si entrenas por la MANANA (1-2h antes)
+#### Si entrenas por la MAÑANA (1-2h antes)
 1. 80g avena + scoop whey + platano (**P:30g | C:70g | G:8g | ~470 kcal**)
 2. 2 tostadas integrales + 2 huevos revueltos + mermelada (**P:20g | C:45g | G:12g | ~370 kcal**)
 3. Yogur griego (200g) + granola (40g) + frutos rojos (**P:22g | C:45g | G:8g | ~340 kcal**)
@@ -47,18 +49,18 @@ Proveer energia (glucogeno) + aminoacidos para rendimiento y proteccion muscular
 
 ### Cuando SI tiene sentido
 - Sesiones >90 minutos
-- Doble sesion (pesas manana + cardio tarde)
+- Doble sesión (pesas mañana + cardio tarde)
 - Entrenamiento en ayunas
 - Calor extremo / mucha sudoracion
 
 ### Cuando NO es necesario
 - Sesiones <75 minutos con comida pre-entreno adecuada
-- La mayoria de los entrenamientos normales
+- La mayoría de los entrenamientos normales
 
 ### Que consumir intra-entreno (si aplica)
 - **Agua**: 400-800 ml/hora (base: sorbo cada 15 min)
 - **Electrolitos**: Si >60 min o mucha sudoracion (pizca de sal en agua)
-- **Carbs rapidos**: Solo si >90 min (20-30g dextrosa o bebida deportiva)
+- **Carbs rápidos**: Solo si >90 min (20-30g dextrosa o bebida deportiva)
 - **EAAs**: 5-10g si entrenas en ayunas (opcional, whey post es suficiente)
 
 ---
@@ -66,17 +68,17 @@ Proveer energia (glucogeno) + aminoacidos para rendimiento y proteccion muscular
 ## POST-ENTRENAMIENTO
 
 ### Objetivo
-Iniciar la recuperacion: sintesis proteica muscular + reposicion de glucogeno.
+Iniciar la recuperación: síntesis proteica muscular + reposicion de glucógeno.
 
 ### Timing real
 - **Dentro de 2-3 horas** post-entreno es suficiente
 - Si comiste 2-3h ANTES del entreno, no hay urgencia extrema
-- Si entrenaste en ayunas, comer DENTRO de 1 hora es mas importante
+- Si entrenaste en ayunas, comer DENTRO de 1 hora es más importante
 
 ### Macros post-entreno recomendados
-- **Proteina**: 30-50g (rapida: whey es ideal, pero comida real funciona igual)
-- **Carbohidratos**: 40-80g (para reponer glucogeno; simples + complejos)
-- **Grasa**: No hay que evitarla — no retrasa significativamente la absorcion de proteina
+- **Proteína**: 30-50g (rápida: whey es ideal, pero comida real funciona igual)
+- **Carbohidratos**: 40-80g (para reponer glucógeno; simples + complejos)
+- **Grasa**: No hay que evitarla — no retrasa significativamente la absorcion de proteína
 
 ### 5 ejemplos de comidas post-entreno
 
@@ -94,15 +96,15 @@ Iniciar la recuperacion: sintesis proteica muscular + reposicion de glucogeno.
 ## ENTRENAMIENTO EN AYUNAS
 
 ### La evidencia
-- Meta-analisis 2017 (Hackett & Hagstrom): NO es superior para perdida de grasa a largo plazo
+- Meta-análisis 2017 (Hackett & Hagstrom): NO es superior para pérdida de grasa a largo plazo
 - Sin embargo, algunas personas prefieren entrenar sin comer (comodidad, horarios)
 
 ### Si eliges entrenar en ayunas
-1. **Cafeina**: 200-400mg, 30-60 min antes (mejora rendimiento sin calorias)
-2. **Hidratacion**: 500ml agua al despertar
-3. **Sesion corta**: Idealmente <60 min
-4. **Post-entreno**: Comer dentro de 1 hora (ahora si es mas urgente)
-5. **Proteina post**: Priorizar 30-40g proteina rapida (whey o huevos)
+1. **Cafeina**: 200-400mg, 30-60 min antes (mejora rendimiento sin calorías)
+2. **Hidratación**: 500ml agua al despertar
+3. **Sesión corta**: Idealmente <60 min
+4. **Post-entreno**: Comer dentro de 1 hora (ahora si es más urgente)
+5. **Proteína post**: Priorizar 30-40g proteína rápida (whey o huevos)
 
 ### Cuando NO entrenar en ayunas
 - Si te sientes debil o mareado
@@ -112,22 +114,22 @@ Iniciar la recuperacion: sintesis proteica muscular + reposicion de glucogeno.
 
 ---
 
-## PROTEINA ANTES DE DORMIR
+## PROTEÍNA ANTES DE DORMIR
 
-- **Caseina** o proteina de liberacion lenta: 25-40g
-- Mantiene sintesis proteica durante las 7-8 horas de sueno
+- **Caseina** o proteína de liberacion lenta: 25-40g
+- Mantiene síntesis proteica durante las 7-8 horas de sueño
 - Alternativas: yogur griego (200-250g), queso cottage (200g), requeson
-- Especialmente importante en DEFICIT calorico
+- Especialmente importante en DEFICIT calórico
 
 ---
 
-## RESUMEN RAPIDO
+## RESUMEN RÁPIDO
 
-| Momento | Proteina | Carbohidratos | Grasa | Timing |
+| Momento | Proteína | Carbohidratos | Grasa | Timing |
 |---------|----------|---------------|-------|--------|
 | Pre-entreno | 20-40g | 30-60g | Baja si <2h | 1-4h antes |
 | Intra-entreno | Innecesaria (<75 min) | 20-30g si >90 min | No | Durante |
-| Post-entreno | 30-50g | 40-80g | Normal | 1-3h despues |
+| Post-entreno | 30-50g | 40-80g | Normal | 1-3h después |
 | Antes de dormir | 25-40g (lenta) | Baja | Normal | 30 min antes |
 
 ## Fuentes

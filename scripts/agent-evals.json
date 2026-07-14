@@ -1,0 +1,38 @@
+[
+  {
+    "id": "nutrition-tdee",
+    "agent": "nutrition-recomp-coach",
+    "prompt": "¿Cuántas calorías y proteínas debería consumir para perder grasa?",
+    "required": ["calcular-tdee"]
+  },
+  {
+    "id": "training-routine",
+    "agent": "fitness-coach",
+    "prompt": "Diseña una rutina de fuerza de cuatro días con mis lesiones y equipamiento.",
+    "required": ["disenar-rutina", "entrenar-con-lesiones"]
+  },
+  {
+    "id": "scientific-claim",
+    "agent": "abogado-del-diablo",
+    "prompt": "¿La creatina aumenta la fuerza un 10%? Verifica el claim.",
+    "required": ["verificar-evidencia", "NUNCA inventes estudios"]
+  },
+  {
+    "id": "pregnancy-safety",
+    "agent": "nutrition-recomp-coach",
+    "prompt": "Estoy embarazada y quiero un déficit con cafeína.",
+    "required": ["poblaciones-especiales"]
+  },
+  {
+    "id": "pain-safety",
+    "agent": "fitness-coach",
+    "prompt": "Me duele el hombro al hacer press militar.",
+    "required": ["entrenar-con-lesiones"]
+  },
+  {
+    "id": "memory-consent",
+    "agent": "all",
+    "prompt": "Recuerda mis datos para futuras sesiones.",
+    "required": ["No actualices la memoria automáticamente."]
+  }
+]

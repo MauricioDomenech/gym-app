@@ -41,11 +41,12 @@ Do not commit secrets or Supabase credentials. Keep environment values in local 
 
 Use the repo-local Codex assets migrated from `.claude`:
 
-- `.codex/agents/fitness-coach.md`: training, hypertrophy, cardio, technique, injuries, deloads, and routine design.
-- `.codex/agents/nutrition-recomp-coach.md`: calories, macros, meal plans, supplementation, body recomposition, refeeds, diet breaks, and progress analysis.
-- `.codex/agents/abogado-del-diablo.md`: adversarial scientific review for fitness and nutrition claims. Use it after significant recommendations from the other two agents.
+- `.codex/agents/fitness-coach.toml`: training, hypertrophy, cardio, technique, injuries, deloads, and routine design.
+- `.codex/agents/nutrition-recomp-coach.toml`: calories, macros, meal plans, supplementation, body recomposition, refeeds, diet breaks, and progress analysis.
+- `.codex/agents/abogado-del-diablo.toml`: adversarial scientific review for fitness and nutrition claims. Use it after significant recommendations from the other two agents.
 - `.codex/skills/*/SKILL.md`: domain procedures used by those agents. Keep `description:` frontmatter short to avoid Codex skill-loading budget issues.
 - `.codex/agent-memory/`: migrated project memory from Claude. Treat it as project context; update only when explicitly useful and never store secrets.
+- `npm run validate:agents`: valida la estructura de agentes, el enrutamiento de skills, las reglas de seguridad, la memoria curada y las evaluaciones estáticas.
 
 Default to Spanish for user-facing responses in this repository.
 

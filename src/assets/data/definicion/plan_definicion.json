@@ -11,11 +11,16 @@
           "series": "4",
           "repeticiones": "5-7",
           "descanso": "3 min",
-          "imagen": "img_def_lun_01.jpg",
-
+          "imagen": "exercises/definicion/0047-3TZduzM.gif",
           "alternativas": [
-            { "nombre": "Press inclinado con mancuernas", "imagen": "img_def_lun_01_alt1.jpg" },
-            { "nombre": "Press inclinado en maquina Smith", "imagen": "img_def_lun_01_alt2.jpg" }
+            {
+              "nombre": "Press inclinado con mancuernas",
+              "imagen": "exercises/definicion/0314-ns0SIbU.gif"
+            },
+            {
+              "nombre": "Press inclinado en maquina Smith",
+              "imagen": "exercises/definicion/0757-5v7KYld.gif"
+            }
           ]
         },
         {
@@ -23,11 +28,16 @@
           "series": "3",
           "repeticiones": "10-12",
           "descanso": "90 seg",
-          "imagen": "img_def_lun_03.jpg",
-
+          "imagen": "exercises/definicion/0596-v3xmPAR.gif",
           "alternativas": [
-            { "nombre": "Aperturas con mancuernas en banco plano", "imagen": "img_def_lun_03_alt1.jpg" },
-            { "nombre": "Cable crossover a la altura del pecho", "imagen": "img_def_lun_03_alt2.jpg" }
+            {
+              "nombre": "Aperturas con mancuernas en banco plano",
+              "imagen": "exercises/definicion/0308-yz9nUhF.gif"
+            },
+            {
+              "nombre": "Cable crossover a la altura del pecho",
+              "imagen": "exercises/definicion/0188-xLYSdtg.gif"
+            }
           ]
         },
         {
@@ -35,9 +45,12 @@
           "series": "2",
           "repeticiones": "12-15",
           "descanso": "60-90 seg",
-          "imagen": "img_def_lun_08.jpg",
+          "imagen": "exercises/definicion/0227-Pr9Rhf4.gif",
           "alternativas": [
-            { "nombre": "Pec deck unilateral", "imagen": "img_def_lun_08_alt1.jpg" }
+            {
+              "nombre": "Pec deck unilateral",
+              "imagen": ""
+            }
           ]
         },
         {
@@ -45,10 +58,12 @@
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "60 seg",
-          "imagen": "img_def_lun_04.jpg",
-
+          "imagen": "exercises/definicion/0178-goJ6ezq.gif",
           "alternativas": [
-            { "nombre": "Elevacion lateral con mancuernas", "imagen": "img_def_lun_04_alt1.jpg" }
+            {
+              "nombre": "Elevacion lateral con mancuernas",
+              "imagen": "exercises/definicion/0334-DsgkuIt.gif"
+            }
           ]
         },
         {
@@ -56,10 +71,12 @@
           "series": "3",
           "repeticiones": "10-15",
           "descanso": "60 seg",
-          "imagen": "img_def_jue_04.jpg",
-
+          "imagen": "exercises/definicion/0194-2IxROQ1.gif",
           "alternativas": [
-            { "nombre": "Extensiones de triceps con mancuerna", "imagen": "img_def_jue_04_alt1.jpg" }
+            {
+              "nombre": "Extensiones de triceps con mancuerna",
+              "imagen": "exercises/definicion/0430-PdmaD0N.gif"
+            }
           ]
         },
         {
@@ -67,10 +84,12 @@
           "series": "3",
           "repeticiones": "10-12",
           "descanso": "60 seg",
-          "imagen": "img_def_lun_05.jpg",
-
+          "imagen": "exercises/definicion/0201-3ZflifB.gif",
           "alternativas": [
-            { "nombre": "Triceps en polea con cuerda", "imagen": "img_def_lun_05_alt1.jpg" }
+            {
+              "nombre": "Triceps en polea con cuerda",
+              "imagen": "exercises/definicion/0200-dU605di.gif"
+            }
           ]
         },
         {
@@ -78,8 +97,7 @@
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "60 seg",
-          "imagen": "img_def_lun_06.jpg",
-
+          "imagen": "exercises/definicion/0595-ZnJHhMk.gif",
           "alternativas": []
         },
         {
@@ -87,7 +105,7 @@
           "series": "3",
           "repeticiones": "10-12/lado",
           "descanso": "60 seg",
-          "imagen": "img_def_lun_07.jpg",
+          "imagen": "exercises/definicion/0979-9pa4H5m.gif",
           "alternativas": []
         }
       ]
@@ -103,10 +121,12 @@
           "series": "4",
           "repeticiones": "5-8",
           "descanso": "3 min",
-          "imagen": "img_def_mar_01.jpg",
-
+          "imagen": "exercises/definicion/0150-eYnzaCm.gif",
           "alternativas": [
-            { "nombre": "Jalon al pecho en polea (agarre ancho)", "imagen": "img_def_mar_01_alt1.jpg" }
+            {
+              "nombre": "Jalon al pecho en polea (agarre ancho)",
+              "imagen": "exercises/definicion/0150-eYnzaCm.gif"
+            }
           ]
         },
         {
@@ -114,10 +134,12 @@
           "series": "4",
           "repeticiones": "6-8",
           "descanso": "2-3 min",
-          "imagen": "img_def_mar_02.jpg",
-
+          "imagen": "exercises/definicion/1350-7I6LNUG.gif",
           "alternativas": [
-            { "nombre": "Remo en maquina con apoyo de pecho", "imagen": "img_def_mar_02_alt1.jpg" }
+            {
+              "nombre": "Remo en maquina con apoyo de pecho",
+              "imagen": "exercises/definicion/1350-7I6LNUG.gif"
+            }
           ]
         },
         {
@@ -125,10 +147,16 @@
           "series": "3",
           "repeticiones": "15-20",
           "descanso": "60 seg",
-          "imagen": "img_def_mar_03_alt1.jpg",
+          "imagen": "exercises/definicion/0602-myfUsKf.gif",
           "alternativas": [
-            { "nombre": "Reverse cable fly", "imagen": "img_def_mar_03.jpg" },
-            { "nombre": "Face pull", "imagen": "img_def_mar_03.jpg" }
+            {
+              "nombre": "Reverse cable fly",
+              "imagen": "exercises/definicion/0154-aqvSOQE.gif"
+            },
+            {
+              "nombre": "Face pull",
+              "imagen": ""
+            }
           ]
         },
         {
@@ -136,10 +164,12 @@
           "series": "3",
           "repeticiones": "8-10",
           "descanso": "60 seg",
-          "imagen": "img_def_mar_04.jpg",
-
+          "imagen": "exercises/definicion/0447-6TG6x2w.gif",
           "alternativas": [
-            { "nombre": "Curl con mancuernas alterno", "imagen": "img_def_mar_04_alt1.jpg" }
+            {
+              "nombre": "Curl con mancuernas alterno",
+              "imagen": "exercises/definicion/0285-BU15nH4.gif"
+            }
           ]
         },
         {
@@ -147,8 +177,7 @@
           "series": "3",
           "repeticiones": "10-12",
           "descanso": "60 seg",
-          "imagen": "img_def_mar_05.jpg",
-
+          "imagen": "exercises/definicion/0165-HPlPoQA.gif",
           "alternativas": []
         },
         {
@@ -156,7 +185,7 @@
           "series": "2",
           "repeticiones": "15-20",
           "descanso": "60 seg",
-          "imagen": "img_def_mar_06.jpg",
+          "imagen": "exercises/definicion/0401-2dImyQ8.gif",
           "alternativas": []
         },
         {
@@ -164,7 +193,7 @@
           "series": "2",
           "repeticiones": "12-15",
           "descanso": "60 seg",
-          "imagen": "img_def_mar_07.jpg",
+          "imagen": "exercises/definicion/0451-Y5X65IB.gif",
           "alternativas": []
         }
       ]
@@ -180,10 +209,12 @@
           "series": "4",
           "repeticiones": "5-7",
           "descanso": "3-4 min",
-          "imagen": "img_def_mie_01.jpg",
-
+          "imagen": "exercises/definicion/0743-Qa55kX1.gif",
           "alternativas": [
-            { "nombre": "Prensa de piernas (posicion alta)", "imagen": "img_def_mie_01_alt1.jpg" }
+            {
+              "nombre": "Prensa de piernas (posicion alta)",
+              "imagen": "exercises/definicion/1463-2Qh2J1e.gif"
+            }
           ]
         },
         {
@@ -191,10 +222,12 @@
           "series": "3",
           "repeticiones": "8-10",
           "descanso": "2-3 min",
-          "imagen": "img_def_mie_02.jpg",
-
+          "imagen": "exercises/definicion/0599-Zg3XY7P.gif",
           "alternativas": [
-            { "nombre": "Curl femoral tumbado", "imagen": "img_def_mie_02_alt1.jpg" }
+            {
+              "nombre": "Curl femoral tumbado",
+              "imagen": "exercises/definicion/0586-17lJ1kr.gif"
+            }
           ]
         },
         {
@@ -202,7 +235,7 @@
           "series": "3",
           "repeticiones": "8-12",
           "descanso": "2-3 min",
-          "imagen": "img_def_mie_03.jpg",
+          "imagen": "exercises/definicion/1463-2Qh2J1e.gif",
           "alternativas": []
         },
         {
@@ -210,8 +243,7 @@
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "90 seg",
-          "imagen": "img_def_mie_04.jpg",
-
+          "imagen": "exercises/definicion/0489-zhMwOwE.gif",
           "alternativas": []
         },
         {
@@ -219,10 +251,12 @@
           "series": "4",
           "repeticiones": "10-12",
           "descanso": "60 seg",
-          "imagen": "img_def_mie_05.jpg",
-
+          "imagen": "exercises/definicion/0605-ykUOVze.gif",
           "alternativas": [
-            { "nombre": "Elevacion gemelos en prensa", "imagen": "img_def_mie_05_alt1.jpg" }
+            {
+              "nombre": "Elevacion gemelos en prensa",
+              "imagen": "exercises/definicion/1391-ykHcWme.gif"
+            }
           ]
         }
       ]
@@ -238,11 +272,16 @@
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "60-90 seg",
-          "imagen": "img_def_jue_03.jpg",
-
+          "imagen": "exercises/definicion/0192-wEulIzp.gif",
           "alternativas": [
-            { "nombre": "Elevacion lateral en maquina", "imagen": "img_def_jue_03_alt1.jpg" },
-            { "nombre": "Elevacion lateral con mancuernas", "imagen": "img_def_jue_03_alt1.jpg" }
+            {
+              "nombre": "Elevacion lateral en maquina",
+              "imagen": "exercises/definicion/0584-dRTfGZT.gif"
+            },
+            {
+              "nombre": "Elevacion lateral con mancuernas",
+              "imagen": "exercises/definicion/0334-DsgkuIt.gif"
+            }
           ]
         },
         {
@@ -250,9 +289,12 @@
           "series": "2",
           "repeticiones": "10-15",
           "descanso": "60-90 seg",
-          "imagen": "img_def_jue_03.jpg",
+          "imagen": "exercises/definicion/0246-cALKspW.gif",
           "alternativas": [
-            { "nombre": "Remo al menton con mancuernas agarre amplio", "imagen": "img_def_jue_03_alt1.jpg" }
+            {
+              "nombre": "Remo al menton con mancuernas agarre amplio",
+              "imagen": "exercises/definicion/0437-ainizkb.gif"
+            }
           ]
         },
         {
@@ -260,7 +302,7 @@
           "series": "3",
           "repeticiones": "15-20",
           "descanso": "60 seg",
-          "imagen": "img_def_jue_05.jpg",
+          "imagen": "exercises/definicion/0154-aqvSOQE.gif",
           "alternativas": []
         },
         {
@@ -268,9 +310,12 @@
           "series": "3",
           "repeticiones": "8-12",
           "descanso": "2-3 min",
-          "imagen": "img_def_jue_01.jpg",
+          "imagen": "exercises/definicion/0289-SpYC0Kp.gif",
           "alternativas": [
-            { "nombre": "Press plano en maquina", "imagen": "img_def_jue_01_alt1.jpg" }
+            {
+              "nombre": "Press plano en maquina",
+              "imagen": "exercises/definicion/0576-DOoWcnA.gif"
+            }
           ]
         },
         {
@@ -278,10 +323,12 @@
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "90 seg",
-          "imagen": "img_def_jue_02.jpg",
-
+          "imagen": "exercises/definicion/0179-FVmZVhk.gif",
           "alternativas": [
-            { "nombre": "Aperturas inclinadas con mancuernas", "imagen": "img_def_jue_02_alt1.jpg" }
+            {
+              "nombre": "Aperturas inclinadas con mancuernas",
+              "imagen": "exercises/definicion/0319-ESOd5Pl.gif"
+            }
           ]
         },
         {
@@ -289,9 +336,12 @@
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "60-90 seg",
-          "imagen": "img_def_jue_06.jpg",
+          "imagen": "exercises/definicion/0231-sYCcnon.gif",
           "alternativas": [
-            { "nombre": "Triceps pushdown unilateral en polea alta", "imagen": "img_def_jue_06_alt1.jpg" }
+            {
+              "nombre": "Triceps pushdown unilateral en polea alta",
+              "imagen": "exercises/definicion/1723-qRZ5S1N.gif"
+            }
           ]
         }
       ]
@@ -307,9 +357,12 @@
           "series": "3",
           "repeticiones": "8-12",
           "descanso": "2 min",
-          "imagen": "img_def_vie_01.jpg",
+          "imagen": "exercises/definicion/0245-xBYcQHj.gif",
           "alternativas": [
-            { "nombre": "Jalon con agarre V-bar", "imagen": "img_def_vie_01_alt1.jpg" }
+            {
+              "nombre": "Jalon con agarre V-bar",
+              "imagen": "exercises/definicion/2616-4c9BhzB.gif"
+            }
           ]
         },
         {
@@ -317,10 +370,12 @@
           "series": "3",
           "repeticiones": "10-12 (c/lado)",
           "descanso": "90 seg",
-          "imagen": "img_def_vie_02.jpg",
-
+          "imagen": "exercises/definicion/1330-ZIViNh1.gif",
           "alternativas": [
-            { "nombre": "Remo en maquina unilateral", "imagen": "img_def_vie_02_alt1.jpg" }
+            {
+              "nombre": "Remo en maquina unilateral",
+              "imagen": "exercises/definicion/1313-oROuvrX.gif"
+            }
           ]
         },
         {
@@ -328,8 +383,7 @@
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "90 seg",
-          "imagen": "img_def_vie_03.jpg",
-
+          "imagen": "exercises/definicion/0238-x69MAlq.gif",
           "alternativas": []
         },
         {
@@ -337,10 +391,12 @@
           "series": "3",
           "repeticiones": "10-12",
           "descanso": "60 seg",
-          "imagen": "img_def_vie_04.jpg",
-
+          "imagen": "exercises/definicion/0318-ae9UoXQ.gif",
           "alternativas": [
-            { "nombre": "Curl concentrado", "imagen": "img_def_vie_04_alt1.jpg" }
+            {
+              "nombre": "Curl concentrado",
+              "imagen": "exercises/definicion/0297-gvsWLQw.gif"
+            }
           ]
         },
         {
@@ -348,7 +404,7 @@
           "series": "3",
           "repeticiones": "10-12 (dropset ultimo set)",
           "descanso": "60 seg",
-          "imagen": "img_def_vie_05.jpg",
+          "imagen": "exercises/definicion/0592-b6hQYMb.gif",
           "alternativas": []
         },
         {
@@ -356,7 +412,7 @@
           "series": "2",
           "repeticiones": "12-15",
           "descanso": "60 seg",
-          "imagen": "img_def_vie_08.jpg",
+          "imagen": "exercises/definicion/1636-wDUqY2u.gif",
           "alternativas": []
         },
         {
@@ -364,8 +420,7 @@
           "series": "3",
           "repeticiones": "15-20",
           "descanso": "60 seg",
-          "imagen": "img_def_vie_06.jpg",
-
+          "imagen": "exercises/definicion/0401-2dImyQ8.gif",
           "alternativas": []
         },
         {
@@ -373,7 +428,7 @@
           "series": "2",
           "repeticiones": "30-45 seg",
           "descanso": "90 seg",
-          "imagen": "img_def_vie_07.jpg",
+          "imagen": "exercises/definicion/2133-qPEzJjA.gif",
           "alternativas": []
         }
       ]
@@ -389,9 +444,12 @@
           "series": "4",
           "repeticiones": "10-15",
           "descanso": "2 min",
-          "imagen": "img_def_sab_01.jpg",
+          "imagen": "exercises/definicion/3013-u0cNiij.gif",
           "alternativas": [
-            { "nombre": "Hip extension en maquina", "imagen": "img_def_sab_01_alt1.jpg" }
+            {
+              "nombre": "Hip extension en maquina",
+              "imagen": "exercises/definicion/2286-OPqShYN.gif"
+            }
           ]
         },
         {
@@ -399,9 +457,12 @@
           "series": "3",
           "repeticiones": "10-12 (c/pierna)",
           "descanso": "2 min",
-          "imagen": "img_def_sab_02.jpg",
+          "imagen": "exercises/definicion/0410-qx4fgX7.gif",
           "alternativas": [
-            { "nombre": "Zancadas con mancuernas", "imagen": "img_def_sab_02_alt1.jpg" }
+            {
+              "nombre": "Zancadas con mancuernas",
+              "imagen": "exercises/definicion/0336-RRWFUcw.gif"
+            }
           ]
         },
         {
@@ -409,8 +470,7 @@
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "60 seg",
-          "imagen": "img_def_sab_03.jpg",
-
+          "imagen": "exercises/definicion/0585-my33uHU.gif",
           "alternativas": []
         },
         {
@@ -418,10 +478,12 @@
           "series": "3",
           "repeticiones": "10-12",
           "descanso": "60 seg",
-          "imagen": "img_def_sab_04.jpg",
-
+          "imagen": "exercises/definicion/0586-17lJ1kr.gif",
           "alternativas": [
-            { "nombre": "Curl femoral sentado", "imagen": "img_def_sab_04_alt1.jpg" }
+            {
+              "nombre": "Curl femoral sentado",
+              "imagen": "exercises/definicion/0599-Zg3XY7P.gif"
+            }
           ]
         },
         {
@@ -429,8 +491,7 @@
           "series": "4",
           "repeticiones": "15-20",
           "descanso": "60 seg",
-          "imagen": "img_def_sab_05.jpg",
-
+          "imagen": "exercises/definicion/0594-bOOdeyc.gif",
           "alternativas": []
         },
         {
@@ -438,8 +499,7 @@
           "series": "3",
           "repeticiones": "12-15",
           "descanso": "60 seg",
-          "imagen": "img_def_sab_07.jpg",
-
+          "imagen": "exercises/definicion/0857-NAgVB3t.gif",
           "alternativas": []
         },
         {
@@ -447,7 +507,7 @@
           "series": "3",
           "repeticiones": "10-12/lado",
           "descanso": "60 seg",
-          "imagen": "img_def_sab_08.jpg",
+          "imagen": "exercises/definicion/0979-9pa4H5m.gif",
           "alternativas": []
         }
       ]
@@ -457,12 +517,43 @@
     "fc_maxima": 177,
     "zona_liss": "115-133 bpm",
     "zona_hiit": "150-159 bpm",
-    "lunes": { "tipo": "liss", "duracion": "45 min", "detalle": "Caminata inclinada 8-10%, 5.5-6 km/h", "fc_objetivo": "115-133 bpm" },
-    "martes": { "tipo": "liss", "duracion": "45 min", "detalle": "Caminata inclinada 6-8%", "fc_objetivo": "115-133 bpm" },
-    "miercoles": { "tipo": "liss", "duracion": "45 min", "detalle": "Caminata inclinada 6-8%", "fc_objetivo": "115-133 bpm" },
-    "jueves": { "tipo": "liss", "duracion": "45 min", "detalle": "Caminata inclinada 6-8%", "fc_objetivo": "115-133 bpm" },
-    "viernes": { "tipo": "liss", "duracion": "45 min", "detalle": "Caminata inclinada 6-8%", "fc_objetivo": "115-133 bpm" },
-    "sabado": { "tipo": "hiit", "duracion": "15-20 min", "detalle": "6-8 intervalos 30s sprint + 90s caminata", "fc_objetivo": "150-159 bpm", "opcional": false },
+    "lunes": {
+      "tipo": "liss",
+      "duracion": "45 min",
+      "detalle": "Caminata inclinada 8-10%, 5.5-6 km/h",
+      "fc_objetivo": "115-133 bpm"
+    },
+    "martes": {
+      "tipo": "liss",
+      "duracion": "45 min",
+      "detalle": "Caminata inclinada 6-8%",
+      "fc_objetivo": "115-133 bpm"
+    },
+    "miercoles": {
+      "tipo": "liss",
+      "duracion": "45 min",
+      "detalle": "Caminata inclinada 6-8%",
+      "fc_objetivo": "115-133 bpm"
+    },
+    "jueves": {
+      "tipo": "liss",
+      "duracion": "45 min",
+      "detalle": "Caminata inclinada 6-8%",
+      "fc_objetivo": "115-133 bpm"
+    },
+    "viernes": {
+      "tipo": "liss",
+      "duracion": "45 min",
+      "detalle": "Caminata inclinada 6-8%",
+      "fc_objetivo": "115-133 bpm"
+    },
+    "sabado": {
+      "tipo": "hiit",
+      "duracion": "15-20 min",
+      "detalle": "6-8 intervalos 30s sprint + 90s caminata",
+      "fc_objetivo": "150-159 bpm",
+      "opcional": false
+    },
     "domingo": null
   }
 }

@@ -3,40 +3,39 @@ name: periodizacion-deload
 description: "Periodization and deload protocols."
 ---
 
-# Periodizacion y Deloads
+# Periodización y Deloads
 
-## Periodizacion Ondulante Diaria (DUP) — Recomendada
+## Periodización Ondulante Diaria (DUP) — opción
 
 Varia reps, intensidad y volumen dentro de cada semana.
 
 ### Implementacion PPL x2
 
-| Sesion | Enfoque | Compuestos | Aislamiento |
+| Sesión | Enfoque | Compuestos | Aislamiento |
 |--------|---------|------------|-------------|
 | PPL1 (Lun-Mie) | Fuerza | 4-6 reps | 6-8 reps |
 | PPL2 (Jue-Sab) | Hipertrofia | 8-12 reps | 12-15 reps |
 
-### Por que DUP para recomposicion
-- Mantiene estimulo de fuerza Y hipertrofia simultaneamente
-- Se adapta a las fluctuaciones de energia del deficit
-- Evita perdida de adaptaciones previas
-- Greg Nuckols: entrenar pesado en deficit preserva mejor la fuerza
+### Cuándo puede encajar DUP
+- Permite practicar rangos de fuerza e hipertrofia en la misma semana
+- Puede adaptarse a fluctuaciones de energía si el usuario la prefiere
+- Greg Nuckols: entrenar pesado en déficit preserva mejor la fuerza
 
 ---
 
 ## Escala RPE/RIR
 
-| RPE | RIR | Descripcion |
+| RPE | RIR | Descripción |
 |-----|-----|-------------|
 | 10 | 0 | Fallo muscular completo |
-| 9.5 | 0-1 | Media rep mas, no completa |
-| 9 | 1 | 1 rep mas con buena tecnica |
+| 9.5 | 0-1 | Media rep más, no completa |
+| 9 | 1 | 1 rep más con buena técnica |
 | 8.5 | 1-2 | Definitivamente 1, quizas 2 |
-| 8 | 2 | 2 reps mas |
+| 8 | 2 | 2 reps más |
 | 7.5 | 2-3 | Definitivamente 2, quizas 3 |
-| 7 | 3 | 3 reps mas |
+| 7 | 3 | 3 reps más |
 
-### RPE objetivo en deficit
+### RPE objetivo en déficit
 
 | Tipo ejercicio | RPE | RIR |
 |----------------|-----|-----|
@@ -46,15 +45,17 @@ Varia reps, intensidad y volumen dentro de cada semana.
 
 ---
 
-## Mesociclo de 5 semanas
+## Ejemplo de mesociclo de 5 semanas
+
+Es una organización posible, no una frecuencia obligatoria. La descarga también puede activarse por fatiga, rendimiento, dolor o cambios de contexto.
 
 | Semana | RPE | Volumen | Cardio | Notas |
 |--------|-----|---------|--------|-------|
 | 1 | 7 (3 RIR) | Base | Normal | Inicio conservador |
 | 2 | 8 (2 RIR) | Base | Normal | Incremento gradual |
-| 3 | 8.5 (1.5 RIR) | Base | Normal | Cerca del maximo |
+| 3 | 8.5 (1.5 RIR) | Base | Normal | Cerca del máximo |
 | 4 | 9 (1 RIR) | Base | Normal | Maxima intensidad |
-| 5 | 5-7 (DELOAD) | 50-60% | +LISS extra | Recuperacion |
+| 5 | 5-7 (DELOAD) | 50-60% | +LISS extra | Recuperación |
 
 ---
 
@@ -64,71 +65,72 @@ Varia reps, intensidad y volumen dentro de cada semana.
 
 | Parametro | Ajuste |
 |-----------|--------|
-| Volumen | Reducir al 40-60% (ej: de 16 series a 8) |
-| Peso | Mantener al 85-90% |
+| Volumen | Reducir de forma moderada respecto al bloque previo |
+| Peso | Mantener una intensidad tolerable sin perseguir cifras fijas |
 | RPE | Trabajar a 5-7 (3-5 RIR) |
 | Frecuencia | Mantener la misma (seguir yendo al gym) |
-| Tecnicas de intensidad | Eliminar TODAS |
-| Cardio | Puede anadir LISS extra (NO HIIT) |
+| Técnicas de intensidad | Eliminar TODAS |
+| Cardio | Puede añadir LISS extra (NO HIIT) |
 
-### NO hacer cesacion completa — afecta negativamente la fuerza.
+### La reducción puede ser parcial o completa según la fatiga y el calendario.
 
 ### Ejemplo de deload PPL
 - Mantener mismos ejercicios
 - Reducir de 4 series a 2 por ejercicio
-- Usar 85-90% del peso habitual
+- Usar una carga que permita practicar la técnica sin acumular fatiga
 - Parar TODAS las series a RPE 6-7
 - Sin dropsets, rest-pause, ni myo-reps
 
 ### Frecuencia
-- **En deficit**: Cada 4-5 semanas (proactivo)
-- **En superavit**: Cada 6-8 semanas
-- **Reactivo**: Si aparecen senales de fatiga antes de lo programado
+- **En déficit o superávit**: programar según carga, recuperación, calendario y
+  respuesta; no existe una frecuencia universal
+- **Reactivo**: Si aparecen señales de fatiga antes de lo programado
 
 ---
 
-## Senales de que necesitas deload
+## Señales de que necesitas deload
 
-### Fisicas
+### Físicas
 - Rendimiento estancado o caida 2+ sesiones consecutivas
 - Dolor articular persistente
 - Fatiga cronica incluso durmiendo bien
 - Mayor susceptibilidad a resfriados
-- Sueno perturbado
+- Sueño perturbado
 
-### Psicologicas
-- Perdida de motivacion
+### Psicológicas
+- Pérdida de motivacion
 - Irritabilidad sin causa
 - Temer las sesiones
 
-**Regla**: Si rendimiento baja 2 sesiones sin razon aparente → deload.
+**Regla práctica**: si el rendimiento cae sin explicación y se mantiene tras revisar
+sueño, carga y técnica, valorar un deload o una reducción temporal.
 
 ---
 
-## Tecnicas de Intensidad (1-2 por sesion maximo en deficit)
+## Técnicas de Intensidad (1-2 por sesión máximo en déficit)
 
-| Tecnica | Protocolo | Mejor para |
+| Técnica | Protocolo | Mejor para |
 |---------|-----------|------------|
-| **Myo-reps** | 12-20 reps activacion → 20-30s → mini-series 3-5 reps | MUY recomendable en deficit |
-| **Superseries** | Agonista/antagonista sin descanso (-36% tiempo) | MUY recomendable |
+| **Myo-reps** | 12-20 reps activación → 20-30s → mini-series 3-5 reps | MUY recomendable en déficit |
+| **Superseries** | Agonista/antagonista con descansos ajustados | Útiles si ahorran tiempo y no degradan el rendimiento |
 | **Dropsets** | Serie al fallo → -20-25% peso → continuar | Aislamiento final |
-| **Rest-pause** | Serie RPE 9-10 → 10-20s → 2-4 reps mas (x2-3) | Selectivo |
-| **Cluster sets** | 2-3 reps → 15-30s → 2-3 reps mas | Compuestos para mantener fuerza |
+| **Rest-pause** | Serie RPE 9-10 → 10-20s → 2-4 reps más (x2-3) | Selectivo |
+| **Cluster sets** | 2-3 reps → 15-30s → 2-3 reps más | Compuestos para mantener fuerza |
 
 ---
 
-## Progresion de cargas: Doble Progresion
+## Progresión de cargas: Doble Progresión
 
 1. Rango de reps (ej: 6-8)
-2. Empezar con peso para el minimo
-3. Cada sesion +1 rep
-4. Cuando completas todas las series al maximo → sube peso
+2. Empezar con peso para el mínimo
+3. Cada sesión +1 rep
+4. Cuando completas todas las series al máximo → sube peso
    - Tren superior: +2.5 kg
    - Tren inferior: +5 kg
 
-### Expectativas en deficit
+### Expectativas en déficit
 
-| Nivel | Fuerza | Musculo |
+| Nivel | Fuerza | Músculo |
 |-------|--------|---------|
 | Principiante (>18% grasa) | Ganancias | Ganancias posibles |
 | Intermedio (14-18%) | Mantenimiento o leves ganancias | Mantenimiento |

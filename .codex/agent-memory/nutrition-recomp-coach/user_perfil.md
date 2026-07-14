@@ -2,6 +2,8 @@
 name: Perfil del usuario — datos personales y fisicos
 description: Datos biometricos, historial de peso, composicion corporal y objetivos de la fase de definicion
 type: user
+updated: 2026-04-19
+status: historical
 ---
 
 ## Datos personales

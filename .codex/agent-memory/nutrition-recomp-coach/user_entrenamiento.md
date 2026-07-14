@@ -2,6 +2,8 @@
 name: Entrenamiento — rutina, cardio y progresiones
 description: Rutina PPL x2 actual, protocolo de cardio y progresiones de fuerza observadas
 type: user
+updated: 2026-04-26
+status: historical
 ---
 
 ## Split de entrenamiento

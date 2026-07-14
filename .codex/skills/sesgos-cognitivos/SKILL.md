@@ -3,7 +3,7 @@ name: sesgos-cognitivos
 description: "Detect cognitive bias in recommendations."
 ---
 
-# Detector de Sesgos Cognitivos en Fitness y Nutricion
+# Detector de Sesgos Cognitivos en Fitness y Nutrición
 
 ## Por que importa
 
@@ -11,18 +11,18 @@ Los sesgos cognitivos afectan TANTO a quien da el consejo como a quien lo recibe
 
 ---
 
-## 12 sesgos mas relevantes en fitness/nutricion
+## 12 sesgos más relevantes en fitness/nutrición
 
 ### 1. Sesgo de confirmacion
 
 **Que es**: Buscar solo evidencia que confirme lo que ya crees. Ignorar lo que contradice.
 
-**Como detectarlo en fitness/nutricion**:
+**Cómo detectarlo en fitness/nutrición**:
 - Solo se citan estudios favorables, se ignoran los contradictorios
 - "Encontre 5 estudios que lo prueban" (sin buscar los que dicen lo contrario)
-- Adherencia ciega a un metodo/dieta como "el mejor"
+- Adherencia ciega a un método/dieta como "el mejor"
 
-**Ejemplo**: "La dieta keto es superior para quemar grasa" → Cita 3 estudios pro-keto, ignora 10 meta-analisis que dicen que no hay diferencia con calorias igualadas.
+**Ejemplo**: "La dieta keto es superior para quemar grasa" → Cita 3 estudios pro-keto, ignora 10 meta-análisis que dicen que no hay diferencia con calorías igualadas.
 
 **Correccion**: "¿Que evidencia necesitaria existir para que esta afirmacion fuera falsa? ¿Existe esa evidencia?"
 
@@ -32,7 +32,7 @@ Los sesgos cognitivos afectan TANTO a quien da el consejo como a quien lo recibe
 
 **Que es**: Solo ver los casos exitosos. Los fracasos son invisibles.
 
-**Como detectarlo**:
+**Cómo detectarlo**:
 - Fotos de transformacion sin contexto (genetica, farmacos, iluminacion)
 - "Todos los que hacen X estan en forma" (ignorando los que dejaron o se lesionaron)
 - Influencers mostrando SOLO sus mejores resultados
@@ -45,15 +45,15 @@ Los sesgos cognitivos afectan TANTO a quien da el consejo como a quien lo recibe
 
 ### 3. Efecto Dunning-Kruger
 
-**Que es**: Incompetencia inconsciente. Los que menos saben tienen mas confianza.
+**Que es**: Incompetencia inconsciente. Los que menos saben tienen más confianza.
 
 **Como detectarlo**:
 - Afirmaciones absolutas sin matices ("NUNCA hagas X", "SIEMPRE haz Y")
 - Confianza desproporcionada respecto a credenciales
-- "Health coach" de curso online de 3 meses dando consejos medicos
+- "Health coach" de curso online de 3 meses dando consejos médicos
 - 57% de usuarios de TikTok adoptan tendencias nutricionales multiples veces/semana sin cuestionarlas
 
-**Ejemplo**: Influencer fitness con 1 ano de experiencia explicando bioquimica del metabolismo.
+**Ejemplo**: Influencer fitness con 1 año de experiencia explicando bioquimica del metabolismo.
 
 **Correccion**: Los verdaderos expertos expresan incertidumbre y matices. Verificar credenciales formales.
 
@@ -61,27 +61,27 @@ Los sesgos cognitivos afectan TANTO a quien da el consejo como a quien lo recibe
 
 ### 4. Efecto halo
 
-**Que es**: Asumir que ser bueno en una cosa = ser bueno en todo. Un physique impresionante = saber de nutricion.
+**Que es**: Asumir que ser bueno en una cosa = ser bueno en todo. Un physique impresionante = saber de nutrición.
 
 **Como detectarlo**:
-- Persona con buen fisico dando consejos de nutricion/entrenamiento sin formacion
+- Persona con buen físico dando consejos de nutrición/entrenamiento sin formación
 - "Si tiene ese cuerpo, debe saber lo que hace"
 - Atleta de elite recomendando su rutina a principiantes
 
 **Ejemplo**: Bodybuilder con PEDs recomendando su dieta como "natural".
 
-**Correccion**: Separar la apariencia fisica de la competencia cientifica. Evaluar la evidencia, no al mensajero.
+**Correccion**: Separar la apariencia fisica de la competencia científica. Evaluar la evidencia, no al mensajero.
 
 ---
 
 ### 5. Sesgo de anclaje
 
-**Que es**: La primera informacion recibida tiene peso desproporcionado. Dificil cambiar de opinion despues.
+**Qué es**: La primera información recibida tiene peso desproporcionado. Difícil cambiar de opinión después.
 
 **Como detectarlo**:
 - "Siempre me ensenaron que X" como argumento
 - Resistencia a nueva evidencia que contradice creencias antiguas
-- "200g de proteina es lo minimo" porque un video lo dijo hace anos
+- "200g de proteína es lo mínimo" porque un video lo dijo hace años
 
 **Ejemplo**: "Mi primer entrenador me dijo que la grasa engorda, asi que siempre como bajo en grasa."
 
@@ -91,32 +91,32 @@ Los sesgos cognitivos afectan TANTO a quien da el consejo como a quien lo recibe
 
 ### 6. Sesgo de grupo/tribu
 
-**Que es**: Adherencia a la identidad de una dieta/metodo como grupo social. Keto, vegano, carnivoro, CrossFit, etc.
+**Que es**: Adherencia a la identidad de una dieta/método como grupo social. Keto, vegano, carnivoro, CrossFit, etc.
 
 **Como detectarlo**:
-- Defender un metodo con pasion emocional, no con datos
+- Defender un método con pasion emocional, no con datos
 - Atacar otros metodos sin evidencia
 - "Yo soy keto" como identidad, no como herramienta
-- Comunidades online que rechazan toda critica
+- Comunidades online que rechazan toda crítica
 
 **Ejemplo**: Grupo de carnivoros atacando cualquier estudio sobre beneficios de vegetales.
 
-**Correccion**: Evaluar la recomendacion independientemente de la identidad del grupo que la promueve. "¿Que dice la evidencia?"
+**Correccion**: Evaluar la recomendación independientemente de la identidad del grupo que la promueve. "¿Que dice la evidencia?"
 
 ---
 
 ### 7. Sesgo de novedad (recencia)
 
-**Que es**: Dar peso excesivo al ultimo estudio/tendencia. Lo nuevo parece mejor que lo establecido.
+**Que es**: Dar peso excesivo al último estudio/tendencia. Lo nuevo parece mejor que lo establecido.
 
 **Como detectarlo**:
 - "Un estudio reciente demuestra que..." (un solo estudio reciente vs cuerpo de evidencia)
-- Cambiar de protocolo cada mes por la ultima tendencia
-- "El protocolo X es revolucionario" (suele ser variacion de algo existente)
+- Cambiar de protocolo cada mes por la última tendencia
+- "El protocolo X es revolucionario" (suele ser variación de algo existente)
 
-**Ejemplo**: Protocolo viral de TikTok reemplaza anos de evidencia sobre periodizacion.
+**Ejemplo**: Protocolo viral de TikTok reemplaza años de evidencia sobre periodización.
 
-**Correccion**: Siempre priorizar meta-analisis y revisiones sistematicas sobre estudios individuales recientes.
+**Correccion**: Siempre priorizar meta-análisis y revisiones sistematicas sobre estudios individuales recientes.
 
 ---
 
@@ -135,18 +135,18 @@ Los sesgos cognitivos afectan TANTO a quien da el consejo como a quien lo recibe
 
 ---
 
-### 9. Falsa precision
+### 9. Falsa precisión
 
-**Que es**: Presentar estimaciones como numeros exactos e inamovibles.
+**Que es**: Presentar estimaciones como números exactos e inamovibles.
 
 **Como detectarlo**:
-- "Necesitas exactamente 2.3g de proteina por kg"
-- "Tu TDEE es 2,347 kcal" (precision falsa — el margen real es +-10-15%)
+- "Necesitas exactamente 2.3g de proteína por kg"
+- "Tu TDEE es 2,347 kcal" (precisión falsa — el margen real es +-10-15%)
 - Macros al gramo exacto sin margen
 
-**Ejemplo**: Plan de alimentacion con "147g de carbohidratos" como si 145 o 150 fueran diferentes.
+**Ejemplo**: Plan de alimentación con "147g de carbohidratos" como si 145 o 150 fueran diferentes.
 
-**Correccion**: Usar rangos en lugar de numeros exactos. "1.8-2.4 g/kg" es mas honesto que "2.2 g/kg".
+**Correccion**: Usar rangos en lugar de números exactos. "1.8-2.4 g/kg" es más honesto que "2.2 g/kg".
 
 ---
 
@@ -159,20 +159,20 @@ Los sesgos cognitivos afectan TANTO a quien da el consejo como a quien lo recibe
 - "Ya compre el programa de 12 semanas, tengo que terminarlo aunque me lesione"
 - Negarse a cambiar de protocolo cuando los resultados dicen que no funciona
 
-**Correccion**: Evaluar SOLO los resultados actuales, no la inversion pasada. "¿Si empezara hoy, elegiria este metodo?"
+**Correccion**: Evaluar SOLO los resultados actuales, no la inversion pasada. "¿Si empezara hoy, elegiria este método?"
 
 ---
 
 ### 11. Sesgo de conservadurismo excesivo
 
-**Que es**: Miedo al riesgo lleva a sub-dosificacion de todo. TAMBIEN es un sesgo.
+**Qué es**: Miedo al riesgo lleva a sub-dosificación de todo. TAMBIÉN es un sesgo.
 
 **Como detectarlo**:
-- "Nunca hagas deficit >250 kcal" (cuando 500 es perfectamente seguro para muchos)
+- "Nunca hagas déficit >250 kcal" (cuando 500 es perfectamente seguro para muchos)
 - "Nunca entrenes al fallo" (cuando el fallo controlado tiene su lugar)
 - Paralisis por exceso de precaucion
 
-**Ejemplo**: Recomendar 3 series de 12 a RPE 6 para un avanzado que necesita mas estimulo.
+**Ejemplo**: Recomendar 3 series de 12 a RPE 6 para un avanzado que necesita más estimulo.
 
 **Correccion**: La precaucion es buena, pero el miedo injustificado priva de resultados. Calibrar el riesgo REAL vs percibido.
 
@@ -185,25 +185,25 @@ Los sesgos cognitivos afectan TANTO a quien da el consejo como a quien lo recibe
 **Como detectarlo**:
 - "Estudio en 12 sujetos demuestra que X funciona"
 - "A mi cliente le funciono, funciona para todos"
-- Extrapolar atletas de elite → poblacion general
+- Extrapolar atletas de elite → población general
 - Extrapolar hombres → mujeres
 
-**Correccion**: ¿En que poblacion se estudio? ¿Es comparable al usuario? ¿Ha sido replicado?
+**Correccion**: ¿En que población se estudio? ¿Es comparable al usuario? ¿Ha sido replicado?
 
 ---
 
-## Checklist pre-recomendacion (para el propio abogado del diablo)
+## Checklist pre-recomendación (para el propio abogado del diablo)
 
 Antes de emitir un veredicto, verificar:
 
 ```
 - [ ] ¿Busque activamente evidencia CONTRADICTORIA?
 - [ ] ¿Reconozco las limitaciones de los estudios que cite?
-- [ ] ¿Estoy generalizando desde un grupo especifico a todos?
+- [ ] ¿Estoy generalizando desde un grupo específico a todos?
 - [ ] ¿Hay alternativas igualmente validas que no mencione?
 - [ ] ¿Mi nivel de confianza es HONESTO? (No sobreestimo ni subestimo)
 - [ ] ¿Tengo algun sesgo personal sobre este tema?
-- [ ] ¿Estoy siendo demasiado conservador O demasiado agresivo sin razon?
+- [ ] ¿Estoy siendo demasiado conservador O demasiado agresivo sin razón?
 - [ ] ¿La evidencia que use es de calidad adecuada para el claim?
 ```
 
@@ -215,7 +215,7 @@ Antes de emitir un veredicto, verificar:
 ANALISIS DE SESGOS
 ===================
 
-Recomendacion analizada: "[texto]"
+Recomendación analizada: "[texto]"
 Fuente: [quien la hace]
 
 SESGOS DETECTADOS:

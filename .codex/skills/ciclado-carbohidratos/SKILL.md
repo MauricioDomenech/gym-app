@@ -7,14 +7,14 @@ description: "Carb cycling for recomposition."
 
 ## Que es
 
-Estrategia AVANZADA que varia la ingesta de carbohidratos segun el tipo de dia (entrenamiento vs descanso), manteniendo las calorias semanales totales alineadas con el objetivo.
+Estrategia AVANZADA que varia la ingesta de carbohidratos según el tipo de dia (entrenamiento vs descanso), manteniendo las calorías semanales totales alineadas con el objetivo.
 
 ## Para quien ES y para quien NO
 
 ### SI es para ti
-- Nivel intermedio-avanzado (>6 meses de nutricion consistente)
-- Ya sabes contar macros con precision
-- Quieres optimizar rendimiento en dias de entreno + maximizar oxidacion de grasa en descanso
+- Nivel intermedio-avanzado (>6 meses de nutrición consistente)
+- Ya sabes contar macros con precisión
+- Quieres optimizar rendimiento en días de entreno + maximizar oxidación de grasa en descanso
 - Llevas al menos 4-6 semanas con un plan de macros fijos y buscas variedad
 
 ### NO es para ti
@@ -30,48 +30,52 @@ Estrategia AVANZADA que varia la ingesta de carbohidratos segun el tipo de dia (
 | Aspecto | Carb Cycling | Refeed Day |
 |---------|-------------|------------|
 | Frecuencia | Cada semana, sistematico | 1-2 veces/semana o quincenal |
-| Duracion | Permanente en el plan | 1-2 dias puntuales |
-| Objetivo | Optimizar rendimiento + deficit | Contrarrestar adaptacion metabolica |
-| Calorias | Varian dia a dia | Suben a mantenimiento |
-| Complejidad | Mayor (macros diferentes cada dia) | Menor (solo subes carbs 1-2 dias) |
+| Duración | Permanente en el plan | 1-2 días puntuales |
+| Objetivo | Optimizar rendimiento + déficit | Contrarrestar adaptación metabólica |
+| Calorías | Varian dia a dia | Suben a mantenimiento |
+| Complejidad | Mayor (macros diferentes cada dia) | Menor (solo subes carbs 1-2 días) |
 
 ---
 
-## Estructura: 3 tipos de dia
+## Estructura orientativa: 3 tipos de día
 
-### DIA ALTO en carbohidratos (dias de entrenamiento intenso)
-- **Calorias**: Mantenimiento o ligeramente por debajo (-100 a -200 kcal)
+Las cifras siguientes son una plantilla de inicio, no objetivos universales. Mantén una ingesta de proteína suficiente y ajusta carbohidratos, grasas y calorías al contexto, la tolerancia y la respuesta observada.
+
+### DIA ALTO en carbohidratos (días de entrenamiento intenso)
+- **Calorías**: Mantenimiento o ligeramente por debajo (-100 a -200 kcal)
 - **Carbohidratos**: 3-5 g/kg
-- **Proteina**: 1.8-2.2 g/kg (se mantiene SIEMPRE)
+- **Proteína**: rango suficiente e individualizado (se procura mantener estable)
 - **Grasa**: 0.6-0.8 g/kg (se reduce)
-- **Cuando**: Dias de piernas, dias de entrenamiento pesado
+- **Cuando**: Días de piernas, días de entrenamiento pesado
 
-### DIA MEDIO en carbohidratos (dias de entrenamiento moderado)
-- **Calorias**: Deficit moderado (-300 a -400 kcal del TDEE)
+### DIA MEDIO en carbohidratos (días de entrenamiento moderado)
+- **Calorías**: Déficit moderado (-300 a -400 kcal del TDEE)
 - **Carbohidratos**: 2-3 g/kg
-- **Proteina**: 2.0-2.4 g/kg
+- **Proteína**: rango suficiente e individualizado
 - **Grasa**: 0.8-1.0 g/kg
-- **Cuando**: Dias de Push, Pull, entrenamiento de tren superior
+- **Cuando**: Días de Push, Pull, entrenamiento de tren superior
 
-### DIA BAJO en carbohidratos (dias de descanso o cardio solo)
-- **Calorias**: Deficit mayor (-500 a -600 kcal del TDEE)
+### DIA BAJO en carbohidratos (días de descanso o cardio solo)
+- **Calorías**: Déficit mayor (-500 a -600 kcal del TDEE)
 - **Carbohidratos**: 1-1.5 g/kg
-- **Proteina**: 2.2-2.4 g/kg (sube ligeramente)
-- **Grasa**: 1.0-1.2 g/kg (sube — mas saciante)
-- **Cuando**: Dias de descanso, dias de solo LISS
+- **Proteína**: rango suficiente e individualizado; no es obligatorio subirla
+- **Grasa**: 1.0-1.2 g/kg (sube — más saciante)
+- **Cuando**: Días de descanso, días de solo LISS
 
 ---
 
-## Ejemplo numerico completo
+## Ejemplo numérico ilustrativo
+
+Este ejemplo muestra una forma posible de repartir las calorías; no representa una prescripción ni un rango obligatorio.
 
 ### Datos del usuario ejemplo
-- Peso: 80 kg | TDEE: 2500 kcal | Objetivo: recomposicion (-300 kcal promedio)
-- Deficit semanal total: 2100 kcal (300 x 7 dias)
-- Split: PPL x2 (6 dias entreno + 1 descanso)
+- Peso: 80 kg | TDEE: 2500 kcal | Objetivo: recomposición (-300 kcal promedio)
+- Déficit semanal total: 2100 kcal (300 x 7 días)
+- Split: PPL x2 (6 días entreno + 1 descanso)
 
-### Distribucion semanal
+### Distribución semanal
 
-| Dia | Sesion | Tipo | Kcal | Proteina | Carbs | Grasa |
+| Día | Sesión | Tipo | Kcal | Proteína | Carbs | Grasa |
 |-----|--------|------|------|----------|-------|-------|
 | Lunes | Push (Fuerza) | MEDIO | 2200 | 176g (2.2g/kg) | 220g (2.75g/kg) | 72g (0.9g/kg) |
 | Martes | Pull (Fuerza) | MEDIO | 2200 | 176g | 220g | 72g |
@@ -81,22 +85,22 @@ Estrategia AVANZADA que varia la ingesta de carbohidratos segun el tipo de dia (
 | Sabado | Legs (Hipertrofia) | ALTO | 2500 | 160g | 340g | 53g |
 | Domingo | Descanso | BAJO | 1800 | 192g (2.4g/kg) | 100g (1.25g/kg) | 93g (1.16g/kg) |
 
-### Verificacion
+### Verificación
 - **Total semanal**: 15,600 kcal
 - **Promedio diario**: 2,229 kcal
-- **Deficit promedio**: ~271 kcal/dia (alineado con recomposicion)
-- **Proteina**: Siempre >=1.8 g/kg
+- **Déficit promedio**: ~271 kcal/día (alineado con recomposición)
+- **Proteína**: Siempre >=1.8 g/kg
 
 ---
 
 ## Reglas fundamentales
 
-1. **Proteina NUNCA baja** — Es la constante. Siempre 1.8-2.4 g/kg
+1. **Proteína se mantiene como prioridad** — Evita reducciones arbitrarias y personaliza el rango
 2. **Carbs y grasa son inversamente proporcionales** — Cuando suben carbs, bajan grasas y viceversa
-3. **El deficit semanal total es lo que importa** — No obsesionarse con el deficit diario
-4. **Dias altos = dias de entreno mas demandante** (piernas, compuestos pesados)
-5. **Dias bajos = descanso o cardio LISS**
-6. **Grasa NUNCA debajo de 0.6 g/kg** en ningun dia (salud hormonal)
+3. **El déficit semanal total es lo que importa** — No obsesionarse con el déficit diario
+4. **Días altos = días de entreno más demandante** (piernas, compuestos pesados)
+5. **Días bajos = descanso o cardio LISS**
+6. **Grasa suficiente** — No impongas un mínimo universal; considera salud, saciedad, preferencias y el resto de la dieta
 
 ---
 
@@ -116,28 +120,26 @@ Dom (Descanso)       → DIA BAJO
 
 ---
 
-## Como calcular tus propios macros por tipo de dia
+## Cómo calcular tus propios macros por tipo de día
 
-### Paso 1: Calcula el deficit semanal total
-- Deficit semanal = deficit diario deseado x 7
+### Paso 1: Calcula el déficit semanal total
+- Déficit semanal = déficit diario deseado x 7
 - Ejemplo: 300 kcal/dia x 7 = 2100 kcal/semana
 
-### Paso 2: Distribuye calorias por tipo de dia
-- Asigna mas calorias a dias altos (entreno intenso)
-- Menos calorias a dias bajos (descanso)
-- Verifica que el total semanal mantenga tu deficit
+### Paso 2: Distribuye calorías por tipo de dia
+- Asigna más calorías a días altos (entreno intenso)
+- Menos calorías a días bajos (descanso)
+- Verifica que el total semanal mantenga tu déficit
 
-### Paso 3: Fija la proteina
-- 1.8-2.4 g/kg TODOS los dias (x4 kcal/g)
+### Paso 3: Fija la proteína
+- Mantén una ingesta suficiente y estable, individualizada (x4 kcal/g)
 
-### Paso 4: Asigna carbohidratos segun el tipo de dia
-- Dia alto: 3-5 g/kg (x4 kcal/g)
-- Dia medio: 2-3 g/kg (x4 kcal/g)
-- Dia bajo: 1-1.5 g/kg (x4 kcal/g)
+### Paso 4: Asigna carbohidratos según el tipo de día
+- Usa rangos iniciales que sean compatibles con el rendimiento, la saciedad y el total semanal; no hay una cantidad universal por tipo de día
 
 ### Paso 5: Completa con grasa
-- Calorias restantes / 9 = gramos de grasa
-- Verificar que no baje de 0.6 g/kg en ningun dia
+- Calorías restantes / 9 = gramos de grasa
+- Revisa que la ingesta sea suficiente para salud, saciedad y preferencias, sin imponer un mínimo universal
 
 ---
 
@@ -145,19 +147,19 @@ Dom (Descanso)       → DIA BAJO
 
 | Situacion | Ajuste |
 |-----------|--------|
-| Rendimiento cae en dias medios | Subir esos dias a ALTO |
+| Rendimiento cae en días medios | Subir esos días a ALTO |
 | No pierdes peso en 2-3 semanas | Reducir carbs en dia bajo (-20-30g) o quitar 1 dia alto |
-| Hambre excesiva en dias bajos | Subir grasa (+10g) y bajar carbs (-10g) en esos dias |
+| Hambre excesiva en días bajos | Subir grasa (+10g) y bajar carbs (-10g) en esos días |
 | Fuerza cae en compuestos | Subir carbs en dia pre-entreno pesado |
 
 ---
 
 ## Transicion desde macros fijos
 
-1. **Semana 1**: Mantener macros actuales, solo clasificar dias como alto/medio/bajo
-2. **Semana 2**: Mover 20-30g de carbs de dias bajos a dias altos
-3. **Semana 3**: Aplicar la distribucion completa
-4. **Ajustar** segun como te sientas y rindas
+1. **Semana 1**: Mantener macros actuales, solo clasificar días como alto/medio/bajo
+2. **Semana 2**: Mover 20-30g de carbs de días bajos a días altos
+3. **Semana 3**: Aplicar la distribución completa
+4. **Ajustar** según como te sientas y rindas
 
 ## Fuentes
 - Mata et al. (2019) — Carbohydrate periodization in trained individuals

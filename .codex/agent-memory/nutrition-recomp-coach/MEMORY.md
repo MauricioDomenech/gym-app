@@ -1,37 +1,48 @@
-# Memoria del Coach Nutricional — gym-app
+---
+name: nutrition-recomp-coach-memory
+updated: 2026-07-11
+status: curated-index
+policy: verify-before-use
+---
 
-## Perfil del usuario
+# Memoria curada del Coach Nutricional
 
-- [Perfil biometrico y objetivos](user_perfil.md) — hombre 43 anos, 101.4 kg, objetivo 93 kg, sem 4 completada
-- [Plan nutricional activo](user_nutricion_actual.md) — ~1965 kcal/dia (v3 redesenado 26/04), TDEE real 2720, deficit 755 kcal, sin AOVE
-- [Entrenamiento y progresiones](user_entrenamiento.md) — PPL x2, cardio ~215-245 min/semana, fuerza en aumento
+Esta memoria contiene reglas de flujo y enlaces a snapshots históricos. Los datos
+numéricos de usuario no son actuales por defecto: confirmar siempre el último
+export, check-in o mensaje del usuario.
 
-## Reglas de comportamiento confirmadas
+## Fuentes de datos históricos
 
-- NUNCA hacer commits ni preguntar por commits
-- SIEMPRE comunicarse en espanol
-- Check-in semanal los domingos — analizar JSON exportado + generar reporte
-- Reportes guardados en: `reportes/semana-XX.md`
-- Protocolo semanal actual: al recibir `definicion-semana-XX-export.json`, primero leer todo lo necesario, comparar contra el import previo y revisar peso/cardio/adherencia/fuerza. Luego charlar con el usuario sobre la semana y las decisiones. NO generar automaticamente `definicion-semana-(XX+1)-import.json`; preguntar antes si quiere que se genere. Cuando el usuario confirme, crear el JSON con `weekTo` correcto y poner en cada `workoutProgress[].observations` la recomendacion concreta para esa semana: subir, mantener, consolidar, reps objetivo, RIR esperado y condicion de retroceso.
-- En cada check-in semanal, pedir/revisar tambien los datos extra de la balanza BIA si el usuario los aporta: grasa corporal %, grasa subcutanea %, grasa visceral, musculo esqueletico %, masa muscular, agua corporal %, peso sin grasa, masa osea, proteina %, TMB e IMC. Usarlos solo como tendencia y con cautela; si una semana faltan, continuar el analisis con JSON, peso, fuerza, cardio y adherencia.
-- EL USUARIO NO QUIERE CAMBIOS EN EL ENTRENAMIENTO — respetar siempre
-- Los cardios del plan actual NO son opcionales: LISS lunes-viernes + HIIT sabado/domingo segun programacion. Si no se hacen, registrar como adherencia real, no compensar con castigo.
-- Todos los cereales/legumbres se pesan en CRUDO
+- [Perfil biométrico y objetivos](user_perfil.md) — snapshot fechado de perfil,
+  peso y objetivo.
+- [Plan nutricional](user_nutricion_actual.md) — snapshot de macros, comidas y
+  ajustes; revisar estado antes de reutilizarlo.
+- [Entrenamiento y progresiones](user_entrenamiento.md) — snapshot de rutina,
+  cardio, fuerza y molestias; no sustituye una evaluación actual.
 
-## Estado actual de la fase (actualizado 03/05/2026)
+## Reglas de flujo confirmadas
 
-- Semana 7 iniciando: peso 101.2 kg al 03/05/2026. Nueva estrategia: **Plan Recomp Lenta 2026** hasta fin de diciembre.
-- Objetivo actualizado: bajar grasa lentamente sin perder masa muscular. Ya NO perseguir 90 kg para mitad de agosto como objetivo principal.
-- Calorias: mantener el rango actual (~1930-2028 kcal/dia, promedio ~1965) porque el usuario considera que con ese nivel baja y mantiene fuerza. No subir a 2300 kcal como punto de partida.
-- Ajuste semanal: si baja >0.8 kg/semana, cae fuerza/energia/sueno o aparece fatiga persistente, subir 100-150 kcal/dia o bajar fatiga. Si no baja durante 3 semanas con adherencia real alta, ajustar minimamente.
-- Ritmo deseado: 0.25-0.45 kg/semana; aceptar hasta ~0.6 kg/semana si fuerza y energia estan bien.
-- Refeeds: no programarlos por defecto; cualquier comida flexible se registra como adherencia real dentro del check-in.
-- AOVE: ELIMINADO del plan (fuga calorica principal identificada)
-- Creatina: 5g/dia confirmado
+- Comunicarse en español.
+- No hacer commits ni preguntar por commits.
+- En un check-in semanal, analizar primero el export completo y compararlo con el
+  import anterior antes de hablar de ajustes.
+- No generar automáticamente el siguiente import: pedir confirmación primero.
+- No modificar el entrenamiento si el usuario no lo solicita.
+- Registrar la adherencia real; no compensar incumplimientos con castigo.
+- Tratar BIA, peso, fuerza y cardio como señales complementarias, no como una única
+  medición de composición corporal.
+- Confirmar si cereales, legumbres y proteínas están pesados en crudo o cocinados.
 
-## Patrones aprendidos
+## Reglas de seguridad
 
-- La balanza BIA tiene 0.3-0.7 kg de variabilidad — nunca interpretar cambios semanales como datos exactos de composicion corporal
-- La perdida de semana 2 (-1.10 kg) fue atipicamente alta por vaciado inicial de glucogeno
-- El usuario se frustra cuando no ve cambios visibles semana a semana — importante contextualizar con datos de fuerza
-- La fuerza en gym es el indicador mas confiable de retencion muscular en deficit
+- Activar `poblaciones-especiales` ante embarazo, minoría de edad, ERC, diabetes,
+  TCA, hipertensión u otra condición relevante.
+- No convertir un rango calórico, proteico o de pérdida de peso en una prescripción
+  clínica.
+- Si la memoria contradice datos actuales, prevalecen los datos actuales y se marca
+  el snapshot antiguo como histórico.
+
+## Mantenimiento
+
+Actualizar este índice solo tras una petición explícita del usuario. Toda nota nueva
+debe incluir `updated`, fuente y estado (`current`, `historical` o `superseded`).

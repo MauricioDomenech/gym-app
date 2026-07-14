@@ -2,6 +2,8 @@
 name: Plan nutricional activo — macros, comidas y ajustes cronologicos
 description: Plan de alimentacion actual redesenado el 26/04/2026. TDEE real validado 2720 kcal. Plan a ~1965 kcal promedio con deficit real de ~755 kcal/dia.
 type: user
+updated: 2026-04-26
+status: historical
 ---
 
 ## Plan vigente — desde 26/04/2026 (v3 — rediseno completo)
