@@ -2,6 +2,10 @@ import { useState } from 'react';
 import type { FC } from 'react';
 import { usePhase } from '../../contexts/PhaseContext';
 import { useTheme } from '../../contexts/ThemeContext';
+import { TodaySettings } from './TodaySettings';
+import { TodayWeather } from './TodayWeather';
+import { readWeatherPreferences } from './todaySettingsStorage';
+import type { WeatherPreferences } from './todaySettingsStorage';
 
 type IconName =
   | 'arrow'
@@ -13,6 +17,7 @@ type IconName =
   | 'pin'
   | 'play'
   | 'scale'
+  | 'settings'
   | 'sun'
   | 'training';
 
@@ -72,6 +77,14 @@ const Icon: FC<IconProps> = ({ name, size = 24 }) => (
         <path d="M8 16h8" />
       </>
     )}
+    {name === 'settings' && (
+      <>
+        <path d="M4 7h16M4 12h16M4 17h16" />
+        <circle cx="9" cy="7" r="2" fill="currentColor" stroke="none" />
+        <circle cx="15" cy="12" r="2" fill="currentColor" stroke="none" />
+        <circle cx="10" cy="17" r="2" fill="currentColor" stroke="none" />
+      </>
+    )}
     {name === 'sun' && (
       <>
         <circle cx="12" cy="12" r="4" />
@@ -91,14 +104,15 @@ interface TodayAppProps {
   onOpenPlan: () => void;
 }
 
-type TodaySection = 'today' | 'training' | 'meals' | 'progress';
+type TodaySection = 'today' | 'training' | 'meals' | 'progress' | 'settings';
 
 const todaySections = [
-  ['today', 'Hoy', 'home'],
-  ['training', 'Entrenamiento', 'training'],
-  ['meals', 'Comidas', 'meals'],
-  ['progress', 'Progreso', 'chart'],
-] as const satisfies ReadonlyArray<readonly [TodaySection, string, IconName]>;
+  ['today', 'Hoy', 'Hoy', 'home'],
+  ['training', 'Entrenamiento', 'Entrenar', 'training'],
+  ['meals', 'Comidas', 'Comidas', 'meals'],
+  ['progress', 'Progreso', 'Progreso', 'chart'],
+  ['settings', 'Configuración', 'Config.', 'settings'],
+] as const satisfies ReadonlyArray<readonly [TodaySection, string, string, IconName]>;
 
 const formatToday = (): string => {
   const date = new Intl.DateTimeFormat('es-ES', {
@@ -121,10 +135,20 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
   const { theme, toggleTheme } = useTheme();
   const [notice, setNotice] = useState('');
   const [activeSection, setActiveSection] = useState<TodaySection>('today');
+  const [weatherPreferences, setWeatherPreferences] = useState<WeatherPreferences | null>(() => readWeatherPreferences());
   const hasPlan = currentPhase !== null;
   const planName = currentPhase ? phaseNames[currentPhase] : null;
   const isHome = activeSection === 'today';
   const sectionTitle = todaySections.find(([key]) => key === activeSection)?.[1] ?? 'Hoy';
+  const hasWeatherConfiguration = Boolean(
+    weatherPreferences?.location &&
+    weatherPreferences.departureTime &&
+    weatherPreferences.returnTime &&
+    weatherPreferences.transport,
+  );
+  const weatherSummary = weatherPreferences?.location && weatherPreferences.departureTime && weatherPreferences.returnTime
+    ? `${weatherPreferences.location.label} · ${weatherPreferences.departureTime} / ${weatherPreferences.returnTime}`
+    : 'Ubicación y horarios pendientes';
 
   const showNotice = (message: string) => {
     setNotice(message);
@@ -172,7 +196,9 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
 
         {isHome ? (
           <>
-            <section aria-labelledby="weather-heading" className="today-card today-weather-card">
+            {hasWeatherConfiguration && weatherPreferences ? (
+              <TodayWeather key={JSON.stringify(weatherPreferences)} preferences={weatherPreferences} />
+            ) : <section aria-labelledby="weather-heading" className="today-card today-weather-card">
               <div className="today-card-heading">
                 <div className="today-card-label">
                   <Icon name="cloud-sun" size={25} />
@@ -187,14 +213,20 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
                 <div>
                   <div className="today-weather-value">—</div>
                   <p className="today-weather-title">Antes de salir</p>
-                  <p className="today-weather-detail">Ubicación y horarios pendientes</p>
+                  <p className="today-weather-detail">{weatherSummary}</p>
                 </div>
               </div>
               <div className="today-weather-note">
                 <Icon name="pin" size={21} />
-                <span>Configurá ubicación y horario de ida/vuelta para ver un pronóstico real.</span>
+                <span>
+                  Configurá ubicación, horario de ida/vuelta y transporte para ver el pronóstico.
+                </span>
               </div>
-            </section>
+              <button className="today-secondary-button today-weather-config-button" onClick={() => setActiveSection('settings')} type="button">
+                <span>Configurar meteorología</span>
+                <Icon name="arrow" size={24} />
+              </button>
+            </section>}
 
             <section aria-labelledby="training-heading" className="today-card">
               <div className="today-card-heading">
@@ -232,8 +264,13 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
               </button>
             </section>
 
-            <p className="today-view-note">La meteorología, la rutina y el menú se mostrarán cuando estén configurados.</p>
+            <p className="today-view-note">Los resúmenes de entrenamiento y comidas todavía no están conectados.</p>
           </>
+        ) : activeSection === 'settings' ? (
+          <TodaySettings
+            onLocationCleared={setWeatherPreferences}
+            onSaved={setWeatherPreferences}
+          />
         ) : (
           <section aria-labelledby="construction-heading" className="today-card today-construction-card">
             <h2 id="construction-heading">{sectionTitle}</h2>
@@ -250,18 +287,19 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
       </main>
 
       <nav aria-label="Navegación principal" className="today-bottom-nav">
-        {todaySections.map(([key, label, icon]) => {
+        {todaySections.map(([key, label, navLabel, icon]) => {
           const isActive = key === activeSection;
           return (
             <button
               aria-current={isActive ? 'page' : undefined}
+              aria-label={label}
               className={isActive ? 'today-nav-item is-active' : 'today-nav-item'}
               key={key}
               onClick={() => setActiveSection(key)}
               type="button"
             >
               <span className="today-nav-icon"><Icon name={icon} size={26} /></span>
-              <span>{label}</span>
+              <span>{navLabel}</span>
             </button>
           );
         })}

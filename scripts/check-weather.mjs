@@ -1,0 +1,31 @@
+// Run with: node scripts/check-weather.mjs
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import ts from 'typescript';
+
+const source = readFileSync(new URL('../src/components/today/weatherForecast.ts', import.meta.url), 'utf8');
+const { outputText } = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } });
+const { tripTimes, parseForecast, weatherUrl } = await import(`data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`);
+const preferences = { version: 1, location: { latitude: 40.4, longitude: -3.7 }, departureTime: '07:15', returnTime: '09:00', transport: 'walking' };
+assert.deepEqual(tripTimes(preferences, 'Europe/Madrid', new Date('2026-09-21T04:00:00Z')), ['2026-09-21T07:15', '2026-09-21T09:00']);
+assert.deepEqual(tripTimes(preferences, 'Europe/Madrid', new Date('2026-09-21T10:00:00Z')), ['2026-09-22T07:15', '2026-09-22T09:00']);
+assert.deepEqual(tripTimes(preferences, 'America/Los_Angeles', new Date('2026-09-21T04:00:00Z')), ['2026-09-21T07:15', '2026-09-21T09:00']);
+const overnight = { ...preferences, departureTime: '23:15', returnTime: '01:00' };
+assert.deepEqual(tripTimes(overnight, 'Europe/Madrid', new Date('2026-09-30T22:30:00Z')), ['2026-09-30T23:15', '2026-10-01T01:00']);
+assert.deepEqual(tripTimes(preferences, 'Europe/Madrid', new Date('2026-10-25T06:00:00Z')), ['2026-10-25T07:15', '2026-10-25T09:00']);
+const hourly = { time: ['2026-09-21T07:00', '2026-09-21T09:00'], temperature_2m: [16, null], apparent_temperature: [14, null], precipitation_probability: [80, null], precipitation: [1.2, null], wind_speed_10m: [12, null] };
+const raw = { timezone: 'Europe/Madrid', hourly };
+const now = new Date('2026-09-21T04:00:00Z');
+const forecast = parseForecast(raw, preferences, now);
+assert.equal(forecast.slots[0].values.temperature_2m, 16);
+assert.equal(forecast.slots[1].values.temperature_2m, null);
+assert.match(forecast.recommendation, /paraguas/);
+assert.match(forecast.recommendation, /no disponibles/);
+assert.match(parseForecast(raw, { ...preferences, transport: 'cycling' }, now).recommendation, /impermeable para la bici/);
+assert.throws(() => parseForecast({ ...raw, hourly: { ...hourly, precipitation_probability: [101, null] } }, preferences, now));
+assert.throws(() => parseForecast({ ...raw, timezone: 'invalid' }, preferences, now));
+assert.throws(() => parseForecast(raw, preferences, new Date('2026-09-23T04:00:00Z')));
+const url = new URL(weatherUrl(preferences));
+assert.equal(url.searchParams.get('timezone'), 'auto');
+assert.equal(url.searchParams.get('past_days'), '1');
+console.log('PASS weather: local timezone, next trip, overnight/month boundary, DST, hourly selection, nulls, invalid data and transport advice');
