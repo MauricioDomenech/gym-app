@@ -1,0 +1,859 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "exportDate": "2026-08-17T06:48:23.642Z",
+  "weekFrom": 18,
+  "subPhase": "Plan Recomp Lenta 2026",
+  "mesocycle": "M4.3",
+  "workoutProgress": [
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 18,
+      "weights": [
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-12T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 50 kg; rango objetivo: 5-7; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Usar un recorrido estable y técnica limpia en todas las series. Volumen reducido esta semana porque la fatiga del miércoles anterior impidió entrenar el sábado; no superar el rango de repeticiones ni añadir series.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 18,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-12T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 36 kg; rango objetivo: 8-10; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Controlar la excéntrica y mantener la cadera estable. Volumen reducido esta semana porque la fatiga del miércoles anterior impidió entrenar el sábado; no superar el rango de repeticiones ni añadir series.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 18,
+      "weights": [
+        90,
+        90
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-12T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 90 kg; rango objetivo: 8-12; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Usar un recorrido estable y técnica limpia en todas las series. Volumen reducido esta semana porque la fatiga del miércoles anterior impidió entrenar el sábado; no superar el rango de repeticiones ni añadir series.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 18,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-12T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con peso corporal / sin carga externa; rango objetivo: 12-15; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener la columna neutra y mover desde la cadera. Volumen reducido esta semana porque la fatiga del miércoles anterior impidió entrenar el sábado; no superar el rango de repeticiones ni añadir series.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 18,
+      "weights": [
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-15T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 25 kg; rango objetivo: 10-15; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Hacer una pausa arriba y evitar hiperextender la zona lumbar. Hacer el volumen completo solo si el calentamiento sale normal y la fatiga es leve. Si persiste pesadez o cambia la técnica, recortar a la mitad o cancelar sin compensar.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 18,
+      "weights": [
+        41,
+        41
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-15T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 41 kg; rango objetivo: 12-15; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Usar un recorrido estable y técnica limpia en todas las series. Hacer el volumen completo solo si el calentamiento sale normal y la fatiga es leve. Si persiste pesadez o cambia la técnica, recortar a la mitad o cancelar sin compensar.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 18,
+      "weights": [
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-12T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 55 kg; rango objetivo: 10-12; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Hacer una pausa arriba y un estiramiento controlado abajo, sin rebotes. Volumen reducido esta semana porque la fatiga del miércoles anterior impidió entrenar el sábado; no superar el rango de repeticiones ni añadir series.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-en-polea-alta",
+      "day": "viernes",
+      "week": 18,
+      "weights": [
+        7.9
+      ],
+      "seriesCount": 1,
+      "date": "2026-08-14T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 1 serie con 7,9 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener el codo estable y evitar el balanceo. Bajar a 7,9 kg, ajuste ya usado anteriormente, porque 10,2 kg terminó en 10 repeticiones a RIR 0.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 18,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-15T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con peso corporal / sin carga externa; rango objetivo: 10-12 (c/pierna); mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Usar un recorrido estable y técnica limpia en todas las series. Hacer el volumen completo solo si el calentamiento sale normal y la fatiga es leve. Si persiste pesadez o cambia la técnica, recortar a la mitad o cancelar sin compensar.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 18,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-15T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con peso corporal / sin carga externa; rango objetivo: 12-15; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener la zona lumbar estable y acortar el recorrido si se pierde control. Hacer el volumen completo solo si el calentamiento sale normal y la fatiga es leve. Si persiste pesadez o cambia la técnica, recortar a la mitad o cancelar sin compensar.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 18,
+      "weights": [
+        36,
+        36
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-15T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 36 kg; rango objetivo: 10-12; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Controlar la excéntrica y mantener la cadera estable. Hacer el volumen completo solo si el calentamiento sale normal y la fatiga es leve. Si persiste pesadez o cambia la técnica, recortar a la mitad o cancelar sin compensar.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 18,
+      "weights": [
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-15T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 50 kg; rango objetivo: 15-20; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Hacer una pausa arriba y un estiramiento controlado abajo, sin rebotes. Hacer el volumen completo solo si el calentamiento sale normal y la fatiga es leve. Si persiste pesadez o cambia la técnica, recortar a la mitad o cancelar sin compensar.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 18,
+      "weights": [
+        17,
+        17
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-15T08:00:00+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 17 kg; rango objetivo: 10-12/lado; mantener 2-3 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener pelvis y tronco estables, sin rotar. Hacer el volumen completo solo si el calentamiento sale normal y la fatiga es leve. Si persiste pesadez o cambia la técnica, recortar a la mitad o cancelar sin compensar.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 18,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-10T06:55:32.64+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 4 series con 55 kg; rango objetivo: 5-7; empezar cerca de 2 RIR y no bajar de 1 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener técnica estable y recorrido controlado.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 9 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 18,
+      "weights": [
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-10T07:11:45.348+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 52 kg; rango objetivo: 10-12; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener tensión continua y el hombro cómodo. Se prescriben 52 kg, la carga que permitió hacer bien la técnica y las aperturas.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "lunes-cable-fly-alto-bajo",
+      "day": "lunes",
+      "week": 18,
+      "weights": [
+        14.7,
+        14.7
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-10T07:18:56.534+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 14,7 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener tensión continua y el hombro cómodo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 18,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-10T07:31:49.805+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 5,7 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Sin balanceo ni elevar los trapecios.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "lunes-triceps-overhead-cable",
+      "day": "lunes",
+      "week": 18,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-10T07:40:39.83+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 23,8 kg; rango objetivo: 10-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener los codos estables y el hombro cómodo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 18,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-10T07:44:37.034+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 90 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Flexionar el tronco con control, sin tirar del cuello.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 18,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-10T07:52:10.219+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 23,8 kg; rango objetivo: 10-12; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener los codos estables y el hombro cómodo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 11 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 18,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-10T07:52:20.021+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 17 kg; rango objetivo: 10-12/lado; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener pelvis y tronco estables, sin rotar.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-curl-martillo-en-cuerda-polea-baja",
+      "day": "martes",
+      "week": 18,
+      "weights": [
+        10,
+        10,
+        10
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-11T05:53:51.856+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 12 kg; rango objetivo: 10-12; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener el codo estable y evitar el balanceo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nLo baje a 10 kg por molestia en el antebrazo izquierdo. Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 18,
+      "weights": [
+        73,
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-11T06:13:23.788+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 4 series con 73 kg; rango objetivo: 5-8; empezar cerca de 2 RIR y no bajar de 1 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Pecho alto, recorrido controlado y sin impulso.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 8 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 18,
+      "weights": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-11T06:28:12.031+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 4 series con 52 kg; rango objetivo: 6-8; empezar cerca de 2 RIR y no bajar de 1 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener el torso estable y llevar el esfuerzo a la espalda, sin impulso.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 8 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "martes-reverse-fly-en-maquina",
+      "day": "martes",
+      "week": 18,
+      "weights": [
+        32,
+        32,
+        32
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-11T06:30:50.197+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 52 kg; rango objetivo: 15-20; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Pausa breve atrás y foco en el deltoide posterior, sin tirar del cuello. Se prescriben 52 kg porque es la carga registrada en la nueva máquina.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice en nueva máquina, ahora vamos a usar esa. Hice 15 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 18,
+      "weights": [
+        20,
+        20,
+        20
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-11T06:40:43.59+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 20 kg; rango objetivo: 8-10; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener el codo estable y evitar el balanceo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "martes-curl-inverso-barra-z--polea",
+      "day": "martes",
+      "week": 18,
+      "weights": [
+        5,
+        5
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-11T06:40:57.699+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 5 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener el codo estable y evitar el balanceo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nNo lo hice por molestias en el antebrazo\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 18,
+      "weights": [
+        12,
+        12
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-11T06:49:19.223+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 12 kg; rango objetivo: 15-20; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Usar un rango completo y controlado, sin rebotes.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 16 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-unilateral-en-polea",
+      "day": "jueves",
+      "week": 18,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-13T06:06:06.025+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 5,7 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Sin balanceo ni elevar los trapecios.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "jueves-remo-al-menton-en-polea-agarre-amplio",
+      "day": "jueves",
+      "week": 18,
+      "weights": [
+        17,
+        17
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-13T06:12:05.593+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 10,2 kg; rango objetivo: 10-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Agarre amplio y recorrido cómodo; cortar si molesta el hombro.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10, cambie de barra, ahora son 17 kg en barra recta\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "jueves-reverse-cable-fly",
+      "day": "jueves",
+      "week": 18,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-13T06:22:47.401+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 7,9 kg; rango objetivo: 15-20; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener tensión continua y el hombro cómodo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nBaje el peso porque no estaba haciendo bien la técnica. Hice 18 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 18,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-13T06:42:37.974+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 3 series con 73 kg; rango objetivo: 8-12; empezar cerca de 2 RIR y no bajar de 1 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener técnica estable y recorrido controlado.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 18,
+      "weights": [
+        7.9,
+        7.9
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-13T06:47:57.098+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 10,2 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener tensión continua y el hombro cómodo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nLo baje a 7,9 porque no estaba haciendo bien la técnica. Hice 10 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "jueves-extension-de-triceps-unilateral-cross-body-en-polea",
+      "day": "jueves",
+      "week": 18,
+      "weights": [
+        10.2,
+        10.2
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-13T07:00:48.978+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 10,2 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener los codos estables y el hombro cómodo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 18,
+      "weights": [
+        10.2,
+        10.2
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-14T06:02:52.633+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 12,5 kg; rango objetivo: 10-12; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener el codo estable y evitar el balanceo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nBaje a 10,2 kg. Hice 12 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": 2
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 18,
+      "weights": [
+        73,
+        73
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-14T06:21:52.441+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 73 kg; rango objetivo: 8-12; empezar cerca de 2 RIR y no bajar de 1 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Pecho alto, recorrido controlado y sin impulso.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 8 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": 0
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 18,
+      "weights": [
+        59,
+        59
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-14T06:37:41.362+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 59 kg; rango objetivo: 10-12 (c/lado); empezar cerca de 2 RIR y no bajar de 1 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener el torso estable y llevar el esfuerzo a la espalda, sin impulso.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 12 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 18,
+      "weights": [
+        30.6,
+        30.6
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-14T06:43:17.712+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 32,9 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener técnica limpia y recorrido controlado.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nBaje a 30,6 kg. Hice 12 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 18,
+      "weights": [
+        25,
+        25
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-14T06:51:02.339+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 25 kg; rango objetivo: 8-10; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Mantener el codo estable y evitar el balanceo. La semana pasada 25 kg terminó en RIR 0: descansar 120 segundos y parar con 1-2 repeticiones posibles; si no sale, bajar al siguiente ajuste disponible.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 10 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 18,
+      "weights": [
+        10,
+        10
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-14T07:01:56.717+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 2 series con 10 kg; rango objetivo: 15-20; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Usar un rango completo y controlado, sin rebotes. Bajar a 10 kg, carga previamente validada, porque 12 kg terminó en 12 repeticiones a RIR 0 y quedó por debajo del rango.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nHice 16 repeticiones\n[/USER_FEEDBACK]",
+      "rir": 1
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 18,
+      "weights": [
+        24
+      ],
+      "seriesCount": 1,
+      "date": "2026-08-14T07:02:01.71+00:00",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nCONSOLIDACIÓN SEMANA 18: hacer 1 serie con 24 kg; rango objetivo: 25-35 seg; mantener 1-2 RIR. Mantener la carga validada y el RIR indicado; no progresar el peso esta semana. Postura alta, abdomen firme y agarre controlado. Terminar antes de que fallen el agarre o la postura; no convertir la caminata en una serie al límite.\n[/COACH_PLAN]",
+      "rir": 0
+    }
+  ],
+  "bodyComposition": {
+    "week": 18,
+    "date": "2026-08-17T06:29:43.843+00:00",
+    "peso": 98.35,
+    "grasaCorporal": null,
+    "grasaSubcutanea": null,
+    "grasaVisceral": null,
+    "musculoEsqueletico": null,
+    "masaMuscular": null,
+    "aguaCorporal": null,
+    "pesoSinGrasa": null,
+    "masaOsea": null,
+    "proteinaCorporal": null,
+    "tmb": null,
+    "imc": null,
+    "cintura": null,
+    "cadera": null,
+    "pecho": null,
+    "brazo": null,
+    "muslo": null,
+    "comidasRelax": null,
+    "adherenciaNutricion": null,
+    "suenoPromedio": null,
+    "hambre": null,
+    "energia": null,
+    "molestias": null,
+    "notas": ""
+  },
+  "dailyWeights": [
+    {
+      "week": 18,
+      "day": "domingo",
+      "peso": 98.35,
+      "date": "2026-08-17T06:29:36.855+00:00",
+      "notas": ""
+    },
+    {
+      "week": 18,
+      "day": "jueves",
+      "peso": 98.5,
+      "date": "2026-08-13T05:08:39.453+00:00",
+      "notas": ""
+    },
+    {
+      "week": 18,
+      "day": "lunes",
+      "peso": 98.85,
+      "date": "2026-08-11T04:39:28.353+00:00",
+      "notas": ""
+    },
+    {
+      "week": 18,
+      "day": "martes",
+      "peso": 99,
+      "date": "2026-08-11T04:40:01.576+00:00",
+      "notas": ""
+    },
+    {
+      "week": 18,
+      "day": "miercoles",
+      "peso": 98.68,
+      "date": "2026-08-13T05:08:32.644+00:00",
+      "notas": ""
+    },
+    {
+      "week": 18,
+      "day": "sabado",
+      "peso": 98.35,
+      "date": "2026-08-17T06:29:30.745+00:00",
+      "notas": ""
+    },
+    {
+      "week": 18,
+      "day": "viernes",
+      "peso": 98.15,
+      "date": "2026-08-14T04:48:53.415+00:00",
+      "notas": ""
+    }
+  ],
+  "cardioLogs": [
+    {
+      "day": "jueves",
+      "week": 18,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": true,
+      "notas": "",
+      "date": "2026-08-13T07:00:57.816+00:00"
+    },
+    {
+      "day": "lunes",
+      "week": 18,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": true,
+      "notas": "LISS zona 2 durante 30 minutos, a ritmo conversacional. Mantener una inclinación y velocidad sostenibles; no aumentar ambas a la vez.",
+      "date": "2026-08-10T07:52:26.36+00:00"
+    },
+    {
+      "day": "martes",
+      "week": 18,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": true,
+      "notas": "LISS zona 2 durante 30 minutos, a ritmo conversacional. Mantenerlo suave y no compensar el cardio retirado del miércoles.",
+      "date": "2026-08-11T08:44:14.312+00:00"
+    },
+    {
+      "day": "miercoles",
+      "week": 18,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": true,
+      "notas": "",
+      "date": "2026-08-13T04:46:16.311+00:00"
+    },
+    {
+      "day": "viernes",
+      "week": 18,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": true,
+      "notas": "LISS zona 2 durante 30 minutos, a ritmo conversacional. No aumentar duración e inclinación a la vez y no añadir HIIT.",
+      "date": "2026-08-17T06:29:19.582+00:00"
+    }
+  ],
+  "weeklyClosure": {
+    "week": 18,
+    "readiness": "partial",
+    "statusLabel": "Revisable con faltantes",
+    "statusDetail": "Podemos analizar la semana, pero conviene completar los datos marcados antes del export.",
+    "requiredCompleted": 3,
+    "requiredTotal": 5,
+    "metrics": {
+      "weeklyChangeKg": -0.6,
+      "targetWeeklyLossRangeKg": "0.25-0.45",
+      "dailyWeightAverageKg": 98.55,
+      "dailyWeightEntries": 7,
+      "workoutCompleted": 38,
+      "workoutPlanned": 41,
+      "workoutPercent": 93,
+      "cardioCompleted": 5,
+      "cardioPlanned": 6,
+      "cardioPercent": 83,
+      "rirLogs": 27,
+      "averageRir": 1.3,
+      "zeroRirLogs": 2,
+      "feedbackLogs": 27,
+      "coachTargets": 41,
+      "nutritionAdherencePercent": null,
+      "relaxMeals": null,
+      "sleepAverage": null,
+      "hunger": null,
+      "energy": null,
+      "discomforts": null
+    },
+    "planningSignals": {
+      "dataQuality": "partial",
+      "decisionFocus": [
+        "Nutricion: falta adherencia semanal y comidas relax.",
+        "Cardio: completado 83% del cardio obligatorio."
+      ],
+      "recommendations": [
+        "No ajustar calorias solo por peso si no hay adherencia nutricional registrada.",
+        "No compensar con recorte agresivo de calorias; primero completar el cardio planificado."
+      ]
+    },
+    "checklist": [
+      {
+        "label": "Peso semanal / BIA",
+        "value": "98.35 kg registrado",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "Pesos diarios",
+        "value": "7 registros, promedio 98.6 kg",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "Cardio obligatorio",
+        "value": "5/6 sesiones completadas",
+        "ok": false,
+        "required": true
+      },
+      {
+        "label": "Entrenamiento",
+        "value": "38/41 ejercicios con peso (93%)",
+        "ok": true,
+        "required": true
+      },
+      {
+        "label": "RIR",
+        "value": "27 ejercicios con RIR",
+        "ok": true,
+        "required": false
+      },
+      {
+        "label": "Feedback de ejercicios",
+        "value": "27 comentarios guardados",
+        "ok": true,
+        "required": false
+      },
+      {
+        "label": "Adherencia nutricional",
+        "value": "Sin adherencia registrada",
+        "ok": false,
+        "required": true
+      }
+    ],
+    "nextStep": "Completa los faltantes de la semana 18 y vuelve al cierre antes de exportar."
+  }
+}

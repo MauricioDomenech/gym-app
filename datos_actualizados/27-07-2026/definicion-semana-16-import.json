@@ -1,0 +1,642 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "importDate": "2026-07-27T07:53:51.000Z",
+  "weekTo": 16,
+  "workoutProgress": [
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 16,
+      "weights": [
+        55,
+        55
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-27T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series. Usar 55kg solo si las aproximaciones salen estables; completar 10-11 reps con técnica limpia y 3-4 RIR. Si no queda ese margen, bajar la carga. No buscar marca ni progresión. Antes de continuar, comprobar respiración y esfuerzo: si aparecen falta de aire inusual, palpitaciones, mareo, dolor u opresión en el pecho o fatiga desproporcionada, cortar la sesión.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 16,
+      "weights": [
+        59,
+        59
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-27T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series. Volver a los 59kg ya validados y buscar 10-12 reps con 2-3 RIR, controlando el estiramiento. No probar todavía el salto a 66kg.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-cable-fly-alto-bajo",
+      "day": "lunes",
+      "week": 16,
+      "weights": [
+        14.7
+      ],
+      "seriesCount": 1,
+      "date": "2026-07-27T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 1 serie con 14.7kg, 12 reps y 2-3 RIR. Movimiento controlado y hombro cómodo; cortar si aparece molestia.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 16,
+      "weights": [
+        5.7,
+        5.7
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-27T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con 5.7kg, 12-14 reps y 2-3 RIR. Sin balanceo ni encoger trapecios; no progresar esta semana.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-overhead-cable",
+      "day": "lunes",
+      "week": 16,
+      "weights": [
+        23.8,
+        23.8
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-27T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con 23.8kg, 10-12 reps y 2-3 RIR. Mantener codos fijos y hombros cómodos.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 16,
+      "weights": [
+        23.8,
+        23.8
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-27T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con 23.8kg, 10-12 reps parejas y 2-3 RIR. Sin fallo; codos fijos y extensión controlada.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 16,
+      "weights": [
+        90,
+        90
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-27T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con 90kg solo si permite 12-15 reps controladas y 3 RIR. No tirar del cuello ni forzar el abdomen.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 16,
+      "weights": [
+        17,
+        17
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-27T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con 17kg, 12-13 reps por lado y 3 RIR. Pelvis y tronco estables; calidad antes que repeticiones.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 16,
+      "weights": [
+        73,
+        73
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-28T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series. Usar 73kg solo si permite 8-10 reps limpias con 3-4 RIR; si no, bajar la carga. Sin tirones ni fallo. Antes de continuar, comprobar respiración y esfuerzo: si aparecen falta de aire inusual, palpitaciones, mareo, dolor u opresión en el pecho o fatiga desproporcionada, cortar la sesión.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 16,
+      "weights": [
+        52,
+        52
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-28T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con los 52kg ya validados, 10-12 reps y 3-4 RIR. No probar todavía el salto a 59kg; mantener pecho apoyado.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-reverse-fly-en-maquina",
+      "day": "martes",
+      "week": 16,
+      "weights": [
+        66,
+        66
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-28T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con 66kg, 10-12 reps y 2-3 RIR. Pausa atrás, brazos semiabiertos y sin convertirlo en un tirón de trapecio.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 16,
+      "weights": [
+        25,
+        25
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-28T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con 25kg, 10-12 reps y 2-3 RIR. Técnica estricta, sin balanceo ni búsqueda de progresión.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-martillo-en-cuerda-polea-baja",
+      "day": "martes",
+      "week": 16,
+      "weights": [
+        12,
+        12
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-28T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con 12kg, 12-14 reps y 2-3 RIR. Muñeca neutra; detener si reaparece molestia en el antebrazo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 16,
+      "weights": [
+        12
+      ],
+      "seriesCount": 1,
+      "date": "2026-07-28T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 1 serie con 12kg, 15-18 reps y 2-3 RIR. Rango completo y ritmo controlado.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-inverso-barra-z--polea",
+      "day": "martes",
+      "week": 16,
+      "weights": [
+        10
+      ],
+      "seriesCount": 1,
+      "date": "2026-07-28T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 1 serie con 10kg, 12-13 reps y 2-3 RIR. Sin dolor de muñeca o codo; no subir carga.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 16,
+      "weights": [
+        50,
+        50
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series. Usar 50kg solo si las aproximaciones permiten 10-12 reps con 3-4 RIR y profundidad estable. Nada de repeticiones forzadas. Antes de continuar, comprobar respiración y esfuerzo: si aparecen falta de aire inusual, palpitaciones, mareo, dolor u opresión en el pecho o fatiga desproporcionada, cortar la sesión.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 16,
+      "weights": [
+        41,
+        41
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con 41kg, 10-12 reps y 3 RIR. Controlar la excéntrica y evitar llegar al fallo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 16,
+      "weights": [
+        90,
+        90
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series. Usar 90kg solo si permite 10-12 reps con 3-4 RIR, pelvis estable y respiración controlada; bajar si se siente pesada.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 16,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series solo con peso corporal, 12-15 reps y 3 RIR. Extender desde la cadera sin hiperextender la zona lumbar.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 16,
+      "weights": [
+        55,
+        55
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-29T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "REENTRADA POST-GRIPE: hacer 2 series con 55kg, 10-13 reps y 2-3 RIR. Pausa arriba y estiramiento controlado abajo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-unilateral-en-polea",
+      "day": "jueves",
+      "week": 16,
+      "weights": [
+        5.7,
+        5.7
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series solo si hombros y trapecios están recuperados. Empezar con 5.7kg por lado, 12-15 reps y 2-3 RIR; sin balanceo. Hacer esta segunda vuelta solo si no hubo síntomas anormales durante ni en las 24 horas posteriores a la sesión anterior. Antes de continuar, comprobar respiración y esfuerzo: si aparecen falta de aire inusual, palpitaciones, mareo, dolor u opresión en el pecho o fatiga desproporcionada, cortar la sesión.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-remo-al-menton-en-polea-agarre-amplio",
+      "day": "jueves",
+      "week": 16,
+      "weights": [
+        10.2
+      ],
+      "seriesCount": 1,
+      "date": "2026-07-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 1 serie con 10.2kg, 10-15 reps y 2-3 RIR. Agarre amplio y recorrido cómodo; cortar ante cualquier molestia de hombro.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-reverse-cable-fly",
+      "day": "jueves",
+      "week": 16,
+      "weights": [
+        7.9,
+        7.9
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con 7.9kg, 12-15 reps y 2-3 RIR. Es reverse cable fly: pausa atrás y foco en deltoide posterior, sin tirón de cuello.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 16,
+      "weights": [
+        73,
+        73
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series. Usar la referencia de 73kg solo si permite 8-10 reps limpias con 3 RIR; bajar si la primera vuelta dejó fatiga.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 16,
+      "weights": [
+        14,
+        14
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con 14kg, 10-12 reps y 2-3 RIR. Tensión continua, hombro cómodo y sin fallo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-extension-de-triceps-unilateral-cross-body-en-polea",
+      "day": "jueves",
+      "week": 16,
+      "weights": [
+        10.2,
+        10.2
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-30T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con 10.2kg por lado, 12-13 reps y 2-3 RIR. Mantener el pressdown hacia la cadera contraria.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 16,
+      "weights": [
+        73,
+        73
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-31T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series. Usar 73kg solo si permite 8-10 reps limpias con 3 RIR; si cae la técnica, bajar la carga. Hacer esta segunda vuelta solo si no hubo síntomas anormales durante ni en las 24 horas posteriores a la sesión anterior. Antes de continuar, comprobar respiración y esfuerzo: si aparecen falta de aire inusual, palpitaciones, mareo, dolor u opresión en el pecho o fatiga desproporcionada, cortar la sesión.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 16,
+      "weights": [
+        59,
+        59
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-31T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con los 59kg ya validados, 10-12 reps y 3 RIR. No probar todavía el salto a 66kg; pecho apoyado y agarre estable.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 16,
+      "weights": [
+        32.9,
+        32.9
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-31T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con 32.9kg, 10-12 reps y 2-3 RIR. Codos semifijos y abdomen estable, sin compensar con la zona lumbar.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 16,
+      "weights": [
+        12.5,
+        12.5
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-31T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con 12.5kg, 10-12 reps y 2-3 RIR. Tensión continua y sin balanceo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 16,
+      "weights": [
+        25,
+        25
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-31T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series en la máquina de 25kg, 10-12 reps y 2-3 RIR. Técnica estricta y sin fallo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-en-polea-alta",
+      "day": "viernes",
+      "week": 16,
+      "weights": [
+        10.2
+      ],
+      "seriesCount": 1,
+      "date": "2026-07-31T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 1 serie con los 10.2kg ya validados, 12-15 reps y 2-3 RIR. No probar todavía el salto a 12.5kg.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 16,
+      "weights": [
+        12,
+        12
+      ],
+      "seriesCount": 2,
+      "date": "2026-07-31T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con 12kg, 15-18 reps y 2-3 RIR. Rango completo y controlado.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 16,
+      "weights": [
+        24
+      ],
+      "seriesCount": 1,
+      "date": "2026-07-31T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 1 serie con 24kg por mano, dejando margen antes de que se deteriore la postura o el agarre. No llevar al límite.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 16,
+      "weights": [
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 3 series con 25kg, 15-20 reps y 3 RIR. Pausa arriba, pelvis estable y sin buscar progresión. Hacer esta segunda vuelta solo si no hubo síntomas anormales durante ni en las 24 horas posteriores a la sesión anterior. Antes de continuar, comprobar respiración y esfuerzo: si aparecen falta de aire inusual, palpitaciones, mareo, dolor u opresión en el pecho o fatiga desproporcionada, cortar la sesión.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 16,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series solo con peso corporal, 10-13 reps por pierna y 3 RIR. Priorizar equilibrio, profundidad y control.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 16,
+      "weights": [
+        41,
+        41
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con 41kg, 12-14 reps y 2-3 RIR. Excéntrica controlada y sin fallo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 16,
+      "weights": [
+        36,
+        36
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con 36kg, 12-14 reps y 2-3 RIR. Cadera estable y movimiento controlado.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 16,
+      "weights": [
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 3 series con 50kg, 12-14 reps y 2-3 RIR. Pausa arriba y estiramiento completo sin rebotes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 16,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con peso corporal, dejando 3 RIR y manteniendo la zona lumbar estable. Acortar el recorrido si se pierde control.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 16,
+      "weights": [
+        17,
+        17
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-01T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: hacer 2 series con 17kg, 12-13 reps por lado y 3 RIR. Si el core sigue fatigado, omitirlo; no forzar por completar.",
+      "rir": null
+    }
+  ],
+  "cardioLogs": [
+    {
+      "day": "lunes",
+      "week": 16,
+      "tipo": "liss",
+      "duracionMinutos": 25,
+      "completado": false,
+      "notas": "REENTRADA POST-GRIPE: LISS suave de hasta 25 min a intensidad conversacional. Los primeros 10-20 min son una prueba de tolerancia; terminar antes si el esfuerzo o la respiración no son normales. Sin inclinación exigente.",
+      "date": "2026-07-27T17:00:00.000Z"
+    },
+    {
+      "day": "viernes",
+      "week": 16,
+      "tipo": "liss",
+      "duracionMinutos": 25,
+      "completado": false,
+      "notas": "SEGUNDA VUELTA POST-GRIPE CONDICIONAL: LISS suave de hasta 25 min solo si no hubo síntomas anormales durante ni en las 24 horas previas. Ritmo conversacional; sin HIIT ni compensaciones.",
+      "date": "2026-07-31T17:00:00.000Z"
+    }
+  ],
+  "coachNotes": "Semana 16: reentrada post-gripe del 27 de julio al 1 de agosto de 2026. No hay export parcial de semana 15, así que se aplica carry-forward conservador: se repiten exactamente sus 41 ejercicios, 78 series y cargas, sin progresiones ni pesos inferidos. Compuestos a 3-4 RIR y aislamientos a 2-3 RIR; el campo rir queda en null para registrar el resultado real. Sin fallo, dropsets, rest-pause, myo-reps ni repeticiones forzadas. Los primeros 10-20 minutos del lunes funcionan como prueba de tolerancia a intensidad suave. Jueves, viernes y sábado son condicionales: realizarlos solo si no hubo síntomas anormales durante ni en las 24 horas posteriores a las sesiones previas. Cardio: LISS suave de hasta 25 minutos lunes y viernes, sin HIIT ni compensar sesiones perdidas. Detener el entrenamiento y valorar consulta médica si aparecen dolor u opresión en el pecho, falta de aire inusual, palpitaciones, mareo o síncope, o fatiga extrema/desproporcionada.",
+  "bodyComposition": null,
+  "weeklyClosure": null
+}

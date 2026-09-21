@@ -1,110 +1,31 @@
 ---
 name: calcular-tdee
-description: "Calculate TDEE, BMR, and macros."
+description: "Estimar gasto energético, calorías o macros cuando falte un objetivo o se solicite recalcularlo."
 ---
 
-# Calculadora de TDEE y Macronutrientes
+# Estimar gasto y macronutrientes
 
-## Datos necesarios del usuario
+Usa los datos vigentes; pregunta solo los que falten para el cálculo. Mifflin requiere peso en kg, altura en cm, edad en años y el coeficiente pertinente de la ecuación. No infieras ese coeficiente por el nombre o la apariencia: si no está disponible, explica la limitación u ofrece ambas estimaciones. El porcentaje de grasa no es obligatorio.
 
-Antes de calcular, pregunta:
-1. **Peso** (kg)
-2. **Altura** (cm)
-3. **Edad** (años)
-4. **Sexo** (hombre/mujer)
-5. **Nivel de actividad** (sedentario, ligeramente activo, moderadamente activo, activo, muy activo)
-6. **Objetivo** (perder grasa, recomposición, mantenimiento, volumen)
-7. **% grasa corporal aproximado** (si lo sabe)
+## Cálculo
 
-## Paso 1: Calcular TMB (Mifflin-St Jeor)
+Mifflin–St Jeor estima gasto en reposo (no gasto total medido):
 
-La fórmula es una estimación inicial; el error individual puede ser relevante y
-debe calibrarse con la tendencia real del peso y la actividad.
+- Ecuación masculina: `10 × kg + 6.25 × cm − 5 × años + 5`.
+- Ecuación femenina: `10 × kg + 6.25 × cm − 5 × años − 161`.
+- `TDEE estimado = gasto en reposo × factor de actividad`.
 
-**Hombres**: TMB = (10 x peso[kg]) + (6.25 x altura[cm]) - (5 x edad) + 5
-**Mujeres**: TMB = (10 x peso[kg]) + (6.25 x altura[cm]) - (5 x edad) - 161
+Factores convencionales orientativos: 1.2, 1.375, 1.55, 1.725 y 1.9, desde actividad baja a muy alta. Considera ocupación, pasos y ejercicio conjuntamente; los días de gimnasio no determinan solos el factor. No sumes otra vez las calorías del ejercicio ya incluido.
 
-## Paso 2: Calcular TDEE
+Elige mantenimiento, déficit o superávit según el objetivo y la respuesta conocida; no deduzcas una cifra segura universal. Si ya existe una ingesta con evolución registrada, úsala para calibrar la estimación.
 
-| Nivel | Factor | Descripción |
-|-------|--------|-------------|
-| Sedentario | x1.2 | Trabajo de oficina, poco movimiento |
-| Ligeramente activo | x1.375 | Ejercicio ligero 1-3 días/semana |
-| Moderadamente activo | x1.55 | Ejercicio moderado 3-5 días/semana |
-| Activo | x1.725 | Ejercicio intenso 6-7 días/semana |
-| Muy activo | x1.9 | Atletas, trabajo fisico + entrenamiento |
+## Macros y comprobación
 
-**TDEE = TMB x Factor de actividad**
+- Selecciona proteína según contexto y fuente. La ISSN ofrece 1.4–2.0 g/kg de peso corporal para muchas personas sanas que entrenan; un déficit puede justificar otros rangos. No confundas g/kg de peso con g/kg de masa libre de grasa ni estimes esta última sin datos.
+- Ajusta grasa a energía disponible, preferencias y salud; no impongas mínimos por sexo ni diagnostiques alteraciones hormonales por un porcentaje aislado.
+- Calcula carbohidratos restantes con `C = (kcal − 4 × P − 9 × G) / 4`. Si el resultado es negativo, revisa la distribución; no entregues macros imposibles.
+- Comprueba valores positivos, unidades y `4P + 4C + 9G`. Diferencia redondeo de un error de suma y aclara posibles diferencias con etiquetas por fibra u otros componentes.
 
-## Paso 3: Aplicar déficit/superavit según objetivo
+Entrega supuestos, estimación inicial y cómo revisarla con tendencias suficientes, adherencia, hambre y rendimiento. El pesaje diario es opcional; no ajustes por una lectura aislada. Para condiciones clínicas, usa [poblaciones-especiales](../poblaciones-especiales/SKILL.md).
 
-| Objetivo | Ajuste calórico | Velocidad de cambio |
-|----------|-----------------|---------------------|
-| Perder grasa (agresivo) | Ajuste individual y supervisado | Usar un ritmo conservador y revisarlo |
-| Recomposición | Déficit pequeño o mantenimiento según contexto | Ajustar con tendencia, fuerza y adherencia |
-| Mantenimiento | 0 kcal | Sin cambio |
-| Volumen limpio | +200 a +300 kcal/dia | 0.25-0.5% peso/semana |
-
-## Paso 4: Distribuir macronutrientes
-
-### Proteína (PRIORIDAD #1)
-
-| Contexto | Gramos por kg/dia |
-|----------|-------------------|
-| Recomposición | 1.8-2.4 g/kg |
-| Déficit agresivo | 2.3-3.1 g/kg masa magra |
-| Mantenimiento | 1.6-2.0 g/kg |
-| Volumen | 1.6-2.2 g/kg |
-
-### Grasa (PRIORIDAD #2)
-
-- **Referencia principal**: 20-35% de calorías totales
-- **Rango práctico**: 0.6-1.0 g/kg/dia según contexto, adherencia y calorías disponibles
-- Evitar imponer mínimos por sexo; considerar energía total, salud, preferencias y contexto clínico
-
-### Carbohidratos (RESTO)
-
-- Calorías restantes después de proteína y grasa
-- 1g proteína = 4 kcal | 1g carb = 4 kcal | 1g grasa = 9 kcal
-
-## Paso 5: Presentar resultados
-
-Presenta los resultados en una tabla clara:
-
-```
-RESULTADOS PERSONALIZADOS
-========================
-TMB: XXXX kcal
-TDEE: XXXX kcal
-Calorías objetivo: XXXX kcal (déficit de XXX kcal)
-
-MACRONUTRIENTES DIARIOS
-========================
-Proteína: XXXg (XXX kcal - XX%)
-Grasa: XXXg (XXX kcal - XX%)
-Carbohidratos: XXXg (XXX kcal - XX%)
-
-DISTRIBUCIÓN POR COMIDA (4 comidas)
-========================
-Proteína por comida: ~XXg
-```
-
-## Paso 6: Ajustes según progreso
-
-- Pesar a diario, usar **promedio semanal**
-- Si no hay pérdida en 2-3 semanas: reducir 100-150 kcal
-- Si se pierde más de 1% peso/semana: subir 100-150 kcal
-- Recalcular TDEE cada 5-10 kg de cambio
-
-## Velocidad de pérdida
-
-Usa un ritmo conservador como punto de partida y ajústalo con tendencia de peso,
-rendimiento, hambre y composición corporal; no hay una fórmula universal basada
-solo en el porcentaje de grasa.
-
-## Fuentes
-
-- Mifflin-St Jeor et al. (1990) — Fórmula TMB
-- ISSN Position Stand (2017) — Proteína para personas activas
-- Helms et al. (2014) — Proteína en déficit: 2.3-3.1 g/kg FFM
-- Nuckols / Stronger by Science — Ritmo de pérdida
+Fuentes: [ecuación original](https://pubmed.ncbi.nlm.nih.gov/2305711/), [posición de ISSN sobre proteína](https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/).

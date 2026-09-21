@@ -1,0 +1,674 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "importDate": "2026-08-02T16:00:00.000Z",
+  "weekTo": 17,
+  "workoutProgress": [
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 17,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 4 series con 55 kg; rango objetivo: 5-7; empezar cerca de 2 RIR y no bajar de 1 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener técnica estable y recorrido controlado.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 17,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 59 kg; rango objetivo: 10-12; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Carga corregida con el feedback real de la semana 16; no usar el valor nominal anterior. Mantener tensión continua y el hombro cómodo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-cable-fly-alto-bajo",
+      "day": "lunes",
+      "week": 17,
+      "weights": [
+        14.7,
+        14.7
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 2 series con 14,7 kg; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener tensión continua y el hombro cómodo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 17,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 5,7 kg; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Sin balanceo ni elevar los trapecios.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-overhead-cable",
+      "day": "lunes",
+      "week": 17,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 23,8 kg; rango objetivo: 10-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener los codos estables y el hombro cómodo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 17,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 23,8 kg; rango objetivo: 10-12; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener los codos estables y el hombro cómodo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 17,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 90 kg; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Flexionar el tronco con control, sin tirar del cuello.",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 17,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-03T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 17 kg; rango objetivo: 10-12/lado; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener pelvis y tronco estables, sin rotar.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 17,
+      "weights": [
+        73,
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 4 series con 73 kg; rango objetivo: 5-8; empezar cerca de 2 RIR y no bajar de 1 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Pecho alto, recorrido controlado y sin impulso.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 17,
+      "weights": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 4 series con 52 kg; rango objetivo: 6-8; empezar cerca de 2 RIR y no bajar de 1 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Carga corregida con el feedback real de la semana 16; no usar el valor nominal anterior. Mantener el torso estable y llevar el esfuerzo a la espalda, sin impulso.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-reverse-fly-en-maquina",
+      "day": "martes",
+      "week": 17,
+      "weights": [
+        66,
+        66,
+        66
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 66 kg; rango objetivo: 15-20; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Pausa breve atrás y foco en el deltoide posterior, sin tirar del cuello.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 17,
+      "weights": [
+        20,
+        20,
+        20
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 20 kg; rango objetivo: 8-10; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Carga corregida con el feedback real de la semana 16; no usar el valor nominal anterior. Mantener el codo estable y evitar el balanceo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-martillo-en-cuerda-polea-baja",
+      "day": "martes",
+      "week": 17,
+      "weights": [
+        12,
+        12,
+        12
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 12 kg; rango objetivo: 10-12; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener el codo estable y evitar el balanceo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 17,
+      "weights": [
+        12,
+        12
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 2 series con 12 kg; rango objetivo: 15-20; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Usar un rango completo y controlado, sin rebotes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-inverso-barra-z--polea",
+      "day": "martes",
+      "week": 17,
+      "weights": [
+        5,
+        5
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-04T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 2 series con 5 kg; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Carga corregida con el feedback real de la semana 16; no usar el valor nominal anterior. Mantener el codo estable y evitar el balanceo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 17,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-05T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 4 series con 50 kg; rango objetivo: 5-7; empezar cerca de 2 RIR y no bajar de 1 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Usar un recorrido estable y técnica limpia en todas las series.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 17,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-05T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 36 kg; rango objetivo: 8-10; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Carga corregida con el feedback real de la semana 16; no usar el valor nominal anterior. Controlar la excéntrica y mantener la cadera estable.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 17,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-05T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con 90 kg; rango objetivo: 8-12; empezar cerca de 2 RIR y no bajar de 1 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Usar un recorrido estable y técnica limpia en todas las series.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 17,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-05T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 3 series con peso corporal / sin carga externa; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener la columna neutra y mover desde la cadera.",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 17,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-05T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "VUELTA AL RITMO PREVIO: hacer 4 series con 55 kg; rango objetivo: 10-12; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Hacer una pausa arriba y un estiramiento controlado abajo, sin rebotes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-unilateral-en-polea",
+      "day": "jueves",
+      "week": 17,
+      "weights": [
+        5.7,
+        5.7
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-06T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 5,7 kg; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Sin balanceo ni elevar los trapecios.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-remo-al-menton-en-polea-agarre-amplio",
+      "day": "jueves",
+      "week": 17,
+      "weights": [
+        10.2
+      ],
+      "seriesCount": 1,
+      "date": "2026-08-06T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 1 series con 10,2 kg; rango objetivo: 10-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Agarre amplio y recorrido cómodo; cortar si molesta el hombro.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-reverse-cable-fly",
+      "day": "jueves",
+      "week": 17,
+      "weights": [
+        7.9,
+        7.9
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-06T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 7,9 kg; rango objetivo: 15-20; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener tensión continua y el hombro cómodo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 17,
+      "weights": [
+        73,
+        73
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-06T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 73 kg; rango objetivo: 8-12; empezar cerca de 2 RIR y no bajar de 1 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener técnica estable y recorrido controlado.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 17,
+      "weights": [
+        10.2,
+        10.2
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-06T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 10,2 kg; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Carga corregida con el feedback real de la semana 16; no usar el valor nominal anterior. Mantener tensión continua y el hombro cómodo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-extension-de-triceps-unilateral-cross-body-en-polea",
+      "day": "jueves",
+      "week": 17,
+      "weights": [
+        10.2,
+        10.2
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-06T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 10,2 kg; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener los codos estables y el hombro cómodo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 17,
+      "weights": [
+        73,
+        73
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-07T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 73 kg; rango objetivo: 8-12; empezar cerca de 2 RIR y no bajar de 1 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Pecho alto, recorrido controlado y sin impulso.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 17,
+      "weights": [
+        59,
+        59
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-07T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 59 kg; rango objetivo: 10-12 (c/lado); empezar cerca de 2 RIR y no bajar de 1 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Carga corregida con el feedback real de la semana 16; no usar el valor nominal anterior. Mantener el torso estable y llevar el esfuerzo a la espalda, sin impulso.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 17,
+      "weights": [
+        32.9,
+        32.9
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-07T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 32,9 kg; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener técnica limpia y recorrido controlado.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 17,
+      "weights": [
+        12.5,
+        12.5
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-07T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 12,5 kg; rango objetivo: 10-12; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener el codo estable y evitar el balanceo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 17,
+      "weights": [
+        25,
+        25
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-07T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 25 kg; rango objetivo: 10-12; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener el codo estable y evitar el balanceo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-en-polea-alta",
+      "day": "viernes",
+      "week": 17,
+      "weights": [
+        10.2
+      ],
+      "seriesCount": 1,
+      "date": "2026-08-07T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 1 series con 10,2 kg; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Carga corregida con el feedback real de la semana 16; no usar el valor nominal anterior. Mantener el codo estable y evitar el balanceo.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 17,
+      "weights": [
+        12,
+        12
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-07T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 12 kg; rango objetivo: 15-20; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Usar un rango completo y controlado, sin rebotes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 17,
+      "weights": [
+        24
+      ],
+      "seriesCount": 1,
+      "date": "2026-08-07T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 1 series con 24 kg; rango objetivo: 30-45 seg; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Postura alta, abdomen firme y agarre controlado.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 17,
+      "weights": [
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-08T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 3 series con 25 kg; rango objetivo: 10-15; empezar cerca de 2 RIR y no bajar de 1 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Hacer una pausa arriba y evitar hiperextender la zona lumbar.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 17,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-08T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con peso corporal / sin carga externa; rango objetivo: 10-12 (c/pierna); empezar cerca de 2 RIR y no bajar de 1 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Usar un recorrido estable y técnica limpia en todas las series.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 17,
+      "weights": [
+        41,
+        41
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-08T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 41 kg; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Usar un recorrido estable y técnica limpia en todas las series.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 17,
+      "weights": [
+        36,
+        36
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-08T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 36 kg; rango objetivo: 10-12; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Controlar la excéntrica y mantener la cadera estable.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 17,
+      "weights": [
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-08T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 3 series con 50 kg; rango objetivo: 15-20; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Hacer una pausa arriba y un estiramiento controlado abajo, sin rebotes.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 17,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-08T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con peso corporal / sin carga externa; rango objetivo: 12-15; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener la zona lumbar estable y acortar el recorrido si se pierde control.",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 17,
+      "weights": [
+        17,
+        17
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-08T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "SEGUNDA VUELTA CON VOLUMEN ESCALONADO: hacer 2 series con 17 kg; rango objetivo: 10-12/lado; mantener 1-2 RIR. Se recuperan la intensidad y las cargas habituales sin buscar RIR 0 ni progresar el peso esta semana. Mantener pelvis y tronco estables, sin rotar.",
+      "rir": null
+    }
+  ],
+  "cardioLogs": [
+    {
+      "day": "lunes",
+      "week": 17,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "LISS zona 2 durante 30 minutos, a ritmo conversacional. Mantener una inclinación y velocidad sostenibles; no aumentar ambas a la vez.",
+      "date": "2026-08-03T17:00:00.000Z"
+    },
+    {
+      "day": "miercoles",
+      "week": 17,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "LISS zona 2 durante 30 minutos después de piernas o separado si es posible. Completar suave; no compensar con más intensidad.",
+      "date": "2026-08-05T17:00:00.000Z"
+    },
+    {
+      "day": "viernes",
+      "week": 17,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "LISS zona 2 durante 30 minutos, a ritmo conversacional. Registrar la tolerancia durante la sesión y en las 24 horas posteriores.",
+      "date": "2026-08-07T17:00:00.000Z"
+    }
+  ],
+  "coachNotes": "Semana 17 (3-8 de agosto de 2026): vuelta al roster, las cargas y la intensidad normales previas al viaje, usando como estructura la versión final histórica de la semana 15. Se prescriben 103 series: lunes-miércoles recuperan el volumen completo y jueves-sábado mantienen una segunda vuelta escalonada. No se salta directamente de 78 a 124 series; si no hay fatiga desproporcionada, dolor muscular que altere la siguiente sesión, caída de rendimiento ni síntomas anormales, la semana 18 puede recuperar las 124 series. Objetivo: cerca de 2 RIR en compuestos y 1-2 RIR en aislamientos, sin buscar RIR 0 ni añadir dropsets, rest-pause o myo-reps. Se mantienen los ejercicios finales previos al viaje y se corrigen ocho cargas con evidencia: pec deck 59 kg, remo con pecho apoyado 52 kg, curl EZ 20 kg, curl inverso 5 kg, curl femoral sentado 36 kg, crossover inclinado 10,2 kg, remo unilateral 59 kg y curl en polea alta 10,2 kg. Cardio: tres LISS de 30 minutos y sin HIIT esta semana, porque el export de semana 16 registra 0 cardio completado. Detener el entrenamiento y valorar consulta médica si reaparecen dolor u opresión en el pecho, falta de aire inusual, palpitaciones, mareo, síncope o fatiga extrema/desproporcionada."
+}

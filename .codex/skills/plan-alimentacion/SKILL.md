@@ -1,101 +1,20 @@
 ---
 name: plan-alimentacion
-description: "Build meal plans with macros."
+description: "Crear o ajustar comidas con cantidades y macros respetando objetivos, alergias y preferencias."
 ---
 
-# Generador de Planes de Alimentación
+# Plan de alimentación
 
-## Datos necesarios
+Usa el objetivo aportado y las restricciones vigentes. Pregunta solo por alergias, preferencias, porciones u otros datos que falten y cambien el plan. Si es necesario estimar calorías, consulta [calcular-tdee](../calcular-tdee/SKILL.md); no recalcules por rutina un objetivo ya proporcionado.
 
-1. **Calorías objetivo** (usar /calcular-tdee si no las tiene)
-2. **Macros objetivo** (proteína, carbs, grasas en gramos)
-3. **Restricciones alimentarias** (vegetariano, sin lactosa, alergias, etc.)
-4. **Número de comidas** preferido (3, 4, 5 o 6)
-5. **Horario de entrenamiento** (para timing de comidas peri-entreno)
+## Construcción y validación
 
-## Estructura de cada comida
+- Parte de los alimentos y horarios que el usuario quiere conservar. No impongas pollo, whey, caseína, seis comidas ni un snack nocturno.
+- Identifica cantidad, unidad, parte comestible, estado crudo/cocinado y marca cuando afecte a los valores. Usa etiquetas o una base de composición consultada; no atribuyas valores exactos universales a un alimento.
+- Calcula porciones desde una base coherente y suma comida, día y semana si corresponde. Contrasta macros y energía; documenta redondeos o diferencias de etiquetado.
+- Presenta sustituciones solo si se solicitan o resuelven disponibilidad/restricciones; recalcula cantidades y totales después de sustituir.
+- Ajusta distribución de proteína, carbohidratos y grasa a tolerancia y horarios. Para una duda específica de timing, consulta [nutricion-peri-entreno](../nutricion-peri-entreno/SKILL.md).
+- No diagnostiques carencias por un menú de un día. En un plan semanal considera variedad, fibra y alimentos compatibles con las restricciones.
+- Si incluyes preparación anticipada, verifica conservación, refrigeración y recalentado según alimento y guía oficial vigente; no asumas que todo dura una semana en la nevera.
 
-Cada comida debe incluir:
-- **Alimento** con cantidad en gramos
-- **Macros** (proteína, carbohidratos, grasa)
-- **Calorías**
-- **Notas** de preparacion si aplica
-
-## Alimentos base por macronutriente
-
-### Proteínas de alta calidad (priorizar)
-| Alimento | Proteína/100g | Notas |
-|----------|---------------|-------|
-| Pechuga de pollo | 31g | La base de toda dieta fitness |
-| Pavo | 29g | Muy magro |
-| Atun en lata | 26g | Economico, práctico |
-| Ternera magra | 26g | Rica en hierro y zinc |
-| Salmon | 25g | Omega-3 + vitamina D |
-| Huevos | ~6g/unidad | Perfil aminoacido completo |
-| Yogur griego | 10g | Snack con probioticos |
-| Lentejas (secas) | 25g | Fibra + hierro (vegetal) |
-| Tofu firme | 17g | Opción vegetal |
-| Whey protein | ~24g/scoop | Suplemento, no sustituye comida real |
-
-### Carbohidratos complejos (base diaria)
-- Avena, arroz integral, boniato/batata, quinoa, patata, pan integral
-
-### Carbohidratos simples (peri-entrenamiento)
-- Platano, arroz blanco, frutos rojos, miel (pequeñas cantidades)
-
-### Grasas saludables
-- Aceite de oliva virgen extra, aguacate, frutos secos, semillas chia/lino, chocolate negro 85%+
-
-### Verduras (volumen y micronutrientes)
-- Espinacas, brocoli, pimientos, zanahorias, tomates, col rizada
-
-## Plantilla de plan diario
-
-```
-DIA: [Lunes/Martes/etc.]
-Calorías totales: XXXX kcal | P: XXXg | C: XXXg | G: XXXg
-
-DESAYUNO (HH:MM) — XXX kcal
-- [Alimento] ([cantidad]g) — Xg P / Xg C / Xg G
-- [Alimento] ([cantidad]g) — Xg P / Xg C / Xg G
-Total: Xg P / Xg C / Xg G
-
-MEDIA MAÑANA / PRE-ENTRENO (HH:MM) — XXX kcal
-- ...
-
-ALMUERZO (HH:MM) — XXX kcal
-- ...
-
-MERIENDA / POST-ENTRENO (HH:MM) — XXX kcal
-- ...
-
-CENA (HH:MM) — XXX kcal
-- ...
-
-SNACK NOCTURNO (opcional) — XXX kcal
-- Caseina (25-40g) para síntesis proteica nocturna
-```
-
-## Reglas de distribución
-
-- **Proteína**: 20-40g por comida, espaciadas cada 3-4h
-- **Pre-entreno** (1-3h antes): proteína + carbohidratos complejos
-- **Post-entreno** (dentro de 2-3h): proteína rápida (whey) + carbohidratos
-- **Antes de dormir**: caseina o proteína de liberacion lenta
-- **Días de entreno**: se pueden priorizar carbohidratos si mejoran el rendimiento; no fijar porcentajes universales
-- **Días de descanso**: ajustar carbohidratos y grasas según hambre, actividad y preferencias
-
-## Meal prep semanal (domingo, 2-3h)
-
-1. **Proteínas**: 1.5 kg pollo + 500g salmón + 12 huevos duros
-2. **Carbohidratos**: 500g arroz integral + 1 kg boniato + 300g quinoa
-3. **Verduras**: brocoli, espinacas, pimientos cortados
-4. **Porcionar** en tuppers etiquetados por dia
-5. **Congelar** porciones de jueves-viernes
-
-## Notas importantes
-
-- La frecuencia de comidas NO importa para resultados (estudio Tavares 2025): 3 o 6 comidas da igual si el total diario es correcto
-- Regla 80/20: 80% alimentos nutritivos, 20% por placer
-- Las verduras congeladas son igual de nutritivas que las frescas
-- Hidratación: usar la sed, el clima, la actividad y el color de la orina como orientaciones; no imponer una cifra universal por sexo
+Entrega las comidas y cantidades solicitadas, sus totales y las suposiciones. No registres el menú propuesto como consumo real. Ante una condición clínica relevante, usa [poblaciones-especiales](../poblaciones-especiales/SKILL.md).

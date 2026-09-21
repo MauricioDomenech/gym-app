@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "build:api": "tsc -p tsconfig.api.json",
     "lint": "eslint .",
-    "validate:agents": "node scripts/validate-agent-config.mjs",
+    "validate:agents": "node --test scripts/validate-agent-config.test.mjs && node scripts/validate-agent-config.mjs",
     "preview": "vite preview",
     "server": "node server.js",
     "dev:full": "concurrently \"npm run server\" \"npm run dev\"",

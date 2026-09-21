@@ -1,0 +1,662 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "importDate": "2026-09-13T19:23:10.319Z",
+  "weekTo": 21,
+  "workoutProgress": [
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 5-7; descanso: 3 min. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [55,55,55,55] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 9 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12; descanso: 90 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [52,52,52] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-cable-fly-alto-bajo",
+      "day": "lunes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 60-90 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [10.2,10.2,10.2] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [5.7,5.7,5.7] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 15 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-overhead-cable",
+      "day": "lunes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-15; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [23.8,23.8,23.8] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [23.8,23.8,23.8] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [90,90,90] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-14T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12/lado; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [17,17,17] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 5-8; descanso: 3 min. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [66,66,66,66] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio opcional de hoy: caminata cómoda de 15–20 minutos totales solo si recuperás bien; 3 minutos iniciales y 2 finales suaves incluidos. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 8 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 6-8; descanso: 2-3 min. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [52,52,52,52] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio opcional de hoy: caminata cómoda de 15–20 minutos totales solo si recuperás bien; 3 minutos iniciales y 2 finales suaves incluidos. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-reverse-fly-en-maquina",
+      "day": "martes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 15-20; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [32,32,32] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio opcional de hoy: caminata cómoda de 15–20 minutos totales solo si recuperás bien; 3 minutos iniciales y 2 finales suaves incluidos. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 15 repeticiones. No sé si subir peso o hacer más repeticiones, pero me siento cómodo ahora; Facil.\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 8-10; descanso: 90–120 s. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica heredada de la semana 19: [20,20,20] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio opcional de hoy: caminata cómoda de 15–20 minutos totales solo si recuperás bien; 3 minutos iniciales y 2 finales suaves incluidos. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 19: Hice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-martillo-en-cuerda-polea-baja",
+      "day": "martes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12; descanso: 90–120 s. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [10,10,10] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio opcional de hoy: caminata cómoda de 15–20 minutos totales solo si recuperás bien; 3 minutos iniciales y 2 finales suaves incluidos. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 21,
+      "weights": [
+        0
+      ],
+      "seriesCount": 1,
+      "date": "2026-09-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 1 serie de trabajo; objetivo: 15-20; descanso: 60–90 s. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [12,12] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio opcional de hoy: caminata cómoda de 15–20 minutos totales solo si recuperás bien; 3 minutos iniciales y 2 finales suaves incluidos. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 16 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-inverso-barra-z--polea",
+      "day": "martes",
+      "week": 21,
+      "weights": [
+        0
+      ],
+      "seriesCount": 1,
+      "date": "2026-09-15T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 1 serie de trabajo; objetivo: 12-15; descanso: 90–120 s. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica heredada de la semana 19: [5,5] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio opcional de hoy: caminata cómoda de 15–20 minutos totales solo si recuperás bien; 3 minutos iniciales y 2 finales suaves incluidos. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 19: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 5-7; descanso: 3-4 min. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica heredada de la semana 19: [50,50,50,50] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 19: Hice 8 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 8-10; descanso: 90–120 s. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica heredada de la semana 19: [32,32,32] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 19: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 8-12; descanso: 2-3 min. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica heredada de la semana 19: [90,90,90] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 19: Hice 8 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 90 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [0,0,0] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Empezar sin carga externa añadida, con recorrido controlable. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-16T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica heredada de la semana 19: [50,50,50,50] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 19: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-unilateral-en-polea",
+      "day": "jueves",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 60-90 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [5.7,5.7,5.7] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Omitir esta semana el ejercicio «Remo al mentón en polea agarre amplio»: la sustitución solicitada aún no está identificada. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 15 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-reverse-cable-fly",
+      "day": "jueves",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 15-20; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [5.7,5.7,5.7] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Omitir esta semana el ejercicio «Remo al mentón en polea agarre amplio»: la sustitución solicitada aún no está identificada. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 18 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 8-12; descanso: 2-3 min. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [73,73,73] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. El nombre y la carga histórica no identifican con certeza el equipo: usar tu variante habitual y confirmar equipo/unidad; no interpretar el número histórico como kg por mancuerna. Omitir esta semana el ejercicio «Remo al mentón en polea agarre amplio»: la sustitución solicitada aún no está identificada. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 90 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [7.9,7.9,7.9] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Omitir esta semana el ejercicio «Remo al mentón en polea agarre amplio»: la sustitución solicitada aún no está identificada. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-extension-de-triceps-unilateral-cross-body-en-polea",
+      "day": "jueves",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 60-90 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [10.2,10.2,10.2] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Omitir esta semana el ejercicio «Remo al mentón en polea agarre amplio»: la sustitución solicitada aún no está identificada. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 8-12; descanso: 2 min. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [73,73,73] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 8 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12 (c/lado); descanso: 90 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [59,59,59] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. El nombre y la carga histórica no identifican con certeza el equipo: usar tu variante habitual y confirmar equipo/unidad; no interpretar el número histórico como kg por mancuerna. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 90 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [30.6,30.6,30.6] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12; descanso: 90–120 s. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [10.2,10.2,10.2] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12; descanso: 90–120 s. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [25,25,25] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-en-polea-alta",
+      "day": "viernes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 90–120 s. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica heredada de la semana 19: [14.7,14.7,14.7] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 19: Hice 12 repeticiones y 3 serie, revisa para la próxima de corregir el peso y las repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 15-20; descanso: 60–90 s. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [10,10,10] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 16 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 21,
+      "weights": [
+        0
+      ],
+      "seriesCount": 1,
+      "date": "2026-09-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 1 serie de trabajo; objetivo: 15–20 s; descanso: 90 s. Terminar el tiempo con postura y agarre estables y margen; no convertir segundos en RIR. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Referencia histórica del export de semana 20: [24,24] kg, en las unidades y el equipo de ese registro; no es la carga obligatoria de vuelta. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-15; descanso: 2 min. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Sin registro de este ejercicio en el export de semana 20; calibrar hoy sin asumir una carga anterior. En búlgaras y rueda, recortar repeticiones o recorrido si no conservás control y margen. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12 (c/pierna); descanso: 2 min. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Sin registro de este ejercicio en el export de semana 20; calibrar hoy sin asumir una carga anterior. En búlgaras y rueda, recortar repeticiones o recorrido si no conservás control y margen. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Sin registro de este ejercicio en el export de semana 20; calibrar hoy sin asumir una carga anterior. En búlgaras y rueda, recortar repeticiones o recorrido si no conservás control y margen. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12; descanso: 90–120 s. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Sin registro de este ejercicio en el export de semana 20; calibrar hoy sin asumir una carga anterior. En búlgaras y rueda, recortar repeticiones o recorrido si no conservás control y margen. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 15-20; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Sin registro de este ejercicio en el export de semana 20; calibrar hoy sin asumir una carga anterior. En búlgaras y rueda, recortar repeticiones o recorrido si no conservás control y margen. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 12-15; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Sin registro de este ejercicio en el export de semana 20; calibrar hoy sin asumir una carga anterior. Empezar sin carga externa añadida, con recorrido controlable. En búlgaras y rueda, recortar repeticiones o recorrido si no conservás control y margen. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 21,
+      "weights": [
+        0,
+        0
+      ],
+      "seriesCount": 2,
+      "date": "2026-09-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 21 — REENTRADA 1 (14–20/09/2026). 2 series de trabajo; objetivo: 10-12/lado; descanso: 60 seg. Terminar con 3–4 RIR objetivo, sin fallo ni dropsets. Elegir la carga durante las aproximaciones, sin fatiga; bajar el ajuste si no llegás al mínimo del rango con el margen previsto. Los ceros de las casillas significan carga pendiente de registrar, no una carga prescrita ni una sesión realizada. Sin registro de este ejercicio en el export de semana 20; calibrar hoy sin asumir una carga anterior. En búlgaras y rueda, recortar repeticiones o recorrido si no conservás control y margen. Si aparece dolor o las agujetas alteran la técnica, detener o recortar la sesión sin compensar las series omitidas. Hoy no hay cardio añadido al entrenamiento. Sin HIIT esta semana. Las aproximaciones no cuentan como series de trabajo.\n[/COACH_PLAN]",
+      "rir": null
+    }
+  ],
+  "cardioLogs": [
+    {
+      "day": "lunes",
+      "week": 21,
+      "tipo": "liss",
+      "duracionMinutos": 15,
+      "completado": false,
+      "notas": "SEMANA 21 — REENTRADA 1. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT. Es una prescripción pendiente; registrar duración real y marcar completado solo después de realizarla. El martes es opcional. El bloque general de cardio de la app puede seguir mostrando la rutina base: seguir estas notas para esta semana.",
+      "date": "2026-09-14T08:00:00.000Z"
+    },
+    {
+      "day": "martes",
+      "week": 21,
+      "tipo": "liss",
+      "duracionMinutos": 15,
+      "completado": false,
+      "notas": "SEMANA 21 — REENTRADA 1. Cardio opcional de hoy: caminata cómoda de 15–20 minutos totales solo si recuperás bien; 3 minutos iniciales y 2 finales suaves incluidos. Sin HIIT. Es una prescripción pendiente; registrar duración real y marcar completado solo después de realizarla. El martes es opcional. El bloque general de cardio de la app puede seguir mostrando la rutina base: seguir estas notas para esta semana.",
+      "date": "2026-09-15T08:00:00.000Z"
+    },
+    {
+      "day": "miercoles",
+      "week": 21,
+      "tipo": "liss",
+      "duracionMinutos": 0,
+      "completado": false,
+      "notas": "SEMANA 21 — REENTRADA 1. Hoy no hay cardio añadido al entrenamiento. Sin HIIT. Es una prescripción pendiente; registrar duración real y marcar completado solo después de realizarla. El martes es opcional. El bloque general de cardio de la app puede seguir mostrando la rutina base: seguir estas notas para esta semana.",
+      "date": "2026-09-16T08:00:00.000Z"
+    },
+    {
+      "day": "jueves",
+      "week": 21,
+      "tipo": "liss",
+      "duracionMinutos": 15,
+      "completado": false,
+      "notas": "SEMANA 21 — REENTRADA 1. Cardio de hoy: caminata cómoda de 15–20 minutos totales; 3 minutos iniciales y 2 finales suaves incluidos. Ritmo que permita hablar con comodidad. Sin HIIT. Es una prescripción pendiente; registrar duración real y marcar completado solo después de realizarla. El martes es opcional. El bloque general de cardio de la app puede seguir mostrando la rutina base: seguir estas notas para esta semana.",
+      "date": "2026-09-17T08:00:00.000Z"
+    },
+    {
+      "day": "viernes",
+      "week": 21,
+      "tipo": "liss",
+      "duracionMinutos": 0,
+      "completado": false,
+      "notas": "SEMANA 21 — REENTRADA 1. Hoy no hay cardio añadido al entrenamiento. Sin HIIT. Es una prescripción pendiente; registrar duración real y marcar completado solo después de realizarla. El martes es opcional. El bloque general de cardio de la app puede seguir mostrando la rutina base: seguir estas notas para esta semana.",
+      "date": "2026-09-18T08:00:00.000Z"
+    },
+    {
+      "day": "sabado",
+      "week": 21,
+      "tipo": "liss",
+      "duracionMinutos": 0,
+      "completado": false,
+      "notas": "SEMANA 21 — REENTRADA 1. Hoy no hay cardio añadido al entrenamiento. Sin HIIT. Es una prescripción pendiente; registrar duración real y marcar completado solo después de realizarla. El martes es opcional. El bloque general de cardio de la app puede seguir mostrando la rutina base: seguir estas notas para esta semana.",
+      "date": "2026-09-19T08:00:00.000Z"
+    }
+  ],
+  "coachNotes": "SEMANA 21 DE LA APP = SEMANA 1 DE REENTRADA, del 14 al 20 de septiembre de 2026. Último export real: semana 20. Vacaciones del 31/08 al 13/09: descanso sin entrenamientos registrados. Por elección del usuario, la numeración del plan continúa de la semana 20 a la 21, sin reservar semanas para las vacaciones. Usuario confirma seis días disponibles y ninguna molestia.\n\nPLAN: 40 ejercicios, 77 series de trabajo; lunes 16, martes 12, miércoles 10, jueves 10, viernes 15, sábado 14. RIR objetivo 3–4 en las notas; rir queda null hasta entrenar. Cargas pendientes (0 en las casillas); las referencias antiguas solo están en observaciones y no son cargas de vuelta prescritas. Aproximaciones progresivas, sin fallo ni dropsets. No recuperar sesiones omitidas.\n\nCARDIO: lunes y jueves 15–20 minutos conversacionales; martes opcional si recuperás bien. Miércoles, viernes y sábado sin cardio añadido. Sin HIIT. Todos los registros quedan sin completar.\n\nEl JSON ajusta las series del registro y las notas; las fichas generales de ejercicios/cardio y sus objetivos de cierre siguen usando el plan base. Para esta semana seguir COACH_PLAN y las notas de cardio, incluido omitir el remo al mentón. Seleccionar la semana 21 en la app tras importar.\n\nAvanzar a la segunda semana solo si completás rangos con el margen previsto, sin dolor y con agujetas que no alteren la próxima sesión. En caso contrario repetir o reducir la dosis. La segunda semana se ajustará con el nuevo export.\n\nCOMENTARIOS: 32 originales conservados literalmente con su semana de origen: 31 en los ejercicios incluidos y 1 del ejercicio omitido identificado aquí. Los comentarios previos no son feedback de esta semana.\n\n[COACH_PLAN]\nEJERCICIO OMITIDO ESTA SEMANA: jueves-remo-al-menton-en-polea-agarre-amplio. No entrenar ni registrar series: queda pendiente identificar la variante solicitada. Se conserva a continuación su comentario original con el mismo exerciseId, fuera de workoutProgress.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 20: Hice 3 series con 13 repeticiones. Cambia este ejercicio por el que te dije\n[/USER_FEEDBACK]"
+}

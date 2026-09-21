@@ -1,0 +1,713 @@
+{
+  "version": "1.0",
+  "phase": "definicion",
+  "importDate": "2026-08-17T08:00:00.000Z",
+  "weekTo": 19,
+  "workoutProgress": [
+    {
+      "exerciseId": "lunes-press-banca-inclinado-30",
+      "day": "lunes",
+      "week": 19,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 4 series con 55 kg; rango objetivo: 5-7; mantener 1-2 RIR. Mantener técnica y recorrido estables. Aunque registraste 9 repeticiones, no se inventa un salto de carga: si vuelves a superar 7 con más de 2 RIR, anota el siguiente incremento disponible. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 9 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pec-deck--aperturas-maquina",
+      "day": "lunes",
+      "week": 19,
+      "weights": [
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 52 kg; rango objetivo: 10-12; mantener 1-2 RIR. Mantener tensión continua y el hombro cómodo. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-cable-fly-alto-bajo",
+      "day": "lunes",
+      "week": 19,
+      "weights": [
+        14.7,
+        14.7
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 2 series con 14,7 kg; rango objetivo: 12-15; mantener 1-2 RIR. Controlar el estiramiento y evitar que el hombro se adelante. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-elevacion-lateral-con-polea",
+      "day": "lunes",
+      "week": 19,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 5,7 kg; rango objetivo: 12-15; mantener 1-2 RIR. Sin balanceo ni elevación de trapecios. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 13 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-overhead-cable",
+      "day": "lunes",
+      "week": 19,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 23,8 kg; rango objetivo: 10-15; mantener 1-2 RIR. Mantener los codos estables y el hombro cómodo. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-triceps-pushdown-polea",
+      "day": "lunes",
+      "week": 19,
+      "weights": [
+        23.8,
+        23.8,
+        23.8
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 23,8 kg; rango objetivo: 10-12; mantener 1-2 RIR. Mantener los codos fijos y terminar cada repetición con control. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 11 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-crunch-en-maquina",
+      "day": "lunes",
+      "week": 19,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 90 kg; rango objetivo: 12-15; mantener 1-2 RIR. Flexionar el tronco con control, sin tirar del cuello. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "lunes-pallof-press",
+      "day": "lunes",
+      "week": 19,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-17T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 17 kg; rango objetivo: 10-12/lado; mantener 1-2 RIR. Mantener pelvis y tronco estables, sin rotar. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-dominadas--jalon-al-pecho-pronado",
+      "day": "martes",
+      "week": 19,
+      "weights": [
+        73,
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 4 series con 73 kg; rango objetivo: 5-8; mantener 1-2 RIR. Pecho alto, recorrido controlado y sin impulso. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 8 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-remo-con-pecho-apoyado-chest-supported",
+      "day": "martes",
+      "week": 19,
+      "weights": [
+        52,
+        52,
+        52,
+        52
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 4 series con 52 kg; rango objetivo: 6-8; mantener 1-2 RIR. Mantener el pecho apoyado y evitar el impulso. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 8 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-reverse-fly-en-maquina",
+      "day": "martes",
+      "week": 19,
+      "weights": [
+        32,
+        32,
+        32
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 32 kg; rango objetivo: 15-20; mantener 1-2 RIR. Usar la nueva máquina a 32 kg, con pausa breve atrás y sin tirar del cuello. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice en nueva máquina, ahora vamos a usar esa. Hice 15 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-biceps-barra-ez",
+      "day": "martes",
+      "week": 19,
+      "weights": [
+        20,
+        20,
+        20
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 20 kg; rango objetivo: 8-10; mantener 1-2 RIR. Técnica estricta, sin balanceo. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-martillo-en-cuerda-polea-baja",
+      "day": "martes",
+      "week": 19,
+      "weights": [
+        10,
+        10,
+        10
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 10 kg; rango objetivo: 10-12; mantener 2 RIR. Mantener los 10 kg que toleraste mejor. Hacer la segunda y tercera serie solo si la anterior fue indolora y con técnica normal; si reaparece la molestia del antebrazo, detener sin compensar series. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Lo baje a 10 kg por molestia en el antebrazo izquierdo. Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-wrist-curl-curl-de-muneca",
+      "day": "martes",
+      "week": 19,
+      "weights": [
+        12,
+        12
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 2 series con 12 kg; rango objetivo: 15-20; mantener 2 RIR. Rango completo y ritmo controlado; detener si aparece dolor. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 16 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "martes-curl-inverso-barra-z--polea",
+      "day": "martes",
+      "week": 19,
+      "weights": [
+        5,
+        5
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-18T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 2 series con 5 kg; rango objetivo: 12-15; mantener 3 RIR. La primera serie es una prueba solo si calentamiento, agarre y antebrazo están sin dolor. Hacer la segunda únicamente con 0 dolor o molestia y técnica normal. Mantener 3 RIR; si reaparece la molestia, parar sin compensar. El peso estaba planificado, pero no fue ejecutado en la semana 18. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: No lo hice por molestias en el antebrazo\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hack-squat-en-maquina",
+      "day": "miercoles",
+      "week": 19,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 4 series con 50 kg; rango objetivo: 5-7; mantener 1-2 RIR, empezando cerca de 2 RIR. Profundidad estable y sin repeticiones forzadas. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-curl-femoral-sentado",
+      "day": "miercoles",
+      "week": 19,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 36 kg; rango objetivo: 8-10; mantener 1-2 RIR, empezando cerca de 2 RIR. Controlar la excéntrica y mantener la cadera estable. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-prensa-de-piernas",
+      "day": "miercoles",
+      "week": 19,
+      "weights": [
+        90,
+        90,
+        90
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 90 kg; rango objetivo: 8-12; mantener 1-2 RIR, empezando cerca de 2 RIR. Mantener pelvis estable y recorrido controlado. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-hiperextension-en-banco-a-45",
+      "day": "miercoles",
+      "week": 19,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con peso corporal / sin carga externa; rango objetivo: 12-15; mantener 1-2 RIR, empezando cerca de 2 RIR. Mover desde la cadera sin hiperextender la zona lumbar. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "miercoles-elevacion-de-gemelos-de-pie",
+      "day": "miercoles",
+      "week": 19,
+      "weights": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-19T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 4 series con 55 kg; rango objetivo: 10-12; mantener 1-2 RIR, empezando cerca de 2 RIR. Pausa arriba y estiramiento controlado abajo, sin rebotes. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-elevacion-lateral-unilateral-en-polea",
+      "day": "jueves",
+      "week": 19,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-20T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 5,7 kg; rango objetivo: 12-15; mantener 1-2 RIR. Sin balanceo ni elevación de trapecios. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 12 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-remo-al-menton-en-polea-agarre-amplio",
+      "day": "jueves",
+      "week": 19,
+      "weights": [
+        17,
+        17
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-20T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 2 series con 17 kg; rango objetivo: 10-15; mantener 1-2 RIR. Usar la barra recta y el agarre amplio que registraste; mantener un recorrido cómodo para el hombro. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 10, cambie de barra, ahora son 17 kg en barra recta\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-reverse-cable-fly",
+      "day": "jueves",
+      "week": 19,
+      "weights": [
+        5.7,
+        5.7,
+        5.7
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-20T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 5,7 kg; rango objetivo: 15-20; mantener 1-2 RIR. Mantener los 5,7 kg con los que corregiste la técnica; pausa atrás y foco en deltoide posterior. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Baje el peso porque no estaba haciendo bien la técnica. Hice 18 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-press-banca-plano-con-mancuernas",
+      "day": "jueves",
+      "week": 19,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-20T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 73 kg; rango objetivo: 8-12; mantener 1-2 RIR. Mantener técnica estable y recorrido controlado. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 10 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-cable-crossover-inclinado-polea-baja",
+      "day": "jueves",
+      "week": 19,
+      "weights": [
+        7.9,
+        7.9,
+        7.9
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-20T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 7,9 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener los 7,9 kg con técnica limpia. Se consolidan las 3 series que ya realizaste. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Lo baje a 7,9 porque no estaba haciendo bien la técnica. Hice 10 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "jueves-extension-de-triceps-unilateral-cross-body-en-polea",
+      "day": "jueves",
+      "week": 19,
+      "weights": [
+        10.2,
+        10.2,
+        10.2
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-20T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 10,2 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener el codo estable y el pressdown hacia la cadera contraria. Se consolidan las 3 series que ya realizaste. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 12 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-jalon-al-pecho-supino-o-neutro",
+      "day": "viernes",
+      "week": 19,
+      "weights": [
+        73,
+        73,
+        73
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-21T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 73 kg; rango objetivo: 8-12; mantener 1-2 RIR. No repetir el RIR 0: terminar con 1-2 RIR; si la técnica cae antes de 8 repeticiones, usar el siguiente ajuste inferior disponible y registrarlo. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 8 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-remo-pecho-apoyado-unilateral-con-mancuerna",
+      "day": "viernes",
+      "week": 19,
+      "weights": [
+        59,
+        59,
+        59
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-21T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 59 kg; rango objetivo: 10-12 (c/lado); mantener 1-2 RIR. Pecho apoyado y agarre estable. Se consolidan las 3 series que ya realizaste. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 12 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-pullover-polea-o-mancuerna",
+      "day": "viernes",
+      "week": 19,
+      "weights": [
+        30.6,
+        30.6,
+        30.6
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-21T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 30,6 kg; rango objetivo: 12-15; mantener 1-2 RIR. Codos semifijos y abdomen estable. Se consolidan las 3 series que ya realizaste. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Baje a 30,6 kg. Hice 12 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-inclinado--bayesian-curl",
+      "day": "viernes",
+      "week": 19,
+      "weights": [
+        10.2,
+        10.2,
+        10.2
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-21T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 10,2 kg; rango objetivo: 10-12; mantener 1-2 RIR. Mantener tensión continua y evitar el balanceo. Se consolidan las 3 series que ya realizaste. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Baje a 10,2 kg. Hice 12 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-predicador",
+      "day": "viernes",
+      "week": 19,
+      "weights": [
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-21T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 25 kg; rango objetivo: 10-12 (dropset ultimo set); mantener 1-2 RIR. Técnica estricta, 120 segundos de descanso y sin dropset esta semana. Se consolidan las 3 series que ya realizaste. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 10 repeticiones y 3 series\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-curl-en-polea-alta",
+      "day": "viernes",
+      "week": 19,
+      "weights": [
+        7.9,
+        7.9
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-21T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 2 series con 7,9 kg; rango objetivo: 12-15; mantener 1-2 RIR. Mantener el codo estable y evitar el balanceo. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-wrist-curl-con-mancuerna",
+      "day": "viernes",
+      "week": 19,
+      "weights": [
+        10,
+        10,
+        10
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-21T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 10 kg; rango objetivo: 15-20; mantener 2 RIR. Rango completo y controlado; detener si aparece dolor. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]\n\n[USER_FEEDBACK]\nSEMANA 18: Hice 16 repeticiones\n[/USER_FEEDBACK]",
+      "rir": null
+    },
+    {
+      "exerciseId": "viernes-farmers-walk-con-mancuernas",
+      "day": "viernes",
+      "week": 19,
+      "weights": [
+        24,
+        24
+      ],
+      "seriesCount": 2,
+      "date": "2026-08-21T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 2 series con 24 kg; rango objetivo: 15-20 segundos; mantener 1-2 RIR. Hacer 15-20 segundos y mantener al menos 2 RIR. La segunda serie solo se hace si la primera fue totalmente indolora y terminó con postura y agarre estables. Carga tomada del export real de la semana 18.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-glute-bridge-en-suelo-con-mancuerna",
+      "day": "sabado",
+      "week": 19,
+      "weights": [
+        25,
+        25,
+        25,
+        25
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-22T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 4 series con 25 kg; rango objetivo: 10-15; mantener 1-2 RIR, empezando cerca de 2 RIR. Pausa arriba y evitar hiperextender la zona lumbar. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-sentadilla-bulgara-con-mancuernas",
+      "day": "sabado",
+      "week": 19,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-22T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con peso corporal / sin carga externa; rango objetivo: 10-12 (c/pierna); mantener 1-2 RIR, empezando cerca de 2 RIR. Priorizar equilibrio, profundidad y control. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-extension-de-cuadriceps",
+      "day": "sabado",
+      "week": 19,
+      "weights": [
+        41,
+        41,
+        41
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-22T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 41 kg; rango objetivo: 12-15; mantener 1-2 RIR, empezando cerca de 2 RIR. Excéntrica controlada y sin llegar al fallo. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-curl-femoral-tumbado",
+      "day": "sabado",
+      "week": 19,
+      "weights": [
+        36,
+        36,
+        36
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-22T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 36 kg; rango objetivo: 10-12; mantener 1-2 RIR, empezando cerca de 2 RIR. Controlar la excéntrica y mantener la cadera estable. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-elevacion-gemelos-sentado",
+      "day": "sabado",
+      "week": 19,
+      "weights": [
+        50,
+        50,
+        50,
+        50
+      ],
+      "seriesCount": 4,
+      "date": "2026-08-22T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 4 series con 50 kg; rango objetivo: 15-20; mantener 1-2 RIR, empezando cerca de 2 RIR. Pausa arriba y estiramiento completo, sin rebotes. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-ab-rollout-con-rueda",
+      "day": "sabado",
+      "week": 19,
+      "weights": [
+        0,
+        0,
+        0
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-22T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con peso corporal / sin carga externa; rango objetivo: 12-15; mantener 1-2 RIR, empezando cerca de 2 RIR. Mantener la zona lumbar estable y acortar el recorrido si se pierde control. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    },
+    {
+      "exerciseId": "sabado-pallof-press",
+      "day": "sabado",
+      "week": 19,
+      "weights": [
+        17,
+        17,
+        17
+      ],
+      "seriesCount": 3,
+      "date": "2026-08-22T08:00:00.000Z",
+      "isAlternative": false,
+      "alternativeIndex": null,
+      "observations": "[COACH_PLAN]\nSEMANA 19 — PLAN COMPLETO: hacer 3 series con 17 kg; rango objetivo: 10-12/lado; mantener 1-2 RIR, empezando cerca de 2 RIR. Mantener pelvis y tronco estables, sin rotar. La carga se arrastra del plan previo; la semana 18 no valida rendimiento porque no pudiste asistir por falta de tiempo. Sin técnicas intensivas ni compensación de volumen; recortar solo si reaparece fatiga que altere técnica o rendimiento.\n[/COACH_PLAN]",
+      "rir": null
+    }
+  ],
+  "cardioLogs": [
+    {
+      "day": "lunes",
+      "week": 19,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "LISS durante 30 minutos, en 115-133 bpm; mantener un ritmo conversacional y sostenible. Esta semana no se añade HIIT mientras se valida la vuelta a las 124 series.",
+      "date": "2026-08-17T17:00:00.000Z"
+    },
+    {
+      "day": "martes",
+      "week": 19,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "LISS durante 30 minutos, en 115-133 bpm; mantener un ritmo conversacional y sostenible. Esta semana no se añade HIIT mientras se valida la vuelta a las 124 series.",
+      "date": "2026-08-18T17:00:00.000Z"
+    },
+    {
+      "day": "miercoles",
+      "week": 19,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "LISS durante 30 minutos, en 115-133 bpm; mantener un ritmo conversacional y sostenible. Esta semana no se añade HIIT mientras se valida la vuelta a las 124 series.",
+      "date": "2026-08-19T17:00:00.000Z"
+    },
+    {
+      "day": "jueves",
+      "week": 19,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "LISS durante 30 minutos, en 115-133 bpm; mantener un ritmo conversacional y sostenible. Esta semana no se añade HIIT mientras se valida la vuelta a las 124 series.",
+      "date": "2026-08-20T17:00:00.000Z"
+    },
+    {
+      "day": "viernes",
+      "week": 19,
+      "tipo": "liss",
+      "duracionMinutos": 30,
+      "completado": false,
+      "notas": "LISS durante 30 minutos, en 115-133 bpm; mantener un ritmo conversacional y sostenible. Esta semana no se añade HIIT mientras se valida la vuelta a las 124 series.",
+      "date": "2026-08-21T17:00:00.000Z"
+    }
+  ],
+  "coachNotes": "Semana 19 (17-22 de agosto de 2026): vuelta al plan vivo completo porque miércoles y sábado de la semana 18 se omitieron exclusivamente por falta de tiempo, no por fatiga ni enfermedad. Volumen: 124 series, distribuidas en lunes 24, martes 21, miércoles 17, jueves 17, viernes 22 y sábado 23. Se restauran las 3 series en los siete ejercicios donde el feedback de la semana 18 confirma que ya hiciste 3 aunque se habían prescrito 2. No se inventan cargas: se usan las presentes en el export real; miércoles y sábado son arrastres del plan previo, no rendimiento validado en semana 18. Se mantienen visibles los comentarios de la semana 18 dentro de USER_FEEDBACK con su semana identificada. Única cautela localizada: antebrazo izquierdo en martillo/curl inverso; el curl inverso se prueba solo sin dolor y se omite si reaparece. Evitar repetir RIR 0 en jalón supino/neutro y farmer walk; farmer walk queda en 2 series de 15-20 segundos con la segunda condicionada. Sin dropset en predicador. Cardio: cinco LISS de 30 minutos, de lunes a viernes, sin HIIT mientras se valida la vuelta a las 124 series."
+}

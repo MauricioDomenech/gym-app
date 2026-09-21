@@ -30,6 +30,11 @@ más reciente antes de personalizar.
 - Usar rangos y progresión autoregulada; no asumir que PPL, DUP, volumen o deload
   fijo son óptimos para todas las personas.
 - Consultar `entrenar-con-lesiones` si aparece dolor y parar ante señales de alarma.
+- Al generar un import semanal nuevo desde un export real, conservar por defecto
+  cada `[USER_FEEDBACK]` de la semana anterior, identificado con su semana, para
+  que el usuario pueda verlo mientras entrena. Mantener el texto literal, no
+  inventar comentarios en ejercicios sin feedback y validar el conteo antes de
+  entregar el JSON. Ver `preferencia_carry_forward_comentarios.md`.
 
 ## Mantenimiento
 

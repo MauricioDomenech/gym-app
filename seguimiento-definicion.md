@@ -161,3 +161,40 @@ Medición tomada el sábado 22 de marzo, un día antes del inicio.
 ### Semana 5 (20 – 26 abril 2026)
 
 _Pendiente — check-in: domingo 26 de abril_
+
+---
+
+## Decisiones operativas recientes
+
+### Semana 17 (3–8 agosto 2026) — Vuelta al ritmo previo
+
+- **Import activo**: `datos_actualizados/02-08-2026/definicion-semana-17-import.json`.
+- **Fuente de ejercicios**: versión final de la semana 15 previa al viaje, con 41 ejercicios y el roster de hombros definitivo.
+- **Intensidad**: cerca de 2 RIR en compuestos y 1–2 RIR en aislamientos. No buscar RIR 0 ni progresar cargas durante esta semana.
+- **Volumen total**: 103 series. No saltar directamente de las 78 series de reentrada a las 124 series completas.
+- **Primera vuelta PPL**: lunes Push, martes Pull y miércoles Legs, con el volumen completo previo al viaje: 24 + 21 + 17 = 62 series.
+- **Segunda vuelta PPL**: jueves Push, viernes Pull y sábado Legs, manteniendo temporalmente el volumen reducido: 11 + 14 + 16 = 41 series.
+- **Cardio**: tres LISS de 30 minutos, lunes, miércoles y viernes. Sin HIIT durante la semana 17.
+- **Cargas corregidas por feedback real**: pec deck 59 kg; remo con pecho apoyado 52 kg; curl EZ 20 kg; curl inverso 5 kg; curl femoral sentado 36 kg; crossover inclinado 10,2 kg; remo unilateral 59 kg; curl en polea alta 10,2 kg.
+
+**Gate para la semana 18:** recuperar las 124 series completas únicamente si la semana 17 termina sin fatiga desproporcionada, dolor muscular que altere la sesión siguiente, caída clara de rendimiento ni síntomas anormales. Primero se recupera el volumen completo de pesas; después se amplía el LISS y, más adelante, se reintroduce el HIIT.
+
+### Semana 19 (17–22 agosto 2026) — Plan completo y comentarios conservados
+
+- **Import activo**: `datos_actualizados/17-08-2026/definicion-semana-19-import.json`.
+- **Motivo del ajuste**: miércoles y sábado de la semana 18 se omitieron por falta de tiempo, no por fatiga, dolor general ni enfermedad.
+- **Volumen total**: vuelta al plan vivo completo de 124 series, distribuidas en 24 + 21 + 17 + 17 + 22 + 23.
+- **Series confirmadas por feedback**: se restauran 3 series en los siete ejercicios donde el usuario hizo 3 aunque la prescripción reducida indicaba 2.
+- **Cargas**: se conservan únicamente valores presentes en el export real de la semana 18. Miércoles y sábado son arrastres planificados porque esas sesiones no se ejecutaron.
+- **Seguridad localizada**: no se mantiene una reducción general, pero el curl inverso queda condicionado a un calentamiento sin dolor por la molestia de antebrazo registrada; también se evita repetir RIR 0 en jalón supino/neutro y farmer walk.
+- **Cardio**: cinco LISS de 30 minutos, de lunes a viernes, sin HIIT. Se recupera todo el volumen de pesas sin subir a la vez el cardio de 150 a 240–245 minutos.
+- **Preferencia permanente de imports**: al generar una semana nueva, copiar por defecto los `[USER_FEEDBACK]` reales del export anterior, identificados con su semana y separados del nuevo `[COACH_PLAN]`. No inventar comentarios faltantes y validar el conteo.
+
+### Semana 20 (24–30 agosto 2026) — Semana normal antes de vacaciones
+
+- **Import activo**: `datos_actualizados/24-08-2026/definicion-semana-20-import.json`.
+- **Volumen ejecutable**: 104 series de lunes a viernes. Se añaden únicamente las tres series respaldadas por el feedback real de la semana 19.
+- **Correcciones por feedback**: cable fly alto-bajo 3 × 10,2 kg; ejercicio del jueves realizado con polea al frente 3 × 10,2 kg, manteniendo temporalmente el `exerciseId` hasta confirmar el nombre exacto; curl en polea alta 3 × 14,7 kg.
+- **Sábado 29**: ausencia programada. Los 7 ejercicios y 23 series siguen visibles en el plan como referencia, pero se omiten de `workoutProgress` para registrar 0 ejecutados y no falsear la adherencia.
+- **Cardio**: cinco LISS de 30 minutos, de lunes a viernes, sin HIIT ni compensación el sábado.
+- **Vacaciones**: pausa prevista del 31 de agosto al 13 de septiembre de 2026 (semanas 21 y 22). No precargar sesiones; diseñar la reentrada al volver usando el export real de la semana 20 y el estado de recuperación.
