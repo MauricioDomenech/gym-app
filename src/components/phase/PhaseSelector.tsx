@@ -1,11 +1,17 @@
 import React from 'react';
 import { usePhase } from '../../contexts/PhaseContext';
 
-export const PhaseSelector: React.FC = () => {
+interface PhaseSelectorProps {
+  onBack?: () => void;
+  onPhaseSelected?: () => void;
+}
+
+export const PhaseSelector: React.FC<PhaseSelectorProps> = ({ onBack, onPhaseSelected }) => {
   const { setPhase } = usePhase();
 
   const handlePhaseSelect = (phase: 'maintenance' | 'volume' | 'definicion') => {
     setPhase(phase);
+    onPhaseSelected?.();
   };
 
   return (
@@ -60,6 +66,15 @@ export const PhaseSelector: React.FC = () => {
             <p className="text-xs text-gray-500 dark:text-gray-400">
               Podrás cambiar de fase en cualquier momento
             </p>
+            {onBack && (
+              <button
+                className="mt-4 text-sm font-medium text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300"
+                onClick={onBack}
+                type="button"
+              >
+                ← Volver a Hoy
+              </button>
+            )}
           </div>
         </div>
       </div>
