@@ -22,7 +22,6 @@ const PhaseAwareContent: React.FC = () => {
     return (
       <TodayApp
         onOpenLegacy={openLegacy}
-        onOpenPlan={() => setScreen('plan')}
       />
     );
   }

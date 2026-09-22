@@ -1,15 +1,20 @@
 import { useState } from 'react';
 import type { FC } from 'react';
-import { usePhase } from '../../contexts/PhaseContext';
 import { useTheme } from '../../contexts/ThemeContext';
 import { TodaySettings } from './TodaySettings';
 import { TodayWeather } from './TodayWeather';
+import { TrainingApp } from '../training/TrainingApp';
 import { readWeatherPreferences } from './todaySettingsStorage';
 import type { WeatherPreferences } from './todaySettingsStorage';
 
 type IconName =
   | 'arrow'
   | 'chart'
+  | 'nav-chart-line'
+  | 'nav-dumbbell'
+  | 'nav-sliders'
+  | 'nav-sun'
+  | 'nav-utensils'
   | 'cloud-sun'
   | 'home'
   | 'meals'
@@ -48,10 +53,24 @@ const Icon: FC<IconProps> = ({ name, size = 24 }) => (
         <path d="M19 20V3" />
       </>
     )}
+    {name === 'nav-chart-line' && (
+      <>
+        <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+        <path d="m19 9-5 5-4-4-3 3" />
+      </>
+    )}
     {name === 'cloud-sun' && (
       <>
         <path d="M17 17H7.5a4.5 4.5 0 1 1 1.8-8.63A5.5 5.5 0 0 1 20 10.5" />
         <path d="M16 4V2M20.24 5.76l1.42-1.42M21 10h2M4.76 5.76 3.34 4.34M3 10H1" />
+      </>
+    )}
+    {name === 'nav-dumbbell' && (
+      <>
+        <path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z" />
+        <path d="m2.5 21.5 1.4-1.4M20.1 3.9l1.4-1.4" />
+        <path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z" />
+        <path d="m9.6 14.4 4.8-4.8" />
       </>
     )}
     {name === 'home' && <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1Z" />}
@@ -60,6 +79,26 @@ const Icon: FC<IconProps> = ({ name, size = 24 }) => (
         <path d="M5 3v8M2 3v5a3 3 0 0 0 6 0V3M5 11v10" />
         <path d="M16 3c-2.2 1.8-2.8 5.6-1.1 7.1.8.7 1.8.9 2.8.9H20v10" />
         <path d="M20 3v18" />
+      </>
+    )}
+    {name === 'nav-sliders' && (
+      <>
+        <path d="M3 4h7M14 4h7M3 12h9M16 12h5M3 20h5M12 20h9" />
+        <circle cx="12" cy="4" r="2" />
+        <circle cx="14" cy="12" r="2" />
+        <circle cx="10" cy="20" r="2" />
+      </>
+    )}
+    {name === 'nav-sun' && (
+      <>
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+      </>
+    )}
+    {name === 'nav-utensils' && (
+      <>
+        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20" />
+        <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3ZM21 15v7" />
       </>
     )}
     {name === 'moon' && <path d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z" />}
@@ -101,17 +140,16 @@ const Icon: FC<IconProps> = ({ name, size = 24 }) => (
 
 interface TodayAppProps {
   onOpenLegacy: () => void;
-  onOpenPlan: () => void;
 }
 
 type TodaySection = 'today' | 'training' | 'meals' | 'progress' | 'settings';
 
 const todaySections = [
-  ['today', 'Hoy', 'Hoy', 'home'],
-  ['training', 'Entrenamiento', 'Entrenar', 'training'],
-  ['meals', 'Comidas', 'Comidas', 'meals'],
-  ['progress', 'Progreso', 'Progreso', 'chart'],
-  ['settings', 'Configuración', 'Config.', 'settings'],
+  ['today', 'Hoy', 'Hoy', 'nav-sun'],
+  ['training', 'Entrenamiento', 'Entrenar', 'nav-dumbbell'],
+  ['meals', 'Comidas', 'Comidas', 'nav-utensils'],
+  ['progress', 'Progreso', 'Progreso', 'nav-chart-line'],
+  ['settings', 'Configuración', 'Config.', 'nav-sliders'],
 ] as const satisfies ReadonlyArray<readonly [TodaySection, string, string, IconName]>;
 
 const formatToday = (): string => {
@@ -124,20 +162,12 @@ const formatToday = (): string => {
   return date.replace(/ de /, ' ').toLocaleUpperCase('es-ES');
 };
 
-const phaseNames = {
-  maintenance: 'Mantenimiento',
-  volume: 'Volumen',
-  definicion: 'Plan Recomp Lenta 2026',
-} as const;
-
-export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
-  const { currentPhase } = usePhase();
+export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy }) => {
   const { theme, toggleTheme } = useTheme();
   const [notice, setNotice] = useState('');
+  const [trainingDirty, setTrainingDirty] = useState(false);
   const [activeSection, setActiveSection] = useState<TodaySection>('today');
   const [weatherPreferences, setWeatherPreferences] = useState<WeatherPreferences | null>(() => readWeatherPreferences());
-  const hasPlan = currentPhase !== null;
-  const planName = currentPhase ? phaseNames[currentPhase] : null;
   const isHome = activeSection === 'today';
   const sectionTitle = todaySections.find(([key]) => key === activeSection)?.[1] ?? 'Hoy';
   const hasWeatherConfiguration = Boolean(
@@ -169,9 +199,11 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
               <>
                 <p className="today-greeting">Buen día, Mauri</p>
                 <div className="today-header-links">
-                  <button onClick={onOpenPlan} type="button">Mi plan</button>
+                  <button onClick={() => setActiveSection('training')} type="button">Entrenamiento</button>
                   <span aria-hidden="true">·</span>
-                  <button onClick={onOpenLegacy} type="button">Ver app anterior</button>
+                  <button onClick={() => {
+                    if (!trainingDirty || window.confirm('Tenés cambios de entrenamiento sin guardar. ¿Abrir la app anterior y descartarlos?')) onOpenLegacy();
+                  }} type="button">Ver app anterior</button>
                 </div>
               </>
             )}
@@ -234,14 +266,14 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
                   <Icon name="training" size={27} />
                   <span id="training-heading">TU ENTRENAMIENTO</span>
                 </div>
-                <span className="today-status-pill">{hasPlan ? 'Plan activo' : 'Sin plan'}</span>
+                <span className="today-status-pill">Sin plan</span>
               </div>
-              <h2>{planName ?? 'Entrenamiento de hoy'}</h2>
-              <p className="today-card-subtitle">{hasPlan ? 'Resumen del día pendiente.' : 'Todavía no hay una fase seleccionada.'}</p>
-              <p className="today-card-helper">{hasPlan ? 'El detalle y tu registro aparecerán cuando el resumen esté conectado.' : 'Elegí un plan desde «Mi plan» para ver tu entrenamiento.'}</p>
-              <button className="today-primary-button" onClick={hasPlan ? onOpenLegacy : onOpenPlan} type="button">
+              <h2>Tu próxima sesión</h2>
+              <p className="today-card-subtitle">Todavía no hay una rutina asignada.</p>
+              <p className="today-card-helper">Yo preparo tu rutina con los agentes especializados; vos registrás lo que hiciste.</p>
+              <button className="today-primary-button" onClick={() => setActiveSection('training')} type="button">
                 <Icon name="play" size={22} />
-                <span>{hasPlan ? 'Abrir app anterior' : 'Elegir un plan'}</span>
+                <span>Abrir entrenamiento</span>
                 <Icon name="arrow" size={26} />
               </button>
             </section>
@@ -252,11 +284,11 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
                   <Icon name="meals" size={27} />
                   <h2 id="meals-heading">Tus comidas</h2>
                 </div>
-                <span className="today-status-pill">{hasPlan ? 'Plan activo' : 'Sin plan'}</span>
+                <span className="today-status-pill">Sin plan</span>
               </div>
               <div className="today-empty-state">
-                <strong>{hasPlan ? planName : 'Comidas de hoy no configuradas'}</strong>
-                <p>{hasPlan ? 'Resumen del día pendiente. El menú aparecerá cuando esta sección esté conectada.' : 'El menú aparecerá cuando haya una fase seleccionada.'}</p>
+                <strong>Comidas de hoy no configuradas</strong>
+                <p>El menú aparecerá cuando preparemos tu plan de alimentación.</p>
               </div>
               <button className="today-secondary-button" onClick={() => showUnavailable('Las comidas')} type="button">
                 <span>Ver comidas de hoy</span>
@@ -264,9 +296,9 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
               </button>
             </section>
 
-            <p className="today-view-note">Los resúmenes de entrenamiento y comidas todavía no están conectados.</p>
+            <p className="today-view-note">La planificación de tu rutina y tus comidas sigue pendiente.</p>
           </>
-        ) : activeSection === 'settings' ? (
+        ) : activeSection === 'training' ? null : activeSection === 'settings' ? (
           <TodaySettings
             onLocationCleared={setWeatherPreferences}
             onSaved={setWeatherPreferences}
@@ -277,6 +309,8 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy, onOpenPlan }) => {
             <p>En construcción</p>
           </section>
         )}
+
+        <div hidden={activeSection !== 'training'}><TrainingApp onDirtyChange={setTrainingDirty} /></div>
 
         {notice && (
           <p aria-live="polite" className="today-notice" role="status">

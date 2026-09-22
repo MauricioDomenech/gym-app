@@ -1,0 +1,322 @@
+[
+  {
+    "id": "exercise.catalog.001",
+    "name": "Press banca inclinado 30°",
+    "image": "/images/exercises/definicion/0047-3TZduzM.gif"
+  },
+  {
+    "id": "exercise.catalog.002",
+    "name": "Press inclinado con mancuernas",
+    "image": "/images/exercises/definicion/0314-ns0SIbU.gif"
+  },
+  {
+    "id": "exercise.catalog.003",
+    "name": "Press inclinado en maquina Smith",
+    "image": "/images/exercises/definicion/0757-5v7KYld.gif"
+  },
+  {
+    "id": "exercise.catalog.004",
+    "name": "Pec deck / Aperturas maquina",
+    "image": "/images/exercises/definicion/0596-v3xmPAR.gif"
+  },
+  {
+    "id": "exercise.catalog.005",
+    "name": "Aperturas con mancuernas en banco plano",
+    "image": "/images/exercises/definicion/0308-yz9nUhF.gif"
+  },
+  {
+    "id": "exercise.catalog.006",
+    "name": "Cable crossover a la altura del pecho",
+    "image": "/images/exercises/definicion/0188-xLYSdtg.gif"
+  },
+  {
+    "id": "exercise.catalog.007",
+    "name": "Cable fly alto-bajo",
+    "image": "/images/exercises/definicion/0227-Pr9Rhf4.gif"
+  },
+  {
+    "id": "exercise.catalog.008",
+    "name": "Pec deck unilateral",
+    "image": null
+  },
+  {
+    "id": "exercise.catalog.009",
+    "name": "Elevacion lateral con polea",
+    "image": "/images/exercises/definicion/0178-goJ6ezq.gif"
+  },
+  {
+    "id": "exercise.catalog.010",
+    "name": "Elevacion lateral con mancuernas",
+    "image": "/images/exercises/definicion/0334-DsgkuIt.gif"
+  },
+  {
+    "id": "exercise.catalog.011",
+    "name": "Triceps overhead cable",
+    "image": "/images/exercises/definicion/0194-2IxROQ1.gif"
+  },
+  {
+    "id": "exercise.catalog.012",
+    "name": "Extensiones de triceps con mancuerna",
+    "image": "/images/exercises/definicion/0430-PdmaD0N.gif"
+  },
+  {
+    "id": "exercise.catalog.013",
+    "name": "Triceps pushdown (polea)",
+    "image": "/images/exercises/definicion/0201-3ZflifB.gif"
+  },
+  {
+    "id": "exercise.catalog.014",
+    "name": "Triceps en polea con cuerda",
+    "image": "/images/exercises/definicion/0200-dU605di.gif"
+  },
+  {
+    "id": "exercise.catalog.015",
+    "name": "Crunch en maquina",
+    "image": "/images/exercises/definicion/0595-ZnJHhMk.gif"
+  },
+  {
+    "id": "exercise.catalog.016",
+    "name": "Pallof press",
+    "image": "/images/exercises/definicion/0979-9pa4H5m.gif"
+  },
+  {
+    "id": "exercise.catalog.017",
+    "name": "Dominadas / Jalon al pecho (pronado)",
+    "image": "/images/exercises/definicion/0150-eYnzaCm.gif"
+  },
+  {
+    "id": "exercise.catalog.018",
+    "name": "Jalon al pecho en polea (agarre ancho)",
+    "image": "/images/exercises/definicion/0150-eYnzaCm.gif"
+  },
+  {
+    "id": "exercise.catalog.019",
+    "name": "Remo con pecho apoyado (chest-supported)",
+    "image": "/images/exercises/definicion/1350-7I6LNUG.gif"
+  },
+  {
+    "id": "exercise.catalog.020",
+    "name": "Remo en maquina con apoyo de pecho",
+    "image": "/images/exercises/definicion/1350-7I6LNUG.gif"
+  },
+  {
+    "id": "exercise.catalog.021",
+    "name": "Reverse fly en maquina",
+    "image": "/images/exercises/definicion/0602-myfUsKf.gif"
+  },
+  {
+    "id": "exercise.catalog.022",
+    "name": "Reverse cable fly",
+    "image": "/images/exercises/definicion/0154-aqvSOQE.gif"
+  },
+  {
+    "id": "exercise.catalog.023",
+    "name": "Face pull",
+    "image": null
+  },
+  {
+    "id": "exercise.catalog.024",
+    "name": "Curl biceps barra EZ",
+    "image": "/images/exercises/definicion/0447-6TG6x2w.gif"
+  },
+  {
+    "id": "exercise.catalog.025",
+    "name": "Curl con mancuernas alterno",
+    "image": "/images/exercises/definicion/0285-BU15nH4.gif"
+  },
+  {
+    "id": "exercise.catalog.026",
+    "name": "Curl martillo en cuerda (polea baja)",
+    "image": "/images/exercises/definicion/0165-HPlPoQA.gif"
+  },
+  {
+    "id": "exercise.catalog.027",
+    "name": "Wrist curl (curl de muneca)",
+    "image": "/images/exercises/definicion/0401-2dImyQ8.gif"
+  },
+  {
+    "id": "exercise.catalog.028",
+    "name": "Curl inverso barra Z / polea",
+    "image": "/images/exercises/definicion/0451-Y5X65IB.gif"
+  },
+  {
+    "id": "exercise.catalog.029",
+    "name": "Hack squat en maquina",
+    "image": "/images/exercises/definicion/0743-Qa55kX1.gif"
+  },
+  {
+    "id": "exercise.catalog.030",
+    "name": "Prensa de piernas (posicion alta)",
+    "image": "/images/exercises/definicion/1463-2Qh2J1e.gif"
+  },
+  {
+    "id": "exercise.catalog.031",
+    "name": "Curl femoral sentado",
+    "image": "/images/exercises/definicion/0599-Zg3XY7P.gif"
+  },
+  {
+    "id": "exercise.catalog.032",
+    "name": "Curl femoral tumbado",
+    "image": "/images/exercises/definicion/0586-17lJ1kr.gif"
+  },
+  {
+    "id": "exercise.catalog.033",
+    "name": "Prensa de piernas",
+    "image": "/images/exercises/definicion/1463-2Qh2J1e.gif"
+  },
+  {
+    "id": "exercise.catalog.034",
+    "name": "Hiperextension en banco a 45",
+    "image": "/images/exercises/definicion/0489-zhMwOwE.gif"
+  },
+  {
+    "id": "exercise.catalog.035",
+    "name": "Elevacion de gemelos de pie",
+    "image": "/images/exercises/definicion/0605-ykUOVze.gif"
+  },
+  {
+    "id": "exercise.catalog.036",
+    "name": "Elevacion gemelos en prensa",
+    "image": "/images/exercises/definicion/1391-ykHcWme.gif"
+  },
+  {
+    "id": "exercise.catalog.037",
+    "name": "Elevacion lateral unilateral en polea",
+    "image": "/images/exercises/definicion/0192-wEulIzp.gif"
+  },
+  {
+    "id": "exercise.catalog.038",
+    "name": "Elevacion lateral en maquina",
+    "image": "/images/exercises/definicion/0584-dRTfGZT.gif"
+  },
+  {
+    "id": "exercise.catalog.039",
+    "name": "Remo al menton en polea agarre amplio",
+    "image": "/images/exercises/definicion/0246-cALKspW.gif"
+  },
+  {
+    "id": "exercise.catalog.040",
+    "name": "Remo al menton con mancuernas agarre amplio",
+    "image": "/images/exercises/definicion/0437-ainizkb.gif"
+  },
+  {
+    "id": "exercise.catalog.041",
+    "name": "Press banca plano con mancuernas",
+    "image": "/images/exercises/definicion/0289-SpYC0Kp.gif"
+  },
+  {
+    "id": "exercise.catalog.042",
+    "name": "Press plano en maquina",
+    "image": "/images/exercises/definicion/0576-DOoWcnA.gif"
+  },
+  {
+    "id": "exercise.catalog.043",
+    "name": "Cable crossover inclinado (polea baja)",
+    "image": "/images/exercises/definicion/0179-FVmZVhk.gif"
+  },
+  {
+    "id": "exercise.catalog.044",
+    "name": "Aperturas inclinadas con mancuernas",
+    "image": "/images/exercises/definicion/0319-ESOd5Pl.gif"
+  },
+  {
+    "id": "exercise.catalog.045",
+    "name": "Extension de triceps unilateral cross-body en polea",
+    "image": "/images/exercises/definicion/0231-sYCcnon.gif"
+  },
+  {
+    "id": "exercise.catalog.046",
+    "name": "Triceps pushdown unilateral en polea alta",
+    "image": "/images/exercises/definicion/1723-qRZ5S1N.gif"
+  },
+  {
+    "id": "exercise.catalog.047",
+    "name": "Jalon al pecho (supino o neutro)",
+    "image": "/images/exercises/definicion/0245-xBYcQHj.gif"
+  },
+  {
+    "id": "exercise.catalog.048",
+    "name": "Jalon con agarre V-bar",
+    "image": "/images/exercises/definicion/2616-4c9BhzB.gif"
+  },
+  {
+    "id": "exercise.catalog.049",
+    "name": "Remo pecho apoyado unilateral con mancuerna",
+    "image": "/images/exercises/definicion/1330-ZIViNh1.gif"
+  },
+  {
+    "id": "exercise.catalog.050",
+    "name": "Remo en maquina unilateral",
+    "image": "/images/exercises/definicion/1313-oROuvrX.gif"
+  },
+  {
+    "id": "exercise.catalog.051",
+    "name": "Pullover (polea o mancuerna)",
+    "image": "/images/exercises/definicion/0238-x69MAlq.gif"
+  },
+  {
+    "id": "exercise.catalog.052",
+    "name": "Curl inclinado / Bayesian curl",
+    "image": "/images/exercises/definicion/0318-ae9UoXQ.gif"
+  },
+  {
+    "id": "exercise.catalog.053",
+    "name": "Curl concentrado",
+    "image": "/images/exercises/definicion/0297-gvsWLQw.gif"
+  },
+  {
+    "id": "exercise.catalog.054",
+    "name": "Curl predicador",
+    "image": "/images/exercises/definicion/0592-b6hQYMb.gif"
+  },
+  {
+    "id": "exercise.catalog.055",
+    "name": "Curl en polea alta",
+    "image": "/images/exercises/definicion/1636-wDUqY2u.gif"
+  },
+  {
+    "id": "exercise.catalog.056",
+    "name": "Wrist curl con mancuerna",
+    "image": "/images/exercises/definicion/0401-2dImyQ8.gif"
+  },
+  {
+    "id": "exercise.catalog.057",
+    "name": "Farmer's walk con mancuernas",
+    "image": "/images/exercises/definicion/2133-qPEzJjA.gif"
+  },
+  {
+    "id": "exercise.catalog.058",
+    "name": "Glute bridge en suelo con mancuerna",
+    "image": "/images/exercises/definicion/3013-u0cNiij.gif"
+  },
+  {
+    "id": "exercise.catalog.059",
+    "name": "Hip extension en maquina",
+    "image": "/images/exercises/definicion/2286-OPqShYN.gif"
+  },
+  {
+    "id": "exercise.catalog.060",
+    "name": "Sentadilla bulgara con mancuernas",
+    "image": "/images/exercises/definicion/0410-qx4fgX7.gif"
+  },
+  {
+    "id": "exercise.catalog.061",
+    "name": "Zancadas con mancuernas",
+    "image": "/images/exercises/definicion/0336-RRWFUcw.gif"
+  },
+  {
+    "id": "exercise.catalog.062",
+    "name": "Extension de cuadriceps",
+    "image": "/images/exercises/definicion/0585-my33uHU.gif"
+  },
+  {
+    "id": "exercise.catalog.063",
+    "name": "Elevacion gemelos sentado",
+    "image": "/images/exercises/definicion/0594-bOOdeyc.gif"
+  },
+  {
+    "id": "exercise.catalog.064",
+    "name": "Ab rollout con rueda",
+    "image": "/images/exercises/definicion/0857-NAgVB3t.gif"
+  }
+]
