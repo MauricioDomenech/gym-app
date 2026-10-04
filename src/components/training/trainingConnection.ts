@@ -4,6 +4,8 @@ import type { TrainingRemoteEnvelope } from './trainingSync.js';
 // Only the last server-confirmed response lives in memory while the app is open.
 // Each page load must obtain it from the database before rendering records.
 let confirmed: TrainingRemoteEnvelope | null = null;
+const listeners = new Set<() => void>();
+export const subscribeTrainingResponse = (listener: () => void) => { listeners.add(listener); return () => { listeners.delete(listener); }; };
 
 export const trainingSnapshot = (): TrainingRemoteEnvelope => {
   if (!confirmed) throw new Error('Todavía no se consultaron los registros de tu cuenta.');
@@ -12,6 +14,7 @@ export const trainingSnapshot = (): TrainingRemoteEnvelope => {
 
 export const acceptTrainingResponse = (remote: TrainingRemoteEnvelope | null) => {
   confirmed = remote ? structuredClone(remote) : { schemaVersion: 1, revision: 0, data: emptyTrainingData() };
+  listeners.forEach(listener => listener());
 };
 
 export const clearTrainingResponse = () => { confirmed = null; };

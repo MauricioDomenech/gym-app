@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import { statusForDay } from '../dist/src/components/training/trainingPlan.js';
+const date = new Date('2026-09-28T10:00:00Z');
+const items = [{ id: 'slot-a', exerciseId: 'a' }, { id: 'slot-b', exerciseId: 'b' }];
+const routine = { id: 'plan', days: [{ id: 'mon', weekday: 'monday', kind: 'strength', sessions: [{ id: 'workout', items, cardio: { moderateMinutes: 5 } }] }] };
+const log = (n, status = 'completed') => ({ plannedItemId: items[n].id, exerciseId: items[n].exerciseId, status });
+const session = () => ({ id: 'today', routineId: 'plan', routineDayId: 'mon', routineSessionId: 'workout', performedOn: '2026-09-28', finishedAt: null, exerciseIds: ['a','b'], plannedItems: items, plannedCardio: { moderateMinutes: 5 }, logs: [log(0),log(1)], cardio: { status: 'completed' } });
+const status = (s, plan = routine) => statusForDay(plan, { version: 1, sessions: s ? [s] : [], exerciseNotes: [] }, date);
+test('completa automáticamente fuerza y cardio sin finishedAt; conserva registros', () => { const s = session(); const before = structuredClone(s); assert.equal(status(s), 'completed'); assert.deepEqual(s,before); });
+test('parcial registrado cierra el ejercicio; cardio pendiente y ejercicio faltante siguen en curso', () => { const s=session(); s.logs[1].status='partial'; assert.equal(status(s),'completed'); s.logs[1].status='completed'; delete s.cardio; assert.equal(status(s),'in-progress'); s.cardio={status:'completed'}; s.logs.pop(); assert.equal(status(s),'in-progress'); });
+test('reemplazo por slot cuenta; registro ajeno no completa otro ejercicio', () => { const s=session(); s.logs[0].exerciseId='replacement'; assert.equal(status(s),'completed'); s.logs[0].plannedItemId='other-slot'; assert.equal(status(s),'in-progress'); });
+test('rutina distinta o ayer no completa hoy', () => { const s=session(); s.routineId='other'; assert.equal(status(s),'scheduled'); s.routineId='plan'; s.performedOn='2026-09-27'; assert.equal(status(s),'scheduled'); });
+test('finishedAt antiguo no oculta ejercicios pendientes', () => { const s=session(); s.finishedAt='2026-09-28T09:00:00Z'; s.logs=[]; assert.equal(status(s),'in-progress'); });
+test('cardio solo, fuerza sola y sesión vacía', () => { const plan=structuredClone(routine); const s=session(); plan.days[0].sessions[0].items=[]; s.plannedItems=[]; s.exerciseIds=[]; s.logs=[]; assert.equal(status(s,plan),'completed'); s.cardio.status='partial'; assert.equal(status(s,plan),'completed'); delete plan.days[0].sessions[0].cardio; delete s.plannedCardio; delete s.cardio; assert.equal(status(s,plan),'in-progress'); const strength=session(); delete strength.plannedCardio; delete strength.cardio; plan.days[0].sessions[0].items=items; assert.equal(status(strength,plan),'completed'); });
+test('todas las sesiones del día deben estar completas', () => { const plan=structuredClone(routine); plan.days[0].sessions.push({...plan.days[0].sessions[0], id:'second'}); assert.equal(status(session(),plan),'in-progress'); });
+test('snapshot conservado, descanso y día sin iniciar', () => { const plan=structuredClone(routine); plan.days[0].sessions[0].items.push({id:'new',exerciseId:'new'}); assert.equal(status(session(),plan),'completed'); assert.equal(status(null),'scheduled'); plan.days[0].kind='rest'; assert.equal(status(null,plan),'rest'); });

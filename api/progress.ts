@@ -4,6 +4,22 @@ import { config, database } from './_health/core.js';
 import { addDays, dateKey, summarizeHealth } from '../src/components/progress/progressData.js';
 import type { HealthRow } from '../src/components/progress/progressData.js';
 import { validDate } from '../src/components/training/trainingStorage.js';
+import { summarizeActivities } from '../src/components/progress/activityData.js';
+import type { ActivityRow } from '../src/components/progress/activityData.js';
+
+export async function readProgressActivities(from: string, to: string) {
+  const c = config(), rows: ActivityRow[] = [];
+  for (let offset = 0; offset < 10000; offset += 100) {
+    const query = new URLSearchParams({ select: 'id,record_type,source_package,start_time,end_time,exerciseType:data->exerciseType,samples:data->samples,distance:data->distance',
+      profile_id: `eq.${c.profile}`, device_id: `eq.${c.device}`, excluded: 'eq.false', source_package: 'eq.com.sec.android.app.shealth',
+      record_type: 'in.(exercise_session,heart_rate,speed,distance)', end_time: `gte.${addDays(from,-1)}T00:00:00Z`, start_time: `lt.${addDays(to,1)}T00:00:00Z`, order: 'id.asc', limit: '100', offset: String(offset) });
+    const page = await database(c, `coach_health_records?${query}`);
+    if (!Array.isArray(page)) throw Error('invalid activity response');
+    rows.push(...page as ActivityRow[]);
+    if (page.length < 100) return summarizeActivities(rows, from, to);
+  }
+  throw Error('activity range too large');
+}
 
 export async function readProgressHealth(from: string, to: string) {
   const c = config();
@@ -33,14 +49,15 @@ export async function readProgressWeights(owner: string, from: string, to: strin
   if (!Array.isArray(rows) || rows.some(r => !r || !validDate(r.date) || typeof r.kg !== 'number' || !Number.isFinite(r.kg) || r.kg <= 0 || r.kg > 500)) throw Error('invalid weights');
   return rows.map(r => ({ date: r.date as string, kg: r.kg as number, source: 'Coach' }));
 }
-export const createProgressHandler = (resolveOwner = authenticateTrainingOwner, readHealth = readProgressHealth, readWeights = readProgressWeights) => async (req: VercelRequest, res: VercelResponse) => {
+export const createProgressHandler = (resolveOwner = authenticateTrainingOwner, readHealth = readProgressHealth, readWeights = readProgressWeights, readActivities = readProgressActivities) => async (req: VercelRequest, res: VercelResponse) => {
   res.setHeader('Cache-Control', 'no-store'); res.setHeader('Vary', 'Authorization');
   if (req.method !== 'GET') { res.setHeader('Allow', 'GET'); return res.status(405).json({ error: 'method_not_allowed' }); }
   try {
     const owner = await resolveOwner(req);
     if (!owner) return res.status(401).json({ error: 'authenticated_owner_required' });
     const { from, to } = req.query;
-    if (Object.keys(req.query).some(k => !['from','to'].includes(k)) || typeof from !== 'string' || typeof to !== 'string' || !validDate(from) || !validDate(to) || from > to || to > dateKey(new Date()) || Date.parse(to) - Date.parse(from) > 34 * 86400000) return res.status(400).json({ error: 'invalid_range' });
+    if (Object.keys(req.query).some(k => !['from','to','resource'].includes(k)) || (req.query.resource !== undefined && req.query.resource !== 'activity') || typeof from !== 'string' || typeof to !== 'string' || !validDate(from) || !validDate(to) || from > to || to > dateKey(new Date()) || Date.parse(to) - Date.parse(from) > 34 * 86400000) return res.status(400).json({ error: 'invalid_range' });
+    if (req.query.resource === 'activity') return res.status(200).json({ activities: await readActivities(from,to) });
     const [health, weights] = await Promise.allSettled([readHealth(from, to), readWeights(owner, from, to)]);
     const healthResult = health.status === 'fulfilled' ? health.value : null;
     // Confirmed context belongs to these dates only, delivered behind owner authentication.

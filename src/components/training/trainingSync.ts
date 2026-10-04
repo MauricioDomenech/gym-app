@@ -18,7 +18,7 @@ export interface TrainingWriteRequest {
   data: TrainingData;
 }
 
-export type TrainingSyncErrorCode = 'unauthorized' | 'unavailable' | 'invalid-response' | 'conflict' | 'rejected';
+export type TrainingSyncErrorCode = 'unauthorized' | 'unavailable' | 'invalid-response' | 'conflict' | 'rejected' | 'update-required';
 
 export class TrainingSyncError extends Error {
   readonly code: TrainingSyncErrorCode;
@@ -167,6 +167,7 @@ export const createTrainingRemoteClient = (
             Accept: 'application/json',
             'Content-Type': 'application/json',
             'Idempotency-Key': request.requestId,
+            'X-Coach-Recording': 'series-v1',
           },
           body: JSON.stringify(request),
         });
@@ -178,6 +179,7 @@ export const createTrainingRemoteClient = (
       const payload = responseResult.ok ? responseResult.value : null;
       const currentPayload = isRecord(payload) && 'records' in payload ? payload.records : null;
       const current = isEnvelope(currentPayload) ? currentPayload : null;
+      if (response.status === 426) throw new TrainingSyncError('update-required', 'Hay una versión nueva de Coach. Conservá lo que escribiste y recargá antes de volver a registrar.');
       if (response.status === 401 || response.status === 403) {
         throw new TrainingSyncError('unauthorized', 'La sesión privada no está autenticada.', current);
       }

@@ -9,6 +9,7 @@ import { TodaySettings } from './TodaySettings';
 import { TodayWeather } from './TodayWeather';
 import { TrainingApp } from '../training/TrainingApp';
 import type { TrainingNavigation } from '../training/TrainingApp';
+import { isLogFinished } from '../training/trainingStorage';
 import { trainingSnapshot } from '../training/trainingConnection';
 import {
   dayForMadrid,
@@ -186,6 +187,7 @@ export const TodayApp: FC<TodayAppProps> = ({ onSignOut }) => {
   const [weightOpen, setWeightOpen] = useState(false);
   const [absencesOpen, setAbsencesOpen] = useState(false);
   const [trainingDirty, setTrainingDirty] = useState(false);
+  const [progressDirty, setProgressDirty] = useState(false);
   const trainingNavigation = useRef<TrainingNavigation>(null);
   const [trainingData, setTrainingData] = useState<TrainingData>(() => trainingSnapshot().data);
   const [routine, setRoutine] = useState<TrainingRoutine | null>(null);
@@ -208,7 +210,7 @@ export const TodayApp: FC<TodayAppProps> = ({ onSignOut }) => {
   const todayTraining = trainingForToday(routine, trainingData);
   const progressTotal = (todayTraining.session?.exerciseIds.length ?? todayTraining.plan?.items.length ?? 0) +
     Number(Boolean(todayTraining.session ? todayTraining.session.plannedCardio : todayTraining.plan?.cardio));
-  const progressRecorded = (todayTraining.session?.logs.length ?? 0) + Number(Boolean(todayTraining.session?.cardio));
+  const progressRecorded = (todayTraining.session?.logs.filter(isLogFinished).length ?? 0) + Number(Boolean(todayTraining.session?.cardio));
 
   useEffect(() => {
     let mounted = true;
@@ -231,6 +233,7 @@ export const TodayApp: FC<TodayAppProps> = ({ onSignOut }) => {
 
 
   const openTraining = () => {
+    if (progressDirty && !window.confirm('Hay una corrección histórica sin guardar. ¿Descartarla y abrir Entrenamiento?')) return;
     if (trainingDirty && todayTrainingStatus !== 'in-progress' && !window.confirm('Tenés cambios sin guardar. ¿Descartarlos y abrir la sesión de hoy?')) return;
     setActiveSection('training');
     trainingNavigation.current?.openToday();
@@ -339,7 +342,7 @@ export const TodayApp: FC<TodayAppProps> = ({ onSignOut }) => {
             <div className="coach-home-stats"><section className="today-card"><strong>{new Set(trainingData.sessions.filter(s => s.logs.length || s.cardio).map(s => s.performedOn)).size}</strong><span>Días registrados</span></section><button type="button" className="today-card" onClick={() => setActiveSection('progress')}><strong>↗</strong><span>Ver progreso</span></button></div>
           </>
         ) : activeSection === 'plan' ? <WeeklyPlan routine={routine} loading={planState === 'loading'} /> : activeSection === 'training' ? null : activeSection === 'progress' ? (
-          <Suspense fallback={<p role="status">Cargando Progreso…</p>}><ProgressApp routine={routine} /></Suspense>
+          <Suspense fallback={<p role="status">Cargando Progreso…</p>}><ProgressApp routine={routine} onDirtyChange={setProgressDirty} /></Suspense>
         ) : activeSection === 'settings' ? (
           <><TodaySettings
             onLocationCleared={setWeatherPreferences}
@@ -356,7 +359,7 @@ export const TodayApp: FC<TodayAppProps> = ({ onSignOut }) => {
           </section>
         )}
 
-        <div hidden={activeSection !== 'training'}><TrainingApp navigationRef={trainingNavigation} routine={routine} planState={planState} onDirtyChange={setTrainingDirty} onDataChange={setTrainingData} /></div>
+        <div hidden={activeSection !== 'training'}><TrainingApp active={activeSection === 'training'} navigationRef={trainingNavigation} routine={routine} planState={planState} onDirtyChange={setTrainingDirty} onDataChange={setTrainingData} /></div>
 
         {notice && (
           <p aria-live="polite" className="today-notice" role="status">
@@ -375,7 +378,7 @@ export const TodayApp: FC<TodayAppProps> = ({ onSignOut }) => {
               aria-label={label}
               className={`today-nav-item${isActive ? ' is-active' : ''}${key === 'training' ? ` coach-nav-train${todayTrainingStatus === 'in-progress' ? ' is-running' : ''}` : ''}`}
               key={key}
-              onClick={() => key === 'training' ? openTraining() : setActiveSection(key)}
+              onClick={() => { if (key === 'training') { openTraining(); return; } if (key !== activeSection && progressDirty && !window.confirm('Hay una corrección histórica sin guardar. ¿Descartarla y cambiar de pantalla?')) return; setActiveSection(key); }}
               type="button"
             >
               <span className="today-nav-icon"><Icon name={key === 'training' && todayTrainingStatus === 'in-progress' && !isActive ? 'play' : icon} size={26} /></span>

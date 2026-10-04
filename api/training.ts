@@ -3,8 +3,8 @@ import { createHash, createHmac, timingSafeEqual } from 'node:crypto';
 import { acceptedTrainingPlan } from './_training/plan.js';
 import { authenticateTrainingOwner } from './_training/auth.js';
 import type { TrainingRoutine } from '../src/components/training/trainingStorage.js';
-import { isTrainingRoutine } from '../src/components/training/trainingPlan.js';
-import { validTrainingData } from '../src/components/training/trainingStorage.js';
+import { isTrainingRoutine, today } from '../src/components/training/trainingPlan.js';
+import { validDate, validTrainingData } from '../src/components/training/trainingStorage.js';
 import type { TrainingData } from '../src/components/training/trainingStorage.js';
 import type { TrainingRemoteEnvelope, TrainingWriteRequest } from '../src/components/training/trainingSync.js';
 
@@ -16,7 +16,7 @@ const MAX_REVISION = Number.MAX_SAFE_INTEGER - 1;
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
 
 export interface TrainingStore {
-  readPlan?(ownerId: OwnerId, planId: string): Promise<TrainingRoutine | null>;
+  readPlan?(ownerId: OwnerId, planId: string, on?: string): Promise<TrainingRoutine | null>;
   read(ownerId: OwnerId): Promise<TrainingRemoteEnvelope | null>;
   write(ownerId: OwnerId, request: TrainingWriteRequest): Promise<
     | { kind: 'ok'; envelope: TrainingRemoteEnvelope }
@@ -202,9 +202,10 @@ export const createPostgrestTrainingStore = (options: PostgrestTrainingStoreOpti
   };
 
   return {
-    async readPlan(ownerId, planId) {
+    async readPlan(ownerId, planId, on) {
       if (!isUuidOwner(ownerId) || !text(planId, 160)) throw new TrainingStorageError();
-      const payload = await call('rpc/coach_training_plan_read', { p_owner_id: ownerId, p_plan_id: planId });
+      if (on !== undefined && !validDate(on)) throw new TrainingStorageError();
+      const payload = await call('rpc/coach_training_plan_read', { p_owner_id: ownerId, p_plan_id: planId, ...(on ? { p_on: on } : {}) });
       if (payload === null) return null;
       if (!isTrainingRoutine(payload) || payload.id !== planId || !payload.effectiveFrom ||
           payload.effectiveFrom > new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(new Date())) throw new TrainingStorageError();
@@ -339,12 +340,14 @@ export const createTrainingHandler = (
   const resource = typeof req.query.resource === 'string' ? req.query.resource : '';
   if (resource === 'identity' && req.method === 'GET') return send(res, 200, { ownerId });
   if (resource === 'plan' && req.method === 'GET') {
+    const on = req.query.on;
+    if (on !== undefined && (typeof on !== 'string' || !validDate(on) || on > today())) return send(res, 400, { error: 'invalid_plan_date' });
     if (process.env.COACH_TRAINING_PLAN_MODE === 'database') {
       if (!planOwnerConfigured(ownerId)) return send(res, 404, { error: 'training_plan_not_found' });
       const planId = process.env.COACH_TRAINING_PLAN_ID;
       if (!planId || !store?.readPlan) return send(res, 503, { error: 'training_plan_not_activated' });
       try {
-        const plan = await store.readPlan(ownerId, planId);
+        const plan = await store.readPlan(ownerId, planId, on);
         if (!plan) return send(res, 404, { error: 'training_plan_not_found' });
         if (!isTrainingRoutine(plan) || plan.id !== planId) return send(res, 503, { error: 'training_plan_not_activated' });
         return send(res, 200, { plan });
@@ -364,6 +367,7 @@ export const createTrainingHandler = (
     if (!isTrainingRoutine(acceptedTrainingPlan)) {
       return send(res, 503, { error: 'training_plan_not_activated' });
     }
+    if (on && acceptedTrainingPlan.effectiveFrom && on < acceptedTrainingPlan.effectiveFrom) return send(res, 404, { error: 'training_plan_not_found' });
     return send(res, 200, { plan: acceptedTrainingPlan });
   }
 
@@ -412,6 +416,14 @@ export const createTrainingHandler = (
     return send(res, 400, { error: 'idempotency_key_mismatch' });
   }
   try {
+    // Old cached clients replace whole logs and would strip per-set metadata.
+    // CAS still arbitrates a concurrent upgrade after this read.
+    if (scalarHeader(req.headers['x-coach-recording']) !== 'series-v1') {
+      const current = await store.read(ownerId);
+      if (current && !isEnvelope(current)) throw new TrainingStorageError();
+      const usesSeries = (data: TrainingData) => data.sessions.some(s => s.logs.some(l => l.recording !== undefined || l.excludeFromProgression !== undefined || l.sets.some(set => set.rir !== undefined || set.kind !== undefined || set.recordedAt !== undefined)));
+      if (usesSeries(request.data) || current && usesSeries(current.data)) return send(res, 426, { error: 'recording_client_update_required' });
+    }
     const result = await store.write(ownerId, request);
     if (result.kind === 'conflict') {
       if (result.current !== null && !isEnvelope(result.current)) {

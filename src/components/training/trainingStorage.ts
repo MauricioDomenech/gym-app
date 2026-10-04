@@ -1,4 +1,11 @@
-export interface TrainingSet { loadKg: number; reps: number }
+export interface TrainingSet {
+  loadKg: number;
+  reps: number;
+  /** Missing fields are historical unknowns, never reconstructed measurements. */
+  rir?: number | null;
+  kind?: 'work' | 'warmup';
+  recordedAt?: string;
+}
 
 /**
  * Contract supplied by the reviewed plan. IDs belong to the plan source and
@@ -71,6 +78,9 @@ export interface TrainingRoutine {
 }
 
 export interface TrainingLog {
+  /** Older whole-exercise records are finished; incremental records opt in. */
+  recording?: 'in-progress' | 'finished';
+  excludeFromProgression?: boolean;
   plannedItemId?: string;
   exerciseId: string;
   loadType?: 'external' | 'bodyweight';
@@ -163,8 +173,13 @@ const validCardioRecord = (v: unknown): v is TrainingCardioRecord => object(v) &
 const validPlanVersion = (v: unknown): v is number => typeof v === 'number' && number(v, 1000000) && Number.isInteger(v) && v > 0;
 
 const validLog = (v: unknown): v is TrainingLog => object(v) &&
+  (v.recording === undefined || v.recording === 'in-progress' || v.recording === 'finished') &&
+  (v.excludeFromProgression === undefined || typeof v.excludeFromProgression === 'boolean') &&
   (v.loadType === undefined || v.loadType === 'external' || v.loadType === 'bodyweight') && text(v.exerciseId) && (v.plannedItemId === undefined || text(v.plannedItemId)) &&
-  Array.isArray(v.sets) && v.sets.length > 0 && v.sets.length <= 30 && v.sets.every(s => object(s) && number(s.loadKg, 2000) && number(s.reps, 1000) && Number.isInteger(s.reps) && Number(s.reps) > 0) &&
+  Array.isArray(v.sets) && v.sets.length > 0 && v.sets.length <= 30 && v.sets.every(s => object(s) && number(s.loadKg, 2000) && number(s.reps, 1000) && Number.isInteger(s.reps) && Number(s.reps) > 0 &&
+    (s.rir === undefined || s.rir === null || (number(s.rir, 10) && Number.isInteger(s.rir))) &&
+    (s.kind === undefined || s.kind === 'work' || s.kind === 'warmup') &&
+    (s.recordedAt === undefined || timestamp(s.recordedAt))) &&
   (v.rir === null || number(v.rir, 10)) && (v.status === 'completed' || v.status === 'partial') &&
   typeof v.comment === 'string' && v.comment.length <= 2000 && timestamp(v.updatedAt);
 
@@ -211,4 +226,13 @@ export const trainingId = () => Array.from(crypto.getRandomValues(new Uint32Arra
 
 /** loadKg is added load, never an estimate of body mass lifted. */
 export const formatTrainingSet = (set: TrainingSet, loadType?: TrainingLog['loadType']): string =>
-  `${loadType === 'bodyweight' ? `Peso corporal${set.loadKg > 0 ? ` + ${set.loadKg} kg` : ''}` : `${set.loadKg} kg`} × ${set.reps}`;
+  `${set.kind === 'warmup' ? 'Calentamiento · ' : ''}${loadType === 'bodyweight' ? `Peso corporal${set.loadKg > 0 ? ` + ${set.loadKg} kg` : ''}` : `${set.loadKg} kg`} × ${set.reps}${set.rir != null ? ` · RIR ${set.rir}` : ''}`;
+
+export const workSets = (log: Pick<TrainingLog, 'sets'>) => log.sets.filter(s => s.kind !== 'warmup');
+export const isLogFinished = (log: Pick<TrainingLog, 'recording'>) => log.recording !== 'in-progress';
+export const isSessionRecorded = (session: TrainingSession) => {
+  const items = session.plannedItems;
+  const strength = items ? items.every(i => session.logs.some(l => isLogFinished(l) && (l.plannedItemId === i.id || (!l.plannedItemId && l.exerciseId === i.exerciseId))))
+    : session.exerciseIds.every(id => session.logs.some(l => l.exerciseId === id && isLogFinished(l)));
+  return (session.exerciseIds.length > 0 || !!session.plannedCardio) && strength && (!session.plannedCardio || !!session.cardio);
+};

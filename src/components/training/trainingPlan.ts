@@ -7,7 +7,7 @@ import type {
   TrainingSession,
   TrainingWeekday,
 } from './trainingStorage.js';
-import { validCardioPlan, validRoutineItem } from './trainingStorage.js';
+import { isLogFinished, validDate, validCardioPlan, validRoutineItem } from './trainingStorage.js';
 import { trainingAuthorization } from './trainingHttp.js';
 
 export const TRAINING_PLAN_ENDPOINT = '/api/training?resource=plan';
@@ -95,10 +95,11 @@ export class TrainingPlanError extends Error {
   }
 }
 
-export async function loadTrainingPlan(fetcher: typeof fetch = fetch): Promise<TrainingRoutine> {
+export async function loadTrainingPlan(fetcher: typeof fetch = fetch, on?: string): Promise<TrainingRoutine> {
+  if (on !== undefined && (!validDate(on) || on > today())) throw new TrainingPlanError('La fecha del plan no es válida.', 'error');
   let response: Response;
   try {
-    response = await fetcher(TRAINING_PLAN_ENDPOINT, {
+    response = await fetcher(TRAINING_PLAN_ENDPOINT + (on ? `&on=${encodeURIComponent(on)}` : ''), {
       credentials: 'include',
       headers: { Accept: 'application/json', ...await trainingAuthorization() },
       signal: AbortSignal.timeout(10_000),
@@ -181,7 +182,7 @@ export const statusForDay = (routine: TrainingRoutine | null, data: TrainingData
     const items = session.plannedItems ?? plan.items;
     const cardio = session.plannedCardio ?? plan.cardio;
     return (items.length > 0 || !!cardio) && items.every(item => session.logs.some(log =>
-      log.plannedItemId === item.id || (!log.plannedItemId && log.exerciseId === item.exerciseId))) &&
+      isLogFinished(log) && (log.plannedItemId === item.id || (!log.plannedItemId && log.exerciseId === item.exerciseId)))) &&
       (!cardio || session.cardio !== undefined);
   });
   if (complete) return 'completed';

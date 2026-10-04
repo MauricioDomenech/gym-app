@@ -83,3 +83,18 @@
 .gym-anatomical g:focus-visible { outline:none; stroke:var(--today-text); stroke-width:5; }
 .gym-map-credit { text-align:center; font-size:10px; color:var(--today-muted); }
 .gym-map-credit a { color:inherit; text-decoration:underline; }
+.coach-history details > summary { cursor:pointer; }
+.coach-history input:not([type=checkbox]), .coach-history select, .coach-history textarea { min-height:48px; width:100%; min-width:0; padding:10px 12px; background:var(--today-surface-raised); color:var(--today-text); border:1px solid var(--today-border); border-radius:12px; font:inherit; }
+.coach-history fieldset { min-width:0; border:0; padding:0; }
+.coach-history label { display:flex; flex-direction:column; gap:8px; margin:16px 0; font-size:13px; }
+.coach-history button { min-height:44px; padding:10px 14px; border:1px solid var(--today-border); border-radius:12px; background:var(--today-surface-raised); color:var(--today-text); font:inherit; }
+.coach-history .today-primary-button { width:100%; background:var(--today-accent); color:var(--today-bg); margin:16px 0; }
+.coach-history-set { padding:16px 0; border-block-end:1px solid var(--today-border-soft); }
+.coach-history-set .training-tool-fields { gap:10px; }
+.coach-history-log { padding:12px 0; }
+.coach-history-log p { font-size:13px; }
+.coach-history .coach-checkbox { flex-direction:row; align-items:center; }
+.coach-history .coach-checkbox input { width:20px; height:20px; accent-color:var(--today-accent); }
+.coach-muscle-detail { padding:16px 0; border-block:1px solid var(--today-border-soft); }
+.coach-muscle-detail p { font-size:13px; }
+.coach-muscle-detail small { color:var(--today-muted); }

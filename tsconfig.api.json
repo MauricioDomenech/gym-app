@@ -2,7 +2,9 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "ES2020",
-    "lib": ["ES2020"],
+    "lib": [
+      "ES2020"
+    ],
     "outDir": "./dist",
     "rootDir": "./",
     "strict": true,
@@ -17,10 +19,12 @@
     "declarationMap": true
   },
   "include": [
-    "api/**/*"
+    "api/**/*",
+    "src/components/training/trainingInsights.ts",
+    "src/components/progress/muscleData.ts"
   ],
   "exclude": [
     "node_modules",
     "dist"
   ]
-} 
+}

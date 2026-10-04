@@ -1,3 +1,4 @@
+import { workSets } from '../training/trainingStorage.js';
 import type { TrainingData, TrainingRoutine } from '../training/trainingStorage.js';
 
 export const dateKey = (date: Date) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(date);
@@ -53,10 +54,23 @@ export function trainingWeek(data: TrainingData, plan: TrainingRoutine | null, s
     // Saved prescriptions override the active plan for already-created sessions.
     const plannedSeries = planned ? planned.sessions.reduce((sum, p) => sum + (sessions.find(s => s.routineSessionId === p.id)?.plannedItems ?? p.items).reduce((n, i) => n + i.sets, 0), 0) : null;
     const target = planned ? planned.sessions.reduce((sum, p) => sum + ((sessions.find(s => s.routineSessionId === p.id)?.plannedCardio ?? p.cardio)?.moderateMinutes ?? 0), 0) : null;
-    return { date, label: ['L','M','X','J','V','S','D'][index], series: sessions.reduce((n, s) => n + s.logs.reduce((v, l) => v + l.sets.length, 0), 0),
+    return { date, label: ['L','M','X','J','V','S','D'][index], series: sessions.reduce((n, s) => n + s.logs.reduce((v, l) => v + workSets(l).length, 0), 0),
       moderate: sessions.reduce((n, s) => n + (s.cardio?.moderateMinutes ?? 0), 0), total: sessions.reduce((n, s) => n + (s.cardio ? s.cardio.moderateMinutes + s.cardio.warmupMinutes + s.cardio.cooldownMinutes : 0), 0),
       target, plannedSeries, future: date > today, skipped: data.skippedDates?.includes(date) ?? false,
       comments: sessions.flatMap(s => s.cardio?.comment ? [s.cardio.comment] : []),
     };
+  });
+}
+
+/** Per-source, one value per measured day. No interpolation of missing days. */
+export function weightTrend(readings: ProgressHealth['weights']) {
+  return [...new Set(readings.map(w=>w.source))].map(source=>{
+    const byDay=new Map<string,number[]>();
+    for(const reading of readings.filter(w=>w.source===source))byDay.set(reading.date,[...(byDay.get(reading.date)??[]),reading.kg]);
+    const days=[...byDay].sort(([a],[b])=>a.localeCompare(b)).map(([date,values])=>({date,kg:values.reduce((n,v)=>n+v,0)/values.length}));
+    return {source,points:days.map(day=>{
+      const window=days.filter(d=>d.date<=day.date&&d.date>=addDays(day.date,-6));
+      return {date:day.date,kg:window.length>=3?window.reduce((n,d)=>n+d.kg,0)/window.length:null,count:window.length};
+    })};
   });
 }
