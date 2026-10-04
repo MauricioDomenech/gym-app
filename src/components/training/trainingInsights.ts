@@ -92,11 +92,19 @@ export function sessionSummary(session: TrainingSession) {
 /** Symmetric bar only. Whole quarter-kilos avoid rounding a requested load upwards. */
 export function plateCalculation(total: number, bar: number, available: number[]) {
   if (!Number.isFinite(total) || !Number.isFinite(bar) || total < bar || bar < 0 || total > 2000) return null;
-  const target = Math.floor((total - bar) * 2 + 1e-8), plates: number[] = [];
-  let remaining = target;
-  for (const size of [...new Set(available)].filter(v => v > 0 && Number.isInteger(v * 4)).sort((a,b) => b-a)) {
-    while (remaining >= size * 4) { plates.push(size); remaining -= size * 4; }
+  const target = Math.floor((total - bar) * 2 + 1e-8);
+  const sizes = [...new Set(available)].filter(v => v > 0 && Number.isInteger(v * 4)).sort((a,b) => b-a);
+  // At most 4001 quarter-kilo states. Greedy fails when, for example, only 25/15 kg remain.
+  const counts = Array<number>(target+1).fill(Infinity), choices = Array<number>(target+1).fill(0);
+  counts[0]=0;
+  for(let amount=1;amount<=target;amount++)for(const size of sizes){
+    const units=size*4;
+    if(units<=amount&&counts[amount-units]+1<counts[amount]){counts[amount]=counts[amount-units]+1;choices[amount]=units;}
   }
-  const achievable = bar + plates.reduce((n,v) => n + v * 2, 0);
+  let reachable=target;while(reachable>0&&!Number.isFinite(counts[reachable]))reachable--;
+  const plates:number[]=[];
+  for(let remaining=reachable;remaining>0;remaining-=choices[remaining])plates.push(choices[remaining]/4);
+  plates.sort((a,b)=>b-a);
+  const achievable = Math.round((bar+reachable/2)*100)/100;
   return { plates, achievable, missing: Math.round((total-achievable)*100)/100 };
 }

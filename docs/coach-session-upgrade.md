@@ -36,7 +36,7 @@ Se versionan los esquemas y pruebas correspondientes al backend ya desplegado pa
 ## Comprobaciones
 
 - `npm run lint`, `npm run build`, `npm run build:api`.
-- `COACH_TEST_PGLITE=/tmp/coach-overnight-tests/node_modules/@electric-sql/pglite/dist/index.js node --test tests/*.test.mjs`: 91 pruebas, sin fallos ni omisiones. PGlite es una dependencia temporal de QA, no de la aplicación.
+- `COACH_TEST_PGLITE=/tmp/coach-overnight-tests/node_modules/@electric-sql/pglite/dist/index.js node --test tests/*.test.mjs`: 92 pruebas, sin fallos ni omisiones. PGlite es una dependencia temporal de QA, no de la aplicación.
 - QA móvil sintético: 15 escenarios, 320/390/430/768 px, guardado por serie, fallo/reintento, pausa del reloj, recarga, orden temporal, protección de cambios, resumen, lectura del reloj, ventanas largas, conflicto de historial, edición, sesión olvidada y coherencia al volver a entrenar y conservación del formulario al reintentar una lectura fallida. Claro/oscuro y capturas inspeccionadas.
 - Evidencia de la tarea: workspace `projects/coach/overnight-20261004/`. La evidencia final de publicación y de invariancia de registros/planes se conserva allí y en el directorio de release de la Studio.
 

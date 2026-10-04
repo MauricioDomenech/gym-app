@@ -90,3 +90,8 @@ test('historical plan reads use the requested date and reject future or malforme
  try{assert.equal((await get('2026-09-28')).code,200);assert.equal(body.p_on,'2026-09-28');for(const date of ['2026-02-31','2099-01-01',['2026-09-28']])assert.equal((await get(date)).code,400);}
  finally{for(const key of Object.keys(process.env))if(!(key in original))delete process.env[key];Object.assign(process.env,original);}
 });
+
+test('plate selection finds exact combinations when greedy would claim a missing load',()=>{
+ assert.deepEqual(plateCalculation(80,20,[25,15]),{plates:[15,15],achievable:80,missing:0});
+ assert.equal(plateCalculation(2000,0,[1.25]).achievable,2000);
+});
