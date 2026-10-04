@@ -1,0 +1,79 @@
+/* Coach's own shell: compact mobile layout inspired by the openGym reference. */
+.today-app { --today-bg:#090909; --today-surface:#1c1c1e; --today-surface-raised:#272729; --today-border:#414144; --today-border-soft:#303033; --today-text:#f5f5f5; --today-muted:#a1a1a6; --today-accent:#32d568; --today-accent-deep:#159a42; --today-pill:#203a28; --today-nav-height:74px; background:var(--today-bg); }
+html.light .today-app { --today-bg:#f5f5f5; --today-surface:#fff; --today-surface-raised:#ededee; --today-border:#c6c6ca; --today-border-soft:#dedee0; --today-text:#18181b; --today-muted:#62626b; --today-accent:#137d35; --today-accent-deep:#137d35; --today-pill:#e0f4e5; background:var(--today-bg); }
+.today-main { width:min(calc(100% - 32px),680px); padding:24px 0; }
+.today-header { margin-bottom:24px; gap:12px; align-items:center; }
+.today-header h1 { font-size:28px; line-height:1.2; letter-spacing:-.7px; margin:0; }
+.today-header > div:first-child { display:flex; flex-direction:column-reverse; }
+.today-date { font-size:12px; letter-spacing:0; text-transform:none; margin:6px 0 0; color:var(--today-muted); }
+.today-header-actions { gap:6px; }
+.today-icon-button { width:38px; height:38px; min-width:38px; border:0; background:var(--today-surface); border-radius:50%; }
+.today-card { border:0; border-radius:16px; background:var(--today-surface); box-shadow:none; padding:20px; margin-bottom:16px; }
+.today-card h2 { font-size:20px; letter-spacing:-.3px; }
+.today-card-label { font-size:12px; letter-spacing:.04em; }
+.today-card-subtitle,.coach-section-caption { color:var(--today-muted); font-size:13px; line-height:1.5; }
+.today-status-pill { background:var(--today-pill); color:var(--today-accent); font-size:11px; border:0; }
+.today-primary-button,.training-app button.today-primary-button,html.light .training-app button.today-primary-button { background:var(--today-accent); color:var(--today-bg); border:0; border-radius:12px; font-size:15px; min-height:48px; box-shadow:none; }
+.today-secondary-button { border:0; background:var(--today-surface-raised); border-radius:12px; font-size:14px; min-height:44px; }
+.today-bottom-nav { position:fixed; bottom:0; left:0; right:0; width:100%; max-width:none; transform:none; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:0; padding:8px max(8px,calc((100vw - 680px)/2)) calc(8px + env(safe-area-inset-bottom)); background:var(--today-surface); border:0; border-top:1px solid var(--today-border-soft); border-radius:0; box-shadow:none; z-index:30; }
+.today-nav-item { min-width:0; background:none; border:0; color:var(--today-muted); padding:2px; font-size:10px; gap:4px; }
+.today-nav-icon { background:none; border:0; width:36px; height:30px; }
+.today-nav-item.is-active { color:var(--today-accent); background:none; }
+.today-nav-item.is-active .today-nav-icon { background:none; }
+.coach-nav-train .today-nav-icon,.coach-nav-train.is-active .today-nav-icon { width:52px; height:52px; margin-top:-19px; background:var(--today-accent); color:var(--today-bg); border-radius:50%; box-shadow:0 0 0 5px var(--today-bg); }
+.coach-week { margin-bottom:20px; }
+.coach-week > div { display:grid; grid-template-columns:repeat(7,1fr); gap:5px; }
+.coach-week button { border:0; border-radius:12px; color:var(--today-muted); background:var(--today-surface); padding:8px 0; display:grid; gap:4px; font-size:11px; cursor:pointer; }
+.coach-week button strong { font-size:16px; }
+.coach-week button[aria-current] { background:var(--today-accent); color:var(--today-bg); }
+.coach-home-weight { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.coach-home-weight .today-secondary-button { width:auto; padding:8px 14px; }
+.coach-home-stats { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.coach-home-stats .today-card { text-align:left; color:var(--today-text); display:grid; gap:6px; }
+.coach-home-stats strong { font-size:26px; color:var(--today-accent); }
+.coach-home-stats span { font-size:12px; color:var(--today-muted); }
+.coach-plan-day { background:var(--today-surface); border-radius:14px; margin-bottom:10px; padding:16px; }
+.coach-plan-day summary { display:flex; justify-content:space-between; gap:12px; cursor:pointer; font-size:14px; list-style:none; }
+.coach-plan-day summary > span { display:flex; flex-direction:column; gap:5px; }
+.coach-plan-day summary > span:last-child { text-align:right; color:var(--today-muted); }
+.coach-plan-day small { color:var(--today-accent); }
+.coach-plan-session { margin-top:18px; }
+.coach-plan-session h3 { font-size:14px; color:var(--today-accent); }
+.coach-plan-exercise { display:flex; justify-content:space-between; gap:14px; border-top:1px solid var(--today-border-soft); padding:12px 0; font-size:13px; }
+.coach-plan-exercise strong { white-space:nowrap; }
+.training-app .today-card.training-editor { padding:16px; }
+.coach-exercise-pagination { display:flex; align-items:center; justify-content:space-between; gap:8px; margin:12px 0; }
+.coach-exercise-pagination span { color:var(--today-muted); font-size:11px; white-space:nowrap; }
+.training-app .coach-exercise-pagination button { padding:6px; font-size:11px; background:none; border:0; }
+.training-media img { max-height:210px; width:100%; border-radius:12px; }
+.training-exercise-metrics { grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; margin:18px 0; }
+.training-exercise-metrics dd,.training-exercise-metrics .training-metric-rest dd { font-size:16px; }
+.training-exercise-metrics dt { font-size:10px; }
+.training-app .training-set,.training-app .training-set-head { grid-template-columns:24px minmax(0,1fr) minmax(0,1fr) 28px; gap:5px; }
+.coach-stepper { display:flex; align-items:center; min-width:0; background:var(--today-bg); border-radius:10px; }
+.training-app .coach-stepper button { width:26px; min-width:26px; min-height:44px; border:0; padding:0; font-size:16px; background:none; }
+.training-app .coach-stepper input { padding:4px 0; text-align:center; border:0; background:none; font-size:15px; height:44px; min-height:44px; }
+.coach-set-number { color:var(--today-muted); font-size:13px; }
+.coach-last-time { font-size:12px; color:var(--today-muted); padding:10px 0; }
+.today-app :is(button,summary):focus-visible { outline:2px solid var(--today-accent); outline-offset:3px; }
+@media(min-width:760px) { .today-main { padding-top:32px; } }
+.training-app .training-media-toggle.training-full-button { min-height:32px; width:auto; margin:0 0 4px auto; padding:4px 8px; font-size:12px; background:none; border:0; }
+.training-app .training-variant { margin:12px 0; font-size:12px; }
+.training-app .training-variant .training-muted { display:none; }
+.training-app .training-fieldset h3 { font-size:14px; margin:12px 0; }
+.training-app .coach-record-options { border-top:1px solid var(--today-border-soft); margin:12px 0; }
+.training-app .coach-record-options summary { color:var(--today-muted); font-size:12px; }
+.training-app .coach-record-options label { margin:8px 0 12px; }
+.training-app .training-set-head { grid-template-columns:24px minmax(0,1fr) minmax(0,1fr) 28px; font-size:10px; }
+.training-app .training-set-head span:first-child { font-size:0; }
+.training-app .training-set-head span:first-child::after { content:'#'; font-size:11px; }
+
+.coach-nav-train { color:var(--today-accent); font-weight:600; }
+.coach-nav-train .today-nav-icon { position:relative; width:52px; height:52px; box-shadow:0 6px 18px -4px color-mix(in srgb,var(--today-accent) 55%,transparent); transition:transform .15s ease; }
+.coach-nav-train:active .today-nav-icon { transform:scale(.93); }
+.coach-nav-train.is-running { --coach-running:#ff9f0a; color:var(--coach-running); }
+html.light .coach-nav-train.is-running { --coach-running:#ff9500; }
+.coach-nav-train.is-running .today-nav-icon { background:var(--coach-running); color:#000; box-shadow:0 6px 18px -4px color-mix(in srgb,var(--coach-running) 55%,transparent); }
+.coach-nav-train.is-running .today-nav-icon::after { content:''; position:absolute; inset:0; border:2px solid var(--coach-running); border-radius:50%; animation:coach-session-pulse 1.9s ease infinite; }
+@keyframes coach-session-pulse { from { transform:scale(1); opacity:.7; } to { transform:scale(1.45); opacity:0; } }
+@media (prefers-reduced-motion:reduce) { .coach-nav-train.is-running .today-nav-icon::after { animation:none; } }

@@ -1,14 +1,30 @@
-import { useState } from 'react';
+import { WeeklyPlan, WeekStrip } from './WeeklyPlan';
+import { WeightForm } from '../weight/WeightForm';
+import { TrainingAbsences } from './TrainingAbsences';
+import { lazy, Suspense, useEffect, useRef, useState } from 'react';
+const ProgressApp = lazy(() => import('../progress/ProgressApp'));
 import type { FC } from 'react';
 import { useTheme } from '../../contexts/ThemeContext';
 import { TodaySettings } from './TodaySettings';
 import { TodayWeather } from './TodayWeather';
 import { TrainingApp } from '../training/TrainingApp';
+import type { TrainingNavigation } from '../training/TrainingApp';
+import { trainingSnapshot } from '../training/trainingConnection';
+import {
+  dayForMadrid,
+  displayLabelForDay,
+  loadTrainingPlan,
+  statusForDay,
+  trainingForToday,
+} from '../training/trainingPlan';
+import type { TrainingPlanLoadState } from '../training/trainingPlan';
+import type { TrainingData, TrainingRoutine } from '../training/trainingStorage';
 import { readWeatherPreferences } from './todaySettingsStorage';
 import type { WeatherPreferences } from './todaySettingsStorage';
 
 type IconName =
   | 'arrow'
+  | 'calendar'
   | 'chart'
   | 'nav-chart-line'
   | 'nav-dumbbell'
@@ -109,10 +125,11 @@ const Icon: FC<IconProps> = ({ name, size = 24 }) => (
       </>
     )}
     {name === 'play' && <path d="m8 5 11 7-11 7Z" fill="currentColor" stroke="none" />}
+    {name === 'calendar' && <path d="M4 5h16v16H4zM8 2v6M16 2v6M4 10h16M8 15l3 3 5-5" />}
     {name === 'scale' && (
       <>
-        <path d="M6 4h12a2 2 0 0 1 2 2v14H4V6a2 2 0 0 1 2-2Z" />
-        <path d="M8 4a4 4 0 0 1 8 0M12 8l2.5 2.5M12 8 9.5 10.5" />
+        <path d="M6 3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3Z" />
+        <path d="M7 9a5 5 0 0 1 10 0M12 10l2-3" />
         <path d="M8 16h8" />
       </>
     )}
@@ -139,16 +156,16 @@ const Icon: FC<IconProps> = ({ name, size = 24 }) => (
 );
 
 interface TodayAppProps {
-  onOpenLegacy: () => void;
+  onSignOut?: () => Promise<void>;
 }
 
-type TodaySection = 'today' | 'training' | 'meals' | 'progress' | 'settings';
+type TodaySection = 'today' | 'training' | 'plan' | 'progress' | 'settings';
 
 const todaySections = [
-  ['today', 'Hoy', 'Hoy', 'nav-sun'],
-  ['training', 'Entrenamiento', 'Entrenar', 'nav-dumbbell'],
-  ['meals', 'Comidas', 'Comidas', 'nav-utensils'],
-  ['progress', 'Progreso', 'Progreso', 'nav-chart-line'],
+  ['today', 'Inicio', 'Inicio', 'home'],
+  ['plan', 'Plan', 'Plan', 'calendar'],
+  ['training', 'Entrenamiento', 'Entrenar', 'training'],
+  ['progress', 'Progreso', 'Progreso', 'chart'],
   ['settings', 'Configuración', 'Config.', 'nav-sliders'],
 ] as const satisfies ReadonlyArray<readonly [TodaySection, string, string, IconName]>;
 
@@ -157,15 +174,22 @@ const formatToday = (): string => {
     day: 'numeric',
     month: 'long',
     weekday: 'long',
+    timeZone: 'Europe/Madrid',
   }).format(new Date());
 
   return date.replace(/ de /, ' ').toLocaleUpperCase('es-ES');
 };
 
-export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy }) => {
+export const TodayApp: FC<TodayAppProps> = ({ onSignOut }) => {
   const { theme, toggleTheme } = useTheme();
   const [notice, setNotice] = useState('');
+  const [weightOpen, setWeightOpen] = useState(false);
+  const [absencesOpen, setAbsencesOpen] = useState(false);
   const [trainingDirty, setTrainingDirty] = useState(false);
+  const trainingNavigation = useRef<TrainingNavigation>(null);
+  const [trainingData, setTrainingData] = useState<TrainingData>(() => trainingSnapshot().data);
+  const [routine, setRoutine] = useState<TrainingRoutine | null>(null);
+  const [planState, setPlanState] = useState<TrainingPlanLoadState>('loading');
   const [activeSection, setActiveSection] = useState<TodaySection>('today');
   const [weatherPreferences, setWeatherPreferences] = useState<WeatherPreferences | null>(() => readWeatherPreferences());
   const isHome = activeSection === 'today';
@@ -179,37 +203,57 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy }) => {
   const weatherSummary = weatherPreferences?.location && weatherPreferences.departureTime && weatherPreferences.returnTime
     ? `${weatherPreferences.location.label} · ${weatherPreferences.departureTime} / ${weatherPreferences.returnTime}`
     : 'Ubicación y horarios pendientes';
+  const todayPlanDay = dayForMadrid(routine);
+  const todayTrainingStatus = statusForDay(routine, trainingData);
+  const todayTraining = trainingForToday(routine, trainingData);
+  const progressTotal = (todayTraining.session?.exerciseIds.length ?? todayTraining.plan?.items.length ?? 0) +
+    Number(Boolean(todayTraining.session ? todayTraining.session.plannedCardio : todayTraining.plan?.cardio));
+  const progressRecorded = (todayTraining.session?.logs.length ?? 0) + Number(Boolean(todayTraining.session?.cardio));
+
+  useEffect(() => {
+    let mounted = true;
+    loadTrainingPlan()
+      .then((plan) => {
+        if (!mounted) return;
+        setRoutine(plan);
+        setPlanState('ready');
+      })
+      .catch((error: unknown) => {
+        if (!mounted) return;
+        setPlanState(error instanceof Error && 'state' in error ? error.state as Exclude<TrainingPlanLoadState, 'loading' | 'ready'> : 'error');
+      });
+    return () => { mounted = false; };
+  }, []);
 
   const showNotice = (message: string) => {
     setNotice(message);
   };
 
-  const showUnavailable = (section: string) => {
-    showNotice(`${section} todavía no está conectado.`);
+
+  const openTraining = () => {
+    if (trainingDirty && todayTrainingStatus !== 'in-progress' && !window.confirm('Tenés cambios sin guardar. ¿Descartarlos y abrir la sesión de hoy?')) return;
+    setActiveSection('training');
+    trainingNavigation.current?.openToday();
   };
 
   return (
     <div className="today-app">
       <main className="today-main">
-        <header className={isHome ? 'today-header' : 'today-header today-header-section'}>
+        <header className={isHome ? 'today-header today-header-home' : `today-header today-header-section${activeSection === 'training' ? ' today-header-training' : ''}`}>
           <div>
             <p className="today-date">{formatToday()}</p>
-            <h1>{sectionTitle}</h1>
-            {isHome && (
-              <>
-                <p className="today-greeting">Buen día, Mauri</p>
-                <div className="today-header-links">
-                  <button onClick={() => setActiveSection('training')} type="button">Entrenamiento</button>
-                  <span aria-hidden="true">·</span>
-                  <button onClick={() => {
-                    if (!trainingDirty || window.confirm('Tenés cambios de entrenamiento sin guardar. ¿Abrir la app anterior y descartarlos?')) onOpenLegacy();
-                  }} type="button">Ver app anterior</button>
-                </div>
-              </>
-            )}
+            <h1>{isHome ? 'Coach' : sectionTitle}</h1>
+
           </div>
 
           <div className="today-header-actions">
+            {isHome && <button aria-label="Registrar peso" title="Registrar peso" className="today-icon-button" aria-expanded={weightOpen} aria-controls="daily-weight-form" onClick={() => setWeightOpen(true)} type="button">
+              <Icon name="scale" size={20} />
+            </button>}
+            {isHome && <button type="button" className="today-icon-button" aria-label="Marcar días que no entrené" title="Días que no entrené"
+              disabled={!routine || trainingDirty} aria-expanded={absencesOpen} aria-controls="training-absence-calendar" onClick={() => setAbsencesOpen(!absencesOpen)}>
+              <Icon name="calendar" size={20} />
+            </button>}
             <button
               aria-label="Cambiar tema"
               className="today-icon-button"
@@ -219,15 +263,22 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy }) => {
             >
               <Icon name={theme === 'dark' ? 'sun' : 'moon'} size={20} />
             </button>
-            <button aria-label="Registrar peso" className="today-weight-button" onClick={() => showNotice('El registro de peso todavía no está conectado.')} type="button">
-              <Icon name="scale" size={24} />
-              <span>Registrar peso</span>
-            </button>
+            {activeSection === 'training' && progressTotal > 0 && <span className="training-progress-pill" role="status" aria-label={`${progressRecorded} de ${progressTotal} ejercicios registrados, incluido el cardio`}>{progressRecorded}/{progressTotal}</span>}
+
           </div>
         </header>
 
         {isHome ? (
           <>
+            {weightOpen && <WeightForm onClose={() => setWeightOpen(false)} onSaved={showNotice} />}
+            {absencesOpen && routine && <TrainingAbsences data={trainingData} routine={routine} disabled={trainingDirty}
+              onClose={() => setAbsencesOpen(false)}
+              onSave={async dates => {
+                const saved = await trainingNavigation.current?.setSkippedDates(dates) ?? false;
+                if (saved) showNotice('Días actualizados.');
+                return saved;
+              }} />}
+            <WeekStrip onPlan={() => setActiveSection('plan')} />
             {hasWeatherConfiguration && weatherPreferences ? (
               <TodayWeather key={JSON.stringify(weatherPreferences)} preferences={weatherPreferences} />
             ) : <section aria-labelledby="weather-heading" className="today-card today-weather-card">
@@ -266,43 +317,38 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy }) => {
                   <Icon name="training" size={27} />
                   <span id="training-heading">TU ENTRENAMIENTO</span>
                 </div>
-                <span className="today-status-pill">Sin plan</span>
+                <span className="today-status-pill">
+                  {planState === 'loading' ? 'Cargando' : planState === 'ready' ? (
+                    todayTrainingStatus === 'skipped' ? 'No entrené' : todayTrainingStatus === 'in-progress' ? 'En curso' : todayTrainingStatus === 'completed' ? 'Completado' : todayTrainingStatus === 'rest' ? 'Descanso' : 'Plan activo'
+                  ) : planState === 'no-plan' ? 'Sin plan' : 'No disponible'}
+                </span>
               </div>
-              <h2>Tu próxima sesión</h2>
-              <p className="today-card-subtitle">Todavía no hay una rutina asignada.</p>
-              <p className="today-card-helper">Yo preparo tu rutina con los agentes especializados; vos registrás lo que hiciste.</p>
-              <button className="today-primary-button" onClick={() => setActiveSection('training')} type="button">
-                <Icon name="play" size={22} />
-                <span>Abrir entrenamiento</span>
-                <Icon name="arrow" size={26} />
+              <h2>{planState === 'ready' ? displayLabelForDay(todayPlanDay) : planState === 'no-plan' ? 'Sin plan asignado' : 'Tu próxima sesión'}</h2>
+              <p className="today-card-subtitle">
+                {planState === 'loading' ? 'Consultando tu rutina…' : planState === 'no-plan' ? 'Todavía no hay una rutina asignada.' : planState === 'ready' ? (
+                  todayTrainingStatus === 'skipped' ? 'Marcaste que hoy no entrenaste.' : todayTrainingStatus === 'rest' ? 'Hoy está marcado como descanso.' : todayTrainingStatus === 'in-progress' ? 'Tenés una sesión en curso.' : todayTrainingStatus === 'completed' ? 'Todos los ejercicios de hoy están registrados.' : 'La sesión de hoy está preparada para registrar.'
+                ) : 'La rutina todavía no está disponible.'}
+              </p>
+<p className="coach-section-caption">{progressTotal > 0 ? `${progressRecorded} / ${progressTotal} ejercicios registrados` : ''}</p>
+              <button className="today-primary-button today-training-button" disabled={planState === 'loading'} onClick={openTraining} type="button">
+                <span>{todayTrainingStatus === 'rest' ? 'Ver descanso de hoy' : todayTrainingStatus === 'completed' ? 'Ver entrenamiento de hoy' : 'Abrir entrenamiento'}</span>
               </button>
             </section>
 
-            <section aria-labelledby="meals-heading" className="today-card">
-              <div className="today-card-heading">
-                <div className="today-card-label">
-                  <Icon name="meals" size={27} />
-                  <h2 id="meals-heading">Tus comidas</h2>
-                </div>
-                <span className="today-status-pill">Sin plan</span>
-              </div>
-              <div className="today-empty-state">
-                <strong>Comidas de hoy no configuradas</strong>
-                <p>El menú aparecerá cuando preparemos tu plan de alimentación.</p>
-              </div>
-              <button className="today-secondary-button" onClick={() => showUnavailable('Las comidas')} type="button">
-                <span>Ver comidas de hoy</span>
-                <Icon name="arrow" size={25} />
-              </button>
-            </section>
-
-            <p className="today-view-note">La planificación de tu rutina y tus comidas sigue pendiente.</p>
+            <section className="today-card coach-home-weight"><div><h2>Peso corporal</h2><p className="coach-section-caption">Tu seguimiento diario</p></div><button type="button" className="today-secondary-button" onClick={() => setWeightOpen(true)}>+ Registrar</button></section>
+            <div className="coach-home-stats"><section className="today-card"><strong>{new Set(trainingData.sessions.filter(s => s.logs.length || s.cardio).map(s => s.performedOn)).size}</strong><span>Días registrados</span></section><button type="button" className="today-card" onClick={() => setActiveSection('progress')}><strong>↗</strong><span>Ver progreso</span></button></div>
           </>
-        ) : activeSection === 'training' ? null : activeSection === 'settings' ? (
-          <TodaySettings
+        ) : activeSection === 'plan' ? <WeeklyPlan routine={routine} loading={planState === 'loading'} /> : activeSection === 'training' ? null : activeSection === 'progress' ? (
+          <Suspense fallback={<p role="status">Cargando Progreso…</p>}><ProgressApp routine={routine} /></Suspense>
+        ) : activeSection === 'settings' ? (
+          <><TodaySettings
             onLocationCleared={setWeatherPreferences}
             onSaved={setWeatherPreferences}
           />
+          {onSignOut && <button className="today-settings-button" onClick={async () => {
+            if (trainingDirty && todayTrainingStatus !== 'in-progress' && !window.confirm('Tenés cambios sin guardar. ¿Salir sin guardarlos?')) return;
+            try { await onSignOut(); } catch (error) { setNotice(error instanceof Error ? error.message : 'No pude cerrar la sesión.'); }
+          }} type="button">Cerrar sesión</button>}</>
         ) : (
           <section aria-labelledby="construction-heading" className="today-card today-construction-card">
             <h2 id="construction-heading">{sectionTitle}</h2>
@@ -310,7 +356,7 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy }) => {
           </section>
         )}
 
-        <div hidden={activeSection !== 'training'}><TrainingApp onDirtyChange={setTrainingDirty} /></div>
+        <div hidden={activeSection !== 'training'}><TrainingApp navigationRef={trainingNavigation} routine={routine} planState={planState} onDirtyChange={setTrainingDirty} onDataChange={setTrainingData} /></div>
 
         {notice && (
           <p aria-live="polite" className="today-notice" role="status">
@@ -327,13 +373,13 @@ export const TodayApp: FC<TodayAppProps> = ({ onOpenLegacy }) => {
             <button
               aria-current={isActive ? 'page' : undefined}
               aria-label={label}
-              className={isActive ? 'today-nav-item is-active' : 'today-nav-item'}
+              className={`today-nav-item${isActive ? ' is-active' : ''}${key === 'training' ? ` coach-nav-train${todayTrainingStatus === 'in-progress' ? ' is-running' : ''}` : ''}`}
               key={key}
-              onClick={() => setActiveSection(key)}
+              onClick={() => key === 'training' ? openTraining() : setActiveSection(key)}
               type="button"
             >
-              <span className="today-nav-icon"><Icon name={icon} size={26} /></span>
-              <span>{navLabel}</span>
+              <span className="today-nav-icon"><Icon name={key === 'training' && todayTrainingStatus === 'in-progress' && !isActive ? 'play' : icon} size={26} /></span>
+              <span>{key === 'training' ? todayTrainingStatus === 'in-progress' ? isActive ? 'Entrenamiento' : 'Reanudar' : 'Empezar' : navLabel}</span>
             </button>
           );
         })}

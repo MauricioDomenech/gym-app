@@ -1,0 +1,85 @@
+.progress-app { --progress-blue: #79baff; --progress-purple: #c2a1ff; --progress-amber: #f0bd75; min-width: 0; }
+:root:not(.dark) .progress-app { --progress-blue: #236abb; --progress-purple: #8255bd; --progress-amber: #a76415; }
+.progress-period { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.progress-period > div { display:grid; gap:6px; text-align:center; }
+.progress-period button,.progress-tabs button,.progress-warning button { min-height:48px; min-width:48px; border:1px solid var(--today-border-soft); border-radius:14px; background:var(--today-surface); color:var(--today-text); font:inherit; }
+.progress-period button { font-size:28px; }
+.progress-period button:disabled { opacity:.3; }
+.progress-eyebrow { color:var(--today-accent); font-size:11px; letter-spacing:.12em; font-weight:750; }
+.progress-intro { color:var(--today-muted); margin:20px 0 28px; font-size:14px; }
+.progress-card { min-width:0; overflow:hidden; }
+.progress-card h2 { font-size:clamp(22px,5vw,29px); letter-spacing:-.035em; margin:10px 0 20px; line-height:1.18; }
+.progress-card h3 { font-size:15px; margin:24px 0 8px; }
+.progress-stats { display:grid; grid-template-columns:1fr 1fr; gap:24px 14px; padding:8px 0 24px; border-bottom:1px solid var(--today-border-soft); }
+.progress-stats > div { display:grid; gap:7px; }
+.progress-stats strong,.progress-weight strong { font-size:32px; font-weight:700; letter-spacing:-.04em; line-height:1.2; }
+.progress-stats small,.progress-weight small,.progress-section-heading small { font-size:13px; font-weight:400; letter-spacing:0; color:var(--today-muted); }
+.progress-stats span,.progress-note,.progress-last span { color:var(--today-muted); font-size:12px; line-height:1.65; }
+.progress-chart { height:210px; width:100%; min-width:0; margin-top:12px; }
+.progress-chart:focus-within { outline:1px solid var(--today-accent); border-radius:12px; }
+.progress-legend { display:flex; gap:8px; align-items:center; color:var(--today-muted); font-size:12px; }
+.progress-legend i { width:9px; height:9px; background:var(--today-accent); border-radius:3px; }
+.progress-legend i.plan { background:var(--today-muted); opacity:.4; margin-left:12px; }
+.progress-values { font-size:12px; color:var(--today-muted); margin:8px 0 14px; }
+.progress-values summary { min-height:44px; display:flex; align-items:center; cursor:pointer; text-decoration:underline; text-underline-offset:4px; }
+.progress-values table { width:100%; border-collapse:collapse; text-align:left; }
+.progress-values caption { text-align:left; padding-bottom:8px; }
+.progress-values th,.progress-values td { border-bottom:1px solid var(--today-border-soft); padding:8px 3px; }
+.progress-context { margin:18px 0; padding-left:16px; font-size:13px; line-height:1.65; }
+.progress-context li + li { margin-top:10px; }
+.progress-field { display:grid; gap:8px; font-size:13px; margin:20px 0; }
+.progress-field select { width:100%; min-width:0; height:48px; padding:0 12px; border:1px solid var(--today-border); border-radius:12px; background:var(--today-surface-raised); color:var(--today-text); font:inherit; text-overflow:ellipsis; }
+.progress-tabs { display:flex; gap:8px; }
+.progress-tabs button { flex:1; padding:0 7px; font-size:12px; }
+.progress-tabs button[aria-pressed=true] { color:var(--today-accent); border-color:var(--today-accent); background:var(--today-pill); }
+.progress-last { border-top:1px solid var(--today-border-soft); border-bottom:1px solid var(--today-border-soft); padding:16px 0; font-size:13px; }
+.progress-last p { line-height:1.8; }
+.progress-section-heading { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:4px 12px; margin-top:22px; }
+.progress-section-heading h3 { margin:0; }
+.progress-section-heading strong { font-size:23px; }
+.progress-weight { display:grid; gap:8px; }
+.progress-weight span { color:var(--today-muted); font-size:13px; }
+.progress-reading { border-color:var(--today-accent); }
+.progress-reading p { font-size:14px; line-height:1.75; }
+.progress-warning { padding:16px; border:1px solid var(--today-border); border-radius:14px; margin-bottom:20px; font-size:13px; line-height:1.65; }
+.progress-warning button { display:block; padding:0 16px; margin-top:12px; }
+@media(max-width:360px) { .progress-stats strong { font-size:27px; } .progress-chart { height:190px; } }
+/* Compact statistical cards, shared with the new Coach shell. */
+.progress-card h2 { font-size:18px; letter-spacing:-.3px; margin:0 0 16px; }
+.progress-card > .progress-eyebrow { display:none; }
+.progress-intro { margin:12px 0 20px; font-size:12px; }
+.progress-stats { gap:12px; }
+.progress-stats > div { padding:12px; background:var(--today-surface-raised); border-radius:12px; }
+.progress-stats strong { font-size:24px; }
+.progress-tabs { background:var(--today-surface-raised); padding:3px; border-radius:9px; gap:3px; }
+.progress-tabs button { min-height:36px; border:0; border-radius:7px; background:none; }
+.progress-tabs button[aria-pressed=true] { background:var(--today-surface); }
+.progress-chart { height:185px; }
+.progress-values summary { font-size:11px; min-height:32px; text-decoration:none; }
+.gym-stat-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:18px 0; }
+.gym-stat-grid > div { background:var(--today-surface); padding:16px; border-radius:14px; display:grid; gap:6px; }
+.gym-stat-grid span { color:var(--today-muted); font-size:12px; }
+.gym-stat-grid strong { font-size:24px; letter-spacing:-.5px; }
+.progress-app > .today-card > h2 { font-size:18px; margin:0 0 16px; }
+.gym-heat-scroll { overflow-x:auto; padding:16px 0; }
+.gym-heatmap { display:grid; grid-template-rows:repeat(7,9px); grid-auto-flow:column; grid-auto-columns:9px; gap:3px; width:max-content; }
+.gym-heatmap button { padding:0; border:0; border-radius:2px; cursor:pointer; }
+.gym-body-maps { display:flex; justify-content:center; gap:12px; margin:16px 0; }
+.gym-body-maps svg { width:42%; max-height:240px; }
+.gym-muscle-row { width:100%; display:grid; grid-template-columns:100px 1fr 32px; align-items:center; gap:12px; padding:8px 0; background:none; color:var(--today-text); border:0; text-align:left; font-size:12px; }
+.gym-muscle-row strong { text-align:right; color:var(--today-muted); }
+.gym-muscle-row[aria-pressed=true] { color:var(--today-accent); }
+.gym-muscle-bar { height:5px; border-radius:4px; background:var(--today-surface-raised); overflow:hidden; }
+.gym-muscle-bar i { display:block; height:100%; background:var(--today-accent); }
+.gym-effort-average { font-size:32px; margin:18px 0; color:var(--progress-amber); }
+.gym-effort-average small { font-size:14px; color:var(--today-muted); }
+.gym-recent { border-top:1px solid var(--today-border-soft); padding:14px 0; font-size:13px; }
+.gym-recent summary { display:flex; justify-content:space-between; gap:12px; cursor:pointer; }
+.gym-recent summary span { display:grid; gap:5px; }
+.gym-recent small { color:var(--today-muted); }
+.gym-anatomical { gap:20px; }
+.gym-anatomical svg { width:45%; height:300px; max-height:none; }
+.gym-anatomical g[role=button] { cursor:pointer; }
+.gym-anatomical g:focus-visible { outline:none; stroke:var(--today-text); stroke-width:5; }
+.gym-map-credit { text-align:center; font-size:10px; color:var(--today-muted); }
+.gym-map-credit a { color:inherit; text-decoration:underline; }

@@ -274,8 +274,14 @@ export const TodaySettings: FC<TodaySettingsProps> = ({ onLocationCleared, onSav
       </div>
 
       <form className="today-settings-form" onSubmit={handleSave}>
-        <fieldset className="today-settings-fieldset">
-          <legend>Ubicación</legend>
+        <fieldset className="today-settings-fieldset" aria-labelledby="settings-location-heading">
+          <h3 className="today-card-label today-settings-card-heading" id="settings-location-heading">
+            <svg aria-hidden="true" className="today-icon" fill="none" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            <span>Ubicación</span>
+          </h3>
           <p className="today-settings-helper">Usá el GPS una vez o buscá una ciudad. La búsqueda necesita que elijas un resultado.</p>
 
           <button className="today-settings-button today-settings-location-button" disabled={isLocating} onClick={handleUseLocation} type="button">
@@ -333,8 +339,14 @@ export const TodaySettings: FC<TodaySettingsProps> = ({ onLocationCleared, onSav
           {locationMessage && <p className="today-settings-helper" role="status">{locationMessage}</p>}
         </fieldset>
 
-        <fieldset className="today-settings-fieldset">
-          <legend>Horario diario</legend>
+        <fieldset className="today-settings-fieldset" aria-labelledby="settings-schedule-heading">
+          <h3 className="today-card-label today-settings-card-heading" id="settings-schedule-heading">
+            <svg aria-hidden="true" className="today-icon" fill="none" width="24" height="24" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+            <span>Horario diario</span>
+          </h3>
           <p className="today-settings-helper">Se aplica todos los días y podés cambiarlo cuando quieras.</p>
           <div className="today-settings-time-grid">
             <label className="today-settings-label" htmlFor="today-departure-time">

@@ -11,7 +11,7 @@
   },
   {
     "id": "exercise.catalog.003",
-    "name": "Press inclinado en maquina Smith",
+    "name": "Press inclinado en máquina Smith",
     "image": "/images/exercises/definicion/0757-5v7KYld.gif"
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "id": "exercise.catalog.014",
-    "name": "Triceps en polea con cuerda",
+    "name": "Pushdown de tríceps con cuerda",
     "image": "/images/exercises/definicion/0200-dU605di.gif"
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "id": "exercise.catalog.018",
-    "name": "Jalon al pecho en polea (agarre ancho)",
+    "name": "Jalón al pecho con agarre ancho",
     "image": "/images/exercises/definicion/0150-eYnzaCm.gif"
   },
   {
@@ -96,7 +96,7 @@
   },
   {
     "id": "exercise.catalog.020",
-    "name": "Remo en maquina con apoyo de pecho",
+    "name": "Remo en máquina con pecho apoyado",
     "image": "/images/exercises/definicion/1350-7I6LNUG.gif"
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "id": "exercise.catalog.033",
-    "name": "Prensa de piernas",
+    "name": "Prensa inclinada",
     "image": "/images/exercises/definicion/1463-2Qh2J1e.gif"
   },
   {
@@ -231,7 +231,7 @@
   },
   {
     "id": "exercise.catalog.047",
-    "name": "Jalon al pecho (supino o neutro)",
+    "name": "Jalón al pecho con agarre supino",
     "image": "/images/exercises/definicion/0245-xBYcQHj.gif"
   },
   {
@@ -266,7 +266,7 @@
   },
   {
     "id": "exercise.catalog.054",
-    "name": "Curl predicador",
+    "name": "Curl predicador en máquina",
     "image": "/images/exercises/definicion/0592-b6hQYMb.gif"
   },
   {
@@ -276,7 +276,7 @@
   },
   {
     "id": "exercise.catalog.056",
-    "name": "Wrist curl con mancuerna",
+    "name": "Curl de muñeca con mancuernas",
     "image": "/images/exercises/definicion/0401-2dImyQ8.gif"
   },
   {
@@ -316,7 +316,87 @@
   },
   {
     "id": "exercise.catalog.064",
-    "name": "Ab rollout con rueda",
+    "name": "Rueda abdominal de rodillas",
     "image": "/images/exercises/definicion/0857-NAgVB3t.gif"
+  },
+  {
+    "id": "exercise.catalog.065",
+    "name": "Prensa horizontal",
+    "image": "/images/exercises/definicion/replacement-065.gif"
+  },
+  {
+    "id": "exercise.catalog.066",
+    "name": "Remo con mancuernas y pecho apoyado",
+    "image": "/images/exercises/definicion/replacement-066.gif"
+  },
+  {
+    "id": "exercise.catalog.067",
+    "name": "Peso muerto rumano en Smith",
+    "image": "/images/exercises/definicion/replacement-067.gif"
+  },
+  {
+    "id": "exercise.catalog.068",
+    "name": "Peso muerto rumano con mancuernas",
+    "image": "/images/exercises/definicion/replacement-068.gif"
+  },
+  {
+    "id": "exercise.catalog.069",
+    "name": "Pájaros con mancuernas y pecho apoyado",
+    "image": "/images/exercises/definicion/replacement-069.gif"
+  },
+  {
+    "id": "exercise.catalog.070",
+    "name": "Curl de bíceps en polea baja",
+    "image": "/images/exercises/definicion/replacement-070.gif"
+  },
+  {
+    "id": "exercise.catalog.071",
+    "name": "Extensión de tríceps en máquina",
+    "image": "/images/exercises/definicion/replacement-071.gif"
+  },
+  {
+    "id": "exercise.catalog.072",
+    "name": "Extensión de tríceps tumbado con mancuernas",
+    "image": "/images/exercises/definicion/replacement-072.gif"
+  },
+  {
+    "id": "exercise.catalog.073",
+    "name": "Gemelos a una pierna con mancuerna y apoyo",
+    "image": "/images/exercises/definicion/replacement-073.gif"
+  },
+  {
+    "id": "exercise.catalog.074",
+    "name": "Crunch en polea",
+    "image": "/images/exercises/definicion/replacement-074.gif"
+  },
+  {
+    "id": "exercise.catalog.075",
+    "name": "Crunch con peso sobre el pecho",
+    "image": null
+  },
+  {
+    "id": "exercise.catalog.076",
+    "name": "Extensión de muñeca con mancuernas",
+    "image": "/images/exercises/definicion/replacement-076.gif"
+  },
+  {
+    "id": "exercise.catalog.077",
+    "name": "Curl de muñeca en polea baja con barra",
+    "image": "/images/exercises/definicion/replacement-077.gif"
+  },
+  {
+    "id": "exercise.catalog.078",
+    "name": "Curl de muñeca en polea baja unilateral",
+    "image": null
+  },
+  {
+    "id": "exercise.catalog.079",
+    "name": "Extensión de muñeca en polea baja con barra",
+    "image": "/images/exercises/definicion/replacement-079.gif"
+  },
+  {
+    "id": "exercise.catalog.080",
+    "name": "Extensión de muñeca en polea baja unilateral",
+    "image": null
   }
 ]

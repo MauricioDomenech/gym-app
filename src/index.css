@@ -54,6 +54,7 @@ html.light {
 
 /* Today home */
 .today-app {
+  --today-control-height: 48px;
   --today-nav-height: 82px;
   --today-bg: #0b1715;
   --today-surface: #101f1c;
@@ -216,18 +217,19 @@ html.light .today-app {
   color: var(--today-accent);
 }
 
-.today-card-label > span {
+.today-card-label > span,
+.today-card-label > h2,
+.training-app .training-exercise-title {
   font-size: 0.98rem;
   font-weight: 800;
   letter-spacing: 0.08em;
+  color: var(--today-accent);
+  text-transform: uppercase;
+  line-height: 1.4;
 }
 
 .today-card-label h2 {
   margin: 0;
-  color: var(--today-text);
-  font-size: clamp(1.75rem, 5vw, 2.4rem);
-  letter-spacing: -0.045em;
-  line-height: 1.1;
 }
 
 .today-status-pill {
@@ -328,6 +330,22 @@ html.light .today-app {
   gap: 16px;
 }
 
+.coach-access {
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+.coach-access h1 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  line-height: 1.15;
+}
+
+.coach-access-exit {
+  width: 100%;
+  margin-top: 16px;
+}
+
 .today-settings-fieldset {
   min-width: 0;
   margin: 0;
@@ -337,11 +355,9 @@ html.light .today-app {
   background: var(--today-surface);
 }
 
-.today-settings-fieldset legend {
-  padding: 0 6px;
-  color: var(--today-text);
-  font-size: 1.15rem;
-  font-weight: 800;
+.today-settings-card-heading {
+  display: flex;
+  margin: 0;
 }
 
 .today-settings-label {
@@ -436,14 +452,25 @@ html.light .today-app {
 .today-settings-input,
 .today-settings-select {
   width: 100%;
-  min-height: 48px;
-  padding: 9px 12px;
+  height: var(--today-control-height);
+  min-height: var(--today-control-height);
+  padding: 10px 12px;
   border: 1px solid var(--today-border-soft);
-  border-radius: 11px;
+  border-radius: 10px;
   color: var(--today-text);
   background: var(--today-surface-raised);
   font: inherit;
   font-size: 1rem;
+}
+
+.today-app select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23849f97' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
 }
 
 .today-settings-input::placeholder {
@@ -610,6 +637,11 @@ html.light .today-settings-feedback.is-error {
 .today-primary-button {
   color: #f4fffb;
   background: #007a5e;
+}
+
+.today-training-button {
+  display: block;
+  text-align: center;
 }
 
 .today-secondary-button {
@@ -854,18 +886,18 @@ html.dark .legacy-return-bar button {
   }
 
   .today-header-section {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .today-header-section > div:first-child {
-    width: 100%;
+    flex: 1 1 auto;
   }
 
   .today-header-section .today-header-actions {
-    order: -1;
+    order: 0;
     flex-direction: row;
     justify-content: flex-end;
-    margin-bottom: 18px;
+    margin-bottom: 0;
     padding-top: 0;
   }
 
@@ -904,7 +936,9 @@ html.dark .legacy-return-bar button {
     gap: 10px;
   }
 
-  .today-card-label > span {
+  .today-card-label > span,
+  .today-card-label > h2,
+.training-app .training-exercise-title {
     font-size: 0.82rem;
   }
 
@@ -1053,3 +1087,44 @@ html.dark .legacy-return-bar button {
   .today-forecast-slot { padding: 8px; }
   .today-forecast-slot .today-weather-detail { font-size: 0.78rem; }
 }
+
+.today-header.today-header-training { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 12px; }
+.today-header-training > div:first-child { min-width: 0; }
+.today-header-training h1 { font-size: clamp(1.65rem, 8vw, 4.5rem); }
+.today-header.today-header-training .today-header-actions { order: 0; flex-direction: column; align-items: flex-end; align-self: start; gap: 12px; margin-bottom: 0; padding-top: 0; }
+.today-header-training .today-icon-button { align-self: flex-end; }
+
+/* Días sin entrenar: gestión discreta en Hoy, fuera del registro de ejercicios. */
+.today-absences { margin-top: 20px; }
+.today-absences > h2 { margin: 0 0 5px; }
+.today-absences + .today-weather-card { margin-top: 20px; }
+.today-absences-toggle { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 44px; padding: 8px 0; border: 0; background: transparent; color: var(--today-accent); font: inherit; font-weight: 650; cursor: pointer; }
+.today-absences-help { color: var(--today-muted); font-size: .9rem; line-height: 1.5; margin: 16px 0; }
+.today-absences-month { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 20px 0 12px; }
+.today-absences-month strong { text-transform: capitalize; }
+.today-absences-month button { width: 44px; height: 44px; border: 0; border-radius: 12px; background: transparent; color: var(--today-accent); font-size: 1.8rem; cursor: pointer; }
+.today-absences-grid { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 4px; }
+.today-absences-weekday { text-align: center; color: var(--today-muted); font-size: .8rem; padding-bottom: 8px; }
+.today-absences-grid button { position: relative; min-width: 0; min-height: 44px; border: 1px solid transparent; border-radius: 12px; background: transparent; color: var(--today-text); font: inherit; cursor: pointer; }
+.today-absences-grid button[aria-current="date"] { border-color: var(--today-accent); }
+.today-absences-grid button[aria-pressed="true"] { background: var(--today-accent); color: #08211b; font-weight: 800; }
+.today-absences-grid button span { position: absolute; bottom: 0; left: 0; right: 0; color: var(--today-accent); }
+.today-absences button:disabled { opacity: .35; cursor: default; }
+.today-absences-grid button.has-records { opacity: .8; }
+.today-absences-actions { display: grid; gap: 8px; margin-top: 20px; }
+.today-absences-actions .today-primary-button { display: block; text-align: center; width: 100%; min-height: 52px; margin-top: 0; }
+.today-absences button:focus-visible { outline: 2px solid var(--today-accent); outline-offset: 2px; }
+
+.today-header-home { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; }
+.today-header-home .today-header-actions { flex-direction: row; flex-shrink: 0; padding-top: 0; }
+.today-header-actions .today-icon-button { flex: 0 0 44px; padding: 0; }
+.today-header-actions .today-icon-button:disabled { opacity: .35; cursor: default; }
+.today-header-actions .today-icon-button[aria-expanded="true"] { border-color: var(--today-accent); }
+@media (max-width: 620px) {
+  .today-header-home .today-date { white-space: normal; text-wrap: balance; }
+}
+
+.today-weight form { display: grid; gap: 24px; }
+.today-weight h2 { margin-bottom: 24px; }
+.today-weight label { display: grid; gap: 8px; }
+.today-weight button { width: 100%; min-height: 52px; }

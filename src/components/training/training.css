@@ -1,4 +1,7 @@
 .training-app { line-height: 1.55; }
+.training-progress-pill { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--today-pill); color: var(--today-muted); font-size: .85rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+.training-exercise-list > li:first-child { padding-top: 0; }
+.training-exercise-list > li:last-child { border-bottom: 0; padding-bottom: 0; }
 .training-app *, .training-app *::before, .training-app *::after { box-sizing: border-box; }
 .training-app .training-fieldset { min-width: 0; border: 0; padding: 0; margin: 0; }
 .training-app h2 { font-size: clamp(1.35rem, 4vw, 1.8rem); line-height: 1.25; font-weight: 800; margin: 8px 0 16px; }
@@ -7,21 +10,25 @@
 .training-app button, .training-app input, .training-app select, .training-app textarea { font: inherit; }
 .training-app button { min-height: 44px; padding: 9px 14px; border: 1px solid var(--today-border-soft); border-radius: 12px; color: var(--today-accent); background: var(--today-pill); cursor: pointer; font-weight: 650; }
 .training-app button:disabled { opacity: .5; cursor: default; }
-.training-app button.today-primary-button { color: #fff; background: #007a5e; border-color: #007a5e; justify-content: center; font-size: 1rem; min-height: 52px; }
+.training-app button.today-primary-button { color: #fff; background: #007a5e; border-color: #007a5e; display: block; text-align: center; font-size: 1rem; min-height: 52px; }
 .training-app button.today-secondary-button { background: transparent; justify-content: center; font-size: 1rem; min-height: 50px; }
 .training-app :is(button, input, textarea, select, summary):focus-visible { outline: 3px solid var(--today-accent); outline-offset: 3px; }
-.training-app input, .training-app select, .training-app textarea { display: block; width: 100%; min-width: 0; min-height: 46px; border: 1px solid var(--today-border); border-radius: 10px; color: var(--today-text); background: var(--today-bg); padding: 10px 12px; }
-.training-app textarea { resize: vertical; }
-.training-app label { display: block; font-size: .93rem; font-weight: 650; margin: 16px 0 10px; }
-.training-app label > :is(input, select, textarea) { margin-top: 7px; }
+.training-app input, .training-app select, .training-app textarea { display: block; width: 100%; min-width: 0; min-height: var(--today-control-height); border: 1px solid var(--today-border); border-radius: 10px; color: var(--today-text); background-color: var(--today-bg); padding: 10px 12px; font-size: 1rem; font-weight: 400; line-height: 1.5; }
+.training-app input, .training-app select { height: var(--today-control-height); }
+.training-app select { padding-right: 40px; }
+.training-app textarea { min-height: 96px; resize: vertical; }
+.training-app label { display: block; font-size: .93rem; font-weight: 650; margin: 24px 0 0; }
+.training-app label > :is(input, select, textarea) { margin-top: 8px; }
+.training-fieldset > .today-primary-button { margin-top: 24px; }
+.training-app .training-media-toggle { margin-top: 16px; }
 .training-muted, .training-local, .training-app time, .training-app small { color: var(--today-muted); font-size: .9rem; }
 .training-local { margin-top: 0 !important; }
 .training-eyebrow { color: var(--today-accent); font-size: .78rem; font-weight: 750; letter-spacing: .075em; text-transform: uppercase; }
 .training-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
 .training-row p { margin: 0; }
-.training-app .training-back { background: transparent; border-color: transparent; margin-top: 12px; padding-left: 0; }
+.training-app .training-back { background: transparent; border-color: transparent; margin-top: 0; padding-left: 0; }
 .training-notes { border-top: 1px solid var(--today-border-soft); border-bottom: 1px solid var(--today-border-soft); margin: 24px 0; padding: 8px 0 22px; }
-.training-note { background: var(--today-surface-raised); border: 1px solid var(--today-border-soft); padding: 16px; border-radius: 14px; margin: 12px 0; }
+.training-note { border-bottom: 1px solid var(--today-border-soft); padding: 16px 0; margin: 0; }
 .training-note p { white-space: pre-wrap; }
 .training-app summary { min-height: 44px; padding: 10px 0; color: var(--today-accent); cursor: pointer; font-weight: 650; }
 .training-history article { border-bottom: 1px solid var(--today-border-soft); padding: 12px 0; }
@@ -31,9 +38,19 @@
 .training-set-head { color: var(--today-muted); font-size: .75rem; }
 .training-app .training-set button { padding: 0; font-size: 1.4rem; }
 .training-exercise-list, .training-sessions, .training-catalog ul { list-style: none; margin: 0; padding: 0; }
-.training-exercise-list > li { border-bottom: 1px solid var(--today-border-soft); padding: 10px 0 20px; }
+.training-exercise-list > li { border-bottom: 1px solid var(--today-border-soft); padding: 24px 0; }
 .training-exercise-list h3 { overflow-wrap: anywhere; }
 .training-exercise-list p { color: var(--today-muted); font-size: .9rem; }
+.training-day { border-top: 1px solid var(--today-border-soft); margin-top: 18px; padding-top: 14px; }
+.training-day-today { border-top-color: var(--today-accent); }
+.training-day article { align-items: center; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; padding: 8px 0; }
+.training-day article p { margin: 0; }
+.training-day article .training-muted { flex-basis: 100%; }
+.training-guidance { border-top: 1px solid var(--today-border-soft); margin: 14px 0; padding: 10px 0; }
+.training-guidance ul { margin: 10px 0 0; padding-left: 20px; }
+.training-guidance li { margin: 8px 0; }
+.training-cardio-summary { margin: 24px 0 0; padding: 0; }
+.training-cardio-summary h3 { margin-top: 0; }
 .training-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .training-catalog ul { max-height: 360px; overflow: auto; overscroll-behavior: contain; margin: 10px 0; }
 .training-catalog li { display: flex; gap: 10px; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--today-border-soft); padding: 12px 2px; font-size: .9rem; }
@@ -49,3 +66,47 @@
   .training-set, .training-set-head { gap: 6px; grid-template-columns: 26px minmax(0, 1fr) minmax(0, 1fr) 44px; }
   .training-set input { padding: 10px 6px; }
 }
+.training-secondary { color: var(--today-muted); margin: 16px 0; }
+.training-secondary > summary, .training-notes > summary { cursor: pointer; padding: 8px 0; }
+.training-save-status { color: var(--today-muted); font-size: .9rem; margin: 12px 0; }
+
+.training-instructions { margin: 8px 0; color: var(--today-muted); }
+.training-instructions > summary { cursor: pointer; padding: 4px 0; }
+
+.training-cardio-metrics, .training-exercise-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 20px 0 24px; }
+.training-cardio-metrics dt, .training-exercise-metrics dt { color: var(--today-muted); font-size: .78rem; line-height: 1.4; }
+.training-cardio-metrics dd, .training-exercise-metrics dd { color: var(--today-text); margin: 6px 0 0; font-size: 1.8rem; font-weight: 750; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.training-cardio-metrics dd span { font-size: .85rem; font-weight: 500; color: var(--today-muted); }
+.training-cardio-metrics > .training-cardio-main dd { color: var(--today-accent); }
+.training-cardio-block > .today-primary-button { width: 100%; margin-top: 4px; }
+.training-exercise-list + .training-cardio-block { margin-top: 24px; padding-top: 4px; }
+
+.training-exercise-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; }
+.training-exercise-metrics dd { overflow-wrap: anywhere; }
+.training-exercise-metrics .training-metric-main dd { color: var(--today-accent); }
+.training-exercise-metrics .training-metric-rest dd { font-size: 1.15rem; line-height: 1.45; }
+.training-exercise-list > li > .today-primary-button { margin-top: 16px; }
+html.light .training-app button.today-primary-button { color: #f4fffb; }
+@media (min-width: 600px) {
+  .training-exercise-metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.training-app .today-card.training-cardio-block { padding: 24px; margin-top: 24px; }
+
+.training-app .training-exercise-title { display: flex; align-items: flex-start; gap: 10px; margin: 0; }
+.training-heading-icon { width: 22px; height: 22px; flex: 0 0 22px; }
+.training-exercise-title > span { min-width: 0; }
+
+.training-app .training-editor > .training-back { display: flex; align-items: flex-start; padding-block: 0; border: 0; line-height: 1.4; }
+
+.training-app button.training-full-button { display: block; width: 100%; min-height: 52px; font-size: 1rem; text-align: center; }
+.training-notes > .training-full-button { margin-top: 16px; }
+
+.training-note-heading { display: flex; align-items: center; gap: 6px; }
+.training-app .training-pin-button, .training-app .training-delete-note-button { display: grid; place-items: center; width: 44px; height: 44px; flex: 0 0 44px; padding: 10px; border: 0; background: transparent; color: var(--today-muted); }
+.training-pin-button svg, .training-delete-note-button svg { width: 22px; height: 22px; }
+.training-app .training-delete-note-button:hover { color: #d16a66; }
+.training-app .training-pin-button[aria-pressed="true"] { color: var(--today-accent); }
+
+.training-variant { display: grid; gap: 8px; margin: 24px 0; }
+.training-variant select { width: 100%; min-width: 0; }
